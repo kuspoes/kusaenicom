@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ metadata.url | url(true) }}" rel="self"/>
+  <link href="{{ "/"  }}"/>
+  {% set lastPage = search.pages() | last %}
+  <updated>{{ lastPage.data.date | date("ATOM") }}</updated>
+  <id>{{ "/" | url(true) }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in search.pages("jurnal", "date=desc", 10) %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ post.data.url | url(true) }}"/>
+    <updated>{{ post.data.date | date("ATOM") }}</updated>
+    <id>{{ post.data.url | url(true) }}</id>
+    <content type="html">{{ post.data.content | md | htmlUrl }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

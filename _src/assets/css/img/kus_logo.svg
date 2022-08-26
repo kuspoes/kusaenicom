@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1080 1080"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="kus_logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.77592593"
+     inkscape:cx="539.35561"
+     inkscape:cy="540.64439"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34" />
+  <g
+     fill="#613583"
+     id="g26"
+     style="fill:#2e231d;fill-opacity:1">
+    <use
+       xlink:href="#B"
+       id="use2"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#B"
+       id="use4"
+       style="fill:#2e231d;fill-opacity:1" />
+    <path
+       d="M714.58 515.4c-20.483-7.019-48.514-15.655-80.339 31.235s-43.509 50.571-65.519 35.825c8.441 15.728 41.389 16.607 60.917 10.268 33.157-10.769 50.169-75.455 84.941-77.328z"
+       id="path6"
+       style="fill:#2e231d;fill-opacity:1" />
+    <path
+       d="M714.58 515.4c-20.483-7.019-48.514-15.655-80.339 31.234s-43.509 50.572-65.519 35.826c8.441 15.726 41.389 16.607 60.917 10.268 33.157-10.771 50.169-75.455 84.941-77.328z"
+       id="path8"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#C"
+       id="use10"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#D"
+       id="use12"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#C"
+       id="use14"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#D"
+       id="use16"
+       style="fill:#2e231d;fill-opacity:1" />
+    <path
+       d="M296.346 526.228l22.71 23.01-22.59 22.991-22.57-23.009z"
+       id="path18"
+       style="fill:#2e231d;fill-opacity:1" />
+    <path
+       d="M296.346 526.228l22.71 23.01-22.59 22.991-22.57-23.009z"
+       id="path20"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#E"
+       id="use22"
+       style="fill:#2e231d;fill-opacity:1" />
+    <use
+       xlink:href="#E"
+       id="use24"
+       style="fill:#2e231d;fill-opacity:1" />
+  </g>
+  <defs
+     id="defs32">
+    <path
+       id="B"
+       d="M878.51 435.68c-20.483-7.016-47.178-14.717-80.343 31.236-23.116 32.03-38.736 40.168-52.237 44.538-4.712 1.074-9.154 2.543-13.284 3.955l5.788.92c16.554 4.379 29.078 23.015 41.922 40.974 7.403 9.646-1.984 11.312-18.152 11.306s-103.33 1.393-97.539-8.332l-28.974 12.703s-5.939 23.445 35.751 23.462l108.63.045c33.874.014 49.259-20.113 37.346-43.29h.007l-4.468-6.487c-10.624-15.681-20.828-25.137-30.471-30.543 3.53-.835 7.157-1.884 11.077-3.156 33.16-10.772 50.168-75.458 84.945-77.331z" />
+    <path
+       id="C"
+       d="M645.58 515.37c-20.483-7.019-48.514-15.655-80.343 31.235s-43.505 50.571-65.516 35.825c8.438 15.728 41.391 16.607 60.915 10.268 33.16-10.769 50.169-75.455 84.944-77.328z" />
+    <path
+       id="D"
+       d="M572.66 515.34c-20.483-7.019-48.286-15.499-80.343 31.235-11.352 16.55-17.051 30.268-50.229 30.975-34.221.733-49.795-6.446-59.781-13.135-1.445 17.611 26.941 37.484 61.8 37.406 26.585-.06 46.616-10.537 59.316-22.781 25.096-24.202 34.46-61.829 69.236-63.702z" />
+    <path
+       id="E"
+       d="M471 515.3c-20.483-7.019-48.514-15.655-80.339 31.235-19.336 28.486-39.436 76.532-113.11 70.032-38.479-3.396-73.498-4.939-61.071-66.337-42.619 68.809 15.026 99.353 57.688 99.427 67.344.12 95.11-18.632 115.01-48.541 27.867-41.868 47.052-83.944 81.823-85.816z" />
+  </defs>
+</svg>

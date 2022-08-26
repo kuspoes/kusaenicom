@@ -1,0 +1,122 @@
+---
+ title: Berlangganan artikel lewat email
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<style>
+		body {
+			background-color: #f3f4f6;
+			color:  #1f2937;
+			font: 16px/1.5 Inter, Segoe UI, Arial, Helvetica, sans-serif;
+		}
+
+		*,
+		*:before,
+		*:after {
+    		box-sizing: border-box;
+		}
+
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		ol,
+		ul {
+		    margin: 0;
+		    padding: 0;
+		    font-weight: normal;
+		}
+
+		.con {
+			width: 550px;
+			border: 1px #ccc solid;
+			border-radius: .378em;
+			background-color: #fff;
+			margin: 6em auto;
+			padding: 1em;
+		}
+		.tra {
+			width: 300px;
+			margin: 0px auto;
+		}
+
+		form {
+			margin-bottom: 2em;
+		}
+
+		label {
+			font-size: .88em;
+			line-height: 1.8em;
+		}
+
+		input {
+			width: 300px;
+		}
+
+		input[type=email] {
+			margin-bottom: 5px;
+			padding: 10px;
+			border: 1px #ccc solid;
+			border-radius: .375em;
+		}
+
+		input[type=submit] {
+			padding: 10px;
+			background-color: #d00000;
+			border: 1px #d00000 solid;
+			border-radius: .376em;
+			color: #fff;
+			font-size: 1em;
+		}
+
+		h1 {
+			font-size: 1.1em;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 1.5em;
+		}
+
+		p {
+			font-size: .88em;
+			line-height: 1.2em;
+			margin-bottom: 1.3em;
+			color: #6c757d;
+		}
+		.blok { display: block; }
+
+		@media only screen and (max-width: 800px){
+			body {
+				width: 100%
+			}
+			.con{width: 100% }
+			.tra{width: 80%}
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="tra">
+			<h1>Berlangganan Artikel lewat email</h1>
+
+			<form action="https://buttondown.email/api/emails/embed-subscribe/kuspoes" method="post" target="popupwindow" 	onsubmit="window.open('https://buttondown.email/kuspoes', 'popupwindow')" class="embeddable-buttondown-form mb	1	">	
+        	  	      <label class="blok" for="bd-email">e-mail</label>	
+        	  	      <input class="blok" type="email" name="email" id="bd-email" placeholder="you@youremail.com">	
+        	  	      <input type="hidden" value="1" name="embed">	
+        	        <input class="inline" type="submit" value="Subscribe">	
+        	</form>
+        	<p>Masukkan alamat email anda untuk memulai berlangganan artikel jurnal Kusaeni.</p>
+			<p>Saya tidak akan mengirimkan spam dan tidak pula menjual alamat email anda.</p>
+			<p>Jika sudah tidak ingin berlangganan, anda bisa berhenti berlangganan kapan saja dengan mudah.</p>
+        	<p>Layanan ini didukung oleh <a class="ba" href="https://buttondown.email" target="_blank">Buttondown</a>.</p>
+		</div>		
+	</div>
+</body>
+</html>
