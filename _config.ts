@@ -18,7 +18,6 @@ const site = lume({
    location: new URL("https://kusaeni.com"),
    server: {
        port: 3003,
-       page404: "404/index.html",
        open: false
    }
 });
