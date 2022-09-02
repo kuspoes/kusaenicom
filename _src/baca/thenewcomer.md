@@ -31,6 +31,10 @@ tags:
 templateEngine: njk,md
 ---
 
+ <div class="info">
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+ </div>
+
 Ini adalah buku pertama Keigo Higashino yang saya baca, saya terpengaruh setelah membaca
 [biografinya di Wikipedia](https://en.wikipedia.org/wiki/Keigo_Higashino). Disitu disebutkan bahwa
 Higashino adalah penulis novel misteri dan menjabat sebagai Presiden ke-13 dari asosiasi penulis

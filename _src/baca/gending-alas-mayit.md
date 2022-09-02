@@ -25,6 +25,10 @@ templateEngine: njk,md
 comments: true
 ---
 
+ <div class="info">
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+ </div>
+ 
 Saya sama sekali tidak familiar dengan nama Diosetta pada awalnya, namun ketika Simpleman meng-*retweet posting*-an promo buku  Diosetta di Twitter, membuat saya memutuskan untuk membelinya.
 
 Dengan ekspektasi kualitas cerita seperti Simpleman.

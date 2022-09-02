@@ -28,6 +28,11 @@ comments: true
 templateEngine: njk,md
 ---
 
+
+ <div class="info">
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+ </div>
+ 
 Menceritakan tentang Dela Atmojo, keturunan terakhir dari Keluarga Atmojo yang selamat dari santet [Sewu Dino](https://kusaeni.com/baca/sewudino/). 
 
 Kisah dimulai dengan *flashback* masa kecil Dela Atmojo yang menyaksikan bagaimana ibu kandungnya mati bunuh diri dengan menembakkan pistol ke dalam mulutnya, sampai ke cerita bagaimana Dela bisa terkena santet Sewu Dino yang dilepaskan oleh [Sabdo Kuncoro](https://kusaeni.com/baca/janurireng/).

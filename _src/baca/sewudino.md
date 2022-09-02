@@ -27,6 +27,10 @@ templateEngine: njk,md
 ---
 
 
+ <div class="info">
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+ </div>
+ 
 Menceritakan tentang Sri, seorang gadis yatim dari keluarga miskin yang menjadi pelayanan di sebuah warung makan. Pada suatu hari Sri ditawari untuk bekerja di rumah seorang bernama Mbah Karsa Atmojo seorang juragan kaya raya.
 
 Selain Sri ada 2 gadis lagi yang diterima menjadi pembantu yaitu Erna dan Dini.

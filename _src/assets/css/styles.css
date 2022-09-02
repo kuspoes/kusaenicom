@@ -822,6 +822,22 @@ input:focus {
     color: #fffcf2;
 }
 
+.info {
+	width: 600px;
+	margin: 0px auto;
+	margin-bottom: 2em;
+	background-color: #ffe5d9;
+	padding: 2px 12px;
+	border-radius: 0.5em;
+}
+
+.info p {
+	padding-top: 4px;
+	font: 0.95em/1.5 var(--sans);
+	line-height: 0.51;
+	color: #fb5607;
+}
+
 @media only screen and (max-width: 1300px) and (min-width: 601px) {
     .lone_traveller{
         width: 90%;

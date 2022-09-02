@@ -30,6 +30,10 @@ templateEngine: njk,md
 comments: true
 ---
 
+ <div class="info">
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+ </div>
+
 Ini adalah buku kedua dari Keigo Higashino yang saya beli setelah [The Newcomer](/baca/thenewcomer). Ditasbihkan sebagai salah satu buku _bestselling_ dan menjadi buku rujukan untuk dibaca oleh para novelist di Jepang, membuat saya bereskpektasi tinggi untuk memiliki dan membacanya.
 
  {% relasi "thenewcomer_jNnlkJXcfB.jpg", "The Newcomer", "Keigo Higashino", "/baca/thenewcomer" %}
