@@ -31,7 +31,7 @@ Kondisi buku masih lumayan bagus dan layak, mungkin ada sedikit kusut dan kotor 
 
 Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi form *giveaway* dibawah ini. Periode pendaftaran sampai dengan tanggal **25 September 2022**.
 
-### Form ikut serta *giveaway*
+### Form ikut serta giveaway
 
  <div class="formGet">
  <form class="getForm" accept-charset="UTF-8" action="https://getform.io/f/2662bfe2-dc8e-4758-968b-83c72161f407" method="POST" enctype="multipart/form-data" target="_blank">
