@@ -135,7 +135,35 @@
 	.bintang {
 		width: 16px;
 	}
+
+	#allbox {
+		width: 98%;
+		height: 170px;
+		display: flex;
+	}
+
+	.coverX {
+		width: 120px;
+		border-radius: 0.35em;
+		box-shadow: none;
+	}
+
+	#boxsatu, #boxdua, #boxtiga {
+		position: relative;
+		left: 0;
+	}
+
+	#boxlima, #boxempat{
+		display: none;
+	}
+
+	.getForm {
+		width: 90% !important;
+	}
 	
+	.getForm textarea {
+		width: 100%;
+	}
 	
 }
 

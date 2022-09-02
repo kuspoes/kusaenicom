@@ -909,3 +909,115 @@ input:focus {
   .cusdis-thread {
   
   }
+
+/* misc */
+/* getform */
+
+.formGet {
+	margin: 1.5em 0 3em 0;
+}
+
+.getForm {
+	width: 550px;
+	margin: 0px auto;
+}
+
+.getForm label, select {
+	margin: 0.5em 0;
+	display: block;
+}
+
+.getForm select {
+	width: auto;
+	margin-bottom: 1.5em;
+	padding: 4px 8px;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	border-radius: 0.375em;
+}
+
+option:hover, option:checked {
+	background-color: yellow;
+}
+
+.getForm input, textarea {
+	display: block;
+	margin: 0.5em 0 1em 0;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	border-radius: 0.375em;
+}
+
+.getForm input {
+	padding: 6px 8px;
+	width: 250px;
+}
+
+.getForm textarea {
+	padding: 6px 8px;
+	font-family: var(--sans);
+	font-size: 0.8em;
+	width: 400px;
+}
+
+.getForm button {
+	padding: 4px 20px;
+	border: 1px solid var(--merah);
+	border-radius: 0.375em;
+	background-color: var(--merah);
+	color: var(--baby);
+}
+
+.getForm p.small {
+	font-size: 0.8em;
+}
+
+#allbox {
+	width: 650px;
+	height: 300px;
+	margin: 0px auto;
+	margin-bottom: 2em;
+	position: relative;
+}
+
+  .coverX {
+  	width: 200px;
+  	border-radius: 0.5rem;
+  	box-shadow: rgba(0, 0, 0, 0.34) 3px 0px 1px 0px;
+  	border: 1px solid #ccc;
+  }
+
+  #boxsatu,
+  #boxdua,
+  #boxtiga,
+  #boxempat,
+  #boxlima {
+  	position: absolute;
+  }
+
+  #boxsatu {
+  	z-index: 5;
+  }
+
+  #boxdua {
+	left: 130px;
+  	z-index: 4;
+  }
+
+  #boxtiga {
+  	left: 250px;
+  	z-index: 3;
+  }
+
+  #boxempat {
+  	left: 360px;
+  	z-index: 2;
+  }
+  #boxlima {
+	left: 460px;
+	z-index: 1;
+	}
+
+	    #boxlima .coverX {
+	    	box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 0px 0px;
+	    }

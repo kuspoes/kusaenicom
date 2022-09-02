@@ -26,7 +26,7 @@ templateEngine: njk,md
 comments: true  
 ---
 
-Ini adalah buku ke dua dari Soji Shimada dan kisah seorang dukun yang mengaku sebagai detektif bernama Kiyoshi Mitarai. Seperti halnya  [Tokyo Zodiac Murders](https://kusaeni.com/baca/tokyoZodiacMurders) *setting* waktunya melampau pada medio tahun 1984.
+Ini adalah buku ke dua dari Soji Shimada dan kisah seorang dukun yang mengaku sebagai detektif bernama Kiyoshi Mitarai. Seperti halnya  [Tokyo Zodiac Murders](https://kusaeni.com/baca/tokyozodiacmurders) *setting* waktunya melampau pada medio tahun 1984.
 
  {% relasi "tokyozodiacmurder_41AsxiBkF.jpg", "Tokyo Zodiac Murder", "Shoji Shimada", "/baca/tokyozodiacmurders" %}
  Novel tentang kasus pembunuhan yang telah menggemparkan seluruh Jepang. pembunuhan yang melibatkan keluarga Umezawa dan orang-orang di sekitar keluarga tersebut. Selama lebih dari empat puluh tahun, kasus ini menjadi misteri. Banyak orang berusaha untuk memecahkannya, tak ada yang berhasil.

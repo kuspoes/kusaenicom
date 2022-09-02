@@ -89,7 +89,7 @@ Saya sudah membeli buku kedua dari Higashino berjudul Malice.
 Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di dalam ruangan tertutup oleh istri dan sahabat baiknya.
 {% endrelasi %}
 
-Seperti serial [Detektif Mitarai](/baca/tokyoZodiacMurders) dari Soji Shimada, versi *life actions*
+Seperti serial [Detektif Mitarai](/baca/tokyozodiacmurders) dari Soji Shimada, versi *life actions*
 dari  Kaga juga sudah ada filmnya, salah satunya adalah The Wing of Kirin yang ditayangkan 2012
 silam.
 
