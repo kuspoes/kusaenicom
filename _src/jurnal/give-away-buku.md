@@ -44,6 +44,7 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
     <input type="text" name="twitter" placeholder="@twitter atau 08XXXXXXXX">
     <label>Buku yg diinginkan: </label>
     <p class="sidenote small">Silakan kunjungi <a href="/baca">halaman baca</a> untuk melihat cover bukunya</p>
+    <p class="sidenote small">Murder in The Croocked House sudah diklaim oleh Dryanka</p>
     <select class="sbuku" name="buku">
         <option value="janurireng">Janur Ireng - Simpleman</option>
         <option value="sewudino">Sewu Dino - Simpleman</option>
