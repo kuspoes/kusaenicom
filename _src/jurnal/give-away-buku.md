@@ -44,7 +44,6 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
     <input type="text" name="twitter" placeholder="@twitter atau 08XXXXXXXX">
     <label>Buku yg diinginkan: </label>
     <p class="sidenote small">Silakan kunjungi <a href="/baca">halaman baca</a> untuk melihat cover bukunya</p>
-    <p class="sidenote small">Murder in The Croocked House sudah diklaim oleh Dryanka</p>
     <select class="sbuku" name="buku">
         <option value="janurireng">Janur Ireng - Simpleman</option>
         <option value="sewudino">Sewu Dino - Simpleman</option>
@@ -62,6 +61,13 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
 
 
  <p class="sidenote">Untuk peserta yang beruntung akan dihubungi melalui email , akun twitter atau nomer <i>handphone</i>. Pengiriman melalui layanan POS Indonesia. <i>Giveaway</i> ini tidak dipungut biaya apapun.</p>
- <p class="sidenote">Keputusan atas pemenang tidak bisa diganggu gugat!</p>
+
+<p class="sidenote">Keputusan atas pemenang tidak bisa diganggu gugat!</p>
+
+### Update
+
+ - 14 September 2022 : Buku Murder in The Croocked House sudah diklaim oleh Dryanka
+
+
 
 &nbsp;
