@@ -66,7 +66,8 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
 
 ### Update
 
- - 14 September 2022 : Buku Murder in The Croocked House sudah diklaim oleh Dryanka
+ - 14 September 2022 : Buku Murder in The Croocked House sudah diklaim oleh Dryanka,
+ - 14 September 2022 : Buku Sewu Dino sudah diklaim oleh Vera,
 
 
 
