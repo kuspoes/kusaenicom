@@ -46,7 +46,6 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
     <p class="sidenote small">Silakan kunjungi <a href="/baca">halaman baca</a> untuk melihat cover bukunya</p>
     <select class="sbuku" name="buku">
         <option value="janurireng">Janur Ireng - Simpleman</option>
-        <option value="sewudino">Sewu Dino - Simpleman</option>
         <option value="ranjatkembang">Ranjat Kembang - Simpleman</option>
         <option value="karungnyawa">Karung Nyawa - Haditha</option>
         <option value="gending">Gending Pencabut Nyawa - Diosetta</option>
