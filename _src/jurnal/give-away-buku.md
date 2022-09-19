@@ -29,7 +29,7 @@ Oleh karena itu saya memutuskan daripada buku yang sudah selesai saya baca rusak
 
 Kondisi buku masih lumayan bagus dan layak, mungkin ada sedikit kusut dan kotor dibeberapa halaman.
 
-Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi form *giveaway* dibawah ini. Periode pendaftaran sampai dengan tanggal **25 September 2022**.
+Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi form *giveaway* dibawah ini. Periode pendaftaran sampai dengan bukunya habis.
 
 ### Form ikut serta giveaway
 
