@@ -49,7 +49,6 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
         <option value="ranjatkembang">Ranjat Kembang - Simpleman</option>
         <option value="karungnyawa">Karung Nyawa - Haditha</option>
         <option value="gending">Gending Pencabut Nyawa - Diosetta</option>
-        <option value="malice">Malice - Keigo Higashino</option>
         <option value="newcomer">The New Comer - Keigo Higashino</option>
     </select>
     <label>Alasan kenapa kamu yang harus dikirim:</label>
@@ -67,6 +66,7 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
 
  - 14 September 2022 : Buku Murder in The Croocked House sudah diklaim oleh Dryanka,
  - 14 September 2022 : Buku Sewu Dino sudah diklaim oleh Vera,
+ - 25 September 2022 : Buku Malice sudah diklaim Jauhari,
 
 
 

@@ -1,6 +1,6 @@
-import Server from "https://deno.land/x/lume@v1.10.4/core/server.ts";
-import expires from "https://deno.land/x/lume@v1.10.4/middlewares/expires.ts";
-import notFound from "https://deno.land/x/lume@v1.10.4/middlewares/not_found.ts";
+import Server from "https://deno.land/x/lume@v1.11.4/core/server.ts";
+import expires from "https://deno.land/x/lume@v1.11.4/middlewares/expires.ts";
+import notFound from "https://deno.land/x/lume@v1.11.4/middlewares/not_found.ts";
 
 const s = new Server({
    port: 8080,
@@ -14,4 +14,4 @@ s.use(notFound({
 }))
 s.start();
 
-console.log(`Listening on port: ${ port } `);
+console.log(`Listening on port: 8080 `);
