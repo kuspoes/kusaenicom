@@ -254,6 +254,19 @@ header {
 
 span.cool:hover { color: #ef476f;  } 
 
+.kus_pp {
+	width: 550px;
+	margin: 0px auto;
+}
+
+.kus_pp .kus_avatar {
+	float:left;
+	width: 150px;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	margin-right: 12px;
+}
+
 p {
 	margin: 0.5em auto 1em;
 	font:1.25em/1.65 var(--serif);
@@ -730,20 +743,25 @@ img.herokus {
 
 .gals, .galsX {
     display: flex;
-	 align-items: flex-start;
+	align-items: flex-start;
     margin-bottom: -10px;
     border-radius: .375rem;
 }
 
 .galsX {
 	width: 55%;
-	border: 1px rgba(0, 0, 0, 0.09) solid;
-	margin: 2em auto;
+	/*border: 1px rgba(0, 0, 0, 0.09) solid;*/
+	margin: 2em auto 0em auto;
 	padding: 10px;
 }
 
 .img_lone {
     width: 42%;
+    border-radius: .375rem;
+}
+
+.img_lone_max {
+    width: 55%;
     border-radius: .375rem;
 }
 
@@ -758,7 +776,7 @@ p.img-sidenote {
 	width: 90%
 }
 
-.gcaption {
+.gcaption, .gcaption_5 {
 	font: .85em var(--sans);
 	text-align: center;
 	color: var(--gray);
@@ -766,6 +784,10 @@ p.img-sidenote {
 	margin-bottom: 2em;
 }
 
+.gcaption_5 {
+	width: 50%;
+	text-align: justify;
+}
 /* post subs */
 .post_subs {
 	width: 550px;
