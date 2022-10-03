@@ -755,6 +755,10 @@ img.herokus {
 	padding: 10px;
 }
 
+.galsX:hover {
+	filter: none;
+}
+
 .img_lone {
     width: 42%;
     border-radius: .375rem;
@@ -763,6 +767,10 @@ img.herokus {
 .img_lone_max {
     width: 55%;
     border-radius: .375rem;
+}
+
+.sephia {
+	filter: grayscale(1);
 }
 
 .flex-1 {
