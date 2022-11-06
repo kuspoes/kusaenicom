@@ -1,7 +1,7 @@
 {
   "imports": {
     "lume": "https://deno.land/x/lume@v1.11.4/mod.ts",
-    "lume/": "https://deno.land/x/lume@v1.11.4/",
+    "lume/": "https://deno.land/x/lume@v1.12.1/",
     "https://deno.land/x/lume/": "https://deno.land/x/lume@v1.11.4/"
   }
 }

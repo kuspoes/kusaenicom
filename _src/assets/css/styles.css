@@ -146,6 +146,10 @@ mark {
 	margin:1em auto
 }
 
+.hidden {
+	display: none;
+}
+
 .justify {
 	text-align: right;
 }

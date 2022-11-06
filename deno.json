@@ -1,8 +1,8 @@
 {
-    "importMap": "import_map.json",
-    "tasks": {
-      "build": "deno task lume",
-      "serve": "deno task lume -s",
-      "lume": "deno eval \"import 'lume/task.ts'\" --"
-    }
+  "importMap": "import_map.json",
+  "tasks": {
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "lume": "deno eval \"import 'lume/task.ts'\" --"
   }
+}
