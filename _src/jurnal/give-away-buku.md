@@ -46,7 +46,6 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
     <p class="sidenote small">Silakan kunjungi <a href="/baca">halaman baca</a> untuk melihat cover bukunya</p>
     <select class="sbuku" name="buku">
         <option value="karungnyawa">Karung Nyawa - Haditha</option>
-        <option value="gending">Gending Pencabut Nyawa - Diosetta</option>
     </select>
     <label>Alasan kenapa kamu yang harus dikirim:</label>
     <textarea name="alasan" rows="6"></textarea>
@@ -65,7 +64,7 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
  - 14 September 2022 : Buku Sewu Dino sudah diklaim oleh Vera,
  - 25 September 2022 : Buku Malice sudah diklaim Jauhari,
  - 20 Desember 2022 : Buku Ranjat Kembang, Janur Ireng, dan Newcomer <i>sold out</i>
-
+ - 6 Januari 2023 : Buku Gending Pencabut Nyawa sudah diklaim oleh Bella,
 
 
 &nbsp;
