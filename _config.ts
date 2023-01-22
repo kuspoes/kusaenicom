@@ -2,10 +2,11 @@ import lume from "lume/mod.ts";
 import base_path from "lume/plugins/base_path.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
 import date from "lume/plugins/date.ts";
-import id from "https://deno.land/x/date_fns/locale/id/index.js";
+//import id from "https://deno.land/x/date_fns/locale/id/index.js";
 import inline from "lume/plugins/inline.ts";
 //import minify from "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/minify/minify.ts"
 import { Language, minify } from "https://deno.land/x/minifier/mod.ts";
+import id from "npm:date-fns/locale/id/index.js";
 
 function minifyHTML(page) {
     page.content = minify(Language.HTML, page.content);
@@ -29,7 +30,7 @@ site.use(base_path())
        formats: {
           "POST": "dd MMM yy"
        },
-       locales: {
+      locales: {
           id
        }
     }))
