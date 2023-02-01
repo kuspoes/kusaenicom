@@ -28,4 +28,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: kus
+          import-map: "./import_map.json"
           entrypoint: server.ts
