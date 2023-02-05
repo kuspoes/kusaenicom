@@ -2,4 +2,21 @@
 url: /.well-known/webfinger
 ---
 
-{"subject":"acct:poes@mstdn.id","aliases":["https://mstdn.id/@poes","https://mstdn.id/users/poes"],"links":[{"rel":"http://webfinger.net/rel/profile-page","type":"text/html","href":"https://mstdn.id/@poes"},{"rel":"self","type":"application/activity+json","href":"https://mstdn.id/users/poes"},{"rel":"http://ostatus.org/schema/1.0/subscribe","template":"https://mstdn.id/authorize_interaction?uri={uri}"}]}
+{
+    "subject":"acct:poes@mstdn.id",
+    "aliases":["https://mstdn.id/@poes","https://mstdn.id/users/poes"],
+    "links":[{
+                "rel":"http://webfinger.net/rel/profile-page",
+                "type":"text/html",
+                "href":"https://mstdn.id/@poes"
+            },
+            {
+                "rel":"self",
+                "type":"application/activity+json",
+                "href":"https://mstdn.id/users/poes"
+            },
+            {
+                "rel":"http://ostatus.org/schema/1.0/subscribe",
+                "template":"https://mstdn.id/authorize_interaction?uri={uri}"
+            }]
+}
