@@ -1,8 +1,8 @@
 {
   "imports": {
-    "lume": "https://deno.land/x/lume@v1.15.1/mod.ts",
-    "lume/": "https://deno.land/x/lume@v1.15.1/",
-    "https://deno.land/x/lume/": "https://deno.land/x/lume@v1.15.1/",
+    "lume": "https://deno.land/x/lume@v1.15.3/mod.ts",
+    "lume/": "https://deno.land/x/lume@v1.15.3/",
+    "https://deno.land/x/lume/": "https://deno.land/x/lume@v1.15.3/",
     "npm:date-fns@2.29.3": "https://esm.sh/date-fns@2.29.3",
     "npm:markdown-it-attrs@4.1.6": "https://esm.sh/markdown-it-attrs@4.1.6",
     "npm:markdown-it@13.0.1": "https://esm.sh/markdown-it@13.0.1",
