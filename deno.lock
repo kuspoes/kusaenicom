@@ -326,6 +326,7 @@
     "https://deno.land/x/imagemagick_deno@0.0.19/src/statistics.ts": "a9122f555b565d9869dcc9070d77febc54f2e12324932c6b8619e1a94b599885",
     "https://deno.land/x/imagemagick_deno@0.0.19/src/virtual-pixel-method.ts": "ae2f0520e05b382299e4d41f4d7e2c67baf727ef7c816037e601c978948b1451",
     "https://deno.land/x/imagemagick_deno@0.0.19/src/wasm/magick.ts": "b5ec7d6c3c7379f8f9ba0c23238f7024aa35f3a15edb2d1cbca4ccc44a186ac9",
+    "https://deno.land/x/imagemagick_deno@0.0.19/src/wasm/magick_native.js": "2203872b5a96cb5a96c596898849a862b2ba083455ed0f3a445ba060f8e13f82",
     "https://deno.land/x/lume@v1.15.3/cli.ts": "2565143a668f57cce01b6d250b99635f72a796e2f97c27c4e5b0bd71aae30704",
     "https://deno.land/x/lume@v1.15.3/cli/build.ts": "819f0c7a7d3657da9b7dc92beca735352fcd0f8c18a27826a525903dac103b13",
     "https://deno.land/x/lume@v1.15.3/cli/create.ts": "3b5ed82e4c81858b53f929502ab3dc7c3e2f63be80c1d41011bc566442bbb4e9",
