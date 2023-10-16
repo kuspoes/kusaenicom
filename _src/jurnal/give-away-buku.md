@@ -32,7 +32,7 @@ Kondisi buku masih lumayan bagus dan layak, mungkin ada sedikit kusut dan kotor 
 Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi form *giveaway* dibawah ini. Periode pendaftaran sampai dengan bukunya habis.
 
 ### Form ikut serta giveaway
-
+<!--
  <div class="formGet">
  <form class="getForm" accept-charset="UTF-8" action="https://getform.io/f/2662bfe2-dc8e-4758-968b-83c72161f407" method="POST" enctype="multipart/form-data" target="_blank">
     <label>Nama: </label>
@@ -52,6 +52,11 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
     <button type="submit">Kirim</button>
  </form>
  </div>
+-->
+
+**<mark>Mohon maaf, semua buku sudah terkirim</mark>**
+
+Kamu bisa *follow* kami di <a href="https://twitter.com/kuspoes">Twitter</a> atau Mastodon di <a href="https://kauaku.us/@kuspoes">@kuspoes@kauaku.us</a> untuk mendapatkan informasi *giveaway* selanjutnya.
 
 
  <p class="sidenote">Untuk peserta yang beruntung akan dihubungi melalui email , akun twitter atau nomer <i>handphone</i>. Pengiriman melalui layanan POS Indonesia. <i>Giveaway</i> ini tidak dipungut biaya apapun.</p>
