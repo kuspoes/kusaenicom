@@ -56,7 +56,7 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
 
 **<mark>Mohon maaf, semua buku sudah terkirim</mark>**
 
-Kamu bisa *follow* kami di <a href="https://twitter.com/kuspoes">Twitter</a> atau Mastodon di <a href="https://kauaku.us/@kuspoes">@kuspoes@kauaku.us</a> untuk mendapatkan informasi *giveaway* selanjutnya.
+Kamu bisa *follow* kami di <a href="https://twitter.com/kuspoes">Twitter</a> atau Mastodon di <a href="https://kauaku.us/@poes">@poes@kauaku.us</a> untuk mendapatkan informasi *giveaway* selanjutnya.
 
 
  <p class="sidenote">Untuk peserta yang beruntung akan dihubungi melalui email , akun twitter atau nomer <i>handphone</i>. Pengiriman melalui layanan POS Indonesia. <i>Giveaway</i> ini tidak dipungut biaya apapun.</p>
