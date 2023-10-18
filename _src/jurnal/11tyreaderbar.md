@@ -9,12 +9,12 @@ tags:
 kategori: jurnal
 code: true
 favorit: false
-comments: true
+comment: true
 ---
 
 Reader Bar awalnya dibuat untuk [jQuery](https://jquery.com) yang dipergunakan untuk meng-visualisasikan panjang dan posisi *scroll* halaman melalui garis memanjang horisontal (biasanya ada di pinggir bagian atas halaman) dan sebuah tombol fungsi untuk kembali ke awal halaman.
 
-Di [Eleventy](https://11ty.dev) sendiri sudah ada sebuah *plugin* untuk membantu menampilkan Reader Bar dengan mudah yaitu dengan memasang [Eleventy Reader Bar Plugin](https://github.com/thigoap/eleventy-plugin-reader-bar). Cara pemasangannya sangat mudah, yaitu 
+Di [Eleventy](https://11ty.dev) sendiri sudah ada sebuah *plugin* untuk membantu menampilkan Reader Bar dengan mudah yaitu dengan memasang [Eleventy Reader Bar Plugin](https://github.com/thigoap/eleventy-plugin-reader-bar). Cara pemasangannya sangat mudah, yaitu
 
 1. *Install package* melalui NPM
 ```bash
@@ -47,7 +47,7 @@ Sayangnya saya tidak suka dengan tampilan *plugin* ini, yaitu dengan adanya *gap
 
 Saya tidak ingin ada *gap* jadi harus memodifikasi nilai di CSSnya. Saya tidak menerapkan CSS baru untuk menimpa aturan *default*nya, namun memilih untuk merubahnya langsung dari kode sumber. Sedikit lebih rumit tapi hasilnya memuaskan.
 
-1. `Clone` kode sumber lewat Git ke lokal, saya menyimpannya di folder `_tmp` di `root` jurnal ini. 
+1. `Clone` kode sumber lewat Git ke lokal, saya menyimpannya di folder `_tmp` di `root` jurnal ini.
 ```bash
 $ git clone https://github.com/thigoap/eleventy-plugin-reader-bar.git  _tmp
 $ cd _tmp

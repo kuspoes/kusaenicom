@@ -9,7 +9,7 @@ tags: jurnal
 kategori: jurnal
 code: true
 keywords: 'eleventy, 11ty, json, global data, tutorial, shortcode'
-comments: true
+comment: true
 ---
 
 Di halaman [bacaan](/baca) saya ingin menampilkan relasi buku terkait dengan *review* buku yang saya tulis. Tampilan yang diinginkan adalah seperti [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) dengan gambar dan deskripsi. Gambarnya nanti bisa diisi `coverImg` dari masing - masing artikel baca yang sudah saya tulis.
@@ -50,7 +50,7 @@ permalink : /baca/data.json
     keywords: 'Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet'
     coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg'
     penulis: 'Simpleman'
-    genre: 
+    genre:
         - Thriller
         - Mistery
         - Jawa
@@ -66,7 +66,7 @@ permalink : /baca/data.json
 ---
 ```
 
-Saya mengambil beberapa *field* yang penting dan hendak dipakai nantinya. Sedangkan hasilnya adalah sebagai berikut 
+Saya mengambil beberapa *field* yang penting dan hendak dipakai nantinya. Sedangkan hasilnya adalah sebagai berikut
 
 ```json
 {
@@ -161,7 +161,7 @@ const hasilData = await relasi(data, judul);
 ```
 <p class="code_cap">Kita sebut ini sebagai kode pertama, silakan lihat di seksi <i>update</i> untuk kode kedua dan ketiga sebagai alternatif.</p>
 
-Disini *string* `judul` harus diamankan dengan membuat `judul` menjadi huruf kecil semua `toLowerCase()` untuk menghindari kesalahan tipo saat mengetik judul. 
+Disini *string* `judul` harus diamankan dengan membuat `judul` menjadi huruf kecil semua `toLowerCase()` untuk menghindari kesalahan tipo saat mengetik judul.
 
 ### Update { .merah }
 
@@ -172,7 +172,7 @@ const response = await fetch('https://kusaeni.com/baca/data.json');
 const data     = await response.json();
 const hasilData= data.find(function(caridata) {
     return caridata.title.toLowerCase() === judul.toLowerCase()
-}); 
+});
 ```
  <p class="sidenote">Sebutlah ini sebagai kode kedua.</p>
 
@@ -183,10 +183,10 @@ Sampai disini jika *tags* `{% related "judul" %}`dimasukkan ke dalam artikel, ma
 ```js
 return `<div class="flex">
 <img class="shadow-md" src="${hasilData.coverImg}"  >
-<div class="flex-1"> 
+<div class="flex-1">
   <a href="${hasilData.url}">${hasilData.title}</a>
   <dl>
-    <dt>${hasilData.penulis} </d> 
+    <dt>${hasilData.penulis} </d>
     <dd>${rese} ...</dd>
   </dl>
 </div>
@@ -214,9 +214,9 @@ const hasilData = await relasi(data, judul);
  var rese = hasilData.resensi.substr(0, 200)
  return `<div class="flex">
     <img class="shadow-md" src="${hasilData.coverImg}">
-    <div class="flex-1"> 
+    <div class="flex-1">
     <a href="${hasilData.url}">${hasilData.title}</a>
-    <dl><dt>${hasilData.penulis} </dt> 
+    <dl><dt>${hasilData.penulis} </dt>
       <dd>${rese} ...</dd></dl>
     </div></div>`;} catch (err) {console.log(err)}
 const print = async () => {
@@ -236,7 +236,7 @@ Saya menambahkan fungsi yang sama untuk menampilkan relasi artikel di *collectio
 Di jurnal saya hanya ingin menampilkan relasi artikel dengan format `judul`, `url`, dan `desk` atau deskripsi. Saya memakai fungsi lain *shortcodes* yaitu *paired shortcodes*. Seperti diatas, tulis kode berikut di *file .eleventy.js*
 
 ```js
-eleventyConfig.addPairedShortcode("prelated", 
+eleventyConfig.addPairedShortcode("prelated",
     function(desk, judul, url){
     return `<div class="relasi-artikel">
         <h4 class="header-relasi">Artikel terkait</h4>
@@ -274,10 +274,10 @@ Alhamdulillah dengan fungsi *shortcodes* ini saya bisa menampilkan relasi bacaan
 2. Proses ini harus mengambil `data.json` dan melakukan `parse` serta *query* satu per satu artikel yang memiliki *shortcodes* `related` membuat waktu *build* menjadi lebih lama, sekitar 19 - 30 ms dimana sebelumnya sekitar 9 - 17 ms. {#build}
 {% endraw %}
 
-Saya melakukan **DEBUG** `build` *eleventy* dengan hasil sebagai berikut: 
+Saya melakukan **DEBUG** `build` *eleventy* dengan hasil sebagai berikut:
 
 - Untuk kode *query* pertama membutuhkan waktu sekitar 8.02 detik untuk memproses 28 *files*,
-- Dan butuh waktu 9,02 detik untuk kode yang kedua. 
+- Dan butuh waktu 9,02 detik untuk kode yang kedua.
 
  <p class="sidenote">Uji coba dilakukan dengan mengnonatifkan <i>plugin</i> Eleventy Lazy Images. Jika <i>plugin</i> ini diaktifkan akan membutuhkan waktu sekitar 1 - 2 detik lebih lama. Ini akan menjadi <a href="https://github.com/11ty/eleventy/issues/1346">masalah</a> saat mulai melakukan <code>build</code> dengan jumlah halaman yang banyak.</p>
 
@@ -288,11 +288,11 @@ Saat di`build` di [Netlify](https://netlify.com) membutuhkan tambahan waktu untu
 
 
 ```js
-eleventyConfig.addPairedShortcode("relatedpair", 
+eleventyConfig.addPairedShortcode("relatedpair",
     function(resensi, coverImg, judul, url){
 
            let coverUrl = "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/"
-            return `<div class="flex"> 
+            return `<div class="flex">
             <img class="shadow-md" src="${coverUrl}${coverImg}">
             <div class="flex-1"> <b><a href="${url}" title="${judul}">${judul}</a></b><dd>${resensi} ...</dd>
             </div>
@@ -309,7 +309,7 @@ Dengan mempergunakan *paired shortcodes* ini, waktu `build` **dipangkas hampir 3
  <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/chart_9ZDZx1SgM.png" alt="Chart Perbandingan Build Time" />
 
 
-### 🔥 Lume { #lume } 
+### 🔥 Lume { #lume }
 
 Untuk pengguna [Lume](https://lumeland.github.io) bisa juga mempergunakan fungsi kode diatas. Jika di 11ty dinamakan sebagai `shortcodes` maka di Lume disebut dengan `helper`.
 

@@ -10,7 +10,7 @@ tags:
 kategori: jurnal
 code: false
 favorit: false
-comments: false
+comment: true
 ---
 
  <div id="allbox">

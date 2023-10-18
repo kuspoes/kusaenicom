@@ -1,18 +1,18 @@
 ---
 layout: content/post.njk
-title: 'Migrasi dari Whatsapp' 
-ringkasan: 'Cara memindahkan data percakapan dari Whatsapp ke Telegram, Signal, atau BIP' 
+title: 'Migrasi dari Whatsapp'
+ringkasan: 'Cara memindahkan data percakapan dari Whatsapp ke Telegram, Signal, atau BIP'
 keywords: 'Whatsapp, Signal, Telegram, BIP, migration, migrasi, ekspor, data, export, impor,
 pindah'
 date: 2021-05-16
-update: true 
+update: true
 tags:
     - jurnal
 kategori: jurnal
 code: false
 favorit: false
 templateEngine: njk,md
-comments: true
+comment: true
 ---
 
 Sesuai dengan pemberitahuan dari Whatsapp mengenai [penundaan penerapan *privacy policy*](https://blog.whatsapp.com/giving-more-time-for-our-recent-update) maka per 16 Mei 2021 rencananya akan diaktifkan.
@@ -22,7 +22,7 @@ Bagi yang tidak setuju dengan *privacy policy* terbaru ini maka resikonya adalah
  {% terkait "Signal buruk Whatsapp", "/jurnal/signal" %}
  Perubahan privacy policy Whatsapp, resiko dan solusi alternatifnya.
  {% endterkait %}
- 
+
 Meski begitu sampai saat ini tidak ada pemberitahuan resmi di laman blog Whatsapp. Namun untuk berjaga - jaga, berikut adalah cara untuk me-mindahkan atau *exports* data percakapan ke penyedia layanan *messaging* lain seperti Telegram atau Signal.
 
 ### Update
@@ -77,7 +77,7 @@ Proses ekspor data dari Whatsapp sama mudahnya dengan Telegram. Tinggal ekspor d
 
 ### Kesimpulan
 
-*Privacy Policy* Whatsapp terbaru memang menjadi penyakit yang meng-gerogoti privasi penggunanya dan berpindah ke layanan lain jelas menjadi pilihan utama. 
+*Privacy Policy* Whatsapp terbaru memang menjadi penyakit yang meng-gerogoti privasi penggunanya dan berpindah ke layanan lain jelas menjadi pilihan utama.
 
 Saya pribadi lebih memilih pindah ke Signal meski untuk urusan impor data masih keteteran dibandingkan kompetitor. Harapannya adalah dalam waktu dekat Signal bisa merilis *tools* untuk impor data dari Whatsapp.
 

@@ -8,7 +8,7 @@ tags:
 kategori: jurnal
 code: false
 favorit: false
-comments: true
+comment: true
 ---
 
 Saya baru saja berpindah dari Hugo ke Eleventy, dan salah satu hal yang terasa hilang dari Hugo (dan Jekyll) adalah fitur `draft` artikel.

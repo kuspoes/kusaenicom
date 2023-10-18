@@ -8,7 +8,7 @@ tags:
     - jurnal
 kategori: jurnal
 favorit: false
-comments: true
+comment: true
 engine: md, njk
 ---
 

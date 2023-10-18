@@ -9,18 +9,18 @@ favorit: false
 kategori: jurnal
 tags: jurnal
 templateEngine: njk,md
-comments: true
+comment: true
 ---
 
 Awal tahun ini pengguna app Whatsapp mendapatkan notifikasi perubahan *[privacy policy](https://www.whatsapp.com/legal/privacy-policy)* baru dari Facebook pemilik dari layanan Whatsapp.
 
 Isi dari notifikasi tersebut adalah Facebook memberikan ultimatum kepada 2 Milyar penggunanya di seluruh dunia untuk setuju membagikan data pribadi mereka dengan jejaring sosial (Facebook) atau akun Whatsapp mereka dihapus.
 
-Notifikasi ini sudah beredar, sehingga pengguna Whatsapp akan menemukan notifikasi saat membuka aplikasi. Bagi pengguna yang tidak setuju, Facebook memberikan tenggat waktu sampai dengan 8 Pebruari 2021. 
+Notifikasi ini sudah beredar, sehingga pengguna Whatsapp akan menemukan notifikasi saat membuka aplikasi. Bagi pengguna yang tidak setuju, Facebook memberikan tenggat waktu sampai dengan 8 Pebruari 2021.
 
 Jika sampai tanggal tersebut masih tidak setuju, maka  mereka tidak akan bisa mempergunakan lagi aplikasi Whatsapp.
 
-Pihak Facebook sendiri sudah sering menyampaikan klaim bahwa aplikasi mereka diamankan dengan [end-to-end encryption](https://www.wired.com/story/facebook-messenger-end-to-end-encryption-default/), sehingga kemungkinan untuk dibobolnya isi percakapan secara online sulit untuk dilakukan. 
+Pihak Facebook sendiri sudah sering menyampaikan klaim bahwa aplikasi mereka diamankan dengan [end-to-end encryption](https://www.wired.com/story/facebook-messenger-end-to-end-encryption-default/), sehingga kemungkinan untuk dibobolnya isi percakapan secara online sulit untuk dilakukan.
 
 Beberapa tahun yang lalu, Facebook pernah memberikan opsi kepada pengguna Whatsapp untuk memilih apakah bersedia memberikan informasi data pribadi kepada Facebook atau tidak. Namun dengan perubahan *privacy policy* yang baru ini maka pengguna tidak lagi memiliki opsi serupa.
 
@@ -44,7 +44,7 @@ Pakar Keamanan dunia Maya Jiten Jain (seperti yang dikutip [Tirto.id](https://ti
 
 Masih segar diingatan tentang **skandal Facebook dan Cambridge** Analytica pada tahun 2015.
 
-Facebook dan Cambridge Analytica mengumpulkan informasi pribadi dari setidaknya 87 juta pengguna Facebook pada tahun 2014. Menurut [Wikipedia](https://id.wikipedia.org/wiki/Skandal_data_Facebook%E2%80%93Cambridge_Analytica) data ini dipergunakan untuk <mark>mempengaruhi pemegang hak pilih sesuai keinginan politikus yang mengkontrak Cambridge Analytica</mark>. 
+Facebook dan Cambridge Analytica mengumpulkan informasi pribadi dari setidaknya 87 juta pengguna Facebook pada tahun 2014. Menurut [Wikipedia](https://id.wikipedia.org/wiki/Skandal_data_Facebook%E2%80%93Cambridge_Analytica) data ini dipergunakan untuk <mark>mempengaruhi pemegang hak pilih sesuai keinginan politikus yang mengkontrak Cambridge Analytica</mark>.
 
 Setelah skandal kasus ini *booming* di tahun 2015, Facebook mendapatkan kecaman secara luas dari masyarakat yang membuat Facebook meminta maaf secara terbuka dan menyebabkan anjloknya harga saham Facebook.
 
@@ -64,9 +64,9 @@ Selain memiliki fitur mengenkripsi pesan, Signal juga memberikan fitur enkripsi 
 
 Untuk mempergunakan Signal, pengguna tidak dibebankan biaya apapun alias gratis. Aplikasi ini dibangun diatas pondasi *independent non-profit*  dan *open source software* serta tidak berafiliasi dengan perusahaan apapun, se-hingga tidak memiliki *beban moral* terhadap penyokongnya.
 
-Selain Signal, [Telegram](https://telegram.org) bisa dijadikan alternatif untuk Whatsapp. 
+Selain Signal, [Telegram](https://telegram.org) bisa dijadikan alternatif untuk Whatsapp.
 
-Telegram adalah aplikasi *messenger*  yang pengembangan dan biaya di-sokong oleh Nikolai dan Pavel Durov bersaudara jutawan dari Rusia. Meskipun begitu beredar berita bahwa Durov hendak [mengkomersilkan](https://nextren.grid.id/read/012482571/telegram-akan-buat-fitur-premium-untuk-pebisnis-apa-perbedaannya?page=all) layanan Telegram. 
+Telegram adalah aplikasi *messenger*  yang pengembangan dan biaya di-sokong oleh Nikolai dan Pavel Durov bersaudara jutawan dari Rusia. Meskipun begitu beredar berita bahwa Durov hendak [mengkomersilkan](https://nextren.grid.id/read/012482571/telegram-akan-buat-fitur-premium-untuk-pebisnis-apa-perbedaannya?page=all) layanan Telegram.
 
 Selain bukan sebuah aplikasi *open source*, belakangan ada laporan bahwa salah satu fitur Telegram yaitu *People Nearby* bisa disalah gunakan untuk [mengetahui posisi lokasi pengguna Telegram](https://blog.ahmed.nyc/2021/01/if-you-use-this-feature-on-telegram.html).  Dilain pihak Telegram me-nyangkal bahwa fitur ini bermasalah/*bug* dengan menyebut bahwa secara *default* fitur People Nearby dimatikan. Terserah pengguna untuk meng-aktifkan atau tidak.
 
@@ -92,12 +92,12 @@ Selain *open source*, memiliki fitur yang sama dengan Whatsapp, Signal lebih ama
 
 **13 Januari 2021**
 
-Whatsapp sepertinya cukup panik dengan aksi pindah ke Signal. Rabu, 13 Januari 2021 Whatsapp menanyangkan iklan mengenai maksud dari ke-bijakan *privacy policy*nya. 
+Whatsapp sepertinya cukup panik dengan aksi pindah ke Signal. Rabu, 13 Januari 2021 Whatsapp menanyangkan iklan mengenai maksud dari ke-bijakan *privacy policy*nya.
 
  <blockquote class="twitter-tweet block wi-auto"><p lang="en" dir="ltr">Full page ad from WhatsApp in the paper today. This takes me back to the Facebook Free Basics ad campaign some years ago. <a href="https://t.co/18NjYjcfaI">pic.twitter.com/18NjYjcfaI</a></p>&mdash; Chandra R. Srikanth (@chandrarsrikant) <a href="https://twitter.com/chandrarsrikant/status/1349181160107110401?ref_src=twsrc%5Etfw">January 13, 2021</a></blockquote>
- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
- 
+
 
 Kenapa di India?
 
