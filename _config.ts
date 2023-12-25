@@ -6,9 +6,9 @@ import inline from "lume/plugins/inline.ts";
 //import { Language, minify } from "https://deno.land/x/minifier/mod.ts";
 import id from "npm:date-fns/locale/id/index.js";
 
-function minifyHTML(page) {
-  page.content = minify(Language.HTML, page.content);
-}
+//function minifyHTML(page) {
+//  page.content = minify(Language.HTML, page.content);
+//}
 
 const site = lume({
   src: "_src",
