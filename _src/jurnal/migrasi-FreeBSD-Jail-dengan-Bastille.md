@@ -6,6 +6,8 @@ date: 2023-05-07
 tags:
   - jurnal
   - freebsd
+  - tutorial
+keywords: "freebsd, jail, vps, tutorial, vultr, bsd"
 kategori: jurnal
 code: true
 favorit: true
