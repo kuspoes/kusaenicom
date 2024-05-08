@@ -2,7 +2,7 @@
 layout: content/post.njk
 title: Migrasi Jail antar VPS dengan BastilleBSD
 ringkasan: "sebelumnya memindahkan container tak pernah semudah dan secepat ini"
-date: 2023-05-07
+date: 2024-05-07
 tags:
   - jurnal
   - freebsd
