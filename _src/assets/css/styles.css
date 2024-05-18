@@ -312,7 +312,8 @@ p::selection {
     margin-bottom: 3em;
 }
 
-h3 {
+h3,
+h2 {
     font-size: 22px;
     font-family: var(--sans);
     width: 550px;
@@ -924,6 +925,18 @@ input:focus {
     color: #373d20;
 }
 
+h2#footnote-label {
+    font-size: 1em;
+}
+
+section.footnotes {
+    margin-bottom: 3em;
+}
+section.footnotes ol > li p {
+    font: normal 0.88em var(--sans);
+    display: inline;
+}
+
 @media only screen and (max-width: 1300px) and (min-width: 601px) {
     .lone_traveller {
         width: 90%;
@@ -1038,7 +1051,7 @@ select {
 }
 
 option:hover,
-option:checked {
+f option:checked {
     background-color: yellow;
 }
 
