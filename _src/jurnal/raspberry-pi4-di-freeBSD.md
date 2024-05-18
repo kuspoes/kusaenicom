@@ -299,7 +299,7 @@ _Package_ miniflux sudah tersedia di FreeBSD dan bisa di*install* dengan perinta
 Kemudian buat pengaturan database di miniflux, _edit file_ `/usr/local/etc/miniflux.env` dan tambahkan database _connection_ seperti berikut
 
 ```txt
-DATABASE_URL=`postgres://mnflux:miniflux@10.1.1.1/miniflux?sslmode=disable`
+DATABASE_URL=`postgres://mnflx:miniflux@10.1.1.1/miniflux?sslmode=disable`
 ```
 
 Karena postgresql di host di Jail yang lain maka saya gunakan _connection string_ dengan format seperti diatas. Selanjutnya lakukan migrasi dan buat akun `admin` untuk miniflux.
