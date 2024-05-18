@@ -4,6 +4,7 @@
     "specifiers": {
       "npm:date-fns": "npm:date-fns@2.30.0",
       "npm:date-fns@2.30.0": "npm:date-fns@2.30.0",
+      "npm:highlight.js": "npm:highlight.js@11.8.0",
       "npm:highlight.js@11.8.0": "npm:highlight.js@11.8.0",
       "npm:markdown-it@13.0.2": "npm:markdown-it@13.0.2",
       "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
