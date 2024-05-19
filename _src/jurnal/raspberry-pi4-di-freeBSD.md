@@ -179,7 +179,7 @@ Setelah itu simpan dan masukkan `service pf` ke `rc.conf` dan mulai jalankan den
 [RPI4] # service pf start
 ```
 
-### Bootstap dan mulai membuat Jail
+### Bootstrap dan mulai membuat Jail
 
 Sebelum membuat Jail, sistem perlu melakukan `boostrap` atas rilis FreeBSD di `host`. Di atas saya sudah melakukan _update patch_ sampai ke `14.0-RELEASE-p6` sehingga versi ini yang akan saya `bootstrap`.
 
