@@ -6,7 +6,6 @@ import inline from "lume/plugins/inline.ts";
 //import { Language, minify } from "https://deno.land/x/minifier/mod.ts";
 import id from "npm:date-fns/locale/id/index.js";
 import remark from "lume/plugins/remark.ts";
-import lang_bash from "npm:highlight.js/lib/languages/bash";
 
 //function minifyHTML(page) {
 //  page.content = minify(Language.HTML, page.content);
@@ -25,13 +24,7 @@ const site = lume({
 
 site
   .use(base_path())
-  .use(
-    code_highlight({
-      languages: {
-        sh: lang_bash,
-      },
-    }),
-  )
+  .use(code_highlight())
   .use(inline())
   .use(remark())
   .use(
