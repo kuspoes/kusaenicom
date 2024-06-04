@@ -28,7 +28,7 @@ const site = lume({
   src: "_src",
   prettyUrls: true,
   includes: "_theme",
-  //location: new URL("https://kusaeni.com"),
+  location: new URL("https://kusaeni.com"),
   server: {
     middlewares: [cors]
   }
