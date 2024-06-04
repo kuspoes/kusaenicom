@@ -1,0 +1,17 @@
+{
+    "title": "kusaeni",
+    "url": "https://kusaeni.com",
+    "description": "Blog milik Kusaeni, menulis apa saja terutama tentang info internet, fotografi, traveling, dan resensi buku",
+    "meta_key": "Kusaeni, kuspoes, fotografi, landscape, travelling, resensi, buku, misteri",
+    "feed": {
+        "subtitle": "Saya menulis apa saja terutama tentang info internet, fotografi, traveling, dan resensi buku",
+        "filename": "feed.xml",
+        "path": "/feed/feed.xml",
+        "id": "https://kusaeni.com/"
+    },
+    "author": {
+        "name": "Kusaeni",
+        "email": "kus@kusaeni.com",
+        "url": "https://kusaeni.com/tentang/"
+    }
+}
