@@ -1,8 +1,6 @@
 ---
 layout: layout/jurnal.vto
 title: Kusaeni suka fotografi
-templateEngine: md
-kusus: true
 keywords: fotografi, landscape, kusaeni, @kusaeni, ig @kusaeni
 kategori: fotografi
 ---
