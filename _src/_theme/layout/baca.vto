@@ -1,0 +1,74 @@
+{{ include 'bagian/header.vto'}}
+	<div class="page">
+		<div class="meta">
+            <p class="date">
+                {{ if date }}
+                <time datetime="{{ date }}"> {{ date |> date("id") }}</time>
+                <span class="waktu_baca"> — {{ readingInfo.minutes }} menit membaca</span>
+                {{ /if }}
+            </p>
+            <h1>{{ it.title }}</h1>
+            {{ if it.ringkasan }}
+                <p class="subtitle">{{ it.ringkasan }}</p>
+            {{ /if }}
+        </div>
+        <div class="content">
+        <div class="selayang">
+			<div class="selayang__cover">
+            <img class="layang" src="{{ coverImg }}" alt="{{ title }}">
+			</div>
+			<div class="selayang__meta">
+				<dl>
+               <dt>Penulis</dt>
+               <dd>{{ penulis }}</dd>
+               <dt>Bahasa</dt>
+               <dd>{{ bahasa }}</dd>
+               <dt>Format</dt>
+               <dd>{{ format }}</dd>
+               <dt>ISBN</dt>
+               <dd>{{ isbn }}∷ {{ tahun }}</dd>
+               <dt>Rating</dt>
+               <dd><a href="/baca/rating">{{ rating }} dari 5</a></dd>
+               <dt>Beli dimana?</dt>
+               <dd><a href="{{ beli }}" target="_blank">{{ dimana }}</a></dd>
+            </dl>
+			</div>
+</div>
+        {{  if content }}
+            {{ if it.tocx }} {{ if toc.length }}
+        <nav class="toc">
+            <h4>Daftar Isi</h4>
+            <ol>
+                {{ for item of toc }}
+                <li>
+                    <a href="#{{ item.slug }}">{{ item.text }}</a>
+                    {{ if item.children.length }}
+                    <ul>
+                        {{ for child of item.children }}
+                        <li>
+                            <a href="#{{ child.slug }}">{{ child.text }}</a>
+                        </li>
+                        {{ /for }}
+                    </ul>
+                    {{ /if }}
+                </li>
+                {{ /for }}
+            </ol>
+        </nav>
+        {{ /if }} 
+        {{ /if }}
+            {{ content }}
+        {{ /if }}
+        {{ if it.footnotes.length }}
+        <aside role="note" class="footnotes">
+        <h4>Footnotes:</h4>
+            {{ for note of footnotes }}
+                <div class="notes">
+                    <div class="note-id"><a href="#{{ note.refId }}" id="{{ note.id }}">{{ note.label }}</a></div> {{  note.content}}
+                </div>
+            {{ /for }}
+        </aside>
+        {{ /if }}
+        </div>
+	</div>
+{{ include 'bagian/footer.vto' }}

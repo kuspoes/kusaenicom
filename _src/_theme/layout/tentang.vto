@@ -1,0 +1,53 @@
+{{ include "bagian/header.vto" }}
+<div class="page">
+        <div class="meta">
+            <h1>{{ it.title }}</h1>
+            {{ if it.ringkasan }}
+                <p class="subtitle">{{ it.ringkasan }}</p>
+            {{ /if }}
+        </div>
+        <div class="content">
+        {{  if content }}
+            {{ if it.tocx }} {{ if toc.length }}
+        <nav class="toc">
+            <h4>Daftar Isi</h4>
+            <ol>
+                {{ for item of toc }}
+                <li>
+                    <a href="#{{ item.slug }}">{{ item.text }}</a>
+                    {{ if item.children.length }}
+                    <ul>
+                        {{ for child of item.children }}
+                        <li>
+                            <a href="#{{ child.slug }}">{{ child.text }}</a>
+                        </li>
+                        {{ /for }}
+                    </ul>
+                    {{ /if }}
+                </li>
+                {{ /for }}
+            </ol>
+        </nav>
+        {{ /if }} 
+        {{ /if }}
+            {{ content }}
+        {{ /if }}
+        {{ if it.footnotes.length }}
+        <aside role="note" class="footnotes">
+        <h4>Footnotes:</h4>
+            {{ for note of footnotes }}
+                <div class="notes">
+                    <div class="note-id"><a href="#{{ note.refId }}" id="{{ note.id }}">{{ note.label }}</a></div> {{  note.content}}
+                </div>
+            {{ /for }}
+        </aside>
+        {{ /if }}
+        </div>
+<!--
+    <div class="kanan">
+         
+    </div>
+-->
+</div>
+
+{{ include "bagian/footer.vto" }}

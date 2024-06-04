@@ -1,0 +1,17 @@
+---
+layout: layout/content.vto
+title: 'Baca'
+kusus: true
+ringkasan: 'Buku yang sudah dan sedang dibaca'
+---
+
+<div class="baca">
+{{ for buku of search.pages("baca", "date=desc") }}
+    <div class="item_buku">
+        <a href="{{ buku.url }}">
+         <img class="item_cover" src="{{ buku.coverImg }}">
+        </a>
+    </div>
+{{ /for }}    
+</div>
+
