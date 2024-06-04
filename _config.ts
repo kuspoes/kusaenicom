@@ -50,7 +50,19 @@ site
       locales: { id },
     }),
   )
-  .use(feed())
+  .use(feed({
+    output: "feed.xml",
+    query: "type=jurnal",
+    limit: 10,
+    lang: "id",
+    info: {
+      title: "=metas.site",
+      description: "=metas.description"
+    },
+    item: {
+      title: "=title",
+    }
+  }))
   .use(
     codeHighlight({
       theme: {
