@@ -22,7 +22,7 @@ jobs:
 
       - name: Build site
         run: |
-          deno task lumex
+          deno task lume
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
