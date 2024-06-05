@@ -35,7 +35,7 @@ body {
 }
 
 .postitle {
-    width: 25em;
+    width: 30em;
     margin-left: 1em;
 }
 
@@ -241,7 +241,9 @@ img.layang {
     border: 1px solid var(--col_gray);
     border-radius: 0.375em;
     padding: 8px;
-    margin-bottom: 1.3em;
+    margin: 0 1em 1.3em 0;
+    width: 13em;
+    float: left;
 }
 
 span.ter {
@@ -323,7 +325,7 @@ p.sidenote {
 
 .kait p {
     margin-bottom: 0;
-    font-size: 90%;
+    font-size: 85%;
 }
 
 .footer p {
@@ -408,12 +410,12 @@ a.header-anchor, a.header-anchor:visited {
 nav.toc a {
     text-decoration: none;
     border-bottom: 1px dotted #94d2bd;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--col-link);
 }
 
 nav.toc ol li ul li a {
-    font-weight: 300;
+    font-weight: 400;
     border-bottom: 1px dotted #94d2bd;
 }
 
