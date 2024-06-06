@@ -3,7 +3,7 @@ layout: layout/tentang.vto
 title: 'Siapakah Kusaeni?'
 kategori: tentang
 date: 2024-06-03
-templateEngine: vto,md 
+templateEngine: vto,md
 style: '
 .kus_pp .kus_avatar {
     float: left;
@@ -137,4 +137,4 @@ style: '
 
 <p>Saya menulis resensi buku pertama kali sekitar tahun 2009 (sayang arsipnya hilang). Memang agak jarang karena tidak semua buku pada saat itu ditulis resensinya. Namun saat mengalami <i>hiatus</i>, situs ini dulu memakai <a href="https://affectionate-boyd-df8c4e.netlify.app/">halaman depan</a> hanya  tentang daftar buku saja dengan sedikit resensi sebagai penyerta.</p>
 
-<p>Kemudian saya tambahkan juga <a href="{{ '/baca/rating' |> url(true) }}">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>
+<p>Kemudian saya tambahkan juga <a href="/baca/rating">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>

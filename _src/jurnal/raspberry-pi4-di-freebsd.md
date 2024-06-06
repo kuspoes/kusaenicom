@@ -9,6 +9,7 @@ layout: layout/jurnal.vto
 code: true
 tocx: true
 ---
+
 Saya ada Raspberry Pi4 Model B yang rencananya mau dipakai sebagai _home lab_. Raspberry Pi4 ini datang dengan CPU Armv7 di frequensi 1500Mhz 4 cores dan _memory_ 2GB. Untuk _storage_ saya pakai micro SD merek Sandisk berkapasitas 16Gb.
 
 Untuk OS saya _install_ FreeBSD 14 versi [RPI](https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.0/) (khusus untuk Raspberry Pi), harus pakai _image_ ini karena saya sudah coba pakai versi `armv6/7` tidak bisa dipakai. Proses _installasi_ mengikuti standar saja. _Download image_ kemudian _burn_ ke micro SD dan jalankan Raspberry Pi-nya.
@@ -44,6 +45,7 @@ dev.cpu.0.freq: 300
 # sysctl dev.cpu.0.freq=1500
 dev.cpu.0.freq: 1500
 ```
+
 <aside>
 Raspberry Pi sepertinya memang mengatur <i>clock</i> di posisi paling rendah untuk alasan keamanan. Tapi dengan <i>clock</i> paling rendah itu performa masih lumayan bagus.
 </aside>
@@ -165,6 +167,7 @@ antispoof for $ext_if inet
 
 pass in inet proto tcp from any to any port ssh flags S/SA keep state
 ```
+
 <aside>
 untuk isian <code>ext_if</code> saya masukkan <code>genet0</code> karena <i>interface</i> ini yang terhubung ke internet melalu ethernet (kabel). Konfigurasi diatas adalah contoh yang sudah disediakan oleh BastilleBSD dan untuk banyak kejadian bisa berjalan dengan baik.
 </aside>
@@ -269,6 +272,7 @@ Enter password for new role:
 $ createdb miniflux -O mnflx
 $ psql miniflux -c 'create extension hstore'
 ```
+
 <aside>
 Perintah - perintah diatas <i>copy paste</i> dari <a href="https://miniflux.app/docs/database.html">dokumentasi miniflux</a>.
 </aside>
@@ -354,16 +358,17 @@ Jika semua berjalan lancar, maka miniflux bisa diakses melalui _browser_ di alam
  <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/miniflux_L1-UQF0dk0.png?updatedAt=1716043784554" />
 
 ### Penutup
+
 FreeBSD sudah mendukung perangkat Raspberry Pi secara _out of the box_ namun sayangnya masih kurang populer di kalangan pecinta _home lab_ karena Raspberry Pi sendiri sudah membawa OS sendiri yaitu Raspbian yang tentu saja akan berjalan secara optimal di perangkatnya sendiri. Namun FreeBSD bisa menjadi alternatif yang menarik selain Raspbian.
 
- [^1]: Jika tidak ingin meng`reboot` sistem, maka perlu merubah _entry_ di `/etc/hosts` yang menyebut ke _hostname_ yang lama. Cukup perbarui _file_ ini dan simpan.
+[^1]: Jika tidak ingin meng`reboot` sistem, maka perlu merubah _entry_ di `/etc/hosts` yang menyebut ke _hostname_ yang lama. Cukup perbarui _file_ ini dan simpan.
 
- [^2]: Ada banyak Jail _manager_ yang tersedia, daftar lengkapnya bisa dilihat [disini](https://docs.freebsd.org/en/books/handbook/jails/#jail-managers-and-containers).
+[^2]: Ada banyak Jail _manager_ yang tersedia, daftar lengkapnya bisa dilihat [disini](https://docs.freebsd.org/en/books/handbook/jails/#jail-managers-and-containers).
 
- [^3]: Dokumentasi - [PF](https://docs.freebsd.org/en/books/handbook/firewalls/index.html#firewalls-pf). Di halaman yang sama terdapat informasi tentang _firewall_ lainnya yang didukung oleh FreeBSD.
+[^3]: Dokumentasi - [PF](https://docs.freebsd.org/en/books/handbook/firewalls/index.html#firewalls-pf). Di halaman yang sama terdapat informasi tentang _firewall_ lainnya yang didukung oleh FreeBSD.
 
- [^4]: Jika akses ke `host` melalui `ssh` _session_ maka saat `pf` diaktifkan maka secara otomatis `host` akan meng*disconnect* akses. Untuk masuk tinggal konek kembali seperti biasanya, namun jika tidak bisa maka artinya ada masalah di _entry firewall_-nya. Maka perlu konek melalui konsol.
+[^4]: Jika akses ke `host` melalui `ssh` _session_ maka saat `pf` diaktifkan maka secara otomatis `host` akan meng*disconnect* akses. Untuk masuk tinggal konek kembali seperti biasanya, namun jika tidak bisa maka artinya ada masalah di _entry firewall_-nya. Maka perlu konek melalui konsol.
 
- [^5]: IP disini adalah deretan IP lokal, bisa juga pakai IP dengan deretan `192.168.x.x/24` dan sebagainya.
+[^5]: IP disini adalah deretan IP lokal, bisa juga pakai IP dengan deretan `192.168.x.x/24` dan sebagainya.
 
- [^6]: Secara _default_ Jail tidak mengizinkan penggunaan `raw sockets` untuk alasan keamanan, sehingga jika tidak penting sekali jangan diaktifkan fitur ini.
+[^6]: Secara _default_ Jail tidak mengizinkan penggunaan `raw sockets` untuk alasan keamanan, sehingga jika tidak penting sekali jangan diaktifkan fitur ini.
