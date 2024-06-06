@@ -53,7 +53,7 @@ site
   .use(
     feed({
       output: "feed.xml",
-      query: "type=jurnal",
+      query: "jurnal",
       limit: 10,
       info: {
         title: "=metas.site",
