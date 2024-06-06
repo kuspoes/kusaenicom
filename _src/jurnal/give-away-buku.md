@@ -5,9 +5,8 @@ ringkasan: 'Kamu bisa dapatkan buku - buku kisah horror karya Simpleman dengan g
 keywords: 'Janur Ireng, Sewu Dino, Ranjat Kembang, Simpleman, SimpleM81378523, Horor, Santet, Trah Pitu, KKN Desa Penari, Kuncoro, Sabdo, Atmojo, pdf, buku, gratis, giveaway'
 date: 2022-09-02
 tags:
-    - thoughts
-    - kusaeni
-    - buku
+  - thoughts
+  - kusaeni
 kategori: jurnal
 code: false
 favorit: false

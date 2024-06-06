@@ -8,7 +8,7 @@ layout: layout/content.vto
 </div>
 
 
-  {{ for post of search.pages(search_query, "sort=desc") }}
+  {{ for post of search.pages(search_query, "date=desc") }}
   <div class="postlist">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
