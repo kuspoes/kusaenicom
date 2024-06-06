@@ -1,4 +1,4 @@
-:root {
+ :root {
     --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     --serif: "charter", Georgia, Palatino Linotype, Times, serif;
     --salis: "Salisbury Bold", charter, Georgia, serif;
@@ -194,6 +194,13 @@ th {
     font: normal 0.8em/1 var(--sans);
 }
 
+.backtop { margin: 3em auto; text-align: center;}
+
+.btop {
+    margin: 0em auto;
+    width: 5em;
+}
+
 .selayang {
     width: 28em;
     margin: 2em auto;
@@ -328,6 +335,7 @@ p.sidenote {
     font-size: 85%;
 }
 
+.backtop p { text-align: center; font: normal 85% var(--sans); }
 .footer p {
     text-align: center;
     line-height: 1.2;
