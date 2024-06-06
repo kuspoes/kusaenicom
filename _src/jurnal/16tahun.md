@@ -1,11 +1,11 @@
 ---
 layout: layout/jurnal.vto
 title: 16 tahun
-ringkasan: 'Hampir sweet-seventeen! Bagaimana perjalanan domain ini?'
+ringkasan: "Hampir sweet-seventeen! Bagaimana perjalanan domain ini?"
 date: 2020-08-22
 tags:
-    - tentang
-    - jurnal
+  - kusaeni
+  - thoughts
 kategori: jurnal
 favorit: false
 comment: true
@@ -30,7 +30,7 @@ Waktu berlalu, tahun berganti. Berikut daftar riwayat hosting domain ini.
 
  <p class="sidenotes">Alasan pindah karena <em>support</em>nya yang menurut saya kurang bagus & hal yang sama saat pergi dari SM yaitu dukungan terhadap Textpattern.</p>
 
-- **<a href="https://masterweb.com" target="_blank">Masterweb</a></strong>** — circa 02 September 2013 - 05 Agustus 2020. Setelah dari QWords, saya mencari penyedia hosting berbiaya murah/gratis. Pada saat itu MWN memberikan hosting 60Mb dengan harga Rp. 60.000,00 per tahun. Karena kebutuhan saya hanya untuk host static files maka diputuskanlah langganan paket ini. Paket paling  minim segala - galanya,
+- **<a href="https://masterweb.com" target="_blank">Masterweb</a></strong>** — circa 02 September 2013 - 05 Agustus 2020. Setelah dari QWords, saya mencari penyedia hosting berbiaya murah/gratis. Pada saat itu MWN memberikan hosting 60Mb dengan harga Rp. 60.000,00 per tahun. Karena kebutuhan saya hanya untuk host static files maka diputuskanlah langganan paket ini. Paket paling minim segala - galanya,
 
  <p class="sidenotes">Uptime yang buruk dan support yang memprihatinkan membuat saya terpaksa untuk berpindah.</p>
 
@@ -68,4 +68,5 @@ Namun untuk saat ini, jurnal dan semua artikel maupun yang lainnya ditulis secar
 **UPDATE**
 
 Saat ini mempergunakan [Lume](https://lumeland.github.io), alasannya? hanya pengen berbeda saja. :D
-***
+
+---

@@ -2,7 +2,7 @@
 title: FreeBSD di Raspberry Pi4
 ringkasan: "mencoba memasang FreeBSD 14 dan Jail Postgresql serta miniflux di Raspi4"
 tags:
-  - jurnal
+  - tutorial
   - bsd
 date: 2024-05-18
 layout: layout/jurnal.vto

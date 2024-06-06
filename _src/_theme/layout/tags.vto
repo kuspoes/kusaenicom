@@ -1,14 +1,15 @@
 ---
-title: kusaeni
 layout: layout/content.vto
 ---
 
 <div class="index_h1">
-<h1>Jurnal</h1>
-<p>Berlangganan lewat <abbr title="sementara ditutup karena buttowndown dibegal kominfo">email</abbr> atau <a href="/feed.xml">RSS</a></p>
+<h1 class="tag">#{{ tag }}</h1>
+<p>{{ title }}</p>
 </div>
-		{{ for post of search.pages("type=post", "date=desc") }}
-		<div class="postlist">
+
+
+  {{ for post of search.pages(search_query) }}
+  <div class="postlist">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">
@@ -31,4 +32,4 @@ layout: layout/content.vto
 				<p>{{ post.ringkasan }}</p>
 			</div>
 		</div>
-		{{ /for }}
+    {{ /for }}

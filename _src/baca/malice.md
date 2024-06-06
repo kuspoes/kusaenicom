@@ -1,4 +1,5 @@
 ---
+type: post
 layout: layout/baca.vto
 title : 'Malice : Catatan Pembunuhan sang Novelis'
 date: 2021-11-07
@@ -7,7 +8,7 @@ ringkasan: 'Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di 
 keywords: 'Keigo Higashino, Kaga, detektif, Malice, Pembunuhan di Nihonbashi, The Newcomer, Jepang, Misteri, Novel'
 coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/malice_1GM7H7NhPlD.jpg'
 penulis: 'Keigo Higashino'
-genre: 
+genre:
     - Thriller
     - Mistery
 format: 'Papperback - 304 halaman'
@@ -20,11 +21,12 @@ penyelidikan pembunuhan seorang wanita. Semakin dalam diselidiki semakin banyak 
 tersangkanya. Bahkan hampir semua orang yang tinggal di dekat rumah korban memiliki motif
 sebagai pelakunya.'
 rating: 5
-beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/166582-Pembunuhan-di-Nihonbashi.html 
+beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/166582-Pembunuhan-di-Nihonbashi.html
 dimana: Bukukita
-tags: 
-    - baca
-    - jurnal
+tags:
+  - buku
+  - misteri
+  - Keigo Higashino
 kategori: buku
 templateEngine: vto,md
 comments: true
@@ -36,13 +38,13 @@ comments: true
 
 Ini adalah buku kedua dari Keigo Higashino yang saya beli setelah [The Newcomer](/baca/thenewcomer). Ditasbihkan sebagai salah satu buku _bestselling_ dan menjadi buku rujukan untuk dibaca oleh para novelist di Jepang, membuat saya bereskpektasi tinggi untuk memiliki dan membacanya.
 
- {{ echo |> relasi("thenewcomer_jNnlkJXcfB.jpg", "The Newcomer", "Keigo Higashino", "/baca/thenewcomer") }}
- Seorang wanita terbunuh di Nihonbashi, detektif datang menyelidikinya dan ditemukan banyak orang bisa menjadi tersangka
- {{ /echo }}
+{{ echo |> relasi("thenewcomer_jNnlkJXcfB.jpg", "The Newcomer", "Keigo Higashino", "/baca/thenewcomer") }}
+Seorang wanita terbunuh di Nihonbashi, detektif datang menyelidikinya dan ditemukan banyak orang bisa menjadi tersangka
+{{ /echo }}
 
 Untungnya buku ini tersedia di Bukukita dan bisa dibeli tanpa harus menunggu pre-order (menunggu cetak). Saya sudah membaca buku ini sejak lama, namun baru berkesempatan menulis sekarang.
 
-***
+---
 
 <span class="dc">O</span>samu Nonoguchi adalah seorang pensiunan guru yang beralih profesi menjadi penulis buku cerita anak - anak. Menjadi penulis buku anak - anak bukanlah keinginan Osamu pada awalnya, melainkan menjadi novelis adalah ambisinya.
 
@@ -56,11 +58,11 @@ Malamnya, Osamu mendapatkan telepon dari Hidaka agar balik ke rumah Hidaka. Di d
 
 Istri Hidaka kemudian memanggil pihak kepolisian yang menugaskan Detektif Kaga untuk menyelidiki kasus kematian Kunihiko Hidaka.
 
-***
+---
 
 Novel ini ditulis dalam sudut pandang 2 orang yaitu Osamu Nonoguchi dan Detektif Kaga.
 
-Osamu menceritakan detil semua kejadian yang dia alami dalam narasi yang kuat dan runut. Sedangkan bagian Kaga (sang protagonis) menceritakan tentang penyelidikan yang sudah dia lakukan dan beberapa _flashback_ masa lalu. Seperti biasa Kaga memiliki metode penyelidikan rasa kekeluargaan untuk menyelesaikan sebuah kasus. Meski terkesan sangat pengertian dan simpati yang mendalam, Kaga memiliki metode tertentu untuk melihat fakta dari balik kebohongan - kebohongan. 
+Osamu menceritakan detil semua kejadian yang dia alami dalam narasi yang kuat dan runut. Sedangkan bagian Kaga (sang protagonis) menceritakan tentang penyelidikan yang sudah dia lakukan dan beberapa _flashback_ masa lalu. Seperti biasa Kaga memiliki metode penyelidikan rasa kekeluargaan untuk menyelesaikan sebuah kasus. Meski terkesan sangat pengertian dan simpati yang mendalam, Kaga memiliki metode tertentu untuk melihat fakta dari balik kebohongan - kebohongan.
 
 Alih - alih berupa novel kriminal, buku ini lebih menampilkan konflik permainan psikologi yang kuat.
 
@@ -81,7 +83,7 @@ Ada beberapa _clue_ dan fakta yang terungkap sepanjang babak, yaitu :
 
 Jadi sekarang pertanyaannya adalah siapakah pembunuh dari Hidaka?
 
-***
+---
 
 ### Penutup
 
@@ -89,4 +91,4 @@ Novel ini memenangkan banyak penghargaan dari dalam negeri Jepang maupun dari lu
 
 Pendapat saya pribadi, novel ini tidak lebih bagus daripada The Newcomer. Namun ada kelebihan dari novel ini terutama bagaimana Keigo membuat tokoh Osamu Nonoguchi yang dijadikan _narator_ sepanjang babak dan plot twist yang lebih memukau daripada The Newcomer.
 
-***
+---

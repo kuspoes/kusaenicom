@@ -5,7 +5,7 @@ ringkasan: "sebelumnya memindahkan container tak pernah semudah dan secepat ini"
 date: 2024-05-07
 tags:
   - jurnal
-  - freebsd
+  - bsd
   - tutorial
 keywords: "freebsd, jail, vps, tutorial, vultr, bsd"
 kategori: jurnal
@@ -44,10 +44,11 @@ JID     State  IP Address   Published Ports  Hostname  Release          Path
  kauaku  Up     192.168.1.2  -                kauaku    14.0-RELEASE-p6  /usr/local/bastille/jails/kauaku/root
  snac2   Up     192.168.1.4  -                keboh     14.0-RELEASE-p6  /usr/local/bastille/jails/snac2/root
 ```
+
  <aside>
   saya memakai <code>doas</code> untuk elevasi ke <code>root</code>. App ini setara dengan <code>sudo</code> tapi lebih ringan dan memiliki keamanan lebih baik.
  </aside>
- 
+
 Tersebut saya mempunya 2 container/jail’s yang sedang aktif (`up`) dan sebagai contoh saya akan memindahkan jail `kauaku` ke VPS NEVA. Sebelum memulai ekspor, container harus dimatikan dulu untuk menjaga integritas data.
 
 ```sh
@@ -59,6 +60,7 @@ Exporting 'kauaku' to a compressed .txz archive...
   100 %       1100.7 MiB / 1230.0 MiB = 0.895    8.4 MiB/s       2:48
 Exported '/usr/local/bastille/backups/kauaku-05-07-114627.txz' successfully.
 ```
+
  <aside>
   BastilleBSD adalah <i>wrapper</i> dari <code>jls</code>(<a href="https://man.freebsd.org/cgi/man.cgi?jls(8)">8</a>) yang merupakan <i>jail manager</i> bawaan dari FreeBSD, sehingga ada perintah lain yang bisa dipergunakan untuk melakukan ekspor dan impor.
  </aside>

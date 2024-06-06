@@ -6,12 +6,11 @@ ringkasan: 'Buku yang sudah dan sedang dibaca'
 ---
 
 <div class="baca">
-{{ for buku of search.pages("baca", "date=desc") }}
+{{ for buku of search.pages("buku", "date=desc") }}
     <div class="item_buku">
         <a href="{{ buku.url }}">
          <img class="item_cover" src="{{ buku.coverImg }}">
         </a>
     </div>
-{{ /for }}    
+{{ /for }}
 </div>
-

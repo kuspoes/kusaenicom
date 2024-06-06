@@ -1,31 +1,32 @@
 ---
+type: post
 layout: layout/baca.vto
-title : 'Sewu Dino'
+title: "Sewu Dino"
 date: 2020-08-17
-ringkasan: 'Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban'
-keywords: 'Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet'
-coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg'
-penulis: 'Simpleman'
+ringkasan: "Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban"
+keywords: "Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet"
+coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg"
+penulis: "Simpleman"
 genre:
-    - Thriller
-    - Mistery
-    - Jawa
-format: 'Papperback - 230 halaman'
-bahasa: 'Bahasa Indonesia, Bahasa Jawa'
-isbn: '978-602-220-348-3'
+  - Thriller
+  - Mistery
+  - Jawa
+format: "Papperback - 230 halaman"
+bahasa: "Bahasa Indonesia, Bahasa Jawa"
+isbn: "978-602-220-348-3"
 tahun: 2020
-resensi: 'Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo.'
+resensi: "Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo."
 rating: 3
 beli: https://shopee.co.id/bukune
 dimana: Bukune
 kategori: buku
 tags:
-    - baca
-    - jurnal
+  - buku
+  - horror
+  - Simpleman
 comment: true
 templateEngine: vto,md
 ---
-
 
  <div class="info">
     <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
@@ -45,16 +46,16 @@ Lalu apakah penyakit yang diderita oleh Dela Atmojo? Kenapa tidak dibawa ke ruma
 
 ### Catatan
 
-Ini adalah buku pertama dari *Universe* Trah Pitu. Isi buku ini sebenarnya sudah ditulis dalam *threads* [Simpleman di Twitter](https://twitter.com/SimpleM81378523/status/1158380946728427520?ref_src=twsrc%5Etfw) dengan judul yang sama. Namun di buku ini ditambahkan beberapa *chapters* dan detil - detil yang tidak ada di *threads*.
+Ini adalah buku pertama dari _Universe_ Trah Pitu. Isi buku ini sebenarnya sudah ditulis dalam _threads_ [Simpleman di Twitter](https://twitter.com/SimpleM81378523/status/1158380946728427520?ref_src=twsrc%5Etfw) dengan judul yang sama. Namun di buku ini ditambahkan beberapa _chapters_ dan detil - detil yang tidak ada di _threads_.
 
 Buku kedua adalah [Janur Ireng](https://kusaeni.com/baca/janurireng/) dan dilanjut [Ranjat Kembang](https://kusaeni.com/baca/ranjatkembang/) sebagai buku ketiga.
 
- {{ echo |> relasi("janurIreng_aSww35pkIg4.jpg", "Janur Ireng", "simpleman", "/baca/janurireng") }}
- Ingatan hitam yang menyeruak dan membuka tabir gelap sebuah peristiwa masa lampau yang perlahan merangkak naik dan menunjukkan kilasan kepedihan dari sebuah perjanjian sedarah yang kental. Kisah dalam buku ini jauh lebih kelam dan gelap dibandingkan dengan Sewu Dino.
- {{ /echo }}
-
- {{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.jpg", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
- Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
+{{ echo |> relasi("janurIreng_aSww35pkIg4.jpg", "Janur Ireng", "simpleman", "/baca/janurireng") }}
+Ingatan hitam yang menyeruak dan membuka tabir gelap sebuah peristiwa masa lampau yang perlahan merangkak naik dan menunjukkan kilasan kepedihan dari sebuah perjanjian sedarah yang kental. Kisah dalam buku ini jauh lebih kelam dan gelap dibandingkan dengan Sewu Dino.
 {{ /echo }}
 
-***
+{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.jpg", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
+Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
+{{ /echo }}
+
+---

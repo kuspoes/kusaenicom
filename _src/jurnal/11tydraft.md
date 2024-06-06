@@ -1,10 +1,11 @@
 ---
 layout: layout/jurnal.vto
 title: Draft artikel di Eleventy
-ringkasan: '11ty tidak memiliki fungsi draft built in, namun dengan cara ini memungkinkan fungsi itu tersedia'
+ringkasan: "11ty tidak memiliki fungsi draft built in, namun dengan cara ini memungkinkan fungsi itu tersedia"
 date: 2020-10-17
 tags:
-    - jurnal
+  - 11ty
+  - node
 kategori: jurnal
 code: true
 favorit: false
@@ -42,4 +43,4 @@ Memasukkan teks di atas ke dalam <code>.eleventyignore</code>, kemudian buat art
 
 Untuk memposting artikel, cukup menghapus nama <code>draft</code> kemudian mem<strong>build</strong>ulang Eleventy.
 
-***
+---

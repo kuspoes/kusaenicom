@@ -5,7 +5,10 @@ ringkasan: "Shortcode untuk menampilkan related books dengan memanfaatkan JSON d
 date: 2021-05-02
 favorit: true
 update: true
-tags: jurnal
+tags:
+  - 11ty
+  - node
+  - tutorial
 kategori: jurnal
 code: true
 keywords: "eleventy, 11ty, json, global data, tutorial, shortcode"

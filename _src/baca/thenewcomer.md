@@ -1,4 +1,5 @@
 ---
+type: post
 layout: layout/baca.vto
 title : 'The Newcomer'
 date: 2021-04-25
@@ -8,7 +9,7 @@ ditemukan banyak orang bisa menjadi tersangka'
 keywords: 'Keigo Higashino, Kaga, detektif, Pembunuhan di Nihonbashi, The Newcomer, Jepang, Misteri, Novel'
 coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/thenewcomer_jNnlkJXcfB.jpg'
 penulis: 'Keigo Higashino'
-genre: 
+genre:
     - Thriller
     - Mistery
 format: 'Papperback - 304 halaman'
@@ -21,13 +22,14 @@ penyelidikan pembunuhan seorang wanita. Semakin dalam diselidiki semakin banyak 
 tersangkanya. Bahkan hampir semua orang yang tinggal di dekat rumah korban memiliki motif
 sebagai pelakunya.'
 rating: 5
-beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/166582-Pembunuhan-di-Nihonbashi.html 
+beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/166582-Pembunuhan-di-Nihonbashi.html
 dimana: Bukukita
 kategori: buku
 comments: true
-tags: 
-    - baca
-    - jurnal
+tags:
+  - buku
+  - misteri
+  - Keigo Higashino
 templateEngine: vto,md
 ---
 
@@ -46,29 +48,29 @@ membeli bukunya.
 ### Detektif Kaga dan pembunuhan di Nihonbashi
 
 <span class="dc">K</span>aga adalah detektif polisi yang baru dipindah tugaskan ke Kantor Polisi Nihonbashi, Tokyo dan
-dianggap sebagai *anak baru* dan cenderung diremehkan di lingkungannya. Namun sebenarnya dia adalah
+dianggap sebagai _anak baru_ dan cenderung diremehkan di lingkungannya. Namun sebenarnya dia adalah
 seorang detektif berpengalaman yang sudah sering memecahkan kasus kriminal sebelumnya.
 
 Seorang wanita setengah baya ditemukan tewas dengan leher tercekik seutas tali di dalam kamar
 apatemennya. Korban ditemukan oleh sahabatnya yang sudah membuat janji untuk bertemu di apartemennya.
 
 Korban adalah penghuni baru dan tidak memiliki kenalan dan keluarga di lingkungan
-Nihobashi. 
+Nihobashi.
 
 Kaga dilibatkan dalam penyelidikan kasus ini dengan tugas sebagai pemandu untuk penyelidik
 senior dari kantor kepolisian pusat Tokyo. Penyelidikan mengalami jalan buntu, meski identitas korban sudah ditemukan dan keluarga dikabari, namun pelaku dan motifnya masih gelap.
 
-Disela waktu tugasnya menjadi *guide* bagi detektif dari kantor pusat kepolisian,
-melakukan penyelidikan sendiri dengan metode yang unik. 
+Disela waktu tugasnya menjadi _guide_ bagi detektif dari kantor pusat kepolisian,
+melakukan penyelidikan sendiri dengan metode yang unik.
 
 Metode pendekatan kekeluargaan.
 
-Dari penyelidikan  Kaga inilah kemudian ditemukan fakta bahwa hampir semua orang yang tinggal
+Dari penyelidikan Kaga inilah kemudian ditemukan fakta bahwa hampir semua orang yang tinggal
 dan bekerja dikawasan Nihonbashi memiliki motif sebagai pelaku.
 
 Lalu siapakah pembunuh sebenarnya? dan apa motifnya?.
 
-***
+---
 
 ### Catatan
 
@@ -79,9 +81,9 @@ Ini adalah novel misteri pembunuhan yang ditulis dengan sangat ringan. Enak diba
 dicerna. Ada 7 bab dalam buku ini yang berisi cerita - cerita setiap tersangka yang memiliki
 masalahnya sendiri - sendiri.
 
-Dalam pelbagai kesempatan, Kaga malah berusaha membantu masalah para tersangka. Hal inilah yang disebut dengan penyelidikan kekeluargaan yang sebenarnya menjadi alasan utama kenapa  Kaga sampai dimutasi ke Nihonbashi.
+Dalam pelbagai kesempatan, Kaga malah berusaha membantu masalah para tersangka. Hal inilah yang disebut dengan penyelidikan kekeluargaan yang sebenarnya menjadi alasan utama kenapa Kaga sampai dimutasi ke Nihonbashi.
 
-Novel ini memiliki *plot twist* yang sangat mengejutkan. Meskipun *clue*nya sangat jelas, namun
+Novel ini memiliki _plot twist_ yang sangat mengejutkan. Meskipun *clue*nya sangat jelas, namun
 tetap saja pengungkapan pelaku pembunuhan dan motifnya cukup bertolak belakang dengan apa yang
 pembaca fikirkan.
 
@@ -93,13 +95,12 @@ Saya sudah membeli buku kedua dari Higashino berjudul Malice.
 Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di dalam ruangan tertutup oleh istri dan sahabat baiknya.
 {{ /echo }}
 
-Seperti serial [Detektif Mitarai](/baca/tokyozodiacmurders) dari Soji Shimada, versi *life actions*
-dari  Kaga juga sudah ada filmnya, salah satunya adalah The Wing of Kirin yang ditayangkan 2012
+Seperti serial [Detektif Mitarai](/baca/tokyozodiacmurders) dari Soji Shimada, versi _life actions_
+dari Kaga juga sudah ada filmnya, salah satunya adalah The Wing of Kirin yang ditayangkan 2012
 silam.
-
 
 Umumnya kebanyakan adaptasi novel ke film, ada banyak kekurangan atau ketidaksesuaiannya. Salah satu
 yang menonjol adalah tentang sikap Kaga yang difilm digambarkan dingin dan serius, padahal di novel
 Kaga dikesankan sebagai polisi yang ramah dan disukai banyak orang.
 
-***
+---

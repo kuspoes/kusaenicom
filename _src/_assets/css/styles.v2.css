@@ -138,6 +138,7 @@ nav.toc {
 .kuslogo {
     width: 80px !important;
     padding-top: 0.4em;
+    border: none;
 }
 
 /* baca page */
@@ -512,7 +513,7 @@ a.header-anchor:visited {
 
 a.badge {
     padding: 5px 8px;
-    margin-left: 1em;
+    margin-right: 1em;
     background-color: #e5e5e5;
     border-radius: 0.37em;
     font: 500 0.8em/1 var(--sans);

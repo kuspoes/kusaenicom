@@ -14,8 +14,7 @@
         <p class="subtitle">{{ it.ringkasan }}</p>
         {{ /if }}
         <div class="postag">
-            {{ if it.tag }}
-            Tags:
+            {{ if it.tags }}
             {{ for tag of it.tags }}
                 {{ set page = search.page(`type=tag tag="${tag}"`) }}
                 {{ if page }}
@@ -46,7 +45,10 @@
                 {{ /for }}
             </ol>
         </nav>
-        {{ /if }} {{ /if }} {{ content }} {{ /if }} {{ if it.footnotes.length }}
+        {{ /if }} {{ /if }}
+        {{ content }}
+        {{ /if }}
+        {{ if it.footnotes.length }}
         <aside role="note" class="footnotes">
             <h4>Footnotes:</h4>
             {{ for note of footnotes }}
