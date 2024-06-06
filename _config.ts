@@ -9,6 +9,7 @@ import readInfo from "lume/plugins/reading_info.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
 import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
+import minifyHTML from "lume/plugins/minify_html.ts";
 
 async function cors(request: Request, next: Lume.RequestHandler) {
   const response = await next(request);
@@ -63,6 +64,11 @@ site
       items: {
         title: "=title",
       },
+    }),
+  )
+  .use(
+    minifyHTML({
+      extensions: [".html", ".css"],
     }),
   )
   .use(
