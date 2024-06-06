@@ -426,7 +426,8 @@ b {
 
 /* header */
 .meta h1 {
-    font: bold 3em/1.2 var(--sans);
+    font: bold 3em/1 var(--sans);
+    margin-bottom: 0.3em;
 }
 
 h1,
@@ -554,7 +555,7 @@ code {
 pre,
 img,
 .vid {
-    border: 0px solid var(--col_border);
+    border: 1px solid var(--col_border);
     border-top-left-radius: 0.275em;
     border-top-right-radius: 0.275em;
     margin-bottom: 1.5em;
