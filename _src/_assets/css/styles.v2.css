@@ -1,7 +1,7 @@
  :root {
     --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     --serif: "charter", Georgia, Palatino Linotype, Times, serif;
-    --salis: "Salisbury Bold", charter, Georgia, serif;
+    --salis: "charter", Georgia, Palatino, serif;
     --col_body: #333333;
     --col_aside: #495057;
     --col_asidebg: #eaf4f4;
@@ -81,8 +81,8 @@ aside.footnotes {
     margin: 2em 0 1em 0;
 }
 
-.notes .note-id { 
-    float: left; 
+.notes .note-id {
+    float: left;
     padding: 2px;
     margin-right: 0.6em;
     font: bold 0.8em var(--sans);
@@ -123,8 +123,8 @@ nav.toc {
     font: normal 80% var(--sans);
 }
 
-.kuslogo { 
-    width: 80px !important; 
+.kuslogo {
+    width: 80px !important;
     padding-top: 0.4em;
 }
 
@@ -285,7 +285,6 @@ span.ter {
 }
 
 .hRelasi {
-    font: 1em/1.2 var(--salis);
     font-weight: 600;
 }
 
@@ -310,7 +309,7 @@ p {
 
 p.subtitle {
     color: var(--col_gray);
-    font: italic 1.1em/1.3 Georgia, serif;
+    font: italic; 1.1em/1.3 var(--serif);
     margin-bottom: 2em;
     padding-bottom: 0.8em;
     border-bottom: 1px solid var(--col_border);
@@ -384,19 +383,19 @@ b { font-weight: bold }
 
 /* header */
 .meta h1 { font: bold 3em/1.2 var(--sans); }
-h1, h2, h3, h4, h5 { 
-    font-family:var(--sans); 
-    font-weight: bold; 
-    text-decoration: none; 
-    color: #000; 
+h1, h2, h3, h4, h5 {
+    font-family:var(--sans);
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
 }
 
 h1 { font-size: 2em }
 h1.s {font-family:'Salisbury Bold';font-weight:normal;font-size:42px}
 h3 { font-size: 1.5em; margin: 1.5em 0 0.5em 0;  }
 h4 { font-size: 1.2em; margin: 1.5em 0 0.5em 0;  }
-.postitle h2 {  
-    margin: 0; 
+.postitle h2 {
+    margin: 0;
     font-size: 1.5em;
     font-weight: 900;
     line-height: 1;
@@ -410,8 +409,9 @@ a:link { font-weight: 500; text-decoration:underline; color: var(--col_link); }
 a:hover { text-decoration: underline }
 a, a:visited, .nav a { text-decoration: none; color: var(--col-link); }
 a.ptitle, a.ptitle:visited { text-decoration:none; font-weight: bold; color: var(--col_body); }
-a.header-anchor, a.header-anchor:visited { 
-    text-decoration: none; 
+a.hRelasi { font-weight: 800; text-decoration:none }
+a.header-anchor, a.header-anchor:visited {
+    text-decoration: none;
     font-weight: 800;
     color: var(--col_link); }
 .notes a, .notes:visited, .notes:hover { color: var(--col-link); }
@@ -433,13 +433,13 @@ nav.toc a:hover {
 
 
 /* code */
-code { 
+code {
     font: normal 78%/1.6 Monaco, Menlo, Monospace;
-    border: 1px solid var(--col_border); 
+    border: 1px solid var(--col_border);
     padding: 1px 2px;
     border-radius: 0.2em;
 }
-pre, img, .vid { 
+pre, img, .vid {
     border: 0px solid var(--col_border);
     border-top-left-radius: 0.275em;
     border-top-right-radius: 0.275em;
@@ -506,7 +506,7 @@ cite {
 
 .pentung svg {
     padding: 4px 0px 0 0px;
-} 
+}
 
 .pentung p {
     font: normal 0.8em/1 var(--sans);
