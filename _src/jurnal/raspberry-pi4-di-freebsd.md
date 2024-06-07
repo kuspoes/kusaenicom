@@ -5,7 +5,6 @@ tags:
   - tutorial
   - bsd
 date: 2024-05-18
-layout: layout/jurnal.vto
 code: true
 tocx: true
 ---

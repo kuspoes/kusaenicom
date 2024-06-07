@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: "11ty: Related Books"
 ringkasan: "Shortcode untuk menampilkan related books dengan memanfaatkan JSON data"
 date: 2021-05-02

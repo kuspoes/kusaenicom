@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: 16 tahun
 ringkasan: "Hampir sweet-seventeen! Bagaimana perjalanan domain ini?"
 date: 2020-08-22

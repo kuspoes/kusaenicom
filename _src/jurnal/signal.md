@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: Signal buruk Whatsapp
 ringkasan: "Perubahan privacy policy Whatsapp, resiko dan solusi alternatifnya."
 date: 2021-01-09
@@ -7,7 +6,8 @@ update: true
 code: false
 favorit: false
 kategori: jurnal
-tags: thoughts
+tags:
+  - thoughts
 templateEngine: vto,md
 comment: true
 tocx: true

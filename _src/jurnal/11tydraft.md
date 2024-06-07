@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: Draft artikel di Eleventy
 ringkasan: "11ty tidak memiliki fungsi draft built in, namun dengan cara ini memungkinkan fungsi itu tersedia"
 date: 2020-10-17

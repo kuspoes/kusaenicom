@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: "11ty: Reader Bar"
 ringkasan: "Menambahkan Reader Bar sebagai indikator halaman dan bagaimana cara memodif ikasinya"
 date: 2021-04-23

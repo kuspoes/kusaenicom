@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: 'Migrasi dari Whatsapp'
 ringkasan: 'Cara memindahkan data percakapan dari Whatsapp ke Telegram, Signal, atau BIP'
 keywords: 'Whatsapp, Signal, Telegram, BIP, migration, migrasi, ekspor, data, export, impor,
@@ -7,7 +6,7 @@ pindah'
 date: 2021-05-16
 update: true
 tags:
-    - thoughts
+  - thoughts
 kategori: jurnal
 code: false
 favorit: false

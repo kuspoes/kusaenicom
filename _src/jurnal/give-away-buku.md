@@ -1,5 +1,4 @@
 ---
-layout: layout/jurnal.vto
 title: Giveaway buku Simpleman
 ringkasan: 'Kamu bisa dapatkan buku - buku kisah horror karya Simpleman dengan gratis disini.'
 keywords: 'Janur Ireng, Sewu Dino, Ranjat Kembang, Simpleman, SimpleM81378523, Horor, Santet, Trah Pitu, KKN Desa Penari, Kuncoro, Sabdo, Atmojo, pdf, buku, gratis, giveaway'
