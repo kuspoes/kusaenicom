@@ -106,7 +106,7 @@ aside.footnotes {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 2em auto 8em auto;
+    margin: 2em auto 2em auto;
     width: 36em;
     font-family: var(--sans);
 }
@@ -699,7 +699,7 @@ hr::after {
     aside,
     .terkait {
         width: 93%;
-        margin-top: -1em;
+        margin-top: -2em;
     }
 
     #container,

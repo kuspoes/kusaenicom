@@ -55,7 +55,7 @@ site
     feed({
       output: "feed.xml",
       query: "jurnal",
-      limit: 10,
+      limit: 5,
       info: {
         title: "=metas.site",
         description: "=metas.description",
