@@ -21,6 +21,7 @@ body {
 #container {
     width: 50em;
     margin: 0em auto;
+    scroll-behavior: smooth;
 }
 
 .page {
