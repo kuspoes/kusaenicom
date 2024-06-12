@@ -698,6 +698,7 @@ hr::after {
         margin: 0em;
         padding: 0em;
     }
+
     .page,
     .nav,
     .pre,
@@ -774,8 +775,8 @@ hr::after {
 
     .relasi {
         display: block;
-        width: 100%;
-        margin: 2em;
+        width: 95%;
+        margin: 2em 1em;
     }
 
     .relasi img {
