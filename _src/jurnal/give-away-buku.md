@@ -45,7 +45,21 @@ style: '
     box-shadow: rgba(0, 0, 0, 0.34) 3px 0px 1px 0px;
     border: 1px solid #ccc;
 }
-'
+
+@media only screen and (max-width: 600px) {
+#allbox {
+    height: 200px;
+    margin: 0 2em 2em 2em;
+    position: relative;
+    display:block;
+}
+#boxdua {left:70px}
+#boxtiga {left:140px}
+#boxempat {left:210px}
+#boxlima {left:290px}
+.coverX {width: 150px; height: 200px;}
+}'
+
 ---
 
  <div id="allbox">
