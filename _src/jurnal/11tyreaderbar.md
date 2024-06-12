@@ -6,6 +6,7 @@ update: false
 tags:
   - node
   - 11ty
+  - tutorial
 kategori: jurnal
 code: true
 favorit: false
