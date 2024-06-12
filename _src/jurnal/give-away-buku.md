@@ -46,17 +46,17 @@ style: '
     border: 1px solid #ccc;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 #allbox {
     height: 200px;
-    margin: 0 2em 2em 2em;
+    margin: 0 0 2em 0;
     position: relative;
     display:block;
 }
-#boxdua {left:70px}
-#boxtiga {left:140px}
-#boxempat {left:210px}
-#boxlima {left:290px}
+#boxdua {left:55px}
+#boxtiga {left:110px}
+#boxempat {left:165px}
+#boxlima {left:200px}
 .coverX {width: 150px; height: 200px;}
 }'
 
