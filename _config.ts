@@ -56,7 +56,7 @@ site
     feed({
       output: "feed.xml",
       query: "type=post",
-      limit: 5,
+      limit: 10,
       info: {
         title: "=metas.site",
         description: "=metas.description",

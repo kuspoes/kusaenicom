@@ -8,7 +8,7 @@ tags:
 date: 2024-06-15
 ---
 
-**Saya adalah pecinta soto**. Sudah banyak soto yang sudah dicoba, mulai dari soto à la daerah Mataraman, Soto Lamongan, Soto Madura, Soto Kudus, Soto Betawi, Soto Banjar, Coto Makasar, dan Soto Blitar (Bok Ireng), dan Soto Seger.
+**Saya adalah pecinta soto**. Sudah banyak soto yang sudah dicoba, mulai dari soto _à la_ daerah Mataraman, Soto Lamongan, Soto Madura, Soto Kudus, Soto Betawi, Soto Banjar, Coto Makasar, dan Soto Blitar (Bok Ireng), dan Soto Seger.
 
 Untuk beberapa waktu saya tinggal di sekitaran Madiun dan tiba - tiba ingin sekali makan Soto Seger. Sayangnya di sekitaran Madiun tidak ada tempat makan soto seger (adapun sudah lama tidak buka), sehingga diputuskanlah untuk pergi ke Solo untuk makan soto seger.
 
@@ -42,7 +42,7 @@ Nilai: 😄😄😄/5
 
 ### Soto Seger
 
-## ![Soto Seger Hj Fathimah](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_sgr?updatedAt=1718442166614)
+![Soto Seger Hj Fathimah](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_sgr?updatedAt=1718442166614)
 
 Setelah istirahat sebentar di Rumah Banjar Garden Resto, saya melanjutkan destinasi selanjutnya ke Soto Seger Hj Fathimah di Colomadu. Pesan GoCar lagi dan perjalan dimulai jam 21.20 WIB.
 
