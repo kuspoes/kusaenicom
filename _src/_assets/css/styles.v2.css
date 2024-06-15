@@ -429,7 +429,9 @@ em {
     font-style: italic;
 }
 
-b {
+b,
+bold,
+strong {
     font-weight: bold;
 }
 

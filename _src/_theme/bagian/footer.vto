@@ -35,7 +35,7 @@
             q: location.search,
         }
 
-        var rcb, pcb, tcb  
+        var rcb, pcb, tcb
         if (typeof(data.r) === 'function') rcb = data.r
         if (typeof(data.t) === 'function') tcb = data.t
         if (typeof(data.p) === 'function') pcb = data.p
@@ -88,7 +88,7 @@
     var get_path = function() {
         var loc = location,
             c = document.querySelector('link[rel="canonical"][href]')
-        if (c) {  
+        if (c) {
             var a = document.createElement('a')
             a.href = c.href
             if (a.hostname.replace(/^www\./, '') === location.hostname.replace(/^www\./, ''))
@@ -163,7 +163,7 @@
     }
 
     window.goatcounter.bind_events = function() {
-        if (!document.querySelectorAll)  
+        if (!document.querySelectorAll)
             return
 
         var send = function(elem) {
@@ -182,7 +182,7 @@
                 return
             var f = send(elem)
             elem.addEventListener('click', f, false)
-            elem.addEventListener('auxclick', f, false) 
+            elem.addEventListener('auxclick', f, false)
             elem.dataset.goatcounterBound = 'true'
         })
     }
@@ -251,5 +251,5 @@
         })
 })();
 </script>
-    </body>
+</body>
 </html>
