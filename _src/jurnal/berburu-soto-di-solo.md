@@ -62,7 +62,7 @@ Seperti biasa rasa soto seger tak berubah, tetap seger dan enak. Kuahnya tipis s
 
 Bagi saya rasanya ya mirip dengan soto daerah Mataraman, bedanya kaldunya lebih tipis. Ditambah perasaan air jeruk nipis, kesegarannya akan semakin bertambah. Ya cocok dengan lidah saya.
 
-Rating: 😄😄😄😄/5
+Rating: 😄😄😄/5
 
 ---
 
