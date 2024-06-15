@@ -5,7 +5,7 @@ tags:
   - kuliner
   - thoughts
   - kusaeni
-date: 2024-06-15
+date: 2024-06-15T16:00:13.000Z
 ---
 
 **Saya adalah pecinta soto**. Sudah banyak soto yang sudah dicoba, mulai dari soto _à la_ daerah Mataraman, Soto Lamongan, Soto Madura, Soto Kudus, Soto Betawi, Soto Banjar, Coto Makasar, dan Soto Blitar (Bok Ireng), dan Soto Seger.
