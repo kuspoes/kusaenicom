@@ -55,7 +55,7 @@ site
   .use(
     feed({
       output: "feed.xml",
-      query: "jurnal",
+      query: "type=post",
       limit: 5,
       info: {
         title: "=metas.site",
