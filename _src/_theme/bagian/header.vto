@@ -19,13 +19,13 @@
         {{ it.style }}
     </style>
         {{ /if }}
-        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+        <link rel="icon" type="image/x-icon" href="{{ metadata.favicon }}">
         <link rel="alternate" type="application/rss+xml" title="Subscribe to Kusaeni Jurnal" href="https://kusaeni.com/feed.xml">
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="{{ it.title }}" />
-        <meta property="og:description" content="{{ it.title }} : {{ it.ringkasan }}" />
+        <meta property="og:title" content="{{ it.title || title }}" />
+        <meta property="og:description" content="{{ it.title || title }} : {{ it.ringkasan }}" />
         <meta property="og:url" content="{{ it.url |> url(true) }}" />
-        <meta property="og:image" content="{{ it.og_images }}" />
+        <meta property="og:image" content="{{ it.og_images || metadata.foto_profil }}" />
     </head>
     <body>
         <div id="container">
