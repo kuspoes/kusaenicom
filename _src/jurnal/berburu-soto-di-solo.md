@@ -28,11 +28,11 @@ Tapi di tengah jalan saya putuskan untuk berubah tujuan untuk makan dulu Soto Ba
 
 ![soto banjar](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_bjr?updatedAt=1718442315210)
 
-Saya sampai jam 20.30an dan hujan sudah mulai mereda, tinggal menyisakan sedikit yang harus dituntaska oleh awan gelap. Saat itu depot sepi sekali hanya ada saya dan seorang pengemudi Gojek yang sepertinya membeli untuk pelanggannya. Saya memesan 1 soto Banjar ukuran besar dan 1 porsi sate Banjar berisi 5 tusuk sate ayam serta segelas es jeruk nipis tawar.
+Saya sampai jam 20.30an dan hujan sudah mulai mereda, tinggal menyisakan sedikit yang harus dituntaska. Saat itu depot sepi sekali hanya ada saya dan seorang pengemudi Gojek yang sepertinya membeli untuk pelanggannya. Saya memesan 1 soto Banjar ukuran besar dan 1 porsi sate Banjar berisi 5 tusuk sate ayam serta segelas es jeruk nipis tawar.
 
 Orang bilang kalo soto Banjar itu soto terenak se-Indonesia, saatnya mencoba.
 
-Kuah dari soto ini sangat kental kaldunya sepertinya ada susu yang dicampurkan, pekat tapi nikmat. Ada rasa gurih dari bawang goreng dan manis dari susu. Mengingatkan saya dengan rasa makanan tertentu yang sampai saat ini saya masih lupa apa namanya.
+Kuah dari soto ini sangat kental kaldunya sepertinya ada susu yang dicampurkan, pekat nikmat. Ada rasa gurih dari bawang goreng dan manis dari susu. Mengingatkan saya dengan rasa makanan tertentu yang sampai saat ini saya masih lupa apa namanya.
 
 Untuk isiannya ada suwiran ayam, mie soun/bihun, daun bawang, bawang goreng, dan irisan telur. Ada jeruk nipis juga yang disediakan untuk kondimen supaya sotonya menjadi semakin segar, tapi malah saya masukkan ke dalam es jeruk nipisnya. :D
 
@@ -54,11 +54,11 @@ Sepertinya sotonya sudah ludes makanya tutup lebih awal. Tapi saya ke Solo khusu
 
 Skip.
 
-Esok paginya jam 07 pagi saya _check out_ dari penginapan dan langsung naik Gojek ke kedai soto seger Hj Fathimah. Entah buka jam berapa, saya sampai sudah penuh sekali tempatnya. Tengak tengok nyari meja akhirnya ketemua 1 meja yang ditempati 2 orang polisi lalu lintas[^1]. Saya mah bodo amat, perut udah lapar.
+Esok paginya jam 07 pagi saya _check out_ dari penginapan dan langsung naik Gojek ke kedai soto seger Hj Fathimah. Entah buka jam berapa, saya sampai sudah penuh sekali tempatnya. Tengak tengok nyari meja akhirnya ketemu 1 meja yang ditempati 2 orang polisi lalu lintas[^1]. Saya mah bodo amat, perut udah lapar.
 
 Setelah basa - basi sebentar dengan pak pol saya pesan 2 mangkuk soto seger[^2] daging sapi ke pelayan yang mondar - mandir teriak - teriak manggil nama pemesan. Melipir sebentar untuk ambil kondimen di meja prasmanan.
 
-Saya amnil 2 tusuk sate kulit, 1 tusuk sate ayam, 1 tahu, dan 1 tempe untuk pelengkap. Tak lama kemudian Soto datang diantar.
+Saya ambil 2 tusuk sate kulit, 1 tusuk sate ayam, 1 tahu, dan 1 tempe untuk pelengkap. Tak lama kemudian Soto datang diantar.
 
 Seperti biasa rasa soto seger tak berubah, tetap seger dan enak. Kuahnya tipis saja tidak seberat kuah soto Banjar sehingga sangat cocok untuk sarapan. Isiannya ada toge, daun bawang, bawang goreng, dan irisan daging. Saya sempat menghitung irisan dagingnya ada 4, kecil - kecil pula.
 

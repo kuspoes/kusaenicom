@@ -50,7 +50,7 @@ title: "Sewu Dino"
 date: 2020-08-17
 ringkasan: "Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban"
 keywords: "Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg"
+coverImg: "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg"
 penulis: "Simpleman"
 genre:
   - Thriller
@@ -77,7 +77,7 @@ Saya mengambil beberapa _field_ yang penting dan hendak dipakai nantinya. Sedang
   "url": "/baca/sewuDino/",
   "ringkasan": "Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban",
   "penulis": "Simpleman",
-  "coverImg": "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg",
+  "coverImg": "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/sewuDino_lV8ZEwbP7.jpg",
   "resensi": "Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo."
 }
 ```
@@ -107,8 +107,11 @@ Sehingga di _file eleventy.js_ saya menambahkan _syntax_ berikut :
 eleventyConfig.addLiquidShortcode("related", async function (judul) {});
 ```
 
- <p class="sidenote">Saya sebenarnya adalah pengguna <a href="https://mozilla.github.io/nunjucks/" alt="Nunjucks">Nunjucks</a>, namun karena <i>default render</i> <code>markdown</code> di <i>eleventy</i> mempergunakan <a href="https://shopify.github.io/liquid/" alt="Liquid template Tags">Liquid</a>. Maka <i>shortcodes</i> saya mempergunakan Liquid</p>
- <p class="sidenote">Namun bisa juga mempergunakan <b>global shortcodes</b> dengan kode <code>eleventyConfig.addShortcode</code> yang bisa jalan di semua <i>template tags</i>
+ <aside>
+ Saya sebenarnya adalah pengguna <a href="https://mozilla.github.io/nunjucks/" alt="Nunjucks">Nunjucks</a>, namun karena <i>default render</i> <code>markdown</code> di <i>eleventy</i> mempergunakan <a href="https://shopify.github.io/liquid/" alt="Liquid template Tags">Liquid</a>. Maka <i>shortcodes</i> saya mempergunakan Liquid.<br />
+ Namun bisa juga mempergunakan <b>global shortcodes</b> dengan kode <code>eleventyConfig.addShortcode</code> yang bisa jalan di semua <i>template tags</i>
+
+ </aside>
 
 2. Ambil basis data dan buat fungsi _query_
 
@@ -149,7 +152,7 @@ const fs = require("fs");
 const data = JSON.parse(fs.readFileSync("./baca/data.json"));
 ```
 
- <p class="sidenote">Dengan <code>JSON.parse</code>, proses <code>build</code> tidak lagi membutuhkan akses internet karena akan data dibaca dari lokal. Dengan syarat <i>file</i> JSON yang dimaksud adalah <i>file existing</i> yang tidak dibuat pada saat proses <code>build</code>. </p>
+ <aside>Dengan <code>JSON.parse</code>, proses <code>build</code> tidak lagi membutuhkan akses internet karena akan data dibaca dari lokal. Dengan syarat <i>file</i> JSON yang dimaksud adalah <i>file existing</i> yang tidak dibuat pada saat proses <code>build</code>. </aside>
 
 3. Kemudian buat fungsi _query_ untuk mengambil data berdasarkan _value_ `judul` dengan mempergunakan `findIndex`
 
@@ -180,7 +183,7 @@ const hasilData = data.find(function (caridata) {
 });
 ```
 
- <p class="sidenote">Sebutlah ini sebagai kode kedua.</p>
+ <aside>Sebutlah ini sebagai kode kedua.</aside>
 
 Sampai disini jika _tags_ `{% related "judul" %}`dimasukkan ke dalam artikel, maka pada saat `build`/`serve`, _eleventy_ akan mengambil `data.json` dan meng*filter*nya berdasarkan _query_ judul yang dimasukkan. Hasilnya bisa diliat di log di konsol.
 
@@ -237,7 +240,7 @@ eleventyConfig.addLiquidShortcode("related", async function (judul) {
 });
 ```
 
- <p class="sidenote">Jika ingin mempergunakan kode kedua, silakan disesuaikan. Saya menambahkan fungsi <code>rese</code> untuk memotong karakter di <code>resensi</code> agar tidak lebih dari 200 karakter</p>
+ <aside>Jika ingin mempergunakan kode kedua, silakan disesuaikan. Saya menambahkan fungsi <code>rese</code> untuk memotong karakter di <code>resensi</code> agar tidak lebih dari 200 karakter</aside>
 
 #### Update #2 { .merah }
 
@@ -290,7 +293,9 @@ Saya melakukan **DEBUG** `build` _eleventy_ dengan hasil sebagai berikut:
 - Untuk kode _query_ pertama membutuhkan waktu sekitar 8.02 detik untuk memproses 28 _files_,
 - Dan butuh waktu 9,02 detik untuk kode yang kedua.
 
- <p class="sidenote">Uji coba dilakukan dengan mengnonatifkan <i>plugin</i> Eleventy Lazy Images. Jika <i>plugin</i> ini diaktifkan akan membutuhkan waktu sekitar 1 - 2 detik lebih lama. Ini akan menjadi <a href="https://github.com/11ty/eleventy/issues/1346">masalah</a> saat mulai melakukan <code>build</code> dengan jumlah halaman yang banyak.</p>
+ <div class="postnotes">
+ <p>Uji coba dilakukan dengan mengnonatifkan <i>plugin</i> Eleventy Lazy Images. Jika <i>plugin</i> ini diaktifkan akan membutuhkan waktu sekitar 1 - 2 detik lebih lama. Ini akan menjadi <a href="https://github.com/11ty/eleventy/issues/1346">masalah</a> saat mulai melakukan <code>build</code> dengan jumlah halaman yang banyak.</p>
+ </div>
 
 Saat di`build` di [Netlify](https://netlify.com) membutuhkan tambahan waktu untuk proses, rata - rata menjadi sekitar 20 - 30 detik (Netlify biasanya butuh 2,5 kali waktu _build time_) untuk selesai. Jika _build time_ ini konstan, maka jatah `build` di Netlify bisa menjadi sampai dengan 900 kali setiap bulannya.
 
@@ -301,7 +306,7 @@ Saat di`build` di [Netlify](https://netlify.com) membutuhkan tambahan waktu untu
 eleventyConfig.addPairedShortcode(
   "relatedpair",
   function (resensi, coverImg, judul, url) {
-    let coverUrl = "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/";
+    let coverUrl = "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/";
     return `<div class="flex">
             <img class="shadow-md" src="${coverUrl}${coverImg}">
             <div class="flex-1"> <b><a href="${url}" title="${judul}">${judul}</a></b><dd>${resensi} ...</dd>
@@ -311,7 +316,7 @@ eleventyConfig.addPairedShortcode(
 );
 ```
 
- <p class="sidenote">Sebutlah sebagai kode ketiga</p>
+ <aside>Sebutlah sebagai kode ketiga</aside>
 
 Namun kelemahannya adalah harus memasukkan sendiri detil yang ingin ditampilkan di dalam _shortcode_ itu. Sedikit merepotkan tapi terbayar dengan gegasnya saat `build`.
 
@@ -326,7 +331,7 @@ Dengan mempergunakan _paired shortcodes_ ini, waktu `build` **dipangkas hampir 3
 
 Untuk pengguna [Lume](https://lumeland.github.io) bisa juga mempergunakan fungsi kode diatas. Jika di 11ty dinamakan sebagai `shortcodes` maka di Lume disebut dengan `helper`.
 
-_Edit file_ `\_config.js` dan tambahkan kode berikut :
+_Edit file_ `/_config.js` dan tambahkan kode berikut :
 
 ```js
 const site = lume();
@@ -356,6 +361,37 @@ site.helper(
   { type: "tag", async: true },
 );
 ```
+
+#### Update
+
+Saya sudah tidak pakai kode diatas untuk menampilkan relasi artikel, tapi mempergunakan metode _shortcode_ karena lebih mudah dan cepat saat _build_.
+
+```js
+site.helper(
+  "relasi",
+  function (desc, coverImg, title, penulis, url) {
+    const coverUrl = "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/";
+    return `<div class="relasi m-auto">
+            <img class="relaimg" src="${coverUrl}${coverImg}">
+            <div class="relasi_meta">
+            <div class="juduldkk">
+            <h4><a class="hRelasi" href="${url}">${title}</a></h4>
+            <p class="author">${penulis}</p>
+            </div>
+            <p>${desc}</p>
+            </div>
+        </div>`;
+  },
+  {
+    body: !!"true",
+    type: "tag",
+  },
+);
+```
+
+<aside>
+  jika pakai LSP TSX maka <code>body: "true"</code> akan menyebabkan TSX lint <i>error boolean undefined</i>. Saya kasih <code>!!</code> sebelum boolean true, untuk menyakinkan TSX lint bahwa type tersebut sudah benar dan saya yakin bukan <i>undefined</i>
+</aside>
 
 Sedangkan _template tags_ yang dipergunakan sama yaitu `{% related "title" %}`. Untuk `shortcodes prelated` pun sama, ini dikarenakan Lume memang menjadikan 11ty sebagai [patokan atau inspirasi](https://lumeland.github.io/advanced/migrate-from-11ty/).
 

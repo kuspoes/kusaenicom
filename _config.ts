@@ -142,4 +142,14 @@ site.helper(
   },
 );
 
+site.process([".html"], (pages) => {
+  for (const page of pages) {
+    for (const img of page.document!.querySelectorAll("img")) {
+      if (!img.hasAttribute("loading")) {
+        img.setAttribute("loading", "lazy");
+      }
+    }
+  }
+});
+
 export default site;

@@ -13,7 +13,7 @@
 }
 
 body {
-    font: normal 1.25em/1.6 var(--serif);
+    font: normal 1.2em/1.6 var(--serif);
     color: var(--col_body);
 }
 
@@ -589,6 +589,10 @@ img,
     border-top-left-radius: 0.275em;
     border-top-right-radius: 0.275em;
     margin-bottom: 1.5em;
+}
+
+pre code {
+    border: none;
 }
 
 /* media */
