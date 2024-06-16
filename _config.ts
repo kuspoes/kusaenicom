@@ -11,6 +11,7 @@ import footnotes from "./_plugins/footnotes.ts";
 import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import inline from "lume/plugins/inline.ts";
 
 async function cors(request: Request, next: Lume.RequestHandler) {
   const response = await next(request);
@@ -52,6 +53,7 @@ site
       locales: { id },
     }),
   )
+  .use(inline())
   .use(
     feed({
       output: "feed.xml",
@@ -70,6 +72,9 @@ site
   .use(
     minifyHTML({
       extensions: [".html", ".css"],
+      options: {
+        minify_css: true,
+      },
     }),
   )
   .use(
