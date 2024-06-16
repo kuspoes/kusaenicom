@@ -54,11 +54,20 @@ style: '
 
 <p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest.</p>
 
+<p>Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font Kaylani.</p>
+
 <p><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></p>
 
 <p>Karena ada masalah dengan Upcloud, maka <em>hosting</em> blog ini dipindahkan ke <a href="https://deno.com" target="_blank">Deno Deploy</a> dan <em>source code</em> ditaruh di <a href="https://github.com/kuspoes/kusaenicom" target="_blank">Github</a>.</p>
 
 <p class="sidenote">Domain dan hosting situs ini sebelumnya dilayani oleh <a href="https://www.dracoola.com" title="Dracoola Multimedia">Dracoola</a>. Kemudian agar mudah dan cepat saya pindah hosting ke <del>Upcloud</del> Deno Deploy.</p>
+
+<div class="postnotes">
+<h4>Sejarah hosting ini dari masa ke masa</h4>
+<p>Saya pernah menulis tentang sejarah hosting untuk blog ini di artikel berjudul <a href="/jurnal/16tahun/">16 tahun</a>.</p>
+<p>Dimulai saat blog mulai tumbuh di Indonesia dengan Wordpress kala itu baru saja muncul. ServerMerdeka layanan hosting gratis menjadi pilihan utama. Berkembang berpindah - pindah layanan sampai akhirnya sekarang mempergunakan Lume dan Deno Deploy. Masih tetap memakai layanan gratisan.
+<p>Sedangkan untuk VPS, setelah dari Upcloud saya pindah ke IDCloudhost. Tidak berselang lama kemudian pindah ke RumahWeb, kemudian ke Biznet Gio, kemudian ke Vultr, dan saat ini di NevaCloud. Tapi khusus untuk blog ini dilayani oleh Deno Deploy</p>
+</div>
 
 <p><i>Management Image and Delivery</i> diladeni oleh <a href="https://imagekit.io" target="_blank">Imagekit</a> untuk menampilkan gambar fotografi dan gambar cover buku. Imagekit memberikan layanan gratis dengan batasan <i>storage and bandwidth</i> sebesar 20Gb masing - masing dan layanan transformasi gambar tidak terbatas.</p>
 
@@ -67,6 +76,8 @@ style: '
 <p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> (yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a>.</p>
 
 <p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.<p>
+
+<p>Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai Alacritty dan iTerm2. </p>
 
 <p>Font yang dipakai di blog ini :</p>
     <ul>

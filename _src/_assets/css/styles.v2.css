@@ -333,6 +333,20 @@ span.ter {
     margin-top: -0.5em;
 }
 
+.postnotes {
+    margin-bottom: 1em;
+    background-color: #e2cfea;
+    padding: 0.5em;
+    border-radius: 0.4em;
+}
+
+.postnotes p {
+    font-weight: 400;
+    font-family: var(--sans);
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
 /* tipo */
 p {
     margin-bottom: 1.6em;
@@ -478,6 +492,11 @@ h4 {
     font-weight: 900;
     line-height: 1;
     font-family: var(--sans);
+}
+
+.postnotes h4 {
+    font: 600 0.9em/1.2 var(--sans);
+    margin: 0.4em 0;
 }
 
 .juduldkk h4 {
@@ -758,6 +777,7 @@ hr::after {
     .nav .logo {
         text-align: center;
     }
+
     td .ur {
         font-size: 80%;
     }
