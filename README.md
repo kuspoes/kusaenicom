@@ -22,7 +22,7 @@ $ git clone https://github.com/kuspoes/kusaenicom.git blog
 
 perintah ini akan menyalin isi repo ini ke folder bernama `blog`
 
-2. Install [Lume](https://lume.land) dan build untuk pertama kali
+3. Install [Lume](https://lume.land) dan build untuk pertama kali
 
 ```bash
 $ cd blog
