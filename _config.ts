@@ -12,58 +12,6 @@ import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
-import { UserAgent } from "https://deno.land/std@0.224.0/http/mod.ts";
-
-async function block_robotAI(request: Request, next: Lume.RequestHandler) {
-  const response = await next(request);
-  const banUA = [
-    "AdsBot-Google",
-    "Amazonbot",
-    "anthropic-ai",
-    "Applebot",
-    "Applebot-Extended",
-    "AwarioRssBot",
-    "AwarioSmartBot",
-    "Bytespider",
-    "CCBot",
-    "ChatGPT-User",
-    "ClaudeBot",
-    "Claude-Web",
-    "cohere-ai",
-    "DataForSeoBot",
-    "Diffbot",
-    "FacebookBot",
-    "FriendlyCrawler",
-    "Google-Extended",
-    "GoogleOther",
-    "GPTBot",
-    "img2dataset",
-    "ImagesiftBot",
-    "magpie-crawler",
-    "Meltwater",
-    "omgili",
-    "omgilibot",
-    "peer39_crawler",
-    "peer39_crawler/1.0",
-    "PerplexityBot",
-    "PiplBot",
-    "scoop.it",
-    "Seekr",
-    "YouBot",
-  ];
-  const getUA = new UserAgent(request.headers.get("user-agent") ?? "");
-  const cekUA = banUA.includes(getUA.ua);
-
-  if (cekUA == true) {
-    return new Response("<p><b>403</b></p><p>Not Allowed</p>", {
-      status: 403,
-      headers: {
-        "content-type": "text/html",
-      },
-    });
-  }
-  return response;
-}
 
 const markdown = {
   plugins: [footnotes],
@@ -76,9 +24,6 @@ const site = lume(
     prettyUrls: true,
     includes: "_theme",
     location: new URL("https://kusaeni.com"),
-    server: {
-      middlewares: [block_robotAI],
-    },
   },
   {
     markdown,
