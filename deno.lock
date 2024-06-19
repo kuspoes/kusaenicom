@@ -135,6 +135,7 @@
       "@std/http@0.224.3": {
         "integrity": "dac3a3640c730b9a4bcdb916b5231f4f2f5c141daf8dafc2b46011e1dab08eed",
         "dependencies": [
+          "jsr:@std/assert@^0.226.0",
           "jsr:@std/async@^0.224.1",
           "jsr:@std/cli@^0.224.5",
           "jsr:@std/encoding@1.0.0-rc.1",
@@ -312,6 +313,7 @@
     "https://denopkg.com/kuspoes/noRobotAI/no_RobotAI.ts": "https://denopkg.com/kuspoes/noRobotAI@master/no_RobotAI.ts",
     "https://denopkg.com/kuspoes/noRobotAI/no_roboAI.ts": "https://denopkg.com/kuspoes/noRobotAI@master/no_roboAI.ts",
     "https://denopkg.com/kuspoes/noRobotAI/no_robotAI.1.ts": "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.1.ts",
+    "https://denopkg.com/kuspoes/noRobotAI/no_robotAI.2.ts": "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.2.ts",
     "https://denopkg.com/kuspoes/noRobotAI/no_robotAI.ts": "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.ts"
   },
   "remote": {
@@ -662,6 +664,7 @@
     "https://denopkg.com/kuspoes/noRobotAI@master/no_RobotAI.ts": "491f7767a4ad7034dadbcb3e8735322ac16cc79c5e6e6cd42cf8facc21fbbbeb",
     "https://denopkg.com/kuspoes/noRobotAI@master/no_roboAI.ts": "b448b57cb2201744aebce400476e9b13b0b7596072b9a81272f9b076eea7d71f",
     "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.1.ts": "36a467abbab24ae945a0eff48ec2305201077664ff97c33ce7d86063845313b2",
+    "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.2.ts": "ba5980f98acecebe25d95f9209fa7acf79d1bc438fc9a2cbce6b96971a57d64d",
     "https://denopkg.com/kuspoes/noRobotAI@master/no_robotAI.ts": "2e3fe911d59d1dc2b556673b9c1c653daaf517bc744b2c6a9ac1bf09331de55c",
     "https://wilsonl.in/minify-html/deno/0.15.0/index.js": "8e7ee5067ca84fb5d5a1f33118cac4998de0b7d80b3f56cc5c6728b84e6bfb70"
   }
