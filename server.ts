@@ -1,6 +1,8 @@
 import Server from "https://deno.land/x/lume@v2.2.1/core/server.ts";
 import expires from "https://deno.land/x/lume@v2.2.1/middlewares/expires.ts";
 import notFound from "https://deno.land/x/lume@v2.2.1/middlewares/not_found.ts";
+import noCors from "https://deno.land/x/lume@v2.2.1/middlewares/no_cors.ts";
+import noRobotAI from "https://denopkg.com/kuspoes/noRobotAI/no_robotAI.1.ts";
 
 const s = new Server({
   port: 8080,
@@ -8,6 +10,8 @@ const s = new Server({
 });
 
 s.use(expires());
+s.use(noCors());
+s.use(noRobotAI());
 s.use(
   notFound({
     root: `${Deno.cwd()}/_site`,
