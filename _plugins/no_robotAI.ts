@@ -1,6 +1,6 @@
 import type { Middleware } from "lume/core/server.ts";
 
-export default function expires(): Middleware {
+export default function noRObotai(): Middleware {
   return async (request, next) => {
     const response = await next(request);
     const { headers } = request;
