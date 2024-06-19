@@ -12,7 +12,7 @@ import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
-import { UserAgent } from "jsr:@std/http";
+import { UserAgent } from "https://deno.land/std@0.224.0/http/mod.ts";
 
 async function block_robotAI(request: Request, next: Lume.RequestHandler) {
   const response = await next(request);
