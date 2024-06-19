@@ -1,7 +1,7 @@
-import Server from "https://deno.land/x/lume@v2.2.1/core/server.ts";
-import expires from "https://deno.land/x/lume@v2.2.1/middlewares/expires.ts";
-import notFound from "https://deno.land/x/lume@v2.2.1/middlewares/not_found.ts";
-import noCors from "https://deno.land/x/lume@v2.2.1/middlewares/no_cors.ts";
+import Server from "lume/core/server.ts";
+import expires from "lume/middlewares/expires.ts";
+import notFound from "lume/middlewares/not_found.ts";
+import noCors from "lume/middlewares/no_cors.ts";
 import noRobotAI from "./_plugins/no_robotAI.ts";
 
 const s = new Server({

@@ -41,10 +41,26 @@ export default function expires(): Middleware {
     ];
     const getUA = headers.get("user-agent") ?? "";
     const cekUA = banUA.includes(getUA);
-    console.log("User Agent :", getUA);
+    //console.log("User Agent :", getUA);
 
     if (cekUA === true) {
-      return new Response(`f`, { status: 403 });
+      return new Response(
+        `<!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>404 - Not found</title>
+          <style> body { font-family: sans-serif; max-width: 40em; margin: auto; padding: 2em; line-height: 1.5; }</style>
+        </head>
+        <body>
+          <h1>403 - Forbidden</h1>
+        </body></html`,
+        {
+          status: 403,
+          headers: { "Content-type": "text/html" },
+        },
+      );
     }
     return response;
   };
