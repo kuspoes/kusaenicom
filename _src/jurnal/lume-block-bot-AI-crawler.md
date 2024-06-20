@@ -12,6 +12,7 @@ favorit: false
 comment: false
 templateEngine: vto, md
 tocx: true
+og_images: https://ik.imagekit.io/hjse9uhdjqd/jurnal/meta_image/cat_ClOaUHOAC.png?updatedAt=1718847889072
 ---
 
 ### Apa itu web crawler?
@@ -68,9 +69,7 @@ Untuk pengguna _web server_ [nginx](https://nginx.com), Robb Knight membuat [art
 
 #### Deno Deploy dan Lume
 
-Bagi pengguna Lume yang reponya di*deploy* ke Deno Deploy, maka cara `.htaccess` dan `nginx.conf` tidak lagi bisa dipakai.
-
-Saya tidak tahu _backend_ dari Deno tapi yang pasti tidak ada peluang untuk mengutak atik _file_ `.htaccess` maupun `nginx.conf`, jadi harus mencari cara lain untuk melakukan pemblokiran.
+Bagi pengguna Lume yang reponya di*deploy* ke Deno Deploy, maka cara `.htaccess` dan `nginx.conf` tidak lagi bisa dipakai. Saya tidak tahu _backend_ dari Deno tapi yang pasti tidak ada peluang untuk mengutak atik _file_ `.htaccess` maupun `nginx.conf`, jadi harus mencari cara lain untuk melakukan pemblokiran.
 
 Lume adalah _static site generator_ yang saat di*deploy* ke Deno akan menyertakan sebuah _web server_ sederhana untuk menampilkan _static file_ (dalam HTML). Maka dengan melakukan _by pass_ dan pengecekan di _web server_ ini bisa dipergunakan untuk memblokir bot AI.
 
@@ -178,18 +177,29 @@ Lume is listening on port: 8080
 
  <div class="postnotes">
   <h4>Apa perbedaan antara pakai deno task dan deno run untuk serving Lume?</h4>
-  <p>deno task lume atau lume -s berfungsi untuk membuild lume dan menampilkan secara live dengan web server bawaan lume. Sangat cocok dipakai di lokal.</p>
+  <p><code>deno task lume</code> atau <code>lume -s</code> berfungsi untuk membuild lume dan menampilkan secara live dengan web server bawaan lume. Sangat cocok dipakai di lokal.</p>
 
-  <p>Karena tujuannya untuk pemakaian di lokal, maka semua perubahan yang terjadi di file server.ts tidak akan berpengaruh.</p>
+  <p>Karena tujuannya untuk pemakaian di lokal, maka semua perubahan yang terjadi di file <code>server.ts</code> tidak akan berpengaruh.</p>
 
-  <p>Sedangkan deno run -A server.ts digunakan untuk mengemulasi jika nanti sudah dideploy ke Deno, karena file server.ts inilah yang akan dipakai sebagai web server</p>
+  <p>Sedangkan <code>deno run -A server.ts</code> digunakan untuk mengemulasi jika nanti sudah dideploy ke Deno, karena file server.ts inilah yang akan dipakai sebagai web server</p>
 
-  <p>Kelemahannya, karena memang dipergunakan untuk serve static files, maka semua perubahan yang terjadi di dalam folder _src tidak akan berpengaruh atau ditampilkan. Mudahnya tidak ada fitur live reloading seperti di deno task lume -s</p>
+  <p>Kelemahannya, karena memang dipergunakan untuk serve static files, maka semua perubahan yang terjadi di dalam folder <code>_src</code> tidak akan berpengaruh atau ditampilkan. Mudahnya tidak ada fitur <i>live reloading</i> seperti di <code>deno task lume -s</code>.</p>
  </div>
 
 dan buka browser di alamat http://localhost:8080, kemudian buka _web inspector_ dan klik pada tanda titik 3 di sebelah kanan atas. Pilih **More tools** dan kemudian klik pada **Network Conditions**.
 
 Pada pilihan _checklist_ User agent, buang centang supaya tidak memakai _user agent_ dari browser. Kemudian pilih _user agent custom_ dan isi dengan misalnya "Bytespider" (tanpa tanda "").
+
+<div class="postnotes">
+<h4>Set User agent di Firefox</h4>
+<p>Untuk firefox agak sedikit rumit caranya,</p>
+<ol>
+  <li>Buka tab baru dan ketik <b>about:config</b>, biasanya ada warning tapi klik saja di Accept Risk,</li>
+  <li>kemudian ketik di pencarian, <code>general.useragent.override</code>, kemudian pilih <code>string</code> dan klik tanda <b>+</b>,</li>
+  <li>kemudian isi dengan nama bot misalnya CCBot dan simpan dengan klik tanda centang,</li>
+  <li>sekarang firefox memakai user agent CCBot secara global dan bisa dipakai untuk test. Untuk mengembalikan tinggal hapus <code>general.useragent.override</code> tadi</li>
+</ol>
+</div>
 
 Setelah itu _reload_ halaman dan seharusnya akan muncul pesan **403 Forbidden**.
 

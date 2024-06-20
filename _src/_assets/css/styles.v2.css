@@ -335,16 +335,21 @@ span.ter {
 
 .postnotes {
     margin-bottom: 1em;
-    background-color: #e2cfea;
+    background-color: #e9ecef;
     padding: 0.5em;
     border-radius: 0.4em;
 }
 
-.postnotes p {
+.postnotes p,
+.postnotes ol li {
     font-weight: 400;
     font-family: var(--sans);
     font-size: 0.8em;
     margin-bottom: 0.5em;
+}
+
+.postnotes code {
+    font-size: 90%;
 }
 
 /* tipo */
