@@ -50,7 +50,7 @@ export default function noRObotai(): Middleware {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>404 - Not found</title>
+          <title>403 - Forbidden</title>
           <style> body { font-family: sans-serif; max-width: 40em; margin: auto; padding: 2em; line-height: 1.5;}
           svg {
               display: inline;
