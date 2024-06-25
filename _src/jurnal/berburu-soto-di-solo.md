@@ -1,6 +1,6 @@
 ---
 title: Berburu Soto di Solo
-ringkasan: "ketika tiba - tiba ingin makan soto seger dan banjar"
+ringkasan: "Saya adalah pecinta soto. Sudah banyak soto yang sudah dicoba, mulai dari soto _à la_ daerah Mataraman, Soto Lamongan, Soto Madura, Soto Kudus, Soto Betawi, Soto Banjar, Coto Makasar, dan Soto Blitar (Bok Ireng), dan Soto Seger."
 tags:
   - kuliner
   - thoughts

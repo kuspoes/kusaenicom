@@ -28,7 +28,7 @@ layout: layout/content.vto
           				{{ post.title || post.url }}
         			</a>
 				</h2>
-				<p>{{ post.ringkasan }}</p>
+				{{ post.ringkasan |> md }}
 			</div>
 		</div>
 		{{ /for }}

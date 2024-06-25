@@ -295,7 +295,7 @@ span.ter {
 }
 
 .kait h4 {
-    margin: 1em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 .relasi {
@@ -322,6 +322,7 @@ span.ter {
 
 .hRelasi {
     font-weight: 600;
+    line-height: 0;
 }
 
 .relasi_meta p {
@@ -440,11 +441,12 @@ nav.toc ol li ul li {
 }
 
 sup {
-    vertical-align: super;
-    font: bold 0.7em var(--sans);
-    color: #6c757d;
-    background-color: #e9ecef;
-    margin-left: 5px;
+    vertical-align: baseline;
+    font-size: 75%;
+    font-weight: bold;
+    position: relative;
+    line-height: 0;
+    top: -0.6em;
 }
 
 .notes p {
@@ -496,6 +498,7 @@ h3 {
 h4 {
     font-size: 1.2em;
     margin: 1.5em 0 0.5em 0;
+    line-height: 1;
 }
 
 .postitle h2 {
@@ -543,6 +546,7 @@ a.ptitle:visited {
 a.hRelasi {
     font-weight: 800;
     text-decoration: none;
+    font-size: 80%;
 }
 
 a.header-anchor,
@@ -559,6 +563,10 @@ a.badge {
     border-radius: 0.37em;
     font: 500 0.8em/1 var(--sans);
     text-decoration: none;
+}
+
+a.footnote-ref {
+    font-weight: bold;
 }
 
 .notes a,

@@ -11,7 +11,7 @@
         </p>
         <h1>{{ it.title }}</h1>
         {{ if it.ringkasan }}
-        <p class="subtitle">{{ it.ringkasan }}</p>
+        <p class="subtitle">{{ it.ringkasan |> md }}</p>
         {{ /if }}
         <div class="postag">
             {{ if it.tags }}
