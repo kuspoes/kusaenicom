@@ -60,14 +60,14 @@ site
       },
     }),
   )
-  //  .use(
-  //    minifyHTML({
-  //      extensions: [".html", ".css"],
-  //      options: {
-  //        minify_css: true,
-  //      },
-  //    }),
-  //  )
+  .use(
+    minifyHTML({
+      extensions: [".html", ".css"],
+      options: {
+        minify_css: true,
+      },
+    }),
+  )
   .use(
     codeHighlight({
       theme: {
