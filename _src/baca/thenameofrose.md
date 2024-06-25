@@ -26,6 +26,7 @@ tags:
   - buku
   - misteri
   - Umberto Eco
+  - fave
 ---
 
 **Il Nome della Rosa** adalah judul asli buku ini dalam bahasa Italia dan alasan terbesar saya membeli novel ini adalah karena [Ustadz Salimafillah](https://salimafillah.com/) menyebut novel ini di salah satu [post Instagram](https://www.instagram.com/p/BckEkv2hq6Q/?utm_source=ig_web_copy_link) beliau, sebagai salah satu novel detektif favoritnya.

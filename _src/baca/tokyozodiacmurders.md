@@ -26,6 +26,7 @@ tags:
   - buku
   - misteri
   - Soji Shimada
+  - fave
 ---
 
 Tahun 1936 (dalam periode Showa) setelah Perang Dunia ke-2, seorang pelukis tua sekaligus _playboy_ bernama **Heikichi Umezawa** tergila - gila dengan astrologi dan kimia memiliki sosok perempuan khayalannya yang diberi nama **Azoth**.

@@ -4,9 +4,11 @@ ringkasan: "mencoba memasang FreeBSD 14 dan Jail Postgresql serta miniflux di Ra
 tags:
   - tutorial
   - bsd
+  - fave
 date: 2024-05-18
 code: true
 tocx: true
+favorit: true
 ---
 
 Saya ada Raspberry Pi4 Model B yang rencananya mau dipakai sebagai _home lab_. Raspberry Pi4 ini datang dengan CPU Armv7 di frequensi 1500Mhz 4 cores dan _memory_ 2GB. Untuk _storage_ saya pakai micro SD merek Sandisk berkapasitas 16Gb.

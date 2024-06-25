@@ -8,7 +8,7 @@ layout: layout/content.vto
 <p>Berlangganan lewat <abbr title="sementara ditutup karena buttowndown dibegal kominfo">email</abbr> atau <a href="/feed.xml">RSS</a></p>
 </div>
 		{{ for post of search.pages("type=post", "date=desc") }}
-		<div class="postlist">
+		<div class="postlist {{ if post.favorit }} fave {{ /if }}">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">

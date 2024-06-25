@@ -8,6 +8,7 @@ tags:
   - 11ty
   - node
   - tutorial
+  - fave
 kategori: jurnal
 code: true
 keywords: "eleventy, 11ty, json, global data, tutorial, shortcode"

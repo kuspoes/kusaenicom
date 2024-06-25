@@ -37,6 +37,13 @@ body {
     align-items: flex-start;
 }
 
+.fave {
+    border: 1px solid #fb6f92;
+    border-radius: 0.376em;
+    padding: 10px;
+    background-color: #ffe5ec;
+}
+
 .postitle {
     width: 30em;
     margin-left: 1em;
@@ -492,8 +499,8 @@ h4 {
 }
 
 .postitle h2 {
-    margin: 0;
-    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
     font-weight: 900;
     line-height: 1;
     font-family: var(--sans);
