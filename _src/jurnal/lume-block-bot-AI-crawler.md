@@ -31,11 +31,11 @@ Sedangkan pihak - pihak lain adalah para _content creator_, _blogger_, peneliti,
 
 ### Mengontrol bot crawler
 
-#### Dengan robot.txt
+#### Dengan robots.txt
 
-Sejak pertama diluncurkan pada tahun 1994 dan kemudian menjadi standar pada 2022 _file_ `robot.txt` sudah menjadi semacam _state of the art_ untuk melakukan pengontrolan terhadap _bot crawler_.
+Sejak pertama diluncurkan pada tahun 1994 dan kemudian menjadi standar pada 2022 _file_ `robots.txt` sudah menjadi semacam _state of the art_ untuk melakukan pengontrolan terhadap _bot crawler_.
 
-Fungsinya adalah untuk menentukan bot yang mana yang boleh mengakses sebuah halaman tertentu atau spesifik. Contoh bentuk _syntax_ dari `robot.txt` adalah sebagai berikut
+Fungsinya adalah untuk menentukan bot yang mana yang boleh mengakses sebuah halaman tertentu atau spesifik. Contoh bentuk _syntax_ dari `robots.txt` adalah sebagai berikut
 
 ```txt
 User-agent: *
@@ -47,13 +47,13 @@ Disallow: /
 
 _Syntax_ `User-agent` berfungsi untuk menentukan jenis _user agent_ dari bot atau _browser_. Tanda `*` berarti semua _user agent_ dan _syntax_ `Allow` berarti mengijinkan akses. Sedang `/` adalah direktori `root`. Artinya semua _user agent_ diijinkan untuk mengakses _root directory_ dari sebuah websites.
 
-Sebaliknya, jika `User-agent` berisi nama dari bot (dalam hal ini Applebot-Extended) maka `robot.txt` melarang/`Disallow` akses.
+Sebaliknya, jika `User-agent` berisi nama dari bot (dalam hal ini Applebot-Extended) maka `robots.txt` melarang/`Disallow` akses.
 
-Secara etika, seharusnya semua bot mematuhi aturan yang sudah ditetapkan dalam _file_ `robot.txt` namun dalam kenyataanya tidak. Banyak bot nakal yang justru membaca _file_ `robot.txt` untuk menemukan direktori mana yang dilarang untuk diakses dan kemudian malah mengaksesnya.
+Secara etika, seharusnya semua bot mematuhi aturan yang sudah ditetapkan dalam _file_ `robots.txt` namun dalam kenyataanya tidak. Banyak bot nakal yang justru membaca _file_ `robots.txt` untuk menemukan direktori mana yang dilarang untuk diakses dan kemudian malah mengaksesnya.
 
-Kenapa _file_ `robot.txt` tidak bisa memblokir akses secara paksa?
+Kenapa _file_ `robots.txt` tidak bisa memblokir akses secara paksa?
 
-_File_ `robot.txt` hanyalah sebuah himbauan bagi bot untuk _crawler_ dan himbauan artinya tidak harus dipatuhikan? Sehingga membuat _file_ `robot.txt` pun kadang tidak cukup untuk mengontrol atau menghentikan bot.
+_File_ `robots.txt` hanyalah sebuah himbauan bagi bot untuk _crawler_ dan himbauan artinya tidak harus dipatuhikan? Sehingga membuat _file_ `robots.txt` pun kadang tidak cukup untuk mengontrol atau menghentikan bot.
 
 #### Dengan .htaccess
 

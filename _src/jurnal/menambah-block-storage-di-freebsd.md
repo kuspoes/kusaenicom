@@ -105,17 +105,17 @@ Setelah Jail dibuat selanjutnya adalah membuat folder di dalam Jail tersebut yan
 Secara garis besar, prosesnya mirip dengan cara diatas, bedanya memakai _file_ `/etc/fstab` yang ada di dalam Jail.
 
 ```bash
-poes@jaeger:~$ doas bastille cmd egois mkdir driveAne
-poes@jaeger:~$ doas bastille mount egois /mnt/monster root/driveAne nullfs rw 0 0
+poes@jaeger:~$ doas bastille cmd egois mkdir hanggar
+poes@jaeger:~$ doas bastille mount egois /mnt/monster root/hanggar nullfs rw 0 0
 [egois]:
-Added: /mnt/monster /usr/local/bastille/jails/egois/root/root/driveAne nullfs rw 0 0
+Added: /mnt/monster /usr/local/bastille/jails/egois/root/root/hanggar nullfs rw 0 0
 ```
 
 <aside>
 Seluruh perintah diatas dijalankan dari Host.
 </aside>
 
-Mantap, sekarang setiap _file_ yang ditaruh di dalam folder `driveAne` di dalam Jail akan tersimpan di dalam _block storage_ saya.
+Mantap, sekarang setiap _file_ yang ditaruh di dalam folder `hanggar` di dalam Jail akan tersimpan di dalam _block storage_ saya.
 
 ---
 
