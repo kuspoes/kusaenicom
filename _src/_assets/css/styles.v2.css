@@ -289,6 +289,15 @@ img.layang {
     float: left;
 }
 
+.kanan {
+    float: right !important;
+}
+
+.full {
+    float: none;
+    width: 98%;
+}
+
 span.ter {
     text-transform: uppercase;
     font: bold 80% var(--sans);
@@ -760,8 +769,12 @@ hr::after {
 
     aside,
     .terkait {
-        width: 93%;
+        width: 94%;
         margin-top: -2em;
+    }
+
+    .terkait {
+        margin-top: 0;
     }
 
     #container,
