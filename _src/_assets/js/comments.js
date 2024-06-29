@@ -1,6 +1,4 @@
-import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
-const env = await load();
-const token = env["GTS_TOKEN"];
+const token = procces.env.token;
 
 // © https://phosphoricons.com/
 const icons = {
