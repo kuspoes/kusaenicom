@@ -1,4 +1,4 @@
-const token = procces.env.token;
+const token = process.env.token;
 
 // © https://phosphoricons.com/
 const icons = {
