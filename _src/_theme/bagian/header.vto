@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="/assets/css/reset.css" inline>
         <link rel="stylesheet" href="/assets/css/fonts.css" inline>
         <link rel="stylesheet" href="/assets/css/styles.v2.css" inline>
+        {{ if it.style }}
+        <link rel="stylesheet" href="/assets/css/posts/{{ it.style }}" inline>
+        {{ /if }}
         {{ if it.code }}
         <link rel="stylesheet" href="/assets/css/tmrw.css">
         {{ /if }}

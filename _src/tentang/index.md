@@ -1,19 +1,10 @@
 ---
 layout: layout/tentang.vto
-title: 'Siapakah Kusaeni?'
+title: "Siapakah Kusaeni?"
 kategori: tentang
 date: 2024-06-03
 templateEngine: vto,md
-style: '
-.kus_pp .kus_avatar {
-    float: left;
-    width: 150px;
-    border-radius: 100%;
-    border: 1px solid #ccc;
-    margin-right: 12px;
-}
-.meta h1 { margin-bottom: 1em}
-'
+style: "tentang.css"
 ---
 
 <div class="kus_pp">

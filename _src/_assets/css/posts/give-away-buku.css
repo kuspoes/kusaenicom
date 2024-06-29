@@ -1,0 +1,63 @@
+#allbox {
+    height: 300px;
+    margin: 0px auto;
+    margin-bottom: 2em;
+    position: relative;
+}
+#boxsatu,
+#boxdua,
+#boxtiga,
+#boxempat,
+#boxlima {
+    position: absolute;
+}
+#boxsatu {
+    z-index: 5;
+}
+#boxdua {
+    left: 130px;
+    z-index: 4;
+}
+#boxtiga {
+    left: 250px;
+    z-index: 3;
+}
+#boxempat {
+    left: 360px;
+    z-index: 2;
+}
+#boxlima {
+    left: 460px;
+    z-index: 1;
+}
+.coverX {
+    width: 200px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.34) 3px 0px 1px 0px;
+    border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 700px) {
+    #allbox {
+        height: 200px;
+        margin: 0 0 2em 0;
+        position: relative;
+        display: block;
+    }
+    #boxdua {
+        left: 55px;
+    }
+    #boxtiga {
+        left: 110px;
+    }
+    #boxempat {
+        left: 165px;
+    }
+    #boxlima {
+        left: 200px;
+    }
+    .coverX {
+        width: 150px;
+        height: 200px;
+    }
+}

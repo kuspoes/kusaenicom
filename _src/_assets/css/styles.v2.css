@@ -12,6 +12,10 @@
     --col-link: #005f73;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font: normal 1.2em/1.6 var(--serif);
     color: var(--col_body);
@@ -21,7 +25,6 @@ body {
 #container {
     width: 50em;
     margin: 0em auto;
-    scroll-behavior: smooth;
 }
 
 .page {
@@ -538,7 +541,7 @@ a:hover {
     text-decoration: underline;
 }
 
-a,
+a:link,
 a:visited,
 .nav a {
     text-decoration: none;
@@ -568,10 +571,11 @@ a.header-anchor:visited {
 a.badge {
     padding: 5px 8px;
     margin-right: 1em;
-    background-color: #e5e5e5;
+    background-color: #fcf6bd;
     border-radius: 0.37em;
-    font: 500 0.8em/1 var(--sans);
+    font: 600 0.7em/1 var(--sans);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a.footnote-ref {
