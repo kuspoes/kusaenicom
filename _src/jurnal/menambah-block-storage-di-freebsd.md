@@ -8,7 +8,8 @@ tags:
 kategori: jurnal
 code: true
 favorit: false
-comment: false
+comments:
+  src: "https://kauaku.us/@poes/statuses/01J1H5A14TM0945CBM9N61C8F1"
 templateEngine: vto, md
 ---
 

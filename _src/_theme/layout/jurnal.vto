@@ -14,14 +14,12 @@
         <p class="subtitle">{{ it.ringkasan |> md }}</p>
         {{ /if }}
         <div class="postag">
-            {{ if it.tags }}
-            {{ for tag of it.tags }}
-                {{ set page = search.page(`type=tag tag="${tag}"`) }}
-                {{ if page }}
-                   <a data-pagefind-filter="filter" class="badge" href="{{ page.url }}">#{{ tag }}</a>
-                {{ /if }}
-            {{ /for }}
-            {{ /if }}
+            {{ if it.tags }} {{ for tag of it.tags }} {{ set page =
+            search.page(`type=tag tag="${tag}"`) }} {{ if page }}
+            <a data-pagefind-filter="filter" class="badge" href="{{ page.url }}"
+                >#{{ tag }}</a
+            >
+            {{ /if }} {{ /for }} {{ /if }}
         </div>
     </div>
     <div class="content">
@@ -45,10 +43,7 @@
                 {{ /for }}
             </ol>
         </nav>
-        {{ /if }} {{ /if }}
-        {{ content }}
-        {{ /if }}
-        {{ if it.footnotes.length }}
+        {{ /if }} {{ /if }} {{ content }} {{ /if }} {{ if it.footnotes.length }}
         <aside role="note" class="footnotes">
             <h4>Footnotes:</h4>
             {{ for note of footnotes }}
@@ -63,6 +58,22 @@
             {{ /for }}
         </aside>
         {{ /if }}
+        <hr></hr>
+        {{ if it.comments?.src }}
+        <div class="comments-section">
+            <header class="comments-header">
+                <h2>{{ metadata.comments.title }}</h2>
+                <p>{{ metadata.comments.description.replace(":src:", it.comments.src) }}</p>
+            </header>
+            <mastodon-comments
+                src="{{ it.comments.src }}"
+                cache="{{ it.comments.cache ?? 60 }}"
+                class="comments"
+            >
+                {{ it.comments.empty }}
+            </mastodon-comments>
+            {{ /if }}
+        </div>
     </div>
     <!--
     <div class="kanan">
@@ -70,7 +81,8 @@
     </div>
 -->
     <div class="backtop">
-<a href="#container" aria-label="Jump Back to Top">            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <a href="#container" aria-label="Jump Back to Top">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg
                 class="btop"
                 width="50px"
@@ -96,6 +108,5 @@
         <p>kembali ke atas</p>
     </div>
 </div>
-
 
 {{ include "bagian/footer.vto" }}
