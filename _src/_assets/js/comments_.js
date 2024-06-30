@@ -45,20 +45,25 @@ export default class Mastodon extends HTMLElement {
     const { origin, pathname } = tootUrl;
     let id;
 
-    // In case it’s a a Pleroma server, with /notice/ URLs.
     if (pathname.includes("/statuses/")) {
       [, id] = pathname.match(/^\/@poes\/statuses\/([^\/?#]+)/);
     } else {
-      [, id] = pathname.match(/\/(\d+)$/);
+      console.log("error get id");
     }
-
     if (!id) {
       return;
     }
-    console.log(id);
+
+    console.log(token);
+
     const data = await Mastodon.fetch(
-      new URL(`${origin}/api/v1/statuses/${id}/context`),
-      this,
+      `${origin}/api/v1/statuses/${id}/context`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+      Number(this.getAttribute("cache") || 0),
     );
 
     // Sort data
@@ -109,16 +114,9 @@ export default class Mastodon extends HTMLElement {
     container.appendChild(ul);
   }
 
-  static async fetch(url, element) {
-    const ttl = Number(element.getAttribute("cache") || 0);
-    const token = element.getAttribute("token");
-    const headers = new Headers();
-    if (token) {
-      headers.set("Authorization", `Bearer ${token}`);
-    }
-
+  static async fetch(url, ttl) {
     if (typeof caches === "undefined") {
-      return await (await fetch(url), { headers }).json();
+      return await (await fetch(url)).json();
     }
 
     const cache = await caches.open("mastodon-comments");
@@ -134,7 +132,11 @@ export default class Mastodon extends HTMLElement {
     }
 
     try {
-      const response = await fetch(url, { headers });
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       const body = await response.json();
 
       cached = new Response(JSON.stringify(body));
@@ -155,7 +157,7 @@ export default class Mastodon extends HTMLElement {
     const useraddress = `@${account.username}@${new URL(account.url).hostname}`;
 
     return `
-        <article class="comment" id="comment-${comment.id}">
+      < article class= "comment" id = "comment-${comment.id}" >
           <footer class="comment-footer">
             <a href="${account.url}" class="comment-user">
               <img class="comment-avatar" src="${account.avatar_static}" alt="${account.display_name}'s avatar" width="200" height="200">
@@ -187,19 +189,19 @@ export default class Mastodon extends HTMLElement {
               }
             </p>
           </div>
-        </article>
-      `;
+        </article >
+        `;
   }
 }
 
 function formatEmojis(html, emojis) {
   emojis.forEach(({ shortcode, static_url, url }) => {
     html = html.replace(
-      `:${shortcode}:`,
-      `<picture>
+      `:${shortcode}: `,
+      `< picture >
         <source srcset="${url}" media="(prefers-reduced-motion: no-preference)">
-        <img src="${static_url}" alt=":${shortcode}:" title=":${shortcode}:" width="16" height="16">
-      </picture>`,
+          <img src="${static_url}" alt=":${shortcode}:" title=":${shortcode}:" width="16" height="16">
+          </picture>`,
     );
   });
   return html;

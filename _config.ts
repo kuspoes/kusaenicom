@@ -12,6 +12,7 @@ import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
+import { config } from "https://deno.land/x/dotenv@v3.2.2/mod.ts";
 
 const markdown = {
   plugins: [footnotes],
@@ -143,6 +144,6 @@ site.process([".html"], (pages) => {
   }
 });
 
-const token = Deno.env.get("GTS_TOKEN");
+site.data("gts_token", config()["GTS_TOKEN"]);
 
 export default site;
