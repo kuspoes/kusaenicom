@@ -55,9 +55,9 @@ export default class Mastodon extends HTMLElement {
     if (!id) {
       return;
     }
-    console.log(id);
+    console.log(origin);
     const data = await Mastodon.fetch(
-      new URL(`${origin}/api/v1/statuses/${id}/context`),
+      new URL(`${origin}/api/v1/statuses/${id}/context`, { mode: "no-cors" }),
       this,
     );
 
@@ -113,6 +113,7 @@ export default class Mastodon extends HTMLElement {
     const ttl = Number(element.getAttribute("cache") || 0);
     const token = element.getAttribute("token");
     const headers = new Headers();
+    headers.set("mode", "no-cors");
     if (token) {
       headers.set("Authorization", `Bearer ${token}`);
     }
