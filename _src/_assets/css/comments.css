@@ -80,6 +80,7 @@
     }
     .comment-useraddress {
         font-style: normal;
+        color: #6c757d;
     }
     .comment-time {
         font-size: small;
@@ -96,7 +97,7 @@
     }
     .comment-body {
         margin-top: 1em;
-        line-height: 1.5;
+        line-height: 1.1;
 
         .invisible {
             display: none;
@@ -113,7 +114,7 @@
         }
     }
     .comment-body p {
-        margin: 0.5em 0 0;
+        margin: 0.5em 0 0.5em;
     }
     .comment-counts {
         display: flex;
