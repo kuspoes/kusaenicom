@@ -155,7 +155,7 @@ abaikan media yang tidak bisa ditampilkan, itu tak penting yang penting bisa dip
 
 Setelah melakukan itu semua akhirnya saya bisa menampilkan gotosocial _threads_ (jika ada) di Lume.
 
-[^1]: Tentang web component bisa dibaca di artikel MDN https://developer.mozilla.org/en-US/docs/Web/API/Web_components
+[^1]: Tentang web component bisa dibaca di artikel MDN [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 
 [^2]: Sehingga saya memiliki file `comments.js`, `main.js`, dan `comment.css`
 
