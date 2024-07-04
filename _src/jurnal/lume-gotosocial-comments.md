@@ -53,7 +53,7 @@ Karena _file_ `main.js` ini mengimport fungsi `Comments` dari _file_ `comments.j
 
 Saya pilih cara yang kedua, jadi saya unduh _file_ `comments.js` dari repositorinya di <https://github.com/oom-components/mastodon-comments> lalu disimpan ke dalam _folder_ `js` yang sudah dibuat sebelumnya.
 
-Kemudian di lokasi yang hendak ditampilkan mastodon comment’s (punya saya di dalam _template_ `layout/jurnal.vto` , tambahkan _template tags_ seperti ini
+Kemudian di lokasi yang hendak ditampilkan mastodon comment’s (punya saya di dalam _template_ `layout/jurnal.vto`) , tambahkan _template tags_ seperti ini
 
 ```html
 {{ if it.comments?.src }}
@@ -78,7 +78,7 @@ di _frontmatter_ di _file_ artikel, tambahkan _variable_ `comments : src:` agar 
 ```markdown
 ---
 comments:
-	src: 'https://mastodon.social/@monsterpoes/112671781345375943'
+  src: "https://mastodon.social/@monsterpoes/112671781345375943"
 ---
 ```
 
@@ -122,7 +122,7 @@ Oleh karena itu dibutuhkan semacam proxy sebagai jembatan. Konsepnya kira - kira
 1. `token` disimpan sebagai `.env` di proxy yang bisa dipakai memanggil API dalam format `JSON`,
 2. mastodon comment’s melakukan _fetching_ ke proxy. Dalam proses ini tidak mempergunakan `token`.
 
-Jadi saya akhir bikin proxy sederhana di [Deno Deploy](https://dash.deno.com), *script*nya kira - kira seperti ini
+Jadi akhirnya saya bikin proxy sederhana di [Deno Deploy](https://dash.deno.com), *script*nya kira - kira seperti ini
 
 ```ts
 Deno.serve({ port: 8000 }, async (request) => {
