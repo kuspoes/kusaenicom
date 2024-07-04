@@ -51,7 +51,7 @@ Karena _file_ `main.js` ini mengimport fungsi `Comments` dari _file_ `comments.j
 1. Mempergunakan fungsi/fitur `site.remote()` [Remote files](https://lume.land/docs/core/remote-files/) untuk mengunduh _file_ saat build atau
 2. Mengunduh dan menyimpannya secara manual[^2]
 
-Saya pilih cara yang kedua, jadi saya unduh _file_ `comments.js` dari repositorinya di https://github.com/oom-components/mastodon-comments kemudian disimpan ke dalam _folder_ `js` yang sudah dibuat sebelumnya.
+Saya pilih cara yang kedua, jadi saya unduh _file_ `comments.js` dari repositorinya di <https://github.com/oom-components/mastodon-comments> lalu disimpan ke dalam _folder_ `js` yang sudah dibuat sebelumnya.
 
 Kemudian di lokasi yang hendak ditampilkan mastodon comment’s (punya saya di dalam _template_ `layout/jurnal.vto` , tambahkan _template tags_ seperti ini
 
