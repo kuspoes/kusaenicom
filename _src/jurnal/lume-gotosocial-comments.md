@@ -111,9 +111,9 @@ Eh tapi,
 
 ternyata tidak cukup sampai disini, Gotosocial tidak mengijinkan _fetch_ tanpa _authentification_, harus pakai `token` jadi _request_ dulu `token` dengan cara seperti tutorial [Authentication With API](https://docs.gotosocial.org/en/latest/api/authentication/).
 
-Setelah mendapatkan `token`, maka fungsi `fetch` harus dirubah untuk mengikutkan `token`. Saya menghubungi _developer_ mastodon comments untuk Lume ini dan dia meng*update* kodenya agar bisa memakai `token`.
+Setelah mendapatkan `token`, maka fungsi `fetch` harus dirubah untuk mengikutkan `token`. Saya menghubungi _developer_ mastodon comments untuk Lume ini dan dia meng*update* kodenya [agar bisa memakai](https://github.com/oom-components/mastodon-comments/commit/47cdb805947cd35e066a55567cea18cc5406767a) `token`.
 
-Dengan ini mastodon comments sudah bisa melakukan _fetch_ dan _display_ data sesuai dengan yang diinginkan. Keren! tapi cara seperti ini cocok untuk pemakaian lokal saja, setelah _push_ dan _live_ ==cara ini sangat beresiko keamanan karena `token` akan kelihatan di _browser_==. Ini adalah resiko jika mempergunakan web component karena berjalan disisi _client_ / _browser_.
+Dengan ini mastodon comments sudah bisa melakukan _fetch_ dan _display_ data sesuai dengan yang diinginkan. Keren! tapi cara seperti ini cocok untuk pemakaian lokal saja, setelah _push_ dan _live_ <mark>cara ini sangat beresiko keamanan karena `token` akan kelihatan di _browser_</mark>. Ini adalah resiko jika mempergunakan web component karena berjalan disisi _client_ / _browser_.
 
 ### Proxy
 
@@ -145,7 +145,7 @@ Deno.serve({ port: 8000 }, async (request) => {
 
 untuk `token` saya simpan di _environment variable_ yang disediakan oleh Deno dan dipanggil dengan `Deno.env.get(‘GTS_TOKEN’)`.
 
-Kemudian di _frontmatter_ tinggal dirubah `src`nya menjadi alamat proxy yang dipakai, dalam hal ini saya pakai URL https://poestodon.deno.dev yang akan meng*relay proxy* ke URL asli.
+Kemudian di _frontmatter_ tinggal dirubah `src`nya menjadi alamat proxy yang dipakai, dalam hal ini saya pakai URL <https://poestodon.deno.dev> yang akan meng*relay proxy* ke URL asli.
 
 ```txt
 https://poestodon.deno.dev/@poes/statuses/01J1S8G6667MYN5R2XYVN5D2WG
@@ -155,7 +155,7 @@ abaikan media yang tidak bisa ditampilkan, itu tak penting yang penting bisa dip
 
 Setelah melakukan itu semua akhirnya saya bisa menampilkan gotosocial _threads_ (jika ada) di Lume.
 
-[^1]: Tentang web component bisa dibaca di artikel MDN [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
+[^1]: Tentang web component bisa dibaca di artikel [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 
 [^2]: Sehingga saya memiliki file `comments.js`, `main.js`, dan `comment.css`
 
