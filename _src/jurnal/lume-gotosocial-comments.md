@@ -67,7 +67,7 @@ Kemudian di lokasi yang hendak ditampilkan mastodon comment’s (punya saya di d
     cache="{{ it.comments.cache ?? 60 }}"
     class="comments"
   >
-    {{ it.comments.empty }}
+    {{ metadata.comments.empty }}
   </mastodon-comments>
 </div>
 {{ /if }}
