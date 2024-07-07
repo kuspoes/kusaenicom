@@ -9,7 +9,7 @@
     --col_asidebg: #eaf4f4;
     --col_gray: #495057;
     --col_border: #ced4da;
-    --col-link: #005f73;
+    --col-link: #0d00a4;
 }
 
 html {
@@ -106,10 +106,12 @@ aside.footnotes {
     float: left;
     padding: 2px;
     margin-right: 0.6em;
-    font: bold 0.8em var(--sans);
+    font: 800 0.8em var(--sans);
     color: #6c757d;
-    background-color: #e9ecef;
-    border-radius: 0.1em;
+}
+
+.notes p {
+    color: var(--col_body);
 }
 
 /* Layout: Nav */
@@ -531,21 +533,22 @@ h4 {
 }
 
 /* anchors */
-a:link {
-    font-weight: 500;
-    text-decoration: underline;
-    color: var(--col_link);
-}
 
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #001219;
+    background-color: #f2ebfb;
 }
 
 a:link,
-a:visited,
-.nav a {
-    text-decoration: none;
+a:visited {
+    font-weight: 500;
     color: var(--col-link);
+    padding: 2px;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 a.ptitle,
@@ -588,6 +591,15 @@ a.footnote-ref {
     color: var(--col-link);
 }
 
+.logo a:hover,
+.menu a:hover,
+.baca a:hover,
+.backtop a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
 nav.toc a {
     text-decoration: none;
     border-bottom: 1px dotted #94d2bd;
@@ -602,6 +614,15 @@ nav.toc ol li ul li a {
 
 nav.toc a:hover {
     border-bottom: 1px solid #001219;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--col_body);
+}
+
+.comments-section a:hover {
+    background-color: transparent;
 }
 
 /* code */

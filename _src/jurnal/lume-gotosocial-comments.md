@@ -143,6 +143,10 @@ Deno.serve({ port: 8000 }, async (request) => {
 });
 ```
 
+<aside>
+berdasarkan <a href="https://blog.r0b.io/post/creating-a-proxy-with-deno/">Creating a HTTP proxy with Deno</a> oleh Rob Anderson.
+</aside>
+
 untuk `token` saya simpan di _environment variable_ yang disediakan oleh Deno dan dipanggil dengan `Deno.env.get(‘GTS_TOKEN’)`.
 
 Kemudian di _frontmatter_ tinggal dirubah `src`nya menjadi alamat proxy yang dipakai, dalam hal ini saya pakai URL <https://poestodon.deno.dev> yang akan meng*relay proxy* ke URL asli.
