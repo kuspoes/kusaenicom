@@ -14,7 +14,8 @@ comment: false
 templateEngine: md
 tocx: false
 comments:
-  src: "https://poestodon.deno.dev/@poes/statuses/01J1YB34JA8DXW98XXQ2KP8WJ2"
+  src: "https://poestodon.deno.dev/@poes/statuses/01J1YB34JA8DXW98XXQ2KP8WJ2o"
+  real: "https://kauaku.us/@poes/statuses/01J1YB34JA8DXW98XXQ2KP8WJ2o"
 ---
 
 Di lume tidak perlu memasang _plugin_ untuk bisa memasang mastodon comment’s, cukup dengan web component[^1] saja.
