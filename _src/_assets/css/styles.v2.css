@@ -621,8 +621,12 @@ nav.toc a:hover {
     color: var(--col_body);
 }
 
-.comments-section a:hover {
+.comments-section a:hover,
+.comments a:hover,
+.comment a:hover {
     background-color: transparent;
+    text-decoration: none;
+    border: none;
 }
 
 /* code */
