@@ -192,7 +192,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 
    Skemanya adalah Deno akan meng-query data dari database dengan syarat (WHERE) kolom remark berisi ‘USEND’ sebagai tanda notifikasi belum terkirim.
 
-   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkap [Style text with message entities](https://core.telegram.org/api/entities).
+   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkap [Style text with message entities](https://core.telegram.org/api/entities). Karena pakai Markdown, maka saya perlu menghilangkan beberapa _entities_ HTML yang ada (karena perbedaan client) dengan fungsi `replace` dan Regex.
 
 3. `markNotif()` setelah semua notifikasi terkirim ke Telegram Bot, maka Deno akan memeriksa semua baris di dalam database dan merubah isi kolom remark dari ‘USEND’ ke ‘SEND’.
    Saya paham kalo fungsi ini _opionated_ banget, tapi ini bekerja untuk saya yang notifikasi Gotosocialnya tidak banyak dan jarang - jarang.
