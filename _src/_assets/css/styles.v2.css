@@ -439,7 +439,7 @@ li {
 }
 
 nav.toc ol li {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 nav.toc ol li ul li {
@@ -504,8 +504,13 @@ h1.s {
     font-size: 42px;
 }
 
+h2 {
+    font-size: 1.3em;
+    margin: 1.5em 0 0.5em 0;
+}
+
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 1.5em 0 0.5em 0;
 }
 
@@ -516,6 +521,7 @@ h4 {
 }
 
 .postitle h2 {
+    margin-top: 0px !important;
     margin-bottom: 0.3em;
     font-size: 1.1em;
     font-weight: 900;
