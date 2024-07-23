@@ -96,7 +96,7 @@ poes@jaeger:~$ doas vim /etc/fstab
 
 ### Jail dan _block storage_
 
-{{ echo |> terkait("FreeBSD di Raspberry Pi4", "/jurnal/raspberry-pi4-di-freebsd/#jail%E2%80%99s","","Artikel Terkait") }}
+{{ echo |> terkait("FreeBSD di Raspberry Pi4", "/jurnal/raspberry-pi4-di-freebsd/#jail%E2%80%99s") }}
 ... Jails adalah sejenis container yang dibangun diatas konsep chroot untuk menciptakan sebuah safe environtment yang terisolasi dari sistem utama...
 {{ /echo }}
 

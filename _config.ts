@@ -99,8 +99,8 @@ site.helper(
     desc: string,
     title: string,
     url: string,
-    format: string,
-    label: string,
+    format: string = "",
+    label: string = "Artikel Terkait",
   ) {
     return `<div class="terkait ${format}">
             <span class="ter">${label}</span>
