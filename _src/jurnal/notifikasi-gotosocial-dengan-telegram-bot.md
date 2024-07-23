@@ -83,6 +83,10 @@ Saya membuat script di `localhost` meskipun sebenarnya langsung dari Deno Deploy
 
 Contoh dibawah hanya diambil sepotong - potong, sedangkan keseluruhan _script_ bisa dilihat di [repo Github poestldn](https://github.com/kuspoes/poestldon)
 
+{{ echo |> terkait("Poestldon", "https://github.com/kuspoes/poestldon", "full", "Github Repository") }}
+Repositori Poestldon di Github. Ini adalah script sederhana untuk menarik data notifikasi dari API Gotosocial. Kemudian menyimpannya ke dalam database Postgresql dan kemudian dikirim ke Telegram Bot.
+{{ /echo }}
+
 ### Environtment Variabel (.env)
 
 Ingat dengan teks yang diberi stabilo hijau di atas?, Maka disinilah fungsinya untuk diinput ke _environtment files_. Tujuan dimasukkan _file .env_ adalah soal keamanan. Jadi bikin _file_ `.env` kemudian isi seperti contoh berikut
@@ -120,6 +124,8 @@ Untuk membuat database dan populasi tabel bisa dengan menjalankan perintah
 ```shell
 $ deno run -A --env initdb.ts
 ```
+
+ <aside>Penggunaan <code>--env</code> mutlak dibutuhkan agar Deno membaca Environtment Variables</aside>
 
 ### Fetch data dari API Gotosocial
 
@@ -192,10 +198,10 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 
    Skemanya adalah Deno akan meng-query data dari database dengan syarat (WHERE) kolom remark berisi ‘USEND’ sebagai tanda notifikasi belum terkirim.
 
-   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkapnya tentang hal ini bisa dibaca di [Style text with message entities](https://core.telegram.org/api/entities). Karena pakai Markdown, maka saya perlu menghilangkan beberapa _entities_ HTML yang ada (karena perbedaan client) dengan fungsi `replace` dan Regex.
+   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkapnya tentang hal ini bisa dibaca di [Style text with message entities](https://core.telegram.org/api/entities). Karena pakai Markdown, maka saya perlu menghilangkan beberapa _entities_ HTML yang ada (karena perbedaan _client_) dengan fungsi `replace` dan Regex.
 
 3. `markNotif()` setelah semua notifikasi terkirim ke Telegram Bot, maka Deno akan memeriksa semua baris di dalam database dan merubah isi kolom remark dari ‘USEND’ ke ‘SEND’.
-   Saya paham kalo fungsi ini _opionated_ banget, tapi ini bekerja untuk saya yang notifikasi Gotosocialnya tidak banyak dan jarang - jarang.
+   Saya paham kalo fungsi ini _opinionated_ banget, tapi ini bekerja untuk saya yang notifikasi Gotosocialnya tidak banyak dan jarang - jarang.
 
    ```ts
    async function markNotif() {

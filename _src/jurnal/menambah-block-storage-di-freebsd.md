@@ -18,7 +18,7 @@ templateEngine: vto, md
 
 Neva memberikan spesifikasi CPU 1 core, 1Gb Ram, dan 20Gb _storage_ yang saya rasa cukup untuk urusan _self host_ aplikasi [fediverse](https://en.wikipedia.org/wiki/Fediverse) seperti [gotosocial](https://github.com/superseriousbusiness/gotosocial) dan [snac2](https://codeberg.org/grunfink/snac2). Biaya layanan sebesar 48 ribu rupiah per bulan. Sedikit lebih murah dibandingkan kompetitor dengan penawaran spesifikasi serupa.
 
-{{ echo |> terkait("Migrasi FreeBSD Jail dengan Bastille", "/jurnal/migrasi-FreeBSD-Jail-dengan-Bastille", "full") }}
+{{ echo |> terkait("Migrasi FreeBSD Jail dengan Bastille", "/jurnal/migrasi-FreeBSD-Jail-dengan-Bastille", "full", "Artikel Terkait") }}
 Karena suatu alasan, saya perlu untuk migrasi VPS kembali setelah sebelumnya migrasi dari BiznetGio ke Vultr.
 {{ /echo }}
 
@@ -96,7 +96,7 @@ poes@jaeger:~$ doas vim /etc/fstab
 
 ### Jail dan _block storage_
 
-{{ echo |> terkait("FreeBSD di Raspberry Pi4", "/jurnal/raspberry-pi4-di-freebsd/#jail%E2%80%99s") }}
+{{ echo |> terkait("FreeBSD di Raspberry Pi4", "/jurnal/raspberry-pi4-di-freebsd/#jail%E2%80%99s","","Artikel Terkait") }}
 ... Jails adalah sejenis container yang dibangun diatas konsep chroot untuk menciptakan sebuah safe environtment yang terisolasi dari sistem utama...
 {{ /echo }}
 

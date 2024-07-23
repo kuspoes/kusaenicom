@@ -95,9 +95,15 @@ site.helper("uppercase", (body) => body.toUpperCase(), {
 
 site.helper(
   "terkait",
-  function (desc: string, title: string, url: string, format: string) {
+  function (
+    desc: string,
+    title: string,
+    url: string,
+    format: string,
+    label: string,
+  ) {
     return `<div class="terkait ${format}">
-            <span class="ter">Artikel Terkait</span>
+            <span class="ter">${label}</span>
             <div class="kait">
                 <h4><a class="hRelasi" href="${url}">${title}</a></h4>
             <p>${desc}</p>
