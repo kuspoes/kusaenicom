@@ -46,8 +46,8 @@ Sedangkan layanan yang dipakai adalah:
 
 1. [Deno Deploy](https://dash.deno.com) untuk _hosting typescript_ ✅ gratis
 2. [Gotosocial](https://gotosocial.org) untuk layanan fediverse (_self host_)
-3. Neon Tech untuk layanan _hosting database ✅ gratis_
-4. [Telegram Bot](https://core.telegram.org/bots/api) untuk Bot di Telegram ✅ gratis\_
+3. Neon Tech untuk layanan _hosting database_ ✅ gratis
+4. [Telegram Bot](https://core.telegram.org/bots/api) untuk Bot di Telegram ✅ gratis
 
 Berikut ini yang saya tandai dengan <mark>stabilo warna hijau</mark> adalah hal yang penting untuk disimpan.
 
@@ -67,7 +67,7 @@ Awalnya saya hendak pakai [Deno Kv](https://deno.com/kv) untuk databasenya, namu
 
 Untungnya di luar sana banyak layanan Postgresql gratisan diantaranya Supabase, Koyeb, dan Neon Tech. Pilihan saya jatuh antara Supabase dan Neon Tech karena sudah di*support* oleh Deno secara langsung.
 
-Daftar ke Neon Tech dan pilih _Free Tier_ dapat _storage 500Gb, 0.25 CPU, RAM 1Gb, dan \_bandwidth_ 5Gb sebulan rasanya sudah cukup. Setelah mendaftar <mark>simpan _connection string_</mark> untuk nanti terhubung ke database.
+Daftar ke Neon Tech dan pilih _Free Tier_ dapat _storage_ 500Gb, 0.25 CPU, RAM 1Gb, dan _bandwidth_ 5Gb sebulan rasanya sudah cukup. Setelah mendaftar <mark>simpan _connection string_</mark> untuk nanti terhubung ke database.
 
 Tidak perlu membuat table dan skemanya karena nanti dibuat melalui _script_ di Deno Deploy.
 
@@ -160,7 +160,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
    Dari hasil `fetch` tidak semua _value_ saya ambil dan simpan, hanya yang penting atau yang diperlukan saja.
 
 2. `sendNotif()` digunakan untuk mengirimkan data notifikasi dari database ke Telegram Bot.
-   contoh _script_ sebagai berikut:
+   Contoh _script_ sebagai berikut:
 
    ```ts
    const query = await conn.queryObject`
@@ -192,7 +192,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 
    Skemanya adalah Deno akan meng-query data dari database dengan syarat (WHERE) kolom remark berisi ‘USEND’ sebagai tanda notifikasi belum terkirim.
 
-   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkap [Style text with message entities](https://core.telegram.org/api/entities). Karena pakai Markdown, maka saya perlu menghilangkan beberapa _entities_ HTML yang ada (karena perbedaan client) dengan fungsi `replace` dan Regex.
+   `parse_mode` di Telegram mendukung HTML dan Markdown, tapi untuk data dari Gotosocial sepertinya lebih pas pakai mode Markdown. Lebih lengkapnya tentang hal ini bisa dibaca di [Style text with message entities](https://core.telegram.org/api/entities). Karena pakai Markdown, maka saya perlu menghilangkan beberapa _entities_ HTML yang ada (karena perbedaan client) dengan fungsi `replace` dan Regex.
 
 3. `markNotif()` setelah semua notifikasi terkirim ke Telegram Bot, maka Deno akan memeriksa semua baris di dalam database dan merubah isi kolom remark dari ‘USEND’ ke ‘SEND’.
    Saya paham kalo fungsi ini _opionated_ banget, tapi ini bekerja untuk saya yang notifikasi Gotosocialnya tidak banyak dan jarang - jarang.
