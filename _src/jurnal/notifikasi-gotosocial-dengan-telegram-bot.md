@@ -83,9 +83,18 @@ Saya membuat script di `localhost` meskipun sebenarnya langsung dari Deno Deploy
 
 Contoh dibawah hanya diambil sepotong - potong, sedangkan keseluruhan _script_ bisa dilihat di [repo Github poestldn](https://github.com/kuspoes/poestldon)
 
-{{ echo |> terkait("Poestldon", "https://github.com/kuspoes/poestldon", "full", "Github Repository") }}
-Repositori Poestldon di Github. Ini adalah script sederhana untuk menarik data notifikasi dari API Gotosocial. Kemudian menyimpannya ke dalam database Postgresql dan kemudian dikirim ke Telegram Bot.
-{{ /echo }}
+<div class="og-card">
+         <div class="og-img-card">
+             <img class="og-image" src=https://opengraph.githubassets.com/2ccc78cd9225c228c38d744e9d540de0fcade63a3e086f2e56ea913b5e6c6103/kuspoes/poestldon alt=GitHub - kuspoes/poestldon: Poes Tele Don : Mengirimkan notifikasi Gotosocial dengan Telegram Bot>
+         </div>
+    <div class="og-desc">
+      <div class="og-desc-url">
+        <a href="https://github.com/kuspoes/poestldon">https://github.com/kuspoes/poestldon
+        </a>
+      </div>
+      <p class="og-desc-p">Poes Tele Don : Mengirimkan notifikasi Gotosocial dengan Telegram Bot - kuspoes/poestldon</p>
+    </div>
+</div>
 
 ### Environtment Variabel (.env)
 

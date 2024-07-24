@@ -37,7 +37,6 @@ Kemudian di dalam _folder_ `js` bikin 1 file dengan nama `main.js` dan isinya ad
 
 ```js
 import Comments from "./comments.js";
-
 customElements.define("mastodon-comments", Comments);
 ```
 

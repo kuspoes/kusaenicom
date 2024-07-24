@@ -12,6 +12,8 @@ import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
+import nunjucks from "lume/plugins/nunjucks.ts";
+import { getOGTags } from "https://deno.land/x/opengraph/mod.ts";
 
 const markdown = {
   plugins: [footnotes],
@@ -33,6 +35,7 @@ const site = lume(
 site
   .use(attributes())
   .use(base_path())
+  .use(nunjucks())
   .use(
     date({
       formats: {
@@ -86,12 +89,6 @@ site
   )
   .copy("_assets", "assets")
   .ignore("README.md");
-
-site.helper("uppercase", (body) => body.toUpperCase(), {
-  type: "tag",
-  // deno-lint-ignore-file
-  body: !!"true",
-});
 
 site.helper(
   "terkait",
