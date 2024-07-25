@@ -92,7 +92,7 @@ Contoh dibawah hanya diambil sepotong - potong, sedangkan keseluruhan _script_ b
         <a href="https://github.com/kuspoes/poestldon">https://github.com/kuspoes/poestldon
         </a>
       </div>
-      <p class="og-desc-p">Poes Tele Don : Mengirimkan notifikasi Gotosocial dengan Telegram Bot - kuspoes/poestldon</p>
+      <p class="og-desc-p">Poes Tele Don : Mengirimkan notifikasi Gotosocial dengan Telegram Bot</p>
     </div>
 </div>
 
