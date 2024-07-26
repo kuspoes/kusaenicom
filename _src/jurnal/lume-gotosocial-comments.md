@@ -159,8 +159,65 @@ abaikan media yang tidak bisa ditampilkan, itu tak penting yang penting bisa dip
 
 Setelah melakukan itu semua akhirnya saya bisa menampilkan gotosocial _threads_ (jika ada) di Lume.
 
+#### 26 Juli 2024 : Update terkait proxy
+
+Mempergunakan proxy seperti ini tidak aman karena Token tersedia di semua URL yang dibuka sehingga potensi serangan XSS. Saya menyingkirkan proxy ini dan membuat _end point_ API baru untuk mengakomodir ini[^4]
+
+Di Deno *script*nya kira - kira seperti ini:
+
+```ts
+import { Hono } from "jsr:@hono/hono";
+import { cors } from "jsr:@hono/hono/cors";
+
+const app = new Hono();
+
+app.use(
+  "/gts/*",
+  cors({
+    origin: "https://kusaeni.com",
+    allowHeaders: ["X-Custom-Header", "Upgrade-Insecure-Requests"],
+    allowMethods: "GET",
+    exposeHeaders: ["Content-Length", "X-Kuma-Revision"],
+    maxAge: 600,
+    credentials: true,
+  }),
+);
+
+app.get("/gts/:id", async (c: any) => {
+  const id = c.req.param("id");
+  const f = await fetch(`https://kauaku.us/api/v1/statuses/${id}/context`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "Application/json",
+      Authorization: `Bearer ${Deno.env.get("GTS_TOKEN")}`,
+    },
+  });
+  const t = await f.json();
+  return c.json(t);
+});
+
+Deno.serve(app.fetch);
+```
+
+ <aside>
+ CORS origin berisi https://kusaeni.com untuk memastikan bahwa script hanya bisa berjalan jika ditarik dari blog ini. Methods yang diijinkan hanya GET.
+ </aside>
+
+Kemudian di _file_ `comments.js` saya rubah fungsi `fetch` menjadi sebagai berikut:
+
+```ts
+const data = await Mastodon.fetch(
+  new URL(`https://sepoi.deno.dev/gts/${id}`),
+  this,
+);
+```
+
+Semoga dengan perubahan ini bisa menghilangkan masalah XSS/Inject script.
+
 [^1]: Tentang web component bisa dibaca di artikel [MDN: Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 
 [^2]: Sehingga saya memiliki file `comments.js`, `main.js`, dan `comment.css`
 
 [^3]: Sebenarnya hampir semua aplikasi fediverse memiliki struktur yang berbeda namun biasanya APInya masih mengikuti API standar dari Mastodon.
+
+[^4]: Saya pakai [Hono](https://hono.dev/) sebagai _framework_ dan mengatur CORS agar API hanya bisa dibuka dari blog ini, meskipun sebenarnya tidak masalah tanpa CORS karena _end point_ API-nya hanya bisa proses fetch data saja tanpa merubahnya.

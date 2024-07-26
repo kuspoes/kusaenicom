@@ -42,7 +42,7 @@ export default class Mastodon extends HTMLElement {
 
   async fetchComments(url) {
     const tootUrl = new URL(url);
-    const { origin, pathname } = tootUrl;
+    const { pathname } = tootUrl;
     let id;
 
     // In case it’s a a Pleroma server, with /notice/ URLs.
@@ -57,7 +57,7 @@ export default class Mastodon extends HTMLElement {
     }
 
     const data = await Mastodon.fetch(
-      new URL(`${origin}/api/v1/statuses/${id}/context`),
+      new URL(`https://sepoi.deno.dev/gts/${id}`),
       this,
     );
 

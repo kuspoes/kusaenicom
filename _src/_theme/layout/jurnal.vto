@@ -59,6 +59,21 @@
         </aside>
         {{ /if }}
         <hr></hr>
+        {{ if it.comments?.src }}
+        <div class="comments-section">
+            <header class="comments-header">
+                <h2>{{ metadata.comments.title }}</h2>
+                <p>{{ metadata.comments.description.replace(":src:", it.comments.real) }}</p>
+            </header>
+            <mastodon-comments
+                src="{{ it.comments.src }}"
+                cache="{{ it.comments.cache ?? 60 }}"
+                class="comments"
+            >
+                {{ metadata.comments.empty }}
+            </mastodon-comments>
+        </div>
+        {{ /if }}
     </div>
     <!--
     <div class="kanan">
