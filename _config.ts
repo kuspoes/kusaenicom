@@ -13,7 +13,6 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-import { getOGTags } from "https://deno.land/x/opengraph/mod.ts";
 
 const markdown = {
   plugins: [footnotes],

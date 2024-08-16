@@ -24,6 +24,7 @@
     </style>
         {{ /if }}
         {{ if it.comments }}
+        <script src="/assets/js/main.js" type="module"></script>
         <link rel="stylesheet" href="/assets/css/comments.css">
         {{ /if }}
         <link rel="icon" type="image/x-icon" href="{{ metadata.favicon }}">
@@ -33,7 +34,6 @@
         <meta property="og:description" content="{{ it.title || title }} : {{ it.ringkasan || metadata.description }}" />
         <meta property="og:url" content="{{ it.url |> url(true) }}" />
         <meta property="og:image" content="{{ it.og_images || metadata.foto_profil }}" />
-        <script src="/assets/js/main.js" type="module"></script>
     </head>
     <body>
         <div id="container">
