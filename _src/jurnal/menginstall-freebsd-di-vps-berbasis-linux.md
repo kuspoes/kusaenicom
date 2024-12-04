@@ -202,13 +202,13 @@ Untuk bisa menghubungkan xtermjs dengan FreeBSD maka diperlukan paket `qemu-gues
 # pkg install qemu-guest-agent
 ```
 
-setelah terpasang, kemudian tambahkan `service qemu-ga` ke dalam file `/etc/rc.conf` agar selalu dijalankan saat sistem boot.
+Setelah terpasang, kemudian tambahkan `service qemu-ga` ke dalam file `/etc/rc.conf` agar selalu dijalankan saat sistem boot.
 
 ```shell
 # sysctl qemu_guest_agent_enable="YES"
 ```
 
-selain itu perlu juga mengatur agar FreeBSD booting dengan mode serial console aktif. Mode ini bertujuan untuk menampilkan semua boot messages namun bisa dipakai juga untuk menghubungkan xtermjs serial console. Jadi saya tambahkan berikut ini ke file `/boot/loader.conf`
+Selain itu perlu juga mengatur agar FreeBSD booting dengan mode serial console aktif. Mode ini bertujuan untuk menampilkan semua boot messages namun bisa dipakai juga untuk menghubungkan xtermjs serial console. Jadi saya tambahkan berikut ini ke file `/boot/loader.conf`
 
 ```shell
 # echo 'console="comconsole"' > /boot/loader.conf
