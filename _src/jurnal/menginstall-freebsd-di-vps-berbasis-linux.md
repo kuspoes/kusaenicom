@@ -79,6 +79,13 @@ Setelah selesai, tulis file mfsBSD yang sudah didownload ke dalam disk (menimpa 
 
 Perintah di atas akan menulis timpa file system mfsBSD ke `/dev/sda`, pastikan proses penulisan berjalan sempurna dan kemudian `reboot` . Jangan tutup web console, biarkan proses reboot berjalan. Setelah reboot selesai maka akan muncul bootloader dari FreeBSD, tekan tombol Enter untuk booting.
 
+
+<div class="postnotes">
+<h4>Gagal saat menimpa?</h4>
+<p>Mungkin systemd akan memblok proses <code>dd</code> saat menimpa <code>boot</code> <i>files</i>.</p>
+<p>Maka perlu menghentikan <code>systemd-udevd</code> dengan <code>systemctl</code>
+</div>
+
 Proses booting mfsBSD akan berjalan, dalam beberapa kasus akan memakan waktu agak lama sekitar 1 - 3 menit karena system sedang mencari atau mendapatkan IP dari DHCP Client. Jangan panik biarkan saja. Setelah proses booting selesai, maka akan muncul prompt untuk login. Gunakan credentials `root/mfsroot` untuk login. Selamat!!!
 
 Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi yang rusak karena proses mfsBSD. 
