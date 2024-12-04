@@ -1,6 +1,6 @@
 ---
 title: Menginstall FreeBSD di VPS berbasis Linux
-ringkasan: "sebelumnya memindahkan container tak pernah semudah dan secepat ini"
+ringkasan: "Provider tidak menyediakan OS FreeBSD dan atau ingin menginstall sendiri?"
 date: 2024-12-04
 tags:
   - jurnal
