@@ -23,7 +23,7 @@ Di VPS Vultr saya mempergunakan OS FreeBSD 14.0 dan membuat beberapa Jail’s un
 
 Untuk pengguna _jail management_ lainnya seperti ezjail, iocage, cbsd, dan sebagainya juga memiliki fitur yang sama (bisa merujuk ke masing - masing dokumentasinya).
 
-```sh
+```shell-session
 $ doas pkg update
 $ doas pkg install bastille
 $ bastille --version
@@ -38,7 +38,7 @@ Saya akan membagi 2 bagian untuk menandakan masing - masing VPS, yaitu VULTR unt
 
 Hal pertama yang perlu dilakukan adalah mendapatkan data jail yang tersedia, bisa dengan mempergunakan perintah sebagai berikut:
 
-```shell
+```shell-session
 $ doas bastille list all
 JID     State  IP Address   Published Ports  Hostname  Release          Path
  kauaku  Up     192.168.1.2  -                kauaku    14.0-RELEASE-p6  /usr/local/bastille/jails/kauaku/root
@@ -51,7 +51,7 @@ JID     State  IP Address   Published Ports  Hostname  Release          Path
 
 Tersebut saya mempunya 2 container/jail’s yang sedang aktif (`up`) dan sebagai contoh saya akan memindahkan jail `kauaku` ke VPS NEVA. Sebelum memulai ekspor, container harus dimatikan dulu untuk menjaga integritas data.
 
-```sh
+```shell-session
 $ doas bastille stop kauaku
 [kauaku]:
 kauaku: removed
@@ -69,7 +69,7 @@ Saya mempergunakan _option_ `—txz` untuk membuat _archive_ dengan kompresi `.t
 
 Untuk mempermudah maka saya copy hasil ekspor tadi ke home folder.
 
-```sh
+```shell-session
 $ cp /usr/local/bastille/backups/kauaku-05-07-114627.txz /home/poes
 ```
 
@@ -79,7 +79,7 @@ Sampai disini proses yang diharus dilakukan di dalam VPS VULTR sudah selesai.
 
 Di Neva saya juga mempergunakan OS FreeBSD, bedanya adalah saya perlu mengupgrade secara manual karena di Neva hanya tersedia versi 13.0. Setelah selesai dan install BastilleBSD, maka yang harus dilakukan pertama kali adalah mengunduh file backup dari container/jail kauaku tadi. Disini saya pergunakan perintah `scp` untuk mengunduh via `ssh`
 
-```sh
+```shell-session
 $ mkdir container && cd container
 $ scp poes@VULTR:/home/poes/kauaku-05-07-114627.txz .
 poes@VULTR passwod:
@@ -87,7 +87,7 @@ poes@VULTR passwod:
 
 Setelah selesai maka di folder `container` akan tersedia file `kauaku-05-07-114627.txz` dan proses ekstrak bisa dilakukan
 
-```sh
+```shell-session
 $ ls
 kauaku-05-07-114627.txz
 $ doas bastille import /home/neva/container/kauaku-05-07-114627.txz
@@ -95,7 +95,7 @@ $ doas bastille import /home/neva/container/kauaku-05-07-114627.txz
 
 sebagai catatan bastille mengsyaratkan full path untuk menentukan file yang akan di import. Proses import akan segera berjalan dengan bastille mengurai file tersebut, Bastille BSD akan mengimpor semua file dan konfigurasi sama persis dengan aslinya. Saat selesai maka bisa dikonfirmasi apakah container kauaku sudah terdaftar dan bisa dijalankan.
 
-```sh
+```shell-session
 $ doas bastille list all
 JID     State  IP Address   Published Ports  Hostname  Release          Path
  kauaku  Up     192.168.1.2  -                kauaku    14.0-RELEASE-p6  /usr/local/bastille/jails/kauaku/root
@@ -105,7 +105,7 @@ Selesai, proses migrasi container/jail sudah usai, tapi masih ada beberapa peker
 
 Jalankan dan chroot ke console container kauaku untuk melakukan sedikit perubahan `nameserver` di file `/etc/resolv.conf`.
 
-```shell
+```shell-session
 $ doas bastille start kauaku
 [kauaku]:
 kauaku: created

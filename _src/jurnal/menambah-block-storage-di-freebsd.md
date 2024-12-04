@@ -40,8 +40,8 @@ Ternyata tidak langsung bisa dipergunakan karena _block storage_ dalam format RA
 
 Sesuai tutorial di Neva, _block storage_ akan ditandai sebagai `/dev/sdb` namun di FreeBSD tentu berbeda. Untuk itu saya perlu mencari tau *devices*nya.
 
-```bash
-poes@jaeger:~$ doas camcontrol devlist
+```shell-session
+$ doas camcontrol devlist
 <QEMU QEMU DVD-ROM 2.5+>        at scbus0 target 0 lun 0 (pass0,cd0)
 <QEMU QEMU HARDDISK 2.5+>       at scbus2 target 0 lun 0 (pass1,da0)
 <QEMU QEMU HARDDISK 2.5+>       at scbus2 target 1 lun 0 (pass2,da1)
@@ -49,8 +49,8 @@ poes@jaeger:~$ doas camcontrol devlist
 
 Dari perintah diatas tersebutlah bahwa _block storage_ yang saya miliki terdaftar sebagai QEMU HARDDISK di `/dev/da1`. Langkah selanjutnya adalah membuat partisi baru (UFS).
 
-```bash
-poes@jaeger:~$ doas newfs /dev/da1
+```shell-session
+$ doas newfs /dev/da1
 /dev/da1: 10240.0MB (20971520 sectors) block size 32768, fragment size 4096
 using 17 cylinder groups of 625.22MB, 20007 blks, 80128 inodes.
 super-block backups (for fsck_ffs -b #) at:
@@ -59,8 +59,8 @@ super-block backups (for fsck_ffs -b #) at:
 
 Untuk memastikan bahwa partisi sudah selesai dibuat, saya memeriksanya dengan `gpart`.
 
-```bash
-poes@jaeger:~$ doas gpart show da1
+```shell-session
+$ doas gpart show da1
 =>      63  20971457  da1  MBR  (10G)
         63  20964762    1  freebsd  [active]  (10G)
   20964825      6695       - free -  (3.3M)
@@ -68,13 +68,13 @@ poes@jaeger:~$ doas gpart show da1
 
 OK! partisi sudah aktif, saatnya untuk melakukan `mounting` pada partisi tadi.
 
-```bash
-poes@jaeger:~$ doas mkdir /mnt/monster
-poes@jaeger:~$ doas mount -t ufs /dev/da1 /mnt/monster
-poes@jaeger:~$ ls -ltr /mnt/monster
+```shell-session
+$ doas mkdir /mnt/monster
+$ doas mount -t ufs /dev/da1 /mnt/monster
+$ ls -ltr /mnt/monster
 total 0
 
-poes@jaeger:~$ df -h
+$ df -h
 Filesystem                        Size    Used   Avail Capacity  Mounted on
 /dev/gpt/rootfs                   19G      14G     4.3G   76%    /
 devfs                             1.0K      0B    1.0K     0%    /dev
@@ -87,8 +87,8 @@ Buat folder untuk <i>mount point</i> kemudian <code>mount</code> <i>device block
 
 Selesai! Akhirnya _block storage_ bisa ditambahkan ke dalam sistem FreeBSD dan bisa diakses secara langsung. Tapi setiap sistem _reboot_ saya perlu untuk mengulang perintah diatas agar _storage_ bisa diakses. Agar tak perlu repot, saya _edit file_ `/etc/fstab` agar bisa melakukan `mounting` saat _booting_.
 
-```bash
-poes@jaeger:~$ doas vim /etc/fstab
+```shell-session
+$ doas vim /etc/fstab
 # Device        Mountpoint  FStype  Options Dump    Pass#
 /dev/gpt/rootfs /            ufs     rw  1   1
 /dev/da1        /mnt/monster ufs     rw  2   2
@@ -106,9 +106,9 @@ Setelah Jail dibuat selanjutnya adalah membuat folder di dalam Jail tersebut yan
 
 Secara garis besar, prosesnya mirip dengan cara diatas, bedanya memakai _file_ `/etc/fstab` yang ada di dalam Jail.
 
-```bash
-poes@jaeger:~$ doas bastille cmd egois mkdir hanggar
-poes@jaeger:~$ doas bastille mount egois /mnt/monster root/hanggar nullfs rw 0 0
+```shell-session
+$ doas bastille cmd egois mkdir hanggar
+$ doas bastille mount egois /mnt/monster root/hanggar nullfs rw 0 0
 [egois]:
 Added: /mnt/monster /usr/local/bastille/jails/egois/root/root/hanggar nullfs rw 0 0
 ```

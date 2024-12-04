@@ -79,7 +79,7 @@ Jadi saya membuat sebuah _middleware_ sederhana untuk memeriksa _user agent_ dar
 
 Kodenya sebagai berikut:
 
-```ts
+```js
 import type { Middleware } from "lume/core/server.ts";
 
 export default function noRobotAI(): Middleware {
@@ -154,7 +154,7 @@ untuk daftar <code>banUA</code> saya ambil juga dari DarkVisitor tapi versi <i>l
 
 Kemudian simpan[^2] dan _middleware_ ini bisa dipanggil di dalam _file_ `server.ts` seperti ini
 
-```ts
+```js
 import Server from "lume/core/server.ts";
 
 import noRobotAI from "./_middlewares/no_robotAI.ts";
@@ -170,7 +170,7 @@ s.start();
 
 untuk mencoba bisa dengan cara menjalankan _file_ `server.ts`
 
-```bash
+```shell-session
 $ deno run -A server.ts
 Lume is listening on port: 8080
 ```

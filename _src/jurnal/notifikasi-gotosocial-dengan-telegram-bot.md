@@ -130,7 +130,7 @@ Isi tabel ini nanti diambil dari _fetch_ data API Gotosocial.
 
 Untuk membuat database dan populasi tabel bisa dengan menjalankan perintah
 
-```shell
+```shell-session
 $ deno run -A --env initdb.ts
 ```
 
@@ -143,7 +143,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 1. `requestNotif()` berfungsi untuk menarik data dari API Gotosocial dan menyimpannya ke dalam database,
    Contoh *script*nya seperti berikut ini:
 
-   ```ts
+   ```javascript
    const conn = await Pool.connect();
 
    async function requestNotif() {
@@ -177,7 +177,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 2. `sendNotif()` digunakan untuk mengirimkan data notifikasi dari database ke Telegram Bot.
    Contoh _script_ sebagai berikut:
 
-   ```ts
+   ```javascript
    const query = await conn.queryObject`
     SELECT * FROM ptldn
     WHERE remark = 'USEND'
@@ -212,7 +212,7 @@ Keseluruhan fungsi ada di _file_ `main.ts` saya membaginya menjadi 3 fungsi berb
 3. `markNotif()` setelah semua notifikasi terkirim ke Telegram Bot, maka Deno akan memeriksa semua baris di dalam database dan merubah isi kolom remark dari ‘USEND’ ke ‘SEND’.
    Saya paham kalo fungsi ini _opinionated_ banget, tapi ini bekerja untuk saya yang notifikasi Gotosocialnya tidak banyak dan jarang - jarang.
 
-   ```ts
+   ```javascript
    async function markNotif() {
      await conn.queryObject`
     	UPDATE ptldn
@@ -227,7 +227,7 @@ Selanjutnya semua fungsi harus berjalan secara periodik (terskedul), maka [Deno.
 
 Saya membuat skedul untuk masing - masing fungsi dengan jarak sekitar 60 detik antar skedul untuk memastikan proses pertama sudah selesai.
 
-```ts
+```javascript
 Deno.cron("Sedot Notification dari Gotosocial", "*/3 * * * *", () => {
   requestNotif();
 });

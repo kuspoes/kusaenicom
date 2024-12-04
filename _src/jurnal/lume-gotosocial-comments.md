@@ -124,7 +124,7 @@ Oleh karena itu dibutuhkan semacam proxy sebagai jembatan. Konsepnya kira - kira
 
 Jadi akhirnya saya bikin proxy sederhana di [Deno Deploy](https://dash.deno.com), *script*nya kira - kira seperti ini
 
-```ts
+```js
 Deno.serve({ port: 8000 }, async (request) => {
   const { pathname, search } = new URL(request.url);
   const url = new URL("." + pathname, "https://kauaku.us");
@@ -165,7 +165,7 @@ Mempergunakan proxy seperti ini tidak aman karena Token tersedia di semua URL ya
 
 Di Deno *script*nya kira - kira seperti ini:
 
-```ts
+```js
 import { Hono } from "jsr:@hono/hono";
 import { cors } from "jsr:@hono/hono/cors";
 
@@ -205,7 +205,7 @@ Deno.serve(app.fetch);
 
 Kemudian di _file_ `comments.js` saya rubah fungsi `fetch` menjadi sebagai berikut:
 
-```ts
+```js
 const data = await Mastodon.fetch(
   new URL(`https://sepoi.deno.dev/gts/${id}`),
   this,

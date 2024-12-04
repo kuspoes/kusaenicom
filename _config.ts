@@ -4,7 +4,8 @@ import base_path from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
 import { id } from "npm:date-fns/locale/id";
 import feed from "lume/plugins/feed.ts";
-import codeHighlight from "lume/plugins/code_highlight.ts";
+//import codeHighlight from "lume/plugins/code_highlight.ts";
+import prism from "lume/plugins/prism.ts";
 import readInfo from "lume/plugins/reading_info.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
@@ -13,6 +14,8 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
+
+import "npm:prismjs@1.29.0/components/prism-shell-session.min.js";
 
 const markdown = {
   plugins: [footnotes],
@@ -71,13 +74,21 @@ site
     }),
   )
   .use(
-    codeHighlight({
+    prism({
       theme: {
-        name: "tmrw",
-        path: "/_assets/css/tmrw.css",
+        name: "prism.min",
+        path: "assets/css/prism.min.css",
       },
     }),
   )
+  //  .use(
+  //    codeHighlight({
+  //      theme: {
+  //        name: "tmrw",
+  //        path: "/_assets/css/tmrw.css",
+  //      },
+  //    }),
+  //  )
   .use(readInfo())
   .use(toc())
   .use(title())

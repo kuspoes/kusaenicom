@@ -50,7 +50,7 @@ Setelah Debian terinstall dan berjalan dengan baik, maka saya buka akses web kon
 
 Hal pertama yang saya lakukan adalah memeriksa konfigurasi disk yang digunakan.
 
-```shell
+```shell-session
 # df -h
 Filesystem     Size    Used   Avail Capacity  Mounted on
 /dev/sda1       37G    2.3G     31G     7%    /
@@ -67,13 +67,13 @@ Pemeriksaan ini penting karena nanti saya harus menulis/menimpa data di disk ter
 
 Download file `.img` pilih arch dan rilis yang diiginkan, karena rilis FreeBSD terbaru adalah 14.1, maka
 
-```shell
+```shell-session
 # wget https://mfsbsd.vx.sk/files/images/14/amd64/mfsbsd-se-14.1-RELEASE-amd64.img
 ```
 
 Setelah selesai, tulis file mfsBSD yang sudah didownload ke dalam disk (menimpa file system Debian), caranya adalah
 
-```shell
+```shell-session
 # dd if=mfsbsd-se-14.1-RELEASE-amd64.img of=/dev/sda bs=1M
 ```
 
@@ -90,7 +90,7 @@ Proses booting mfsBSD akan berjalan, dalam beberapa kasus akan memakan waktu aga
 
 Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi yang rusak karena proses mfsBSD. 
 
-```shell
+```shell-session
 # gpart recover da0
 ```
 <aside>
@@ -100,7 +100,7 @@ Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi
 #### Memeriksa konektivitas jaringan
 Sebenarnya setelah recover disk, bisa saja ketik `bsdinstall` untuk memulai TUI penginstallan FreeBSD, namun sebaiknya melakukan pengecekan jaringan terlebih dahulu. Cara yang paling mudah adalah dengan melakukan `ping` ke Google. 
 
-```shell
+```shell-session
 # ping -c3 google.com
 ping: No route to host
 ```
@@ -117,7 +117,7 @@ Ada beberapa hal yang penting untuk dilakukan, antara lain:
 #### mfsBSD setting jaringan
 Maka perlu untuk memeriksa interfaces apa saja yang sudah dideteksi oleh system, ini nanti akan membatu untuk melakukan pengaturan IP.
 
-```shell
+```shell-session
 # ifconfig
 vtnet0: flags=1008843 ....<REDACTED>
 		media: Ethernet autoselect
@@ -131,13 +131,13 @@ Tersebut interface yang terdeteksi adalah `vtnet0`.
 #### Setting nameserver
 Sebelum mengatur IP saya atur dulu nameserver untuk memproses DNS.
 
-```shell
+```shell-session
 # echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
 
 Di FreeBSD untuk mengatur IP bisa dengan mendeskripsikannya ke dalam file `/etc/rc.conf` seperti berikut ini:
 
-```shell
+```shell-session
 # vi /etc/rc.conf
 ifconfig_vtnet0="inet 103.158.31.189 netmask 255.255.255.0"
 defaultrouter="103.158.31.1"
@@ -145,7 +145,7 @@ defaultrouter="103.158.31.1"
 
 simpan dan kemudian restart jaringan dengan cara:
 
-```shell
+```shell-session
 # service netif restart
 # service routing restart
 ```
@@ -154,7 +154,7 @@ Setelah direstart, seharusnya mfsBSD sudah bisa mendapatkan IP.  Namun ternyata 
 
 Saya tak paham dengan bagaimana mfsBSD mengaturnya, tapi saya paham cara melakukan pengaturan secara manual, urutannya sebagai berikut:
 
-```shell
+```shell-session
 # netstat -nrF0
 Routing tables
 
@@ -165,7 +165,7 @@ Destination        Gateway            Flags     Netif    Expire
 
 Ternyata di Routing Tables tidak terdeteksi IP dan gateway (broadcast), jadi saya buat IP dan Gateway secara manual.
 
-```shell
+```shell-session
 # ifconfig vtnet0 create 103.158.31.189 netmask 255.255.255.0
 # route add default 103.158.31.1
 # netstat -nrF0
@@ -192,25 +192,25 @@ Proses selanjutnya adalah melakukan pengaturan jaringan, rubah/atur sesuai denga
 
 Setelah semua rangkaian install sudah selesai, jangan terburu - buru restart. Kalo pakai noVNC boleh langsung restart tapi karena pakai xtermjs maka ada beberapa hal yang harus dilakukan agar xtermjs bisa terhubung ke FreeBSD.
 
-Pilih Yes saat ada menu untuk masuk ke dalam shell.
+Pilih Yes saat ada menu untuk masuk ke dalam shell-session.
 
 ### Pengaturan koneksi xtermjs
 Untuk bisa menghubungkan xtermjs dengan FreeBSD maka diperlukan paket `qemu-guest-agent` terinstall.  Caranya sebagai berikut
 
-```shell
+```shell-session
 # pkg update
 # pkg install qemu-guest-agent
 ```
 
 Setelah terpasang, kemudian tambahkan `service qemu-ga` ke dalam file `/etc/rc.conf` agar selalu dijalankan saat sistem boot.
 
-```shell
+```shell-session
 # sysctl qemu_guest_agent_enable="YES"
 ```
 
 Selain itu perlu juga mengatur agar FreeBSD booting dengan mode serial console aktif. Mode ini bertujuan untuk menampilkan semua boot messages namun bisa dipakai juga untuk menghubungkan xtermjs serial console. Jadi saya tambahkan berikut ini ke file `/boot/loader.conf`
 
-```shell
+```shell-session
 # echo 'console="comconsole"' > /boot/loader.conf
 ```
 

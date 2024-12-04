@@ -23,7 +23,7 @@ Hal pertama yang selalu saya lakukan adalah mengunduh _patch_ terbaru (`14.0-REL
 
 _Update patch_
 
-```shell
+```shell-session
 # freebsd-version
 14.0-RELEASE
 # freebsd-update fetch install
@@ -33,14 +33,14 @@ _Update patch_
 
 _Update pkg_
 
-```shell
+```shell-session
 # pkg update
 # pkg upgrade
 ```
 
 Raspberry Pi4 memiliki _clock frequency_ di 1500Mhz namun FreeBSD _fresh install_ akan mengatur _frequency_ berjalan di batas minimal, biasanya di 300Mhz. Untuk itu perlu dilakukan pengaturan agar bisa berjalan di 1500Mhz.
 
-```shell
+```shell-session
 # sysctl dev.cpu.0.freq
 dev.cpu.0.freq: 300
 # sysctl dev.cpu.0.freq=1500
@@ -66,7 +66,7 @@ Jawabannya **tidak**, FreeBSD sudah menyediakan Jail _manager_ bawaan namun Bast
 
 BastilleBSD bisa di*install* melalui `pkg`
 
-```shell
+```shell-session
 [RPI4] # pkg install bastille
 ```
 
@@ -78,7 +78,7 @@ bastille_enable="YES"
 
 atau bisa langsung melalui _command line_
 
-```shell
+```shell-session
 [RPI4] # sysrc bastille_enable="YES"
 ```
 
@@ -88,7 +88,7 @@ Setelah bastilleBSD terdaftar di `rc.conf` maka sistem akan memiliki kemampuan u
 
 Sebelum memulai mengatur Jail, saya perlu memeriksa daftar _network interfaces_ yang tersedia di perangkat Raspberry Pi4,
 
-```shell
+```shell-session
 [RPI4] # ifconfig
 genet0: flags=1008843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST,LOWER_UP> metric 0 mtu 1500
 	options=68000b<RXCSUM,TXCSUM,VLAN_MTU,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6>
@@ -111,7 +111,7 @@ dari hasil `ifconfig` di atas ditemukan bahwa _interfaces ethernet_ Raspberry Pi
 
 BastilleBSD sendiri mengsyaratkan pemakaian `loopback` jaringan untuk memberikan IP kepada masing - masing Jail. Oleh karena itu perlu melakukan pembuatan `loopback` _interfaces_ di `host`. Caranya sebagai berikut
 
-```shell
+```shell-session
 [RPI4] # sysrc cloned_interfaces+=lo1
 [RPI4] # sysrc ifconfig_lo1_name="bastille0"
 [RPI4] # service netif cloneup
@@ -121,7 +121,7 @@ Perintah diatas akan membuat kloning atas _interfaces_ `lo0` dan diberi nama `lo
 
 Setelah itu seharusnya ketika di `ifconfig` akan muncul hasil sebagai berikut
 
-```shell
+```shell-session
 [RPI4] # ifconfig
 genet0: flags=1008843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST,LOWER_UP> metric 0 mtu 1500
 	options=68000b<RXCSUM,TXCSUM,VLAN_MTU,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6>
@@ -175,7 +175,7 @@ untuk isian <code>ext_if</code> saya masukkan <code>genet0</code> karena <i>inte
 
 Setelah itu simpan dan masukkan `service pf` ke `rc.conf` dan mulai jalankan dengan[^4]
 
-```shell
+```shell-session
 [RPI4] # sysrc pf_enable="YES"
 [RPI4] # service pf start
 ```
@@ -184,7 +184,7 @@ Setelah itu simpan dan masukkan `service pf` ke `rc.conf` dan mulai jalankan den
 
 Sebelum membuat Jail, sistem perlu melakukan `boostrap` atas rilis FreeBSD di `host`. Di atas saya sudah melakukan _update patch_ sampai ke `14.0-RELEASE-p6` sehingga versi ini yang akan saya `bootstrap`.
 
-```shell
+```shell-session
 [RPI4] # bastille bootsrap 14.0-RELEASE update
 ```
 
@@ -192,7 +192,7 @@ tambahan `update` di perintah diatas akan membuat FreeBSD melakukan pemeriksaan 
 
 Setelah `bootstrap` berhasil, saatnya membuat kontainer Jail
 
-```shell
+```shell-session
 [RPI4] # bastille create postgres 14.0-RELEASE 10.1.1.1/24
 ```
 
@@ -200,7 +200,7 @@ perintah diatas akan membuat sebuah Jail dengan nama `postgres` dengan mempergun
 
 Untuk melihat daftar Jail yang sudah dibuat,
 
-```shell
+```shell-session
 [RPI4] # bastille list
 JID State IP Address Published Ports Hostname Release Path
 postgres Up 10.1.1.1 -  14.0-RELEASE-p6 /usr/local/bastille/jails/postgres/root
@@ -212,7 +212,7 @@ BastilleBSD secara otomatis akan menjalankan container setelah proses `create` s
 
 Setelah pembuatan Jail selesai, saya ingin memasang [postgresql](https://postgresql.org) di dalam Jail `postgres`. Untuk mempergunakan postgresql dari dalam Jail, saya perlu merubah/menambah konfigurasi Jail (`jail.conf`) yang bisa diakses dengan perintah sebagai berikut
 
-```shell
+```shell-session
 [RPI4] # bastille edit postgres
 ```
 
@@ -227,13 +227,13 @@ konfigurasi `allow.raw_sockets=1;` diperlukan agar bisa melakukan `ping` atau pe
 
 Untuk meng*install* postgresql saya perlu melakukan `chroot` ke dalam Jail `postgres`.
 
-```shell
+```shell-session
 [RPI4] # bastille console postgres
 ```
 
 perintah ini akan membawa saya masuk ke dalam _environtment_ `root` di dalam Jail `postgres`. Hal pertama yang perlu saya lakukan adalah mengaktifkan `pkg` untuk menginstall _packages_.
 
-```shell
+```shell-session
 [postgres] # pkg update
 [postgres] # pkg install postgresql16-server postgresql16-client postgresql16-contrib
 ```
@@ -242,7 +242,7 @@ akan muncul notifikasi bahwa `pkg` belum terpasang dan perlu melakukan `bootsrap
 
 Agar postgresql berjalan saat sistem `booting` maka saya aktifkan postgresql di `/etc/rc.conf` dan jalankan.
 
-```shell
+```shell-session
 [postgres] # sysrc postgresql_enable="YES"
 [postgres] # service postgresql initdb
 [postgres] # service postgresql start
@@ -250,7 +250,7 @@ Agar postgresql berjalan saat sistem `booting` maka saya aktifkan postgresql di 
 
 dengan perintah `initdb` postgresql akan melakukan pembuatan database awal dan semua proses akan berjalan dibawah _user_ baru bernama `postgres`. Hal pertama yang biasanya saya lakukan adalah mengubah _password_ dari _user_ `postgres`.
 
-```shell
+```shell-session
 [postgres] # su - postgres
 $ psql -c "ALTER USER postgres WITH PASSWORD 'olala'"
 ```
@@ -266,7 +266,7 @@ Miniflux adalah aplikasi _feed reader_ minimalis yang mempergunakan database pos
 
 Sebelum memasang miniflux, saya siapkan dulu database postgresql dengan kredensial nama database **miniflux** dan user **mnflx**
 
-```shell
+```shell-session
 [postgres] # su - postgres
 $ createuser -P mnflx
 Enter password for new role:
@@ -287,7 +287,7 @@ host    miniflux        mnflx        10.1.1.2          trust
 
 Setelah database siap, saya buat Jail khusus untuk miniflux
 
-```shell
+```shell-session
 [RPI4] # bastille create miniflux 14.0-RELEASE 10.1.1.2/24
 [RPI4] # bastille console miniflux
 [miniflux] # pkg update
@@ -295,7 +295,7 @@ Setelah database siap, saya buat Jail khusus untuk miniflux
 
 _Package_ miniflux sudah tersedia di FreeBSD dan bisa di*install* dengan perintah berikut
 
-```shell
+```shell-session
 [miniflux] # pkg install miniflux
 ```
 
@@ -307,7 +307,7 @@ DATABASE_URL=`postgres://mnflx:miniflux@10.1.1.1/miniflux?sslmode=disable`
 
 Karena postgresql dihost di Jail yang lain maka saya gunakan _connection string_ dengan format seperti diatas. Selanjutnya lakukan migrasi dan buat akun `admin` untuk miniflux.
 
-```shell
+```shell-session
 miniflux -c /usr/local/etc/miniflux.env -migrate
 miniflux -c /usr/local/etc/miniflux.env -create-admin
 ```
@@ -320,7 +320,7 @@ Tapi bagaimana caranya supaya bisa diakses melalui _browser_?
 
 Agar aplikasi miniflux bisa diakses melalui _browser_ maka saya perlu memasang aplikasi seperti [nginx](https:nginx.com).
 
-```shell
+```shell-session
 [RPI4] # pkg install nginx
 [RPI4] # sysrc nginx_enable="YES"
 [RPI4] # service nginx start
@@ -349,7 +349,7 @@ http {
 
 simpan, cek konfigurasi apakah ada yang keliru dan `restart nginx`.
 
-```shell
+```shell-session
 [RPI4] # nginx -T
 [RPI4] # service nginx restart
 ```
