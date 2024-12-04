@@ -1,7 +1,4 @@
 {
-  "imports": {
-    "lume/": "https://deno.land/x/lume@v2.2.3/"
-  },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
@@ -9,8 +6,7 @@
     "lumex": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A --reload --lock-write -"
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ]
-  }
+    "types": ["lume/types.ts"]
+  },
+  "importMap": "import_map.json"
 }

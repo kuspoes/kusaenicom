@@ -193,23 +193,24 @@ Proses selanjutnya adalah melakukan pengaturan jaringan, rubah/atur sesuai denga
 Setelah semua rangkaian install sudah selesai, jangan terburu - buru restart. Kalo pakai noVNC boleh langsung restart tapi karena pakai xtermjs maka ada beberapa hal yang harus dilakukan agar xtermjs bisa terhubung ke FreeBSD.
 
 Pilih Yes saat ada menu untuk masuk ke dalam shell.
-## Pengaturan koneksi xtermjs
+
+### Pengaturan koneksi xtermjs
 Untuk bisa menghubungkan xtermjs dengan FreeBSD maka diperlukan paket `qemu-guest-agent` terinstall.  Caranya sebagai berikut
 
-```
+```shell
 # pkg update
 # pkg install qemu-guest-agent
 ```
 
 setelah terpasang, kemudian tambahkan `service qemu-ga` ke dalam file `/etc/rc.conf` agar selalu dijalankan saat sistem boot.
 
-```
+```shell
 # sysctl qemu_guest_agent_enable="YES"
 ```
 
 selain itu perlu juga mengatur agar FreeBSD booting dengan mode serial console aktif. Mode ini bertujuan untuk menampilkan semua boot messages namun bisa dipakai juga untuk menghubungkan xtermjs serial console. Jadi saya tambahkan berikut ini ke file `/boot/loader.conf`
 
-```
+```shell
 # echo 'console="comconsole"' > /boot/loader.conf
 ```
 
