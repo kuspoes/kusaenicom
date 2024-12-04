@@ -19,8 +19,7 @@ jobs:
         uses: denoland/setup-deno@v2
 
       - name: Build site
-        run: |
-          deno task lumex
+        run: deno task build
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1

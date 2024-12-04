@@ -3,7 +3,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
-    "lumex": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A --reload --lock-write -"
+    "lumex": "echo \"import 'lume/cli.ts'\" | deno run -A --reload"
   },
   "compilerOptions": {
     "types": ["lume/types.ts"]
