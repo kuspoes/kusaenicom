@@ -32,7 +32,7 @@ style: "tentang.css"
             akun ini. Tapi saat ini <a href="https://facebook.com/kusaeni">sangat tidak aktif</a>. Sudah saya non-aktifkan.
         </li>
         <li>
-            <b>Mastodon</b>, akun santai di Fediverse bisa diikuti di <a href="https://kauaku.us/@poes">@poes@kauaku.us</a>.
+            <b>Mastodon</b>, akun santai di Fediverse bisa diikuti di <a href="https://sok.egois.org/@poes">@poes@sok.egois.org</a>.
         </li>
     </ul>
     <p class="sidenote">Pemuja LGBT, anjing zionis israel, dan liberal celup dilarang <i>ikuti</i> akun ini.</p>

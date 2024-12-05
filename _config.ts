@@ -56,12 +56,15 @@ site
       query: "type=post",
       limit: 10,
       info: {
-        title: "=metas.site",
-        description: "=metas.description",
+        title: "=site.title",
+        description: "=site.description",
+        authorName: "=site.author.name",
+        authorUrl: "=site.author.url",
         lang: "id",
       },
       items: {
         title: "=title",
+        description: "=excerpt",
       },
     }),
   )
