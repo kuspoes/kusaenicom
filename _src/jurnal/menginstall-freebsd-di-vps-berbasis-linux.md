@@ -7,7 +7,7 @@ tags:
   - bsd
   - tutorial
   - fave
-keywords: "freebsd, vps, tutorial, vultr, bsd, linux"
+keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xtermjs"
 kategori: jurnal
 code: true
 favorit: true
@@ -52,10 +52,10 @@ Hal pertama yang saya lakukan adalah memeriksa konfigurasi disk yang digunakan.
 
 ```shell-session
 # df -h
-Filesystem     Size    Used   Avail Capacity  Mounted on
-/dev/sda1       37G    2.3G     31G     7%    /
-devfs          1.0K      0B    1.0K     0%    /dev
-/dev/sda2.     286M    6.1M.   280M.    1%    /boot/efi
+ Filesystem     Size    Used   Avail Capacity  Mounted on
+ /dev/sda1       37G    2.3G     31G     7%    /
+ devfs          1.0K      0B    1.0K     0%    /dev
+ /dev/sda2.     286M    6.1M.   280M.    1%    /boot/efi
 ```
 
 Dari hasil di atas, diketahui bahwa disk yang dipergunakan adalah `/dev/sda`.
