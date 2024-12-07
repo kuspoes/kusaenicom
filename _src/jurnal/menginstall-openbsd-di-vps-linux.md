@@ -101,7 +101,7 @@ tersebut ada 1 partisi dan 2 _slices_, yang pertama adalah `efi` (tidak perlu ut
 $ doas mount /dev/md0s4
 $ cd /mnt
 $ doas mkdir etc
-$ doas echo "set tty com0" > etc/boot/conf
+$ doas echo "set tty com0" > etc/boot.conf
 ```
 
 4. _Umount_ `md0` dan selesai
