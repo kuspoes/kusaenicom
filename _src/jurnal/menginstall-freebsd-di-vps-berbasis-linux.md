@@ -81,9 +81,14 @@ Perintah di atas akan menulis timpa file system mfsBSD ke `/dev/sda`, pastikan 
 
 
 <div class="postnotes">
-<h4>Gagal saat menimpa?</h4>
-<p>Mungkin systemd akan memblok proses <code>dd</code> saat menimpa <code>boot</code> <i>files</i>.</p>
-<p>Maka perlu menghentikan <code>systemd-udevd</code> dengan <code>systemctl</code>
+<h4 id="postnotes-systemd">Gagal saat menimpa?</h4>
+<p>Mungkin systemd akan memblok proses <code>dd</code> saat menimpa <code>boot</code> <i>files</i>. Maka perlu menghentikan <code>systemd-udevd</code> dengan <code>systemctl</code class="language-shell-session">
+<pre class="language-shell-session"><code>
+$ sudo systemctl stop systemd-udevd
+$ sudo systemctl stop systemd-timesyncd
+$ sudo systemctl stop systemd-journald
+</pre></code>
+<p>Perintah di atas akan menghentikan proteksi <code>systemd</code> pada <i>disk</i></p>
 </div>
 
 Proses booting mfsBSD akan berjalan, dalam beberapa kasus akan memakan waktu agak lama sekitar 1 - 3 menit karena system sedang mencari atau mendapatkan IP dari DHCP Client. Jangan panik biarkan saja. Setelah proses booting selesai, maka akan muncul prompt untuk login. Gunakan credentials `root/mfsroot` untuk login. Selamat!!!

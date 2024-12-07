@@ -72,7 +72,7 @@ $ doas umount /dev/vnd0
 $ doas vnconfig -u vnd0
 ```
 
-Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_.
+Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_. Jangan lupa sebelum `dd`, [matikan dulu proteksi](/jurnal/menginstall-freebsd-di-vps-berbasis-linux/#postnotes-systemd) `systemd` kepada _disk_.
 
 ### Modifikasi dengan FreeBSD
 
@@ -143,3 +143,5 @@ Jika tidak mau repot, saran saya sebaiknya hindari VPS yang memakai xtermjs. Kal
 Tapi intinya adalah mau kondisi apa saja, jangan sampai menghalangi kita untuk memakai OS yang kita inginkan. Kalo memang sudah mentok, ganti _provider_ saja. :)
 
 _Provider_ lokal yang saya rekomendasikan [Neva Cloud](https://nevacloud.com) dan [Ide.id](https://ide.id).
+
+Terakhir, file `miniroot76.img` yang sudah dirubah *boot console*-nya tidak bisa dipakai di NoVNC, untuk NoVNC langsung unduh aja file asli dari OpenBSD.
