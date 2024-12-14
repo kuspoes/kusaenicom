@@ -12,7 +12,7 @@ kategori: jurnal
 code: true
 favorit: true
 comment: false
-tocx: true
+tocx: false
 ---
 
 <div class="postnotes">
