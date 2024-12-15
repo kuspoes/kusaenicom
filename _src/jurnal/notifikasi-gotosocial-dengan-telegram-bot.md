@@ -11,9 +11,6 @@ code: true
 favorit: false
 templateEngine: vto, md
 tocx: true
-comments:
-  src: "https://poestodon.deno.dev/@poes/statuses/01J3DDTRT35V5DBZ1J9VB0YW3H"
-  real: "https://kauaku.us/@poes/statuses/01J3DDTRT35V5DBZ1J9VB0YW3H"
 ---
 
 Sampai dengan rilis [v.0.16.0](https://github.com/superseriousbusiness/gotosocial/releases/tag/v0.16.0) Gotosocial masih belum menyertakan fitur _push notification_ ke dalam aplikasinya. Menurut salah satu _developer_-nya pengaktifan notifikasi membutuhkan banyak sumber daya karena harus merubah sebagian besar kode meski sebenarnya Gotosocial sendiri sudah mendukung [API untuk mengirim notifikasi](https://docs.gotosocial.org/en/latest/api/swagger/).

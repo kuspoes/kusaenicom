@@ -8,9 +8,6 @@ tags:
 kategori: jurnal
 code: true
 favorit: false
-comments:
-  src: "https://poestodon.deno.dev/@poes/statuses/01J1H5A14TM0945CBM9N61C8F1"
-  real: "https://kauaku.us/@poes/statuses/01J1H5A14TM0945CBM9N61C8F1"
 templateEngine: vto, md
 ---
 
