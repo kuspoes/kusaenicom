@@ -126,7 +126,7 @@ perintah ini akan membuat sebuah _file_ `.qcow2`dengan ukuran _disk_ 20GiB (sesu
 
 ```shell-session
 $ qemu-img convert -f qcow2 -O raw openbsd-min.qcow2 openbsd-min.raw
-$ sudo dd if=openbsd-min.raw of=/dev/sda bs=4M status=progress
+$ doas dd if=openbsd-min.raw of=/dev/sda bs=4M status=progress
 $ sync
 ```
 
