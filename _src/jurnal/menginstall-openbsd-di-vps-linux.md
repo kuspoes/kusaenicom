@@ -11,10 +11,9 @@ keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xte
 kategori: jurnal
 code: true
 favorit: false
-comment: false
+comment: true
 tocx: false
 ---
-
 
 Di artikel sebelumnya saya sudah bisa menginstall FreeBSD di VPS Jagoan Hosting yang pakai xtermjs sebagai web console-nya. Lalu bagaimana jika menginstall OS BSD lainnya seperti OpenBSD?
 
@@ -29,6 +28,7 @@ Jadi bagaimana?
 Ya harus merubah _boot_ OpenBSD agar bisa jalan di _serial console_ dan ini artinya harus membedah isi _file installer_ dan merubah pengaturan di _boot file_. Terdengar komplek dan susah kan? Awokwokwok.
 
 Secara garis besar caranya sebagai berikut:
+
 1. _Mount file installer_ OpenBSD (biasanya dalam format `.img`),
 2. _Edit file_ `boot.conf` dan masukkan pengaturan _serial console_
 3. _Umount_ atau _repackaging_
@@ -50,23 +50,28 @@ Dalam hal ini saya mempergunakan OpenBSD yang berjalan dari dalam VM, saya mempe
 OpenBSD menyediakan fungsi [vnconfig (8)](https://man.openbsd.org/vnconfig) untuk membuat _vnode disk_ dan kemudian bisa di-_mount_ untuk bisa diakses. Maka dengan ini caranya adalah:
 
 1. Buat _vnode disk_ dengan bahan `miniroot76.img`yang sudah diunduh tadi,
+
 ```shell-session
 $ doas vnconfig -c vnd0 miniroot76.img
 ```
+
 `vnd0` adalah nama _disk_ yang dibuat dengan `vnconfig`
 
 2. Kemudian _mount_ `vnd0` agar bisa diakses
+
 ```shell-session
 $ doas mount /dev/vnd0 /mnt
 ```
 
 3. _Edit file_ `boot.conf` agar bisa membaca _serial console_, (jika _file_ `boot.conf` tidak ada bisa dibuat dengan manual)
+
 ```shell-session
 $ doas mkdir /mnt/etc
 $ doas echo "set tty com0" > /mnt/etc/boot.conf
 ```
 
 4. _Umount disk_ dan hapus _vnode disk_
+
 ```shell-session
 $ doas umount /dev/vnd0
 $ doas vnconfig -u vnd0
@@ -76,17 +81,20 @@ Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-
 
 ### Modifikasi dengan FreeBSD
 
-Jika di OpenBSD ada `vnconfig`, maka di FreeBSD ada [mdconfig(8)](https://man.freebsd.org/cgi/man.cgi?mdconfig(8)) yang bisa dipakai. Caranya sebagai berikut:
+Jika di OpenBSD ada `vnconfig`, maka di FreeBSD ada [mdconfig(8)](<https://man.freebsd.org/cgi/man.cgi?mdconfig(8)>) yang bisa dipakai. Caranya sebagai berikut:
 
 1. Cek apakah _vnode disk_ sudah dibuat dan buat _vnode disk_ baru,
+
 ```shell-session
 $ doas mdconfig -l
 $ doas mdconfig -a -t vnode -f miniroot76.img
 md0
 ```
+
 proses pembuatan _vnode disk_ menghasilkan _disk_ baru dengan nama `md0`.
 
 2. Periksa daftar partisi yang ada di dalam `md0`
+
 ```shell-session
 $ doas gpart show md0
 =>    1  11391  md0  MBR  (5.6M)
@@ -94,9 +102,11 @@ $ doas gpart show md0
      64    960    1  efi  (480K)
    1024  10368    4  !166  [active]  (5.1M)
 ```
+
 tersebut ada 1 partisi dan 2 _slices_, yang pertama adalah `efi` (tidak perlu utak atik yang ini) dan yang kedua adalah _slice_ 4 lokasi _boot file_.
 
 3. _Mount slice 4_ dan buat _file_ `boot.conf`
+
 ```shell-session
 $ doas mount /dev/md0s4
 $ cd /mnt
@@ -105,6 +115,7 @@ $ doas echo "set tty com0" > etc/boot.conf
 ```
 
 4. _Umount_ `md0` dan selesai
+
 ```shell-session
 $ umount /dev/md0
 $ mdconfig -d -u md0
@@ -144,4 +155,4 @@ Tapi intinya adalah mau kondisi apa saja, jangan sampai menghalangi kita untuk m
 
 _Provider_ lokal yang saya rekomendasikan [Neva Cloud](https://nevacloud.com) dan [Ide.id](https://ide.id).
 
-Terakhir, file `miniroot76.img` yang sudah dirubah *boot console*-nya tidak bisa dipakai di NoVNC, untuk NoVNC langsung unduh aja file asli dari OpenBSD.
+Terakhir, file `miniroot76.img` yang sudah dirubah _boot console_-nya tidak bisa dipakai di NoVNC, untuk NoVNC langsung unduh aja file asli dari OpenBSD.

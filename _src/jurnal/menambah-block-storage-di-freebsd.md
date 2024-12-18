@@ -9,6 +9,7 @@ kategori: jurnal
 code: true
 favorit: false
 templateEngine: vto, md
+comment: true
 ---
 
 2 bulan terakhir ini saya mempergunakan [NevaCloud](https://nevacloud.com/) sebagai penyedia layanan VPS setelah pindahan dari Vultr karena beberapa pertimbangan.

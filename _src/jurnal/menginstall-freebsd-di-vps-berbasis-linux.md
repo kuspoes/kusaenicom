@@ -11,7 +11,7 @@ keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xte
 kategori: jurnal
 code: true
 favorit: true
-comment: false
+comment: true
 tocx: false
 ---
 
@@ -36,7 +36,7 @@ Sebagai contoh saya menyewa VPS dari Jagoan Hosting paket Nebula dengan spek 2 v
 
 Default OS saya pasang Debian 12, saya menghindari Ubuntu karena biasanya sudah terlalu banyak modifikasi sehingga kadang malah membuat proses menjadi gagal. Jika tidak ada Debian bisa pakai Almalinux, Rocky Linux, atau bahkan Alpine Linux. 
 
-Sebagai catatan Jagoan Hosting memakai [xtermjs](https://xtermjs.org/) sebagai web consolenya, melawan arus utama perhostingan yang biasanya memakai [noVNC](https://novnc.com/info.html).  Hal ini akan membuat proses install menjadi cukup pelik cukup sulit. 
+Sebagai catatan Jagoan Hosting memakai [xtermjs](https://xtermjs.org/) sebagai web consolenya, melawan arus utama perhostingan yang biasanya memakai [noVNC](https://novnc.com/info.html). Hal ini akan membuat proses install menjadi cukup pelik cukup sulit. 
 
 <div class="postnotes">
 <h4>Kenapa?</h4>
@@ -79,7 +79,6 @@ Setelah selesai, tulis file mfsBSD yang sudah didownload ke dalam disk (menimpa 
 
 Perintah di atas akan menulis timpa file system mfsBSD ke `/dev/sda`, pastikan proses penulisan berjalan sempurna dan kemudian `reboot` . Jangan tutup web console, biarkan proses reboot berjalan. Setelah reboot selesai maka akan muncul bootloader dari FreeBSD, tekan tombol Enter untuk booting.
 
-
 <div class="postnotes">
 <h4 id="postnotes-systemd">Gagal saat menimpa?</h4>
 <p>Mungkin systemd akan memblok proses <code>dd</code> saat menimpa <code>boot</code> <i>files</i>. Maka perlu menghentikan <code>systemd-udevd</code> dengan <code>systemctl</code class="language-shell-session">
@@ -98,11 +97,13 @@ Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi
 ```shell-session
 # gpart recover da0
 ```
+
 <aside>
 <code>da0</code> adalah nama disk, bisa dicek dengan cara yang sama dengan di atas.
 </aside>
 
 #### Memeriksa konektivitas jaringan
+
 Sebenarnya setelah recover disk, bisa saja ketik `bsdinstall` untuk memulai TUI penginstallan FreeBSD, namun sebaiknya melakukan pengecekan jaringan terlebih dahulu. Cara yang paling mudah adalah dengan melakukan `ping` ke Google. 
 
 ```shell-session
@@ -120,6 +121,7 @@ Ada beberapa hal yang penting untuk dilakukan, antara lain:
 2. Melakukan pengaturan secara manual ke dalam mfsBSD.
 
 #### mfsBSD setting jaringan
+
 Maka perlu untuk memeriksa interfaces apa saja yang sudah dideteksi oleh system, ini nanti akan membatu untuk melakukan pengaturan IP.
 
 ```shell-session
@@ -134,6 +136,7 @@ lo0: flags=1008049 <REDACTED>
 Tersebut interface yang terdeteksi adalah `vtnet0`.
 
 #### Setting nameserver
+
 Sebelum mengatur IP saya atur dulu nameserver untuk memproses DNS.
 
 ```shell-session
@@ -155,7 +158,7 @@ simpan dan kemudian restart jaringan dengan cara:
 # service routing restart
 ```
 
-Setelah direstart, seharusnya mfsBSD sudah bisa mendapatkan IP.  Namun ternyata tidak!. Saya masih belum bisa melakukan ping dan masih mendapatkan masalah `No route to host`. Ternyata pengaturan IP di file `/etc/rc.conf` tidak membuat sistem terhubung ke jaringan. Sepertinya mfsBSD memiliki cara berbeda untuk melakukan pengaturan jaringan.
+Setelah direstart, seharusnya mfsBSD sudah bisa mendapatkan IP. Namun ternyata tidak!. Saya masih belum bisa melakukan ping dan masih mendapatkan masalah `No route to host`. Ternyata pengaturan IP di file `/etc/rc.conf` tidak membuat sistem terhubung ke jaringan. Sepertinya mfsBSD memiliki cara berbeda untuk melakukan pengaturan jaringan.
 
 Saya tak paham dengan bagaimana mfsBSD mengaturnya, tapi saya paham cara melakukan pengaturan secara manual, urutannya sebagai berikut:
 
@@ -187,6 +190,7 @@ default            103.158.31.1       UGS       vtnet0
 kemudian tes koneksi dengan ping, Alhamdulillah ada reply dari Google.
 
 #### BSDInstall
+
 Setelah jaringan berjalan dengan baik, maka sekarang saatnya menginstall FreeBSD. ketik perintah `bsdinstall` maka akan muncul TUI untuk menginstall FreeBSD.
 
 Saya mempergunakan semua disk sebagai `/root` folder dengan format UFS. Installer akan memberitahu bahwa file MANIFEST tidak ditemukan sehingga perlu diunduh dari internet (disinilah pentingnya akses jaringan tersedia).
@@ -200,7 +204,8 @@ Setelah semua rangkaian install sudah selesai, jangan terburu - buru restart. Ka
 Pilih Yes saat ada menu untuk masuk ke dalam shell-session.
 
 ### Pengaturan koneksi xtermjs
-Untuk bisa menghubungkan xtermjs dengan FreeBSD maka diperlukan paket `qemu-guest-agent` terinstall.  Caranya sebagai berikut
+
+Untuk bisa menghubungkan xtermjs dengan FreeBSD maka diperlukan paket `qemu-guest-agent` terinstall. Caranya sebagai berikut
 
 ```shell-session
 # pkg update

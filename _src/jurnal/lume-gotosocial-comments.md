@@ -10,7 +10,7 @@ tags:
 kategori: jurnal
 code: true
 favorit: false
-comment: false
+comment: true
 templateEngine: md
 tocx: false
 ---
