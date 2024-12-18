@@ -11,7 +11,7 @@ keywords: "freebsd, vps, tutorial, bsd, jail, bastillebsd, bastille"
 kategori: jurnal
 code: true
 favorit: false
-comment: false
+comment: true
 tocx: false
 ---
 

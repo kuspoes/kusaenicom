@@ -26,7 +26,7 @@ tags:
   - Seishi Yokomizo
 kategori: buku
 templateEngine: md
-comments: true
+comment: true
 ---
 
 Novel ini menjadi novel pembuka perkenalan saya dengan karya sastra dari pengarang asal Jepang ini. Seishi Yokomizo disebut - sebut sebagai salah satu novelis bergenre _thriller_, _crime_, dan _detective_ di Jepang.
