@@ -43,7 +43,9 @@
                 {{ /for }}
             </ol>
         </nav>
-        {{ /if }} {{ /if }} {{ content }} {{ /if }} {{ if footnotes.length }}
+        {{ /if }} {{ /if }} {{ content }} {{ /if }}
+
+        {{ if footnotes.length }}
         <aside role="note" class="footnotes">
             <h4>Footnotes:</h4>
             {{ for note of footnotes }}
