@@ -6,6 +6,7 @@ layout: layout/content.vto
 <div class="index_h1">
 <h1>Jurnal</h1>
 <p>Berlangganan lewat <a href="/subs">email</a> atau <a href="/feed.xml">RSS</a></p>
+<div id="search"></div>
 </div>
 		{{ for post of search.pages("type=post", "date=desc") }}
 		<div class="postlist {{ if post.favorit }} fave {{ /if }}">
