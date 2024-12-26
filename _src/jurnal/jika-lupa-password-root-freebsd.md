@@ -15,7 +15,7 @@ tocx: false
 style: "jika-lupa-password-root-freebsd.css"
 ---
 
-Mengaktifkan `doas` untuk _user_ dengan _privilleges_ `root` tanpa _password_ itu memang memudahkan namun memiliki efek yang kadang menyebalkan yaitu lupa _password_ `root` setelah sekian lama.
+Mengaktifkan [doas(1)](https://man.freebsd.org/cgi/man.cgi?query=doas&sektion=1&format=html) untuk _user_ dengan _privilleges_ `root` tanpa _password_ itu memang memudahkan namun memiliki efek yang kadang menyebalkan yaitu lupa _password_ `root` setelah sekian lama.
 
 Hal ini beberapa kali terjadi kepada saya, selain karena pada dasarnya saya seorang pelupa.
 
