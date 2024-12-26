@@ -23,27 +23,27 @@ Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambi
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Simpang Lima Gumul di Kediri, saat pagi hari.</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Sunset di Pantai Pulau Merah, Banyuwangi. Indah sekali namun sayang banyak sampah berserakan.</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Pantai_Soge_Pacitan_FodVQOzTgfJa.jpg" />
         </div>
-         <aside>
+         <aside class="image">
             <p>Salah satu sisi Pantai Soge, Pacitan.</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full" src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/D71_0358_GCefsTMTp.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Nelayan mencari ikan di Pantai Ngebel, Kab. Madiun. Saat pagi hari yang dingin.</p>
         </aside>
     </div>
@@ -52,28 +52,28 @@ Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambi
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/papuma_USMES_4Oj.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Pantai Papuma di Jember, sunrise disini tak pernah mengecewakan.</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Air_Terjun_Grojogan_Dhuwur_Pacitan_91GVhGsH0xJZ.jpg" />
             </div>
-            <aside>
+            <aside class="image">
             <p>Air terjun Grojogan Dhuwur di Pacitan, tracknya mudah tapi turunannya bikin ngeri.</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/kawah_putih_ciwidey_pXP7wSutdw.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Kawah Putih Kab. Bandung</p>
         </aside>
         <div class="flex-1 text-center">
             <img class="w-full"
                 src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/f3d62349ad6d8500ba324aa690fb49fc_DVQrvZTOX.jpg" />
         </div>
-        <aside>
+        <aside class="image">
             <p>Simpang Lima Bungul Kediri.</p>
         </aside>
     </div>
@@ -88,7 +88,7 @@ Saya adalah seorang _lone traveller_, sangat jarang sekali saya bepergian berkel
 
   <div class="galsX">
         <img class="img_lone" src="https://ik.imagekit.io/hjse9uhdjqd/Pantai_Pulau_Merah_Banyuwangi_4n9WLrg_Bz.jpg" alt="Pantai Merah Banyuwangi">
-        <aside>
+        <aside class="image">
             <p>Salah satu sudut Pantai Merah Banyuwangi.</p>
         </aside>
         <div class="flex-1">

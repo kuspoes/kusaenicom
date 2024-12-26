@@ -96,6 +96,11 @@ aside {
     background-color: var(--col_asidebg);
 }
 
+aside.image {
+    margin-top: -2em;
+    display: block;
+}
+
 aside.footnotes {
     background-color: transparent;
     border: none;
