@@ -68,7 +68,7 @@ style: "tentang.css"
 
 <p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.<p>
 
-<p>Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai Alacritty dan iTerm2. </p>
+<p>Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai <del>Alacritty</del><a herf="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan iTerm2. </p>
 
 <p>Font yang dipakai di blog ini :</p>
     <ul>
