@@ -43,9 +43,7 @@ style: "tentang.css"
 
 <p>Setelah memakai beberapa CMS/<em>blog engine</em> sebelumnya seperti Wordpress, Textpattern, Jekyll, Hugo &amp; 11ty. Saya sekarang beralih ke <a href="https://lumeland.github.io">Lume</a> dan <i>vanila</i> CSS <del class="abu">css <em>framework</em> <a href="https://tailwindcss.com">Tailwindcss</a></del>.</p>
 
-<p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest.</p>
-
-<p>Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font Kaylani.</p>
+<p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest. Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font Kaylani.</p>
 
 <p><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></p>
 
@@ -66,9 +64,7 @@ style: "tentang.css"
 
 <p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> (yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a>.</p>
 
-<p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.<p>
-
-<p>Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai <del>Alacritty</del><a herf="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan iTerm2. </p>
+<p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>. Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai <del>Alacritty</del><a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan iTerm2. </p>
 
 <p>Font yang dipakai di blog ini :</p>
     <ul>
@@ -81,9 +77,7 @@ style: "tentang.css"
 <h3>Mengenai tulisan</h3>
 <p>Semua tulisan dan catatan yang tertulis di situs ini merupakan pendapat pribadi dari saya &amp; menjadi tanggung jawab dari saya (<em>kecuali saya sebutkan tersendiri</em>).</p>
 
-<p>Usia situs/blog ini sendiri sudah memasuki 16 tahun, sudah banyak sekali artikel maupun catatan yang pernah saya tulis disini. Sayangnya karena satu dua tiga hal arsip - arsip tulisan maupun catatan tersebut lenyap.</p>
-
-<p>Jika anda ada keperluan terkait artikel maupun catatan lama saya, maka <a href="https://web.archive.org/web/2019*/kusaeni.com">halaman web archive</a> ini adalah tempat yang tepat untuk mencari.</p>
+<p>Usia situs/blog ini sendiri sudah memasuki 16 tahun, sudah banyak sekali artikel maupun catatan yang pernah saya tulis disini. Sayangnya karena satu dua tiga hal arsip - arsip tulisan maupun catatan tersebut lenyap. Jika anda ada keperluan terkait artikel maupun catatan lama saya, maka <a href="https://web.archive.org/web/2019*/kusaeni.com">halaman web archive</a> ini adalah tempat yang tepat untuk mencari.</p>
 
 <p>Apabila ada tulisan maupun catatan saya yang tidak berkenan bagi anda, silakan menghubungi saya di akun twitter <a class="font-semibold text-blue-600" href="https://twitter.com/kuspoes">@kuspoes</a> dan atau email <a class="font-semibold text-red-600" href="mailto:kusaeni@gmail.com">poes&#64;egois.org</a>. Namun jika anda merasa bahwa tulisan saya menarik dan ingin mendapatkan <i>update</i> terbaru setiap terbit, silakan berlangganan <a href="https://kusaeni.com/feed.xml">RSS</a> atau melalui <a href="{{ '/subs' | url }}">email</a>.</p>
 
