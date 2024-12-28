@@ -79,6 +79,11 @@ $ doas vnconfig -u vnd0
 
 Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_. Jangan lupa sebelum `dd`, [matikan dulu proteksi](/jurnal/menginstall-freebsd-di-vps-berbasis-linux/#postnotes-systemd) `systemd` kepada _disk_.
 
+<div class="postnotes">
+    <p>Saya sudah membuat image <code>miniroot76.img</code> yang sudah memakai serial console. Kamu bisa mengunduhnya <a href="https://egois.org/files/openBSD/">disini</a></p>
+    <p>Tapi ingat <i>do it at your own risk</i>. Selalu lakukan backup sebelum menginstall ini</p>
+</div>
+
 ### Modifikasi dengan FreeBSD
 
 Jika di OpenBSD ada `vnconfig`, maka di FreeBSD ada [mdconfig(8)](<https://man.freebsd.org/cgi/man.cgi?mdconfig(8)>) yang bisa dipakai. Caranya sebagai berikut:
