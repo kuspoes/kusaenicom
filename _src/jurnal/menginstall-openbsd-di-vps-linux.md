@@ -57,11 +57,19 @@ $ doas vnconfig -c vnd0 miniroot76.img
 
 `vnd0` adalah nama _disk_ yang dibuat dengan `vnconfig`
 
+<div class="postnotes">
+    <p>Opsi <code>-c</code> sudah tidak tersedia di <code>vnconfig</code> yang terbaru, jadi silakan hapus hasilnya akan sama saja</p>
+</div>
+
 2. Kemudian _mount_ `vnd0` agar bisa diakses
 
 ```shell-session
-$ doas mount /dev/vnd0 /mnt
+$ doas mount /dev/vnd0a /mnt
 ```
+
+<div class="postnotes">
+    <p>Partisi yang di <code>mount</code> adalah partisi pertama (paling atas), maka perlu menambahkan penanda <code>a</code> setelah disk. Sedangkan untuk partisi kedua dan selanjutnya ditandai dengan <code> b c d</code></p>
+</div>
 
 3. _Edit file_ `boot.conf` agar bisa membaca _serial console_, (jika _file_ `boot.conf` tidak ada bisa dibuat dengan manual)
 
@@ -73,8 +81,8 @@ $ doas echo "set tty com0" > /mnt/etc/boot.conf
 4. _Umount disk_ dan hapus _vnode disk_
 
 ```shell-session
-$ doas umount /dev/vnd0
-$ doas vnconfig -u vnd0
+$ doas umount /dev/vnd0a
+$ doas vnconfig -u vnd0a
 ```
 
 Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_. Jangan lupa sebelum `dd`, [matikan dulu proteksi](/jurnal/menginstall-freebsd-di-vps-berbasis-linux/#postnotes-systemd) `systemd` kepada _disk_.
