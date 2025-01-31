@@ -65,7 +65,7 @@
         <div class="comments-section">
           <header class="comments-header">
             <h2>{{ metadata.comments.title }}</h2>
-            <p>{{ metadata.comments.description.replace(":src:", it.comments.src) }}</p>
+            <p>{{ metadata.comments.description.replace(":src:", it.comments.real) }}</p>
           </header>
           <mastodon-comments
             src="{{ it.comments.src }}"

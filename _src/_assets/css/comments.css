@@ -82,6 +82,8 @@
     .comment-useraddress {
         font-style: normal;
         color: #6c757d;
+        font-size: 0.8em;
+        font-family: aria, sans-serif;
     }
     .comment-time {
         font-size: small;
