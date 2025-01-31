@@ -3,12 +3,9 @@ title: Perjalanan ke Timur mencari Nasi Tempong
 ringkasan: "Ekspedisi menuju ke Timur untuk membuktikan kelezatan nasi tempong khas Banyuwangi di daerah asalnya."
 tags:
   - kuliner
-  - thoughts
-  - kusaeni
   - travelling
   - Banyuwangi
   - kereta
-  - nasi
   - tempong
 date: 2025-01-29
 og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
