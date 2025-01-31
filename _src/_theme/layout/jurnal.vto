@@ -61,6 +61,22 @@
         </aside>
         {{ /if }}
         <hr></hr>
+        {{ if it.comments?.src }}
+        <div class="comments-section">
+          <header class="comments-header">
+            <h2>{{ metadata.comments.title }}</h2>
+            <p>{{ metadata.comments.description.replace(":src:", it.comments.src) }}</p>
+          </header>
+          <mastodon-comments
+            src="{{ it.comments.src }}"
+            cache="{{ it.comments.cache ?? 60 }}"
+            class="comments"
+          >
+            {{ metadata.comments.empty }}
+          </mastodon-comments>
+        </div>
+        {{ /if }}
+        <p>Atau langsung tinggalkan komentar dengan <i>form</i> berikut: </p>
         {{ if comment }}
         <div data-chirpy-theme="system" data-chirpy-comment="true" id="chirpy-comment"></div>
         {{ /if }}

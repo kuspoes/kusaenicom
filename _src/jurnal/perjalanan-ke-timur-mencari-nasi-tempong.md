@@ -10,6 +10,8 @@ tags:
 date: 2025-01-29
 og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
 comment: true
+comments:
+  src: https://sok.egois.org/@poes/statuses/01JJWZ7Z6H6QT74E4DA36VXHP8
 ---
 
 <abbr title="Terlalu Lama Dibaca Rawrrr">TLDR</abbr>: _Ane lagi seneng sama Nasi Tempong Khas Banyuwangi. Jadi mumpung di daerah Tapal Kuda kenapa tidak langsung coba saja dari asalnya?. Naik kereta akhirnya._
