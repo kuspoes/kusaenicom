@@ -1,6 +1,6 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.4.2/"
+    "lume/": "https://deno.land/x/lume@v2.5.1/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
@@ -9,6 +9,8 @@
     "lumex": "echo \"import 'lume/cli.ts'\" | deno run -A --reload"
   },
   "compilerOptions": {
-    "types": ["lume/types.ts"]
+    "types": [
+      "lume/types.ts"
+    ]
   }
 }

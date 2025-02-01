@@ -611,6 +611,12 @@ a.footnote-ref {
     border: none;
 }
 
+/** pagefind a **/
+.pagefind-ui__result-title.svelte-j9e30
+    .pagefind-ui__result-link.svelte-j9e30:hover {
+    text-decoration: none;
+}
+
 nav.toc a {
     text-decoration: none;
     border-bottom: 1px dotted #94d2bd;

@@ -15,6 +15,7 @@ import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import pagefind from "lume/plugins/pagefind.ts";
+import purgecss from "lume/plugins/purgecss.ts";
 
 import "npm:prismjs@1.29.0/components/prism-shell-session.min.js";
 
@@ -40,6 +41,7 @@ site
   .use(base_path())
   .use(nunjucks())
   .use(pagefind())
+  .use(purgecss())
   .use(
     date({
       formats: {
