@@ -40,7 +40,7 @@ site
   .use(attributes())
   .use(base_path())
   .use(nunjucks())
-  .use(pagefind())
+  .use(pagefind({ showEmptyFilters: true }))
   .use(purgecss())
   .use(
     date({

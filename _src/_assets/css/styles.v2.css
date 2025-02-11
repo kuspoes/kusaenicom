@@ -765,6 +765,7 @@ cite {
     padding: 2px 4px;
 }
 
+pagefind-ui mark,
 mark {
     text-decoration-line: underline;
     text-decoration-style: wavy;
