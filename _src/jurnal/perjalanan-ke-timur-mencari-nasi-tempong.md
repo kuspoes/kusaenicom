@@ -92,7 +92,7 @@ Tiba - tiba ada suara keras membangunkan ane, lagi!. Si ibu itu teriak manggil t
 
 Sambil _scrolling_ sosmed dan jawab beberapa _mentions_ di [Gotosocial](https://gotosocial.org) tak terasa waktu sudah di angka 04.42 WIB tapi kereta belum juga sampai stasiun tujuan. Kereta terlambat karena persimpangan dengan kereta Probowangi sebelumnya. Tapi beberapa menit kemudian akhirnya kereta sampai di Stasiun Banyuwangi Kota. Ane langsung bangun dan keluar kereta tanpa pamit ke penumpang sebelah. Ang ang ang ang.
 
-![Emplasemen Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9425%20Large_Sxrdt84jj.jpeg?updatedAt=1736908776096)
+![Emplasemen Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9425%20Large_Sxrdt84jj.jpeg?tr=bl-30,q-50)
 
 Penumpang yang turun di stasiun ini lumayan banyak, ane bergegas mencari Mushola untuk sholat Subuh. Alhamdulillah bisa jama'ah dengan beberapa penumpang lainnya. Langit sudah cerah saat kaki membawa ane keluar dari stasiun padahal jam masih menunjukkan pukul 5 kurang beberapa menit.
 
