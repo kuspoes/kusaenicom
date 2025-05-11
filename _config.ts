@@ -37,6 +37,7 @@ const site = lume(
 );
 
 site
+  .add("assets")
   .use(attributes())
   .use(base_path())
   .use(nunjucks())
@@ -83,8 +84,8 @@ site
   .use(
     prism({
       theme: {
-        name: "prism.min",
-        path: "assets/css/prism.min.css",
+        name: "default",
+        //path: "assets/css/prism.min.css",
       },
     }),
   )
@@ -104,7 +105,6 @@ site
       sort: "date=desc",
     }),
   )
-  .copy("_assets", "assets")
   .ignore("README.md");
 
 site.helper(
