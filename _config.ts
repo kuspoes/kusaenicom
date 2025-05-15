@@ -4,7 +4,6 @@ import base_path from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
 import { id } from "npm:date-fns/locale/id";
 import feed from "lume/plugins/feed.ts";
-//import codeHighlight from "lume/plugins/code_highlight.ts";
 import prism from "lume/plugins/prism.ts";
 import readInfo from "lume/plugins/reading_info.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
@@ -17,7 +16,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 
-import "npm:prismjs@1.29.0/components/prism-shell-session.min.js";
+import "npm:prismjs@1.30.0/components/prism-shell-session.min.js";
 
 const markdown = {
   plugins: [footnotes],
@@ -41,7 +40,11 @@ site
   .use(attributes())
   .use(base_path())
   .use(nunjucks())
-  .use(pagefind({ showEmptyFilters: true }))
+  .use(
+    pagefind({
+      ui: { showEmptyFilters: true },
+    }),
+  )
   .use(purgecss())
   .use(
     date({
@@ -85,20 +88,12 @@ site
     prism({
       theme: {
         name: "default",
-        //path: "assets/css/prism.min.css",
+        cssFile: "/assets/css/prism.min.css",
       },
     }),
   )
-  //  .use(
-  //    codeHighlight({
-  //      theme: {
-  //        name: "tmrw",
-  //        path: "/_assets/css/tmrw.css",
-  //      },
-  //    }),
-  //  )
-  .use(readInfo())
   .use(toc())
+  .use(readInfo())
   .use(title())
   .use(
     sitemap({
@@ -145,6 +140,26 @@ site.helper(
             <p>${desc}</p>
             </div>
         </div>`;
+  },
+  {
+    // deno-lint-ignore-file
+    body: !!"true",
+    type: "tag",
+  },
+);
+
+site.helper(
+  "gambar",
+  function (imgSrc, imgAlt) {
+    const tr = "?tr=bl-30,q-50";
+    return `
+      <img
+      src="${imgSrc}${tr}"
+      data-src="${imgSrc}"
+      alt="${imgAlt}"
+      class="lazy-image"
+      />
+    `;
   },
   {
     // deno-lint-ignore-file

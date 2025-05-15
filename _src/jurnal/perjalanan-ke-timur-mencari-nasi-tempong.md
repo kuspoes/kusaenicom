@@ -8,6 +8,7 @@ tags:
   - kereta
   - tempong
 date: 2025-01-29
+templateEngine: vto, md
 og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
 comment: true
 comments:
@@ -92,11 +93,11 @@ Tiba - tiba ada suara keras membangunkan ane, lagi!. Si ibu itu teriak manggil t
 
 Sambil _scrolling_ sosmed dan jawab beberapa _mentions_ di [Gotosocial](https://gotosocial.org) tak terasa waktu sudah di angka 04.42 WIB tapi kereta belum juga sampai stasiun tujuan. Kereta terlambat karena persimpangan dengan kereta Probowangi sebelumnya. Tapi beberapa menit kemudian akhirnya kereta sampai di Stasiun Banyuwangi Kota. Ane langsung bangun dan keluar kereta tanpa pamit ke penumpang sebelah. Ang ang ang ang.
 
-![Emplasemen Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9425%20Large_Sxrdt84jj.jpeg?tr=bl-30,q-50)
+{{ echo |> gambar("Emplasemen Stasiun Banyuwangi Kota")}}https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9425%20Large_Sxrdt84jj.jpeg{{ /echo }}
 
 Penumpang yang turun di stasiun ini lumayan banyak, ane bergegas mencari Mushola untuk sholat Subuh. Alhamdulillah bisa jama'ah dengan beberapa penumpang lainnya. Langit sudah cerah saat kaki membawa ane keluar dari stasiun padahal jam masih menunjukkan pukul 5 kurang beberapa menit.
 
-![fasad Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/stasiunBK_QDtNWQiyy.jpg?updatedAt=1736908775899)
+{{ echo |> gambar("Fasad Stasiun Banyuwangi Kota") }}https://ik.imagekit.io/hjse9uhdjqd/Bear/stasiunBK_QDtNWQiyy.jpg{{ /echo }}
 
 Rencana besar ane adalah ingin makan Nasi Tempong khas Banyuwangi asli, menurut pencarian di Google memberikan hasil Warung Nasi Tempong Mbok Nah berada pada urutan nomer 1. Jadi ane putuskan untuk sarapan disana. Akan tetapi ternyata warung ini baru buka jam 08.00 WIB, ane perlu menunggu 3 jam lagi.
 

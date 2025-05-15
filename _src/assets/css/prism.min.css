@@ -1,10 +1,11 @@
+/* Fuck */
 code[class*="language-"],
 pre[class*="language-"] {
     color: #000;
-    background: 0 0;
+    background: transparent;
     text-shadow: 0 1px #fff;
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    font-size: 0.88em;
+    font-size: 0.9em;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -24,14 +25,14 @@ code[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection {
     text-shadow: none;
-    background: #b3d4fc;
+    background: transparent;
 }
 code[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 pre[class*="language-"]::selection {
     text-shadow: none;
-    background: #b3d4fc;
+    background: transparent;
 }
 @media print {
     code[class*="language-"],

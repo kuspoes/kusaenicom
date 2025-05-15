@@ -5,5 +5,19 @@
             </div>
         </div>
         <script data-goatcounter="https://kusaeni.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        <script>
+          if (!("loading" in HTMLImageElement.prototype)) {
+            const images = document.querySelectorAll("img.lazy-image");
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.src = entry.target.dataset.src;
+                  observer.unobserve(entry.target);
+                }
+              });
+            });
+            images.forEach(img => observer.observe(img));
+          }
+        </script>
 </body>
 </html>

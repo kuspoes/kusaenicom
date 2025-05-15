@@ -11,12 +11,12 @@
         <meta name=”robots” content=”noai, noimageai”>
         <link rel="stylesheet" href="/assets/css/reset.css" inline>
         <link rel="stylesheet" href="/assets/css/fonts.css" inline>
+        {{ if it.code }}
+        <link rel="stylesheet" href="/assets/css/prism.min.css">
+        {{ /if }}
         <link rel="stylesheet" href="/assets/css/styles.v2.css" inline>
         {{ if it.style }}
         <link rel="stylesheet" href="/assets/css/posts/{{ it.style }}" inline>
-        {{ /if }}
-        {{ if it.code }}
-        <link rel="stylesheet" href="/assets/css/prism.min.css">
         {{ /if }}
         {{ if it.comment }}
         <script src="/assets/js/main.js" type="module"></script>
