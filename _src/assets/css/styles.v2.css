@@ -380,6 +380,17 @@ span.ter {
     font-size: 90%;
 }
 
+.abu {
+    padding: 0.4em 0.5em;
+    border: 1px dotted #ff8fab;
+    border-radius: 0.4em;
+    background-color: #ffe5ec;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    font-family: var(--sans);
+    color: #370617;
+}
+
 /* tipo */
 p {
     margin-bottom: 1.6em;
@@ -673,13 +684,12 @@ pre code {
 
 pre[class*="language-"] {
     background: transparent;
-    font-size: 0.86em;
+    font-size: 0.8em;
 }
 
 /* media */
 img {
-    width: 34em;
-    height: 100%;
+    width: 100%;
     margin-bottom: 1.1em;
 }
 

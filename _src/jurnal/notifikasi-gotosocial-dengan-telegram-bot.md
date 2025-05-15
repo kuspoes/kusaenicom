@@ -14,6 +14,11 @@ tocx: true
 comment: true
 ---
 
+  <div class="abu">
+ <b>Update</b>
+ <p>Artikel ini menunjukkan cara untuk membuat notifikasi gotosocial sendiri dengan memanfaatkan Telegram Bot. Kode dibuat dengan typescript Deno. Saya pribadi sudah tidak memakai kode ini dan bermigrasi ke Python karena memasangnya di dalam VPS. Secara garis besar sama, hanya saja saya memilih untuk <i>self host</i>. Repo untuk versi Python bisa dilihat di <a href="https://brew.bsd.cafe/poes/python-gotosocial-notif.git" target="_blank">Py-Teledon</a></p>
+  </div>
+
 Sampai dengan rilis [v.0.16.0](https://github.com/superseriousbusiness/gotosocial/releases/tag/v0.16.0) Gotosocial masih belum menyertakan fitur _push notification_ ke dalam aplikasinya. Menurut salah satu _developer_-nya pengaktifan notifikasi membutuhkan banyak sumber daya karena harus merubah sebagian besar kode meski sebenarnya Gotosocial sendiri sudah mendukung [API untuk mengirim notifikasi](https://docs.gotosocial.org/en/latest/api/swagger/).
 
 Oleh karena itu mengakses API ini dan sedikit trik memanfaatkan layanan WebPush lainnya bisa dipakai untuk membuat notifikasi Gotosocial. Salah satunya bisa pakai cara yang dibuat oleh Joel Carnat dalam [GoToSocial Push notifications using Pushover](https://www.tumfatig.net/2024/gotosocial-push-notifications-using-pushover/). Joel membuat _shell script_ untuk menarik data notifikasi kemudian menyimpannya dalam bentuk _text file_ dan kemudian dikirim ke layanan [PushOver](https://pushover.net/)[^1].
