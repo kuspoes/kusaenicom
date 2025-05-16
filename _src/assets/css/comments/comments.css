@@ -16,6 +16,14 @@
     container-type: inline-size;
     font-size: 95%;
 
+    .comment-avatar {
+        width: var(--avatar-size);
+        height: var(--avatar-size);
+        border-radius: 6px;
+        float: left;
+        margin-right: 14px;
+    }
+
     @media (max-width: 450px) {
         margin-left: calc(-15vw / 2);
         margin-right: calc(-15vw / 2);
@@ -53,13 +61,14 @@
         --indent: min(10cqw, var(--avatar-size) + 15px);
     }
 
-    .comment-avatar {
+    img.comment-avatar {
         width: var(--avatar-size);
         height: var(--avatar-size);
         border-radius: 6px;
         float: left;
         margin-right: 14px;
     }
+
     .comment-user {
         text-decoration: none;
         display: block;
