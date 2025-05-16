@@ -148,14 +148,15 @@ site.helper(
   },
 );
 
+// dont us this helper
 site.helper(
   "gambar",
   function (imgSrc, imgAlt) {
     const tr = "?tr=bl-30,q-50";
     return `
       <img
-      src="${imgSrc}${tr}"
-      data-src="${imgSrc}"
+      src="${imgSrc}"
+      data-src="${imgSrc}${tr}"
       alt="${imgAlt}"
       class="lazy-image"
       />

@@ -692,6 +692,12 @@ img {
     width: 100%;
     margin-bottom: 1.1em;
 }
+.comment-avatar {
+    width: 2.2em;
+    height: 2.2em;
+    float: left;
+    border: none;
+}
 
 .lazy-image {
     width: 100%;
