@@ -21,6 +21,9 @@ import "npm:prismjs@1.30.0/components/prism-shell-session.min.js";
 const markdown = {
   plugins: [footnotes],
   keepDefaultPlugins: true,
+  options: {
+    typographer: true,
+  },
 };
 
 const site = lume(
@@ -103,6 +106,36 @@ site
   .ignore("README.md");
 
 site.helper(
+  "kac",
+  function (text: string) {
+    return `<div class="kac">${text}</div>`;
+  },
+  {
+    type: "tag",
+    body: !!true,
+  },
+);
+
+// dont us this helper
+site.helper(
+  "gambar",
+  function (imgSrc: string, imgAlt: string) {
+    const tr: string = "?tr=bl-30,q-50";
+    return `
+        <img
+        src="${imgSrc}${tr}"
+        data-src="${imgSrc}"
+        alt="${imgAlt}"
+        class="lazy-image"
+        />
+      `;
+  },
+  {
+    type: "tag",
+  },
+);
+
+site.helper(
   "terkait",
   function (
     desc: string,
@@ -121,7 +154,7 @@ site.helper(
   },
   {
     // deno-lint-ignore-file
-    body: !!"true",
+    body: !!true,
     type: "tag",
   },
 );
@@ -143,38 +176,24 @@ site.helper(
   },
   {
     // deno-lint-ignore-file
-    body: !!"true",
-    type: "tag",
-  },
-);
-
-// dont us this helper
-site.helper(
-  "gambar",
-  function (imgSrc, imgAlt) {
-    const tr = "?tr=bl-30,q-50";
-    return `
-      <img
-      src="${imgSrc}"
-      data-src="${imgSrc}${tr}"
-      alt="${imgAlt}"
-      class="lazy-image"
-      />
-    `;
-  },
-  {
-    // deno-lint-ignore-file
-    body: !!"true",
+    body: !!true,
     type: "tag",
   },
 );
 
 site.process([".html"], (pages) => {
   for (const page of pages) {
-    for (const img of page.document!.querySelectorAll("img")) {
+    for (const img of page.document!.querySelectorAll("div.content img")) {
+      if (
+        img.classList.contains("kus_avatar") ||
+        img.classList.contains("layang")
+      ) {
+        continue;
+      }
       if (!img.hasAttribute("loading")) {
         img.setAttribute("loading", "lazy");
       }
+      img.setAttribute("class", "content-image");
     }
   }
 });

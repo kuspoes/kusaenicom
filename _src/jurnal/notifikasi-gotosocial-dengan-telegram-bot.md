@@ -14,7 +14,7 @@ tocx: true
 comment: true
 ---
 
-  <div class="abu">
+  <div class="notif">
  <b>Update</b>
  <p>Artikel ini menunjukkan cara untuk membuat notifikasi gotosocial sendiri dengan memanfaatkan Telegram Bot. Kode dibuat dengan typescript Deno. Saya pribadi sudah tidak memakai kode ini dan bermigrasi ke Python karena memasangnya di dalam VPS. Secara garis besar sama, hanya saja saya memilih untuk <i>self host</i>. Repo untuk versi Python bisa dilihat di <a href="https://brew.bsd.cafe/poes/python-gotosocial-notif.git" target="_blank">Py-Teledon</a></p>
   </div>
