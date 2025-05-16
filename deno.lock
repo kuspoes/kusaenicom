@@ -150,8 +150,10 @@
     "npm:nunjucks@3.2.4": "3.2.4",
     "npm:pagefind@1.2.0": "1.2.0",
     "npm:pagefind@1.3.0": "1.3.0",
+    "npm:prismjs@*": "1.29.0",
     "npm:prismjs@1.29.0": "1.29.0",
     "npm:prismjs@1.30.0": "1.30.0",
+    "npm:prismjs@^1.30.0": "1.30.0",
     "npm:purgecss-from-html@7.0.2": "7.0.2",
     "npm:purgecss@7.0.2": "7.0.2",
     "npm:remove-markdown@0.6.0": "0.6.0",
@@ -1058,7 +1060,9 @@
     }
   },
   "redirects": {
-    "https://deno.land/x/opengraph/mod.ts": "https://deno.land/x/opengraph@v1.0.0/mod.ts"
+    "https://deno.land/x/opengraph/mod.ts": "https://deno.land/x/opengraph@v1.0.0/mod.ts",
+    "https://esm.sh/prismjs": "https://esm.sh/prismjs@1.30.0",
+    "https://esm.sh/prismjs/components/prism-shell-session": "https://esm.sh/prismjs@1.30.0/components/prism-shell-session"
   },
   "remote": {
     "https://cdn.jsdelivr.net/gh/lumeland/bar@0.1.4/types.ts": "89d131290feb5c6781bf752525bc35d21a49612f9b3cd6b5e3a44dca15a996d6",
@@ -2062,10 +2066,22 @@
     "https://deno.land/x/xml@6.0.1/parse.ts": "84f0e4c0f06bef3de94700ae7a3be62330c67726b403586c0662df99be38ff64",
     "https://deno.land/x/xml@6.0.1/stringify.ts": "63d4fe04838a8df995f1092881846e04b9142ed61b821686b51ddedcfc8a879d",
     "https://deno.land/x/xml@6.0.1/wasm_xml_parser/wasm_xml_parser.js": "7f6b80616f0b5488a40771ed76ebe61cedf9473bf86320da5e8aa0deec22db51",
+    "https://deno.land/x/xml@6.0.4/_types.ts": "a7435282a7a775d80f8528aeec49996192c47fef8a8f616a1b216792424dc125",
     "https://deno.land/x/xml@6.0.4/mod.ts": "b59e5c0dd9fe7ed597c21c39aacf089aa82fe5c5eaad3f411a43a9c104359f4e",
     "https://deno.land/x/xml@6.0.4/parse.ts": "1302c75d8fd40df39310bb8ae6716302f0b77c61c607437dc023d3d792a0df54",
     "https://deno.land/x/xml@6.0.4/stringify.ts": "0e2f79798d413c5386bf5de90bbe9901f99951ceae484050a8ef89e2b4da9dd0",
     "https://deno.land/x/xml@6.0.4/wasm_xml_parser/wasm_xml_parser.js": "0804d738e6d94284b043546260b547bb4731fbfd3b3851139740e863dabf25bd",
+    "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js": "25191f8c4f71806515f46cb0eb40605704d7ef3a676b2bb5c0c7eb5118d188fc",
+    "https://esm.sh/prismjs@1.29.0/denonext/components/prism-shell-session.mjs": "2f7f98eaee2184f717206f8cd58f64d414ef7251350a34d1376cae3b3a7ca556",
+    "https://esm.sh/prismjs@1.30.0": "901f131bd8182f617ae6a6d1bfb5099e41618c8903fd21bfb89f24a19afbab0a",
+    "https://esm.sh/prismjs@1.30.0/components/prism-shell-session": "fce220aa1d8fb79c37ccad6adb7003ce7a2abd662fd7896dec9b9f16a6ceea7a",
+    "https://esm.sh/prismjs@1.30.0/denonext/components/prism-shell-session.mjs": "29ae676ef14f90372680bb9be876051ca1ea8f1d310edbdea56576e6a3d07d37",
+    "https://esm.sh/prismjs@1.30.0/denonext/prismjs.mjs": "e124a32c633da66f0c1e5109bd4d3560beea9e69d11bca906fcbcd2e9c5d8c5f",
     "https://wilsonl.in/minify-html/deno/0.15.0/index.js": "8e7ee5067ca84fb5d5a1f33118cac4998de0b7d80b3f56cc5c6728b84e6bfb70"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:prismjs@^1.30.0"
+    ]
   }
 }
