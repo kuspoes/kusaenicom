@@ -9,7 +9,7 @@ import readInfo from "lume/plugins/reading_info.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
 import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
-//import minifyHTML from "lume/plugins/minify_html.ts";
+import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
@@ -25,6 +25,8 @@ const markdown = {
     typographer: true,
   },
 };
+
+const isDev = Deno.args.includes("-s");
 
 const site = lume(
   {
@@ -60,7 +62,6 @@ site
       locales: { id },
     }),
   )
-  .use(inline())
   .use(
     feed({
       output: "feed.xml",
@@ -79,14 +80,6 @@ site
       },
     }),
   )
-  //  .use(
-  //    minifyHTML({
-  //      extensions: [".html", ".css"],
-  //      options: {
-  //        minify_css: true,
-  //      },
-  //    }),
-  //  )
   .use(
     prism({
       theme: {
@@ -104,6 +97,17 @@ site
     }),
   )
   .ignore("README.md");
+
+if (!isDev) {
+  site.use(inline()).use(
+    minifyHTML({
+      extensions: [".html", ".css"],
+      options: {
+        minify_css: true,
+      },
+    }),
+  );
+}
 
 site.helper(
   "kac",
