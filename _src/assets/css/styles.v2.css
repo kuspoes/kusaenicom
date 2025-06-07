@@ -555,6 +555,15 @@ h4 {
     margin: 0;
 }
 
+.consolas {
+    font-family: consolas, monospace;
+}
+.monaco {
+    font-family: monaco, monospace;
+}
+.monoscape {
+    font-family: monospace;
+}
 /* anchors */
 
 a:hover {
