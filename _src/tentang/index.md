@@ -62,6 +62,9 @@ style: "tentang.css"
 
 <p>Untuk pencatatan statistik, saya mempergunakan jasa pencatat statistik gratis dari <a href="https://goatcounter.com" target="_blank">goatcounter</a>. </p>
 
+<div class="postnotes">
+    <p>Statistik yang dikoleksi terbatas pada lokasi negara, bahasa, referrer, ukuran layar, dan alamat URL yang dikunjungi. Data ini dipakai kepentingan internal saja untuk mencari data tentang artikel mana yang paling banyak dikunjungi dan jenis <i>devices</i> yang dipakai untuk keperluan desain situs (responsif). Data ini tidak akan dijual ke pihak manapun.</p></div>
+
 <p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> (yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a>.</p>
 
 <p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>. Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai <del>Alacritty</del><a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan iTerm2. </p>

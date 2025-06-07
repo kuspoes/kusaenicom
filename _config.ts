@@ -109,17 +109,6 @@ if (!isDev) {
   );
 }
 
-site.helper(
-  "kac",
-  function (text: string) {
-    return `<div class="kac">${text}</div>`;
-  },
-  {
-    type: "tag",
-    body: !!true,
-  },
-);
-
 // dont us this helper
 site.helper(
   "gambar",

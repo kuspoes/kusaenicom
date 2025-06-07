@@ -41,7 +41,6 @@ export default function noRObotai(): Middleware {
     ];
     const getUA = headers.get("user-agent") ?? "";
     const cekUA = banUA.includes(getUA);
-    //console.log("User Agent :", getUA);
 
     if (cekUA === true) {
       return new Response(
