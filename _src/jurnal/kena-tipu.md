@@ -11,8 +11,8 @@ favorit: false
 comment: true
 keywords: penipu, tipu, facebook, marketplace, kiriminaja, bri, virtual account, e-reader, kindle
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01JXRW9XRZKQ1C4F8QSZJ4DWRY
+  real: https://sok.egois.org/@poes/statuses/01JXRW9XRZKQ1C4F8QSZJ4DWRY
 ---
 
 Semua orang tahu kalo ane suka baca buku, selama ini ane baca buku di aplikasi Books di iPhone. Menyenangkan tapi sayangnya kalo membaca terlampau lama membuat mata cepat lelah yang paling buruk daya tahan baterai jadi berkurang, ini akan menjadi masalah saat di perjalanan. Pakai tablet menjadi solusi awal namun menjadi tidak pas karena berat tablet rata - rata di atas 200 gram dan tentu saja masih tidak menyelesaikan masalah kelelahan di mata akibat pancaran sinar dari layar.
