@@ -38,7 +38,7 @@ Ane mulai curiga kalau kena tipu. Jadi hal pertama yang ane cek adalah _virtual 
 
 Dari percakapan dengan CS manusia disebutkan bahwa KiriminAja bukan rekber dan nomer _virtual account_ yang diberikan bukan dari KiriminAja. Setelah mendapatkan konfirmasi dari KiriminAja, ane hubungi nomer si penipu, tak lama tiba - tiba ada pesan Whatsapp masuk yang mengaku dari kirimin aja mengatakan meminta konfirmasi apakah siap menerima barang atau minta _refund_. Ane ambil _screenshot_ dan kirim ke CS KiriminAja untuk dicek dan mereka kembali menyatakan bahwa nomer dari pesan tersebut bukan nomer resmi dan terdaftar di KiriminAja. Sudah jelas penipu!.
 
-![Penipu mengaku dari KiriminAja](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/IMG_1233_EOMErgMhS.PNG?updatedAt=1749959612147)
+![Penipu mengaku dari KiriminAja](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/SCR-20250615-jfev_Ilri7PxHI.png?updatedAt=1749960678231)
 
 ## Menginformasikan ke CS BRI
 
