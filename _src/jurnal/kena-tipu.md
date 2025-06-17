@@ -8,7 +8,7 @@ tags:
 kategori: jurnal
 code: false
 favorit: false
-comment: true
+comment: false
 keywords: penipu, tipu, facebook, marketplace, kiriminaja, bri, virtual account, e-reader, kindle
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01JXRW9XRZKQ1C4F8QSZJ4DWRY
