@@ -44,7 +44,7 @@ Dari percakapan dengan CS manusia disebutkan bahwa KiriminAja bukan rekber dan n
 
 Ane kemudian menghubungi CS BRI melalui Twitter, tujuan ane untuk memperingatkan bahwa _virtual account_ dan nasabah yang membuat, memakai, dan memanfaatkan nomer _virtual account_ tersebut adalah penipu. Hanya saja tanggapan dari pihak BRI menurut ane kurang bijak, mereka lebih dahulu mencoba membela diri bahwa kesalahan bukan dari pihak mereka. Padahal ane hanya ingin menginformasikan saja.
 
-Ane kemudian coba _searching_ info bagaimana membuat _virtual account_, menurut situs Denpono.com [membuat _virtual account_](https://www.denpono.com/2021/09/cara-membuat-virtual-account-bri.html) di BRI semudah membalikkan telapak tangan.
+Ane kemudian coba _searching_ info bagaimana membuat _virtual account_, menurut situs <a href="https://www.denpono.com/2021/09/cara-membuat-virtual-account-bri.html" target="_blank">membuat virtual account</a> di BRI semudah membalikkan telapak tangan.
 
 ## Aftermath
 
@@ -53,3 +53,7 @@ Di titik ini ane udah _fix_ kena tipu. Ya kembali bahwa ini adalah takdir Allah,
 Jadi berhati - hati dalam membeli barang di _marketplace_ seperti Facebook, jangan pernah mau disuruh transfer dana terlebih dahulu apalagi ke entitas yang tidak jelas. Selalu gunakan rekber yang terpercaya seperti Shopee atau Tokopedia.
 
 Bank tidak akan peduli atas masalahmu kecuali ada surat penyelidikan dari polisi. Mari kita jaga diri sendiri.
+
+### Update
+
+Alhamdulillah akhirnya ane mendapatkan Kindle pengganti, masih beli di Facebook Marketplace namun kali ini melalui grup diskusi dan pihak penjual yang meminta transaksi melalui Shopee. Untuk kali ini ane beli dengan spesifikasi lebih rendah karena harga lebih murah.
