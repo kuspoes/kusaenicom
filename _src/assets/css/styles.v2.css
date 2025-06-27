@@ -29,13 +29,21 @@ body {
 }
 
 .page {
-    width: 34em;
+    //width: 34em;
     margin: 4em auto;
+}
+
+.page p,
+#search,
+.content {
+    width: 34em;
+    margin: 1em auto;
 }
 
 /* layout postlist/index */
 .postlist {
-    margin: 2em 0;
+    width: 34em;
+    margin: 4em auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -51,6 +59,10 @@ body {
 .postitle {
     width: 30em;
     margin-left: 1em;
+}
+
+.postitle p {
+    margin: 0;
 }
 
 .meta {
@@ -146,7 +158,13 @@ aside.footnotes {
 }
 
 .index_h1 {
-    margin-bottom: 4em;
+    width: 34em;
+    margin: 0em auto;
+    //margin-bottom: 4em;
+}
+
+.index_h1 p {
+    margin: 0px;
 }
 
 nav.toc {
@@ -373,7 +391,8 @@ span.ter {
     font-weight: 400;
     font-family: var(--sans);
     font-size: 0.8em;
-    margin-bottom: 0.5em;
+    margin: 0.5em;
+    width: 100%;
 }
 
 .postnotes code {
@@ -411,6 +430,8 @@ p.date {
 
 p.sidenote {
     font: normal 0.8em/1.2 var(--sans);
+    width: 100% !important;
+    margin: 0em 0 1em 0;
 }
 
 .postitle p {
@@ -495,6 +516,11 @@ strong {
 }
 
 /* header */
+.meta {
+    width: 34em;
+    margin: 0 auto;
+}
+
 .meta h1 {
     font: bold 3em/1 var(--sans);
     margin-bottom: 0.3em;
@@ -633,6 +659,7 @@ a.footnote-ref {
 }
 
 /** pagefind a **/
+
 .pagefind-ui__result-title.svelte-j9e30
     .pagefind-ui__result-link.svelte-j9e30:hover {
     text-decoration: none;
@@ -657,6 +684,11 @@ nav.toc a:hover {
 .menu a {
     text-decoration: none;
     color: var(--col_body);
+}
+
+.comments-section {
+    width: 34em;
+    margin: 5em auto;
 }
 
 .comments-section a:hover,
@@ -727,6 +759,14 @@ img {
 .vid {
     width: 34em;
     margin-bottom: -0.6em;
+}
+
+.image-group {
+    width: 100%;
+}
+
+.image-group .content-image {
+    display: inline;
 }
 
 /* blockquote */

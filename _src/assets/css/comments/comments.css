@@ -1,5 +1,6 @@
 .comments-section {
-    margin-top: 5em;
+    width: 34em;
+    margin: 5em auto;
 }
 .comments-header {
     & h2 {
