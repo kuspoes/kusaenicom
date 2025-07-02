@@ -38,4 +38,19 @@ Metode _jailbreak_-nya pakai cara [Winterbreak](https://kindlemodding.org/jailbr
 
 Ane pakai metode ini juga dan _install_ Ko Reader sebagai pengganti _reader_ bawaan Amazon. Meski ada beberapa kekurangan tapi bukan masalah yang besar yang terpenting adalah ane bisa _upload_ e-book dan tidak akan tiba - tiba hilang (kasus di Amazon).
 
+## Ko Reader dan Kamus bahasa Inggris ke Bahasa Indonesia
+
+Karena kebanyakan _ebook_ ane dari penerbit luar negeri dan berbahasa Inggris, maka ane sangat butuh kamus (_dictionary_) untuk menjelaskan kata - kata tertentu yang ane tidak paham. Oleh karena itu ane perlu memasang kamus bahasa Inggris ke Bahasa Indonesia.
+
+Ternyata tidak mudah menemukan kamus bahasa Inggris ke bahasa Indonesia, meski Ko Reader memberikan daftar kamus yang bisa diunduh namun pengalaman ane kamus - kamus itu kurang sesuai. Sehingga ane perlu mencari kamus lain. Untungnya Ko Reader mendukung banyak format terutama dari format [Stardict](https://en.wikipedia.org/wiki/StarDict) seperti `*.idx, *.ifo or *.ifo.gz, *.dict or *.dict.dz.`.
+
+Setelah mencari - cari, akhirnya ane menemukan kamus bahasa Inggris ke bahasa Indonesia di [Freedict](https://freedict.org/downloads/). Ane pilih Bahasa Indonesia dan kemudian _download_ English to Indonesian versi 2024.10.10 (_latest_)[^2]. Ekstrak kamus tersebut dan pindahkan ke folder `koreader/data/dict` di perangkat Kindle. Untuk memastikan kamus sudah terpasang, buka Ko Reader dan tap pada ikon kaca pembesar kemudian ke Settings ↣ Dictionary settings ↣ Manage directories. Di sini akan muncul daftar kamus yang sudah terpasang.
+
+![Kindle dengan kamus bahasa Indonesia](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1537_3n2bVhpeN.jpeg?updatedAt=1751456181114)
+
+Namun, kamus bahasa Inggris ke bahasa Indonesia ini tidak lengkap sehingga banyak kata yang tidak tersedia. Oleh karena itu ane juga memasang kamus bahasa Inggris (dari GNU Collaborative International) yang lebih lengkap. Supaya kamus bahasa Inggris ke bahasa Indonesia menjadi pilihan utama maka ane perlu atur di Manage directories.
+
+Pilihan lain saat kamus - kamus itu mentok, bisa pakai pencarian di Wikipedia, tapi tentu saja ini butuh akses internet. Pastikan _jailbreak_ Winterbreak telah selesai sempurna sebelum mengaktifkan akses internet.
+
 [^1]: Saat proses _jailbreak_ memang butuh kesabaran karena banyak proses yang harus diselesaikan, termasuk colok lepas dan _reboot_ pada perangkat, tapi secara umum prosesnya sangat mudah.
+[^2]: Ada beberapa pilihan perangkat, ane pilih _Stardict for Common Devices_ karena ane pakai Ko Reader di Kindle.
