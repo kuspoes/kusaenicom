@@ -441,6 +441,7 @@ p.sidenote {
 .kait p {
   margin-bottom: 0;
   font-size: 85%;
+  width: auto;
 }
 
 .backtop p {
@@ -490,6 +491,7 @@ nav.toc ol li {
 
 nav.toc ol li ul li {
   font-weight: 300;
+  list-style-type: circle;
 }
 
 sup {
