@@ -12,7 +12,7 @@ templateEngine: vto, md
 og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
 comment: true
 comments:
-  src: https://sepoi.deno.dev/gts/1JJWZ7Z6H6QT74E4DA36VXHP8
+  src: https://sepoi.deno.dev/@poes/statuses/1JJWZ7Z6H6QT74E4DA36VXHP8
   real: https://sok.egois.org/@poes/statuses/01JJWZ7Z6H6QT74E4DA36VXHP8
 ---
 
