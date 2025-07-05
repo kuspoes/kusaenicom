@@ -8,7 +8,7 @@ tags:
 kategori: jurnal
 code: false
 favorit: false
-comment: false
+comment: true
 keywords: jailbreak,e-reader, kindle, winterbreak
 templateEngine: md
 comments:
