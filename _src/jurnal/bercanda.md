@@ -12,8 +12,8 @@ comment: true
 keywords: kusaeni, kehidupan, qurban, Allah, Bercanda, sedekah, sodaqoh, bakso, bihun
 templateEngine: md
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01JZFVFKQ8QFFBV05C76N5ZVNK
-  real: https://sok.egois.org/@poes/statuses/01JZFVFKQ8QFFBV05C76N5ZVNK
+  src: https://sepoi.deno.dev/@poes/statuses/01JZFVN7JNADD736BN12PMSR60
+  real: https://sok.egois.org/@poes/statuses/01JZFVN7JNADD736BN12PMSR60
 ---
 
 
