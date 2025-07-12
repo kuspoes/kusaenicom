@@ -81,6 +81,24 @@ Ini adalah _review_ yan ane tulis di Google Map untuk Warung Kepala Manyung Mak 
 
 **Rating ane: 4,5/5**
 
+## Warung Kepala Manyung Bu Fat, Semarang
+![Warung Kepala Manyung Bu Fat](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/IMG_1068%202_x4pFAn_si.jpeg?updatedAt=1752317652271)
+
+Warung Bu Fat ini sering disebut dan di-_review_ di sosmed, membuat ane penasaran untuk mencoba. Setidaknya ada 2 kali ane sudah ke warung ini. Lokasinya mudah dicari dan setiap ke situ tidak pernah ramai sehingga ane nyaman makannya.
+
+Mungkin masakan kepala ikan manyung Bu Fat adalah kiblat bagi yang lain (yang sering bilang paling enak di Semarang), tapi 2 kali ane makan disini ane merasa sedikit kurang cocok mungkin karena kuahnya terlalu pedas atau memang karena tidak cocok dengan masakan Jawa Tengah. Apakah tidak enak? Masakannya enak kok dan ane masih bisa menikmatinya meski ada sesuatu yang menurut ane hilang tapi ane tak bisa ingat apa. Warung ini tidak hanya menyediakan masakan kepala manyung saja, namun juga menyediakan menu - menu lainnya yang ane tidak pernah coba.
+
+Dibandingkan dengan warung yang lain, harga di warung ini lebih mahal. Dengan menu seperti di foto, ane harus keluarkan uang sekitar 175 ribu rupiah (sudah termasuk pajak kalo tidak salah). Tapi memang sebanding dengan lokasi dan pelayanannya. Warungnya bersih dan pelayanan cepat.
+
+Mungkin lain kali ane perlu balik lagi untuk menemukan apa yang selama ini ane rasa hilang. Lol
+
+**Rating ane: 3,5/5**
+
+## Manyung di Tuban
+Ane pernah menuliskan tetang [pengalaman makan masakan kepala ikan manyung yang ada di kota Tuban](https://poes.bearblog.dev/kepala-ikan-manyung-di-tuban/) di blog yang lain.
+
+Rata - rata *rating*nya adalah 4/5.
+
 ## Catatan
 
 Masakan kepala manyung Bu Yah dan Mak Muah adalah 2 masakan yang saat ini berada di daftar paling atas ane, Bu Yah memiliki citarasa sambelnya yang nikmat sedangkan Mak Muah sukses dengan kuahnya yang kaya rasa.
