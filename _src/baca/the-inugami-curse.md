@@ -65,10 +65,11 @@ Kembali ke novel, bagaimana sang pelaku melakukan pembunuhan benar - benar _mind
 
 Meskipun tragedinya luar biasa, saya suka dengan sentuhan _happy ending_ yang ada di novel ini. Sebuah ciri khas dari Seishi, bahwa dibalik sebuah tragedi selalu ada sesuatu yang bisa disyukuri.
 
-Novel ini juga sudah diadaptasi menjadi film berjudul [The Inugami Family](https://www.imdb.com/title/tt0074691) yang tayang pada 2006 silam. Saya sudah menonton film ini juga dan isinya tidak jauh berbeda dengan novelnya. Salah satu hal yang sangat jarang terjadi di masa kini.
+Novel ini juga sudah diadaptasi menjadi film berjudul [The Inugami Family](https://www.imdb.com/title/tt0074691) yang tayang pada 2006 silam. Bisa ditonton di [ok.ru - The Inugami Curses (Eng Sub)](https://ok.ru/video/3760349121051), saya sudah menonton[^2] film ini juga dan isinya tidak jauh berbeda dengan novelnya. Salah satu hal yang sangat jarang terjadi di masa kini.
 
 
 
 
 
 [^1]: Saya sudah membaca banyak novel dari Seishi, akan saya tulis reviewnya jika ada kesempatan.
+[^2]: Mungkin butuh VPN untuk membuka situs ini, tapi saya tidak butuh. Tergantung ISPnya.
