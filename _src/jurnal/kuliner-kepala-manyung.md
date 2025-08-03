@@ -30,9 +30,11 @@ Lokasinya di Manyar, ane tidak tahu detailnya tapi dari Terminal Bunder Gresik a
 
 Di warung ini ada banyak menu yang tersedia namun ane hanya tertarik pada masakan ikan kepala Manyung asap saja. Masakan ini disajikan dengan kuah kuning yang berminyak yang pekat dengan taburan daun bawang yang banyak, kepala ikan Manyungnya cuku besar dan aroma _smoky_-nya sangat kuat tapi sayang kuahnya tidak terlalu pedas. Menurut penjual masakan ini disebut dengan _kotokan_.
 
-Saat pulang, _driver_ GoCar sempat membuat ane berpikir ulang karena menurut sang _driver_ ikan yang disajikan disitu bukan kepala Manyung melainkan kepala ikan Patin. Di lain kesempatan ane bisa datang lagi ke warung ini,
+Saat pulang, _driver_ GoCar sempat membuat ane berpikir ulang karena menurut sang _driver_ ikan yang disajikan disitu bukan kepala Manyung melainkan kepala ikan Patin. Di lain kesempatan ane datang lagi ke warung ini untuk membuktikan. Ane memesan menu yang sama yang tak lama kemudian sudah tersaji di atas meja.
 
-**Rating ane: 3,5/5**
+Kepala ikannya besar, dagingnya banyak dan lembut. Agak aneh karena biasanya daging Manyung sedikit alot dan berstektur. Setelah membalik dan mencoba makan bagain dalam kepala, alih - alih mendapatkan daging ikan yang ada malah insang ikan yang besar. Aneh juga insang sebesar ini untuk ikan laut. Ane semakin ragu dan setuju bahwa ikan yang disajikan bukan Manyung. Bisa saja Patin atau Sembilang.
+
+**Rating ane: 2/5**
 
 ## Warung Kepala Manyung Bu Yah 99, Gresik
 ![Warung Kepala Manyung Bu Yah 99](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/manyung_bu_yah_99_tXNIbElKf?updatedAt=1752316379972)
