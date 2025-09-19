@@ -208,7 +208,7 @@ nav.toc {
 table {
   border-collapse: collapse;
   width: 40rem;
-  font: 1.15em/1 var(--serif);
+  font: 1em/1 var(--serif);
   margin: 2em auto;
 }
 
@@ -504,6 +504,18 @@ sup {
 }
 
 .notes p {}
+
+p.ncaption {
+  font-family: Arial, sans-serif;
+  font-size: 85%;
+  color: #5c6b73;
+  margin-top: -0.8em;
+}
+
+p.ncaption::before {
+  margin-right: 10px;
+  content: "↑";
+}
 
 i,
 em {
