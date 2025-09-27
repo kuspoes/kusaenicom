@@ -754,7 +754,9 @@ img {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  border-radius: 1.07em;
 }
+
 
 .content-image:not([loading="lazy"]) {
   opacity: 1;
