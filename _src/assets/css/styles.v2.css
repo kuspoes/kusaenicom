@@ -30,7 +30,6 @@ body {
 }
 
 .page {
-  //width: 34em;
   margin: 4em auto;
 }
 
@@ -162,7 +161,6 @@ aside.footnotes {
 .index_h1 {
   width: 34em;
   margin: 0em auto;
-  //margin-bottom: 4em;
 }
 
 .index_h1 p {
@@ -503,7 +501,10 @@ sup {
   top: -0.6em;
 }
 
-.notes p {}
+.notes p {
+  display: none;
+
+}
 
 p.ncaption {
   font-family: Arial, sans-serif;

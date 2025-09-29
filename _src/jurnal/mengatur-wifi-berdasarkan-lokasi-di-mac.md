@@ -16,6 +16,10 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
 ---
 
+_Slides_ presentasi untuk artikel ini tersedia di bawah ini.
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a9de6f78b10a47f69971116b26f8c6aa" title="Mengatur Wifi berdasarkan lokasi atau SSID di MacOs" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
 Sebagai pengguna laptop saya sangat bergantung dengan Wi-fi untuk akses internet, entah sedang di tempat kerja maupun di rumah.
 
 Saat di tempat kerja, saya harus merubah IPv4 dari Automatis (DHCP) ke manual karena setiap pegawai mendapatkan jatah IPv4 sendiri - sendiri. Jika tidak diatur tetap akan dapat jatah IPv4 namun dengan _rules_ sangat terbatas. Sehingga mengatur secara manual adalah pilihan yang tidak bisa dihindari.
