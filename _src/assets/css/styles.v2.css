@@ -502,7 +502,7 @@ sup {
 }
 
 .notes p {
-  display: none;
+  display: block;
 
 }
 
