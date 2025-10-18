@@ -11,8 +11,8 @@ favorit: false
 comment: true
 keywords: flashdisk, matot, rusak, recovery, transcend, tutorial
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
-  real: https://sok.egois.org/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
+  src: https://sepoi.deno.dev/@poes/statuses/01K7TGQXZW49VWJWTM1QX48SDW
+  real: https://sok.egois.org/@poes/statuses/01K7TGQXZW49VWJWTM1QX48SDW
 ---
 
 Sudah lebih dari 8 tahun ane punya Flashdisk Transcend JetFlash 64GB, _flashdisk_ ini termasuk kuat dan handal karena ane pakai dengan cara bar - bar. Pernah ikut kecuci di mesin cuci dan pernah jatuh berkali - kali tapi _flashdisk_ ini bisa bertahan dan tetap bisa dipergunakan dengan baik. Namun baru saja ane mengalami hal yang sempat membuat ane harus ikhlas jika Flashdisk Transcend JetFlash harus rusak untuk selamanya.
