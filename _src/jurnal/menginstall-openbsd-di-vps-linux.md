@@ -88,7 +88,7 @@ $ doas vnconfig -u vnd0a
 Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_. Jangan lupa sebelum `dd`, [matikan dulu proteksi](/jurnal/menginstall-freebsd-di-vps-berbasis-linux/#postnotes-systemd) `systemd` kepada _disk_.
 
 <div class="postnotes">
-    <p>Saya sudah membuat image <code>miniroot76.img</code> yang sudah memakai serial console. Kamu bisa mengunduhnya <a href="https://egois.org/files/openBSD/">disini</a></p>
+    <p>Saya sudah membuat image <code>miniroot76.img</code> yang sudah memakai serial console. Kamu bisa mengunduhnya <a href="https://egois.org/files/openbsd/">disini</a></p>
     <p>Tapi ingat <i>do it at your own risk</i>. Selalu lakukan backup sebelum menginstall ini</p>
 </div>
 
@@ -121,7 +121,7 @@ tersebut ada 1 partisi dan 2 _slices_, yang pertama adalah `efi` (tidak perlu ut
 3. _Mount slice 4_ dan buat _file_ `boot.conf`
 
 ```shell-session
-$ doas mount /dev/md0s4
+$ doas mount /dev/md0s4 /mnt
 $ cd /mnt
 $ doas mkdir etc
 $ doas echo "set tty com0" > etc/boot.conf
@@ -130,8 +130,8 @@ $ doas echo "set tty com0" > etc/boot.conf
 4. _Umount_ `md0` dan selesai
 
 ```shell-session
-$ umount /dev/md0
-$ mdconfig -d -u md0
+$ doas umount /dev/md0s4
+$ doas mdconfig -d -u md0
 ```
 
 Sampai disini maka file `miniroot76.img` sudah bisa ditimpakan ke _disk_ dan di-_install_.
