@@ -1,13 +1,13 @@
 {
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.1/",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.0/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.12/jsx-runtime.ts",
     "prismjs": "npm:prismjs@^1.30.0"
   },
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run -P=lume lume/cli.ts"
+      "command": "deno run -P=lume --allow-import lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",
@@ -26,7 +26,7 @@
   },
   "unstable": ["temporal", "fmt-component"],
   "lint": {
-    "plugins": ["https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.1/lint.ts"],
+    "plugins": ["https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.0/lint.ts"],
     "rules": {
       "exclude": ["no-import-prefix"]
     }
