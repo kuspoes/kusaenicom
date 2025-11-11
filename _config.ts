@@ -18,6 +18,8 @@ import purgecss from "lume/plugins/purgecss.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 
+import googleFonts from "lume/plugins/google_fonts.ts";
+
 const markdown = {
   plugins: [footnotes],
   keepDefaultPlugins: true,
@@ -48,6 +50,11 @@ site
   .use(
     pagefind({
       ui: { showEmptyFilters: true },
+    }),
+  )
+  .use(
+    googleFonts({
+      fonts: "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap",
     }),
   )
   .use(purgecss())
@@ -177,10 +184,7 @@ site.helper(
 site.process([".html"], (pages) => {
   for (const page of pages) {
     for (const img of page.document!.querySelectorAll("div.content img")) {
-      if (
-        img.classList.contains("kus_avatar") ||
-        img.classList.contains("layang")
-      ) {
+      if (img.classList.contains("kus_avatar") || img.classList.contains("layang")) {
         continue;
       }
       if (!img.hasAttribute("loading")) {

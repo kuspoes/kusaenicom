@@ -1,10 +1,10 @@
 :root {
   --sans:
-    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
+    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
+    Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --serif: "charter", Georgia, Palatino Linotype, Times, serif;
   --salis: "charter", Georgia, Palatino, serif;
+  --dm: "DM Serif Display", serif;
   --col_body: #171717;
   /* #2a2s2e */
   --col_aside: #495057;
@@ -267,9 +267,7 @@ th {
   flex-direction: row;
   align-items: center;
   background: rgb(255, 255, 255);
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 1) 54%,
-      rgba(241, 250, 238, 1) 98%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(241, 250, 238, 1) 98%);
 }
 
 img.layang {
@@ -503,7 +501,6 @@ sup {
 
 .notes p {
   display: block;
-
 }
 
 p.ncaption {
@@ -536,7 +533,7 @@ strong {
 }
 
 .meta h1 {
-  font: bold 3em/1 var(--sans);
+  font: bold 3em/1 var(--dm);
   margin-bottom: 0.3em;
 }
 
@@ -545,7 +542,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--sans);
+  font-family: var(--dm);
   font-weight: bold;
   text-decoration: none;
   color: #000;
@@ -583,7 +580,7 @@ h4 {
   font-size: 1.1em;
   font-weight: 900;
   line-height: 1;
-  font-family: var(--sans);
+  font-family: var(--dm);
 }
 
 .postnotes h4 {
@@ -758,7 +755,6 @@ img {
   border-radius: 0.28em;
 }
 
-
 .content-image:not([loading="lazy"]) {
   opacity: 1;
 }
@@ -802,6 +798,8 @@ blockquote {
 
 blockquote p {
   margin-bottom: 0.4em;
+  font-family: Georgia, Palatino, serif;
+  font-style: italic;
 }
 
 blockquote span.tokoh {
@@ -992,7 +990,7 @@ hr::after {
   }
 
   #search input {
-    width: 95%
+    width: 95%;
   }
 
   .postlist,
@@ -1101,7 +1099,6 @@ hr::after {
 }
 
 @media only screen and (max-width: 900px) {
-
   #container,
   .nav {
     width: 100%;
@@ -1111,7 +1108,6 @@ hr::after {
   p {
     width: 100% !important;
   }
-
 
   .index_h1 {
     width: 100%;
