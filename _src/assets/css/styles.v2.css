@@ -56,7 +56,7 @@ body {
   background-color: #ffe5ec;
 }
 
-.posntitle {
+.postitle {
   width: 30em;
   margin-left: 1em;
 }
@@ -463,6 +463,7 @@ ol li {
 
 .content ul li {
   list-style-type: disc;
+  margin-bottom: 0.2em;
 }
 
 .space-y-3 {
