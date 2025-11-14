@@ -4,7 +4,7 @@
     Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --serif: "charter", Georgia, Palatino Linotype, Times, serif;
   --salis: "charter", Georgia, Palatino, serif;
-  --dm: "DM Serif Display", serif;
+  --dm: "DMSerif", Georgia, serif;
   --col_body: #171717;
   /* #2a2s2e */
   --col_aside: #495057;
@@ -56,7 +56,7 @@ body {
   background-color: #ffe5ec;
 }
 
-.postitle {
+.posntitle {
   width: 30em;
   margin-left: 1em;
 }
@@ -461,7 +461,7 @@ ol li {
   list-style-type: decimal;
 }
 
-ul li {
+.content ul li {
   list-style-type: disc;
 }
 
@@ -561,6 +561,7 @@ h1.s {
 h2 {
   font-size: 1.3em;
   margin: 1.5em 0 0.5em 0;
+  font-family: var(--dm);
 }
 
 h3 {
