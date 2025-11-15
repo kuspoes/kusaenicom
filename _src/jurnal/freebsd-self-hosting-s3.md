@@ -280,6 +280,18 @@ periksa apakah sudah berjalan baik di alamat URL `http://127.0.0.1:3909`, jika s
 ![garage webui cluster](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-fpah_pVgcRgthP.png?updatedAt=1763073671406)
 ![garage webui bucket list](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-fpeb_tOonJsPhz.png?updatedAt=1763073671393)
 
+## Penutup
+
+Ane cukup puas dengan performa GreenCloudVPS dan Garage sebagai peladen S3, yang paling seru adalah proses `build` di FreeBSD yang menurut ane bisa menambah pengalaman dan ilmu karena rata - rata aplikasi _self host_ lebih memilih untuk menyediakan `dockerfile` untuk mempermudah pemasangan dengan Docker.
+
+Namun kalo tidak ingin bersusah payah, kalian bisa pakai Docker atau jika pakai FreeBSD bisa menyalin hasil `build` yang sudah ane buat (khusus untuk Garage WebUI) [disini](https://egois.org/files/freebsd/garage).
+
+```shell-session
+ $ curl -o garage-webui https://egois.org/files/freebsd/garage-webui
+ $ chmod +x garage-webui
+ $ ./garage-webui
+```
+
 ---
 
 [^1]: Sangat disarankan untuk memakai partisi terpisah dari Jail, karena _storage jail_ akan berkurang dengan berjalannya waktu karena terisi _files packages, log_, maupun _cache_. Tapi untuk contoh di atas ane asumsikan _cluster_ berada di dalam _jail_.
