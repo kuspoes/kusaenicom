@@ -706,6 +706,10 @@ nav.toc a:hover {
   margin: 5em auto;
 }
 
+.comments-section ul li {
+  list-style-type: none;
+}
+
 .comments-section a:hover,
 .comments a:hover,
 .comment a:hover {

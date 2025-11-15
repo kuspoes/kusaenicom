@@ -195,7 +195,7 @@ Perintah yang lain bisa dibaca di [dokumentasi resmi](https://awscli.amazonaws.c
 
 ### Garage WebUI
 
-Garage WebUI adalah sebuah aplikasi web <abbr title="Single Page Application">SPA</abbr> yang dibuat untuk menjadi _frontend_ dari Garage S3, dibangun dengan Go dan Vite (React). Sayangnya versi binari untuk FreeBSD tidak tersedia sehingga perlu melakukan `build` sendiri. _Lets go!_
+[Garage WebUI](https://github.com/khairul169/garage-webui) adalah sebuah aplikasi web <abbr title="Single Page Application">SPA</abbr> yang dibuat untuk menjadi _frontend_ dari Garage S3, dibangun dengan Go dan Vite (React). Sayangnya versi binari untuk FreeBSD tidak tersedia sehingga perlu melakukan `build` sendiri. _Lets go!_
 
 Langkah pertama adalah melakukan `clone` dari repositori Garage WebUI dari Github ke lokal dan kemudian melakukan `build`. Urutan `build`nya adalah:
 
