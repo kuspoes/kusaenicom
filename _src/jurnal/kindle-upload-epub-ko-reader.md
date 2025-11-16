@@ -12,11 +12,11 @@ favorit: false
 comment: true
 keywords: ko reader, ssh, kindle, jailbreak
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
-  real: https://sok.egois.org/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
+  src: https://sepoi.deno.dev/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
+  real: https://sok.egois.org/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
 ---
 
-Memakai kindle yg sudah di*jailbreak* dan install Ko Reader, salah satu halangan yang ane rasakan adalah saat mengunggah file ebook. Normalnya ane pakai kabel data untuk transfer file namun untuk bisa melakukan ini harus mematikan Ko Reader dan balik ke OS Kindle.
+Memakai kindle yg sudah di[jailbreak](https://kusaeni.com/jurnal/jailbreak-kindle/) dan install Ko Reader, salah satu halangan yang ane rasakan adalah saat mengunggah file ebook. Normalnya ane pakai kabel data untuk transfer file namun untuk bisa melakukan ini harus mematikan Ko Reader dan balik ke OS Kindle.
 
 Sebenarnya Ko Reader sudah menyediakan fitur untuk kirim file tanpa harus kembali ke Kindle OS. Cara yang paling mudah bagi ane saat ini adalah dengan fungsi SSH. Berikut cara ane untuk terkoneksi antara komputer (Mac) dan Ko Reader (Kindle) dengan akses SSH alias _Secure Shell_.
 
