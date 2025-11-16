@@ -1,18 +1,19 @@
 ---
 title: Kena tipu
-ringkasan: "Tertipu saat beli barang di facebook marketplace, malah kena tipu. Jangan pernah mau beli barang dengan rekber KiriminAja!"
+ringkasan: "Beli barang di facebook marketplace, malah kena tipu. Jangan pernah mau beli barang dengan rekber KiriminAja!"
 date: 2025-06-15
 tags:
   - kusaeni
   - kehidupan
+  - Kindle
 kategori: jurnal
 code: false
 favorit: false
 comment: false
 keywords: penipu, tipu, facebook, marketplace, kiriminaja, bri, virtual account, e-reader, kindle
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01JXRW9XRZKQ1C4F8QSZJ4DWRY
-  real: https://sok.egois.org/@poes/statuses/01JXRW9XRZKQ1C4F8QSZJ4DWRY
+  src: https://sepoi.deno.dev/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
+  real: https://sok.egois.org/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
 ---
 
 Semua orang tahu kalo ane suka baca buku, selama ini ane baca buku di aplikasi Books di iPhone. Menyenangkan tapi sayangnya kalo membaca terlampau lama membuat mata cepat lelah yang paling buruk daya tahan baterai jadi berkurang, ini akan menjadi masalah saat di perjalanan. Pakai tablet menjadi solusi awal namun menjadi tidak pas karena berat tablet rata - rata di atas 200 gram dan tentu saja masih tidak menyelesaikan masalah kelelahan di mata akibat pancaran sinar dari layar.

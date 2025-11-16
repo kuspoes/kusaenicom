@@ -5,6 +5,7 @@ date: 2025-06-26
 tags:
   - kusaeni
   - kehidupan
+  - Kindle
 kategori: jurnal
 code: false
 favorit: false
@@ -53,4 +54,5 @@ Namun, kamus bahasa Inggris ke bahasa Indonesia ini tidak lengkap sehingga banya
 Pilihan lain saat kamus - kamus itu mentok, bisa pakai pencarian di Wikipedia, tapi tentu saja ini butuh akses internet. Pastikan _jailbreak_ Winterbreak telah selesai sempurna sebelum mengaktifkan akses internet.
 
 [^1]: Saat proses _jailbreak_ memang butuh kesabaran karena banyak proses yang harus diselesaikan, termasuk colok lepas dan _reboot_ pada perangkat, tapi secara umum prosesnya sangat mudah.
+
 [^2]: Ada beberapa pilihan perangkat, ane pilih _Stardict for Common Devices_ karena ane pakai Ko Reader di Kindle.
