@@ -77,6 +77,9 @@ site
       items: {
         title: "=title",
         description: "=excerpt",
+        published: "=date",
+        content: "$.content",
+        lang: "id",
       },
     }),
   )

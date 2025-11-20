@@ -19,7 +19,9 @@ html {
 }
 
 body {
-  font: normal 1.2em/1.6 var(--serif);
+  /*font: normal 1.1em/1.65 var(--serif);*/
+  font-family: var(--serif);
+  font-size: clamp(16px, 2.5vw + 0.5rem, 19px);
   color: var(--col_body);
 }
 
@@ -31,6 +33,7 @@ body {
 
 .page {
   margin: 4em auto;
+  line-height: clamp(26px, 1.6rem + 0.3vw, 29px);
 }
 
 .page p,
