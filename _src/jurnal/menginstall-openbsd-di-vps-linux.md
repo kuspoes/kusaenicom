@@ -7,6 +7,7 @@ tags:
   - bsd
   - tutorial
   - fave
+  - openbsd
 keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xtermjs"
 kategori: jurnal
 code: true

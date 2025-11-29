@@ -5,18 +5,19 @@ date: 2025-11-29
 tags:
   - kusaeni
   - tutorial
-  - OpenBSD
+  - openbsd
+  - bsd
 kategori: jurnal
 code: true
 favorit: false
 comment: true
 keywords: bsd, openbsd, wireguard, self host, vpn
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KB7777ZSDYS1JP2H8FK3KMRZ
-  real: https://sok.egois.org/@poes/statuses/01KB7777ZSDYS1JP2H8FK3KMRZ
+  src: https://sepoi.deno.dev/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
+  real: https://sok.egois.org/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
 ---
 
-Kata orang - orang kalo pakai BSD paling gampang di #OpenBSD karena Wireguard sudah ada di dalam base, oke karena memang sudah diinstall OpenBSD bisa langsung lanjut. Akan tetapi, ternyata itu bohong. Semua sama saja, harus mulai dari nol (kayak di BSD lainnya). Mau gimana lagi nasi sudah jadi krupuk maka mau ga mau lanjut.
+Kata orang - orang kalo pakai BSD paling gampang di OpenBSD karena Wireguard sudah ada di dalam base, oke karena memang sudah diinstall OpenBSD bisa langsung lanjut. Akan tetapi, ternyata itu bohong. Semua sama saja, harus mulai dari nol (kayak di BSD lainnya). Mau gimana lagi nasi sudah jadi krupuk maka mau ga mau lanjut.
 
 Catatan ini akan dibagi menjadi 2 bagian yaitu memasang Wireguard di sisi server (VPS) dan sisi client (macos).
 
