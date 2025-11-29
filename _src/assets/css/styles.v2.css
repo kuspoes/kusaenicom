@@ -33,7 +33,7 @@ body {
 
 .page {
   margin: 4em auto;
-  line-height: clamp(26px, 1.6rem + 0.3vw, 29px);
+  line-height: clamp(26px, 1.6rem + 0.3vw, 30px);
 }
 
 .page p,
