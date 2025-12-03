@@ -55,7 +55,7 @@ Catat hasil dari `private.key` dan `public.key` karena ini nanti penting untuk k
 
 <div class="postnotes kuning-gading">
 <p>Di OpenBSD ada 2 cara untuk mengatur interface <code>wg0</code> yang pertama adalah mempergunakan konfigurasi resmi dari Wireguard dan yang kedua mempergunakan metode asli khas OpenBSD.</p>
-<p>Kelebihan dari metode pertama adalah konfigurasi standar dari OpenBSD sehingga bagi yang sudah terbiasa akan menjadi mudah dan familiar, sedangkan yang kedua karena standar Wireguard bisa langsung diaplikasikan kalo migrasi ke OS yang lain</p>
+<p>Kelebihan dari metode pertama adalah standar Wireguard bisa langsung diaplikasikan kalo migrasi ke OS yang lain, sedangkan yang kedua karena konfigurasi standar dari OpenBSD sehingga bagi yang sudah terbiasa akan menjadi mudah dan familiar</p>
 </div>
 
 #### Cara pertama
