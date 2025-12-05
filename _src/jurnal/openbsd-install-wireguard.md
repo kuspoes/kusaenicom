@@ -184,7 +184,7 @@ $ doas pfctl -nf /etc/pf.conf
 $ doas pfctl -f /etc/pf.conf
 ```
 
-ktifkan wireguard network interface dan cek statusnya.
+Aktifkan wireguard network interface dan cek statusnya.
 
 ```shell-session
 $ doas sh /etc/netstart wg0

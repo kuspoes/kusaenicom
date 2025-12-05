@@ -6,9 +6,9 @@ import { id } from "npm:date-fns/locale/id";
 import feed from "lume/plugins/feed.ts";
 import prism from "lume/plugins/prism.ts";
 import readInfo from "lume/plugins/reading_info.ts";
-import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
-import title from "https://deno.land/x/lume_markdown_plugins@v0.7.0/title.ts";
+//import title from "https://deno.land/x/lume_markdown_plugins/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
@@ -93,7 +93,7 @@ site
   )
   .use(toc())
   .use(readInfo())
-  .use(title())
+  //.use(title())
   .use(
     sitemap({
       sort: "date=desc",
