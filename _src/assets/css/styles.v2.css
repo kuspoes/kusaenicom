@@ -745,6 +745,10 @@ nav.toc a:hover {
   border: none;
 }
 
+#chirpy-comment {
+  margin-top: -3em;
+}
+
 /* code */
 code {
   font:
