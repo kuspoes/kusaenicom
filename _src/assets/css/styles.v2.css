@@ -413,6 +413,10 @@ span.ter {
   font-size: 90%;
 }
 
+.postnotes pre code {
+  line-height: 1;
+}
+
 .notif {
   padding: 0.4em 0.5em;
   border: 1px dotted #ff8fab;
@@ -427,6 +431,10 @@ span.ter {
 /* Colours */
 .kuning-gading {
   background-color: rgba(253, 240, 213, 0.3);
+}
+
+.pink {
+  background-color: rgba(242, 106, 141, 0.2);
 }
 
 .hijau {

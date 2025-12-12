@@ -80,6 +80,14 @@ secepatnya setelah perintah ini, beri status _imuttable_ ke file ini agar `dhcli
 $ doas chflags schg /etc/resolv.conf
 ```
 
+<div class="postnotes pink">
+  <p>Jika cara di atas tidak berhasil dan atau karena pakai VPS yang mau tak mau harus pakai <code>dhcp</code> untuk mendapatkan IP, maka gunakan file <code>/etc/dhclient.conf</code> untuk menambahkan <i>entry</i> nameserver</p>
+  <pre>   <code>
+      $ doas vim /etc/dhclient.conf
+      prepend domain-name-servers 127.0.0.1;
+    </code>  </pre>
+</div>
+
 ### Konfigurasi Unbound
 
 _Default_-nya konfigurasi Unbound terletak di `/var/unbound/etc/unbound.conf`, konfigurasi minimalis yang bisa dipakai untuk mengawali adalah sebagai berikut
