@@ -16,10 +16,6 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
 ---
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/garage-s3_VFc-JOmAa.jpg" alt="garage s3">
-
-<p class="ncaption"><i>gambar dibuat dengan Grok</i></p>
-
 Bulan Oktober kemarin ane akhirnya migrasi dari Racknerd ke GreenCloudVPS dengan menyewa VPS Storage Plan seharga USD 25 per tahun dengan spesifikasi
 
 - 1 vCPU AMD EPYC Rome,
