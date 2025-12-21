@@ -1,0 +1,35 @@
+---
+title: kusaeni
+layout: layout/content.vto
+---
+
+<div class="index_h1">
+<h1>Jurnal</h1>
+<p>Berlangganan lewat <a href="/subs">email</a> atau <a href="/feed.xml">RSS</a></p>
+<div id="search"></div>
+</div>
+		{{ for post of search.pages("type=post", "date=desc") }}
+		<div class="postlist {{ if post.favorit }} fave {{ /if }}">
+			<div class="postmeta">
+				<time datetime="{{ post.date |> date('DATETIME') }}">
+					<div class="tgl">
+    			  		{{ post.date |> date('id_tgl') }}
+					</div>
+					<div class="bln">
+						{{ post.date |> date('id_bln') }}
+					</div>
+					<div class="thn">
+						{{ post.date |> date('id_thn') }}
+					</div>
+  				</time>
+			</div>
+			<div class="postitle">
+				<h2>
+					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
+          				{{ post.title || post.url }}
+        			</a>
+				</h2>
+				{{ post.ringkasan |> md }}
+			</div>
+		</div>
+		{{ /for }}

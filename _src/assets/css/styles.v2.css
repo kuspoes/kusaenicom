@@ -216,6 +216,10 @@ table {
   margin: 2em auto;
 }
 
+thead {
+  background-color: #ded9e2;
+}
+
 td,
 th {
   border: 1px solid #dddddd;
@@ -406,7 +410,6 @@ span.ter {
   margin: 0.8em 0.3em;
   width: 100%;
   line-height: 1.4;
-  color: #22223b;
 }
 
 .postnotes code {
@@ -439,6 +442,11 @@ span.ter {
 
 .hijau {
   background-color: rgba(167, 201, 87, 0.3);
+}
+
+.merah {
+  background-color: rgba(120, 0, 0, 0.8);
+  color: #fdf0d5;
 }
 
 /* tipo */
@@ -620,7 +628,7 @@ h4 {
   font-family: var(--dm);
 }
 
-.postnotes h4 {
+. postnotes h4 {
   font: 600 0.9em/1.2 var(--sans);
   margin: 0.4em 0;
 }
@@ -775,6 +783,12 @@ img,
   border-top-left-radius: 0.275em;
   border-top-right-radius: 0.275em;
   margin-bottom: 1.5em;
+}
+
+pre.no-border {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 pre code {

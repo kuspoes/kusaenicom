@@ -5,6 +5,7 @@ tags:
   - tutorial
   - bsd
   - fave
+  - freebsd
 date: 2024-05-18
 code: true
 tocx: true

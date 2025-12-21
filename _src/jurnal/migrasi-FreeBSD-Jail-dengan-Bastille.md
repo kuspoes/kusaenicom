@@ -7,6 +7,7 @@ tags:
   - bsd
   - tutorial
   - fave
+  - freebsd
 keywords: "freebsd, jail, vps, tutorial, vultr, bsd"
 kategori: jurnal
 code: true

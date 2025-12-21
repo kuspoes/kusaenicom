@@ -5,7 +5,7 @@ date: 2025-11-14
 tags:
   - kusaeni
   - tutorial
-  - freeBSD
+  - freebsd
 kategori: jurnal
 code: true
 favorit: false

@@ -5,6 +5,7 @@ date: 2024-12-04
 tags:
   - jurnal
   - bsd
+  - freebsd
   - tutorial
   - fave
 keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xtermjs"

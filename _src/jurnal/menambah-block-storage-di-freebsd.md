@@ -5,6 +5,7 @@ date: 2024-06-25
 tags:
   - tutorial
   - bsd
+  - freebsd
 kategori: jurnal
 code: true
 favorit: false
