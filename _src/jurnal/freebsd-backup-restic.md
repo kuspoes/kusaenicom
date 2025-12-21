@@ -103,6 +103,8 @@ Pada dasarnya cara backup ke Koofr sama saja dengan Borgbase namun Koofr tidak b
 
 namun agar bisa diakses dengan rclone, Koofr perlu membuat semacam password khusus. Caranya adalah login ke dalam Koofr kemudian masuk ke **Preferences** dan buka halaman **Password**. Gulir ke bawah dan temukan **App Passwords**, bikin nama app dan kemudian klik tombol **Generate**. Catat password acak yang dibuat oleh Koofr karena akan dipakai untuk akses rclone.
 
+![Koofr setup app password](https://ik.imagekit.io/hjse9uhdjqd/jurnal/restic/SCR-20251221-msdr_BW6Y0vqdH.png)
+
 Di local atau VPS, setup rclone dengan perintah `rclone config` dan isian seperti berikut:
 | Uraian | Value | Keterangan |
 |----------|:-------------:|:------------|
