@@ -16,8 +16,8 @@ comment: true
 keywords: restic, rclone, backup, selfhost, koofr, cloud storage
 draft: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
+  real: https://sok.egois.org/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
 ---
 
 Kelemahan self host aplikasi adalah repot dalam pemeliharaan sistem dan ini ane rasakan ketika Ente Photos bermasalah di database-nya. Entah karena upgrade NextJS atau karena hal lainnya. Masalah semakin pelik ketika entah bagaimana postgresql menghapus semua entry database media milik Ente, bisa jadi karena ane salah memasukkan perintah SQL. Untungnya ane sempat membuat backup beberapa minggu sebelumnya, sehingga bisa meng*restore* database kembali.
