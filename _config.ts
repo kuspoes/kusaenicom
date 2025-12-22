@@ -17,6 +17,7 @@ import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
+import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
 
 const markdown = {
   plugins: [footnotes],

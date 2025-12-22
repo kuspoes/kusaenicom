@@ -101,7 +101,7 @@ Pada dasarnya cara backup ke Koofr sama saja dengan Borgbase namun Koofr tidak b
 </code>
 </pre>
 
-namun agar bisa diakses dengan rclone, Koofr perlu membuat semacam password khusus. Caranya adalah login ke dalam Koofr kemudian masuk ke **Preferences** dan buka halaman **Password**. Gulir ke bawah dan temukan **App Passwords**, bikin nama app dan kemudian klik tombol **Generate**. Catat password acak yang dibuat oleh Koofr karena akan dipakai untuk akses rclone.
+Namun agar bisa diakses dengan rclone, Koofr perlu membuat semacam password khusus. Caranya adalah login ke dalam Koofr kemudian masuk ke **Preferences** dan buka halaman **Password**. Gulir ke bawah dan temukan **App Passwords**, bikin nama app dan kemudian klik tombol **Generate**. Catat password acak yang dibuat oleh Koofr karena akan dipakai untuk akses rclone.
 
 ![Koofr setup app password](https://ik.imagekit.io/hjse9uhdjqd/jurnal/restic/SCR-20251221-msdr_BW6Y0vqdH.png)
 
@@ -134,6 +134,76 @@ export RESTIC_REPOSITORY=rclone:koofr:Vaultwarden
 </div>
 
 Selesai, kemudian tinggal melakukan backup dengan perintah seperti sebelumnya di Borgbase. Keren!. Level selanjutnya adalah automatisasi dengan shell script dan cronjob, tapi ane ga akan bahas disini karena itu hanyalah rangkuman command di atas.
+
+#### Update
+
+Oke - oke berikut contoh shell script sederhana untuk backup data ke Koofr dan Borg.
+
+```bash
+#!/bin/sh
+
+SERVICE=vaultwarden
+DATA=/usr/local/www/vaultwarden/data
+
+# Restic config
+export RESTIC_PASSWORD='passwordku-yang-sangat-panjang'
+export RESTIC_BORG='rest:https://um7lty27:bo1oY8i83GV2pgKG@um7lty27.repo.borgbase.com'
+export RESTIC_KOOFR='rclone:koofr:Vaultwarden'
+
+# Masih running?
+if pgrep -f $SERVICE >/dev/null; then
+        echo "$SERVICE: masih berjalan"
+        echo "Mematikan $SERVICE"
+        service $SERVICE stop
+        echo "Service $SERVICE sudah berhenti."
+else
+        echo "$SERVICE: sudah berhenti"
+fi
+
+
+sleep 5
+echo "Restic: memulai backup data..."
+echo "Restic: backup data ke Koofr"
+restic backup $DATA -r $RESTIC_KOOFR
+sleep 3
+echo "Restic: backup data ke Borg"
+restic backup $DATA -r $RESTIC_BORG
+sleep 3
+echo "Restic: backup data selesai."
+sleep 5
+
+# Prune : hapus snapshot lama biar storage ga penuh
+echo "Restic: cleaning snapshot lama"
+restic forget --keep-last 7 --prune -r $RESTIC_KOOFR
+sleep 3
+restic forget --keep-last 7 --prune -r $RESTIC_BORG
+echo "Restic: cleaning snapshot lama selesai."
+sleep 5
+
+#start service
+echo "$SERVICE: memulai service..."
+service $SERVICE start
+echo "$SERVICE: service sudah berjalan."
+```
+
+Simpan sebagai misalnya `restic_warden.sh` di `/usr/local/bin/restic_warden.sh` dan kemudian beri atribut agar bisa dijalankan dengan
+
+```shell-session
+$ doas chmod +x /usr/local/bin/restic_warden.sh
+```
+
+Untuk automatisasi bisa memanfaatkan cronjob, rencananya ane akan backup setiap hari pada pukul 02.00 WIB dan setiap kegiatan akan di-log di `/var/log/restic_warden.log`.
+
+```shell-session
+$ doas crontab -e
+0 2 * * * /usr/local/bin/restic_warden.sh > /var/log/restic_warden.log 2>&1
+```
+
+---
+
+Demikian cara untuk melakukan backup data dengan mempergunakan tools restic dan rclone di FreeBSD, caranya mudah dan efektif. Restic sudah memiliki fitur untuk melakukan enkripsi data sehingga terjamin keamanannya dan tidak perlu memakai aplikasi pihak ketiga seperti [age](https://github.com/FiloSottile/age).
+
+Meski akan sangat kuat jika disandingkan dengan age, namun hal ini akan menghilangkan kemampuan restic untuk deduplikasi data. Sedangkan rclone ini adalah tool yang sangat powerfull untuk akses data dan bahkan bisa menjadi server webdav sendiri secara built-in. Dia semacam swiss army knife untuk akses data kemana saja. Menggabungkan restic dan rclone menjadi salah satu solusi prima untuk operasi backup data di FreeBSD.
 
 ---
 
