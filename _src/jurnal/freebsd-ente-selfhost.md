@@ -19,13 +19,13 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
 ---
 
+![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png)
+
 Artikel ini berisi catataan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
 
 Ente adalah aplikasi backup foto seperti Google Photos atau iCloud Photos, dia punya banyak fitur keren (dan _overkill_ untuk ukuran aplikasi Photos) seperti _end to end encryption, open source, cross platform, face recognition, zero knowledge AI_, tanpa iklan, tanpa AI, tanpa _tracking_, dan bahkan 2FA _Authenticator_ di dalamnya.
 
 Ane akan fokus pada fungsi Ente untuk penyimpanan Photos, jadi berikut catatan yang sudah ane kumpulkan dari pengalaman memasang Ente (yang menjengkelkan itu). Ente sudah memberikan dokumentasi untuk _self host_ tanpa Docker, per hari ini sudah banyak perbaikan atas dokumentasi ini namun 3 bulan yang lalu kacau isinya.
-
-![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png)
 
 ### Persiapan
 
@@ -92,7 +92,7 @@ Ente sudah menyediakan _binary_ yang bisa langsung dipasang, sayangnya tidak unt
    $ doas service postgresql restart
    ```
 
-   Asumsi postgresql dan Ente akan berjalan di localhost, maka ane tidak perlu mengubah pengaturan untuk akses jaringan di `postgresql.conf` dan `pg_hba.conf`. Namun jika postgresql jalan di jaringan atau jail yang lain, maka perlu merubah pengaturan.
+   Asumsi postgresql dan Ente akan berjalan di `localhost`, maka ane tidak perlu mengubah pengaturan untuk akses jaringan di `postgresql.conf` dan `pg_hba.conf`. Namun jika postgresql jalan di jaringan atau jail yang lain, maka perlu merubah pengaturan.
 
    ```shell-session
    # vim /data/db/postgres/data18/postgresql.conf
@@ -164,7 +164,7 @@ s3:
 
 khusus untuk s3, karena ane pakai local atau _selfhost_ maka nilai `are_local_buckets: false` karena ane pakai endpoint url. Ane sudah coba kasih `true` tapi tak pernah bisa tersambung dengan baik. `b2-eu-cen` adalah `key` yang harus dipakai jika pakai s3 _selfhost_ atau AWS Compatible s3.
 
-Kemudian jalankan `./main` secara `default`nya akan mencari _file_ `museum.yaml` sebagai konfigurasi utama atau kasih _flags_ `--config path` jika memakai nama yang lain. Ente akan berjalan di https://localhost:8080.
+Kemudian jalankan `./main` secara `default`nya akan mencari _file_ `museum.yaml` sebagai konfigurasi utama atau kasih _flags_ `--config path` jika memakai nama yang lain. Ente akan berjalan di `http://localhost:8080`.
 
 Jika ada rencana untuk memakai email sebagai alat komunikasi dan verifikasi, ada baiknya untuk mengatur JWT (JSON Web Token) yang bisa dibuat dengan perintah
 
@@ -286,7 +286,7 @@ internal:
 ```
 
 3. **Upgrade storage**
-   Meski _selfhost_, *default*nya Ente akan memberikan _storage_ maksimal 10GB pada setiap user, agar bisa memaksimalkan _storage_ ada 2 cara yaitu _edit_ database atau pakai `ente-cli`.x
+   Meski _selfhost_, *default*nya Ente akan memberikan _storage_ maksimal 10GB pada setiap user, agar bisa memaksimalkan _storage_ ada 2 cara yaitu _edit_ database atau pakai `ente-cli`.
 
 Agar bisa mempergunakan `ente-cli` maka akun ane harus sudah menjadi admin. Kemudian jalankan `ente-cli`.
 
@@ -312,7 +312,7 @@ Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai 
 </div>
 
 4. **Update CORS**
-   Ane pakai Garage S3 (AWS Compatible), entah mengapa selalu gagal saat upload media melalui Ente. Dari web console errornya adalah masalah CORS Origin. Jadi ane perlu benerin bucket dengan mengupdate Cors. Buat file dengan nama misalnya `cors.json`
+   Ane pakai Garage S3 (AWS Compatible), entah mengapa selalu gagal saat upload media melalui Ente. Dari web console errornya adalah masalah CORS Origin. Jadi ane perlu benerin bucket dengan mengupdate CORS. Buat file dengan nama misalnya `cors.json`
 
    ```json
    {
@@ -328,11 +328,32 @@ Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai 
    }
    ```
 
-Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) (perlu dikonfigurasi dulu) _update bucket policy_.
+Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) _update bucket policy_.
+
+<div class="postnotes">
+<h4>Update</h4>
+<p>Oke begini cara pakai <code>aws-cli</code>. Paket ini bisa di<i>install</i> dan dikonfigurasi dengan perintah</p>
+
+<pre class="language-shell-session"><code class="language-shell-session">
+ $ doas pkg install -y py-awscli
+ $ aws configure
+ AWS Access Key ID [None]: W3wNV6XRh1YJ8arQKBoongNqGhQ
+ AWS Secret access key [None]: FakeLIpA3l0VjttIiHaZgdMXF4ujQOYTyBtztpSy7w0yD2qzphOQwRtvj
+ Default Region name [None]: us-east-1
+ Default output format [None]: JSON
+</code></pre>
+</div>
+
+AWS Access Key ID dan Secret harus sama dengan yang dimasukkan di file `museum.yaml`. Setelah selesai dikonfigurasi, kemudian jalankan untuk meng*update bucket policy*.
 
 ```shell-session
-$ aws s3api put-bucket-cors --bucket ente-bucket --cors-configuration file://home/poes/cors.json
+$ aws s3api put-bucket-cors \
+--endpoint s3.taa.ee \
+--bucket ente-bucket \
+--cors-configuration file://home/poes/cors.json
 ```
+
+---
 
 #### Linux
 
