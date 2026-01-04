@@ -261,11 +261,26 @@ th {
   align-items: center;
 }
 
+.image-2column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-2column img {
+  width: 49%;
+  height: auto;
+}
+
 img.kus-svg {
   border: none !important;
   width: 20%;
   height: auto;
   opacity: 0.8;
+}
+
+img.no-border {
+  border: none !important;
 }
 
 .backtop {
