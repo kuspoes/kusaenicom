@@ -25,6 +25,8 @@ Ente adalah aplikasi backup foto seperti Google Photos atau iCloud Photos, dia p
 
 Ane akan fokus pada fungsi Ente untuk penyimpanan Photos, jadi berikut catatan yang sudah ane kumpulkan dari pengalaman memasang Ente (yang menjengkelkan itu). Ente sudah memberikan dokumentasi untuk _self host_ tanpa Docker, per hari ini sudah banyak perbaikan atas dokumentasi ini namun 3 bulan yang lalu kacau isinya.
 
+![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png)
+
 ### Persiapan
 
 Ente sudah menyediakan _binary_ yang bisa langsung dipasang, sayangnya tidak untuk FreeBSD. Oleh karena itu ane perlu mem-_build_ sendiri _binary_ tersebut. Untuk melakukan itu ada beberapa aplikasi dan pustaka yang perlu dipasang terlebih dahulu.
