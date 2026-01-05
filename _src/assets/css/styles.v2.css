@@ -265,9 +265,10 @@ th {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
 
-.image-2column img {
+.image-2column div {
   width: 49%;
   height: auto;
 }
@@ -562,7 +563,8 @@ sup {
   display: block;
 }
 
-p.ncaption {
+p.ncaption,
+span.ncaption {
   font-family: Arial, sans-serif;
   font-size: 85%;
   color: #5c6b73;

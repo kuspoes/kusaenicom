@@ -307,8 +307,14 @@ $ UPDATE subscriptions SET storage = 107374182400 WHERE user_id = 15805673523752
 Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai `ente-cli`.
 
 <div class="image-2column">
-<img class="no-border" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-limit_vVmbYvovP.png" alt="ente user limit storage">
-<img class="no-border" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-no-limit_301ZKOOdo.png" alt="ente user no limit storage">
+<div class="img1">
+<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-limit_vVmbYvovP.png" alt="ente user limit storage">
+<p class="ncaption">Sebelum</p>
+</div>
+<div class="img2">
+<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-no-limit_301ZKOOdo.png" alt="ente user no limit storage">
+<p class="ncaption">Sesudah</p>
+</div>
 </div>
 
 4. **Update CORS**
@@ -330,7 +336,7 @@ Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai 
 
 Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) _update bucket policy_.
 
-<div class="postnotes">
+<div class="postnotes kuning-gading">
 <h4>Update</h4>
 <p>Oke begini cara pakai <code>aws-cli</code>. Paket ini bisa di<i>install</i> dan dikonfigurasi dengan perintah</p>
 
@@ -342,9 +348,8 @@ Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) _update bucket policy_
  Default Region name [None]: us-east-1
  Default output format [None]: JSON
 </code></pre>
-</div>
 
-AWS Access Key ID dan Secret harus sama dengan yang dimasukkan di file `museum.yaml`. Setelah selesai dikonfigurasi, kemudian jalankan untuk meng*update bucket policy*.
+<p>AWS Access Key ID dan Secret harus sama dengan yang dimasukkan di file <code>museum.yaml</code>.</p></div>
 
 ```shell-session
 $ aws s3api put-bucket-cors \
