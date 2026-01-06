@@ -21,7 +21,7 @@ comments:
 
 ![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png)
 
-Artikel ini berisi catataan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
+Artikel ini berisi catatan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
 
 Ente adalah aplikasi backup foto seperti Google Photos atau iCloud Photos, dia punya banyak fitur keren (dan _overkill_ untuk ukuran aplikasi Photos) seperti _end to end encryption, open source, cross platform, face recognition, zero knowledge AI_, tanpa iklan, tanpa AI, tanpa _tracking_, dan bahkan 2FA _Authenticator_ di dalamnya.
 
@@ -132,7 +132,13 @@ $ go124 mod tidy
 $ go124 build cmd/museum/main.go
 ```
 
-Perintah `go mod tidy` digunakan untuk mengunduh semua _dependencies_ dan perintah `go build` untuk memulai melakukan _build_ dengan hasil file `main` yang sudah memiliki atribut _execute_.
+<aside>Di FreeBSD ada beberapa versi Go sehingga saat install harus menyebutkan secara spesifik versi Go yang diinginkan. Sehingga perintah Go di CLI akan diikuti oleh versinya seperti di atas maka perintah Go menjadi <code>go124</code><br /><br />
+Agar bisa mempergunakan perintah <code>go</code> saja, maka cara paling mudah adalah membuat <code>alias</code> di <code>~/.profiles</code> seperti misalnya <code> alias go='go124'</code>.
+</aside>
+
+<p></p>
+
+Perintah `go124 mod tidy` digunakan untuk mengunduh semua _dependencies_ dan perintah `go124 build` untuk memulai melakukan _build_ dengan hasil _file_ `main` yang sudah memiliki atribut _execute_.
 
 Saat _file_ `main` dijalankan akan muncul error bahwa dia membutuhkan _file_ konfigurasi bernama `museum.yaml`. Jadi salin _file_ tersebut dari folder `example` atau bikin sendiri kosongan.
 
@@ -162,7 +168,7 @@ s3:
     bucket: ente-bucket
 ```
 
-khusus untuk s3, karena ane pakai local atau _selfhost_ maka nilai `are_local_buckets: false` karena ane pakai endpoint url. Ane sudah coba kasih `true` tapi tak pernah bisa tersambung dengan baik. `b2-eu-cen` adalah `key` yang harus dipakai jika pakai s3 _selfhost_ atau AWS Compatible s3.
+khusus untuk s3, karena ane pakai local atau _selfhost_ maka nilai `are_local_buckets: false` karena ane pakai `endpoint url`. Ane sudah coba kasih `true` tapi tak pernah bisa tersambung dengan baik. `b2-eu-cen` adalah `key` yang harus dipakai jika pakai s3 _selfhost_ atau AWS Compatible s3.
 
 Kemudian jalankan `./main` secara `default`nya akan mencari _file_ `museum.yaml` sebagai konfigurasi utama atau kasih _flags_ `--config path` jika memakai nama yang lain. Ente akan berjalan di `http://localhost:8080`.
 
@@ -173,7 +179,7 @@ $ cd ente/server
 $ go124 run tools/gen-random-keys/main.go
 ```
 
-Kemudian simpan hasilnya di _file_ `museum.yaml` di bawah pengaturan sebelumnya. Karena ane hanya _single user_ maka ane tak perlu pengaturan ini, resikonya adalah OTP tidak akan dikirim ke email, melainkan harus melihat di console.
+Kemudian simpan hasilnya di _file_ `museum.yaml` di bawah pengaturan sebelumnya. Karena ane hanya _single user_ maka ane tak perlu pengaturan ini, resikonya adalah OTP tidak akan dikirim ke email, melainkan harus melihat di console. (Lihat contoh [dibawah](#:~:text=maka%20verifikasi%20akun%20tidak%20bisa%20dilakukan%20melalui%20email.%20Jadi%20kembali%20ke%20console%20dan%20lihat%20log%20dari%20main%20dan%20cari%20baris%20seperti%20ini))
 
 Setelah _backend_ sudah selesai di*build* selanjutnya adalah _build_ `ente-cli` yang nantinya sangat penting untuk melakukan _tweaks_ akun Ente.
 
@@ -250,7 +256,7 @@ Jika tidak ada masalah seharusnya Ente sudah bisa diakses dengan membuka `photos
 
 Karena ane tidak setup email (SMTP dll termasuk JWT), maka verifikasi akun tidak bisa dilakukan melalui email. Jadi kembali ke console dan lihat log dari `main` dan cari baris seperti ini
 
-```
+```text
 Skipping sending email to poes@taa.ee: Verification code: 946197
 ```
 
@@ -260,7 +266,7 @@ Masukkan kode verifikasi `946197` dan _voila_ bisa langsung masuk ke dalam Ente 
 
 Semua perubahan di `museum.yaml` harus diikuti dengan _restart_ `main` agar Ente mempergunakan konfigurasi yang baru dirubah.
 
-1. **Closed, tidak menerima pendaftaran**
+1. **Closed, tidak menerima pendaftaran**.
    Instance Ente ini ane pergunakan pribadi sehingga ane tidak perlu menerima pendaftaran, oleh karena itu ane masukkan `key` berikut di `museum.yaml`
 
 ```yaml
@@ -268,7 +274,9 @@ internal:
 	disable-registration: true
 ```
 
-2. **Jadi Admin**
+<p></p>
+
+2. **Jadi Admin**.
    Ini penting karena menjadi admin bisa melakukan pengaturan secara maksimal. Untuk menjadi admin ada beberapa langkah yang harus dilakukan yaitu mencari `user_id` di dalam database postgres dan masukkan ke dalam `museum.yaml`.
 
 ```shell-session
@@ -285,7 +293,9 @@ internal:
 		- 1580567352375231
 ```
 
-3. **Upgrade storage**
+<p></p>
+
+3. **Upgrade storage**.
    Meski _selfhost_, *default*nya Ente akan memberikan _storage_ maksimal 10GB pada setiap user, agar bisa memaksimalkan _storage_ ada 2 cara yaitu _edit_ database atau pakai `ente-cli`.
 
 Agar bisa mempergunakan `ente-cli` maka akun ane harus sudah menjadi admin. Kemudian jalankan `ente-cli`.
@@ -295,7 +305,7 @@ $ cd ente/cli/bin
 $ ./ente-cli admin update-subscription -u poes@taa.ee --no-limit True
 ```
 
-perintah ini akan membuat user poes@taa.ee akan memiliki _storage_ sebesar 100TB dengan akan _expired_ di 100 tahun kemudian.
+perintah ini akan membuat user poes@taa.ee akan memiliki _storage_ sebesar 100TB yang akan _expired_ di 100 tahun kemudian.
 
 Namun jika lebih nyaman dengan SQL, bisa dicoba [cara berikut:](https://pegelinux.top/users/kimiamania/statuses/115458916631493259)
 
@@ -317,7 +327,7 @@ Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai 
 </div>
 </div>
 
-4. **Update CORS**
+4. **Update CORS**.
    Ane pakai Garage S3 (AWS Compatible), entah mengapa selalu gagal saat upload media melalui Ente. Dari web console errornya adalah masalah CORS Origin. Jadi ane perlu benerin bucket dengan mengupdate CORS. Buat file dengan nama misalnya `cors.json`
 
    ```json
