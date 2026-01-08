@@ -34,7 +34,11 @@ $ doas stop unwind && doas disable unwind
 unwind (failed)
 ```
 
-Kemudian jalan Unbound
+<aside>
+  Defaultnya saat disable sebuah service, OpenBSD akan menampilkan pesan <code>(failed)</code> jika service tersebut (sudah) tidak berjalan.
+</aside>
+
+Kemudian jalankan Unbound
 
 ```shell-session
 $ doas rcctl check unbound
@@ -119,7 +123,11 @@ forward-zone:
     forward-addr: 9.9.9.9@853         # Quad9 DNS over TLS
 ```
 
-Di bagian `interface: 10.0.0.1` perlu ditambahkan agar IP server dari Wireguard bisa dijadikan sebagai IP DNS resolver selain 127.0.0.1 (ini adalah kelebihan dari Unbound yang tidak bisa/dimiliki oleh Unwind). Sekalian ane tambahkan `access-control: 10.0.0.0/24 allow` untuk megijinkan semua IP di dalam Wireguard memanfaatkan Unbound.
+<aside>
+  Perhatikan bagian <code>verbosity: 1</code>, ini penting untuk menampilkan log dari unbound, pilihan lainnya adalah 2, 3, 4, atau 5. Semakin tinggi nilainya maka semakin jelas log yang ditampilkan.
+</aside>
+
+Di bagian `interface: 10.0.0.1` perlu ditambahkan agar IP server dari Wireguard bisa dijadikan sebagai IP DNS resolver selain 127.0.0.1 (<mark>ini adalah kelebihan dari Unbound yang tidak bisa/dimiliki oleh Unwind</mark>). Sekalian ane tambahkan `access-control: 10.0.0.0/24 allow` untuk megijinkan semua IP di dalam Wireguard memanfaatkan Unbound.
 
 simpan file ini dan kemudian _reload_ `unbound`
 

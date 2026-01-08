@@ -734,6 +734,13 @@ a.footnote-ref {
   border: none;
 }
 
+a.header-anchor,
+a.header-anchor:visited {
+  color: #343a40;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 /** pagefind a **/
 
 .pagefind-ui__result-title.svelte-j9e30 .pagefind-ui__result-link.svelte-j9e30:hover {
