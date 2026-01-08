@@ -2,7 +2,8 @@
   "imports": {
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.1/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.12/jsx-runtime.ts",
-    "prismjs": "npm:prismjs@^1.30.0"
+    "prismjs": "npm:prismjs@^1.30.0",
+    "markdown-plugins/": "https://cdn.jsdelivr.net/gh/lumeland/markdown-plugins@0.10.0/"
   },
   "tasks": {
     "lume": {

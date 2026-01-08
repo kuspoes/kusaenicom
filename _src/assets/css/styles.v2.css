@@ -645,7 +645,7 @@ h4 {
   font-family: var(--dm);
 }
 
-. postnotes h4 {
+.postnotes h4 {
   font: 600 0.9em/1.2 var(--sans);
   margin: 0.4em 0;
 }

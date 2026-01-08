@@ -2,11 +2,11 @@ import lume from "lume/mod.ts";
 import attributes from "lume/plugins/attributes.ts";
 import base_path from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
-import { id } from "npm:date-fns/locale/id";
+import { id } from "npm:date-fns@4.1.0/locale/id";
 import feed from "lume/plugins/feed.ts";
 import prism from "lume/plugins/prism.ts";
 import readInfo from "lume/plugins/reading_info.ts";
-import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
+import toc, { linkInsideHeader } from "markdown-plugins/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
 //import title from "https://deno.land/x/lume_markdown_plugins/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
@@ -44,6 +44,7 @@ const site = lume(
 site
   .copy("assets", "/assets")
   .use(attributes())
+  .use(purgecss())
   .use(base_path())
   .use(nunjucks())
   .use(
@@ -51,7 +52,6 @@ site
       ui: { showEmptyFilters: true },
     }),
   )
-  .use(purgecss())
   .use(
     date({
       formats: {
@@ -64,27 +64,6 @@ site
     }),
   )
   .use(
-    feed({
-      output: "feed.xml",
-      query: "type=post",
-      limit: 10,
-      info: {
-        title: "=site.title",
-        description: "=site.description",
-        authorName: "=site.author.name",
-        authorUrl: "=site.author.url",
-        lang: "id",
-      },
-      items: {
-        title: "=title",
-        description: "=excerpt",
-        published: "=date",
-        content: "$.content",
-        lang: "id",
-      },
-    }),
-  )
-  .use(
     prism({
       theme: {
         name: "default",
@@ -92,7 +71,11 @@ site
       },
     }),
   )
-  .use(toc())
+  .use(
+    toc({
+      anchor: linkInsideHeader(),
+    }),
+  )
   .use(readInfo())
   //.use(title())
   .use(
@@ -112,6 +95,28 @@ if (!isDev) {
     }),
   );
 }
+
+site.use(
+  feed({
+    output: "feed.xml",
+    query: "type=post",
+    limit: 10,
+    info: {
+      title: "=site.title",
+      description: "=site.description",
+      authorName: "=site.author.name",
+      authorUrl: "=site.author.url",
+      lang: "id",
+    },
+    items: {
+      title: "=title",
+      description: "=excerpt",
+      published: "=date",
+      content: "$.content",
+      lang: "id",
+    },
+  }),
+);
 
 // dont us this helper
 site.helper(
