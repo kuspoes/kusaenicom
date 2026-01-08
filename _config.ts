@@ -8,7 +8,6 @@ import prism from "lume/plugins/prism.ts";
 import readInfo from "lume/plugins/reading_info.ts";
 import toc, { linkInsideHeader } from "markdown-plugins/toc.ts";
 import footnotes from "./_plugins/footnotes.ts";
-//import title from "https://deno.land/x/lume_markdown_plugins/title.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";

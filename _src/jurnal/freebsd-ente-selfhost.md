@@ -14,6 +14,7 @@ favorit: false
 comment: true
 keywords: bsd, freebsd, ente, selfhost, tutorial
 draft: false
+tocx: true
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
