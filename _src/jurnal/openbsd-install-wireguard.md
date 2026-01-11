@@ -210,3 +210,124 @@ peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
 ```
 
 kemudian cek akses internet di klien dan cek IP dengan mengunjungi situs [ipleak](https://ipleak.net) seharusnya lokasi dan IPnya sudah sesuai dengan IP dan lokasi VPS.
+
+<div class="postnotes">
+  <h5>Update</h5>
+  <p>Untuk menambahkan <code>peer</code> baru, sila mengulangi proses <a href="#wireguard-di-vps-1">ini</a>. Kemudian restart ulang interface wireguard, dan cek lagi dengan menjalankan perintah <code>doas wg show</code>. Jika setelah dicek masih ada <code>peer</code> yang lama atau yang baru dimasukkan tidak terlihat, maka coba untuk menghapus interface <code>wg0</code> dan mengaktifkan ulang.</p>
+
+<pre><code>
+$ doas ifconfig wg0 destroy
+$ doas sh /etc/netstart wg0
+$ doas wg show
+</code></pre>
+<p>Seharusnya data <code>peer</code> sudah diperbarui.</p>
+</div>
+
+#### Killswitch
+
+Killswitch adalah fitur keamanan yang sekarang sepertinya sudah menjadi standar untuk layanan VPN. Fungsinya adalah memutus akses internet saat VPN terputus sehingga tidak ada kebocoroan (_data leak_) berupa IP, DNS, atau data lainnya yang terkait. Hampir semua aplikasi VPN sudah menyediakan fitur ini.
+
+Namun karena ane buat VPN secara mandiri, maka ane hanya pakai aplikasi resmi dari wireguard yang sangat minimalis dan tidak banyak fitur tersedia termasuk killswitch. Karena MacOs sendiri adalah bagian dari keluarga BSD, maka tentu saja MacOs memiliki atau mempergunakan firewall [PF](https://www.openbsd.org/faq/pf/), sehingga bisa dimanfaatkan untuk membuat mode killswitch sendiri.
+
+Inti dari killswitch ini adalah memutus akses keluar masuk saat tidak sedang terhubung ke VPN, script pf sederhananya sebagai berikut
+
+```txt
+vpn_ip = '103.102.101.100'
+
+set skip on lo0
+
+# block semua akses keluar
+block drop out all
+
+# ijinkan akses ke wireguard saja
+pass out proto udp from any $vpn_ip to any port 51820
+pass on utun4 all
+```
+
+<aside>
+Simpan sebagai misalnya <code>.pf_killswitch.conf</code> dan taruh di home directory. Tanda titik sebelum nama file berarti membuat file menjadi tersembunyi atau <i>hidden</i>
+</aside>
+
+Saat diaktifkan perintah ini akan memblokir semua akses keluar kecuali akses ke wireguard dan akses ke interface `utun4`.
+
+<div class="postnotes kuning-gading">
+  <p>Di mac ane, akses wireguard mempergunakan interface <code>utun4</code>. Sesuaikan dengan interface yang digunakan oleh wireguard di sistem ente.</p>
+</div>
+
+Cara pakainya adalah, saat VPN sudah terhubung, jalankan perintah berikut:
+
+```shell-session
+$ sudo pfctl -fa ~/.pf_killswitch.conf -e
+```
+
+Saat sudah tidak memakai VPN, pf ini harus dimatikan supaya tidak memblokir akses internet yang lain. Jalankan perintah berikut:
+
+```shell-session
+$ sudo pfctl -d
+```
+
+Jika punya pengaturan pf yang lain, maka jangan lupa aktifkan kembali pengaturan pf asli dari Macos dengan perintah berikut:
+
+```shell-session
+$ sudo pfctl -f /etc/pf.conf -e
+```
+
+Cukup merepotkan bukan?
+Tapi diluar sana tidak hanya ane yang repot, sehingga ada seseorang yang kemudian membuat script untuk memudahkan proses ini. Namanya killswitch dari [github](https://github.com/vpn-kill-switch/killswitch) - [https://vpn-kill-switch.com/](https://vpn-kill-switch.com/). Cara pasangnya mudah sekali, dibantu oleh [homebrew](https://brew.sh) dan cara pakainya seperti ini
+
+```shell-session
+$ brew install killswitch
+$ sudo killswitch -e
+$ sudo killswitch -d
+```
+
+<aside>
+  <ul>
+  <li>Flag <code>-e</code> untuk mengaktifkan killswitch</li>
+  <li>Flag <code>-d</code> untuk menonaktifkan killswitch</li>
+</ul>
+</aside>
+
+Sedangkan perintah killswitch sendiri akan menghasilkan informasi terkait interface tersedia dan public IP address yang digunakan oleh VPN.
+
+```shell-session
+$ sudo killswitch
+Interface  MAC address         IP
+en0        76:61:a8:f1:ex:1O   172.20.10.2/16
+utun4                          10.0.0.2
+
+Public IP address: 103.102.101.100
+PEER IP address:   <nil>
+
+To enable the kill switch run: sudo killswitch -e
+To disable: sudo killswitch -d
+```
+
+seperti contoh di atas adalah informasi setelah VPN terhubung, masalahnya adalah di `PEER IP address:   <nil>` ini karena killswitch tidak bisa menemukan IP dari Endpoint VPN, bug yang memang muncul jika pakai MacOS. Sehingga saat killswitch dijalankan dia akan bikin semua akses internet terblokir meski sudah terhubung ke VPN.
+
+Jadi agar killswitch bisa mengerti `PEER IP address`, maka perlu menambahkan flag `-ip` untuk menentukan IP address dari Endpoint VPN.
+
+```shell-session
+$ sudo killswitch -e -ip 103.102.101.100
+$ sudo killswitch
+Interface  MAC address         IP
+en0        76:61:a8:f1:ex:1O   172.20.10.2/16
+utun4                          10.0.0.2
+
+Public IP address: 103.102.101.100
+PEER IP address:   103.102.101.100
+
+To enable the kill switch run: sudo killswitch -e
+To disable: sudo killswitch -d
+```
+
+dan dengan ini killswitch akan menandai akses ke IP Address VPN dan mengaktifkan pf, jika VPN terputus maka killswitch akan memblokir semua akses internet yang meningkatkan keamanan dan privasi pengguna.Jangan lupa mematikan killswitch jika sedang tidak memakai VPN, agar tidak repot ketik perintah manual di terminal gunakan Shortcuts app untuk membuat shortcut.
+
+#### Dengan aplikasi
+
+<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" />
+<p class="ncaption">
+  Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba
+</p>
+
+Ada beberapa aplikasi yang bisa digunakan sebagai alternatif killswitch seperti [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) atau [Lulu](https://objective-see.org/products/lulu.html). Dari kedua ini Little Snitch lebih bagus dan mudah namun memang aplikasi berbayar, sedangkan Lulu gratis namun kurang fleksibel dan masih memerlukan campur tangan user (manual aktifkan rules.)
