@@ -112,7 +112,7 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
 
 ![wireguard add tunnel](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20251129-qxxr__wylSLRT7.png?updatedAt=1764419428366)
 
-<aside>
+<aside class="image">
   <b>No. 1</b> adalah public key dari klien yang nantinya akan di masukkan ke dalam wg0.conf peer publickey yang sebelumnya sudah ane buat.
   <b>No. 2</b> diisi dengan isian dari public.key wireguard di VPS yang sebelumnya sudah dibuat.
   <b>No. 3</b> adalah IP dari VPS dan port dari wireguard.
@@ -326,8 +326,10 @@ dan dengan ini killswitch akan menandai akses ke IP Address VPN dan mengaktifkan
 #### Dengan aplikasi
 
 <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" />
-<p class="ncaption">
+<aside class="image">
   Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba
-</p>
+</aside>
 
 Ada beberapa aplikasi yang bisa digunakan sebagai alternatif killswitch seperti [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) atau [Lulu](https://objective-see.org/products/lulu.html). Dari kedua ini Little Snitch lebih bagus dan mudah namun memang aplikasi berbayar, sedangkan Lulu gratis namun kurang fleksibel dan masih memerlukan campur tangan user (manual aktifkan rules.)
+
+Aplikasi gratis lain yang bisa dipakai adalah Mirham KillSwitch, yang bisa diunduh dari [sini](https://github.com/mirham/KillSwitch). Aplikasi ini akan menaruh ikon di menubar dan tinggal klik untuk memakainya.
