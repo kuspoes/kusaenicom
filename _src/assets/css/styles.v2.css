@@ -291,7 +291,12 @@ img.no-border {
 
 .btop {
   margin: 0em auto;
-  width: 5em;
+  width: 2.6em;
+  transition: transform 0.2s;
+}
+
+.btop:hover {
+  transform: scale(1.5);
 }
 
 .selayang {
