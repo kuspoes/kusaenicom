@@ -183,3 +183,9 @@ $ doas service pf restart
 ```
 
 Aman.
+
+### Pilih yang mana?
+
+Jika kamu pengguna NetBSD maka Blocklist sudah ada di dalam sistem dan sudah jalan dengan baik, sedangkan kalo pakai FreeBSD harus mengaktifkannya secara manual. SSH Guard bukanlah aplikasi _native_ di dalam sistem, perlu memasangnya dulu tapi kelebihannya tersedia untuk pelbagai OS (di luar BSD). Selain itu SSH Guard juga punya kelebihan untuk monitor banyak _ports_, jadi jika di sistem punya banyak _service_ yang perlu dimonitor SSH Guard cocok sekali dipakai. Namun jika cuma port SSH atau FTP, maka Blocklist sudah lebih dari cukup.
+
+Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi bot semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
