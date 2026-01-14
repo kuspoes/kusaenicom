@@ -3,7 +3,6 @@ title: "Blocklistd: cara ampuh menghalau penyusup di FreeBSD"
 ringkasan: "pasangkan dengan SSH Guard maka ane punya pertahanan berlapis."
 date: 2026-01-14
 tags:
-  - kusaeni
   - tutorial
   - freebsd
   - bsd
@@ -16,8 +15,8 @@ keywords: bsd, freebsd, ente, security, tutorial
 draft: false
 tocx: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
+  real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
 ---
 
 Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling kuat tapi _assume everything will be attacked_ atau _no system is safe_. Teknik awal dalam perentasan adalah melakukan _scanning ports_ dan kemudian mengeksploitasinya, yang paling sering diincar adalah port SSH dan FTP. Meskipun banyak sekali teknik dalam perentasan, namun paling tidak mengamankan _ports_ ini adalah langkah awal yang baik.
