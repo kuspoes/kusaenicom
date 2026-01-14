@@ -11,6 +11,7 @@ kategori: jurnal
 code: true
 favorit: false
 comment: true
+tocx: true
 keywords: bsd, openbsd, wireguard, self host, vpn
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
@@ -21,7 +22,7 @@ Kata orang - orang kalo pakai BSD paling gampang di OpenBSD karena Wireguard sud
 
 Catatan ini akan dibagi menjadi 2 bagian yaitu memasang Wireguard di sisi server (VPS) dan sisi client (macos).
 
-## Wireguard di VPS
+## Setup Wireguard di VPS
 
 Karena `wg` (binary dari wireguard) ternyata belum ada di dalam OpenBSD, maka perlu memasangnya secara manual. Sebelum itu ada beberapa hal yang perlu ane catat yaitu VPS ane sudah memakai [OpenBSD 7.8](https://www.openbsd.org/78.html) dengan spesifikasi 1vCPU - 1GB RAM - 25GB SSD dan akan login dengan user bukan root sehingga ane akan pakai `doas` untuk elevasi ke root.
 
@@ -86,7 +87,7 @@ up
 
 Perhatikan baris kode `!/usr/local/bin/wg setconf wg0 /etc/wireguard/wg0.conf`, perintah ini akan memanggil konfigurasi Wireguard di `/etc/wireguard/wg0.conf` dan akan membacanya saat interface `wg0` diaktifkan.
 
-### Cara kedua
+#### Cara kedua
 
 Untuk cara yang kedua adalah membuat konfigurasi dengan metode tradisional OpenBSD. Untuk interface, buat file baru dengan nama `hostname.wg0` di direktori `/etc`.
 
@@ -125,7 +126,7 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
 </div>
 Simpan dan kembali ke pengaturan wireguard di VPS.
 
-## WireGuard di VPS
+## Finishing WireGuard di VPS
 
 Apapun pilihan jenis konfigurasi WireGuard, setelah mendapatkan `public key` dari klien (dalam hal ini `DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=`) maka bisa dimasukkan ke dalam `wg0.conf` atau di `hostname.wg0` di bagian peer publickey.
 
@@ -233,6 +234,7 @@ Inti dari killswitch ini adalah memutus akses keluar masuk saat tidak sedang ter
 
 ```txt
 vpn_ip = '103.102.101.100'
+vpn_port = '5128'
 
 set skip on lo0
 
@@ -240,7 +242,7 @@ set skip on lo0
 block drop out all
 
 # ijinkan akses ke wireguard saja
-pass out proto udp from any $vpn_ip to any port 51820
+pass out proto udp from any $vpn_ip to any port $vpn_port
 pass on utun4 all
 ```
 
