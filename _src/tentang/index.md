@@ -91,7 +91,7 @@ style: "tentang.css"
 <p>Ketika psikolog perusahaan (medio 2014) menganjurkan saya untuk mencoba bepergian atau <em>travelling</em> untuk melihat luasnya dunia dan bertemu dengan hal - hal baru, maka pada saat itu saya memutuskan untuk menekuni hobi fotografi.</p>
 
 <img class="galsX sephia" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni-kawahputih_XYHZGhi-8.jpg" alt="kusaeni saat melancong ke kawah putih di Kabupaten Bandung" />
-<aside>Kusaeni saat melancong ke Kawah Putih, Ciwidey, Kabupaten Bandung. Foto ini diambil dengan mempergunakan kamera polaroid dan di reproduksi ke digital/JPEG. (Andri Kawah Putih untuk kusaeni.com) </aside>
+<aside class="image">Kusaeni saat melancong ke Kawah Putih, Ciwidey, Kabupaten Bandung. Foto ini diambil dengan mempergunakan kamera polaroid dan di reproduksi ke digital/JPEG. (Andri Kawah Putih untuk kusaeni.com) </aside>
 
 <p>Hobi ini sangat cocok berdampingan saat <em>travelling</em>, untuk mengabadikan momen dan pemandangan. Gawai yang saya pergunakan sebagai berikut :</p>
         <ul class="space-y-3">
@@ -118,11 +118,13 @@ style: "tentang.css"
                 (<em>mobile</em>),
             </li>
             <li>Luminar 3 dari Skylum. Saya masih punya 3 akun untuk Luminar 3 bagi yang berminat silakan hubungi saya, <del>harga murah ada untuk anda</del> gratis (terbatas). Lisensi resmi dari Skylum.</li>
-            <p class="sidenote">Skylum sudah mengeluarkan <a href="https://skylum.com/luminar" title="Luminar 4">Luminar 4</a>. Versi terbaru dengan banyak tambahan fitur tersedia. Saya sendiri sampai sekarang masih belum menguasai Luminar 3 dengan baik. Kadang terasa <i>mubadzir</i> membelinya.
+            <div class="postnotes">
+              <p>Skylum sudah mengeluarkan <a href="https://skylum.com/luminar" title="Luminar 4">Luminar 4</a>. Versi terbaru dengan banyak tambahan fitur tersedia. Saya sendiri sampai sekarang masih belum menguasai Luminar 3 dengan baik. Kadang terasa <i>mubadzir</i> membelinya.
             </p>
-            <p class="sidenote">
+            <p>
                 Meskipun punya beberapa aplikasi pengolah gambar, saya masih belum bisa memaksimalkan aplikasi tersebut. Permasalahan utama seringnya adalah sumber daya PC/Laptop ternyata tidak cukup untuk menjalankan aplikasi - aplikasi diatas. Saat ini aplikasi yang paling sering dipakai untuk mengolah gambar hanya Lightroom Mobile dan <a href="https://play.google.com/store/apps/details?id=com.niksoftware.snapseed&hl=in&gl=US" title="SnapSeed">Snapseed</a> (keduanya tersedia di App Store maupun PlayStore) dari Google.
             </p>
+            </div>
         </ul>
 <p>Sedangkan PC/Laptop yang dipergunakan adalah Lenovo Thinkpad E470 dengan Windows 10 Pro, laptop sebelumnya adalah Lenovo Ideapad G460 dengan           ArchLinux namun sudah tidak mampu jika dipergunakan melakukan <em>editing file</em> <code>RAW</code>.
 

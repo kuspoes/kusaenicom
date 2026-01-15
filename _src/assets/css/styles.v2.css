@@ -680,7 +680,7 @@ a:hover {
 
 a:link,
 a:visited {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--col-link);
   padding: 2px;
   text-decoration: none;
