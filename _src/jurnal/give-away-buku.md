@@ -57,11 +57,13 @@ Bagi kalian yang menginginkan [buku - buku](/baca) tersebut, silakan mengisi for
 
 **<mark>Mohon maaf, semua buku sudah terkirim</mark>**
 
-Kamu bisa _follow_ kami di <a href="https://twitter.com/kuspoes">Twitter</a> atau Mastodon di <a href="https://kauaku.us/@poes">@poes@kauaku.us</a> untuk mendapatkan informasi _giveaway_ selanjutnya.
+<img src="https://placehold.co/600x400?text=Pendaftaran+Ditutup" alt="Pendaftaran Ditutup">
 
- <p class="sidenote">Untuk peserta yang beruntung akan dihubungi melalui email , akun twitter atau nomer <i>handphone</i>. Pengiriman melalui layanan POS Indonesia. <i>Giveaway</i> ini tidak dipungut biaya apapun.</p>
+Kamu bisa _follow_ kami di <a href="https://twitter.com/kuspoes">Twitter</a> atau Mastodon di <a href="https://sok.egois.org/@poes">@poes@sok.egois.org</a> untuk mendapatkan informasi _giveaway_ selanjutnya.
 
-<p class="sidenote">Keputusan atas pemenang tidak bisa diganggu gugat!</p>
+<div class="postnotes pink">
+   <p>Untuk peserta yang beruntung akan dihubungi melalui email , akun twitter atau nomer <i>handphone</i>. Pengiriman melalui layanan POS Indonesia. <i>Giveaway</i> ini tidak dipungut biaya apapun.</p>
+<p><strong>Keputusan atas pemenang tidak bisa diganggu gugat!</strong></p></div>
 
 ### Update
 
