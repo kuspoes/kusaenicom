@@ -66,7 +66,7 @@ block in quick from <blocklistd>
 
 Untuk menentukan waktu tunggu sampai sebuah IP bisa kembali mengakses SSH, maka perlu merubah konfigurasi Blocklistd.
 
-```text
+```shell-session
 $ doas ee /usr/local/etc/blocklistd.conf
 location      type    proto   owner   name    nfail   duration
 vtnet:ssh        *       *       *       *       3       72h

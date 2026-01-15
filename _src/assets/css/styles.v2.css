@@ -10,7 +10,7 @@
   --col_aside: #495057;
   --col_asidebg: #eaf4f4;
   --col_gray: #495057;
-  --col_border: #ced4da;
+  --col_border: rgb(239.8, 240.8, 241.1);
   --col-link: #0d00a4;
   --kuning-gading: #fdf0d5;
 }
@@ -829,8 +829,13 @@ pre code {
 }
 
 pre[class*="language-"] {
-  background: transparent;
+  /* background: transparent; */
+  background-color: rgb(250, 250, 250, 1);
   font-size: 0.8em;
+}
+
+.postnotes pre {
+  background: transparent !important;
 }
 
 /* media */
