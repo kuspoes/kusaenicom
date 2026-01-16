@@ -19,26 +19,23 @@ Untuk beberapa tahun fotografi menempati urutan pertama dalam daftar hal menarik
 
 Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambil foto saat senja. Karena pada waktu itu (selain di pagi hari) warna - warna langit berwarna warni.
 
-  <div class="masonry-wrapper" id="my-gallery">
-    <a href="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637"
-       class="masonry-item"
-       data-pswp-width="1080"
-       data-pswp-height="1080">
-        <img class="galeri"  src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-1080/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637" alt="Vintage" />
+<div class="gallery-container">
+    <!-- Item BESAR -->
+    <a href="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637" class="gallery-item lg-item">
+        <img src="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637" alt="Condo staged for sale">
+        <div class="caption">The condo staged for sale.</div>
     </a>
-        <a href="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" 
-           class="masonry-item"
-           data-pswp-width="1080" 
-           data-pswp-height="1080">
-            <img class="galeri" src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig,w-400/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" alt="Grojogan Dhuwur" />
-        </a>
-        <a href="https://ik.imagekit.io/hjse9uhdjqd/kawah_putih_ciwidey_pXP7wSutdw.jpg?updatedAt=1612626976661"
-           class="masonry-item"
-           data-pswp-width="640"
-           data-pswp-height="640">
-            <img class="galeri"  src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/kawah_putih_ciwidey_pXP7wSutdw.jpg?updatedAt=1612626976661" alt="Kawah Putih" />
-           </a>
-  </div>
+    <!-- 3 KECIL vertikal -->
+    <a href="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" class="gallery-item lg-item">
+        <img src="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" alt="Kitchen 1">
+    </a>
+    <a href="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="gallery-item lg-item">
+        <img src="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" alt="Kitchen 2">
+    </a>
+    <a href="full4.jpg" class="gallery-item lg-item">
+        <img src="thumb4.jpg" alt="Living area">
+    </a>
+</div>
 
   <p class="sidenote">Dari atas ke kanan: Simpang Lima Gumul di Kediri, Pantai Pulau Merah di Banyuwangi, Pantai Soge di Pacitan, Telaga Ngebel di Madiun, Pantai Papuma Jember, Grojogan Dhuwur di Pacitan, Kawah Putih Ciwidey Bandung, dan Simpang Lima Gumul di Kediri</a>
 

@@ -24,56 +24,22 @@
         <script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="kusaeni.com"></script>
         {{ /if }}
         {{ if it.galeri }}
-        <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.css">
+        <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css" rel="stylesheet" />
         <style>
-          .masonry-wrapper {
-            column-count: 3;
-            column-gap: 5px;
-            max-width: 1000px;
-            margin: 0 auto;
+        .gallery-container {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            max-width: 600px; margin: 0 auto;
         }
-        .masonry-item {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            overflow: hidden;
-            /* box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease; */
+        .gallery-item {
+            width: calc(50% - 7.5px); background: white;
+            border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative; cursor: pointer;
         }
-
-        a.masonry-item:hover {
-            transform: translateY(-1px);
-            box-shadow: none;
-            border: none;
-            background-color: transparent;
-        }
-
-        .masonry-item img {
-            width: 100%;
-            display: block;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            .masonry-wrapper { column-count: 2; }
-        }
-        @media (max-width: 480px) {
-            .masonry-wrapper { column-count: 1; }
-        }
+        .gallery-item img { width: 100%; height: auto; }
+        .gallery-item.wide { width: 100%; } /* Item besar */
+        @media (max-width: 768px) { .gallery-item { width: 100%; } }
         </style>
-
-        <script type="module">
-        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
-
-        const lightbox = new PhotoSwipeLightbox({
-            gallery: '#my-gallery',
-            children: 'a.masonry-item',
-            pswpModule: () => import('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js')
-        });
-
-        lightbox.init();
-        </script>
         {{ /if }}
         <link rel="icon" type="image/x-icon" href="{{ metadata.favicon }}">
         <link rel="alternate" type="application/rss+xml" title="Subscribe to Kusaeni Jurnal" href="https://kusaeni.com/feed.xml">

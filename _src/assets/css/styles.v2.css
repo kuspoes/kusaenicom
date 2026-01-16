@@ -679,6 +679,11 @@ a:hover {
   background-color: #f2ebfb;
 }
 
+a.galeri:hover {
+  border: none;
+  background-color: transparent;
+}
+
 a:link,
 a:visited {
   font-weight: 600;
