@@ -7,7 +7,7 @@ galeri: true
 style: "galeri.css"
 ---
 
-<a href="#modal4" id="img4" class="hero-area">
+<a href="#modalx" id="imgx" class="hero-area">
  <img class="herokus" src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" alt="Pantai Banyu Tibo Pacitan" />
 </a>
  <div id="modalx" class="lightbox-modal">
@@ -58,11 +58,11 @@ Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambi
 </div>
 <div id="modal3" class="lightbox-modal">
     <a href="#img3" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/papuma_USMES_4Oj.jpg?updatedAt=1612108110621">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-800,h-800/papuma_USMES_4Oj.jpg?updatedAt=1612108110621">
 </div>
 <div id="modal4" class="lightbox-modal">
     <a href="#img4" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-810/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881">
 </div>
 <div id="modal5" class="lightbox-modal">
     <a href="#img5" class="lightbox-close">×</a>
@@ -73,7 +73,7 @@ Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambi
     <img src="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567">
 </div>
 
-  <p class="ncaption"><b>Pantai Soge</b>, <b>Grojogan Dhuwur</b> di Pacitan · <b>Pantai Papuma</b> di Jember, <b>Pantai Pulau Merah</b> di Banyuwangi · <b>Simpang Tiga Gumul</b> di Kediri dan <b>Telaga Ngebel</b> di Madiun</p>
+  <p class="ncaption">Pantai Soge, Grojogan Dhuwur di Pacitan · Pantai Papuma di Jember, Pantai Pulau Merah di Banyuwangi · Simpang Tiga Gumul di Kediri dan Telaga Ngebel di Madiun</p>
 
 _Photografi landscape_ membutuhkan sumber daya yang lumayan besar, tidak hanya biaya untuk perjalanan (transportasi, akomodasi termasuk penginapan dan makan) dan perangkat melainkan juga tenaga dan fisik yang prima. Apalagi kalo datang ke lokasi yang sulit diakses oleh kendaraan.
 
