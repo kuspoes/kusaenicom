@@ -23,6 +23,58 @@
         <link rel="stylesheet" href="/assets/css/comments/comments.css">
         <script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="kusaeni.com"></script>
         {{ /if }}
+        {{ if it.galeri }}
+        <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.css">
+        <style>
+          .masonry-wrapper {
+            column-count: 3;
+            column-gap: 5px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .masonry-item {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease; */
+        }
+
+        a.masonry-item:hover {
+            transform: translateY(-1px);
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+        }
+
+        .masonry-item img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .masonry-wrapper { column-count: 2; }
+        }
+        @media (max-width: 480px) {
+            .masonry-wrapper { column-count: 1; }
+        }
+        </style>
+
+        <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a.masonry-item',
+            pswpModule: () => import('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js')
+        });
+
+        lightbox.init();
+        </script>
+        {{ /if }}
         <link rel="icon" type="image/x-icon" href="{{ metadata.favicon }}">
         <link rel="alternate" type="application/rss+xml" title="Subscribe to Kusaeni Jurnal" href="https://kusaeni.com/feed.xml">
         <meta property="og:type" content="article" />

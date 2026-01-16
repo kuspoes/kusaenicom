@@ -185,7 +185,11 @@ site.helper(
 site.process([".html"], (pages) => {
   for (const page of pages) {
     for (const img of page.document!.querySelectorAll("div.content img")) {
-      if (img.classList.contains("kus_avatar") || img.classList.contains("layang")) {
+      if (
+        img.classList.contains("kus_avatar") ||
+        img.classList.contains("layang") ||
+        img.classList.contains("galeri")
+      ) {
         continue;
       }
       if (!img.hasAttribute("loading")) {

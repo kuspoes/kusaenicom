@@ -3,6 +3,7 @@ layout: layout/foto.vto
 title: Kusaeni suka fotografi
 keywords: fotografi, landscape, kusaeni, @kusaeni, ig @kusaeni
 kategori: fotografi
+galeri: true
 ---
 
  <img class="herokus" src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" alt="Pantai Banyu Tibo Pacitan" />
@@ -14,69 +15,30 @@ Untuk beberapa tahun fotografi menempati urutan pertama dalam daftar hal menarik
 - **want to impress someone**, kisah masa lalu yang ternyata tidak berjalan sesuai harapan,
 - **want to be different**, banyak teman - teman saya yang juga suka memotret namun hanya sekedar memotret. Dan diantara mereka hanya beberapa saja yang serius menekuni fotografi _landscape_. Sedangkan sebagian besar lainnya memotret hanya untuk ala kadarnya saja.
 
- <p class="sidenote">Meskipun di kemudian hari saya tahu bahwa para penggemar fotografi <i>landscape</i> ini sudah banyak sekali dan menghabiskan banyak uang uang perlengkapan dan perjalanan.</p>
+ <div class="postnotes"><p>Meskipun di kemudian hari saya tahu bahwa para penggemar fotografi <i>landscape</i> ini sudah banyak sekali dan menghabiskan banyak uang uang perlengkapan dan perjalanan.</p></div>
 
 Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambil foto saat senja. Karena pada waktu itu (selain di pagi hari) warna - warna langit berwarna warni.
 
-  <div class="gals">
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg" />
-        </div>
-        <aside class="image">
-            <p>Simpang Lima Gumul di Kediri, saat pagi hari.</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg" />
-        </div>
-        <aside class="image">
-            <p>Sunset di Pantai Pulau Merah, Banyuwangi. Indah sekali namun sayang banyak sampah berserakan.</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Pantai_Soge_Pacitan_FodVQOzTgfJa.jpg" />
-        </div>
-         <aside class="image">
-            <p>Salah satu sisi Pantai Soge, Pacitan.</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full" src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/D71_0358_GCefsTMTp.jpg" />
-        </div>
-        <aside class="image">
-            <p>Nelayan mencari ikan di Pantai Ngebel, Kab. Madiun. Saat pagi hari yang dingin.</p>
-        </aside>
-    </div>
-    <div class="gals">
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/papuma_USMES_4Oj.jpg" />
-        </div>
-        <aside class="image">
-            <p>Pantai Papuma di Jember, sunrise disini tak pernah mengecewakan.</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/Air_Terjun_Grojogan_Dhuwur_Pacitan_91GVhGsH0xJZ.jpg" />
-            </div>
-            <aside class="image">
-            <p>Air terjun Grojogan Dhuwur di Pacitan, tracknya mudah tapi turunannya bikin ngeri.</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/kawah_putih_ciwidey_pXP7wSutdw.jpg" />
-        </div>
-        <aside class="image">
-            <p>Kawah Putih Kab. Bandung</p>
-        </aside>
-        <div class="flex-1 text-center">
-            <img class="w-full"
-                src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/f3d62349ad6d8500ba324aa690fb49fc_DVQrvZTOX.jpg" />
-        </div>
-        <aside class="image">
-            <p>Simpang Lima Bungul Kediri.</p>
-        </aside>
-    </div>
+  <div class="masonry-wrapper" id="my-gallery">
+    <a href="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637"
+       class="masonry-item"
+       data-pswp-width="1080"
+       data-pswp-height="1080">
+        <img class="galeri"  src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-1080/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637" alt="Vintage" />
+    </a>
+        <a href="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" 
+           class="masonry-item"
+           data-pswp-width="1080" 
+           data-pswp-height="1080">
+            <img class="galeri" src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig,w-400/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" alt="Grojogan Dhuwur" />
+        </a>
+        <a href="https://ik.imagekit.io/hjse9uhdjqd/kawah_putih_ciwidey_pXP7wSutdw.jpg?updatedAt=1612626976661"
+           class="masonry-item"
+           data-pswp-width="640"
+           data-pswp-height="640">
+            <img class="galeri"  src="https://ik.imagekit.io/hjse9uhdjqd/tr:n-kus_ig/kawah_putih_ciwidey_pXP7wSutdw.jpg?updatedAt=1612626976661" alt="Kawah Putih" />
+           </a>
+  </div>
 
   <p class="sidenote">Dari atas ke kanan: Simpang Lima Gumul di Kediri, Pantai Pulau Merah di Banyuwangi, Pantai Soge di Pacitan, Telaga Ngebel di Madiun, Pantai Papuma Jember, Grojogan Dhuwur di Pacitan, Kawah Putih Ciwidey Bandung, dan Simpang Lima Gumul di Kediri</a>
 

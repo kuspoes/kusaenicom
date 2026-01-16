@@ -280,7 +280,8 @@ img.kus-svg {
   opacity: 0.8;
 }
 
-img.no-border {
+img.no-border,
+img.galeri {
   border: none !important;
 }
 
