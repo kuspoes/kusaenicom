@@ -188,7 +188,7 @@ site.process([".html"], (pages) => {
       if (
         img.classList.contains("kus_avatar") ||
         img.classList.contains("layang") ||
-        img.classList.contains("galeri")
+        img.classList.contains("gallery-img")
       ) {
         continue;
       }

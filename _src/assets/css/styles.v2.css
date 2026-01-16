@@ -574,7 +574,12 @@ span.ncaption {
   font-family: Arial, sans-serif;
   font-size: 85%;
   color: #5c6b73;
-  margin-top: -0.8em;
+  margin-top: -0.2em;
+  line-height: 1.2;
+}
+
+.mtop1 {
+  margin-top: 1em !important;
 }
 
 p.ncaption::before {
@@ -679,7 +684,7 @@ a:hover {
   background-color: #f2ebfb;
 }
 
-a.galeri:hover {
+.gallery-masonry a:hover {
   border: none;
   background-color: transparent;
 }

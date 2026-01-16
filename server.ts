@@ -2,14 +2,14 @@ import Server from "lume/core/server.ts";
 import expires from "lume/middlewares/expires.ts";
 import notFound from "lume/middlewares/not_found.ts";
 import noCors from "lume/middlewares/no_cors.ts";
-import noRobotAI from "./_plugins/no_robotAI.ts";
+// import noRobotAI from "./_plugins/no_robotAI.ts";
 
 const s = new Server({
   port: 8080,
   root: `${Deno.cwd()}/_site`,
 });
 
-s.use(noRobotAI());
+//s.use(noRobotAI());
 s.use(expires());
 s.use(noCors());
 s.use(
