@@ -3,19 +3,17 @@ layout: layout/foto.vto
 title: Kusaeni suka fotografi
 keywords: fotografi, landscape, kusaeni, @kusaeni, ig @kusaeni
 kategori: fotografi
-galeri: true
+lightbox: true
 style: "galeri.css"
 ---
 
-<a href="#modalx" id="imgx" class="hero-area">
- <img class="herokus" src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" alt="Pantai Banyu Tibo Pacitan" />
-</a>
- <div id="modalx" class="lightbox-modal">
-     <a href="#imgx" class="lightbox-close">×</a>
-     <img src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg?updatedAt=1611572202515">
+ <div class="gal" id="glightbox">  
+  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" data-gallery="gallery">
+      <img src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" class="fuck" >
+  </a>
  </div>
 
- <p class="ncaption mtop1"><a href="https://goo.gl/maps/h4tk2fCnU7SG5Dhh8" title="Pantai Banyu Tibo Pacitan">Pantai Banyu Tibo</a>, Pacitan Jawa Timur. Nikon D7100 + Tamron 17-50mm @ 17mm &middot; 2" exps &middot; <em>f</em>/9.0 &middot; ISO
+ <p class="ncaption"><a href="https://goo.gl/maps/h4tk2fCnU7SG5Dhh8" title="Pantai Banyu Tibo Pacitan">Pantai Banyu Tibo</a>, Pacitan Jawa Timur. Nikon D7100 + Tamron 17-50mm @ 17mm &middot; 2" exps &middot; <em>f</em>/9.0 &middot; ISO
 
 Untuk beberapa tahun fotografi menempati urutan pertama dalam daftar hal menarik yang harus saya lakukan. <i>Landscape</i> fotografi adalah <em>genre</em> yang saya pilih diantara banyak jenis fotografi, ada beberapa alasan yang membuat saya memilihnya adalah
 
@@ -27,53 +25,28 @@ Untuk beberapa tahun fotografi menempati urutan pertama dalam daftar hal menarik
 
 Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambil foto saat senja. Karena pada waktu itu (selain di pagi hari) warna - warna langit berwarna warni.
 
-<div id="galeri" class="gallery-masonry">
-    <a href="#modal1" id="img1" class="hero-area">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637" class="gallery-img radius-atas" alt="Laguna Pantai Soge">
-    </a>
-    <a href="#modal2" id="img2" class="a">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-400/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722" class="gallery-img" alt="Grojogan Dhuwur Pacitan">
-    </a>
-    <a href="#modal3" id="img3" class="b">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-400,h-400/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" class="gallery-img" alt="Pantai Papuma Jember">
-    </a>
-    <a href="#modal4" id="img4" class="hero-area">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="gallery-img" alt="Pantai Pulau Merah">
-    </a>
-    <a href="#modal5" id="img5" class="a">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="gallery-img radius-kiri-bawah" alt="Simpang Lima Gumul">
-    </a>
-    <a href="#modal6" id="img6" class="b">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567" class="gallery-img radius-kanan-bawah" class="gallery-img radius-kanan-bawah" alt="Orang memancing di pagi hari di Telaga Ngebel, Madiun">
+<div class="gallery" id="glightbox">  
+  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" data-gallery="gallery">
+      <img src="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" class="fuck radius-atas" >
+  </a>
+  <a href="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg" data-gallery="gallery">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg" class="fuck" >
+  </a>
+  <a href="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" data-gallery="gallery">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="fuck" >
+  </a>
+  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" data-gallery="gallery">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" class="fuck" >
+  </a>
+  <a href="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" data-gallery="gallery">
+    <img src="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="fuck radius-kiri-bawah" >
+  </a>
+  <a href="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567" data-gallery="gallery">
+      <img src="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567" class="fuck radius-kanan-bawah" >
     </a>
 </div>
 
-<div id="modal1" class="lightbox-modal">
-    <a href="#img1" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg?updatedAt=1612741514637">
-</div>
-<div id="modal2" class="lightbox-modal">
-    <a href="#img2" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-810/grojogan_dhuwur_QWB14EIf1gdt.jpg?updatedAt=1612741599722">
-</div>
-<div id="modal3" class="lightbox-modal">
-    <a href="#img3" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-800,h-800/papuma_USMES_4Oj.jpg?updatedAt=1612108110621">
-</div>
-<div id="modal4" class="lightbox-modal">
-    <a href="#img4" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-810/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881">
-</div>
-<div id="modal5" class="lightbox-modal">
-    <a href="#img5" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764">
-</div>
-<div id="modal6" class="lightbox-modal">
-    <a href="#img6" class="lightbox-close">×</a>
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567">
-</div>
-
-  <p class="ncaption">Pantai Soge, Grojogan Dhuwur di Pacitan · Pantai Papuma di Jember, Pantai Pulau Merah di Banyuwangi · Simpang Tiga Gumul di Kediri dan Telaga Ngebel di Madiun</p>
+  <p class="ncaption">Pantai Soge, Grojogan Dhuwur di Pacitan · Simpang Tiga Gumul di Kediri · Pantai Papuma di Jember, Pantai Pulau Merah di Banyuwangi dan Telaga Ngebel di Madiun</p>
 
 _Photografi landscape_ membutuhkan sumber daya yang lumayan besar, tidak hanya biaya untuk perjalanan (transportasi, akomodasi termasuk penginapan dan makan) dan perangkat melainkan juga tenaga dan fisik yang prima. Apalagi kalo datang ke lokasi yang sulit diakses oleh kendaraan.
 

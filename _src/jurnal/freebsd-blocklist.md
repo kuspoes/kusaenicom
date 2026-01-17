@@ -72,7 +72,7 @@ location      type    proto   owner   name    nfail   duration
 vtnet:ssh        *       *       *       *       3       72h
 ```
 
-dimana perintah ini akan membuat Blocklistd memonitor _port_ SSH di _interface_ `vtnet`, jika sebuah IP gagal login 3 kali, maka IP tersebut akan diblokir selama 72 jam. Pengaturan 72 jam ini bisa saja diubah sesuai keinginan, 2400h untuk 100 hari.
+dimana perintah ini akan membuat Blocklistd memonitor _port_ SSH di _interface_ `vtnet`, jika sebuah IP gagal login 3 kali, maka IP tersebut akan diblokir selama 72 jam. Pengaturan 72 jam ini bisa saja diubah sesuai keinginan, 2400h untuk 100 hari, namun perhatikan juga bahwa semakin lama waktu tunggu maka <mark>**semakin banyak IP yang tercatat dan bisa saja memenuhin table PF sehingga membutuhkan sumber daya lebih untuk memprosesnya**</mark>.
 
 <div class="postnotes pink">
   <p>Setiap perubahan file konfigurasi harus diikuti dengan restart service yang konfigurasinya diubah agar perubahan bisa diterapkan.</p>

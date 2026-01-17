@@ -574,7 +574,7 @@ span.ncaption {
   font-family: Arial, sans-serif;
   font-size: 85%;
   color: #5c6b73;
-  margin-top: -0.2em;
+  margin: 1em 0 2em 0;
   line-height: 1.2;
 }
 
@@ -684,9 +684,10 @@ a:hover {
   background-color: #f2ebfb;
 }
 
-.gallery-masonry a:hover {
-  border: none;
-  background-color: transparent;
+.gallery-masonry a:hover,
+#glightbox a:hover {
+  border: none !important;
+  background-color: transparent !important;
 }
 
 a:link,
@@ -827,6 +828,31 @@ img,
   border-top-left-radius: 0.275em;
   border-top-right-radius: 0.275em;
   margin-bottom: 1.5em;
+}
+
+img.fuck {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.radius-atas {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.radius-bawah {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.radius-kiri-bawah {
+  border-bottom-left-radius: 10px;
+}
+
+.radius-kanan-bawah {
+  border-bottom-right-radius: 10px;
 }
 
 pre.no-border {

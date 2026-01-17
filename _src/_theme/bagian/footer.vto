@@ -7,6 +7,10 @@
             </div>
         </div>
         <script data-goatcounter="https://kusaeni.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
+        {{ if it.lightbox }}
+        <script>const lightbox = GLightbox({ selector: '.gallery a' });
+        const lightbox2 = GLightbox({ selector: '.gal a' })
+        </script>
+        {{ /if}}
 </body>
 </html>

@@ -47,11 +47,6 @@ site
   .use(base_path())
   .use(nunjucks())
   .use(
-    pagefind({
-      ui: { showEmptyFilters: true },
-    }),
-  )
-  .use(
     date({
       formats: {
         id: "dd MMM yyyy",
@@ -91,6 +86,11 @@ if (!isDev) {
       options: {
         minify_css: true,
       },
+    }),
+  );
+  site.use(
+    pagefind({
+      ui: { showEmptyFilters: true },
     }),
   );
 }
@@ -188,7 +188,8 @@ site.process([".html"], (pages) => {
       if (
         img.classList.contains("kus_avatar") ||
         img.classList.contains("layang") ||
-        img.classList.contains("gallery-img")
+        img.classList.contains("gallery-img") ||
+        img.classList.contains("fuck")
       ) {
         continue;
       }
