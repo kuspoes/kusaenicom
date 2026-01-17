@@ -80,17 +80,17 @@ site
   .ignore("README.md");
 
 if (!isDev) {
+  site.use(
+    pagefind({
+      ui: { showEmptyFilters: true },
+    }),
+  );
   site.use(inline()).use(
     minifyHTML({
       extensions: [".html", ".css"],
       options: {
         minify_css: true,
       },
-    }),
-  );
-  site.use(
-    pagefind({
-      ui: { showEmptyFilters: true },
     }),
   );
 }
