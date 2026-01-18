@@ -375,11 +375,14 @@ span.ter {
 }
 
 .relasi {
-  display: flex;
   flex-direction: row;
+  align-items: flex-start;
   width: 80%;
   margin: 2.5em auto;
-  align-items: flex-start;
+  display: flex;
+  background-color: rgb(242, 233, 228, 0.5);
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .relasi .relaimg {
@@ -414,7 +417,7 @@ span.ter {
 
 .juduldkk .author {
   font: normal 80% var(--sans);
-  margin-top: -0.5em;
+  margin-top: -0.1%;
 }
 
 .postnotes {
@@ -576,6 +579,7 @@ span.ncaption {
   color: #5c6b73;
   margin: 1em 0 2em 0;
   line-height: 1.2;
+  width: 100%;
 }
 
 .mtop1 {

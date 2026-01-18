@@ -71,7 +71,6 @@ site
     }),
   )
   .use(readInfo())
-  //.use(title())
   .use(
     sitemap({
       sort: "date=desc",
@@ -185,6 +184,9 @@ site.helper(
 site.process([".html"], (pages) => {
   for (const page of pages) {
     for (const img of page.document!.querySelectorAll("div.content img")) {
+      if (!img.hasAttribute("loading")) {
+        img.setAttribute("loading", "lazy");
+      }
       if (
         img.classList.contains("kus_avatar") ||
         img.classList.contains("layang") ||
@@ -193,10 +195,7 @@ site.process([".html"], (pages) => {
       ) {
         continue;
       }
-      if (!img.hasAttribute("loading")) {
-        img.setAttribute("loading", "lazy");
-      }
-      img.setAttribute("class", "content-image");
+      img.classList.add("class", "content-image");
     }
   }
 });
