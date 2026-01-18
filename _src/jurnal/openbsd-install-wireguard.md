@@ -135,19 +135,19 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
   <p>Ada aplikasi yang bagus untuk membantu menentukan MTU yang sesuai dan optimal, nama aplikasinya <a href="https://github.com/yeya/wire-seek">wire-seek</a>.</p>
   <p>Unduh saja aplikasi ini, sesuaikan dengan OS yang dipakai (ane sesuaikan dengan OS di klien yaitu MacOS). Kemudian jalankan di Terminal/CLI dengan perintah:</p>
   <pre class="language-bash" tabindex="0">  <code class="language-bash">
-       <span class="token shell-symbol important">➜</span> ./wire-seek-darwin-arm64 <span class="token number">10.0.0.1</span>
+       <span class="token shell-symbol important">➜</span> ./wire-seek-darwin-arm64 --tunnel <span class="token number">10.0.0.1</span>
        Wire-Seek: WireGuard MTU Optimizer
        Target: <span class="token number">10.0.0.1</span><span class="token punctuation">(</span><span class="token number">10.0.0.1</span><span class="token punctuation">)</span>
        Protocol: IPv4
        Discovering path MTU <span class="token punctuation">(</span>range: <span class="token number">576-1500</span><span class="token punctuation">)</span><span class="token punctuation">..</span>.
        Results:
          Path MTU: <span class="token number">1500</span> bytes
-         WireGuard MTU: <span class="token number">1440</span> bytes
+         WireGuard MTU: <span class="token number">1500</span> bytes
        Add to your WireGuard config:
-         MTU <span class="token operator">=</span> <span class="token number">1440</span>
+         MTU <span class="token operator">=</span> <span class="token number">1500</span>
     </code>
     </pre>
-  <p>Dengan catatan, perintah ini dijalankan saat klien sudah terhubung dengan server Wireguard. IP 10.0.0.1adalah IP server Wireguard (bisa diganti dengan IP endpoint). Hasilnya adalah MTU dengan nilai <code>1440</code>, nilai ini kemudian ane masukkan di file konfigurasi <code>wg0.conf</code> di server maupun di klien.</p>
+  <p>Dengan catatan, perintah ini dijalankan saat klien sudah terhubung dengan server Wireguard. IP <code>10.0.0.1</code> adalah IP server Wireguard (bisa diganti dengan IP endpoint namun hapus flag <code>--tunnel</code>). Hasilnya adalah MTU dengan nilai <code>1500</code>, nilai ini kemudian ane masukkan di file konfigurasi <code>wg0.conf</code> di server maupun di klien.</p>
 </div>
 
 Simpan dan kembali ke pengaturan wireguard di VPS.
