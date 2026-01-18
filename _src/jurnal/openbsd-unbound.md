@@ -12,6 +12,7 @@ code: true
 favorit: false
 comment: true
 keywords: bsd, openbsd, wireguard,unbound, adsblock, self host, vpn
+templateEngine: vto, md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
   real: https://sok.egois.org/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
@@ -20,6 +21,10 @@ comments:
 **TLDR**: [Unbound](https://man.openbsd.org/unbound) adalah sebuah _tool_ untuk mengvalidasi, menyimpan DNS secara lokal, dan mencari DNS secara rekursif (sampai ke root DNS) yang sudah tersedia di `base` OpenBSD. Gunanya tentu meningkatkan privasi karena tidak mengarahkan langsung _domain resolver_ DNS _provider_ seperti Google DNS (8.8.8.8), Cloudflarfe DNS (1.1.1.1), atau Quad9 (9.9.9.9).
 
 Maka ane perlu memasang _tools_ ini untuk disandingkan dengan Wireguard yang [sebelumnya sudah dipasang](https://kusaeni.com/jurnal/openbsd-install-wireguard/). Selain sebagai DNS Resolver nantinya ane akan pasang _ads blocker_ juga untuk menghalau iklan dan menghemat bandwitdh.
+
+{{ echo |> terkait("Wireguard di OpenBSD", "/jurnal/openbsd-install-wireguard/", "full" )}}
+WireGuard adalah VPN protokol yang modern, sederhana, cepat, dan secure. Dibanding protokol lainnya (OpenVPN, IPSec), WireGuard dirancang dengan filosofi minimalis - konfigurasi lebih mudah, dan performa lebih tinggi. Begini cara pasangnya di OpenBSD.
+{{ /echo }}
 
 ---
 

@@ -13,6 +13,7 @@ favorit: false
 comment: true
 tocx: true
 keywords: bsd, openbsd, wireguard, self host, vpn
+templateEngine: vto, md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
   real: https://sok.egois.org/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
@@ -124,6 +125,13 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
   <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>10.0.0.1/32</code>)</p>
   <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik</p>
 </div>
+
+<div class="postnotes pink">
+  <h4>Wireguard sudah terhubung tapi <mark>tidak bisa akses situs tertentu</mark>?</h4>
+  <p>Tersangkanya jelas MTU.</p>
+  <p>Biasanya sistem akan mengatur MTU secara otomatis, namun untuk beberapa OS tidak mengaturnya di nilai yang sama. Jadi jika di VPS (<i>host</i>) sudah diatur secara manual (misalnya ke nilai 1392) maka di klien harus memakai MTU yang sama. Caranya adalah menambahkan <code>MTU=1392</code> ke dalam blok <code>[Interface]</code>.</p>
+</div>
+
 Simpan dan kembali ke pengaturan wireguard di VPS.
 
 ## Finishing WireGuard di VPS
@@ -223,6 +231,10 @@ $ doas wg show
 </code></pre>
 <p>Seharusnya data <code>peer</code> sudah diperbarui.</p>
 </div>
+
+{{ echo |> terkait("Unbound di OpenBSD", "/jurnal/openbsd-unbound/", "full") }}
+Unbound adalah DNS resolver caching recursive yang open-source, ringan, dan secure. Tapi dia punya kemampuan lain yaitu memblokir iklan yang menjengkelkan. Sempurna untuk digabung dengan Wireguard.
+{{ /echo }}
 
 #### Killswitch
 
