@@ -13,7 +13,7 @@ favorit: false
 comment: true
 keywords: bsd, freebsd, ente, security, tutorial
 draft: false
-tocx: false
+tocx: true
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
   real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
@@ -32,16 +32,22 @@ $ doas sysrc blocklistd_enable="YES"
 $ doas sysrc blocklistd_flags="-r"
 ```
 
+<aside>
+<i>flags</i> <code>-r</code> untuk membuat <i>rules</i> blocklist tetap tersedia setelah reboot.
+</aside>
+
 ini akan mengaktifkan Blocklistd dan akan tersedia setiap sistem dimulai ulang, untuk sistem yang sudah berjalan tinggal perintahkan untuk `start`
 
 ```shell-session
 $ doas service blocklistd start
 ```
 
+#### SSH
+
 Khusus untuk memonitor SSH, maka rubah konfigurasi SSH untuk mengaktifkan Blocklistd.
 
 ```shell-session
-$ doas sysrc sshd_flags="-o UseBlacklistd=yes"
+$ doas sysrc sshd_flags="-o UseBlocklistd=yes"
 ```
 
 atau langsung rubah file konfigurasi `sshd_config.conf` dan _uncomment_ baris `UseBlacklistd yes` (jika masih `no` tinggal ganti ke `yes`). Setelah merubah konfigurasi atau menambahkan baris di `/etc/rc.conf`, layanan SSH harus di _restart_.
@@ -84,7 +90,7 @@ Tapi bagaimana jika ini menjadi pedang bermata dua saat kita sendiri gagal login
 $ doas pfctl -a "blocklistd/22" -t port22 -T delete <IP>
 ```
 
-Ini akan menghapus IP kita dari _table_ `blocklistd` sehingga kita bisa kembali mengakses SSH. Lalu bagaimana cara melihat IP apa saja yang terjaring oleh Blocklistd? Ada perintah khusus untuk itu
+Ini akan menghapus IP kita dari PF sehingga kita bisa kembali mengakses SSH, namun masih akan muncul di dalam table `blocklistd` dan akan dihapus saat masa tunggu _expired_. Lalu bagaimana cara melihat IP apa saja yang terjaring oleh Blocklistd? Ada perintah khusus untuk itu.
 
 ```shell-session
 $ doas blocklistctl dump -abr
@@ -98,6 +104,30 @@ blocklistd        45.78.193.199/32:22   OK      3/3     6h10m2s
 blocklistd       209.15.115.240/32:22   OK      3/3     11h12m9s
 blocklistd        153.99.94.233/32:22           1/3     11h13m45s
 blocklistd       122.55.205.229/32:22   OK      3/3     13h39m36s
+```
+
+<aside>
+  tanda <code>OK</code> menandakan bahwa IP tersebut sudah terblok. Sedangkan yang tidak ada menandakan IP tersebut sudah ditandai namun belum masuk ke dalam table blocklist.
+</aside>
+
+Untuk melihat data IP dengan PF, gunakan perintah seperti ini
+
+```shell-session
+# pfctl -a blacklistd/22 -t port22 -T show
+143.198.161.12
+54.38.52.18
+46.151.182.7
+103.105.176.66
+```
+
+#### FTP
+
+Pada dasarnya Blocklistd akan memblok port's yang sudah diatur di `/etc/blocklistd.conf` salah satunya FTP. Jika memakai FTP sebagai koneksi ke server, maka bentuk pengamanannya adalah dengan menambahkan _flags_ `-B` setelah _command_ FTP.
+
+Pengaturannya bisa di `/etc/inetd.conf` atau langsung di `/etc/rc.conf`. Berikut cara mengaturnya di `rc.conf`
+
+```shell-session
+$ doas sysrc ftpd_flags="-B"
 ```
 
 ### SSH Guard
@@ -162,7 +192,7 @@ $ doas pfctl -t sshguard -T show
 
 <aside>kalo isi table sshguard kosong, berarti belum ada IP yang terjaring. Biasanya dalam perjalanan waktu akan muncul IP yang tertangkap oleh SSH Guard.</aside>
 
-### Cara lainnya (mudah)
+### Cara lainnya (paling mudah)
 
 Daripada ribet dan repot mengatur Blocklist dan atau SSH Guard, ada cara atau trik khusus yang sering ane pakai dan selalu berjalan lancar yaitu merubah _port_ SSH ke _custom port_ acak lainnya. Kenapa? karena bot lebih banyak _scrapping_ dan _brute force_ pada _port_ standar.
 
@@ -182,7 +212,7 @@ $ doas service sshd restart
 $ doas service pf restart
 ```
 
-Aman.
+Aman? mungkin. Tapi bisa saja akan ketahuan saat bot melakukan scan terhadap semua port. Pengalaman ane, dari 100x bot tertangkap ada 1 atau 2 bot yang berusaha terhubung ke _custom port_ ini.
 
 ### Pilih yang mana?
 
