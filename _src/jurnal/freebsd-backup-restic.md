@@ -128,7 +128,7 @@ Rclone sudah selesai saatnya mengatur restic. Seperti di Borgbase maka di `~/.pr
 export RESTIC_REPOSITORY=rclone:koofr:Vaultwarden
 ```
 
-<div class="postnotes">
+<div class="postnotes kuning-gading">
 <p>Jika ingin mempergunakan keduanya (Borgbase maupun Koofr) ane buat 2 variable dengan nama masing - masing <code>$RESTIC_BORG</code> dan <code>$RESTIC_KOOFR</code>. Namun saat operasi restic harus menyertakan flag <code>-r</code> dan nama variable, contohnya seperti ini: </p>
 <pre><code>restic backup -r $RESTIC_KOOFR /path/ke/backup_data</code></pre>
 </div>
