@@ -3,11 +3,11 @@ title: Wireguard di OpenBSD
 ringkasan: "Catatan ane tentang memasang Wireguard di OpenBSD, yang katanya mudah tapi cukup bikin pusing juga"
 date: 2025-11-29
 tags:
-  - kusaeni
   - tutorial
   - openbsd
   - bsd
 kategori: jurnal
+relasi: openbsd
 code: true
 favorit: false
 comment: true

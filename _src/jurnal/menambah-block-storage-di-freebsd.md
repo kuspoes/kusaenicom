@@ -7,6 +7,7 @@ tags:
   - bsd
   - freebsd
 kategori: jurnal
+relasi: freebsd
 code: true
 favorit: false
 templateEngine: vto, md

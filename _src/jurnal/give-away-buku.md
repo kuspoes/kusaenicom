@@ -7,6 +7,7 @@ tags:
   - thoughts
   - kusaeni
 kategori: jurnal
+relasi: kusaeni
 code: false
 favorit: false
 comment: true

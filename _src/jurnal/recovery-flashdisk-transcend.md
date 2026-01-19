@@ -6,6 +6,7 @@ tags:
   - kusaeni
   - tutorial
 kategori: jurnal
+relasi: kusaeni
 code: true
 favorit: false
 comment: true

@@ -10,6 +10,7 @@ tags:
   - tutorial
   - fave
 kategori: jurnal
+relasi: 11ty
 code: true
 keywords: "eleventy, 11ty, json, global data, tutorial, shortcode"
 comment: true
@@ -33,11 +34,10 @@ Hal pertama yang dilakukan adalah membuat basis data dan menyimpannya dalam form
 permalink: /baca/data.json
 ---
 
-[{% for post in collections.baca %} { "title": "{{ post.data.title }}", "date":
-"{{ post.data.date }}", "url": "{{ post.url }}", "ringkasan": "{{
-post.data.ringkasan }}", "penulis": "{{ post.data.penulis }}", "coverImg": "{{
-post.data.coverImg }}", "resensi": "{{ post.data.resensi }}" }{{ '' if loop.last
-else ',' }} {% endfor %}]
+[{% for post in collections.baca %} { "title": "{{ post.data.title }}", "date": "{{ post.data.date
+}}", "url": "{{ post.url }}", "ringkasan": "{{ post.data.ringkasan }}", "penulis": "{{
+post.data.penulis }}", "coverImg": "{{ post.data.coverImg }}", "resensi": "{{ post.data.resensi }}"
+}{{ '' if loop.last else ',' }} {% endfor %}]
 ```
 
 {% endraw %}
@@ -264,9 +264,8 @@ Sesuai namanya _paired_ maka _shortcodes_ ini akan membuat _template tags_ baru 
 {% raw %}
 
 ```html
-{% prelated "11ty Reader Bar", "/jurnal/11tyReaderBar" %} 11ty Reader Bar :
-sebuah plugin shortcodes untuk menampilkan readerbar di eleventy {% endprelated
-%}
+{% prelated "11ty Reader Bar", "/jurnal/11tyReaderBar" %} 11ty Reader Bar : sebuah plugin shortcodes
+untuk menampilkan readerbar di eleventy {% endprelated %}
 ```
 
 {% endraw %}
@@ -304,17 +303,14 @@ Saat di`build` di [Netlify](https://netlify.com) membutuhkan tambahan waktu untu
 4. Jika waktu `build` begitu berharga, maka solusi yang paling mendekati adalah mempergunakan _paired shortcodes_ yang tidak perlu melakukan `fetch` dan proses _query_ data.
 
 ```js
-eleventyConfig.addPairedShortcode(
-  "relatedpair",
-  function (resensi, coverImg, judul, url) {
-    let coverUrl = "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/";
-    return `<div class="flex">
+eleventyConfig.addPairedShortcode("relatedpair", function (resensi, coverImg, judul, url) {
+  let coverUrl = "https://ik.imagekit.io/kusaeni/tr:n-cover/buku/";
+  return `<div class="flex">
             <img class="shadow-md" src="${coverUrl}${coverImg}">
             <div class="flex-1"> <b><a href="${url}" title="${judul}">${judul}</a></b><dd>${resensi} ...</dd>
             </div>
         </div>`;
-  },
-);
+});
 ```
 
  <aside>Sebutlah sebagai kode ketiga</aside>

@@ -5,8 +5,9 @@ date: 2025-11-16
 tags:
   - kusaeni
   - tutorial
-  - Kindle
+  - kindle
 kategori: jurnal
+relasi: kindle
 code: true
 favorit: false
 comment: true

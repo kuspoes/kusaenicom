@@ -10,6 +10,7 @@ tags:
   - openbsd
 keywords: "openbsd, vps, tutorial, jagoan hosting, bsd, linux, cara install, xtermjs"
 kategori: jurnal
+relasi: openbsd
 code: true
 favorit: false
 comment: true

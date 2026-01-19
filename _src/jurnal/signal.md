@@ -6,8 +6,10 @@ update: true
 code: false
 favorit: false
 kategori: jurnal
+relasi: kusaeni
 tags:
   - thoughts
+  - kusaeni
 templateEngine: vto,md
 comment: true
 tocx: true

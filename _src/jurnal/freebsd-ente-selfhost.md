@@ -3,19 +3,19 @@ title: Self host Ente Photos di FreeBSD
 ringkasan: "Ini adalah catatan ane dalam memasang Ente di FreeBSD, tidak mudah dan menjengkelkan. Silakan pakai Linux saja karena mudah dan cocok untuk pemula"
 date: 2026-01-04
 tags:
-  - kusaeni
   - tutorial
   - freebsd
   - bsd
   - selfhost
 kategori: jurnal
+relasi: freebsd
 code: true
 favorit: false
 comment: true
 keywords: bsd, freebsd, ente, selfhost, tutorial
 draft: false
 tocx: true
-lightbox: true
+lightbox: false
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8

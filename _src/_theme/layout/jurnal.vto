@@ -43,8 +43,9 @@
                 {{ /for }}
             </ol>
         </nav>
-        {{ /if }} {{ /if }} {{ content }} {{ /if }}
-
+        {{ /if }} {{ /if }}
+        {{ content }}
+        {{ /if }}
         {{ if footnotes.length }}
         <aside role="note" class="footnotes">
             <h4>Footnotes:</h4>
@@ -60,6 +61,23 @@
             {{ /for }}
         </aside>
         {{ /if }}
+        <hr> </hr>
+        <div id="related_post">
+          <h4 style="margin:0em 0 1em 0; padding:0em;">Artikel terkait <a href="/tags/{{ relasi }}">#{{ relasi }}</a></h4>
+          {{ set relasih = search.pages(`${ relasi }`, `date=desc`, 6)}}
+          {{ if relasih.length > 0 }}
+          {{ for rela of relasih }}
+          <div class="related_post_list">
+            <span class="related_post_date">{{ rela.date |> date('id') }}</span>
+            <a class="related_post_link" href="{{ rela.url }}">
+            <h4>{{ rela.title }}</h4></a>
+            <p>{{ rela.ringkasan }}</p>
+            </a>
+          </div>
+          {{ /for }}
+          {{ /if }}
+
+        </div>
         <hr></hr>
         {{ if it.comments?.src }}
         <div class="comments-section">

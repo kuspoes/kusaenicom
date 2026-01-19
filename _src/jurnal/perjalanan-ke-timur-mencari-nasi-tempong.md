@@ -8,6 +8,8 @@ tags:
   - kereta
   - tempong
 date: 2025-01-29
+kategori: jurnal
+relasi: kuliner
 templateEngine: vto, md
 og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
 comment: true

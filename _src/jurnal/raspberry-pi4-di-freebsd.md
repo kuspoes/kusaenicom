@@ -7,6 +7,8 @@ tags:
   - fave
   - freebsd
 date: 2024-05-18
+kategori: jurnal
+relasi: freebsd
 code: true
 tocx: true
 favorit: true

@@ -8,6 +8,7 @@ tags:
   - tutorial
   - gotosocial
 kategori: jurnal
+relasi: lume
 code: true
 favorit: false
 comment: true
@@ -62,8 +63,7 @@ Kemudian di lokasi yang hendak ditampilkan mastodon comment’s (punya saya di d
   <mastodon-comments
     src="{{ it.comments.src }}"
     cache="{{ it.comments.cache ?? 60 }}"
-    class="comments"
-  >
+    class="comments">
     {{ metadata.comments.empty }}
   </mastodon-comments>
 </div>
@@ -203,10 +203,7 @@ Deno.serve(app.fetch);
 Kemudian di _file_ `comments.js` saya rubah fungsi `fetch` menjadi sebagai berikut:
 
 ```js
-const data = await Mastodon.fetch(
-  new URL(`https://sepoi.deno.dev/gts/${id}`),
-  this,
-);
+const data = await Mastodon.fetch(new URL(`https://sepoi.deno.dev/gts/${id}`), this);
 ```
 
 Semoga dengan perubahan ini bisa menghilangkan masalah XSS/Inject script.

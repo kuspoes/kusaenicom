@@ -5,8 +5,9 @@ date: 2025-06-26
 tags:
   - kusaeni
   - kehidupan
-  - Kindle
+  - kindle
 kategori: jurnal
+relasi: kindle
 code: false
 favorit: false
 comment: true

@@ -6,6 +6,7 @@ tags:
   - kusaeni
   - thoughts
 kategori: jurnal
+relasi: kusaeni
 favorit: false
 comment: true
 engine: md, njk

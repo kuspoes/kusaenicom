@@ -8,6 +8,7 @@ tags:
   - 11ty
   - tutorial
 kategori: jurnal
+relasi: 11ty
 code: true
 favorit: false
 comment: false
@@ -70,12 +71,10 @@ Kemudian _edit_ CSS yang dimaksud. Dalam hal ini adalah baris berikut :
 <!-- reader bar -->
 <div
   id="readerBarContainer"
-  style="height:${height};width:100%;background-color:${bgColor};position:fixed;top:2px;left:0;z-index:100;transition:0.2s;"
->
+  style="height:${height};width:100%;background-color:${bgColor};position:fixed;top:2px;left:0;z-index:100;transition:0.2s;">
   <div
     id="readerBar"
-    style="height:${height};width:0;background-color:${fillColor};position:fixed;top:2px;left:0;z-index:200;transition:0.2s;"
-  ></div>
+    style="height:${height};width:0;background-color:${fillColor};position:fixed;top:2px;left:0;z-index:200;transition:0.2s;"></div>
 </div>
 ```
 

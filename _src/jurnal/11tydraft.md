@@ -6,6 +6,7 @@ tags:
   - 11ty
   - node
 kategori: jurnal
+relasi: 11ty
 code: true
 favorit: false
 comment: false

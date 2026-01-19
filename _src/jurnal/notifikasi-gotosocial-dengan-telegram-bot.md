@@ -7,6 +7,7 @@ tags:
   - telegram
   - deno
 kategori: jurnal
+relasi: gotosocial
 code: true
 favorit: false
 templateEngine: vto, md

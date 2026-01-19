@@ -3,10 +3,10 @@ title: Mengatur Wifi berdasarkan lokasi atau SSID di MacOs
 ringkasan: "Trik kecil yang sangat membantu jika kamu sering berganti - ganti Wi-Fi"
 date: 2025-09-19
 tags:
-  - kusaeni
-  - MacOs
+  - macos
   - tutorial
 kategori: jurnal
+relasi: macos
 code: true
 favorit: true
 comment: true

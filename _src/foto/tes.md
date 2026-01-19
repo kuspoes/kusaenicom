@@ -3,6 +3,7 @@ layout: layout/foto.vto
 title: Kusaeni suka fotografi
 keywords: fotografi, landscape, kusaeni, @kusaeni, ig @kusaeni
 kategori: fotografi
+draft: true
 lightbox: true
 ---
 

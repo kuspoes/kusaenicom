@@ -3,13 +3,13 @@ title: Backup data dengan Restic dan Rclone
 ringkasan: "Sedia backup sebelum hujan badai datang"
 date: 2025-12-21
 tags:
-  - kusaeni
   - tutorial
   - restic
   - rclone
   - bsd
   - freebsd
 kategori: jurnal
+relasi: freebsd
 code: true
 favorit: false
 comment: true

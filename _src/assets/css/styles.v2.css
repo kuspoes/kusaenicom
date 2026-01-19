@@ -1096,6 +1096,64 @@ hr::after {
   margin-top: 0.5rem;
 }
 
+#related_post p {
+  font-family: var(--serif);
+  font-size: 1em;
+  margin: 0.1em 0 1em 0;
+  color: rgb(73, 80, 87, 1);
+}
+
+span.related_post_date {
+  font-family: var(--sans);
+  font-size: 0.8em;
+}
+
+.related_post_list h4 {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+h4.related_post_info {
+  margin-top: 0em;
+}
+
+.related_post_list p {
+  margin: 0 0 0em 0;
+  font-size: 0.9em;
+}
+
+#related_post {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  width: 550px;
+}
+
+#related_post .related_post_list p {
+  width: auto;
+}
+
+#related_post p.lebih-banyak {
+  margin-top: 2em;
+  font-family: var(--sans);
+  font-size: 0.9em;
+}
+
+a.related_post_link {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.related_post_list {
+  padding: 0.2em 0.9em;
+  transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.related_post_list:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 899px) {
   * {
     margin: 0em;

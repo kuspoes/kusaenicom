@@ -6,8 +6,10 @@ tags:
   - jurnal
   - bsd
   - tutorial
+  - freebsd
 keywords: "freebsd, vps, tutorial bsd, linux, lupa password"
 kategori: jurnal
+relasi: freebsd
 code: true
 favorit: false
 comment: true

@@ -8,6 +8,7 @@ tags:
   - bsd
   - security
 kategori: jurnal
+relasi: freebsd
 code: true
 favorit: false
 comment: true

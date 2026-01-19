@@ -3,11 +3,11 @@ title: Unbound di OpenBSD
 ringkasan: "DNS Resolver yang cepat, memperkuat privasi sekaligus memblok iklan"
 date: 2025-12-07
 tags:
-  - kusaeni
   - tutorial
   - openbsd
   - bsd
 kategori: jurnal
+relasi: openbsd
 code: true
 favorit: false
 comment: true

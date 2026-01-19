@@ -7,7 +7,9 @@ date: 2021-05-16
 update: true
 tags:
   - thoughts
+  - kusaeni
 kategori: jurnal
+relasi: kusaeni
 code: false
 favorit: false
 templateEngine: vto, md

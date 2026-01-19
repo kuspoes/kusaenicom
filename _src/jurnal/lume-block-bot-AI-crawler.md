@@ -7,6 +7,7 @@ tags:
   - deno
   - tutorial
 kategori: jurnal
+relasi: lume
 code: true
 favorit: false
 comment: true

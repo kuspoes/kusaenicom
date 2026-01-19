@@ -7,6 +7,7 @@ tags:
   - kusaeni
   - travelling
 date: 2024-06-15T16:00:13.000Z
+relasi: kuliner
 og_images: https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_sgr?updatedAt=1718442166614
 comment: true
 ---
