@@ -59,7 +59,6 @@ body {
   border: 1px solid #fb6f92;
   border-radius: 0.376em;
   padding: 10px;
-  background-color: #ffe5ec;
 }
 
 .postitle {
@@ -1144,12 +1143,14 @@ a.related_post_link {
   padding: 0 !important;
 }
 
-.related_post_list {
+.related_post_list,
+.postlist {
   padding: 0.2em 0.9em;
   transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.related_post_list:hover {
+.related_post_list:hover,
+.postlist:hover {
   background-color: rgba(229, 229, 229, 0.4);
   border-radius: 10px;
 }
