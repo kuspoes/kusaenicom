@@ -31,11 +31,10 @@ style: "tentang.css"
             akun Facebook membuat saya masih memiliki
             akun ini. Tapi saat ini <a href="https://facebook.com/kusaeni">sangat tidak aktif</a>. Sudah saya non-aktifkan.
         </li>
-        <li>
-            <b>Mastodon</b>, akun santai di Fediverse bisa diikuti di <a href="https://sok.egois.org/@poes">@poes@sok.egois.org</a>.
+        <li><b>Mastodon</b>, akun santai di Fediverse bisa diikuti di <a href="https://sok.egois.org/@poes">@poes@sok.egois.org</a>.
         </li>
     </ul>
-    <p class="sidenote">Pemuja LGBT, anjing zionis israel, dan liberal celup dilarang <i>ikuti</i> akun ini.</p>
+    <div class="postnotes pink"><p>Pemuja LGBT, anjing zionis israel, dan liberal celup dilarang <i>ikuti</i> akun ini.</p></div>
 
 <p>Tidak ada akun <span class="text-blue-600">linkedIn</span> karena saya tidak punya portofolio yang menarik untuk ditampilkan. Dan oh iya  saya adalah seorang <span class="font-semibold text-red-600">Gooner's</span>  meski sekedar karbitan.</p>
 
@@ -118,7 +117,7 @@ style: "tentang.css"
                 (<em>mobile</em>),
             </li>
             <li>Luminar 3 dari Skylum. Saya masih punya 3 akun untuk Luminar 3 bagi yang berminat silakan hubungi saya, <del>harga murah ada untuk anda</del> gratis (terbatas). Lisensi resmi dari Skylum.</li>
-            <div class="postnotes">
+            <div class="postnotes kuning-gading">
               <p>Skylum sudah mengeluarkan <a href="https://skylum.com/luminar" title="Luminar 4">Luminar 4</a>. Versi terbaru dengan banyak tambahan fitur tersedia. Saya sendiri sampai sekarang masih belum menguasai Luminar 3 dengan baik. Kadang terasa <i>mubadzir</i> membelinya.
             </p>
             <p>

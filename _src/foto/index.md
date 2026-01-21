@@ -79,4 +79,4 @@ Proses _editing_ atau _workflow_ lebih sering melakukan **cropping**, **adjust c
 
 Hasil _photo manipulation_ memang terlihat indah dan eksentrik, namun untuk _traveller_ tidak bisa dijadikan acuan. Tidak kurang saya sering tertipu dengan foto - foto di Instagram yang terlihat luar biasa namun saat didatangi <mark>ternyata hasilnya 0 besar!</mark>. Saya tidak ingin menipu _followers_ saya dengan gambar yang sudah di manipulasi.
 
-Kunjungi akun Instagram saya di Instagram <a class="font-sans font-semibold text-red-600 no-underline hover:no-underline" href="https://instagram.com/kusaeni">@kusaeni</a>, untuk melihat lebih banyak foto - foto Landscape</strong> yang sudah saya potret dan jangan lupa untuk <strong>follow</strong>!.
+Kunjungi akun Instagram saya di Instagram <a class="font-sans font-semibold text-red-600 no-underline hover:no-underline" href="https://instagram.com/kusaeni">@kusaeni</a> dan <a href="https://pixelfed.social/poes">@poes@pixelfeed</a> untuk melihat lebih banyak foto - foto Landscape</strong> yang sudah saya potret dan jangan lupa untuk <strong>follow</strong>!.

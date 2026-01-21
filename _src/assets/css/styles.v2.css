@@ -274,7 +274,7 @@ th {
 
 img.kus-svg {
   border: none !important;
-  width: 20%;
+  width: 16%;
   height: auto;
   opacity: 0.8;
 }
@@ -533,8 +533,16 @@ ol li {
 }
 
 .content ul li {
-  list-style-type: disc;
   margin-bottom: 0.2em;
+}
+
+.content ul li:before {
+  content: "‒";
+  color: #ccc;
+  font-weight: 600;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1em;
 }
 
 .space-y-3 {
@@ -688,7 +696,7 @@ h4 {
 
 a:hover {
   border-bottom: 1px solid #001219;
-  background-color: #f2ebfb;
+  /* background-color: #f2ebfb; */
 }
 
 .gallery-masonry a:hover,
@@ -860,6 +868,15 @@ img.fuck {
 
 .radius-kanan-bawah {
   border-bottom-right-radius: 10px;
+}
+
+.sephia {
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+}
+
+.sephia:hover {
+  filter: grayscale(0%);
 }
 
 pre.no-border {
