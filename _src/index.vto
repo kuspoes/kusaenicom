@@ -9,7 +9,7 @@ layout: layout/content.vto
 <div id="search"></div>
 </div>
 		{{ for post of search.pages("type=post", "date=desc") }}
-		<div class="postlist {{ if post.favorit }} fave {{ /if }}">
+		<div class="postlist {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">

@@ -26,6 +26,15 @@ Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling 
 
 Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur di FreeBSD yang berguna untuk membuka atau menutup sebuah port dengan kriteria tertentu. Apalagi jika masih mempergunakan port standar untuk SSH yaitu di port 22. Saat selesai install FreeBSD (di VPS), tak lama kemudian akan bermunculan para hiu mencoba _bruteforce_ akses SSH, dengan pelbagai macam cara dimana IP yang sering sekali mencoba berasal dari Asia. Maka Blocklistd ini sangat berguna untuk menghalau dan memblokir alamat IP tersebut untuk mengakses SSH. Secara fungsi mirip dengan [fail2ban](https://www.fail2ban.org/) yaitu memblokir alamat IP yang gagal login SSH dengan rentang waktu tertentu.
 
+<div class="postnotes">
+  <p>Perubahan nama dari Blacklistd ke Blocklistd ini mengikuti dari perubahan yang dilakukan oleh NetBSD. FreeBSD mengimpor fungsi ini dari NetBSD, sehingga saat nama berubah maka FreeBSD mengikuti untuk menjaga kompatibilitas. Meski begitu ada kabar menyebutkan bahwa perubahan ini untuk menghindari kesan rasis kepada sekelompok komunitas.</p>
+  <p>Beberapa istilah yang dirubah di antaranya:</p>
+  <ul>
+    <li><b>Blacklistd</b> (daftar hitam) menjadi <b>Blocklistd</b> (daftar cekal)</li>
+    <li><b>Whitelist</b> (daftar putih) menjadi <b>Allowlist</b> (daftar diijinkan)</li>
+  </ul>
+</div>
+
 Blocklistd sudah ada di dalam FreeBSD, tidak perlu memasangnya lagi, dan tinggal mengaktifkan saja.
 
 ```shell-session

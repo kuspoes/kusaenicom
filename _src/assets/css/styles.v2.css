@@ -61,6 +61,19 @@ body {
   padding: 10px;
 }
 
+.draft {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(230, 57, 70, 0.6) 0,
+    rgba(230, 57, 70, 0.6) 10px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 71px 71px;
+  border: 1px solid rgba(230, 57, 70, 1);
+  border-radius: 10px;
+}
+
 .postitle {
   width: 30em;
   margin-left: 1em;
@@ -427,7 +440,8 @@ span.ter {
 }
 
 .postnotes p,
-.postnotes ol li {
+.postnotes ol li,
+.postnotes ul li {
   font-weight: 400;
   font-family: var(--sans);
   font-size: 0.8em;
@@ -467,7 +481,8 @@ span.ter {
 }
 
 .hijau {
-  background-color: rgba(167, 201, 87, 0.3);
+  background-color: rgba(167, 201, 87, 0.2);
+  color: #081c15;
 }
 
 .merah {
@@ -896,7 +911,8 @@ pre[class*="language-"] {
 }
 
 .postnotes pre {
-  background: transparent !important;
+  background: 0 0 !important;
+  border: 2px solid #1b4332;
 }
 
 /* media */

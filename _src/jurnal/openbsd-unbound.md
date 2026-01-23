@@ -83,7 +83,7 @@ Dalam banyak kasus yang ane temukan, `nameserver 127.0.0.1` tidak ada di dalam f
 $ doas echo 'nameserver 127.0.0.1' > /etc/resolv.conf
 ```
 
-secepatnya setelah perintah ini, beri status _imuttable_ ke file ini agar `dhclient` ga bisa balikin isinya ke semula.
+secepatnya setelah perintah ini, beri status _imuttable_ ke file ini agar `dhclient` ga bisa balikin isinya ke semula (jika dhclient tidak boleh dinonaktifkan karena dipakai untuk mendapatkan IP dari DHCP Server).
 
 ```shell-session
 $ doas chflags schg /etc/resolv.conf
@@ -176,11 +176,11 @@ kusaeni.com.            12014   IN      A       34.120.54.55
 
 Alhamdulillah Unbound sudah berjalan, bisa dicek di baris `;; SERVER: 127.0.0.1#53(127.0.0.1)` dimana _resolver_ sekarang memakain IP `127.0.0.1` sebagai DNS _resolver_ utama.
 
-Kemudian ane sambungkan MacOS (wireguard klien) ke server namun sebelum itu ane rubah pengaturan DNS di Wireguard agar mengarah ke _10.0.0.1_ yaitu DNS server Wireguard.
+Kemudian ane sambungkan MacOS (wireguard klien) ke server namun sebelum itu ane rubah pengaturan DNS di Wireguard agar mengarah ke `10.0.0.1` yaitu DNS server Wireguard.
 
 ![Wireguard Client Config, change DNS Resolver IP](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Unbound/SCR-20251207-Unbound_bzEPcBfMq.png)
 
-di terminal dicoba untuk tes _resolver_
+di terminal (server) dicoba untuk tes _resolver_
 
 ```shell-session
 ➜  ~ dig kusaeni.com
@@ -261,6 +261,6 @@ server:
     include: "/var/unbound/etc/include/adblock.conf"`
 ```
 
-simpan dan jalankan lagi `unbound-checkconf` untuk mengvalidasi konfigurasi. Jika tidak ada masalah, _reload_ Unbound dan test dengan mengunjungi situs seperti detik.com yang banyak iklannya itu dan cek apakah iklan - iklannya sudah hilang atau berkurang. Ya berkurang karena ada beberapa iklan yang di-_host_ di internal situs sehingga tidak terdeteksi oleh Unbound. Tapi ini wajar, karena jika terdeteksi di dalam adblock maka bisa saja malah situs tersebut yang tidak akan bisa dibuka karena akan diblok oleh Unbound. Ga masalah karena 99% iklan pasti akan terfilter oleh Adblok dan Unbound.
+simpan dan jalankan lagi `unbound-checkconf` untuk mengvalidasi konfigurasi. Jika tidak ada masalah, _reload_ Unbound dan test dengan mengunjungi situs seperti detik.com yang banyak iklannya itu dan cek apakah iklan - iklannya sudah hilang atau berkurang. Ya berkurang karena ada beberapa iklan yang di-_host_ di internal situs sehingga tidak terdeteksi oleh Unbound. Tapi ini wajar, karena jika terdeteksi di dalam adblock maka bisa saja malah situs tersebut yang tidak akan bisa dibuka karena akan diblok oleh Unbound. Ga masalah karena 99% iklan pasti akan terfilter oleh Adsblok dan Unbound.
 
-Agar maksimal, ane masih pakai µBlock Origin untuk bantu _define_ iklan yang di-_host_ di lokal tersebut.
+Contoh lain adalah ada situs yang pakai banner iklan dan banner tersebut disimpan di blogspot.com/blogger.com, sehingga pasti akan tetap muncul kecuali domain blogspot.com/blogger.com diblok. Resikonya maka domain tersebut tidak akan bisa dibuka lagi. Maka disini µBlock Origin bisa bermanfaat untuk memblok elemen tertentu tanpa memblok domain.
