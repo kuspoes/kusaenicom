@@ -370,6 +370,11 @@ $ aws s3api put-bucket-cors \
 --cors-configuration file://home/poes/cors.json
 ```
 
+5. Ente Desktop
+   Meski ada web GUI, memasang Ente Desktop app adalah pilihan yang lebih baik karena pengalaman ane saat pakai web gui sebagian besar media (terutama video) yang ane unggah tidak bisa di*generate thumbnail*nya atau _frame_ pertama muncul warna gelap/hitam. Namun masalah ini tidak terjadi saat ane pakai Ente Desktop app.
+
+Untuk memasang tinggal unduh saja aplikasinya di [halaman Ente Desktop](https://ente.io/download/) atau untuk versi termutakhir bisa lewat [Repo Github Ente Desktop](https://github.com/ente-io/ente/tree/main/desktop). Satu - satunya kelemahan yang ane ga suka adalah Ente Desktop app dibangun dengan electron.
+
 ---
 
 #### Linux
