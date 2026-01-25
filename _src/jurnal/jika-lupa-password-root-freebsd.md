@@ -42,7 +42,7 @@ devfs on /dev (devfs)
 
 ![freebsd boot loader options](https://ik.imagekit.io/hjse9uhdjqd/jurnal/freebsd_lupa_password/bsdinstall-newboot-loader-menu_dy1DYb2c2.png?updatedAt=1735196565380)
 
-<aside class="image">Gambar diambil dari FreeBSD Handbook</aside>
+<p class="ncaption">Gambar diambil dari FreeBSD Handbook</p>
 
 Mudah bukan? _but wait_ ini artinya orang lain bisa dong dengan mudah masuk ke PC dengan _password_ `root`. Jawabannya adalah iya, sehebat apapun *software*nya kalo penyerang mendapatkan akses fisik ke PC maka hasilnya akan sama saja.
 

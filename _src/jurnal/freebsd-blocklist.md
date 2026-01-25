@@ -229,3 +229,61 @@ Aman? mungkin. Tapi bisa saja akan ketahuan saat bot melakukan scan terhadap sem
 Jika kamu pengguna NetBSD maka Blocklist sudah ada di dalam sistem dan sudah jalan dengan baik, sedangkan kalo pakai FreeBSD harus mengaktifkannya secara manual. SSH Guard bukanlah aplikasi _native_ di dalam sistem, perlu memasangnya dulu tapi kelebihannya tersedia untuk pelbagai OS (di luar BSD). Selain itu SSH Guard juga punya kelebihan untuk monitor banyak _ports_, jadi jika di sistem punya banyak _service_ yang perlu dimonitor SSH Guard cocok sekali dipakai. Namun jika cuma port SSH atau FTP, maka Blocklist sudah lebih dari cukup.
 
 Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi bot semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
+
+#### Update: Pengamanan SSH lanjutan
+
+Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Salah dua cara paling umum dan disarankan adalah tidak memberikan akses untuk login ke SSH dengan _password_ melainkan dengan SSH Pubkey ID dan tidak memberikan ijin _user_ root untuk _login_ dengan SSH.
+
+<ol>
+<li>Login dengan SSH Public Key</li>
+<ul>
+<li>Buat public key, katakanlah hendak membuat public key khusus untuk akses ke SSH</li>
+</ul>
+<pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">ssh-keygen -t ed25519 -C "ssh-FreeBSD"</span></span>
+</code></pre>
+<p>ikuti semua prompt yang muncul sampai selesai. Setelah selesai seharusnya file public key sudah tersedia di <code>~/.ssh/id_ed25519.pub</code></p>
+<pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">cat ~/.ssh/id_ed25519.pub</span></span>
+</code></pre>
+<p>akan muncul baris teks kode acak dengan awalan <code>SSH-ed25519</code></p>
+<ul>
+<li>Salin file <code>id_ed25519.pub</code> ke VPS</li>
+</ul>
+<pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">ssh-copy-id -i ~/.ssh/id_ed25519.pub poes@oyenBSD</span></span>
+</code></pre>
+<p>ikuti prompt dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
+</ol>
+
+2. Menolak root login lewat SSH.
+   Para penyerang biasanya akan memakai _username_ root untuk melakukan serangan, jadi membatasi akses root untuk login ke SSH adalah pilihan yang tepat. Caranya adalah dengan mengubah konfigurasi `sshd_config`.
+
+```shell-session
+$ doas vim /etc/ssh/sshd_config
+---
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitEmptyPasswords no
+KbdInteractiveAuthentication no
+---
+```
+
+Di `sshd_config.conf` cari baris konfigurasi di atas, hilangkan tanda `#` atau komentar, kemudian sesuaikan isinya seperti baris - baris di atas. Penjelasannya sebagai berikut:
+
+<div class="ragu">
+
+| Isi konfig                        | Keterangan                                             |
+| :-------------------------------- | :----------------------------------------------------- |
+| `PermitRootLogin no`              | Baris ini menonaktifkan akun `root` untuk akses SSH    |
+| `PasswordAuthentication no`       | Bikin SSH tidak pakai password tapi pakai cara lain    |
+| `PubkeyAuthentication yes`        | Cara lain yang dipakai yaitu pakai SSH public key      |
+| `PermitEmptyPasswords no`         | Password ga boleh kosong dong, ya kan?                 |
+| `KbdInteractiveAuthentication no` | Ga wajib, tapi sebaiknya diatur. Ane juga kurang paham |
+
+</div>
+
+Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah \_password dari file `id_ed25519.pub` yang sebelumnya ane buat.
+
+```shell-session
+➜  ~ ssh poes@oyenBSD
+Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
+```

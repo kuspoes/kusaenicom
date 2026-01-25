@@ -1,7 +1,7 @@
 ---
 layout: layout/content.vto
-title: 'Rating'
-ringkasan: 'Apa arti tanda bintang dan atau angka untuk rating buku?'
+title: "Rating"
+ringkasan: "Apa arti tanda bintang dan atau angka untuk rating buku?"
 date: 2020-08-17
 favorit: false
 kategori: buku

@@ -129,7 +129,7 @@ aside {
 }
 
 aside.image {
-  margin-top: -1.6em;
+  margin-top: -1.5em;
   display: block;
 }
 
@@ -258,6 +258,32 @@ tr {
 th {
   text-align: center;
   font-weight: 800;
+}
+
+.ragu thead tr {
+  background-color: rgba(94, 84, 142, 1);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ragu th,
+.ragu td {
+  padding: 12px 15px;
+}
+
+.ragu tbody tr {
+  border-bottom: 1px solid #231942;
+}
+
+/* Zebra striping - baris genap warna abu tipis */
+.ragu tbody tr:nth-of-type(even) {
+  background-color: rgba(224, 177, 203, 0.2);
+}
+
+.ragu tbody tr:last-of-type {
+  border-bottom: 2px solid #231942;
+  border-radius: 5px;
 }
 
 .bintang {
@@ -539,12 +565,18 @@ p.sidenote {
 }
 
 ol,
-ul {
+ul,
+ol li ul {
   margin-left: 1em;
 }
 
 ol li {
   list-style-type: decimal;
+}
+
+ol li::marker {
+  font-family: var(--sans);
+  font-weight: 600;
 }
 
 .content ul li {
@@ -913,6 +945,10 @@ pre[class*="language-"] {
 .postnotes pre {
   background: 0 0 !important;
   border: 2px solid #1b4332;
+}
+
+td code {
+  font-size: 0.9em;
 }
 
 /* media */
