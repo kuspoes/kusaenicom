@@ -6,6 +6,7 @@ date: 2021-02-14
 ringkasan: "Awal mula petaka yang dinanti"
 keywords: "Janur Ireng, Sewu Dino, Ranjat Kembang, Simpleman, SimpleM81378523, Horor, Santet, Trah Pitu, KKN Desa Penari, Kuncoro, Sabdo"
 coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/janurIreng_aSww35pkIg4.jpg"
+og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/janurIreng_aSww35pkIg4.jpg"
 penulis: "Simpleman"
 genre:
   - Horror
