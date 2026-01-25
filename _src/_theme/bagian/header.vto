@@ -15,6 +15,11 @@
         <link rel="stylesheet" href="/assets/css/prism.min.css">
         {{ /if }}
         <link rel="stylesheet" href="/assets/css/styles.v2.css" inline>
+        {{ if it.inlineStyle }}
+        <style>
+        {{ it.inlineStyle }}
+        </style>
+        {{ /if }}
         {{ if it.style }}
         <link rel="stylesheet" href="/assets/css/posts/{{ it.style }}" inline>
         {{ /if }}

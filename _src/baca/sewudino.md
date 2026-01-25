@@ -26,6 +26,7 @@ tags:
   - Simpleman
 comment: true
 templateEngine: vto,md
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(0, 0, 0, 0.2) 98%) !important;}"
 ---
 
  <div class="info">

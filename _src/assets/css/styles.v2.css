@@ -346,7 +346,6 @@ img.galeri {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(241, 250, 238, 1) 98%);
 }
 

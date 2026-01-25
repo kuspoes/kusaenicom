@@ -25,6 +25,7 @@ tags:
   - misteri
   - Soji Shimada
 templateEngine: vto,md
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(69, 123, 157, 0.3) 98%) !important;}"
 comments: true
 ---
 

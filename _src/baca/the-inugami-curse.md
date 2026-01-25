@@ -1,21 +1,21 @@
 ---
 type: post
 layout: layout/baca.vto
-title : 'The Inugami Curse'
+title: "The Inugami Curse"
 date: 2024-12-16
 update: false
-ringkasan: 'Kutukan yang menimpa keluarga Inugami, saat waris dibacakan, satu persatu akan mati'
-keywords: 'Seishi Yokomizo, Kindaichi, Detektif, Inugami, Jepang, Misteri, Novel'
-coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/buku/TheInugamiCurses_aLfIHO09R.jpeg?updatedAt=1734352464431'
-penulis: 'Seishi Yokomizo'
+ringkasan: "Kutukan yang menimpa keluarga Inugami, saat waris dibacakan, satu persatu akan mati"
+keywords: "Seishi Yokomizo, Kindaichi, Detektif, Inugami, Jepang, Misteri, Novel"
+coverImg: "https://ik.imagekit.io/hjse9uhdjqd/buku/TheInugamiCurses_aLfIHO09R.jpeg?updatedAt=1734352464431"
+penulis: "Seishi Yokomizo"
 genre:
-    - Thriller
-    - Mistery
-format: 'Papperback - 320 halaman'
-bahasa: 'Bahasa Inggris'
-isbn: '9781782275039'
+  - Thriller
+  - Mistery
+format: "Papperback - 320 halaman"
+bahasa: "Bahasa Inggris"
+isbn: "9781782275039"
 tahun: 2020
-resensi: 'Tahun 1940an di Jepang, Pemimpin klan Inugami yang kaya raya meninggal, anak turunnya tidak sabar untuk membaca surat warisannya. Namun ternyata yang muncul adalah sebuah pembunuhan berantai dan kengerian luar biasa. Detektif Kindaichi harus bekerja keras untuk menemukan siapa yang menjadi tersangka pembunuhan dan rahasia kelam dibalik keluarga Inugami.'
+resensi: "Tahun 1940an di Jepang, Pemimpin klan Inugami yang kaya raya meninggal, anak turunnya tidak sabar untuk membaca surat warisannya. Namun ternyata yang muncul adalah sebuah pembunuhan berantai dan kengerian luar biasa. Detektif Kindaichi harus bekerja keras untuk menemukan siapa yang menjadi tersangka pembunuhan dan rahasia kelam dibalik keluarga Inugami."
 rating: 5
 beli: https://pushkinpress.com/book/the-inugami-curse/
 dimana: Pushkinpress
@@ -26,6 +26,7 @@ tags:
   - Seishi Yokomizo
 kategori: buku
 templateEngine: md
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(244, 213, 141, 0.2) 98%) !important;}"
 comment: true
 ---
 
@@ -36,6 +37,7 @@ Novelis yang wafat pada 28 Desember 1981 sukses menciptakan tokoh Kosuke Kindaic
 Pertama kali tahu tentang Seishi setelah ane menyelesaikan membaca [The Tokyo Zodiac Murder's](https://kusaeni.com/baca/tokyozodiacmurders/), tertarik dengan novel Jepang membuat saya menyempatkan waktu untuk _browsing_ tentang para novelisnya dan munculah beberapa rekomendasi novel - novel klasik Jepang dengan Seishi berada di urutan paling atas.
 
 ## Keluarga Inugami
+
 Beberapa bulan setelah Perang Dunia II, Detektif Kindaichi datang ke sebuah kota di pedalaman karena diundang oleh seorang pengacara dari keluarga ternama di kota tersebut yang Sahei Inugami (kepala keluarga) baru saja meninggal. Si pengacara yakin bahwa surat wasiat dari mendiang Sahei akan menyebabkan _chaos_ dan perebutan hak waris.
 
 Kindaichi kemudian menginap di penginapan yang terletak di pinggi danau, dimana _mansion_ keluarga Inugami berapa di seberang danau. Belum genap 1 hari Kindaichi menginap, sang pengacara ditemukan tewas di dalam penginapan saat menunggu pertemuannya dengan Kindaichi.
@@ -55,11 +57,12 @@ Masalah semakin rumit saat datang pihak lain, seorang tentara misterius yang bar
 Kindaichi harus bekerja keras untuk menemukan siapa yang menjadi tersangka pembunuhan dan rahasia kelam dibalik keluarga Inugami.
 
 ## Catatan
+
 Saya merasa bahwa karya Seishi yang ini adalah karya terbaik dari beliau yang pernah saya baca[^1] , jauh lebih baik daripada novel pertamanya The Honjin Murder.
 
 Meskipun sejak beberapa _chapter_ saya sudah bisa menebak beberapa karakter tapi di akhir ternyata beberapa tebakan saya salah, ini terasa menyenangkan.
 
-Novel ini adalah sebuah _classic thriller crime_ yang sangat luar biasa, tidak heran jika kemudian tokoh Kindaichi menjadi populer sampai sekarang. Kindaichi yang terlihat kumuh, kotor, dan ketombean ini menjadi _trend setter_  bagi tokoh - tokoh kelihatan bodoh tapi cerdas di novel dan _manga_ Jepang di kemudian hari.
+Novel ini adalah sebuah _classic thriller crime_ yang sangat luar biasa, tidak heran jika kemudian tokoh Kindaichi menjadi populer sampai sekarang. Kindaichi yang terlihat kumuh, kotor, dan ketombean ini menjadi _trend setter_ bagi tokoh - tokoh kelihatan bodoh tapi cerdas di novel dan _manga_ Jepang di kemudian hari.
 
 Kembali ke novel, bagaimana sang pelaku melakukan pembunuhan benar - benar _mind blowing_ mengingat kondisi fisik dari si pelaku. Menurut saya triknya jauh lebih rumit dan hebat dibandingkan trik di The Honjin Murder (menjadikan novel ini menjadi biasa saja).
 
@@ -67,9 +70,6 @@ Meskipun tragedinya luar biasa, saya suka dengan sentuhan _happy ending_ yang ad
 
 Novel ini juga sudah diadaptasi menjadi film berjudul [The Inugami Family](https://www.imdb.com/title/tt0074691) yang tayang pada 2006 silam. Bisa ditonton di [ok.ru - The Inugami Curses (Eng Sub)](https://ok.ru/video/3760349121051), saya sudah menonton[^2] film ini juga dan isinya tidak jauh berbeda dengan novelnya. Salah satu hal yang sangat jarang terjadi di masa kini.
 
-
-
-
-
 [^1]: Saya sudah membaca banyak novel dari Seishi, akan saya tulis reviewnya jika ada kesempatan.
+
 [^2]: Mungkin butuh VPN untuk membuka situs ini, tapi saya tidak butuh. Tergantung ISPnya.

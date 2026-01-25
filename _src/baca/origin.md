@@ -23,6 +23,7 @@ tags:
   - misteri
   - Dan Brown
 comments: false
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(0, 180, 216, 0.2) 98%) !important;}"
 ---
 
 Singkat saja, ini adalah buku kedua dari Dan Brown yang bertema "_membunuh untuk mengurangi populasi

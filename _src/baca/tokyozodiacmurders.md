@@ -22,6 +22,7 @@ beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/104734-The-Tokyo-Zodi
 dimana: "Bukukita"
 kategori: buku
 comments: true
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, #ffffff 98%) !important;}"
 tags:
   - buku
   - misteri
