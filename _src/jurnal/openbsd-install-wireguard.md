@@ -75,6 +75,10 @@ PublicKey = <kosongin dulu nanti diisi publickey dari klien>
 AllowedIPs = 10.0.0.2/32
 ```
 
+<div class="postnotes pink">
+  <p>Perhatikan <code>AllowedIPs</code> memakai <code>/32</code> yang artinya hanya punya range 1 IP saja. Ini penting agar bisa terhubung dengan baik, karena jika memakai <i>class</i> lainnya seperti <code>/24</code> tidak akan bisa terhubung. Wireguard bingung menentukan <em>point to point tunnel</em>.</p>
+</div>
+
 Untuk `PrivateKey`, diisi dengan isi dari berkas `PrivateKey` yang sudah dibuat sebelumnya (yang tadi sudah dicatat. Sudah dicatat kan?). Sedangkan `PublicKey` nanti diisi dengan publickey yang akan dibuat diklien.
 
 untuk interface, buat file baru dengan nama `hostname.wg0` di direktori `/etc`.
@@ -108,6 +112,10 @@ Jika memakai cara yang ini tidak perlu membuat file konfigurasi `/etc/wireguard/
   <p>MTU standar biasanya di angka 1400, namun jika browsing internet terkendala di Wireguard maka turunkan MTU ke 1392. Caranya adalah menambahkan <code>mtu 1392</code> ke dalam <code>/etc/hostname.wg0</code> sebelum <code>up</code>.</p>
 </div>
 
+#### Catatan untuk FreeBSD
+
+Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yaitu dengan membuat _file_ konfigurasi `/usr/local/etc/wireguard/wg0.conf`. Isinya mirip dan prosesnya juga sama dengan OpenBSD.
+
 ## Wireguard Client di macos
 
 Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur tunnel kosong baru (lihat gambar).
@@ -115,15 +123,18 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
 ![wireguard add tunnel](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20251129-qxxr__wylSLRT7.png?updatedAt=1764419428366)
 
 <aside class="image">
-  <b>No. 1</b> adalah public key dari klien yang nantinya akan di masukkan ke dalam wg0.conf peer publickey yang sebelumnya sudah ane buat.
-  <b>No. 2</b> diisi dengan isian dari public.key wireguard di VPS yang sebelumnya sudah dibuat.
-  <b>No. 3</b> adalah IP dari VPS dan port dari wireguard.
+  <ul>
+  <li><b>No. 1</b> adalah public key dari klien yang nantinya akan di masukkan ke dalam wg0.conf peer publickey yang sebelumnya sudah ane buat.</li>
+  <li><b>No. 2</b> diisi dengan isian dari public.key wireguard di VPS yang sebelumnya sudah dibuat.</li>
+  <li><b>No. 3</b> adalah IP dari VPS dan port dari wireguard.</li>
+  </ul>
 </aside>
 
 <div class="postnotes">
   <h4>Opsional tapi kadang penting</h4>
   <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>10.0.0.1/32</code>)</p>
-  <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik</p>
+  <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik.</p>
+  <p>Selain itu mengaktifkan <b>Exclude Private IP's</b> akan membuat sistem tetap bisa mengakses jaringan lokal (seperti NAS, LAN, dsb) saat terhubung ke Wireguard. Mengaktifkan ini sangat direkomendasikan.</p>
 </div>
 
 <div class="postnotes pink">
@@ -204,14 +215,14 @@ match out on egress from 10.0.0.0/24 to any nat-to (egress)
 pass in quick on egress proto tcp from any to (egress) port 22
 ```
 
-Tes firewall jika tidak ada masalah langsung aktifkan.
+Tes _firewall_ jika tidak ada masalah langsung aktifkan.
 
 ```shell-session
 $ doas pfctl -nf /etc/pf.conf
 $ doas pfctl -f /etc/pf.conf
 ```
 
-Aktifkan wireguard network interface dan cek statusnya.
+Aktifkan wireguard _network interface_ dan cek statusnya.
 
 ```shell-session
 $ doas sh /etc/netstart wg0
@@ -226,7 +237,7 @@ peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
   allowed ips: 10.0.0.2/32
 ```
 
-di bagian peer tidak ada keterangan handshake menandakan bahwa klien belum terhubung. Hubungkan klien di aplikasi wireguard dan seharusnya di bagian peer menjadi seperti ini:
+di bagian peer tidak ada keterangan _handshake_ menandakan bahwa klien belum terhubung. Hubungkan klien di aplikasi wireguard dan seharusnya di bagian peer menjadi seperti ini:
 
 ```txt
 peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
@@ -237,6 +248,8 @@ peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
 ```
 
 kemudian cek akses internet di klien dan cek IP dengan mengunjungi situs [ipleak](https://ipleak.net) seharusnya lokasi dan IPnya sudah sesuai dengan IP dan lokasi VPS.
+
+![ipleak](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260126-scih_2w-URN1ny.png)
 
 <div class="postnotes">
   <h5>Update</h5>
