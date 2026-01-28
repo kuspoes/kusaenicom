@@ -230,12 +230,12 @@ Jika kamu pengguna NetBSD maka Blocklist sudah ada di dalam sistem dan sudah jal
 
 Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi bot semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
 
-#### Update: Pengamanan SSH lanjutan
+### Update: Pengamanan SSH lanjutan
 
 Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Salah dua cara paling umum dan disarankan adalah tidak memberikan akses untuk login ke SSH dengan _password_ melainkan dengan SSH Pubkey ID dan tidak memberikan ijin _user_ root untuk _login_ dengan SSH.
 
 <ol>
-<li>Login dengan SSH Public Key</li>
+<li><b>Login dengan SSH Public Key</b></li>
 <ul>
 <li>Buat public key, katakanlah hendak membuat public key khusus untuk akses ke SSH</li>
 </ul>
@@ -253,21 +253,21 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 <p>ikuti prompt dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
 </ol>
 
-2. Menolak root login lewat SSH.
+2. **Menolak root login lewat SSH.**
    Para penyerang biasanya akan memakai _username_ root untuk melakukan serangan, jadi membatasi akses root untuk login ke SSH adalah pilihan yang tepat. Caranya adalah dengan mengubah konfigurasi `sshd_config`.
 
-```shell-session
-$ doas vim /etc/ssh/sshd_config
----
-PermitRootLogin no
-PasswordAuthentication no
-PubkeyAuthentication yes
-PermitEmptyPasswords no
-KbdInteractiveAuthentication no
----
-```
+   ```shell-session
+   $ doas vim /etc/ssh/sshd_config
+   ---
+   PermitRootLogin no
+   PasswordAuthentication no
+   PubkeyAuthentication yes
+   PermitEmptyPasswords no
+   KbdInteractiveAuthentication no
+   ---
+   ```
 
-Di `sshd_config.conf` cari baris konfigurasi di atas, hilangkan tanda `#` atau komentar, kemudian sesuaikan isinya seperti baris - baris di atas. Penjelasannya sebagai berikut:
+   Di `sshd_config.conf` cari baris konfigurasi di atas, hilangkan tanda `#` atau komentar, kemudian sesuaikan isinya seperti baris - baris di atas. Penjelasannya sebagai berikut:
 
 <div class="ragu">
 
@@ -281,9 +281,33 @@ Di `sshd_config.conf` cari baris konfigurasi di atas, hilangkan tanda `#` atau k
 
 </div>
 
-Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah \_password dari file `id_ed25519.pub` yang sebelumnya ane buat.
+      Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah \_password dari file `id_ed25519.pub` yang sebelumnya ane buat.
 
-```shell-session
-➜  ~ ssh poes@oyenBSD
-Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
-```
+      ```shell-session
+      ➜  ~ ssh poes@oyenBSD
+      Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
+      ```
+
+3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
+    Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada port SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.
+
+    Jika Blocklistd akan memblok akses jika dalam beberapa kali percobaan gagal login dengan sukses di SSH, maka PF akan memblok akses bahkan sebelum percobaan login terjadi. Maka rubah bagaimana PF mengatur akses ke SSH
+
+    ```shell-session
+    $ doas vim /etc/pf.conf
+    pass in on $ext_if proto tcp from any to any port 22 /
+    flags S/SA keep state (max-src-conn 10, max-src-conn-rate 5/60)
+    $ doas pfctl -nf /etc/pf.conf
+    $ doas pfctl -f /etc/pf.conf
+    ```
+
+    <aside>
+    <ul>
+      <li>perintah <code>pfctl -nf /etc/pf.conf</code> digunakan untuk mencoba apakah <i>rules</i> <code>pf.conf</code> ada masalah (salah syntax) atau tidak.</li>
+      <li>perintah <code>pfctl -f /etc/pf.conf</code> digunakan untuk meng<i>reload</i> <i>rules</i> tanpa me<i>restart service</i></li> 
+    </ul>
+    </aside>
+
+    Perintah ini akan membuat PF memeriksa jumlah akses secara bersamaan dan mencoba akses ke SSH dengan maksimal 5 percobaan dalam semenit (60 detik). Jika percobaan (biasanya oleh _bot_) itu lebih dari 5 kali dalam semenit maka PF akan mengabaikan koneksi ini.
+
+    Digabungkan dengan Bloclistd maka PF akan menolak akses dari IP yang mencoba akses lebih dari 5 kali dalam kurun satu menit, jika tidak maka akan muncul _prompt login_ SSH. Jika gagal login sebanyak 3x karena salah _password_, maka Blocklistd akan memblokir aksesnya dalam jangka waktu yang sudah ditentukan (misalnya 100 hari).
