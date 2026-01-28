@@ -682,6 +682,15 @@ h5 {
   color: #000;
 }
 
+h2 em,
+h2 i,
+h3 em,
+h3 i,
+h4 em,
+h4 i {
+  font-family: var(--dm);
+}
+
 h1 {
   font-size: 2em;
 }

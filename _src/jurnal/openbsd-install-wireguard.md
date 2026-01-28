@@ -134,7 +134,7 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
   <h4>Opsional tapi kadang penting</h4>
   <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>10.0.0.1/32</code>)</p>
   <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik.</p>
-  <p>Selain itu mengaktifkan <b>Exclude Private IP's</b> akan membuat sistem tetap bisa mengakses jaringan lokal (seperti NAS, LAN, dsb) saat terhubung ke Wireguard. Mengaktifkan ini sangat direkomendasikan.</p>
+  <p>Selain itu mengaktifkan <b>Exclude Private IP's</b> akan membuat sistem tetap bisa mengakses jaringan lokal (seperti NAS, LAN, dsb) <em>split tunnel</em> saat terhubung ke Wireguard. Mengaktifkan ini sangat direkomendasikan.</p>
 </div>
 
 <div class="postnotes pink">
