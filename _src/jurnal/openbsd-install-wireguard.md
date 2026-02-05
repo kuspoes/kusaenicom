@@ -19,6 +19,16 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
 ---
 
+<div class="postnotes pink flex">
+
+  <img class="fuck logo" src="/assets/img/fbsd.png" />
+
+  <div class="flex-kanan">
+  <p>Tutorial ini juga bisa diterapkan di FreeBSD, perbedaannya hanya penggunaan <i>package manager</i> untuk memasang paket - paket yang dibutuhkan saja.</p>
+  <p>Jika di OpenBSD mempergunakan <code>pkg_add</code> maka di FreeBSD memakai <code>pkg</code>.</p>
+  </div>
+</div>
+
 Kata orang - orang kalo pakai BSD paling gampang di OpenBSD karena Wireguard sudah ada di dalam base, oke karena memang sudah diinstall OpenBSD bisa langsung lanjut. Akan tetapi, ternyata itu bohong. Semua sama saja, harus mulai dari nol (kayak di BSD lainnya). Mau gimana lagi nasi sudah jadi krupuk maka mau ga mau lanjut.
 
 Catatan ini akan dibagi menjadi 2 bagian yaitu memasang Wireguard di sisi server (VPS) dan sisi client (macos).
@@ -367,6 +377,39 @@ To disable: sudo killswitch -d
 ```
 
 dan dengan ini killswitch akan menandai akses ke IP Address VPN dan mengaktifkan pf, jika VPN terputus maka killswitch akan memblokir semua akses internet yang meningkatkan keamanan dan privasi pengguna.Jangan lupa mematikan killswitch jika sedang tidak memakai VPN, agar tidak repot ketik perintah manual di terminal gunakan Shortcuts app untuk membuat shortcut.
+
+Mempergunakan Shortcuts app memiliki satu masalah yaitu akan membuka terminal setiap kali _shortcut_ dijalankan. Jika pernah dijalankan misalnya 100 kali, maka di perintah ke 101 akan membuka terminal sebanyak 100 jendela. Ini sangat menganggu meski nantinya jendela - jendela tersebut akan menghilang setelah perintah selesai diproses.
+
+Untuk itu ane gunakan cara lain yaitu dengan mempergunakan aplikasi kecil lainnya yang bernama [Hammerspoon](https://www.hammerspoon.org/). Setelah terpasang, cara pengaturannya adalah dengan membuat _file_ `~/.hammerspoon/init.lua`. Iya Hammerspoon pakai Lua untuk pengaturannya, memang sedikit repot tapi kalo paham Lua maka ini membuat Hammerspoon sangat fleksibel.
+
+```lua
+local wg_server = "103.102.101.100"
+local anybarPort = "1738"
+
+local function updateAnyBar(color)
+    hs.execute('echo -n "' .. color .. '" | nc -4u -w0 localhost ' .. anybarPort, true)
+end
+
+-- Enable
+hs.hotkey.bind({"alt", "cmd"}, "9", function()
+    hs.execute("sudo killswitch -e -ip " .. wg_server, true)
+    updateAnyBar("red")
+    hs.alert.show("Killswitch ENABLED", 2)
+end)
+
+-- Disable
+hs.hotkey.bind({"alt", "cmd"}, "0", function()
+    hs.execute("sudo killswitch -d", true)
+    updateAnyBar("green")
+    hs.alert.show("Killswitch DISABLED", 2)
+end)
+```
+
+Setelah disimpan dan _reload config_, maka jika menekan tombol `⌥ + ⌘ + 9` akan mengaktifkan perintah pengaktifan `killswitch`, setelah perintah aktif maka Hammerspoon juga akan mengirimkan sinyal ke AnyBar sebagai indikator di _menubar_ dengan warna merah saat aktif dan hijau saat tidak aktif.
+
+Scripts Hammerspoon di atas, khusus untuk aktifkan `killswitch` hanya bisa dijalankan saat Wireguard sudah tersambung. Jika belum maka tidak akan menghasilkan apa - apa karena ane set IP wireguard langsung _hard coded_ di dalam _scripts_. Peningkatan _scripts_ ke depannya mungkin saat `⌥ + ⌘ + 9` ditekan maka secara otomatis memeriksa apakah wireguard sudah aktif atau belum. Jika sudah maka langsung aktifkan `killswitch` namun jika belum maka harus hubungkan wireguard terlebih dahulu.
+
+Tentu saja [AnyBar](https://github.com/tonsky/AnyBar) ini opsional, boleh tidak dipakai namun ane pasang karena membantu memberikan visual apakah `killswitch` sedang aktif atau tidak.
 
 #### Dengan aplikasi
 

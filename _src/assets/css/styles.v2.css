@@ -485,6 +485,29 @@ span.ter {
   margin: 0;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img.logo {
+  height: 50px;
+  width: auto;
+}
+
+.flex-kanan {
+  margin-bottom: 0px;
+  margin-left: 1em;
+}
+
+.flex-kanan p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
 .notif {
   padding: 0.4em 0.5em;
   border: 1px dotted #ff8fab;
@@ -658,6 +681,15 @@ b,
 bold,
 strong {
   font-weight: 800;
+}
+
+.clue {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: red;
+  padding: 4px 6px;
 }
 
 /* header */

@@ -54,7 +54,7 @@ Setelah melakukan penyelidikan, polisi menemukan beberapa fakta sebagai berikut
 4. Setelah saling bertemu, Daigo memutuskan hubungan dengan perempuan kenalannya itu dan kemudian membeli sebuah kafe dan diberi nama Black Cat Café,
 5. Meski begitu Oshige masih sering menemui bos konstruksi dan masih berhubungan/berselingkuh,
 6. Daigo tahu ini tapi tidak berdaya dan kemudian dia juga mulai kembali berselingkuh dengan perempuan kenalannya itu,
-7. Oshige marah dan kemudian mereka menjual kafe. Mereka berencana pergi ke kota lain dan memperbaiki hubungan keluarga kembali,
+7. Oshige marah, pasangan ini jadi sering bertengkar. Oshige curhat kepada pegawainya dan mengungkapkan betapa bencinya dia dengan perempuan selingkuhan Daigo. Mereka kemudian menjual kafe dan berencana pergi ke kota lain dan memperbaiki hubungan keluarga kembali,
 8. Sebelum kafe terjual, Oshige sakit karena alergi kulit parah akibat salah memakai _make up_. Dia tidak terlihat selama beberapa hari, bahkan oleh para pekerja di kafenya. Menurut Daigo, Oshige bersembunyi karena malu,
 9. Pekerja di kafe menemukan kucing maskotnya makin lama makin kurus dan menemukan beberapa bercak darah di pintu shoji (pintu geser kertas) yang menurut Daigo adalah darah si kucing yang menggila,
 10. Kafe dijual, pekerja dipecat, dan kemudian suami istri Daigo Oshige keluar dan pindah ke kota lain,

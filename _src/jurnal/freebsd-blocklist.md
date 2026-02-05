@@ -230,9 +230,9 @@ Jika kamu pengguna NetBSD maka Blocklist sudah ada di dalam sistem dan sudah jal
 
 Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi bot semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
 
-### Update: Pengamanan SSH lanjutan
+### Pengamanan SSH lanjutan
 
-Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Salah dua cara paling umum dan disarankan adalah tidak memberikan akses untuk login ke SSH dengan _password_ melainkan dengan SSH Pubkey ID dan tidak memberikan ijin _user_ root untuk _login_ dengan SSH.
+Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Beberapa cara yang umum dan disarankan adalah tidak memberikan akses untuk login ke SSH dengan _password_ melainkan dengan SSH Pubkey ID dan tidak memberikan ijin _user_ root untuk _login_ dengan SSH.
 
 <ol>
 <li><b>Login dengan SSH Public Key</b></li>
