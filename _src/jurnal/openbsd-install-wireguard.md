@@ -6,6 +6,7 @@ tags:
   - tutorial
   - openbsd
   - bsd
+  - pin
 kategori: jurnal
 relasi: openbsd
 code: true
@@ -407,7 +408,7 @@ end)
 
 Setelah disimpan dan _reload config_, maka jika menekan tombol `⌥ + ⌘ + 9` akan mengaktifkan perintah pengaktifan `killswitch`, setelah perintah aktif maka Hammerspoon juga akan mengirimkan sinyal ke AnyBar sebagai indikator di _menubar_ dengan warna merah saat aktif dan hijau saat tidak aktif.
 
-<iframe width="800" height="600" style="margin-left: -80px !important;" src="https://imagekit.io/player/embed/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/hammerspoon_killswitch_mW_N6PGNg.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fhjse9uhdjqd%2Fjurnal%2FOpenBSD_Wireguard%2Fhammerspoon_killswitch_mW_N6PGNg.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1770342444842" title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
+<iframe class="video" src="https://imagekit.io/player/embed/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/hammerspoon_killswitch_mW_N6PGNg.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fhjse9uhdjqd%2Fjurnal%2FOpenBSD_Wireguard%2Fhammerspoon_killswitch_mW_N6PGNg.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1770342444842" title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
 
 Scripts Hammerspoon di atas, khusus untuk aktifkan `killswitch` hanya bisa dijalankan saat wireguard sudah tersambung. Jika belum maka tidak akan menghasilkan apa - apa karena ane set IP wireguard langsung _hard coded_ di dalam _scripts_. Peningkatan _scripts_ ke depannya mungkin saat `⌥ + ⌘ + 9` ditekan maka secara otomatis memeriksa apakah wireguard sudah aktif atau belum. Jika sudah maka langsung aktifkan `killswitch` namun jika belum maka harus hubungkan wireguard terlebih dahulu.
 
@@ -415,7 +416,8 @@ Tentu saja [AnyBar](https://github.com/tonsky/AnyBar) ini opsional, boleh tidak 
 
 #### Dengan aplikasi
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" />
+![Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png)
+
 <aside class="image">
   Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba
 </aside>

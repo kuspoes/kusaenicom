@@ -55,6 +55,31 @@ body {
   align-items: flex-start;
 }
 
+.pinned {
+  border: 1px solid #f39c12;
+  border-left: 6px solid #f39c12;
+  background-color: #fffdf5;
+  border-radius: 12px;
+  order: -1;
+  position: relative;
+}
+
+.pin-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #f39c12;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--sans);
+}
+
 .fave {
   border: 1px solid #fb6f92;
   border-radius: 0.376em;
@@ -536,6 +561,12 @@ img.logo {
 .merah {
   background-color: rgba(120, 0, 0, 0.8);
   color: #fdf0d5;
+}
+
+iframe.video {
+  width: 800px;
+  height: 533px;
+  margin-left: -100px;
 }
 
 /* tipo */
@@ -1279,10 +1310,23 @@ a.related_post_link {
     width: 95%;
   }
 
+  #related_post {
+    width: 92%;
+  }
+
+  iframe.video {
+    margin: 0px auto;
+    width: 100%;
+    height: 300px;
+  }
+
   aside,
   .terkait {
     width: 94%;
-    margin-top: -2em;
+  }
+
+  aside.image {
+    margin-top: -1.3em;
   }
 
   .terkait {
