@@ -64,6 +64,10 @@ body {
   position: relative;
 }
 
+.pinned:hover {
+  background-color: rgb(255, 214, 10, 0.4) !important;
+}
+
 .pin-badge {
   position: absolute;
   top: 5px;
