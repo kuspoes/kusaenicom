@@ -8,6 +8,14 @@
   border-bottom-right-radius: 10px;
 }
 
+.radius-kiri-atas {
+  border-top-left-radius: 10px !important;
+}
+
+.radius-kanan-atas {
+  border-top-right-radius: 10px !important;
+}
+
 .radius-kiri-bawah {
   border-bottom-left-radius: 10px;
 }

@@ -431,7 +431,8 @@ img.layang {
   width: 98%;
 }
 
-span.ter {
+span.ter,
+.sans {
   text-transform: uppercase;
   font: bold 80% var(--sans);
 }
@@ -567,7 +568,8 @@ img.logo {
   color: #fdf0d5;
 }
 
-iframe.video {
+iframe.video,
+iframe.peta {
   width: 800px;
   height: 533px;
   margin-left: -100px;

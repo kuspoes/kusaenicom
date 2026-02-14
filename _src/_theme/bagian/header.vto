@@ -24,6 +24,9 @@
         <link rel="stylesheet" href="/assets/css/posts/{{ it.style }}" inline>
         {{ /if }}
         {{ if it.comment }}
+        {{ if it.peta }}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        {{ /if }}
         <script src="/assets/js/main.js" type="module"></script>
         <link rel="stylesheet" href="/assets/css/comments/comments.css">
         <script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="kusaeni.com"></script>
@@ -38,6 +41,14 @@
             grid-template-rows: 400px 400px 400px !important;
             gap: 1px 1px !important;
             max-width: 800px !important;
+        }
+
+        .gal-1-baris {
+          grid-template-rows: 400px !important;
+        }
+
+        .gal-2-baris {
+          grid-template-rows: 400px 400px !important;
         }
 
         .gallery a { display: block !important; }
