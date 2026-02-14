@@ -16,8 +16,8 @@ style: "galeri.css"
 keywords: kusaeni, kuliner, nasi, tongkol, mbak ju, wonokromo, surabaya
 templateEngine: md
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KHDZVX3N00XJ2EFG663DQQKN
+  real: https://sok.egois.org/@poes/statuses/01KHDZVX3N00XJ2EFG663DQQKN
 ---
 
 Bermula menonton VT (Video Toktok) ane melihat review tentang makanan "penyetan" yang (sejak dulu sebenarnya sudah) viral dan lejen di Surabaya. Ketika ada kesempatan ke Kota Pahlawan ini ane luangkan waktu untuk mencoba.
