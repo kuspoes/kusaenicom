@@ -73,7 +73,9 @@ style: "tentang.css"
         <li>Anko (<i>commercial license</i>) dari <a href="https://ekobimantara.com/product/anko/">Eko Bimantara</a> digunakan untuk <code>font body</code></li>
         <li>Inter dari <a href="https://rsms.me/inter/" target="_blank">Rasmus Andersson</a>, digunakan untuk <i>font header</i> dan <i>sidenotes</i> atau <i>caption</i>,</li>
         <li>Chunk dari <a href="https://www.theleagueofmoveabletype.com/chunk" target="_blank">Meredith Mandel</a> (the League of Movabletype), dipergunakan khusus untuk <code>H1</code>.</li>
+        <li><a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif</a> juga dipergunakan untuk <i>header</i>.</li>
     </ul>
+    
 <p>Sedangkan untuk <code>code</code> mempergunakan <span class="roboto">Roboto Mono</span> dan font standar bawaan masing - masing OS, diantaranya <span class="monaco">Monaco</span>, <span class="consolas">Consolas</span>, <span class="monospace">Monospace</span></p>
 
 <h3>Mengenai tulisan</h3>

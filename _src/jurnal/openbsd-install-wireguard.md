@@ -391,18 +391,25 @@ local function updateAnyBar(color)
     hs.execute('echo -n "' .. color .. '" | nc -4u -w0 localhost ' .. anybarPort, true)
 end
 
--- Enable
+local function updateAnyBar(color)
+    hs.execute('echo -n "' .. color .. '" | nc -4u -w0 localhost ' .. anybarPort, true)
+end
+
+local function sudoPoes(command, successColor, successMsg)
+    local _, status = hs.execute("sudo " .. command, true)
+    if status then
+        updateAnyBar(successColor)
+        hs.alert.show(successMsg, 2)
+    end
+end
+
+-- Hotkeys
 hs.hotkey.bind({"alt", "cmd"}, "9", function()
-    hs.execute("sudo killswitch -e -ip " .. wg_server, true)
-    updateAnyBar("red")
-    hs.alert.show("Killswitch sudah Aktif", 2)
+    sudoPoes("killswitch -e -ip " .. wg_server, "red", "Killswitch Aktif")
 end)
 
--- Disable
 hs.hotkey.bind({"alt", "cmd"}, "0", function()
-    hs.execute("sudo killswitch -d", true)
-    updateAnyBar("green")
-    hs.alert.show("Killswitch sudah Berhenti", 2)
+    sudoPoes("killswitch -d", "green", "Killswitch Berhenti")
 end)
 ```
 
