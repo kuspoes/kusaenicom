@@ -391,10 +391,6 @@ local function updateAnyBar(color)
     hs.execute('echo -n "' .. color .. '" | nc -4u -w0 localhost ' .. anybarPort, true)
 end
 
-local function updateAnyBar(color)
-    hs.execute('echo -n "' .. color .. '" | nc -4u -w0 localhost ' .. anybarPort, true)
-end
-
 local function sudoPoes(command, successColor, successMsg)
     local _, status = hs.execute("sudo " .. command, true)
     if status then

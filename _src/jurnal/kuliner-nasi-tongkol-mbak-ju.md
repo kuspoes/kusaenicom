@@ -38,7 +38,7 @@ Si abang Gojek nurunin ane di kampung sebelah pasar karena Google Map menyebut d
 
 Alhasil ane harus muter - muter dulu untuk masuk ke DTCnya. Setelah capek muter - muter, ane akhirnya bisa masuk DTC lewat jalur jalan parkir mobil dan langsung mengarah ke Lantai 1. Di dalam pasar Google Map ini cupu, tidak bisa menunjukkan arah yang tepat. Ane seperti sedang di dalam lorong - lorong labirin dengan tumpukan daster dan celana jeans KW yang bertebaran di kanan kiri. Semakin ke dalam semakin sepi penjualnya, hanya ada deretan stand kosong dan tertutup.
 
-Disini istilah "malu bertanya sesat di jalan" sepertinya sangat relevan. _Bye Google you're useless_. Akhirnya ane lewat depan orang jualan _skincare_, what!!!!. Ane langsung saja ditarik sama mbak - mbak SPG untuk ditawarin produknya, si mbak sales nyerocos terus ga bisa distop. Ane lirik ternyata sudah agak sepuh. Kasian, akhirnya ane beli produknya meski ga butuh. Tapi di sisi yang lain ane mau manfaatkan untuk bertanya lokasi warung nasi ini.
+Disini istilah "malu bertanya sesat di jalan" sepertinya sangat relevan. _Bye Google you're useless_. Akhirnya ane lewat depan orang jualan _skincare_, _what_!!!!. Ane langsung saja ditarik sama mbak - mbak SPG untuk ditawarin produknya, si mbak sales nyerocos terus ga bisa distop. Ane lirik ternyata sudah agak sepuh. Kasian, akhirnya ane beli produknya meski ga butuh. Tapi di sisi yang lain ane mau manfaatkan untuk bertanya lokasi warung nasi ini.
 
 Setelah bertanya ternyata memang berada di lantai 1 dan ada di pojokan belakang. Berbekal informasi ini ane jalan - jalan muter - muter lagi sampai akhirnya ketemu lokasi yang dimaksud. Alhamdulillah.
 
@@ -83,7 +83,7 @@ Tak menunggu lama ane langsung pesan saja nasi tongkol dengan tambah lauk telor 
 
 Ngomongin _influencer_ kuliner di Indonesia, ane tidak pernah percaya kecuali dengan rekomendasi (alm) Bondan Winarno. Kalo beliau bilang enak maka sudah pasti enak. Maknyus!!! 👌🏽
 
-Sedangkan yang lain ane masih ragu. Termasuk untuk rekomendasi nasi tongkol ini yang setelah ane coba rasa sambalnya biasa saja. Terasinya kurang terasa, menurut ane lebih enak [sambal tempong di Banyuwangi](https://poes.bearblog.dev/perjalanan-ke-timur-mencari-nasi-tempong-1/). Namun ada yang unik di sambal tongkolnya, ane sama sekali belum pernah makan sambal seperti ini. Menarik. Rasa ikan teri goreng ya sama seperti ikan teri lainnya, _crispy_ dan _salty_. Menurut ane malah rasa teri ini yang memberikan "rasa" pada masakan ini karena telor dadarnya pun tidak ada rasa apapun.
+Sedangkan yang lain ane masih ragu. Termasuk untuk rekomendasi nasi tongkol ini yang setelah ane coba rasa sambalnya biasa saja. Terasinya kurang terasa, menurut ane lebih enak [sambal tempong di Banyuwangi](https://kusaeni.com/jurnal/perjalanan-ke-timur-mencari-nasi-tempong/). Namun ada yang unik di sambal tongkolnya, ane sama sekali belum pernah makan sambal seperti ini. Menarik. Rasa ikan teri goreng ya sama seperti ikan teri lainnya, _crispy_ dan _salty_. Menurut ane malah rasa teri ini yang memberikan "rasa" pada masakan ini karena telor dadarnya pun tidak ada rasa apapun.
 
 Tapi tentu saja ane tetap habiskan dengan penuh semangat karena belum makan sejak pagi. Selain itu yang membuat ane sedikit kecewa adalah ketika diberi pilihan sambal ane sudah sampaikan minta sambal yang pedas tapi ternyata pedasnya sama sekali tak terasa. Ane ingin merasakan sambal terasi yang pedas menggelora, biar berkeringat dan lendir di hidung keluar. Apakah mungkin si penjual lupa?
 
