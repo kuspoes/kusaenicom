@@ -103,6 +103,14 @@ body {
   border-radius: 10px;
 }
 
+.postlist.adaFoto .postitle {
+  width: 27em;
+}
+
+.postlist.adaFoto .postitle p {
+  width: 27em;
+}
+
 .postitle {
   width: 30em;
   margin-left: 1em;
@@ -141,6 +149,14 @@ body {
   text-align: center;
   margin-top: -0.1em;
   font: normal 0.9em var(--sans);
+}
+
+.postcover {
+  width: 10em;
+}
+
+.postcover img.postCoverImg {
+  width: 80px;
 }
 
 aside {
@@ -870,6 +886,14 @@ a.badge {
   font: 600 0.7em/1 var(--sans);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+a.tags {
+  font-family: var(--sans);
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--col_body);
+  text-transform: lowercase;
 }
 
 a.footnote-ref {
