@@ -15,8 +15,23 @@
   --kuning-gading: #fdf0d5;
 }
 
-html {
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 body {
@@ -1336,7 +1351,9 @@ a.related_post_link {
   .page,
   .nav,
   .pre,
-  .baca {
+  .baca,
+  iframe.video,
+  iframe.peta {
     width: 95%;
   }
 
