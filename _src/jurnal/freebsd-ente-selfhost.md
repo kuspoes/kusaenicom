@@ -172,7 +172,80 @@ s3:
 
 khusus untuk s3, karena ane pakai local atau _selfhost_ maka nilai `are_local_buckets: false` karena ane pakai `endpoint url`. Ane sudah coba kasih `true` tapi tak pernah bisa tersambung dengan baik. `b2-eu-cen` adalah `key` yang harus dipakai jika pakai s3 _selfhost_ atau AWS Compatible s3.
 
-Kemudian jalankan `./main` secara `default`nya akan mencari _file_ `museum.yaml` sebagai konfigurasi utama atau kasih _flags_ `--config path` jika memakai nama yang lain. Ente akan berjalan di `http://localhost:8080`.
+Kemudian jalankan <mark> `./main` secara `default`nya akan mencari _file_ `museum.yaml` sebagai konfigurasi utama </mark> atau kasih _flags_ `--config path` jika memakai nama yang lain. Ente akan berjalan di `http://localhost:8080`.
+
+```shell-session
+# cd ente/server
+# ./main --config /root/ente/server/museum.yaml
+```
+
+<div class="postnotes hijau">
+<h4>Update</h4>
+ <p>Agar Ente bisa dijalankan setiap <i>boot</i> maka bisa dibuat <i>service script</i> seperti contoh berikut.</p> 
+ <pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
+ <span class="token comment"># PROVIDE: ente</span>
+ <span class="token comment"># REQUIRE: networking postgresql</span>
+ <span class="token comment"># KEYWORD: shutdown</span>
+ <span class="token builtin class-name">.</span> /etc/rc.subr
+ <p></p>
+ <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"ente"</span>
+ <span class="token assign-left variable">rcvar</span><span class="token operator">=</span><span class="token string">"ente_enable"</span>
+ <span class="token assign-left variable">desc</span><span class="token operator">=</span><span class="token string">"Ente Photos Server"</span>
+ <p></p>
+ <span class="token assign-left variable">ente_dir</span><span class="token operator">=</span><span class="token string">"/root/ente/server"</span>
+ <span class="token assign-left variable">ente_bin</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${ente_dir}</span>/main"</span>
+ <span class="token assign-left variable">ente_config</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${ente_dir}</span>/museum.yaml"</span>
+ <span class="token assign-left variable">ente_log</span><span class="token operator">=</span><span class="token string">"/var/log/ente.log"</span>
+ <span class="token assign-left variable">ente_pid</span><span class="token operator">=</span><span class="token string">"/var/run/ente.pid"</span>
+ <p></p>
+ load_rc_config <span class="token variable">$name</span>
+ <span class="token builtin class-name">:</span> <span class="token variable">${ente_enable<span class="token operator">:=</span>NO}</span>
+ <p></p>
+ <span class="token assign-left variable">command</span><span class="token operator">=</span><span class="token string">"<span class="token variable">${ente_bin}</span>"</span>
+ <span class="token assign-left variable">command_args</span><span class="token operator">=</span><span class="token string">"--config <span class="token variable">${ente_config}</span>"</span>
+ <span class="token assign-left variable">start_cmd</span><span class="token operator">=</span><span class="token string">"ente_start"</span>
+ <span class="token assign-left variable">stop_cmd</span><span class="token operator">=</span><span class="token string">"ente_stop"</span>
+ <span class="token assign-left variable">status_cmd</span><span class="token operator">=</span><span class="token string">"ente_status"</span>
+ <p></p>
+ <span class="token function-name function">ente_start</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token builtin class-name">echo</span> <span class="token string">"Starting <span class="token variable">${name}</span>..."</span>
+     <span class="token comment"># PAKSA CWD = folder ente</span>
+     <span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">${ente_dir}</span>"</span> <span class="token operator">||</span> <span class="token punctuation">{</span> <span class="token builtin class-name">echo</span> <span class="token string">"Failed to cd to <span class="token variable">${ente_dir}</span>"</span><span class="token punctuation">;</span> <span class="token builtin class-name">exit</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+     <span class="token function">nohup</span> <span class="token variable">${command}</span> <span class="token variable">${command_args}</span> <span class="token operator">&gt;</span> <span class="token variable">${ente_log}</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+     <span class="token builtin class-name">echo</span> <span class="token variable">$!</span> <span class="token operator">&gt;</span> <span class="token variable">${ente_pid}</span>
+     <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">${name}</span> started (PID: <span class="token variable">$!</span>)"</span>
+ <span class="token punctuation">}</span>
+ <span class="token function-name function">ente_stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token builtin class-name">echo</span> <span class="token string">"Stopping <span class="token variable">${name}</span>..."</span>
+     <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">${ente_pid}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+         <span class="token function">kill</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> $<span class="token punctuation">{</span>ente_pid<span class="token punctuation">}</span><span class="token variable">)</span></span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null <span class="token operator">&amp;&amp;</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token variable">${ente_pid}</span>
+         <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">${name}</span> stopped."</span>
+     <span class="token keyword">fi</span>
+ <span class="token punctuation">}</span>
+ <span class="token function-name function">ente_status</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">"<span class="token variable">${ente_pid}</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+         <span class="token assign-left variable">pid</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> $<span class="token punctuation">{</span>ente_pid<span class="token punctuation">}</span><span class="token variable">)</span></span>
+         <span class="token keyword">if</span> <span class="token function">kill</span> <span class="token parameter variable">-0</span> <span class="token variable">$pid</span> <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>/dev/null<span class="token punctuation">;</span> <span class="token keyword">then</span>
+             <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">${name}</span> is running (PID: <span class="token variable">$pid</span>)"</span>
+         <span class="token keyword">else</span>
+             <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">${name}</span> not running (stale PID)"</span>
+         <span class="token keyword">fi</span>
+     <span class="token keyword">else</span>
+         <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">${name}</span> is not running."</span>
+     <span class="token keyword">fi</span>
+ <span class="token punctuation">}</span>
+ run_rc_command <span class="token string">"<span class="token variable">$1</span>"</span>
+ </code></pre>
+ <p>Kemudian simpan sebagai <code>/usr/local/etc/rc.d/ente</code>, jangan lupa ganti atribut supaya bisa dijalankan sebagai <i>shell script</i><p>
+ <p>
+   <code>
+     # chmod +x /usr/local/etc/rc.d/ente
+   </code>
+ </p>
+ <p>Kemudian rubah <i>file</i> <code>/etc/rc.conf</code> dan masukkan pengaturan berikut</p>
+ <p><code>ente_enable=YES</code></p>
+ <p>Ente sekarang bisa dikelola dengan <code>service ente start|stop|restart</code> dan bisa jalan saat <i>boot</i></p>
+</div>
 
 Jika ada rencana untuk memakai email sebagai alat komunikasi dan verifikasi, ada baiknya untuk mengatur JWT (JSON Web Token) yang bisa dibuat dengan perintah
 

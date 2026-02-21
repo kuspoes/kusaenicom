@@ -599,6 +599,11 @@ img.logo {
   color: #fdf0d5;
 }
 
+.ungu {
+  background-color: rgb(60, 9, 108, 0.2);
+  color: #f1faee;
+}
+
 iframe.video,
 iframe.peta {
   width: 800px;
