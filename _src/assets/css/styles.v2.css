@@ -1022,6 +1022,12 @@ img.fuck {
   margin-bottom: 0;
 }
 
+img.lebar {
+  max-width: auto;
+  height: auto;
+  margin-left: -100px;
+}
+
 .radius-atas {
   border-top-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
