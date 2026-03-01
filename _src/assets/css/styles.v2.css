@@ -20,11 +20,6 @@
   max-width: 100%;
 }
 
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
 html,
 body {
   scroll-behavior: smooth;
@@ -606,9 +601,10 @@ img.logo {
 
 iframe.video,
 iframe.peta {
-  width: 800px;
+  width: 850px;
   height: 533px;
   margin-left: -100px;
+  max-width: none !important;
 }
 
 /* tipo */

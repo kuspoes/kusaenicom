@@ -35,6 +35,7 @@ Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur d
     <li><b>Blacklistd</b> (daftar hitam) menjadi <b>Blocklistd</b> (daftar cekal)</li>
     <li><b>Whitelist</b> (daftar putih) menjadi <b>Allowlist</b> (daftar diijinkan)</li>
   </ul>
+  <p>Meskinpun begitu sampai dengan rilis 15.0, FreeBSD masih mempertahankan perintah `blacklistctl` di sistemnya dan bisa dipakai dengan baik</p>
 </div>
 
 Blocklistd sudah ada di dalam FreeBSD, tidak perlu memasangnya lagi, dan tinggal mengaktifkan saja.
