@@ -101,6 +101,10 @@ $ doas chflags schg /etc/resolv.conf
 
 _Default_-nya konfigurasi Unbound terletak di `/var/unbound/etc/unbound.conf`, konfigurasi minimalis yang bisa dipakai untuk mengawali adalah sebagai berikut
 
+<div class="postnotes merah">
+  <p>Di FreeBSD, pengaturan Unbound terletak di <code>/usr/local/etc/unbound/unbound.conf</code>. Sedangkan isinya memiliki format yang sama.</p>
+</div>
+
 ```shell-session
 $ doas vim /var/unbound/etc/unbound.conf
 ```
