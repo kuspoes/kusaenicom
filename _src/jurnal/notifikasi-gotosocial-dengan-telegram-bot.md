@@ -85,7 +85,7 @@ Setelah dapat <mark>_access token_ simpan</mark> karena akan dibutuhkan nanti un
 
 Saya membuat script di `localhost` meskipun sebenarnya langsung dari Deno Deploy Playground bisa, namun saya ingin memisahkan antara membuat `table` Postgres dengan _script_ utamanya.
 
-Contoh dibawah hanya diambil sepotong - potong, sedangkan keseluruhan _script_ bisa dilihat di [repo Github poestldn](https://github.com/kuspoes/poestldon)
+Contoh dibawah hanya diambil sepotong - potong, sedangkan keseluruhan *script* bisa dilihat di [repo Github poestldn](https://github.com/kuspoes/poestldon)
 
 <div class="og-card">
          <div class="og-img-card">

@@ -277,7 +277,7 @@ root@PondokBambu:bin # ./garage-webui &
 
 periksa apakah sudah berjalan baik di alamat URL `http://127.0.0.1:3909`, jika sudah maka tinggal rubah `Caddyfile` untuk _serving_ sebagai `reverse_proxy` tentu siapkan domain/subdomain agar bisa diakses darimana saja.
 
-![garage webui dashboar ](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-foxc_MjjB__d7P.png?updatedAt=1763073670991)
+![garage webui dashboard ](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-foxc_MjjB__d7P.png?updatedAt=1763073670991)
 ![garage webui cluster](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-fpah_pVgcRgthP.png?updatedAt=1763073671406)
 ![garage webui bucket list](https://ik.imagekit.io/hjse9uhdjqd/jurnal/garage/SCR-20251114-fpeb_tOonJsPhz.png?updatedAt=1763073671393)
 

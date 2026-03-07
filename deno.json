@@ -16,9 +16,12 @@
     },
     "serve": {
       "description": "Run and serve the site for development",
-      "command": "  deno task lume -s"
+      "command": "deno task lume -s"
     },
-    "lumex": "echo \"import 'lume/cli.ts'\" | deno run -A --reload"
+    "lumex": {
+      "description": "lumex untuk reload cache",
+      "command": "deno run -A --reload lume/cli.ts"
+    }
   },
   "compilerOptions": {
     "types": ["lume/types.ts"],

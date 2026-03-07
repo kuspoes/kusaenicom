@@ -71,7 +71,7 @@
             <span class="related_post_date">{{ rela.date |> date('id') }}</span>
             <a class="related_post_link" href="{{ rela.url }}">
             <h4>{{ rela.title }}</h4></a>
-            <p>{{ rela.ringkasan }}</p>
+            <p>{{ rela.ringkasan |> md(true) }}</p>
             </a>
           </div>
           {{ /for }}
