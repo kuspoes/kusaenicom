@@ -118,11 +118,6 @@ up
 
 Jika memakai cara yang ini tidak perlu membuat file konfigurasi `/etc/wireguard/wg0.conf`. Apapun cara yang dipilih, sementara biarin dulu seperti ini, ane akan atur wireguard di klien terlebih dahulu.
 
-<div class="postnotes hijau">
-  <h4>Jika tidak bisa buka situs tertentu</h4>
-  <p>MTU standar biasanya di angka 1400, namun jika browsing internet terkendala di Wireguard maka turunkan MTU ke 1392. Caranya adalah menambahkan <code>mtu 1392</code> ke dalam <code>/etc/hostname.wg0</code> sebelum <code>up</code>.</p>
-</div>
-
 #### Catatan untuk FreeBSD
 
 Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yaitu dengan membuat _file_ konfigurasi `/usr/local/etc/wireguard/wg0.conf`. Isinya mirip dan prosesnya juga sama dengan OpenBSD.
@@ -150,7 +145,7 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
 
 <div class="postnotes pink">
   <h4>Wireguard sudah terhubung tapi <mark>tidak bisa akses situs tertentu</mark>?</h4>
-  <p>Tersangkanya jelas MTU.</p>
+  <p>Tersangkanya jelas MTU atau Maximum Transmission Unit.</p>
   <p>Biasanya sistem akan mengatur MTU secara otomatis, namun untuk beberapa OS tidak mengaturnya di nilai yang sama. Jadi jika di VPS (<i>host</i>) sudah diatur secara manual (misalnya ke nilai 1392) maka di klien harus memakai MTU yang sama. Caranya adalah menambahkan <code>MTU=1392</code> ke dalam blok <code>[Interface]</code>.</p>
 
   <h4>Tapi bagaimana cara menentukan MTU yang pas untuk wireguard?</h4>
@@ -170,6 +165,7 @@ Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatu
     </code>
     </pre>
   <p>Dengan catatan, perintah ini dijalankan saat klien sudah terhubung dengan server Wireguard. IP <code>10.0.0.1</code> adalah IP server Wireguard (bisa diganti dengan IP endpoint namun hapus flag <code>--tunnel</code>). Hasilnya adalah MTU dengan nilai <code>1500</code>, nilai ini kemudian ane masukkan di file konfigurasi <code>wg0.conf</code> di server maupun di klien.</p>
+  <p>Namun banyak rekomendasi untuk mengurangi nilai MTU sebanyak 8 <i>bytes</i> untuk <i>header</i>, sehingga nilai MTU  menjadi <code>1492</code>. Namun ane memilih nilai MTU di <code>1420</code> karena di nilai ini saya tidak mengalami banyak masalah dalam membuka situs.</p>
 </div>
 
 Simpan dan kembali ke pengaturan wireguard di VPS.
