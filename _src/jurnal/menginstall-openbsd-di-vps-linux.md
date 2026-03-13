@@ -168,6 +168,6 @@ Jika tidak mau repot, saran saya sebaiknya hindari VPS yang memakai xtermjs. Kal
 
 Tapi intinya adalah mau kondisi apa saja, jangan sampai menghalangi kita untuk memakai OS yang kita inginkan. Kalo memang sudah mentok, ganti _provider_ saja. :)
 
-_Provider_ lokal yang saya rekomendasikan [Neva Cloud](https://nevacloud.com) dan [Ide.id](https://ide.id).
+_Provider_ lokal yang saya rekomendasikan [Neva Cloud](https://nevacloud.com) dan ~~[Ide.id](https://ide.id)~~ sudah tidak aktif lagi.
 
 Terakhir, file `miniroot76.img` yang sudah dirubah _boot console_-nya tidak bisa dipakai di NoVNC, untuk NoVNC langsung unduh aja file asli dari OpenBSD.

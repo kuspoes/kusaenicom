@@ -15,6 +15,7 @@ code: true
 favorit: true
 comment: true
 tocx: true
+templateEngine: vto,md
 ---
 
 <div class="postnotes">
@@ -45,6 +46,11 @@ Sebagai catatan Jagoan Hosting memakai [xtermjs](https://xtermjs.org/) sebagai w
 <p>Karena xtermjs memberikan syarat harus terinstall Qemu (guest) di VPS dan FreeBSD harus boot dengan serial console aktif. Default instalasi FreeBSD tidak memiliki 2 syarat ini.</p>
 <p>Meski begitu, akses console ke VPS masih bisa dilakukan dengan SSH, lebih bagus lagi jika pakai tmux sehingga saat pengaturan <code>pf</code> lebih nyaman. Apalagi jika terjadi kesalahan.</p>
 </div>
+
+{{ echo |> terkait("Menginstall OpenBSD di VPS Linux", "/jurnal/menginstall-openbsd-di-vps-linux/", "full" )}}
+Provider tidak menyediakan OS OpenBSD dan atau ingin menginstall sendiri? Elu perlu tau cara ini!.
+{{ /echo }}
+
 
 Setelah Debian terinstall dan berjalan dengan baik, maka saya buka akses web konsol (bukan SSH). Kemudian login dengan user `root` dan password yang sudah diatur sebelumnya. 
 
