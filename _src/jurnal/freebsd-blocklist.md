@@ -20,7 +20,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
 ---
 
-<img class="fuck" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png" alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga dengan 2 tameng" />
+<img class="fuck lebar" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png" alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga dengan 2 tameng" />
 
 Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling kuat tapi _assume everything will be attacked_ atau _no system is safe_. Teknik awal dalam perentasan adalah melakukan _scanning ports_ dan kemudian mengeksploitasinya, yang paling sering diincar adalah port SSH dan FTP. Meskipun banyak sekali teknik dalam perentasan, namun paling tidak mengamankan _ports_ ini adalah langkah awal yang baik.
 
@@ -35,7 +35,7 @@ Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur d
     <li><b>Blacklistd</b> (daftar hitam) menjadi <b>Blocklistd</b> (daftar cekal)</li>
     <li><b>Whitelist</b> (daftar putih) menjadi <b>Allowlist</b> (daftar diijinkan)</li>
   </ul>
-  <p>Meskinpun begitu sampai dengan rilis 15.0, FreeBSD masih mempertahankan perintah `blacklistctl` di sistemnya dan bisa dipakai dengan baik</p>
+  <p>Meskipun begitu sampai dengan rilis 15.0, FreeBSD masih mempertahankan perintah <code>blacklistctl</code> di sistemnya dan bisa dipakai dengan baik</p>
 </div>
 
 Blocklistd sudah ada di dalam FreeBSD, tidak perlu memasangnya lagi, dan tinggal mengaktifkan saja.
@@ -284,12 +284,13 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 
 </div>
 
-      Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah \_password dari file `id_ed25519.pub` yang sebelumnya ane buat.
+      Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah _password_ dari file `id_ed25519.pub` yang sebelumnya ane buat.
 
       ```shell-session
       ➜  ~ ssh poes@oyenBSD
       Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
       ```
+      masukkan _password_ yang dibuat sebelumnya.
 
 3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
     Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada port SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.

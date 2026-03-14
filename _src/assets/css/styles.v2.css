@@ -605,7 +605,8 @@ img.logo {
 }
 
 iframe.video,
-iframe.peta {
+iframe.peta,
+img.lebar {
     width: 850px;
     height: 533px;
     margin-left: -100px;
