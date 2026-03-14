@@ -290,7 +290,9 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
       ➜  ~ ssh poes@oyenBSD
       Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
       ```
-      masukkan _password_ yang dibuat sebelumnya.
+
+
+masukkan _password_ yang dibuat sebelumnya.
 
 3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
     Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada port SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.
