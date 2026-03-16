@@ -872,6 +872,11 @@ a:visited {
     border-bottom: 1px dotted #94d2bd;
 }
 
+footer.comment-footer a:link,
+a:visited {
+    border-bottom: none !important;
+}
+
 .nav a:link {
     text-decoration: none !important;
     border: none !important;
