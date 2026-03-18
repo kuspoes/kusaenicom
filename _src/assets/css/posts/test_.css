@@ -1,0 +1,31 @@
+#related_post {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  width: 550px;
+}
+
+#related_post .related_post_list p {
+  width: auto;
+}
+
+#related_post p.lebih-banyak {
+  margin-top: 2em;
+  font-family: var(--sans);
+  font-size: 0.9em;
+}
+
+a.related_post_link {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.related_post_list {
+  padding: 0.9em;
+  transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.related_post_list:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  border-radius: 10px;
+}

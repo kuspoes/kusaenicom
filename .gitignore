@@ -1,5 +1,4 @@
 _site
 .DS_Store
 .env
-test_*
-**/test_*
+_sandbox
