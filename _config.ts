@@ -116,7 +116,7 @@ site.use(
   }),
 );
 
-// dont us this helper
+// don't us this helper
 site.helper(
   "gambar",
   function (imgSrc: string, imgAlt: string) {

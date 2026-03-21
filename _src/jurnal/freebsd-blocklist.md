@@ -256,6 +256,26 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 <p>ikuti prompt dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
 </ol>
 
+
+<div class="postnotes">
+    <p class="sans"><b>Menyimpan kredensial di keychain atau Bitwarden</b></p>
+    <p>Cara ini adalah dengan memanfaatkan <i>keychain</i> dari aplikasi Password Manager pihak ketiga seperti Apple Password, Bitarden, atau 1Password. Aplikasi ini akan membantu proses login dan secara otomatis akan memasukkan password SSH saat login. Tentu untuk tambahan keamanan bisa pakai biometrik untuk <i>approval</i>.</p>
+    <p>Sebagai contoh ane pakai Bitwarden, caranya mudah saja. Setelah selesai membuat SSH <i>public key</i>, salin isi dari file <code>id_ed25519.pub</code></p>
+    <pre><code>
+    $ cat ~/.ssh/id_ed25519
+    -----BEGIN PUBLIC KEY-----
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDSbxBaKblxIjY+ugSUoE51/bd
+    OMp2mo7f4S+11PQvSeKqzrgtHFmbccA5fabkRWXv0mEGEscHm/dDNpapZCAJEdM4
+    WPsfeqxv+dZvcPI++L+kkIJU9VdvYlmpUWyXX1+RMqOOSlflv8S6dLHiakgpGNqq
+    O7YxmjM3ucnqHKobjQIDAQAB
+    -----END PUBLIC KEY-----
+    </code></pre>
+    <p>Kemudian buka aplikasi Bitwarden, dan tambahkan <i>entry</i> baru dengan kategori <b>SSH Key</b>. Otomatis Bitwarden akan membuat sebuah <i>entry</i> SSH Key sekaligus mengisi datanya. Tapi tentu saja data tersebut tidak sesuai dengan yang ane inginkan, jadi ane akan rubah dengan cara beri nama SSH Key tersebut dan simpan. Kemudian langsung pilih <b>Edit</b> atau klik pada ikon pensil, pada kelompok <b>SSH Key</b> kolom <b>Private Key</b> pilih ikon kertas dan pensil dengan keterangan <b>Import Key from Clipboard</b> dan simpan.</p>
+    <p class="kuning-gading">Sebagai catatan Bitwarden saat ini hanya support <code>ed25519</code> saja</p>
+    <p>Terakhir, tuju ke pengaturan Bitwarden dan aktifkan (kasih centang) pada <b>Enable SSH Agent</b> untuk mengaktifkan koneksi ke terminal. Setelah ini setiap terminal menjalankan perintah SSH, maka Bitwarden akan menunjukkan permintaan <i>approval</i>, bisa dengan biometrik ataupun memasukkan <i>password</i> dari Bitwarden.</p>
+    <p>Informasi lebih lengkap bisa dibaca di halaman <a href="https://bitwarden.com/help/ssh-agent/#tab-macos-6VN1DmoAVFvm7ZWD95curS">dokumentasi Bitwarden</a></p>
+</div>
+
 2. **Menolak root login lewat SSH.**
    Para penyerang biasanya akan memakai _username_ root untuk melakukan serangan, jadi membatasi akses root untuk login ke SSH adalah pilihan yang tepat. Caranya adalah dengan mengubah konfigurasi `sshd_config`.
 
@@ -293,6 +313,7 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 
 
 masukkan _password_ yang dibuat sebelumnya.
+
 
 3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
     Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada port SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.
