@@ -28,13 +28,13 @@ Namanya VPS Storage maka tentu saja VPS ini dioptimalisasi untuk keperluan penyi
 
 Rencananya adalah membuat storage NVME 20GB sebagai host OS dan nantinya semua _service_ akan dimasukkan ke dalam _jail_ masing - masing biar mudah _maintenance_ dan lebih terorganisir, tentunya dengan _service_ sebanyak itu minimal akan dibuat _jail_ sekitar 5 - 6 unit. Hal ini akan membuat spasi _storage_ di NVME akan penuh dan tidak memenuhi syarat yang layak untuk menjalankan OS, misal dalam 1 _jail_ berukuran sekitar 1,5 GB (masih polos) saja akan membutuhkan setidaknya 8GB _storage_ belum lagi nanti kalo sudah ada isinya bisa membengkak sekitar 2 - 3 kali lipat atau minimal membutuhkan _storage_ sebesar 22-25 GB. Untuk itu nantinya ane akan menaruh _folder jail_ di _storage_ kedua yang berkapasitas jauh lebih besar yaitu 500GB.
 
-Long story short, ane sudah membuat beberapa _jail_ tersebut dan sekarang saatnya untuk memasang Garage yang nantinya akan menjadi peladen untuk S3 _storage_ yang akan dipergunakan sebagai penyimpanan untuk Gotosocial dan Ente Photos. Meskipun banyak pilihan aplikasi _open source_ untuk _storage server_ S3 ini namun ane pilih Garage karena paling ringan pemakaian RAM, mudah pemasangannya, dan mendukung AWS. Jadi ane akan memasang Garage dan Garage WebUI (untuk admin UInya).
+_Long story short_, ane sudah membuat beberapa _jail_ tersebut dan sekarang saatnya untuk memasang Garage yang nantinya akan menjadi peladen untuk S3 _storage_ yang akan dipergunakan sebagai penyimpanan untuk Gotosocial dan Ente Photos. Meskipun banyak pilihan aplikasi _open source_ untuk _storage server_ S3 ini namun ane pilih Garage karena paling ringan pemakaian RAM, mudah pemasangannya, dan mendukung AWS. Jadi ane akan memasang Garage dan Garage WebUI (untuk admin UInya).
 
-Ane sudah persiapkan _jail_ dengan nama `PondokBambu` dan IP `10.0.0.2/24`, akses internet di dalam _jail_ sudah berjalan baik dan ane juga sudah atur agar _jail_ bisa pakai/akses ke _raw_sockets_ dan sudah `bootstrap pkg`.
+Ane sudah [persiapkan](https://kusaeni.com/jurnal/raspberry-pi4-di-freebsd/#bootstrap-dan-mulai-membuat-jail) _jail_ dengan nama `PondokBambu` dan IP `10.0.0.2/24`, akses internet di dalam _jail_ sudah berjalan baik dan ane juga sudah atur agar _jail_ bisa pakai/akses ke _raw_sockets_ dan sudah `bootstrap pkg`.
 
 ## Install Garage
 
-Setelah masuk ke dalam `PondokBambu` kemudian _update_ paket dari repositori. Untuk memasang Garage sangat mudah karena sudah ada _binary_ tersedia di repositori FreeBSD, masalahnya adalah di repositori masih pakai versi yang lama yaitu 1.20_2. Dengan versi ini nantinya akan bermasalah jika hendak memakai Garage WebUI karena tidak kompatibel. Ketika cek ke [Freshport](https://www.freshports.org/www/garage/) ternyata sudah tersedia versi terkini yaitu 2.1.0_1 per tanggal 11 Nopember kemarin.
+Setelah masuk ke dalam `PondokBambu` kemudian _update_ paket dari repositori. Untuk memasang Garage sangat mudah karena sudah ada _binary_ tersedia di repositori FreeBSD, masalahnya adalah di repositori masih pakai versi yang lama yaitu 1.20_2. Dengan versi ini nantinya akan bermasalah jika hendak memakai Garage WebUI karena tidak kompatibel. Ketika cek ke [Freshport](https://www.freshports.org/www/garage/) ternyata sudah tersedia versi terkini yaitu 2.1.0_1 per tanggal 11 Nopember 2025 kemarin.
 
 ```sh
 # bastille console PondokBambu
@@ -43,7 +43,7 @@ root@PondokBambu:~ # pkg bootstrap -y && pkg update
 ...
 ...
 root@PondokBambu:~ # pkg search garage
-garage-1.2.0                   Open-source distributed storage service
+garage-2.1.0                   Open-source distributed storage service
 ```
 
 Oleh karena itu ane akan pakai versi terbaru ini saja, tidak perlu _build_ dari Ports melainkan dicoba untuk berpindah repo dari Quaterly ke Latest.
@@ -55,6 +55,8 @@ root@PondokBambu:~ # pkg update -f
 root@PondokBambu:~ # pkg search garage
 garage-2.1.0                   Open-source distributed storage service
 root@PondokBambu:~ # pkg install -y garage
+root@PondokBambu:~ # garage --version
+garage cargo:2.1.0 [features: k2v, lmdb, sqlite, metrics, bundled-libs] 
 ```
 
 Setelah terpasang dengan baik, buat _file_ `garage.toml` yang berisi konfigurasi Garage dan ditaruh di _folder_ `/usr/local/etc/`, isinya kira - kira sebagai berikut:
@@ -89,7 +91,7 @@ admin_token = "yijEPXXjouuDFgrHopNXG89ZL6h8ztdqOw2AjUKne44="
 metrics_token = "yijEPXXjouuDFgrHopNXG89ZL6h8ztdqOw2AjUKne44="
 ```
 
-Karena ane cuma aktifkan IPv4 maka ane sesuaikan IP di `bind_addr` dengan IP `localhost`. Untuk `rpc_secret` adalah kode acak yang dibuat dengan perintah `openssl rand -hex 32` sedangkan `admin_token` dan `metrics_token` dengan `openssl rand -base64 32`, sehingga perlu memasang paket `openssl` namun jika tidak maka bisa pakai layanan online [OpenSSL toolkit](https://www.cryptool.org/en/cto/openssl/) untuk mendapatkan token.
+Karena ane cuma aktifkan IPv4 maka ane sesuaikan IP di `bind_addr` dengan IP `localhost`. Untuk `rpc_secret` adalah kode acak yang dibuat dengan perintah `openssl rand -hex 32` sedangkan `admin_token` dan `metrics_token` dengan `openssl rand -base64 32`, sehingga perlu memasang paket `openssl` namun jika tidak maka bisa pakai layanan online [OpenSSL toolkit](https://www.cryptool.org/en/cto/openssl/) untuk membuat token.
 
 Konfigurasi sudah siap, maka tinggal menjalankan layanan `garage` saja.
 
@@ -103,18 +105,19 @@ ID        Hostname  Address         Tags  Zone  Capacity  DataAvail
 0cb2c960c garage    127.0.0.1:3901  []    dc1   100.0 GB  125 GB (88.6%)
 ```
 
-Untuk mencoba apakah `garage` sudah berjalan dengan baik ada 2 opsi yaitu dengan CLI ataupun dengan [Garage WebUI](https://github.com/khairul169/garage-webui). Jika memilih yang kedua maka silakan skip dan lompat ke Memasang Garage WebUI
+Untuk mencoba apakah `garage` sudah berjalan dengan baik ada 2 opsi yaitu dengan CLI ataupun dengan [Garage WebUI](https://github.com/khairul169/garage-webui). Jika memilih yang kedua maka silakan _skip_ dan lompat ke [memasang Garage WebUI](#garage-webui)
 
 ### Mempersiapkan Cluster
 
-Garage membutuhkan disk untuk menyimpan data (tentu saja ya kan), maka perlu menyiapkan disk/partisi untuk menjadi _node cluster_. Ane sudah menyiapkan spasi yang nantinya akan dipakai sebagai _cluster_. Anggap saja partisi _jail_ tersebut memiliki spasi bebas sebesar 100GB dan akan dipergunakan sebagai _cluster_ dengan alokasi sebesar 50GB[^1].
+Garage membutuhkan disk untuk menyimpan data (tentu saja ya kan?), maka perlu menyiapkan disk/partisi untuk menjadi _node cluster_. Ane sudah menyiapkan spasi yang nantinya akan dipakai sebagai _cluster_. Anggap saja partisi _jail_ tersebut memiliki spasi bebas sebesar 100GB dan akan dipergunakan sebagai _cluster_ dengan alokasi sebesar 50GB[^1].
 
 ```sh
 root@PondokBambu:~ # garage layout assign -z dc1 -c 50G 0cb2c960c
 root@PondokBambu:~ # garage layout apply --version 1
 ```
-
-`0cb2c960c` adalah `node_id` yang bisa di dapat di _field_ `ID` ketika menjalankan perintah `service garage status`.
+<aside>
+<code>0cb2c960c</code> adalah <code>node_id</code> yang bisa di dapat di <i>field</i> <code>ID</code> ketika menjalankan perintah <code>service garage status</code>.
+</aside>
 
 ### Membuat Bucket
 
@@ -192,6 +195,20 @@ kemudian load dulu dengan perintah `# . .awsrc` untuk membaca _environtment_. Co
 root@PondokBambu:~ # aws s3 ls s3://ente-bucket
 ```
 
+<div class="postnotes hijau">
+    <p>Cara lain tanpa rubah file <code>.awsrc</code> bisa dengan menjalankan perintah seperti ini langsung di <i>shell terminal</i>.</p>
+    <pre><code>
+# aws configure set aws_access_key_id GKeb9de68995f550e000133ac2
+# aws configure set aws_secret_access_key a120b7effaedc7865e4ec59598fda63eb49d4b24ea5f6270e493074848d35f1f
+# aws configure set s3.endpoint_url http://localhost:3900
+    </code></pre>
+    <p>Jika ada rencana untuk membuat <i>share link/presign</i>, konfigurasi ini sangat bermanfaat.</p>
+    <pre><code>
+# aws configure set default.s3.addressing_style path
+# aws configure set default.s3.signature_version s3v4
+    </code></pre>   
+</div>
+
 Perintah yang lain bisa dibaca di [dokumentasi resmi](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html) awscli.
 
 ### Garage WebUI
@@ -216,13 +233,13 @@ Untuk membangun _frontend_ ini ada hal yang perlu diperhatikan yaitu mengatur mo
 
 ```json
 "pnpm": {
-	"ovverides": {
+	"overrides": {
 		"rollup": "^4.24.0"
 	}
 }
 ```
 
-ini akan menimpa modul `rollup` agar tidak di*skip* saat `pnpm install` nantinya. Setelah `pnpm` mengunduh modul yang dibutukan kemudian `build` dan hasilnya adalah _files_ `html` dan `js` berada di folder `dist\`
+ini akan menimpa modul `rollup` agar tidak di*skip* saat `pnpm install` nantinya. Setelah `pnpm` mengunduh modul yang dibutuhkan kemudian `build` dan hasilnya adalah _files_ `html` dan `js` berada di folder `dist\`
 
 ```sh
 root@PondokBambu:garage-webui # pnpm install
