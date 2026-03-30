@@ -103,6 +103,29 @@ up
 
 Perhatikan baris kode `!/usr/local/bin/wg setconf wg0 /etc/wireguard/wg0.conf`, perintah ini akan memanggil konfigurasi Wireguard di `/etc/wireguard/wg0.conf` dan akan membacanya saat interface `wg0` diaktifkan.
 
+---
+
+Pengaturan `Interface` di FreeBSD bisa saja memakai cara yg sama di atas namun biasanya ada 2 cara lain yang bisa di pakai yaitu melalui `wg0.conf` dan `rc.conf`.
+
+Dengan `wg0.conf` adalah menambahkan keterangan tentang IP (dan MTU) langsung ke dalam file `wg0.conf` sehingga menjadi seperti ini
+
+```txt
+[Interface]
+Address = 10.0.0.1/24
+MTU = 1420
+```
+
+Penulisan _netmask_ (`/24`) ini sangat penting karena FreeBSD sejak versi 14.2 tidak mengijinkan penulisan IP tanpa _netmask_ maka jika terlewat Wireguard akan menolak untuk _start_. Namun kadang kala konfigurasi netmask ini tiba - tiba hilang, bisa karena sistem atau _service_ Wireguard _reboot_ sehingga harus kembali menambahkan secara manual. Jika dirasa merepotkan maka mengatur hal ini di file `rc.conf` adalah pilihan yang lebih baik.
+
+```shell-session
+$ doas sysrc cloned_interfaces+="wg0"
+$ doas sysrc ifconfig_wg0="inet 10.0.0.1/24 mtu 1420 up"
+```
+
+Jika pakai cara ini, maka konfigurasi `Address` dan `MTU` harus dihapus dari file `wg0.conf`.
+
+---
+
 #### Cara kedua
 
 Untuk cara yang kedua adalah membuat konfigurasi dengan metode tradisional OpenBSD. Untuk interface, buat file baru dengan nama `hostname.wg0` di direktori `/etc`.

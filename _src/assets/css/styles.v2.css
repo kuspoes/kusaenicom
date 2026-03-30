@@ -1,8 +1,7 @@
 :root {
     --sans:
-        -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-        helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-        sans-serif;
+        -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
+        Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     --serif: "charter", Georgia, Palatino Linotype, Times, serif;
     --salis: "charter", Georgia, Palatino, serif;
     --dm: "DMSerif", Georgia, serif;
@@ -402,11 +401,7 @@ img.galeri {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 54%,
-        rgba(241, 250, 238, 1) 98%
-    );
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(241, 250, 238, 1) 98%);
 }
 
 img.layang {
@@ -590,7 +585,7 @@ img.logo {
 }
 
 .hijau {
-    background-color: rgba(167, 201, 87, 0.2);
+    background-color: rgba(167, 201, 87, 0.1);
     color: #081c15;
 }
 
@@ -602,6 +597,10 @@ img.logo {
 .ungu {
     background-color: rgb(60, 9, 108, 0.2);
     color: #f1faee;
+}
+
+.biru {
+    background-color: rgb(202, 240, 248, 0.5);
 }
 
 iframe.video,
@@ -956,8 +955,7 @@ a:hover {
 }
 /** pagefind a **/
 
-.pagefind-ui__result-title.svelte-j9e30
-    .pagefind-ui__result-link.svelte-j9e30:hover {
+.pagefind-ui__result-title.svelte-j9e30 .pagefind-ui__result-link.svelte-j9e30:hover {
     text-decoration: none;
 }
 

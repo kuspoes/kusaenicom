@@ -179,7 +179,7 @@ Kemudian jalankan <mark> `./main` secara `default`nya akan mencari _file_ `museu
 # ./main --config /root/ente/server/museum.yaml
 ```
 
-<div class="postnotes hijau">
+<div class="postnotes kuning-gading">
 <h4>Update</h4>
  <p>Agar Ente bisa dijalankan setiap <i>boot</i> maka bisa dibuat <i>service script</i> seperti contoh berikut.</p> 
  <pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
@@ -446,7 +446,7 @@ $ aws s3api put-bucket-cors \
 5. Ente Desktop
    Meski ada web GUI, memasang Ente Desktop app adalah pilihan yang lebih baik karena pengalaman ane saat pakai web gui sebagian besar media (terutama video) yang ane unggah tidak bisa di*generate thumbnail*nya atau _frame_ pertama muncul warna gelap/hitam. Namun masalah ini tidak terjadi saat ane pakai Ente Desktop app.
 
-Untuk memasang tinggal unduh saja aplikasinya di [halaman Ente Desktop](https://ente.io/download/) atau untuk versi termutakhir bisa lewat [Repo Github Ente Desktop](https://github.com/ente-io/ente/tree/main/desktop). Satu - satunya kelemahan yang ane ga suka adalah Ente Desktop app dibangun dengan electron.
+Untuk memasang tinggal unduh saja aplikasinya di [halaman Ente Desktop](https://ente.io/download/) atau untuk versi termutakhir bisa lewat [Repo Github Ente Desktop](https://github.com/ente-io/ente/tree/main/desktop). Satu - satunya kelemahan yang ane ga suka adalah Ente Desktop app dibangun dengan electron 👎🏾.
 
 ---
 
