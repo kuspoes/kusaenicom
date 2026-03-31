@@ -184,7 +184,7 @@ Kemudian ane sambungkan MacOS (wireguard klien) ke server namun sebelum itu ane 
 
 ![Wireguard Client Config, change DNS Resolver IP](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Unbound/SCR-20251207-Unbound_bzEPcBfMq.png)
 
-di terminal (server) dicoba untuk tes _resolver_
+di terminal (client/macos) dicoba untuk tes _resolver_
 
 ```shell-session
 ➜  ~ dig kusaeni.com

@@ -43,7 +43,7 @@ root@PondokBambu:~ # pkg bootstrap -y && pkg update
 ...
 ...
 root@PondokBambu:~ # pkg search garage
-garage-2.1.0                   Open-source distributed storage service
+garage-1.20_2                   Open-source distributed storage service
 ```
 
 Oleh karena itu ane akan pakai versi terbaru ini saja, tidak perlu _build_ dari Ports melainkan dicoba untuk berpindah repo dari Quaterly ke Latest.
