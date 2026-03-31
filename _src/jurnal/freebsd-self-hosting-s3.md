@@ -105,8 +105,6 @@ ID        Hostname  Address         Tags  Zone  Capacity  DataAvail
 0cb2c960c garage    127.0.0.1:3901  []    dc1   100.0 GB  125 GB (88.6%)
 ```
 
-Untuk mencoba apakah `garage` sudah berjalan dengan baik ada 2 opsi yaitu dengan CLI ataupun dengan [Garage WebUI](https://github.com/khairul169/garage-webui). Jika memilih yang kedua maka silakan _skip_ dan lompat ke [memasang Garage WebUI](#garage-webui)
-
 ### Mempersiapkan Cluster
 
 Garage membutuhkan disk untuk menyimpan data (tentu saja ya kan?), maka perlu menyiapkan disk/partisi untuk menjadi _node cluster_. Ane sudah menyiapkan spasi yang nantinya akan dipakai sebagai _cluster_. Anggap saja partisi _jail_ tersebut memiliki spasi bebas sebesar 100GB dan akan dipergunakan sebagai _cluster_ dengan alokasi sebesar 50GB[^1].
