@@ -12,7 +12,7 @@ code: true
 favorit: false
 comment: true
 tocx: true
-draft: true
+draft: false
 keywords: freebsd, bsd
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/
