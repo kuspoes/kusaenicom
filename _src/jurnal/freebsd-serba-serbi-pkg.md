@@ -7,7 +7,7 @@ tags:
   - tutorial
   - freebsd
 kategori: jurnal
-relasi: false
+relasi: freebsd
 code: true
 favorit: false
 comment: true
