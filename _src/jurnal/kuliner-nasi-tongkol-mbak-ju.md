@@ -103,6 +103,7 @@ Beberapa pekan yang lalu ane sempatkan datang lagi kesini saat ada kesempatan ke
 </div>
 <p class="ncaption">Suasana ramai di Warung Mbak Ju. Sepiring nasi tongkol Mbak Ju.</p>
 
+
 Ane pesan menu yang sama seperti sebelumnya namun dengan pesan tegas kalo ane minta sambel yang pedas. Akhirnya setelah mendapatkan sepiring nasi tongkol ane kemudian mencari tempat duduk. Sangat ramai tapi untungnya pas ane sudah dapat makanan ada sepasang insan manusia bergeser untuk keluar sehingga ane dapat tempat (meski sempit dan seadanya).
 
 Ternyata kekhawatiran ane terbalas, rasanya sama dengan saat ane datang sebelumnya. Bukan karena ane pilek, melainkan memang rasanya kurang menurut ane. Oke sambelnya pedas namun rasa terasi kurang terasa, tongkolnya pun bukan yang _salty_ melainkan biasa saja. Telur dadarnya pun seakan tidak dibumbui apa - apa. Namun begitu ane tetap habiskan menu ini dan pesan 1 bungkus lagi untuk dibawa pulang.
