@@ -580,6 +580,12 @@ img.logo {
     background-color: rgba(253, 240, 213, 0.3);
 }
 
+.kuning {
+    background-color: rgb(255, 214, 10, 0.8);
+    padding: 1px 2px;
+    margin: 0;
+}
+
 .pink {
     background-color: rgba(242, 106, 141, 0.2);
 }
@@ -698,19 +704,27 @@ li {
 
 nav.toc ol li {
     margin-bottom: 0.5em;
+    list-style-type: none;
+    font-weight: 500;
 }
 
 nav.toc ol li ul li {
     margin: 1em 0 0.7em 0;
+    font-weight: 300;
 }
 
 nav.toc ol li {
     font-weight: 400;
+    margin-bottom: 1.5em;
 }
 
-nav.toc ol li ul li {
-    font-weight: 300;
-    /* list-style-type: circle; */
+nav.toc ol li ul li a:link {
+    font-weight: 400;
+}
+
+nav.toc h4 {
+    text-transform: uppercase;
+    font: normal 1.1em var(--sans);
 }
 
 sup {

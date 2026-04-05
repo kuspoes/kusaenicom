@@ -19,15 +19,14 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
 ---
 
-<div class="postnotes pink">
-    <p>Artikel ini masih dalam proses dan akan terus diupdate.</p>
+<div class="postnotes kuning">
+    <p>⚠️ Artikel ini masih dalam proses dan akan terus diupdate.</p>
 </div>
 
-Meski sudah banyak aplikasi yang dibawa di dalam paket *base*-nya namun FreeBSD tetap menyediakan alat untuk meng*install* aplikasi pihak ketiga, mengelola atau meng*update*nya. Disediakan 2 alat dan 2 cara berbeda yaitu dengan FreeBSD *ports collections* yaitu cara meng*install* aplikasi lewat *build source code*. Cara lainnya adalah memasang aplikasi dari *pre-built binaries*.
+Meski sudah banyak aplikasi yang dibawa di dalam paket *base*-nya namun FreeBSD tetap menyediakan alat untuk meng*install* aplikasi pihak ketiga, mengelola atau meng*update*nya. Disediakan 2 alat dan 2 cara berbeda yaitu dengan FreeBSD *ports collections* yaitu cara meng*install* aplikasi lewat *build source code*. Cara lainnya adalah memasang aplikasi dari *pre-built binaries* dengan [`pkg(8)`](https://man.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&format=html)
 
 Memasang dari *ports collections* biasanya dilakukan jika di dalam *repository* resmi FreeBSD sebuah paket belum ter*update* karena biasanya memang di *ports* lebih dahulu diluncurkan. [Freshports](https://www.freshports.org/) adalah situs yang bisa dipergunakan untuk melacak rilis dari *ports*, resminya juga ada yaitu melalui [FreeBSD Ports Collections](https://ports.freebsd.org/cgi/ports.cgi).
 
-FreeBSD memberikan alat untuk melakukan pencarian, pemasangan, *upgrade*, maupun menghapus sebuah atau lebih aplikasi yang bernama [pkg(8)](https://man.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&format=html). *Package Manager* ini sangat *powerfull* untuk melakukan tugasnya secara umum dan jauh lebih mudah daripada memakai *ports* karena akan meng*install* aplikasi dari *pre-built binaries* yang sudah tersedia.
 
 ## Mempergunakan PKG
 
@@ -359,7 +358,7 @@ Untuk menghapus ada 2 cara, bisa pakai perintah `pkg delete` karena toh juga *pa
 
 Caranya ribet, pokoknya pakai Ports itu ribet!. Pertama harus tau dulu daftar dari *package* yang ada versi pembaharuan namun harus melakukan `git pull` terlebih dahulu untuk memperbarui `local copy` dari repo Ports. 
 
-```shell-session
+```shell-session line-numbers
 $ doas git -C pull /usr/ports
 $ doas pkg version -l "<"
 ```
@@ -388,6 +387,6 @@ Selain untuk melakukan *upgrade* sebenarnya `portmaster` bisa juga dipakai untuk
 
 ## Kesimpulan
 
-FreeBSD sudah memiliki *package management* yang sangat handal, mudah, dan lengkap. Untuk urusan ambil dan pasang paket binari bisa pakai `pkg` sedangkan untuk kompilasi dari *source code* bisa pakai Ports.
+FreeBSD memberikan alat untuk melakukan pencarian, pemasangan, *upgrade*, maupun menghapus sebuah atau lebih aplikasi yang bernama `pkg`. *Package Manager* ini sangat *powerfull* untuk melakukan tugasnya secara umum dan jauh lebih mudah daripada memakai *ports* karena akan meng*install* aplikasi dari *pre-built binaries* yang sudah tersedia.
 
 Meski disebut tidak memiliki *wrapper* untuk `pkg` namun `portmaster` juga bisa dipakai untuk manajemen *package*. Ada juga [Poudriere](https://man.freebsd.org/cgi/man.cgi?poudriere) yang bisa dipakai meski fungsi utamanya untuk melakukan *package builder* dan *port tester*. Berbeda dengan *wrapper package manager* lainnya seperti Powerpill di Arch Linux, di FreeBSD tidak memberikan fitur *download accelerator* namun lebih pada kekuatan di pengelolaan *dependencies* dan keamanan.
