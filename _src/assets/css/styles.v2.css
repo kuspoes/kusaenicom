@@ -277,20 +277,29 @@ nav.toc {
 /* rating page */
 
 table {
+    border-spacing: 1;
     border-collapse: collapse;
+    border-radius: 0.375em;
     width: 40rem;
+    overflow: hidden;
     font: 1em/1 var(--serif);
     margin: 2em auto;
 }
 
 thead {
-    background-color: #ded9e2;
+    background-color: rgb(255, 236, 134);
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+td {
+    text-align: left !important;
 }
 
 td,
 th {
     border: 1px solid #dddddd;
-    text-align: center;
     padding: 8px;
     font: normal 90% var(--sans);
 }

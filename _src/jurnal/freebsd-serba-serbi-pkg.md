@@ -94,7 +94,7 @@ Setelah `FreeBSD.conf` selesai dibuat, maka paksa `pkg` untuk mengunduh ulang de
 Salah satu pengaturan yang biasanya sering dipakai oleh pengguna FreeBSD adalah menentukan jenis *update* repositori dimana ada 2 pilihan utama yaitu `latest` dan `quarterly`. Perbedaan utamanya sebagai berikut
 
 | Jenis Repo      | Keterangan      |
-| :------------ | :------------ |
+| :------------: | :------------: |
 | `Latest` | Berisi versi terbaru dari masing - masing package alias lebih _up to date_ namun memiliki resiko atas kompatibilitas. |
 | `Quarterly` | Berisi versi yang lebih stabil, di*update* setiap 3 bulan sekali.|
 
@@ -107,7 +107,6 @@ url: "pkg+http://pkg.FreeBSD.org/${ABI}/quarterly"
 <aside>Rubah pada tulisan <code>quarterly</code> atau <code>latest</code> sesuaikan dengan repo yang diinginkan. <br /> <code>ee</code> adalah text editor bawaan dari FreeBSD</aside>
 
 ### Mencari, lihat deskripsi, dan meng-*install package*
-
 Setelah pengaturan selesai dan *repository* sudah di*update*, maka perintah untuk memasang sebuah atau lebih *package* bisa dilakukan dengan perintah `pkg install`. Namun penting untuk melakukan pencarian terlebih dahulu karena *default*nya FreeBSD akan menampilkan beberapa pilihan versi *package* jika tersedia apalagi jika memakai repositori `latest`. Sebagai contoh akan mencari dan memasangan [vim](https://www.vim.org/).
 
 ```shell-session
@@ -165,7 +164,6 @@ Proceed with this action? [y/N]: y
 
 
 ### Menghapus *package*
-
 Ada 2 perintah yang memiliki fungsi untuk menghapus *package* dengan `pkg` yaitu `pkg delete` dan `pkg remove`, meski berbeda namun memiliki fungsi yang sama. Namun di [man pages pkg](https://man.freebsd.org/cgi/man.cgi?pkg) perintah `pkg remove` tidak disebut sehingga untuk kompatibilitas pergunakan perintah `pkg delete`.
 
 Cara pakainya  seperti ini
