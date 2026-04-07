@@ -30,7 +30,7 @@ Memasang dari *ports collections* biasanya dilakukan jika di dalam *repository* 
 
 ## Mempergunakan PKG
 
-Semua versi FreeBSD sudah datang dengan `pkg` secara standar. Ketika pertama kali memakai sistem FreeBSD atau pertama kali pakai `jail` maka perlu melakukan `pkg bootstrap` untuk mengunduh paket `pkg` (jika di sistem belum ada) dan memasangnya, jika ternyata `pkg` sudah ada di dalam sistem maka perintah ini tidak akan berpengaruh apa - apa. Jika perintah ini diberi *flag* `-f` sehingga menjadi `pkg bootstrap -f` maka akan melakukan pengunduhan dan pemasangan paket `pkg` dan mengabaikan apakah `pkg` sudah ada atau belum.
+Semua versi FreeBSD sudah datang dengan `pkg` secara standar. Ketika pertama kali memakai sistem FreeBSD atau atau saat di awal membuat `jail` maka perlu melakukan `pkg bootstrap` untuk mengunduh paket `pkg` (jika di sistem belum ada) dan memasangnya, jika ternyata `pkg` sudah ada di dalam sistem maka perintah ini tidak akan berpengaruh apa - apa. Jika perintah ini diberi *flag* `-f` sehingga menjadi `pkg bootstrap -f` maka akan melakukan pengunduhan dan pemasangan paket `pkg` dan mengabaikan apakah `pkg` sudah ada atau belum.
 
 Setelah `pkg` tersedia bisa dipergunakan dengan memasukkan perintah - perintah sebagai berikut.
 
@@ -287,7 +287,7 @@ openexr-3.4.8 is vulnerable:
 
 Hasil dari perintah ini adalah informasi tentang kerentanan. Sebagai contoh di atas setidaknya ada 3 masalah dari 1 *package* yaitu `python`. Informasi lebih lengkap bisa diperiksa dengan mengakses halaman WWW di tautan yang diberikan. Sebagai contoh masalah di `python` disebutkan bahwa itu merupakan tindak lanjut dari temuan oleh laporan Python Software Foundation Security Developer.
 
-Cara penyelesaiannya biasanya adalah menunggu *patch* resmi dari FreeBSD atau *upgrade* ke versi lebih tinggi. Bisa dengan `pkg` (nunggu *patch*) atau lewat Freshport.
+Cara penyelesaiannya biasanya dengan menunggu *patch* resmi dari FreeBSD atau *upgrade* ke versi lebih tinggi, dengan `pkg` (nunggu *patch*) atau lewat Freshport.
 
 ## Mempergunakan Port's
 
@@ -295,7 +295,7 @@ Port's adalah kumpulan dari beberapa *files* `Makefile`, `patches`, dan `Descrip
 
 ### Mempersiapkan Port's
 <div class="postnotes">
-    <p>Biasanya ane pakai Port's untuk mencara <i>package</i> yang lebih cepat <i>up to date</i> dibandingkan dari repo <code>pkg</code> resmi. Namun sebaiknya dihindari kalo tidak butuh banget karena prosesnya lebih ribet, makan waktu dan <i>resources</i> perangkat.</p>
+    <p>Ane pakai Port's untuk mencari <i>package</i> yang lebih cepat <i>up to date</i> dibandingkan dari repo <code>pkg</code> resmi. Namun sebaiknya dihindari kalo tidak butuh banget karena prosesnya lebih ribet, makan waktu dan <i>resources</i> perangkat.</p>
 </div>
 
 *Files* `Makefile` dan kawan - kawannya terlebih dahulu harus disalin ke lokal dan kemudian baru bisa melakukan `build`. Karena repo dari Port's ini disimpan dalam repo `git` maka perlu untuk memasang *package* `git` terlebih dahulu. Asumsi bahwa Port's sama sekali masih kosong, maka *install* `git` dengan `pkg`.
