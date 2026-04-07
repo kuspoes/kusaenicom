@@ -289,7 +289,7 @@ Hasil dari perintah ini adalah informasi tentang kerentanan. Sebagai contoh di a
 
 Cara penyelesaiannya biasanya adalah menunggu *patch* resmi dari FreeBSD atau *upgrade* ke versi lebih tinggi. Bisa dengan `pkg` (nunggu *patch*) atau lewat Freshport.
 
-## Dengan Port's
+## Mempergunakan Port's
 
 Port's adalah kumpulan dari beberapa *files* `Makefile`, `patches`, dan `Description` yang dipergunakan untuk mem-*build* sebuah *package*. Sehingga untuk mendapatkan sebuah *binary* yang siap untuk di*install* perlu melakukan *build* yang sering kali membutuhkan sumber daya komputasi lebih. 
 

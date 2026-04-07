@@ -299,7 +299,7 @@ td {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    /*border: 1px solid #dddddd;*/
     padding: 8px;
     font: normal 90% var(--sans);
 }
@@ -334,6 +334,7 @@ th {
 .ragu th,
 .ragu td {
     padding: 12px 15px;
+    border: none;
 }
 
 .ragu tbody tr {
