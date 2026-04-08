@@ -1565,3 +1565,103 @@ a.related_post_link {
         width: 100%;
     }
 }
+
+@media print {
+    @page {
+        size: A5; /* Ukuran buku standar, bisa diganti ke A4 atau Letter */
+        margin: 1cm;
+    }
+
+    /* Efek 'Gutter' untuk penjilidan (Opsional: membedakan halaman ganjil/genap) */
+    @page :left {
+        margin-left: 2.5cm;
+        margin-right: 1.5cm;
+    }
+
+    @page :right {
+        margin-left: 1.5cm;
+        margin-right: 2.5cm;
+    }
+
+    /* 2. Reset Layout */
+    body {
+        background: white;
+        color: black;
+        font-size: 11pt; /* Ukuran standar buku */
+        line-height: 1.6;
+        font-family:
+            "Georgia", "Anko", "Times New Roman", serif; /* Font serif lebih mudah dibaca di cetak */
+    }
+
+    /* Sembunyikan elemen navigasi, sidebar, dan iklan */
+    nav,
+    footer,
+    .sidebar,
+    .ads,
+    .no-print,
+    iframe,
+    .waktu_baca {
+        display: none !important;
+    }
+
+    .nav {
+        margin-bottom: 0;
+    }
+
+    /* 3. Tipografi Ala Buku */
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid; /* Jangan biarkan judul terpisah dari paragrafnya */
+        font-family: serif;
+        font-weight: bold;
+        margin-top: 1.5em;
+    }
+
+    h1 {
+        font-size: 24pt;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    h2 {
+        font-size: 18pt;
+        border-bottom: 1px solid #ccc;
+    }
+
+    p {
+        orphans: 3; /* Minimal baris yang tertinggal di bawah halaman */
+        widows: 3; /* Minimal baris yang terbawa ke halaman baru */
+        text-align: justify; /* Khas buku formal */
+        margin-bottom: 1em;
+    }
+
+    /* 4. Penanganan Gambar & Link */
+    img {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Menampilkan URL di samping link (karena kertas tidak bisa diklik) */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        font-style: italic;
+    }
+
+    /* 5. Kontrol Halaman */
+    .chapter-break {
+        page-break-before: always; /* Memaksa bab baru mulai di halaman baru */
+    }
+
+    blockquote {
+        margin: 2em 40px;
+        font-style: italic;
+        border-left: 2px solid #ddd;
+        padding-left: 1em;
+    }
+}
