@@ -19,7 +19,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
 ---
 
-<div class="postnotes kuning">
+<div class="postnotes info">
     <p>⚠️ Artikel ini masih dalam proses dan akan terus diupdate.</p>
 </div>
 

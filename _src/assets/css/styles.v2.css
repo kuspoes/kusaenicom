@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+
 :root {
     --sans:
         -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
         helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    --serif: Charter, Anko, Georgia, Palatino Linotype, Times, serif;
+    --serif: Literata, Charter, Anko, Georgia, Palatino Linotype, Times, serif;
     --salis: "charter", Georgia, Palatino, serif;
     --dm: "DMSerif", Georgia, serif;
     --col_body: #000000;
@@ -592,8 +594,7 @@ img.logo {
 
 .kuning {
     background-color: rgb(255, 214, 10, 0.8);
-    padding: 1px 2px;
-    margin: 0;
+    padding: 2px 2px;
 }
 
 .pink {
@@ -1224,7 +1225,7 @@ cite {
 }
 
 .pentung p {
-    font: normal 0.8em/1 var(--sans);
+    font: normal 0.7em/1 var(--sans);
     font-weight: 400;
     color: #d62828;
     padding: 4px 8px 0 8px;
@@ -1234,16 +1235,17 @@ cite {
 .info {
     margin: 0px auto;
     margin-bottom: 2em;
-    background-color: #f4f1bb;
-    padding: 2px 12px;
+    background-color: rgb(255, 195, 0, 0.3);
     border-radius: 0.3em;
+    border: 1px solid rgb(243, 91, 4, 0.1);
 }
 
 .info p {
     font: normal 85% var(--sans);
-    text-align: left;
+    text-align: center;
     margin: 0;
-    padding: 2px 4px;
+    padding: 1px 4px;
+    color: rgb(70.92% 32.02% 0%);
 }
 
 pagefind-ui mark,

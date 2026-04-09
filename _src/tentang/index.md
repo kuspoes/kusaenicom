@@ -71,7 +71,8 @@ style: "tentang.css"
 <p>Font yang dipakai di blog ini :</p>
     <ul>
         <li>Anko (<i>commercial license</i>) dari <a href="https://ekobimantara.com/product/anko/">Eko Bimantara</a> digunakan untuk <code>font body</code></li>
-        <li>Charter dari [Matthew Carter](https://typographyforlawyers.com/charter.html) digunakan juga untuk artikel,</li>
+        <li>Charter dari <a href="https://typographyforlawyers.com/charter.html">Matthew Carter</a> digunakan juga untuk artikel,</li>
+        <li>Literata dari Google Font,</li>
         <li>Inter dari <a href="https://rsms.me/inter/" target="_blank">Rasmus Andersson</a>, digunakan untuk <i>font header</i> dan <i>sidenotes</i> atau <i>caption</i>,</li>
         <li>Chunk dari <a href="https://www.theleagueofmoveabletype.com/chunk" target="_blank">Meredith Mandel</a> (the League of Movabletype), dipergunakan khusus untuk <code>H1</code>.</li>
         <li><a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif</a> juga dipergunakan untuk <i>header</i>.</li>
