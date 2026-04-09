@@ -133,6 +133,12 @@ body {
     margin: 0;
 }
 
+.post_ringkasan {
+    /*pakai ini jika font Literata */
+    letter-spacing: -1px;
+    font-size: 0.98em;
+}
+
 .meta {
     padding-bottom: 0.8em;
     margin-bottom: 3em;

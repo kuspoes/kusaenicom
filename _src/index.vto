@@ -9,6 +9,8 @@ layout: layout/content.vto
 <div id="search"></div>
 </div>
 
+<div id="index_postlist">
+
 {{ for post of search.pages("pin", "date=desc", 1) }}
 		<div class="postlist pinned">
 			<div class="postmeta">
@@ -32,7 +34,9 @@ layout: layout/content.vto
             </span>
       			</a>
 				</h2>
+				<div class="post_ringkasan">
 				{{ post.ringkasan |> md }}
+				</div>
 			</div>
 		</div>
 		{{ /for }}
@@ -58,7 +62,9 @@ layout: layout/content.vto
           				{{ post.title || post.url }}
         			</a>
 				</h2>
+				<div class="post_ringkasan">
 				{{ post.ringkasan |> md }}
+				</div>
 				<p>{{ if post.tags }} {{ for tag of post.tags }} {{ set page =
             search.page(`type=tag tag="${tag}"`) }} {{ if page }}
             <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
@@ -75,3 +81,4 @@ layout: layout/content.vto
 		</div>
 		{{ /for }}
 				<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
+</div>
