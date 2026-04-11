@@ -26,7 +26,7 @@ tags:
   - buku
   - horror
   - Simpleman
-comments: true
+comment: true
 templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(253, 240, 213, 0.5) 98%) !important;}"
 ---

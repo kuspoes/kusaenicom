@@ -26,7 +26,7 @@ tags:
   - buku
   - horor
   - Haditha Mohammad
-comments: true
+comment: true
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(253, 255, 182, 0.3) 98%) !important;}"
 ---
 

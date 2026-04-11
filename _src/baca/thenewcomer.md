@@ -25,7 +25,7 @@ rating: 5
 beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/166582-Pembunuhan-di-Nihonbashi.html
 dimana: Bukukita
 kategori: buku
-comments: true
+comment: true
 tags:
   - buku
   - misteri

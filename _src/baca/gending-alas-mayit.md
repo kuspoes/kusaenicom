@@ -26,7 +26,7 @@ tags:
   - Diosetta
 templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(224, 170, 255, 0.2) 98%) !important;}"
-comments: true
+comment: true
 ---
 
  <div class="info">

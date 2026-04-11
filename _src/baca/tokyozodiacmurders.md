@@ -21,7 +21,7 @@ rating: 5
 beli: https://www.bukukita.com/Buku-Novel/Mistery-Thriller/104734-The-Tokyo-Zodiac-Murders-Pembunuhan-Zodiac-Tokyo.html
 dimana: "Bukukita"
 kategori: buku
-comments: true
+comment: true
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, #ffffff 98%) !important;}"
 tags:
   - buku

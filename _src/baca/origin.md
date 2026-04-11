@@ -22,7 +22,7 @@ tags:
   - buku
   - misteri
   - Dan Brown
-comments: false
+comment: false
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(0, 180, 216, 0.2) 98%) !important;}"
 ---
 
