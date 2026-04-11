@@ -102,6 +102,9 @@ Tapi bagaimana jika ini menjadi pedang bermata dua saat kita sendiri gagal login
 ```shell-session
 $ doas pfctl -a "blocklistd/22" -t port22 -T delete <IP>
 ```
+<aside>
+    💡 Gunakan akses (web)VNC atau konsol untuk bisa mengeksekusi perintah ini karena <i>user</i> tidak bisa masuk melalui SSH.
+</aside>
 
 Ini akan menghapus IP kita dari PF sehingga kita bisa kembali mengakses SSH, namun masih akan muncul di dalam table `blocklistd` dan akan dihapus saat masa tunggu _expired_. Lalu bagaimana cara melihat IP apa saja yang terjaring oleh Blocklistd? Ada perintah khusus untuk itu.
 
