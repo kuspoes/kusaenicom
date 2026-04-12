@@ -30,7 +30,7 @@ Memasang dari *ports collections* biasanya dilakukan jika di dalam *repository* 
 
 ## Mempergunakan PKG
 
-Semua versi FreeBSD sudah datang dengan `pkg` secara standar. Ketika pertama kali memakai sistem FreeBSD atau atau saat di awal membuat `jail` maka perlu melakukan `pkg bootstrap` untuk mengunduh paket `pkg` (jika di sistem belum ada) dan memasangnya, jika ternyata `pkg` sudah ada di dalam sistem maka perintah ini tidak akan berpengaruh apa - apa. Jika perintah ini diberi *flag* `-f` sehingga menjadi `pkg bootstrap -f` maka akan melakukan pengunduhan dan pemasangan paket `pkg` dan mengabaikan apakah `pkg` sudah ada atau belum.
+Semua versi FreeBSD sudah datang dengan `pkg` secara standar. Ketika pertama kali memakai sistem FreeBSD atau saat di awal membuat `jail` maka perlu melakukan `pkg bootstrap` untuk mengunduh paket `pkg` (jika di sistem belum ada) dan memasangnya, jika ternyata `pkg` sudah ada di dalam sistem maka perintah ini tidak akan berpengaruh apa - apa. Jika perintah ini diberi *flag* `-f` sehingga menjadi `pkg bootstrap -f` maka akan melakukan pengunduhan dan pemasangan paket `pkg` dan mengabaikan apakah `pkg` sudah ada atau belum.
 
 Setelah `pkg` tersedia bisa dipergunakan dengan memasukkan perintah - perintah sebagai berikut.
 
@@ -288,6 +288,26 @@ openexr-3.4.8 is vulnerable:
 Hasil dari perintah ini adalah informasi tentang kerentanan. Sebagai contoh di atas setidaknya ada 3 masalah dari 1 *package* yaitu `python`. Informasi lebih lengkap bisa diperiksa dengan mengakses halaman WWW di tautan yang diberikan. Sebagai contoh masalah di `python` disebutkan bahwa itu merupakan tindak lanjut dari temuan oleh laporan Python Software Foundation Security Developer.
 
 Cara penyelesaiannya biasanya dengan menunggu *patch* resmi dari FreeBSD atau *upgrade* ke versi lebih tinggi, dengan `pkg` (nunggu *patch*) atau lewat Freshport.
+
+### Jika `pkg` rusak tak bisa dipakai
+
+Karena proses *update* atau *upgrade* yang keliru, belum selesai, *database corrupt*, atau perubahan dari jenis repo yang gagal bisa membuat `pkg` tidak bisa dipergunakan. Oleh karena itu meng-*install* ulang `pkg` mutlak diberikan, disini alat kecil bernama `pkg-static`[(8)](https://man.freebsd.org/cgi/man.cgi?query=pkg-static&sektion=8&n=1) bisa dipergunakan. `pkg-static` adalah sebuah aplikasi yang (sudah tersedia di `base`) fungsinya sama dengan `pkg` namun tidak tertaut pada  *library* lain seperti `libssl` atau *library* lain yang terus berubah (karena proses *upgrade* dan sebagainya), *library* yang dibutuhkan untuk `pkg-static` berkerja sudah tersedia di dalam binari-nya sendiri sehingga `pkg-static` tidak akan rusak dan selalu bisa dipakai. `pkg-static` dipergunakan untuk mem*build* `pkg` itu sendiri (`bootstrap pkg`). Namun untuk penggunaan sehari - hari `pkg` lebih diutamakan karena aplikasi ini terus di*update* dan *upgrade*.
+
+Secara fitur, `pkg-static` memiliki fitur yang identik dengan `pkg`. Namun ada fungsi utama yang sering dipakai yaitu `bootstrap` untuk meng*generate* ulang aplikasi `pkg`.
+
+1. *Bootstrap* `pkg`
+```shell-session
+$ doas pkg-static bootstrap -y
+```
+`pkg-static` akan mem*build* ulang `pkg`, sebaiknya dilanjut dengan `update` repo setelah selesai.
+
+2. *Database corrupt*
+```shell-session
+$ doas pkg-static update -f
+```
+`pkg-static` akan mengunduh data secara paksa dan membuat *database* baru.
+
+---
 
 ## Mempergunakan Port's
 

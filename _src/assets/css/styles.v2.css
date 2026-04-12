@@ -1410,8 +1410,11 @@ a.related_post_link {
     .pre,
     .baca,
     iframe.video,
-    iframe.peta {
+    iframe.peta,
+    ul,
+    ol {
         width: 95%;
+        margin: 10px;
     }
 
     #related_post {
@@ -1427,6 +1430,15 @@ a.related_post_link {
     aside,
     .terkait {
         width: 100%;
+    }
+
+    aside,
+    .terkait {
+        font-size: 0.9em;
+    }
+
+    .postnotes {
+        font-size: 1em;
     }
 
     aside.image {
