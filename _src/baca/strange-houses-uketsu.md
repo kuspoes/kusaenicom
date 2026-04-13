@@ -54,7 +54,7 @@ Kasus ditutup, namun tidak buat Uketsu karena denah rumah dan analisa Kurihara t
 
 Dari Yuzuki Miyae, Uketsu mendapatkan kembali denah rumah lain yang memiliki keanehan yang sama, yaitu ada ruangan yang tidak wajar dengan sudut mati tidak terlihat dari luar. Setelah ditelusuri ternyata pemilik rumahnya sama yaitu **Keita Katabuchi**. Kurihara merasa curiga dengan Yuzuki dan berpesan agar Uketsu berhati - hati dengan dia karena menurut catatan pemerintah Kyoichi Miyae belum pernah menikah, tapi kenapa Yuzuki mengaku sebagai istri mendiang?. Setelah di konfrontasi akhirnya Yuzuki jujur bahwa dia memang bukan istri dari Yuzuki melainkan **Yuzuki Katabuchi**.
 
-### Klan Katabuchi dan ritual potongan tangan
+### Klan Katabuchi & ritual potongan tangan
 
 Pada tahun 1920-an keluarga Katabuchi dengan kepala keluarganya bernama **Kaei Katabuchi** menjadi kaya raya karena sukses dengan bisnisnya. Kaei memiliki 3 orang anak yaitu 
 
@@ -70,7 +70,7 @@ Pada tahun 1920-an keluarga Katabuchi dengan kepala keluarganya bernama **Kaei K
 
 Ketika usia sudah tua, Kaei harus memilih penerus dari Klan Katabuchi namun anak laki - laki tertuanya tidak memiliki kecakapan dalam berkerja seperti Kaei. Kerjaannya tiap hari bermain - main dengan saudari perempuannya. Sedangkan Seikichi mewarisi keterampilan berbisnis ayahnya, namun Kaei tetap memilih Soichiro sebagai penerus kepala keluarga Katabuchi. Kecewa, Seikichi akhirnya memilih untuk berpisah dan membangun bisnisnya sendiri.
 
-Sebelum meninggal Kaei kemudian menjodohkan Soichiro dengan **Ushio** seorang wanita yang sebelumnya adalah pelayan di _mansion_ keluarga Katabuchi. Kaei menganggap bahwa Ushio cocok untuk Soichiro karena dipandang sebagai wanita yang tenang, tangguh, dan tabah. Namun dalam perjalanan rumah tangga mereka tertempa badai. Binis keluarga Katabuchi hancur dan Soichiro melakukan hubungan terlarang dengan Chizuru sampai kemudian Chizuru mengandung anak kembar.
+Sebelum meninggal Kaei menjodohkan Soichiro dengan **Ushio** seorang wanita yang sebelumnya adalah pelayan di _mansion_ keluarga Katabuchi. Kaei menganggap bahwa Ushio cocok untuk Soichiro karena dipandang sebagai wanita yang tenang, tangguh, dan tabah. Namun dalam perjalanan rumah tangga mereka tertempa badai. Binis keluarga Katabuchi hancur dan Soichiro melakukan hubungan terlarang dengan Chizuru sampai kemudian Chizuru mengandung anak kembar.
 
 Ushio yang sakit hati kemudian bunuh diri dengan memotong pergelangan tangan kirinya.
 
@@ -80,16 +80,14 @@ Seikichi sendiri sudah menikah setidaknya dengan 4 wanita berbeda dan masing - m
 
 Pada suatu saat, datang seorang dukun wanita bernama **Rankyo** ke kediaman keluarga Katabuchi. Dia mengatakan bisa menolak bala dari kutukan Ushio. Keluarga Katabuchi percaya penuh dengan dukun Rankyo karena dia menyebutkan beberapa fakta terkait keluarga Katabuchi yang rahasia. Rankyo memberikan ritual dengan syarat dan aturan agar keluarga Katabuchi terhindar dari amarah Ushio, yaitu
 
-1. Anak kembar dari Chizuru adalah Asano dan Momota (yg cacat). Momota harus disembunyikan di ruangan khusus dan tidak boleh terkena sinar matahari. Pada ulang tahunnya yang ke 10, dia harus membunuh salah satu anak dari keluarga Cabang yaitu anak Seikichi yang seumuran,
-2. Setiap tahun sampai usia 13 tahun, Momota harus membunuh anak - anak itu,
+1. Anak kembar dari Chizuru adalah Asano dan Momota (yg cacat). Momota harus disembunyikan di ruangan khusus dan tidak boleh terkena sinar matahari. Pada ulang tahunnya yang ke-10, dia harus membunuh salah satu anak dari keluarga Cabang yaitu anak Seikichi yang seumuran,
+2. Setiap tahun sampai usia 13 tahun, Momota harus membunuh anak - anak itu (total 3 anak),
 3. Asano bertindak sebagai pembantu dalam usaha pembunuhan,
 4. Tangan kiri korban harus dipotong sebatas pergelangan tangan dan kemudian dipersembahkan di makam Ushio.
 
-Akhirnya ritual ini menjadi sebuah tradisi turun temurun dari Klan Katabuchi sampai saat ini, apalagi jika dari keturunannya ada yang lahir tanpa telapak tangan kiri.
+Akhirnya ritual ini menjadi sebuah tradisi turun temurun dari Klan Katabuchi sampai saat ini, apalagi jika dari keturunannya ada yang lahir tanpa telapak tangan kiri. Namun rahasia dari Klan Katabuchi tidak hanya itu, melainkan ternyata mereka mempunyai anak laki - laki ketiga setelah Soichiro dan Seikichi yaitu **Shigehiru** yang kemudian menjadi kakek dari Yuzuki Katabuchi.
 
-Namun rahasia dari Klan Katabuchi tidak hanya itu, melainkan ternyata mereka mempunyai anak laki - laki ketiga setelah Soichiro dan Seikichi yaitu **Shigehiru** yang kemudian menjadi kakek dari Yuzuki Katabuchi.
-
-Lalu siapakah Rankyo? dan bagaimanakah akhir dari ritual keluarga Katabuchi ini?
+Lalu siapakah Rankyo? Siapakah Keita dan bagaimanakah akhir dari ritual keluarga Katabuchi ini?
 
 ### Catatan
 
