@@ -252,6 +252,37 @@ Remote package database(s):
   Total size of packages: 160 GiB
 ```
 
+### Query PKG
+Mendapatkan informasi sebuah paket selain dengan `pkg info` bisa juga dengan `pkg-query` ([man](https://man.freebsd.org/cgi/man.cgi?query=pkg-query)) sebuah _tool_ yang dibuat khusus untuk meng-*query* data informasi dari sebuah atau lebih *package* meski lebih sering dipakai untuk melakukan *tracing*.
+
+Sebagai contoh ingin melihat daftar _package_ mana saja yang pakai `jpeg-turbo` sebagai *reverse dependencies*-nya
+
+```shell-session
+$ pkg query %ro jpeg-turbo
+graphics/tiff
+graphics/openjpeg
+graphics/libraw
+graphics/lcms2
+graphics/php81-gd
+multimedia/libv4l
+graphics/gd
+graphics/webp
+```
+<aside>
+    Hasilnya <code>jpeg-turbo</code> dibutuhkan oleh beberapa <i>package</i> seperti <code>tiff</code>, <code>openjpeg</code>, dan <code>php81-gd</code>.
+</aside>
+
+Sedangkan untuk melihat _dependencies_ dari sebuah *package* (misal `vnstat`) bisa dengan perintah berikut
+
+```shell-session
+$ doas pkg query %dn-%dv vnstat
+sqlite3-3.50.4_2,1
+libgd-2.3.3_13,1
+```
+<aside>
+    Hasilnya <code>vnstat</code> membutuhkan <code>sqlite</code> dan <code>libgd</code> sebagai <i>dependencies</i>-nya.
+</aside>
+
 ### Audit
 
 [FreeBSD Security Advisories](https://www.freebsd.org/security/advisories/) adalah informasi resmi dari FreeBSD terkait masalah keamanan di *base system* FreeBSD misalnya soal jaringan, kernel, sistem inti lainnya. Informasi ini berisi tentang penjelasan masalah yang ditemukan dan cara penyelesaiannya. `pkg` memberikan perintah `audit` untuk memeriksa apakah di dalam sistem saat ini ditemukan masalah sesuai dengan informasi dari FreeBSD Security Advisories. Untuk memeriksanya gunakan perintah `pkg audit -F`
@@ -372,7 +403,7 @@ Untuk menghemat spasi karena dalam proses `build` Ports akan mengunduh banyak se
 
 Untuk menghapus ada 2 cara, bisa pakai perintah `pkg delete` karena toh juga *package* namanya meski dipasang dari Ports dan bisa pakai perintah `make deinstall`. Untuk perintah yang kedua ini harus masuk kembali ke *folder* *package* tersebut terlebih dahulu. Jadi gunakan saja `pkg delete` karena lebih mudah.
 
-### Meng*upgrade* Ports
+### Meng-*upgrade* Ports
 
 Caranya ribet, pokoknya pakai Ports itu ribet!. Pertama harus tau dulu daftar dari *package* yang ada versi pembaharuan namun harus melakukan `git pull` terlebih dahulu untuk memperbarui `local copy` dari repo Ports. 
 
