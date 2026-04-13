@@ -23,6 +23,7 @@ const markdown = {
   keepDefaultPlugins: true,
   options: {
     typographer: true,
+    linkify: true,
   },
 };
 
@@ -197,6 +198,15 @@ site.process([".html"], (pages) => {
       }
       img.classList.add("class", "content-image");
     }
+  }
+});
+
+site.process([".html"], (pages) => {
+  for (const page of pages) {
+    page.content = page.content?.toString().replace(
+      / &amp; /g,
+      ' <span class="ampersand">&</span> ',
+    );
   }
 });
 

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
-
+/*
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&text=%26&display=swap");
+*/
 :root {
     --sans:
         -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
@@ -486,6 +488,11 @@ img.layang {
 .full {
     float: none;
     width: 98%;
+}
+
+h3 span.ampersand {
+    font-style: italic;
+    font-size: 120%;
 }
 
 span.ter,

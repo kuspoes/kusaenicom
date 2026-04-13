@@ -54,7 +54,7 @@ Kasus ditutup, namun tidak buat Uketsu karena denah rumah dan analisa Kurihara t
 
 Dari Yuzuki Miyae, Uketsu mendapatkan kembali denah rumah lain yang memiliki keanehan yang sama, yaitu ada ruangan yang tidak wajar dengan sudut mati tidak terlihat dari luar. Setelah ditelusuri ternyata pemilik rumahnya sama yaitu **Keita Katabuchi**. Kurihara merasa curiga dengan Yuzuki dan berpesan agar Uketsu berhati - hati dengan dia karena menurut catatan pemerintah Kyoichi Miyae belum pernah menikah, tapi kenapa Yuzuki mengaku sebagai istri mendiang?. Setelah di konfrontasi akhirnya Yuzuki jujur bahwa dia memang bukan istri dari Yuzuki melainkan **Yuzuki Katabuchi**.
 
-### Klan Katabuchi & ritual potongan tangan
+### Klan Katabuchi & ritual potong tangan
 
 Pada tahun 1920-an keluarga Katabuchi dengan kepala keluarganya bernama **Kaei Katabuchi** menjadi kaya raya karena sukses dengan bisnisnya. Kaei memiliki 3 orang anak yaitu 
 
