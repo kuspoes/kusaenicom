@@ -16,7 +16,7 @@
         {{ /if }}
         <link rel="stylesheet" href="/assets/css/styles.v2.css" inline>
         {{ if it.inlineStyle }}
-        <style>  </style>
+        <style>{{ it.inlineStyle }}  </style>
         {{ /if }}
         {{ if it.style }}
         <link rel="stylesheet" href="/assets/css/posts/{{ it.style }}" inline>

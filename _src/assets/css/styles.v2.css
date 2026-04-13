@@ -359,6 +359,19 @@ th {
     border-radius: 5px;
 }
 
+.table_merah thead tr {
+    background-color: rgb(251, 111, 146, 1);
+}
+
+.table_merah tbody tr:nth-of-type(even) {
+    background-color: rgb(255, 229, 236, 1);
+}
+
+.table_merah tbody tr:last-of-type {
+    border-bottom: 2px solid #231942;
+    border-radius: 5px;
+}
+
 .bintang {
     fill: #d00000;
     width: 20px;
@@ -423,7 +436,7 @@ img.galeri {
 }
 
 img.layang {
-    width: 200px;
+    width: 300px;
     transform: rotate(-4deg);
     transition: transform 0.2s;
     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 3px 3px;
