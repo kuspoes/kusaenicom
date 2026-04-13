@@ -31,8 +31,8 @@ templateEngine: vto, md
 comment: true
 draft: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KP2MW2VGCYD6Z6Q4WT58TGEC
+  real: https://sok.egois.org/@poes/statuses/01KP2MW2VGCYD6Z6Q4WT58TGEC
 ---
 
 Ane udah lama punya ebook ini namun belum tertarik untuk membacanya, sungguh karena ane sudah terikat dengan gaya penulisan Seishi Yokomizo sehingga ketika memulai membaca tulisan dari pengarang (Jepang) lainnya rasa-rasanya sudah tidak begitu menarik. Apalagi kemudian beberapa buku lainnya tidak begitu bagus (seperti Yukito Ayatsuji dan Akimitsu Takagi － menurut ane). Sehingga ketika mendapatkan ebook ini muncul rasa malas untuk membaca.
