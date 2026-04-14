@@ -30,6 +30,7 @@ tags:
   - buku
   - misteri
   - Keigo Higashino
+  - Jepang
 templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(201, 24, 74, 0.2) 100%) !important;}"
 ---

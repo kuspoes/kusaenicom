@@ -25,6 +25,7 @@ tags:
   - misteri
   - novel
   - Uketsu
+  - Jepang
 kategori: buku
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(230, 57, 70, 0.1) 98%) !important;}"
 templateEngine: vto, md
