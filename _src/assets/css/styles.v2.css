@@ -849,6 +849,15 @@ h4 i {
     font-family: var(--dm);
 }
 
+@-moz-document url-prefix() {
+    h1,
+    h2,
+    h3,
+    h4 {
+        letter-spacing: -1px;
+    }
+}
+
 h1 {
     font-size: 2em;
 }

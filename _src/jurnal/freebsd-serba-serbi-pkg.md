@@ -1,6 +1,6 @@
 ---
 title: Serba-serbi package manager di FreeBSD
-ringkasan: "untuk memperbarui package atau menambal celah keamanan."
+ringkasan: "untuk memperbarui *package* atau menambal celah keamanan."
 date: 2026-04-03
 tags:
   - kusaeni
