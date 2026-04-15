@@ -41,11 +41,11 @@ Pertama kali tahu tentang Seishi setelah ane menyelesaikan membaca [The Tokyo Zo
 
 Beberapa bulan setelah Perang Dunia II, Detektif Kindaichi datang ke sebuah kota di pedalaman karena diundang oleh seorang pengacara dari keluarga ternama di kota tersebut yang Sahei Inugami (kepala keluarga) baru saja meninggal. Si pengacara yakin bahwa surat wasiat dari mendiang Sahei akan menyebabkan _chaos_ dan perebutan hak waris.
 
-Kindaichi kemudian menginap di penginapan yang terletak di pinggi danau, dimana _mansion_ keluarga Inugami berapa di seberang danau. Belum genap 1 hari Kindaichi menginap, sang pengacara ditemukan tewas di dalam penginapan saat menunggu pertemuannya dengan Kindaichi.
+Kindaichi kemudian menginap di penginapan yang terletak di pinggir danau, dimana _mansion_ keluarga Inugami berapa di seberang danau. Belum genap 1 hari Kindaichi menginap, sang pengacara ditemukan tewas di dalam penginapan saat menunggu pertemuannya dengan Kindaichi.
 
-Detektif Kindaichi kemudian memutuskan untuk meneruskan penyelidikannya meski si pengacara sudah meninggal, tak lama kemudian Kindaichi menyelamatkan seorang perempuan yang hendak tenggelam saat sedang menaiki kano di danau. Ternyata perempuan itu adalah Tamayo Nonomiya, seorang gadis cantik yang putri dari pendeta (teman lama Sahei) yang sudah meninggal dan tinggal di dalam _mansion_ Inugami.
+Detektif Kindaichi kemudian memutuskan untuk meneruskan penyelidikannya meski si pengacara sudah meninggal, tak lama kemudian Kindaichi menyelamatkan seorang perempuan yang hendak tenggelam saat sedang menaiki kano di danau. Ternyata perempuan itu adalah Tamayo Nonomiya, seorang gadis cantik putri dari pendeta (teman lama Sahei) yang sudah meninggal dan tinggal di dalam _mansion_ Inugami.
 
-Sahei Inugami memiliki 3 anak perempuan yaitu Matsuko, Takeko, dan Umeko Inugami. Masing - masing memiliki anak laki - laki yang dijagokan untuk menjadi penerus kejayaan keluarga Inugami. Takeko memiliki anak laki - laki bernama Tàke dan seorang anak perempuan bernama Sayoko, anak Umeko bernama Tomo. Sedangkan anak Matsuko yang bernama Kiyo berada di medan perang, dimana nasibnya tidak ditemukan saat berperang di Burma.
+Sahei Inugami memiliki 3 anak perempuan yaitu Matsuko, Takeko, dan Umeko Inugami. Masing - masing memiliki anak laki - laki yang dijagokan untuk menjadi penerus kejayaan keluarga Inugami. Takeko memiliki anak laki - laki bernama Tàke dan seorang anak perempuan bernama Sayoko, anak Umeko bernama Tomo. Sedangkan anak Matsuko yang bernama Kiyo berada di medan perang, dimana nasibnya tidak ditemukan saat berperang di Burma (Myanmar saat ini).
 
 Suatu hari Matsuko mendapatkan surat bahwa Kiyo masih hidup dan sedang di kapal pulang ke Jepang. Ternyata Kiyo mengalami luka parah akibat perang, yaitu sekujur tubuhnya melepuh karena luka bakar, sehingga dia harus memakai perban untuk menutupi kepalanya.
 

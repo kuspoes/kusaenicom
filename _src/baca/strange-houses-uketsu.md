@@ -94,7 +94,7 @@ Lalu siapakah Rankyo? Siapakah Keita dan bagaimanakah akhir dari ritual keluarga
 
 Novel ini pendek, hanya terdiri dari 4 bab yang sebagian besar berisi percakapan - percakapan saja. Ditulis seperti naskah skenario film, meski begitu ketegangan tetap terbangun dengan manis. Pelan - pelan tak terasa namun pada saatnya membuat kengerian yang nyata.
 
-{{ comp.relasi_buku({ negara: "Jepang" }) }}
+{{ comp.relasi_buku({ teks: "Jepang" }) }}
 
 Ane tidak mengira novel ini *creepy*, apalagi pelaku pembunuhannya adalah anak - anak (yang di *brainwashed* oleh para orang tuanya) untuk membunuhi saudara mereka. Akhir dari novel ini pun sedikit mengganggu, tidak sedih tidak pula *happy ending* melainkan menyisakan ruang kosong bagi pembaca untuk menebak apakah sebenarnya kasus ini benar - benar sudah tertutup atau belum?. Ruang kosong yang sama seperti denah rumah yang aneh.
 
