@@ -32,6 +32,7 @@
 }
 .coverX {
     width: 200px;
+    height: 280px;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.34) 3px 0px 1px 0px;
     border: 1px solid #ccc;

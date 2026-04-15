@@ -1,15 +1,16 @@
-{{ if it.comments?.src }}
-        <div class="comments-section">
-            <header class="comments-header">
-                <h2>{{ metadata.comments.title }}</h2>
-                <p>{{ metadata.comments.description.replace(":src:", it.comments.real) }}</p>
-            </header>
-            <mastodon-comments
-                src="{{ it.comments.src }}"
-                cache="{{ it.comments.cache ?? 60 }}"
-                class="comments"
-            >
-                {{ metadata.comments.empty }}
-            </mastodon-comments>
+<div id="related_post">
+          <h4 style="margin:0em 0 1em 0; padding:0em;">Artikel terkait <a href="/tags/{{ relasi }}">#{{ relasi }}</a></h4>
+          {{ set relasih = search.pages(`${ relasi }`, `date=desc`, 6)}}
+          {{ if relasih.length > 0 }}
+          {{ for rela of relasih }}
+          <div class="related_post_list">
+            <span class="related_post_date">{{ rela.date |> date('id') }}</span>
+            <a class="related_post_link" href="{{ rela.url }}">
+            <h4>{{ rela.title }}</h4></a>
+            <p class="post_ringkasan">{{ rela.ringkasan |> md(true) }}</p>
+            </a>
+          </div>
+          {{ /for }}
+          {{ /if }}
+
         </div>
-        {{ /if }}

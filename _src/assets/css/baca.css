@@ -1,0 +1,83 @@
+a.bukuku {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bukukuku {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin-top: 2em;
+}
+
+.bukukuku h5 {
+    margin-top: 0.6em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.85em;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+.relasi_bukuku {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.relasi_bukuku_cover {
+    width: 140px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    transform-origin: center center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.relasi_bukuku_cover:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.relasi_bukuku_cover.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile: Maksimal 4 */
+@media (max-width: 767px) {
+    .relasi_bukuku_cover {
+        width: 90px;
+        height: 110px;
+    }
+
+    .movie-card:nth-child(n + 5) {
+        display: none;
+    }
+}
+
+/* Desktop: Maksimal 5 */
+@media (min-width: 768px) {
+    .movie-card:nth-child(n + 6) {
+        display: none;
+    }
+}
