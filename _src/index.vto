@@ -16,7 +16,7 @@ layout: layout/content.vto
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">
-  			  		{{ post.date |> date('id_tgl') }}
+  			  		    {{ post.date |> date('id_tgl') }}
 					</div>
 					<div class="bln">
 						{{ post.date |> date('id_bln') }}
@@ -30,12 +30,12 @@ layout: layout/content.vto
 				<h2>
 					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
         				{{ post.title || post.url }} <span class="pin-badge">
-                  <span>📌</span> DISEMATKAN
-            </span>
-      			</a>
+                        <span>📌</span> DISEMATKAN
+                    </span>
+      			    </a>
 				</h2>
 				<div class="post_ringkasan">
-				{{ post.ringkasan |> md }}
+				    {{ post.ringkasan |> md }}
 				</div>
 			</div>
 		</div>
@@ -80,5 +80,5 @@ layout: layout/content.vto
 			{{ /if }}
 		</div>
 		{{ /for }}
-				<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
+		<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
 </div>

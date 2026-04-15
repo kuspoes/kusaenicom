@@ -13,6 +13,7 @@ curl -fsSL https://deno.land/install.sh | sh
 ```
 
 atau bisa dengan package manager seperti `brew`, `apt`, dan sebagainya.
+jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.7.12 (stable).
 
 2. Clone repo ini
 
@@ -30,7 +31,8 @@ $ deno run -A https://lume.land/init.ts
 $ deno task lume -s
 ```
 
-perintah ini akan menginstall `lume` di sistem dan menjalankan lume untuk build dan serve di `localhost:3000`
+perintah ini akan menginstall `lume` di sistem dan menjalankan lume untuk build dan serve di `localhost:3000`.
+jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.4
 
 kalo ingin membuild saja gunakan
 

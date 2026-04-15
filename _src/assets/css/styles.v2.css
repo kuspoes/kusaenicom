@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
-/*
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&text=%26&display=swap");
-*/
 
 :root {
     --sans:
@@ -11,7 +8,6 @@
     --salis: "charter", Georgia, Palatino, serif;
     --dm: "DMSerif", Georgia, serif;
     --col_body: #000000;
-    /* #2a2s2e */
     --col_aside: #495057;
     --col_asidebg: #eaf4f4;
     --col_gray: #495057;
@@ -287,7 +283,6 @@ nav.toc {
 }
 
 /* rating page */
-
 table {
     border-spacing: 1;
     border-collapse: collapse;
@@ -872,18 +867,18 @@ h1.s {
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     margin: 1.5em 0 0.5em 0;
     font-family: var(--dm);
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     margin: 1.5em 0 0.5em 0;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 1.5em 0 0.5em 0;
     line-height: 1;
 }
@@ -1402,7 +1397,6 @@ h4.related_post_info {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 1em;
-    width: 550px;
 }
 
 #related_post .related_post_list p {
@@ -1451,7 +1445,7 @@ a.related_post_link {
     }
 
     #related_post {
-        width: 92%;
+        width: 98%;
     }
 
     iframe.video {

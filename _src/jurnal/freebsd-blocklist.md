@@ -26,7 +26,7 @@ Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling 
 
 ### Blocklistd
 
-Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur di FreeBSD yang berguna untuk membuka atau menutup sebuah port dengan kriteria tertentu. Apalagi jika masih mempergunakan port standar untuk SSH yaitu di port 22. Saat selesai install FreeBSD (di VPS), tak lama kemudian akan bermunculan para hiu mencoba _bruteforce_ akses SSH, dengan pelbagai macam cara dimana IP yang sering sekali mencoba berasal dari Asia. Maka Blocklistd ini sangat berguna untuk menghalau dan memblokir alamat IP tersebut untuk mengakses SSH. Secara fungsi mirip dengan [fail2ban](https://www.fail2ban.org/) yaitu memblokir alamat IP yang gagal login SSH dengan rentang waktu tertentu.
+Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur di FreeBSD yang berguna untuk membuka atau menutup sebuah port dengan kriteria tertentu. Apalagi jika masih mempergunakan port standar untuk SSH yaitu di *port* `22`. Saat selesai *install* FreeBSD (di VPS), tak lama kemudian akan bermunculan para hiu mencoba _bruteforce_ akses SSH, dengan pelbagai macam cara dimana IP yang sering sekali mencoba berasal dari Asia. Maka Blocklistd ini sangat berguna untuk menghalau dan memblokir alamat IP tersebut untuk mengakses SSH. Secara fungsi mirip dengan [fail2ban](https://www.fail2ban.org/) yaitu memblokir alamat IP yang gagal *login* SSH dengan rentang waktu tertentu.
 
 <div class="postnotes">
   <p>Perubahan nama dari Blacklistd ke Blocklistd ini mengikuti dari perubahan yang dilakukan oleh NetBSD. FreeBSD mengimpor fungsi ini dari NetBSD, sehingga saat nama berubah maka FreeBSD mengikuti untuk menjaga kompatibilitas. Meski begitu ada kabar menyebutkan bahwa perubahan ini untuk menghindari kesan rasis kepada sekelompok komunitas.</p>
@@ -79,7 +79,7 @@ block in quick from <blocklistd>
 ```
 
 <aside>
-  <ul><li>rubah <code>$ext_if</code> dengan nama interface yang bisa dicek dengan <code>ifconfig</code></li>
+  <ul><li>rubah <code>$ext_if</code> dengan nama <i>interface</i> yang bisa dicek dengan <code>ifconfig</code></li>
     <li>baris <code>block in quick from <blocklistd></code> ini berguna untuk memblok IP yang terjaring oleh Blocklistd, tapi ini opsional</li></ul>
 </aside>
 
@@ -91,13 +91,13 @@ location      type    proto   owner   name    nfail   duration
 vtnet:ssh        *       *       *       *       3       72h
 ```
 
-dimana perintah ini akan membuat Blocklistd memonitor _port_ SSH di _interface_ `vtnet`, jika sebuah IP gagal login 3 kali, maka IP tersebut akan diblokir selama 72 jam. Pengaturan 72 jam ini bisa saja diubah sesuai keinginan, 2400h untuk 100 hari, namun perhatikan juga bahwa semakin lama waktu tunggu maka <mark>semakin banyak IP yang tercatat dan bisa saja memenuhin table PF sehingga membutuhkan sumber daya lebih untuk memprosesnya</mark>.
+dimana perintah ini akan membuat Blocklistd memonitor _port_ SSH di _interface_ `vtnet`, jika sebuah IP gagal login 3 kali, maka IP tersebut akan diblokir selama 72 jam. Pengaturan 72 jam ini bisa saja diubah sesuai keinginan, `2400h` untuk 100 hari, namun perhatikan juga bahwa semakin lama waktu tunggu maka <mark>semakin banyak IP yang tercatat dan bisa saja memenuhin *table* PF sehingga membutuhkan sumber daya lebih untuk memprosesnya</mark>.
 
 <div class="postnotes pink">
-  <p>Setiap perubahan file konfigurasi harus diikuti dengan restart service yang konfigurasinya diubah agar perubahan bisa diterapkan.</p>
+  <p>Setiap perubahan file konfigurasi harus diikuti dengan <i>restart service</i> yang konfigurasinya diubah agar perubahan bisa diterapkan.</p>
 </div>
 
-Tapi bagaimana jika ini menjadi pedang bermata dua saat kita sendiri gagal login ke SSH? Maka caranya adalah menghapus IP kita dari _table_ `blocklistd` dengan perintah berikut.
+Tapi bagaimana jika ini menjadi pedang bermata dua saat kita sendiri gagal *login* ke SSH? Maka caranya adalah menghapus IP kita dari _table_ `blocklistd` dengan perintah berikut.
 
 ```shell-session
 $ doas pfctl -a "blocklistd/22" -t port22 -T delete <IP>
@@ -123,7 +123,7 @@ blocklistd       122.55.205.229/32:22   OK      3/3     13h39m36s
 ```
 
 <aside>
-  tanda <code>OK</code> menandakan bahwa IP tersebut sudah terblok. Sedangkan yang tidak ada menandakan IP tersebut sudah ditandai namun belum masuk ke dalam table blocklist.
+  tanda <code>OK</code> menandakan bahwa IP tersebut sudah terblok. Sedangkan yang tidak ada menandakan IP tersebut sudah ditandai namun belum masuk ke dalam <i>table</i> blocklist.
 </aside>
 
 Untuk melihat data IP dengan PF, gunakan perintah seperti ini
@@ -138,7 +138,7 @@ Untuk melihat data IP dengan PF, gunakan perintah seperti ini
 
 #### FTP
 
-Pada dasarnya Blocklistd akan memblok port's yang sudah diatur di `/etc/blocklistd.conf` salah satunya FTP. Jika memakai FTP sebagai koneksi ke server, maka bentuk pengamanannya adalah dengan menambahkan _flags_ `-B` setelah _command_ FTP.
+Pada dasarnya Blocklistd akan memblok *port's* yang sudah diatur di `/etc/blocklistd.conf` salah satunya FTP. Jika memakai FTP sebagai koneksi ke *server*, maka bentuk pengamanannya adalah dengan menambahkan _flags_ `-B` setelah _command_ FTP.
 
 Pengaturannya bisa di `/etc/inetd.conf` atau langsung di `/etc/rc.conf`. Berikut cara mengaturnya di `rc.conf`
 
@@ -228,26 +228,26 @@ $ doas service sshd restart
 $ doas service pf restart
 ```
 
-Aman? mungkin. Tapi bisa saja akan ketahuan saat bot melakukan scan terhadap semua port. Pengalaman ane, dari 100x bot tertangkap ada 1 atau 2 bot yang berusaha terhubung ke _custom port_ ini.
+Aman? mungkin. Tapi bisa saja akan ketahuan saat bot melakukan *scan* terhadap semua port. Pengalaman ane, dari 100x *bot* tertangkap ada 1 atau 2 *bot* yang berusaha terhubung ke _custom port_ ini.
 
 ### Pilih yang mana?
 
 Jika kamu pengguna NetBSD maka Blocklist sudah ada di dalam sistem dan sudah jalan dengan baik, sedangkan kalo pakai FreeBSD harus mengaktifkannya secara manual. SSH Guard bukanlah aplikasi _native_ di dalam sistem, perlu memasangnya dulu tapi kelebihannya tersedia untuk pelbagai OS (di luar BSD). Selain itu SSH Guard juga punya kelebihan untuk monitor banyak _ports_, jadi jika di sistem punya banyak _service_ yang perlu dimonitor SSH Guard cocok sekali dipakai. Namun jika cuma port SSH atau FTP, maka Blocklist sudah lebih dari cukup.
 
-Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi bot semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
+Mengganti _port_ SSH dengan _custom port_ mungkin terlihat aman untuk waktu tertentu, tapi *bot* semakin hari semakin canggih sehingga bisa saja nantinya akan meng-_scan port_ lain dan tinggal tunggu waktu untuk ketemu. Jadi tetap memasang Blocklist adalah pilihan yag bijaksana, apalagi Blocklist ringan dan tidak memakan _resources_ yang tinggi.
 
 ### Pengamanan SSH lanjutan
 
-Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Beberapa cara yang umum dan disarankan adalah tidak memberikan akses untuk login ke SSH dengan _password_ melainkan dengan SSH Pubkey ID dan tidak memberikan ijin _user_ root untuk _login_ dengan SSH.
+Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akses ke SSH diamankan lebih kuat lagi. Beberapa cara yang umum dan disarankan adalah tidak memberikan akses untuk *login* ke SSH dengan _password_ melainkan dengan `SSH Pubkey ID` dan tidak memberikan ijin _user_ `root` untuk _login_ dengan SSH.
 
 <ol>
 <li><b>Login dengan SSH Public Key</b></li>
 <ul>
-<li>Buat public key, katakanlah hendak membuat public key khusus untuk akses ke SSH</li>
+<li>Buat <i>public key</i>, katakanlah hendak membuat <i>public key</i> khusus untuk akses ke SSH</li>
 </ul>
 <pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">ssh-keygen -t ed25519 -C "ssh-FreeBSD"</span></span>
 </code></pre>
-<p>ikuti semua prompt yang muncul sampai selesai. Setelah selesai seharusnya file public key sudah tersedia di <code>~/.ssh/id_ed25519.pub</code></p>
+<p>ikuti semua <i>prompt</i> yang muncul sampai selesai. Setelah selesai seharusnya <i>file public key</i> sudah tersedia di <code>~/.ssh/id_ed25519.pub</code></p>
 <pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">cat ~/.ssh/id_ed25519.pub</span></span>
 </code></pre>
 <p>akan muncul baris teks kode acak dengan awalan <code>SSH-ed25519</code></p>
@@ -256,14 +256,14 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 </ul>
 <pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">ssh-copy-id -i ~/.ssh/id_ed25519.pub poes@oyenBSD</span></span>
 </code></pre>
-<p>ikuti prompt dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
+<p>ikuti <i>prompt</i> dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
 </ol>
 
 
 <div class="postnotes">
     <p class="sans"><b>Menyimpan kredensial di keychain atau Bitwarden</b></p>
-    <p>Cara ini adalah dengan memanfaatkan <i>keychain</i> dari aplikasi Password Manager pihak ketiga seperti Apple Password, Bitarden, atau 1Password. Aplikasi ini akan membantu proses login dan secara otomatis akan memasukkan password SSH saat login. Tentu untuk tambahan keamanan bisa pakai biometrik untuk <i>approval</i>.</p>
-    <p>Sebagai contoh ane pakai Bitwarden, caranya mudah saja. Setelah selesai membuat SSH <i>public key</i>, salin isi dari file <code>id_ed25519.pub</code></p>
+    <p>Cara ini adalah dengan memanfaatkan <i>keychain</i> dari aplikasi Password Manager pihak ketiga seperti Apple Password, Bitarden, atau 1Password. Aplikasi ini akan membantu proses <i>login</i> dan secara otomatis akan memasukkan password SSH saat <i>login</i>. Tentu untuk tambahan keamanan bisa pakai biometrik untuk <i>approval</i>.</p>
+    <p>Sebagai contoh ane pakai Bitwarden, caranya mudah saja. Setelah selesai membuat SSH <i>public key</i>, salin isi dari <i>file</i> <code>id_ed25519.pub</code></p>
     <pre><code>
     $ cat ~/.ssh/id_ed25519
     -----BEGIN PUBLIC KEY-----
@@ -280,7 +280,7 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 </div>
 
 2. **Menolak root login lewat SSH.**
-   Para penyerang biasanya akan memakai _username_ root untuk melakukan serangan, jadi membatasi akses root untuk login ke SSH adalah pilihan yang tepat. Caranya adalah dengan mengubah konfigurasi `sshd_config`.
+   Para penyerang biasanya akan memakai _username_ `root` untuk melakukan serangan, jadi membatasi akses `root` untuk *login* ke SSH adalah pilihan yang tepat. Caranya adalah dengan mengubah konfigurasi `sshd_config`.
 
    ```shell-session
    $ doas vim /etc/ssh/sshd_config
@@ -307,7 +307,7 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 
 </div>
 
-      Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya prompt yang muncul adalah _password_ dari file `id_ed25519.pub` yang sebelumnya ane buat.
+      Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya *prompt* yang muncul adalah _password_ dari file `id_ed25519.pub` yang sebelumnya ane buat.
 
       ```shell-session
       ➜  ~ ssh poes@oyenBSD
@@ -319,9 +319,9 @@ masukkan _password_ yang dibuat sebelumnya.
 
 
 3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
-    Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada port SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.
+    Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada *port* SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.
 
-    Jika Blocklistd akan memblok akses jika dalam beberapa kali percobaan gagal login dengan sukses di SSH, maka PF akan memblok akses bahkan sebelum percobaan login terjadi. Maka rubah bagaimana PF mengatur akses ke SSH
+    Jika Blocklistd akan memblok akses jika dalam beberapa kali percobaan gagal login dengan sukses di SSH, maka PF akan memblok akses bahkan sebelum percobaan *login* terjadi. Maka rubah bagaimana PF mengatur akses ke SSH
 
     ```shell-session
     $ doas vim /etc/pf.conf
@@ -330,7 +330,6 @@ masukkan _password_ yang dibuat sebelumnya.
     $ doas pfctl -nf /etc/pf.conf
     $ doas pfctl -f /etc/pf.conf
     ```
-
     <aside>
     <ul>
       <li>perintah <code>pfctl -nf /etc/pf.conf</code> digunakan untuk mencoba apakah <i>rules</i> <code>pf.conf</code> ada masalah (salah syntax) atau tidak.</li>
@@ -340,4 +339,4 @@ masukkan _password_ yang dibuat sebelumnya.
 
     Perintah ini akan membuat PF memeriksa jumlah akses secara bersamaan dan mencoba akses ke SSH dengan maksimal 5 percobaan dalam semenit (60 detik). Jika percobaan (biasanya oleh _bot_) itu lebih dari 5 kali dalam semenit maka PF akan mengabaikan koneksi ini.
 
-    Digabungkan dengan Bloclistd maka PF akan menolak akses dari IP yang mencoba akses lebih dari 5 kali dalam kurun satu menit, jika tidak maka akan muncul _prompt login_ SSH. Jika gagal login sebanyak 3x karena salah _password_, maka Blocklistd akan memblokir aksesnya dalam jangka waktu yang sudah ditentukan (misalnya 100 hari).
+    Digabungkan dengan Blocklistd maka PF akan menolak akses dari IP yang mencoba akses lebih dari 5 kali dalam kurun satu menit, jika tidak maka akan muncul _prompt login_ SSH. Jika gagal login sebanyak 3x karena salah _password_, maka Blocklistd akan memblokir aksesnya dalam jangka waktu yang sudah ditentukan (misalnya 100 hari).

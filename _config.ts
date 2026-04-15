@@ -24,6 +24,7 @@ const markdown = {
   options: {
     typographer: true,
     linkify: true,
+    html: true,
   },
 };
 

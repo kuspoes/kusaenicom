@@ -53,7 +53,7 @@ Dengan analisa ini, Uketsu kemudian menghubungi Yanaoka untuk menyampaikan saran
 
 Kasus ditutup, namun tidak buat Uketsu karena denah rumah dan analisa Kurihara terus membekas dalam hatinya. Kemudian Uketsu membuat artikel pendek di majalah tentang rumah tersebut dengan menghilangkan detail tentang lokasi untuk privasi. Tak disangka dia mendapatkan banyak respon dari pembaca, salah satunya dari seseorang mengaku bernama **Yuzuki Miyae** yang merasa bahwa artikel tentang denah rumah ini berhubungan dengan kematian suaminya **Kyoichi Miyae** (si mayat dengan tangan kiri hilang).
 
-Dari Yuzuki Miyae, Uketsu mendapatkan kembali denah rumah lain yang memiliki keanehan yang sama, yaitu ada ruangan yang tidak wajar dengan sudut mati tidak terlihat dari luar. Setelah ditelusuri ternyata pemilik rumahnya sama yaitu **Keita Katabuchi**. Kurihara merasa curiga dengan Yuzuki dan berpesan agar Uketsu berhati - hati dengan dia karena menurut catatan pemerintah Kyoichi Miyae belum pernah menikah, tapi kenapa Yuzuki mengaku sebagai istri mendiang?. Setelah di konfrontasi akhirnya Yuzuki jujur bahwa dia memang bukan istri dari Yuzuki melainkan **Yuzuki Katabuchi**.
+Dari Yuzuki Miyae, Uketsu mendapatkan kembali denah rumah lain yang memiliki keanehan yang sama, yaitu ada ruangan yang tidak wajar dengan sudut mati tidak terlihat dari luar. Setelah ditelusuri ternyata pemilik rumahnya sama yaitu **Keita Katabuchi**. Kurihara merasa curiga dengan Yuzuki dan berpesan agar Uketsu berhati - hati dengan dia karena menurut catatan pemerintah Kyoichi Miyae belum pernah menikah, tapi kenapa Yuzuki mengaku sebagai istri mendiang?. Setelah di konfrontasi akhirnya Yuzuki jujur bahwa dia memang bukan istri dari Kyoichi melainkan **Yuzuki Katabuchi** saudara ipar dari Keita.
 
 ### Klan Katabuchi & ritual potong tangan
 
@@ -83,7 +83,7 @@ Pada suatu saat, datang seorang dukun wanita bernama **Rankyo** ke kediaman kelu
 
 1. Anak kembar dari Chizuru adalah Asano dan Momota (yg cacat). Momota harus disembunyikan di ruangan khusus dan tidak boleh terkena sinar matahari. Pada ulang tahunnya yang ke-10, dia harus membunuh salah satu anak dari keluarga Cabang yaitu anak Seikichi yang seumuran,
 2. Setiap tahun sampai usia 13 tahun, Momota harus membunuh anak - anak itu (total 3 anak),
-3. Asano bertindak sebagai pembantu dalam usaha pembunuhan,
+3. Asano (atau anak seumuran) bertindak sebagai pembantu dalam usaha pembunuhan,
 4. Tangan kiri korban harus dipotong sebatas pergelangan tangan dan kemudian dipersembahkan di makam Ushio.
 
 Akhirnya ritual ini menjadi sebuah tradisi turun temurun dari Klan Katabuchi sampai saat ini, apalagi jika dari keturunannya ada yang lahir tanpa telapak tangan kiri. Namun rahasia dari Klan Katabuchi tidak hanya itu, melainkan ternyata mereka mempunyai anak laki - laki ketiga setelah Soichiro dan Seikichi yaitu **Shigehiru** yang kemudian menjadi kakek dari Yuzuki Katabuchi.
@@ -100,4 +100,6 @@ Novel ini juga tersedia versi manga dengan judul [The Strange House/Hen na le](h
 
 Sekilas tentang Uketsu, dia seorang [youtuber](https://www.youtube.com/@uketsu) yang sering membuat film pendek. Bahkan versi _audiovisual_ dari novel ini tersedia di kanal youtube-nya. Dia sudah menulis beberapa novel yang langsung menjadi _best seller_ diantaranya Strange Houses dan Strange Pictures. Meski sudah populer, sosok Uketsu sendiri masih misteri sampai sekarang karena setiap tampil dia selalu memakai celana dan jaket hitam dan menutupi wajahnya dengan topeng dari bubur kertas yang dikeringkan.
 
-Saya sedang membaca buku Uketsu lainnya yaitu Strange Pictures.
+Ane beri _rating_ bintang 4 dari 5 karena memang novel yang ini enak untuk dibaca dan terasa _fresh_ dibandingkan _Japanese crime mistery_ novel yang sebelumnya ane baca. <abbr title="For Your Information">FYI</abbr> arti dari bintang 4 dari ane adalah <mark>"*Buku yang bagus dan saya rekomendasikan untuk dibaca*"</mark>. 
+
+Ane sedang membaca buku Uketsu lainnya yaitu Strange Pictures harapan ane memiliki kualitas yang serupa atau mungkin lebih baik?, semoga.
