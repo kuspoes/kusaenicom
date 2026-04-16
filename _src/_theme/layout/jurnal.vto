@@ -24,28 +24,28 @@
     </div>
     <div class="content">
         {{ if content }} {{ if it.tocx }} {{ if toc.length }}
-        <nav class="toc">
-            <h4>Daftar Isi</h4>
-            <ol>
-                {{ for item of toc }}
-                <li>
-                    <a href="#{{ item.slug }}">{{ item.text }}</a>
-                    {{ if item.children.length }}
-                    <ul>
-                        {{ for child of item.children }}
+                <nav class="toc">
+                    <h4>Daftar Isi</h4>
+                    <ol>
+                        {{ for item of toc }}
                         <li>
-                            <a href="#{{ child.slug }}">{{ child.text }}</a>
+                            <a href="#{{ item.slug }}">{{ item.text }}</a>
+                            {{ if item.children.length }}
+                            <ul>
+                                {{ for child of item.children }}
+                                <li>
+                                    <a href="#{{ child.slug }}">{{ child.text }}</a>
+                                </li>
+                                {{ /for }}
+                            </ul>
+                            {{ /if }}
                         </li>
                         {{ /for }}
-                    </ul>
-                    {{ /if }}
-                </li>
-                {{ /for }}
-            </ol>
-        </nav>
-        {{ /if }} {{ /if }}
-        {{ content }}
-        {{ /if }}
+                    </ol>
+                </nav>
+                {{ /if }} {{ /if }}
+                {{ content }}
+                {{ /if }}
         {{ if footnotes.length }}
         <aside role="note" class="footnotes">
             <h4>Footnotes:</h4>
@@ -76,9 +76,9 @@
           </div>
                     {{ /for }}
         </div>
-
+            <hr />
           {{ /if }}
-        <hr />
+
         {{ if comment }}
             <div id="dropcomments-container"></div>
         {{ /if }}

@@ -13,6 +13,7 @@ code: true
 favorit: false
 comment: true
 keywords: bsd, freebsd, ente, security, tutorial
+templateEngine: vto, md
 draft: false
 tocx: true
 comments:
@@ -23,6 +24,7 @@ comments:
 <img class="fuck lebar" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png" alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga dengan 2 tameng" />
 
 Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling kuat tapi _assume everything will be attacked_ atau _no system is safe_. Teknik awal dalam perentasan adalah melakukan _scanning ports_ dan kemudian mengeksploitasinya, yang paling sering diincar adalah port SSH dan FTP. Meskipun banyak sekali teknik dalam perentasan, namun paling tidak mengamankan _ports_ ini adalah langkah awal yang baik.
+  
 
 ### Blocklistd
 
