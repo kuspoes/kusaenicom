@@ -1,19 +1,24 @@
 a.bukuku {
     padding: 0px;
     margin: 0px;
+    border: none;
 }
 
 .bukukuku {
-    border-top: 1px dotted #ccc;
+    width: 100%;
     border-bottom: 1px dotted #ccc;
-    margin-top: 2em;
+    border-top: 1px dotted #ccc;
+    line-height: 0.01em;
+    margin: 40px 0 20px;
 }
 
 .bukukuku h5 {
-    margin-top: 0.6em;
+    z-index: -100;
+    padding: 0 20px;
+    display: block;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 0.85em;
     font-family:
         system-ui,
@@ -42,7 +47,6 @@ a.bukuku {
     height: 190px;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid #ccc;
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -52,7 +56,7 @@ a.bukuku {
 }
 
 .relasi_bukuku_cover:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 10;
 }
 
@@ -61,6 +65,7 @@ a.bukuku {
     height: 100%;
     object-fit: cover;
     display: block;
+    border: none !important;
 }
 
 /* Mobile: Maksimal 4 */
