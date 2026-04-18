@@ -249,8 +249,12 @@ aside.footnotes {
 }
 
 nav.toc {
-    margin-bottom: 3em;
+    margin: 3em 0;
     font: normal 80% var(--sans);
+    border: 1px solid rgb(238, 244, 237, 0.5);
+    background-color: rgb(238, 244, 237, 0.3);
+    border-radius: 0.376em;
+    padding: 10px;
 }
 
 .kuslogo {
@@ -676,6 +680,11 @@ p.sidenote {
     margin: 0em 0 1em 0;
 }
 
+p.readingInfoTOC {
+    margin-left: 1em;
+    width: 100%;
+}
+
 .postitle p {
     color: var(--col_gray);
 }
@@ -758,7 +767,8 @@ nav.toc ol li ul li a:link {
 
 nav.toc h4 {
     text-transform: uppercase;
-    font: normal 1.1em var(--sans);
+    font: bold 1.1em var(--sans);
+    margin-bottom: 1.5em;
 }
 
 sup {
@@ -1031,6 +1041,7 @@ nav.toc a {
 
 nav.toc ol li ul li a {
     font-weight: 400;
+    font-size: 1.1em;
     border-bottom: 1px dotted #94d2bd;
 }
 

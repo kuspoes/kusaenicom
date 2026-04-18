@@ -211,4 +211,24 @@ site.process([".html"], (pages) => {
   }
 });
 
+site.process([".html"], (pages) => {
+  for (const page of pages) {
+    const { document } = page;
+
+    if (!document) continue;
+
+    const tocNav = document.querySelector("nav.toc");
+    const content = document.body.innerHTML;
+    if (tocNav && content.includes("&lt;#toc#&gt;")) {
+      const tocHTML = tocNav.outerHTML;
+
+      tocNav.remove();
+      document.body.innerHTML = document.body.innerHTML.replace(
+        "&lt;#toc#&gt;",
+        tocHTML,
+      );
+    }
+  }
+});
+
 export default site;

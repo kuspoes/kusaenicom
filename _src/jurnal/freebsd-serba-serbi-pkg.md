@@ -19,14 +19,16 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
 ---
 
-<div class="postnotes info">
-    <p>⚠️ Artikel ini masih dalam proses dan akan terus diupdate.</p>
-</div>
 
 Meski sudah banyak aplikasi yang dibawa di dalam paket *base*-nya namun FreeBSD tetap menyediakan alat untuk meng*install* aplikasi pihak ketiga, mengelola atau meng*update*nya. Disediakan 2 alat dan 2 cara berbeda yaitu dengan FreeBSD *ports collections* yaitu cara meng*install* aplikasi lewat *build source code*. Cara lainnya adalah memasang aplikasi dari *pre-built binaries* dengan [`pkg(8)`](https://man.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&format=html)
 
 Memasang dari *ports collections* biasanya dilakukan jika di dalam *repository* resmi FreeBSD sebuah paket belum ter*update* karena biasanya memang di *ports* lebih dahulu diluncurkan. [Freshports](https://www.freshports.org/) adalah situs yang bisa dipergunakan untuk melacak rilis dari *ports*, resminya juga ada yaitu melalui [FreeBSD Ports Collections](https://ports.freebsd.org/cgi/ports.cgi).
 
+<#toc#>
+
+<div class="postnotes info">
+    <p>⚠️ Artikel ini masih dalam proses dan akan terus diupdate.</p>
+</div>
 
 ## Mempergunakan PKG
 
