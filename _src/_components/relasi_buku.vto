@@ -1,7 +1,7 @@
 <div class="bukukuku">
     <h5>buku lain yang mungkin kamu suka</h5>
     <div class="relasi_bukuku">
-        {{ set bukuku = search.pages(`${ teks }`, `date=desc`, 6)}}
+        {{ set bukuku = search.pages(`${ pancing }`, `date=desc`, 6)}}
         {{ if bukuku.length>0 }}
         {{ for buku of bukuku.slice(1,6) }}
         <a class="bukuku" href="{{ buku.url }}">

@@ -1441,11 +1441,15 @@ a.related_post_link {
     .pre,
     .baca,
     iframe.video,
-    iframe.peta,
+    iframe.peta {
+        width: 95%;
+        margin: 10px;
+    }
+
     ul,
     ol {
         width: 95%;
-        margin: 10px;
+        margin-left: 1em;
     }
 
     #related_post {
