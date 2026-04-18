@@ -53,6 +53,8 @@ Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk menggenerate
 
 ### Deno Deploy
 
-Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
+> Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
 
-Jika ingin mempergunakan layanan lainnya seperti Netlify atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
+Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable Github Action.
+
+Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
