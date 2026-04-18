@@ -60,7 +60,7 @@ export default class Mastodon extends HTMLElement {
     }
 
     const data = await Mastodon.fetch(
-      new URL(`https://sepoi.kuspoes.deno.dev/gts/${id}`),
+      new URL(`https://sepoi.kuspoes.deno.net/gts/${id}`),
       this,
     );
 
