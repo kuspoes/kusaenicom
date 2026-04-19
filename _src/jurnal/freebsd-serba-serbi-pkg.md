@@ -379,6 +379,7 @@ Repotnya di Port's adalah saat mencari dimana letak dari folder aplikasi yang di
 
 ```shell-session
 $ cd /usr/ports/editors/vim
+$ doas make install clean
 ==>  License VIM accepted by the user
 ===>   vim-9.2.0204 depends on file: /usr/local/sbin/pkg - found
 => vim-vim-v9.2.0204_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles.
@@ -410,7 +411,7 @@ Untuk menghapus ada 2 cara, bisa pakai perintah `pkg delete` karena toh juga *pa
 Caranya ribet, pokoknya pakai Ports itu ribet!. Pertama harus tau dulu daftar dari *package* yang ada versi pembaharuan namun harus melakukan `git pull` terlebih dahulu untuk memperbarui `local copy` dari repo Ports. 
 
 ```shell-session line-numbers
-$ doas git -C pull /usr/ports
+$ doas git -C /usr/ports pull
 $ doas pkg version -l "<"
 ```
 
