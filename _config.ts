@@ -45,6 +45,7 @@ const site = lume(
 site
   .copy("assets", "/assets")
   .copy("well-known", "/.well-known")
+  .copy("_redirects")
   .use(attributes())
   .use(purgecss())
   .use(base_path())
