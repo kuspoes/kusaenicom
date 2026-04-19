@@ -728,8 +728,8 @@ ol li::marker {
 }
 
 .content ul li:before {
-    content: "‒";
-    color: #ccc;
+    content: "─";
+    color: #6b705c;
     font-weight: 600;
     display: inline-block;
     width: 1.2em;
@@ -1298,6 +1298,8 @@ cite {
 
 pagefind-ui mark,
 mark {
+    display: inline-block;
+    line-height: 0.8;
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-underline-offset: 6px;
@@ -1309,7 +1311,7 @@ mark {
 
 .fuck_eipstein_trump {
     display: inline;
-    height: 1em;
+    line-height: 0.8;
     padding: 1px;
     border-radius: 2px;
     text-decoration: none;
