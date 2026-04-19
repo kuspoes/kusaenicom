@@ -25,9 +25,11 @@ templateEngine: vto,md
 
 Selaras dengan semakin populernya Linux, sebagian besar provider VPS (Virtual Private Server) sekarang lebih memilih untuk menyediakan layanan VPS hanya dengan pilihan OS Linux yang populer. 
 
-Meski masih ada yang menyediakan pilihan untuk mempergunakan FreeBSD dan atau custom ISO, namun saat ini jumlahnya sangat terbatas. Tidak hanya di Indonesia bahkan di VPS Provider kelas dunia pun banyak yang fokus menyediakan Linux sebagai OS pilihan. Alasan yang paling sering muncul adalah penghematan biaya dan memudahkan layanan/maintenance. 
+Meski masih ada yang menyediakan pilihan untuk mempergunakan FreeBSD dan atau custom ISO, namun saat ini jumlahnya sangat terbatas. Tidak hanya di Indonesia bahkan di VPS Provider kelas dunia pun banyak yang fokus menyediakan Linux sebagai OS pilihan. Alasan yang paling sering muncul adalah penghematan biaya dan memudahkan layanan/_maintenance .
 
-### Tetap ingin pakai FreeBSD
+<#toc#>
+
+### Tetap ingin pakai FreeBSD!
 
 Saya ingin memakai FreeBSD, bagaimana caranya?
 
