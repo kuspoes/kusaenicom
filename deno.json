@@ -24,37 +24,22 @@
     }
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ],
+    "types": ["lume/types.ts"],
     "jsx": "react-jsx",
     "jsxImportSource": "lume"
   },
-  "unstable": [
-    "temporal",
-    "fmt-component"
-  ],
+  "unstable": ["temporal", "fmt-component"],
   "lint": {
-    "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/lint.ts"
-    ],
+    "plugins": ["https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/lint.ts"],
     "rules": {
-      "exclude": [
-        "no-import-prefix"
-      ]
+      "exclude": ["no-import-prefix"]
     }
   },
   "permissions": {
     "lume": {
       "read": true,
-      "write": [
-        "./"
-      ],
-      "import": [
-        "cdn.jsdelivr.net:443",
-        "jsr.io:443",
-        "deno.land:443"
-      ],
+      "write": ["./"],
+      "import": ["cdn.jsdelivr.net:443", "jsr.io:443", "deno.land:443"],
       "net": [
         "0.0.0.0",
         "jsr.io:443",
@@ -72,8 +57,10 @@
   },
   "lock": false,
   "allowScripts": {
-    "deny": [
-      "npm:sharp"
-    ]
+    "deny": ["npm:sharp"]
+  },
+  "deploy": {
+    "runtime": "dynamic",
+    "entrypoint": "./server.ts"
   }
 }
