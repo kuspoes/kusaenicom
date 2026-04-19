@@ -23,6 +23,7 @@
         </div>
     </div>
     <div class="content">
+        <div class="tocx">
         {{ if content }} {{ if it.tocx }} {{ if toc.length }}
                 <nav class="toc">
                     <h4>Daftar Isi</h4>
@@ -42,10 +43,12 @@
                         </li>
                         {{ /for }}
                     </ol>
-
-                    <p class="readingInfoTOC"><b>{{ readingInfo.words.toLocaleString("id-ID") }}</b> kata — sekitar <b>{{ readingInfo.minutes }}</b> menit untuk membaca</p>
                 </nav>
+                <aside>
+                    <p class="readingInfoTOC"><b>{{ readingInfo.words.toLocaleString("id-ID") }}</b> kata — sekitar <b>{{ readingInfo.minutes }}</b> menit untuk membaca</p>
+                </aside>
                 {{ /if }} {{ /if }}
+        </div>
                 {{ content }}
                 {{ /if }}
         {{ if footnotes.length }}

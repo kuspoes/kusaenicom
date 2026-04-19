@@ -16,7 +16,7 @@ style: "tentang.css"
 <h3>Di sosial media</h3>
 
 <p>Saya terdaftar di beberapa akun sosial media berikut ini :</p>
-    <ul>
+    <ul class="space-y-3">
         <li><b>Twitter</b>, saya memiliki 2 akun. Tapi sebaiknya anda
             mengikuti akun umum saya
             yaitu 😸<a href="https://twitter.com/kuspoes">kuspoes</a> karena akun satunya lebih banyak twit
@@ -40,15 +40,15 @@ style: "tentang.css"
 
 <h3>Blog ini</h3>
 
-<p>Setelah memakai beberapa CMS/<em>blog engine</em> sebelumnya seperti Wordpress, Textpattern, Jekyll, Hugo &amp; 11ty. Saya sekarang beralih ke <a href="https://lumeland.github.io">Lume</a> dan <i>vanila</i> CSS <del class="abu">css <em>framework</em> <a href="https://tailwindcss.com">Tailwindcss</a></del>.</p>
+<p>Setelah memakai beberapa CMS/<em>blog engine</em> sebelumnya seperti Wordpress, Textpattern, Jekyll, Hugo &amp; 11ty. Saya sekarang beralih ke <a href="https://lumeland.github.io">Lume</a> dan <i>vanila</i> CSS <mark class="fuck_eipstein_trump"><del class="abu">css <em>framework</em> <a href="https://tailwindcss.com">Tailwindcss</a></del></mark>.</p>
 
 <p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest. Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font Kaylani.</p>
 
-<p><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></p>
+<p><mark class="fuck_eipstein_trump"><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></mark></p>
 
-<p>Karena ada masalah dengan Upcloud, maka <em>hosting</em> blog ini dipindahkan ke <a href="https://deno.com" target="_blank">Deno Deploy</a> dan <em>source code</em> ditaruh di <a href="https://github.com/kuspoes/kusaenicom" target="_blank">Github</a>.</p>
+<p>Karena ada masalah dengan Upcloud, maka <em>hosting</em> blog ini dipindahkan ke <a href="https://deno.com" target="_blank">Deno Deploy</a> dan <em>source code</em> ditaruh di <a href="https://codeberg.org/kusaeni/kusaicom" target="_blank">Codeberg</a> dan <a href="https://github.com/kuspoes/kusaenicom" target="_blank">Github</a>. Jika berminat memakai blog ini sebagai dasar pembuatan blog Anda bisa meng-<i>clone</i> dari repositori Codeberg atau Github. Cara pemakaiannya sudah saya sebutkan di <i>file</i> <code>README.md</code>.</p>
 
-<p class="sidenote">Domain dan hosting situs ini sebelumnya dilayani oleh <a href="https://www.dracoola.com" title="Dracoola Multimedia">Dracoola</a>. Kemudian agar mudah dan cepat saya pindah hosting ke <del>Upcloud</del> Deno Deploy.</p>
+<p class="sidenote">Domain dan hosting situs ini sebelumnya dilayani oleh <a href="https://www.dracoola.com" title="Dracoola Multimedia">Dracoola</a> (sekarang sudah diakuisi Apik.co.id). Kemudian agar mudah dan cepat saya pindah hosting ke <mark class="fuck_eipstein_trump"><del>Upcloud</del></mark> Deno Deploy.</p>
 
 <div class="postnotes">
 <h4>Sejarah hosting ini dari masa ke masa</h4>
@@ -62,17 +62,18 @@ style: "tentang.css"
 <p>Untuk pencatatan statistik, saya mempergunakan jasa pencatat statistik gratis dari <a href="https://goatcounter.com" target="_blank">goatcounter</a>. </p>
 
 <div class="postnotes">
-    <p>Statistik yang dikoleksi terbatas pada lokasi negara, bahasa, referrer, ukuran layar, dan alamat URL yang dikunjungi. Data ini dipakai kepentingan internal saja untuk mencari data tentang artikel mana yang paling banyak dikunjungi dan jenis <i>devices</i> yang dipakai untuk keperluan desain situs (responsif). Data ini tidak akan dijual ke pihak manapun.</p></div>
+    <p>Statistik yang dikoleksi terbatas pada lokasi negara, bahasa, <i>referrer</i>, ukuran layar, dan alamat URL yang dikunjungi. Data ini dipakai kepentingan internal saja untuk mencari data tentang artikel mana yang paling banyak dikunjungi dan jenis <i>devices</i> yang dipakai untuk keperluan desain situs (responsif). Data ini tidak akan dijual ke pihak manapun.</p></div>
 
-<p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> (yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a>.</p>
 
-<p><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>. Per 2024 saya sekarang <mark>memakai <a href="https://zed.dev">Zed</a></mark>, sedangkan <i>terminal emulator</i> masih memakai <del>Alacritty</del><a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan iTerm2. </p>
+<p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> <mark class="fuck_eipstein_trump">(yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a></mark>.</p>
+
+<p><mark class="fuck_eipstein_trump"><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.</mark> Per 2026 saya sekarang memakai <mark class="fuck_eipstein_trump"><a href="https://zed.dev">Zed</a></mark> <a href="https://gram.liten.app/" target="_blank">Gram</a>, sedangkan <i>terminal emulator</i> masih memakai <mark class="fuck_eipstein_trump">Alacritty<a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a></mark>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a><mark class="fuck_eipstein_trump">, dan  iTerm2</mark>. </p>
 
 <p>Font yang dipakai di blog ini :</p>
     <ul>
         <li>Anko (<i>commercial license</i>) dari <a href="https://ekobimantara.com/product/anko/">Eko Bimantara</a> digunakan untuk <code>font body</code></li>
         <li>Charter dari <a href="https://typographyforlawyers.com/charter.html">Matthew Carter</a> digunakan juga untuk artikel,</li>
-        <li>Literata dari Google Font,</li>
+        <li><a href="https://fonts.google.com/specimen/Literata?query=literata" target="_blank">Literata</a> dari Google Font,</li>
         <li>Inter dari <a href="https://rsms.me/inter/" target="_blank">Rasmus Andersson</a>, digunakan untuk <i>font header</i> dan <i>sidenotes</i> atau <i>caption</i>,</li>
         <li>Chunk dari <a href="https://www.theleagueofmoveabletype.com/chunk" target="_blank">Meredith Mandel</a> (the League of Movabletype), dipergunakan khusus untuk <code>H1</code>.</li>
         <li><a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif</a> juga dipergunakan untuk <i>header</i>.</li>
@@ -120,7 +121,7 @@ style: "tentang.css"
             <li>Adobe Lightroom CC dan Adobe Photoshop (<em>desktop</em>) dan Adobe Photoshop Lightroom
                 (<em>mobile</em>),
             </li>
-            <li>Luminar 3 dari Skylum. Saya masih punya 3 akun untuk Luminar 3 bagi yang berminat silakan hubungi saya, <del>harga murah ada untuk anda</del> gratis (terbatas). Lisensi resmi dari Skylum.</li>
+            <li>Luminar 3 dari Skylum. Saya masih punya 3 akun untuk Luminar 3 bagi yang berminat silakan hubungi saya, <mark class="fuck_eipstein_trump"><del>harga murah ada untuk anda</del></mark> gratis (terbatas). Lisensi resmi dari Skylum.</li>
             <div class="postnotes kuning-gading">
               <p>Skylum sudah mengeluarkan <a href="https://skylum.com/luminar" title="Luminar 4">Luminar 4</a>. Versi terbaru dengan banyak tambahan fitur tersedia. Saya sendiri sampai sekarang masih belum menguasai Luminar 3 dengan baik. Kadang terasa <i>mubadzir</i> membelinya.
             </p>
@@ -131,7 +132,7 @@ style: "tentang.css"
         </ul>
 <p>Sedangkan PC/Laptop yang dipergunakan adalah Lenovo Thinkpad E470 dengan Windows 10 Pro, laptop sebelumnya adalah Lenovo Ideapad G460 dengan           ArchLinux namun sudah tidak mampu jika dipergunakan melakukan <em>editing file</em> <code>RAW</code>.
 
-</p><p class="sidenote"><del>Saya berharap bisa mengganti laptop dengan Macbook Pro M1 misalnya</del> Saya sudah mendapatkan Macbook Air M2 namun kegiatan fotografi malah terhenti karena pandemi.</p>
+</p><p class="sidenote"><mark class="fuck_eipstein_trump"><del>Saya berharap bisa mengganti laptop dengan Macbook Pro M1 misalnya</del></mark> Saya sudah mendapatkan Macbook Air M2 namun kegiatan fotografi malah terhenti karena pandemi.</p>
 
 <p>Sebagian besar hasil foto - foto saya unggah ke Instagram <a class="font-semibold text-red-600 no-underline hover:no-underline" href="https://instagram.com/kusaeni">@kusaeni</a> dan sebagian ke Flickr (hanya <em>backup</em>).</p>
 

@@ -43,18 +43,20 @@ $ deno task lume
 
 ### Kostumisasi
 
-Untuk mengkostumisasi data, silakan edit file `_config.ts`, `_data.yml`, dan `_src/_data/_metadata.json`. Terutama di bagian nama domain, nama author, dan keterangan lainnya.
+Untuk mengkostumisasi data, silakan edit file `_config.ts`, `_data.yml`, dan atau  di `_src/_data/_metadata.json`. Terutama di bagian nama domain, nama author, dan keterangan lainnya.
 
-Untuk merubah tema, silakan edit di `_src/_theme`, di dalamnya ada file `CSS`, template dalam `.vto`.
+Untuk merubah tema, silakan edit di `_src/_theme`, folder ini berisi `bagian` untuk template `header`, `menu`, dan `footer`. Folder `images` untuk logo, favicon, dan sebagainya, sedangkan `layout` adalah template layout untuk pelbagai jenis tipe artikel seperti jurnal, baca, dan foto. Template dalam `.vto`.
+
+Folder `assets` di dalamnya ada file `CSS`, `JS`, dan `fonts`. Khusus font diambil sebagian dari Google Fonts namun untuk font berbayar tidak disertakan disini karena masalah lisensi.
 
 #### Tags
 
-Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk menggenerate page `/tags` yang berasoisasi dengan file `tags.vto` di folder `_src/_theme/layout/tags.vto`.
+Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk meng-generate page `/tags` yang berasoisasi dengan file `tags.vto` di folder `_src/_theme/layout/tags.vto`.
 
 ### Deno Deploy
 
 > Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
 
-Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable Github Action.
+Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable fungsi Github Action.
 
 Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).

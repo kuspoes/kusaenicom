@@ -217,7 +217,7 @@ site.process([".html"], (pages) => {
 
     if (!document) continue;
 
-    const tocNav = document.querySelector("nav.toc");
+    const tocNav = document.querySelector("div.tocx");
     const content = document.body.innerHTML;
     if (tocNav && content.includes("&lt;#toc#&gt;")) {
       const tocHTML = tocNav.outerHTML;
