@@ -64,7 +64,7 @@ Terakhir sila kunjungi URL domain dan _insya Allah_ jurnal/blog sudah muncul den
 
 Deno Deploy secara _default_ akan memeriksa _framework_ yang dipakai, karena repo ini dibuat untuk dan dengan Lume maka Deploy akan memakai Lume sebagai _framework default_ dan `deno task build` sebagai _Build Command_. Dengan begini membuat Lume bisa *live* dengan segara, namun otomasi ini akan membuat beberapa pengaturan personal menjadi tidak berjalan baik, salah satunya tentang bagaimana halaman 404 ditampilkan.
 
-<div class="postnotes kuning">
+<div class="postnotes ijobiru">
     <p>Dalam dunia HTTP, 404 adalah salah satu HTTP <i>Status Code</i> yang mengindikasikan bahwa peramban/<i>browser</i> bisa berkomunikasi dengan sebuah <i>server</i>, namun <i>server</i> tidak bisa memberikan <i>request</i> yang diminta. Bisa karena yang di<i>request</i> tidak ada atau disembunyikan (tidak memiliki kewenangan), maka peramban akan menampilkan kode 404: <i>Resource Not Found</i>.</p>
 </div>
 

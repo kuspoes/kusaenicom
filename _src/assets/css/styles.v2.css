@@ -493,6 +493,7 @@ img.layang {
 h3 span.ampersand {
     font-style: italic;
     font-size: 120%;
+    font-weight: 200;
 }
 
 span.ter,
@@ -630,6 +631,10 @@ img.logo {
 .hijau {
     background-color: rgba(167, 201, 87, 0.1);
     color: #081c15;
+}
+
+.ijobiru {
+    background-color: rgb(253, 226, 228, 0.5);
 }
 
 .merah {
@@ -954,6 +959,13 @@ a:visited {
 }
 .content a:link {
     font-weight: 600;
+    padding: 0 4px;
+}
+
+.content a:hover {
+    background-color: rgb(217, 220, 214, 0.3);
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 }
 
 a.ptitle,
@@ -973,7 +985,17 @@ a.header-anchor,
 a.header-anchor:visited {
     text-decoration: none;
     font-weight: 800;
-    color: var(--col_link);
+    color: rgb(120, 133, 133, 0.6) !important;
+    border: none;
+}
+
+a.header-anchor:hover {
+    background-color: transparent;
+    text-decoration: none !important;
+    border-radius: none;
+    border: none;
+    color: rgb(255, 166, 43, 0.8) !important;
+    font-weight: 800;
 }
 
 a.badge {
@@ -1303,7 +1325,6 @@ cite {
 pagefind-ui mark,
 mark {
     display: inline-block;
-    line-height: 0.8;
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-underline-offset: 6px;
