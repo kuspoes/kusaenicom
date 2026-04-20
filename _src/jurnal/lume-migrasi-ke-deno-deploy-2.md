@@ -16,8 +16,8 @@ tocx: false
 draft: false
 keywords: lume, deno, deploy, ssg, blog
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KPMHFN4M45CBMNWE86DTRRRR
-  real: https://sok.egois.org/@poes/statuses/01KPMHFN4M45CBMNWE86DTRRRR
+  src: https://sepoi.deno.dev/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
+  real: https://sok.egois.org/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
 ---
 
 ![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/Deploy%20Dashboard_dcVKlpETH.jpeg){ .fuck .lebar}
