@@ -58,9 +58,5 @@
   "lock": false,
   "allowScripts": {
     "deny": ["npm:sharp"]
-  },
-  "deploy": {
-    "runtime": "dynamic",
-    "entrypoint": "./server.ts"
   }
 }
