@@ -20,7 +20,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
 ---
 
-![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/Deploy%20Dashboard_dcVKlpETH.jpeg){ .fuck .lebar}
+![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/tr:w-800/jurnal/migrasi_lume/SCR-20260420-jgay_9mfxOp25u.png){ .fuck .lebar}
 <p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>
 
 
@@ -47,7 +47,7 @@ Langkah pertama adalah menghapus sambungan *custom domain* ane di Deploy Classic
 ### Proses Migrasi
 *Login* ke Deploy V2 dengan mengunjungi [console.deno.com](https://console.deno.com/) kemudian klik pada tombol ***+New App*** untuk membuat App baru. 
 
-Karena ane *login* dengan akun Github, maka akan muncul halaman ***Create a new Application*** dan pilihan akun dan repo ane yang  muncul. Deno secara otomatis akan membaca isi repo dan memberikan sugesti pilihan "terbaik", karena repo ini dibuat dengan Lume maka Deno akan memilih App Config dengan *framework* Lume. Langsung saja klik pad tombol biru bertuliskan ***Create App***.
+Karena ane *login* dengan akun Github, maka akan muncul halaman ***Create a new Application*** pilihan akun dan repo ane otomatis muncul. Deno secara otomatis akan membaca isi repo dan memberikan sugesti pilihan "terbaik", karena repo ini dibuat dengan Lume maka Deno akan memilih App Config dengan *framework* Lume. Langsung saja klik pad tombol biru bertuliskan ***Create App***.
 
 Deploy akan menampilkan halaman Dashboard dari App ini dan mulai melakukan `build`, prosesnya antara 20 - 50 detik sampai semua selesai. Setelah selesai Deploy akan memberikan Preview URL hasil dari proses `build` tadi, formatnya adalah `nama app-kode build`. URL ini berubah - ubah setiap selesai `build`, namun Deploy juga memberikan URL statis dengan format `nama app.user.deno.net`. Karena ane ga ingin pakai ini dan mau pakai domain sendiri, maka tuju menu ***Settings*** dan pilih Production Domain - ***Add Domain***. Masukkan nama domain yang akan dipakai (`kusaeni.com`) kemudian akan muncul di *sidebar* pengaturan *DNS Records*. Ada 3 tab yaitu `CNAME`, `ANAME/ALIAS`, `A/AAAA` pilih saja yang paling mudah atau relevan.
 
