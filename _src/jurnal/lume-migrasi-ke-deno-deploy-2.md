@@ -20,7 +20,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
 ---
 
-![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/tr:w-800/jurnal/migrasi_lume/SCR-20260420-jgay_9mfxOp25u.png){ .fuck .lebar}
+![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg){ .fuck .lebar}
 <p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>
 
 
