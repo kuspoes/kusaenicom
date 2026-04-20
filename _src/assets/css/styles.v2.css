@@ -1062,6 +1062,10 @@ nav.toc a:hover {
     list-style-type: none;
 }
 
+.comments-section ul li:before {
+    content: "" !important;
+}
+
 .comments-section a:hover,
 .comments a:hover,
 .comment a:hover {
