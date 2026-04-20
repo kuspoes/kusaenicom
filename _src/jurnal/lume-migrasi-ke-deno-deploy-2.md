@@ -13,11 +13,11 @@ favorit: false
 comment: true
 templateEngine: md
 tocx: false
-draft: true
+draft: false
 keywords: lume, deno, deploy, ssg, blog
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KPMHFN4M45CBMNWE86DTRRRR
+  real: https://sok.egois.org/@poes/statuses/01KPMHFN4M45CBMNWE86DTRRRR
 ---
 
 ![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/Deploy%20Dashboard_dcVKlpETH.jpeg){ .fuck .lebar}
