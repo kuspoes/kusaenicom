@@ -865,7 +865,7 @@ h4 i {
     h2,
     h3,
     h4 {
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         text-rendering: optimizeLegibility;
     }
 }
