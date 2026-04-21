@@ -15,13 +15,19 @@ templateEngine: md
 tocx: false
 draft: false
 keywords: lume, deno, deploy, ssg, blog
+lightbox: true
+style: "galeri.css"
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
   real: https://sok.egois.org/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
 ---
 
-![Dashboard Deno Deploy](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg){ .fuck .lebar}
-<p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>
+<div class="gal" id="glightbox">  
+    <a style="grid-column:1/-1; border-bottom: none;" href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg" data-gallery="gallery">
+        <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg" class="lebar fuck">
+    </a>
+</div>
+    <p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>
 
 
 Deno Deploy menginformasikan bahwa per 20 Juli 2026 mereka akan menutup Deno Deploy Classic yang sudah mengudara selama kurang lebih 5 tahun setelah diluncurkan pada Juni 2021. Deno juga sudah membuat dokumentasi untuk [bermigrasi](https://docs.deno.com/deploy/migration_guide/) secara aman ke Deno Deploy V2. 
@@ -55,22 +61,22 @@ Deploy akan menampilkan halaman Dashboard dari App ini dan mulai melakukan `buil
 
 ![contoh dns records](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/SCR-20260419-trcv_6MQAQKKpR.png)
 <aside class="image">
-    Contoh isian *DNS Records*. Sesuaikan dengan kode yang diberikan oleh Deno Deploy
+    Contoh isian DNS <i>Records</i>. Sesuaikan dengan kode yang diberikan oleh Deno Deploy
 </aside>
 
 Terakhir sila kunjungi URL domain dan _insya Allah_ jurnal/blog sudah muncul dengan baik.
 
 ### Personalisasi
 
-Deno Deploy secara _default_ akan memeriksa _framework_ yang dipakai, karena repo ini dibuat untuk dan dengan Lume maka Deploy akan memakai Lume sebagai _framework default_ dan `deno task build` sebagai _Build Command_. Dengan begini membuat Lume bisa *live* dengan segara, namun otomasi ini akan membuat beberapa pengaturan personal menjadi tidak berjalan baik, salah satunya tentang bagaimana halaman 404 ditampilkan.
+Deno Deploy secara _default_ akan memeriksa _framework_ yang dipakai, karena repo ini dibuat untuk dan dengan Lume maka Deploy akan memakai Lume sebagai _framework default_ dan `deno task build` sebagai _Build Command_. Dengan begini membuat Lume bisa *live* dengan segara, namun otomasi ini akan membuat beberapa pengaturan personal menjadi tidak berjalan baik, salah satunya tentang bagaimana halaman `404` ditampilkan.
 
 <div class="postnotes ijobiru">
-    <p>Dalam dunia HTTP, 404 adalah salah satu HTTP <i>Status Code</i> yang mengindikasikan bahwa peramban/<i>browser</i> bisa berkomunikasi dengan sebuah <i>server</i>, namun <i>server</i> tidak bisa memberikan <i>request</i> yang diminta. Bisa karena yang di<i>request</i> tidak ada atau disembunyikan (tidak memiliki kewenangan), maka peramban akan menampilkan kode 404: <i>Resource Not Found</i>.</p>
+    <p>Dalam dunia HTTP, <code>404</code> adalah salah satu HTTP <i>Status Code</i> yang mengindikasikan bahwa peramban/<i>browser</i> bisa berkomunikasi dengan sebuah <i>server</i>, namun <i>server</i> tidak bisa memberikan <i>request</i> yang diminta. Bisa karena yang di<i>request</i> tidak ada atau disembunyikan (tidak memiliki kewenangan), maka peramban akan menampilkan kode <code>404</code>: <i>Resource Not Found</i>.</p>
 </div>
 
-Ane memiliki tampilan halaman 404 yang ane buat sendiri, namun dengan Deploy secara otomatis memberikan label _framework_ Lume dan menganggap bahwa repo ini bisa di*serve* sebagai *static page* membuat fitur halaman 404 ane tidak bisa dipakai karena Deploy memiliki fungsi penampil 404 tersendiri yang sangat minimalis.
+Ane memiliki tampilan halaman `404` yang ane buat sendiri, namun dengan Deploy secara otomatis memberikan label _framework_ Lume dan menganggap bahwa repo ini bisa di*serve* sebagai *static page* membuat fitur halaman `404` ane tidak bisa dipakai karena Deploy memiliki fungsi penampil `404` tersendiri yang sangat minimalis.
 
-Sebelumnya di Deploy Classic, ane pakai `server.ts` sebagai *endpoint* untuk dijalankan sehingga *script's* yang ane pasang di *file* ini bisa berjalan seperti 404 dan [No AI Crawler](https://kusaeni.com/jurnal/lume-block-bot-AI-crawler/), maka penggunaan *template framework* Lume ini membuat fitur ini tidak tersedia. Oleh karena itu ane melakukan sedikit personalisasi yaitu dengan merubah *framework* menjadi dinamis, caranya
+Sebelumnya di Deploy Classic, ane pakai `server.ts` sebagai *endpoint* untuk dijalankan sehingga *script's* yang ane pasang di *file* ini bisa berjalan seperti `404` dan [No AI Crawler](https://kusaeni.com/jurnal/lume-block-bot-AI-crawler/), maka penggunaan *template framework* Lume ini membuat fitur ini tidak tersedia. Oleh karena itu ane melakukan sedikit personalisasi yaitu dengan merubah *framework* menjadi dinamis, caranya
 
 - Masuk ke Dashboard Apps (dalam hal ini Jurnal), kemudian tuju menu ***Settings***
 - Edit ***App Configuration***,
@@ -79,4 +85,4 @@ Sebelumnya di Deploy Classic, ane pakai `server.ts` sebagai *endpoint* untuk dij
 - Di Runtime Configuration, pilih ***Dynamic App*** kemudian isi *Entrypoint* dengan `server.ts`,
 - Kemudian simpan
 
-Dengan ini maka Deploy akan memakai `server.ts` sebagai *entrypoint* sehingga fitur kustom 404 dan No AI crawler kembali tersedia.
+Dengan ini maka Deploy akan memakai `server.ts` sebagai *entrypoint* sehingga fitur kustom `404` dan No AI crawler kembali tersedia.

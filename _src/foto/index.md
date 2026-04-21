@@ -7,11 +7,11 @@ lightbox: true
 style: "galeri.css"
 ---
 
- <div class="gal" id="glightbox">  
+<div class="gal" id="glightbox">  
   <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" data-gallery="gallery">
       <img src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" class="fuck" >
   </a>
- </div>
+</div>
 
  <p class="ncaption"><a href="https://goo.gl/maps/h4tk2fCnU7SG5Dhh8" title="Pantai Banyu Tibo Pacitan">Pantai Banyu Tibo</a>, Pacitan Jawa Timur. Nikon D7100 + Tamron 17-50mm @ 17mm &middot; 2" exps &middot; <em>f</em>/9.0 &middot; ISO
 
