@@ -10,9 +10,9 @@
     --col_body: #000000;
     --col_aside: #495057;
     --col_asidebg_lawas: #eaf4f4;
-    --col_asidebg: rgba(246, 189, 96, 0.7);
+    --col_asidebg: rgba(246, 189, 96, 0.4);
     --col_gray: #495057;
-    --col_border: rgb(239.8, 240.8, 241.1);
+    --col_border: rgba(166, 138, 100, 0.4);
     --col-link: #0d00a4;
     --kuning-gading: #fdf0d5;
 }
@@ -267,7 +267,7 @@ aside.toc_stat {
 nav.toc {
     margin: 3em 0 0;
     font: normal 80% var(--sans);
-    border: 1px solid rgb(238, 244, 237, 0.5);
+    border: 1px solid var(--col_border);
     background-color: rgb(238, 244, 237, 0.3);
     border-radius: 0.376em;
     padding: 10px;
@@ -658,6 +658,11 @@ img.logo {
     color: #fdf0d5;
 }
 
+.marah {
+    color: #c1121f;
+    text-transform: uppercase;
+}
+
 .ungu {
     background-color: rgb(60, 9, 108, 0.2);
     color: #f1faee;
@@ -958,7 +963,8 @@ h4 {
 a:link,
 a:visited {
     font-weight: 600;
-    color: var(--col-link);
+    /* color: var(--col-link); */
+    color: rgb(204, 51, 51);
     padding: 2px;
     text-decoration: none;
     border-bottom: 1px dotted #94d2bd;
@@ -1068,6 +1074,8 @@ a:hover {
 .pagefind-ui__result-title.svelte-j9e30 .pagefind-ui__result-link.svelte-j9e30:hover {
     text-decoration: none;
 }
+
+/* TOC */
 
 nav.toc a {
     text-decoration: none;
@@ -1269,7 +1277,9 @@ blockquote {
 blockquote p {
     margin-bottom: 0.4em;
     font-family: Georgia, Palatino, serif;
+    font-weight: 400;
     font-style: italic;
+    color: rgba(21, 97, 109, 1);
 }
 
 blockquote span.tokoh {

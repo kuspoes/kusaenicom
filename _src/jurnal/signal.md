@@ -45,7 +45,7 @@ Pakar Keamanan dunia Maya Jiten Jain (seperti yang dikutip [Tirto.id](https://ti
 "Data yang tersedia dan dibagikan oleh WhatsApp akan mulai menyerupai Facebook. Facebook membagikan data dengan pemerintah berdasarkan permintaan. Sepertinya WhatsApp akan mulai melakukan hal yang sama,"
 </blockquote>
 
-Masih segar diingatan tentang **skandal Facebook dan Cambridge** Analytica pada tahun 2015.
+Masih segar diingatan tentang **skandal Facebook dan Cambridge Analytica** pada tahun 2015.
 
 Facebook dan Cambridge Analytica mengumpulkan informasi pribadi dari setidaknya 87 juta pengguna Facebook pada tahun 2014. Menurut [Wikipedia](https://id.wikipedia.org/wiki/Skandal_data_Facebook%E2%80%93Cambridge_Analytica) data ini dipergunakan untuk <mark>mempengaruhi pemegang hak pilih sesuai keinginan politikus yang mengkontrak Cambridge Analytica</mark>.
 

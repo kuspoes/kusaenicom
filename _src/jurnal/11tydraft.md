@@ -26,11 +26,11 @@ Namun karena kecerobohan sudah mengalir dalam DNA saya, maka fitur <code>draft</
 Secara <em>defaultnya</em> fitur <code>draft</code> tidak tersedia di Eleventy, meski jika dibuat <em>plugin</em>nya bisa. Namun ternyata fitur <code>draft</code> tidak perlu sampai mem-pergunakan <em>plugin</em>.
 
 <blockquote>
-    <p><a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> is nice.
+<a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> is nice.
         Really like how you can just add a glob like &quot;posts/*.draft.md&quot; to your .eleventyignore file and
         then just remove &quot;.draft&quot; from the filename when you&#39;re ready to publish. Simple!</p>&mdash;
     <a href="https://twitter.com/bultbrada/status/1317043860036571137?ref_src=twsrc%5Etfw">Mattias Wikström (@bultbrada)</a>
-        October 16, 2020</a>
+        October 16, 2020
 </blockquote>
 
 Jadi menurut Wikström, fitur <code>draft</code> bisa dengan mempergunakan fitur dari <code>.eleventyignore</code>, dengan cara menambahkan baris <em>regular expression</em> ke dalam isian <code>.eleventyignore</code> untuk mengabaikan <em>files</em> apa saja oleh Eleventy saat <strong>build</strong> dilakukan.

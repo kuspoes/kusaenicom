@@ -172,7 +172,7 @@ const hasilData = await relasi(data, judul);
 
 Disini _string_ `judul` harus diamankan dengan membuat `judul` menjadi huruf kecil semua `toLowerCase()` untuk menghindari kesalahan tipo saat mengetik judul.
 
-#### Update #1 { .merah }
+#### Update #1 { .marah }
 
 Kode diatas terlihat komplek sekali, ada kode lebih sederhana namun ketika saya coba membuat waktu `build` [sedikit lebih lama](#build).
 
@@ -243,7 +243,7 @@ eleventyConfig.addLiquidShortcode("related", async function (judul) {
 
  <aside>Jika ingin mempergunakan kode kedua, silakan disesuaikan. Saya menambahkan fungsi <code>rese</code> untuk memotong karakter di <code>resensi</code> agar tidak lebih dari 200 karakter</aside>
 
-#### Update #2 { .merah }
+#### Update #2 { .marah }
 
 Saya menambahkan fungsi yang sama untuk menampilkan relasi artikel di _collection_ jurnal dengan sedikit perbedaan yaitu tanpa `coverImg` dan tanpa mempergunakan `fetch` JSON. Meskipun kode diatas bisa juga diaplikasikan di _collection_ apa saja, namun saya tidak memakainya dengan alasan [performa](#kesimpulan).
 
@@ -322,7 +322,7 @@ Namun kelemahannya adalah harus memasukkan sendiri detil yang ingin ditampilkan 
 Dengan mempergunakan _paired shortcodes_ ini, waktu `build` **dipangkas hampir 300%** yang awalnya sekitar 9 - 10 detik menjadi 2 - 3 detik saja.
 
  <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/chart_9ZDZx1SgM.png" alt="Chart Perbandingan Build Time" />
- <aside>perbandingan waktu build, semakin kecil semakin baik.</aside>
+ <aside class="image">perbandingan waktu build, semakin kecil semakin baik.</aside>
 
 ### 🔥 Lume { #lume }
 
