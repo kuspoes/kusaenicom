@@ -153,9 +153,9 @@ Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur
 
 <aside class="image">
   <ul>
-  <li><b>No. 1</b> adalah public key dari klien yang nantinya akan di masukkan ke dalam wg0.conf peer publickey yang sebelumnya sudah ane buat.</li>
-  <li><b>No. 2</b> diisi dengan isian dari public.key wireguard di VPS yang sebelumnya sudah dibuat.</li>
-  <li><b>No. 3</b> adalah IP dari VPS dan port dari wireguard.</li>
+  <li><b>No. 1</b> adalah <i>public key</i> dari klien yang nantinya akan di masukkan ke dalam <code>wg0.conf</code> <i>peer publickey</i> yang sebelumnya sudah ane buat.</li>
+  <li><b>No. 2</b> diisi dengan isian dari <code>public.key</code> wireguard di VPS yang sebelumnya sudah dibuat.</li>
+  <li><b>No. 3</b> adalah IP dari VPS dan <i>port</i> dari wireguard.</li>
   </ul>
 </aside>
 
@@ -168,7 +168,7 @@ Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur
 
 <div class="postnotes pink">
   <h4>Wireguard sudah terhubung tapi <mark>tidak bisa akses situs tertentu</mark>?</h4>
-  <p>Tersangkanya jelas MTU atau Maximum Transmission Unit.</p>
+  <p>Tersangkanya jelas MTU atau <i>Maximum Transmission Unit</i>.</p>
   <p>Biasanya sistem akan mengatur MTU secara otomatis, namun untuk beberapa OS tidak mengaturnya di nilai yang sama. Jadi jika di VPS (<i>host</i>) sudah diatur secara manual (misalnya ke nilai 1392) maka di klien harus memakai MTU yang sama. Caranya adalah menambahkan <code>MTU=1392</code> ke dalam blok <code>[Interface]</code>.</p>
 
   <h4>Tapi bagaimana cara menentukan MTU yang pas untuk wireguard?</h4>

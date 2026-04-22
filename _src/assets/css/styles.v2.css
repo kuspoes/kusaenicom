@@ -31,6 +31,10 @@ body {
     position: relative;
 }
 
+html {
+    background-color: #001524;
+}
+
 body {
     /*font: normal 1.1em/1.65 var(--serif);*/
     font-family: var(--serif);
@@ -39,8 +43,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    border-top: 6px solid #3a7ca5;
-    background-color: rgba(255, 243, 176, 0.1);
+    border-top: 6px solid #001524;
+    /* background-color: rgba(255, 243, 176, 0.1); */
+    background:
+        linear-gradient(rgba(255, 243, 176, 0.1), rgba(255, 243, 176, 0.1)),
+        linear-gradient(#ffffff, #ffffff);
     margin-top: 0;
 }
 
@@ -208,6 +215,7 @@ aside.footnotes {
 
 aside.toc_stat {
     background-color: var(--col_asidebg_lawas);
+    color: #03045e;
 }
 
 .notes .note-id {
