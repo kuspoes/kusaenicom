@@ -21,9 +21,9 @@ Sesuai dengan pemberitahuan dari Whatsapp mengenai [penundaan penerapan _privacy
 
 Bagi yang tidak setuju dengan _privacy policy_ terbaru ini maka resikonya adalah pengguna tersebut tidak akan bisa lagi mengakses atau memper-gunakan layanan Whatsapp.
 
-{{ echo |> terkait("Signal buruk Whatsapp", "/jurnal/signal") }}
-Perubahan privacy policy Whatsapp, resiko dan solusi alternatifnya.
-{{ /echo }}
+{{ comp.relasi_artikel({ judul: "Signal buruk Whatsapp", format: "", teks: "" }) }}
+
+
 
 Meski begitu sampai saat ini tidak ada pemberitahuan resmi di laman blog Whatsapp. Namun untuk berjaga - jaga, berikut adalah cara untuk me-mindahkan atau _exports_ data percakapan ke penyedia layanan _messaging_ lain seperti Telegram atau Signal.
 
@@ -85,5 +85,3 @@ _Privacy Policy_ Whatsapp terbaru memang menjadi penyakit yang meng-gerogoti pri
 Saya pribadi lebih memilih pindah ke Signal meski untuk urusan impor data masih keteteran dibandingkan kompetitor. Harapannya adalah dalam waktu dekat Signal bisa merilis _tools_ untuk impor data dari Whatsapp.
 
 Pilihan kedua yang lebih baik jatuh kepada BIP.
-
----

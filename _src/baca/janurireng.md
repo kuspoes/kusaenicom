@@ -33,6 +33,7 @@ comment: true
     <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
  </div>
 
+
 Ini adalah buku ketiga dari [Simpleman](https://twitter.com/SimpleM81378523) setelah KKN di Desa Penari dan [Sewu Dino](https://kusaeni.com/baca/sewudino/) dan merupakan buku ke 2 dari serie saga Trah Pitoe atau legenda 7 keluarga yang memperebutkan puncak kehormatan dan kekayaan.
 
 _Setting_ waktu dalam Janur Ireng terjadi sebelum Sewu Dino. Janur Ireng menjelaskan latar belakang kenapa santet Sewu Dino dikirimkan kepada keluarga Karsa.

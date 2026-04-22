@@ -49,9 +49,14 @@ Sebagai catatan Jagoan Hosting memakai [xtermjs](https://xtermjs.org/) sebagai w
 <p>Meski begitu, akses console ke VPS masih bisa dilakukan dengan SSH, lebih bagus lagi jika pakai tmux sehingga saat pengaturan <code>pf</code> lebih nyaman. Apalagi jika terjadi kesalahan.</p>
 </div>
 
-{{ echo |> terkait("Menginstall OpenBSD di VPS Linux", "/jurnal/menginstall-openbsd-di-vps-linux/", "full" )}}
-Provider tidak menyediakan OS OpenBSD dan atau ingin menginstall sendiri? Elu perlu tau cara ini!.
-{{ /echo }}
+
+
+{{ comp.relasi_artikel({
+    judul: "Menginstall OpenBSD di VPS berbasis Linux",
+    teks: "Provider tidak menyediakan OS OpenBSD dan atau ingin menginstall sendiri? Elu perlu tau cara ini!.",
+    format: "full",
+    heading: "" })
+}}
 
 
 Setelah Debian terinstall dan berjalan dengan baik, maka saya buka akses web konsol (bukan SSH). Kemudian login dengan user `root` dan password yang sudah diatur sebelumnya. 

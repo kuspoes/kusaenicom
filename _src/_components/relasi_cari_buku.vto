@@ -1,0 +1,20 @@
+{{#
+Cara pakai:
+{{ comp.relasi_cari_buku({ judul: "Judul Buku Anda" }) }}
+#}}
+
+{{ set buku = search.page(`title="${judul}"`) }}
+
+{{ if buku }}
+<div class="relasi m-auto">
+    <img class="relaimg" src="{{ buku.coverImg }}">
+    <div class="relasi_meta">
+        <div class="juduldkk">
+            <h4><a class="hRelasi" href="{{ buku.url }}">{{ buku.title }}</a></h4>
+            <p class="author">{{ buku.penulis }}</p>
+        </div>
+        <p>{{ buku.resensi || "" }}</p>
+    </div>
+</div>
+{{ else }}
+    {{ /if }}

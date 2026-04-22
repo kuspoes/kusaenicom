@@ -293,9 +293,8 @@ $ doas wg show
 <p>Seharusnya data <code>peer</code> sudah diperbarui.</p>
 </div>
 
-{{ echo |> terkait("Unbound di OpenBSD", "/jurnal/openbsd-unbound/", "full") }}
-Unbound adalah DNS resolver caching recursive yang open-source, ringan, dan secure. Tapi dia punya kemampuan lain yaitu memblokir iklan yang menjengkelkan. Sempurna untuk digabung dengan Wireguard.
-{{ /echo }}
+
+{{ comp.relasi_artikel({ judul: "Unbound di OpenBSD", teks: "Unbound adalah DNS resolver caching recursive yang open-source, ringan, dan secure. Tapi dia punya kemampuan lain yaitu memblokir iklan yang menjengkelkan. Sempurna untuk digabung dengan Wireguard.", format: "full" }) }}
 
 #### Killswitch
 

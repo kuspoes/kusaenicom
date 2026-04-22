@@ -22,9 +22,13 @@ comments:
 
 Maka ane perlu memasang _tools_ ini untuk disandingkan dengan Wireguard yang [sebelumnya sudah dipasang](https://kusaeni.com/jurnal/openbsd-install-wireguard/). Selain sebagai DNS Resolver nantinya ane akan pasang _ads blocker_ juga untuk menghalau iklan dan menghemat bandwitdh.
 
-{{ echo |> terkait("Wireguard di OpenBSD", "/jurnal/openbsd-install-wireguard/", "full" )}}
-WireGuard adalah VPN protokol yang modern, sederhana, cepat, dan secure. Dibanding protokol lainnya (OpenVPN, IPSec), WireGuard dirancang dengan filosofi minimalis - konfigurasi lebih mudah, dan performa lebih tinggi. Begini cara pasangnya di OpenBSD.
-{{ /echo }}
+
+{{ comp.relasi_artikel({
+    judul: "Wireguard di OpenBSD",
+    teks: "WireGuard adalah VPN protokol yang modern, sederhana, cepat, dan secure. Dibanding protokol lainnya (OpenVPN, IPSec), WireGuard dirancang dengan filosofi minimalis - konfigurasi lebih mudah, dan performa lebih tinggi. Begini cara pasangnya di OpenBSD (dan FreeBSD)",
+    format: "full",
+    heading: "" })
+}}
 
 ---
 

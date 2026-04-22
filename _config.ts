@@ -139,29 +139,7 @@ site.helper(
   },
 );
 
-site.helper(
-  "terkait",
-  function (
-    desc: string,
-    title: string,
-    url: string,
-    format: string = "",
-    label: string = "Artikel Terkait",
-  ) {
-    return `<div class="terkait ${format}">
-            <span class="ter">${label}</span>
-            <div class="kait">
-                <h4><a class="hRelasi" href="${url}">${title}</a></h4>
-            <p>${desc}</p>
-            </div>
-        </div>`;
-  },
-  {
-    // deno-lint-ignore-file
-    body: !!true,
-    type: "tag",
-  },
-);
+// experimental
 
 site.helper(
   "relasi",

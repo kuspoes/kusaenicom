@@ -32,10 +32,14 @@ Untungnya sejak rilis MacOs Ventura, Apple menyertakan fitur Location sebagai ca
 
 Rencana pengaturan IP yang saya miliki seperti berikut:
 
+<div class="lebar">
+
 | Location  | SSID     | IPv4 Mode | IPv4          | Subnet        | Gateway     | DNS       |
 | --------- | -------- | --------- | ------------- | ------------- | ----------- | --------- |
 | Automatic | iTu7uh   | Otomatis  | Auto/DHCP     | Auto/DHCP     | Auto/DHCP   | Auto/DHCP |
 | Kerja     | AP_Buruh | Manual    | 192.168.0.220 | 255.255.255.0 | 192.168.0.1 | 10.1.2.3  |
+
+</div>
 
 Caranya sebagai berikut:
 

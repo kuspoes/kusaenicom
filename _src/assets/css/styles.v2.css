@@ -492,8 +492,8 @@ img.layang {
     border: 1px solid var(--col_gray);
     border-radius: 0.375em;
     padding: 8px;
-    margin: 0 1em 1.3em 0;
-    width: 13em;
+    margin: 1em 1em 1.3em 0;
+    width: 14em;
     float: left;
 }
 
@@ -554,8 +554,8 @@ span.ter,
 
 .relasi_meta p {
     width: auto;
-    font-family: var(--serif);
-    line-height: 1;
+    font-family: var(--sans);
+    line-height: 1.2;
     font-size: 0.9em;
 }
 
@@ -677,6 +677,12 @@ iframe.peta,
 img.lebar {
     width: 850px;
     height: 533px;
+    margin-left: -100px;
+    max-width: none !important;
+}
+
+.lebar {
+    width: 850px;
     margin-left: -100px;
     max-width: none !important;
 }
@@ -1750,32 +1756,36 @@ a.related_post_link {
     body {
         background: white;
         color: black;
-        font-size: 11pt; /* Ukuran standar buku */
+        font-size: 11pt;
+        text-align: left;
         line-height: 1.6;
-        font-family:
-            "Georgia", "Anko", "Times New Roman", serif; /* Font serif lebih mudah dibaca di cetak */
+        font-family: "Georgia", "Anko", "Times New Roman", serif;
     }
 
-    /* Sembunyikan elemen navigasi, sidebar, dan iklan */
     nav,
     footer,
     .sidebar,
     .ads,
     .no-print,
     iframe,
-    .waktu_baca {
+    .waktu_baca,
+    .dropcomments-container,
+    .comments-section {
         display: none !important;
+    }
+
+    img {
+        width: 95%;
     }
 
     .nav {
         margin-bottom: 0;
     }
 
-    /* 3. Tipografi Ala Buku */
     h1,
     h2,
     h3 {
-        page-break-after: avoid; /* Jangan biarkan judul terpisah dari paragrafnya */
+        page-break-after: avoid;
         font-family: serif;
         font-weight: bold;
         margin-top: 1.5em;
@@ -1792,9 +1802,9 @@ a.related_post_link {
     }
 
     p {
-        orphans: 3; /* Minimal baris yang tertinggal di bawah halaman */
-        widows: 3; /* Minimal baris yang terbawa ke halaman baru */
-        text-align: justify; /* Khas buku formal */
+        orphans: 3;
+        widows: 3;
+        text-align: left;
         margin-bottom: 1em;
     }
 

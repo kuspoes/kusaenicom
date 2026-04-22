@@ -1,0 +1,26 @@
+{{#
+Cara pakai:
+
+{{ comp.relasi_artikel({
+    judul: "Judul Artikel",
+    teks: "",
+    format: "kanan | full",
+    heading: "" })
+}}
+
+judul:  judul artikel (harus sesuai besar kecil huruf),
+format: defaultnya kiri tapi ada 2 pilihan lainnya yaitu kanan untuk float kanan atau full untuk mode penuh
+teks: masukkan teks sebagai deskripsi, jika tidak ada maka akan pakai ringkasan
+#}}
+
+{{ set artikel = search.page(`title="${judul}"`) }}
+
+{{ if artikel }}
+<div class="terkait {{format}}">
+        <span class="ter">Artikel Terkait</span>
+        <div class="kait">
+            <h4><a class="hRelasi" href="{{artikel.url}}{{heading}}">{{artikel.title}}</a></h4>
+            <p>{{teks || artikel.ringkasan}}</p>
+        </div>
+</div>
+{{ /if }}
