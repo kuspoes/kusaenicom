@@ -13,7 +13,7 @@ code: true
 favorit: false
 comment: true
 tocx: true
-keywords: bsd, openbsd, wireguard, self host, vpn
+keywords: "bsd, openbsd, wireguard, self host, vpn"
 templateEngine: vto, md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
@@ -32,21 +32,21 @@ comments:
 
 Kata orang - orang kalo pakai BSD paling gampang di OpenBSD karena Wireguard sudah ada di dalam base, oke karena memang sudah diinstall OpenBSD bisa langsung lanjut. Akan tetapi, ternyata itu bohong. Semua sama saja, harus mulai dari nol (kayak di BSD lainnya). Mau gimana lagi nasi sudah jadi krupuk maka mau ga mau lanjut.
 
-Catatan ini akan dibagi menjadi 2 bagian yaitu memasang Wireguard di sisi server (VPS) dan sisi client (macos).
+Catatan ini akan dibagi menjadi 2 bagian yaitu memasang Wireguard di sisi *server* (VPS) dan sisi *client* (macos).
 
 ## Setup Wireguard di VPS
 
-Karena `wg` (binary dari wireguard) ternyata belum ada di dalam OpenBSD, maka perlu memasangnya secara manual. Sebelum itu ada beberapa hal yang perlu ane catat yaitu VPS ane sudah memakai [OpenBSD 7.8](https://www.openbsd.org/78.html) dengan spesifikasi 1vCPU - 1GB RAM - 25GB SSD dan akan login dengan user bukan root sehingga ane akan pakai `doas` untuk elevasi ke root.
+Karena `wg` (binary dari wireguard) ternyata belum ada di dalam OpenBSD, maka perlu memasangnya secara manual. Sebelum itu ada beberapa hal yang perlu ane catat yaitu VPS ane sudah memakai [OpenBSD 7.8](https://www.openbsd.org/78.html) dengan spesifikasi 1vCPU - 1GB RAM - 25GB SSD dan akan *login* dengan `user` bukan `root` sehingga ane akan pakai `doas` untuk elevasi ke `root`.
 
 ```shell-session
 $ doas pkg_add wireguard-tools
 ```
 
-perintah ini akan memasang `wireguard-tools` yang akan menyediakan binari `wg` dan `wg-quick`. tapi ane akan pakai `wg` saja. `wg-quick` emang mantap untuk membuat akses wireguard secara cepat, namun ane ingin belajar jadi akan membangunnya dari nol.
+perintah ini akan memasang `wireguard-tools` yang akan menyediakan binari `wg` dan `wg-quick` tapi ane akan pakai `wg` saja. `wg-quick` emang mantap untuk membuat akses wireguard secara cepat, namun ane ingin belajar jadi akan membangunnya dari nol.
 
 ### Buat key
 
-Setelah terpasang, langkah selanjutnya adalah membuat direktori khusus yang akan berisi berkas konfigurasi dari wireguard. Ini opsional, berkas wireguard bisa saja ditaruh dimana terserah tapi ane ikuti dulu panduan yang sudah ada dan jamak. Di dalam direktori `/etc/wireguard`, ane akan buat 2 buah key yang diperlukan untuk authentication server wireguard nantinya.
+Setelah terpasang, langkah selanjutnya adalah membuat direktori khusus yang akan berisi berkas konfigurasi dari wireguard. Ini opsional, berkas wireguard bisa saja ditaruh dimana terserah tapi ane ikuti dulu panduan yang sudah ada dan jamak. Di dalam direktori `/etc/wireguard`, ane akan buat 2 buah key yang diperlukan untuk *authentication server* wireguard nantinya.
 
 ```shell-session
 $ doas mkdir -p /etc/wireguard
@@ -73,7 +73,7 @@ Catat hasil dari `private.key` dan `public.key` karena ini nanti penting untuk k
 
 #### Cara pertama
 
-Masih di direktori `/etc/wireguard`, ane akan buat berkas konfigurasi wireguard yang akan digunakan untuk mengatur koneksi antara server dan client yaitu `wg0.conf`
+Masih di direktori `/etc/wireguard`, ane akan buat berkas konfigurasi wireguard yang akan digunakan untuk mengatur koneksi antara *server* dan *client* yaitu `wg0.conf`
 
 ```shell-session
 $ doas vim wg0.conf
@@ -90,9 +90,9 @@ AllowedIPs = 10.0.0.2/32
   <p>Perhatikan <code>AllowedIPs</code> memakai <code>/32</code> yang artinya hanya punya range 1 IP saja. Ini penting agar bisa terhubung dengan baik, karena jika memakai <i>class</i> lainnya seperti <code>/24</code> tidak akan bisa terhubung. Wireguard bingung menentukan <em>point to point tunnel</em>.</p>
 </div>
 
-Untuk `PrivateKey`, diisi dengan isi dari berkas `PrivateKey` yang sudah dibuat sebelumnya (yang tadi sudah dicatat. Sudah dicatat kan?). Sedangkan `PublicKey` nanti diisi dengan publickey yang akan dibuat diklien.
+Untuk `PrivateKey`, diisi dengan isi dari berkas `PrivateKey` yang sudah dibuat sebelumnya (yang tadi sudah dicatat. Sudah dicatat kan?). Sedangkan `PublicKey` nanti diisi dengan *publickey* yang akan dibuat diklien.
 
-untuk interface, buat file baru dengan nama `hostname.wg0` di direktori `/etc`.
+untuk *interface*, buat *file* baru dengan nama `hostname.wg0` di direktori `/etc`.
 
 ```shell-session
 $ doas vim /etc/hostname.wg0
@@ -115,7 +115,7 @@ Address = 10.0.0.1/24
 MTU = 1420
 ```
 
-Penulisan _netmask_ (`/24`) ini sangat penting karena FreeBSD sejak versi 14.2 tidak mengijinkan penulisan IP tanpa _netmask_ maka jika terlewat Wireguard akan menolak untuk _start_. Namun kadang kala konfigurasi netmask ini tiba - tiba hilang, bisa karena sistem atau _service_ Wireguard _reboot_ sehingga harus kembali menambahkan secara manual. Jika dirasa merepotkan maka mengatur hal ini di file `rc.conf` adalah pilihan yang lebih baik.
+Penulisan _netmask_ (`/24`) ini sangat penting karena FreeBSD sejak versi 14.2 tidak mengijinkan penulisan IP tanpa _netmask_ maka jika terlewat Wireguard akan menolak untuk _start_. Namun kadang kala konfigurasi *netmask* ini tiba - tiba hilang, bisa karena sistem atau _service_ Wireguard _reboot_ sehingga harus kembali menambahkan secara manual. Jika dirasa merepotkan maka mengatur hal ini di file `rc.conf` adalah pilihan yang lebih baik.
 
 ```shell-session
 $ doas sysrc cloned_interfaces+="wg0"
@@ -147,7 +147,7 @@ Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yait
 
 ## Wireguard Client di macos
 
-Ane pakai aplikasi #WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur tunnel kosong baru (lihat gambar).
+Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur *tunnel* kosong baru (lihat gambar).
 
 ![wireguard add tunnel](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20251129-qxxr__wylSLRT7.png?updatedAt=1764419428366)
 

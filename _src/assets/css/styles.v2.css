@@ -1324,7 +1324,6 @@ cite {
 
 pagefind-ui mark,
 mark {
-    display: inline-block;
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-underline-offset: 6px;
@@ -1466,6 +1465,7 @@ span.related_post_date {
 .related_post_list h4 {
     margin-top: 0em !important;
     margin-bottom: 0em !important;
+    font-size: 1em;
 }
 
 h4.related_post_info {
@@ -1485,6 +1485,7 @@ h4.related_post_info {
 
 #related_post .related_post_list p {
     width: auto;
+    font-size: 0.95em;
 }
 
 #related_post p.lebih-banyak {

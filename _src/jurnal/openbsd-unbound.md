@@ -11,14 +11,14 @@ relasi: openbsd
 code: true
 favorit: false
 comment: true
-keywords: bsd, openbsd, wireguard,unbound, adsblock, self host, vpn
+keywords: "bsd, openbsd, wireguard,unbound, adsblock, self host, vpn"
 templateEngine: vto, md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
   real: https://sok.egois.org/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
 ---
 
-**TLDR**: [Unbound](https://man.openbsd.org/unbound) adalah sebuah _tool_ untuk mengvalidasi, menyimpan DNS secara lokal, dan mencari DNS secara rekursif (sampai ke root DNS) yang sudah tersedia di `base` OpenBSD. Gunanya tentu meningkatkan privasi karena tidak mengarahkan langsung _domain resolver_ DNS _provider_ seperti Google DNS (8.8.8.8), Cloudflarfe DNS (1.1.1.1), atau Quad9 (9.9.9.9).
+**TLDR**: [Unbound](https://man.openbsd.org/unbound) adalah sebuah _tool_ untuk mengvalidasi, menyimpan DNS secara lokal, dan mencari DNS secara rekursif (sampai ke root DNS) yang sudah tersedia di `base` OpenBSD. Gunanya tentu meningkatkan privasi karena tidak mengarahkan langsung _domain resolver_ DNS _provider_ seperti Google DNS (8.8.8.8), Cloudflare DNS (1.1.1.1), atau Quad9 (9.9.9.9).
 
 Maka ane perlu memasang _tools_ ini untuk disandingkan dengan Wireguard yang [sebelumnya sudah dipasang](https://kusaeni.com/jurnal/openbsd-install-wireguard/). Selain sebagai DNS Resolver nantinya ane akan pasang _ads blocker_ juga untuk menghalau iklan dan menghemat bandwitdh.
 
@@ -30,7 +30,7 @@ WireGuard adalah VPN protokol yang modern, sederhana, cepat, dan secure. Dibandi
 
 ### Memasang Unbound
 
-Karena sudah tersedia di `base` maka tinggal diperiksa apakah Unbound sudah berjalan atau belum. Jika _fresh install_ atau _default_ OpenBSD akan pakai [Unwind](https://man.openbsd.org/unwind) sebagai DNS Resolver, Unwind ini mirip Unbound tapi lebih sederhana namun tidak bisa disandingkan dengan Wireguard secara langsung karena secara _default_ hanya LISTEN di localhost saja. Jika Unwind berjalan sebagai DNS Resolver, seharusnya Unbound tidak akan berjalan demikian pula sebaliknya. Cek apakah Unwind sudah jalan, jika iya harus dimatikan.
+Karena sudah tersedia di `base` maka tinggal diperiksa apakah Unbound sudah berjalan atau belum. Jika _fresh install_ atau _default_ OpenBSD akan pakai [Unwind](https://man.openbsd.org/unwind) sebagai DNS Resolver, Unwind ini mirip Unbound tapi lebih sederhana namun tidak bisa disandingkan dengan Wireguard secara langsung karena secara _default_ hanya `LISTEN` di localhost saja. Jika Unwind berjalan sebagai DNS Resolver, seharusnya Unbound tidak akan berjalan demikian pula sebaliknya. Cek apakah Unwind sudah jalan, jika iya harus dimatikan.
 
 ```shell-session
 $ doas rcctl check unwind
@@ -68,7 +68,7 @@ lookup file bind
 
 Jika `nameserver 127.0.0.1` sudah ada di dalam file `/etc/resolv.conf` maka sebenarnya sudah siap untuk memanfaatkan Unbound (atau Unwind) namun jika tidak ada maka harus mengatur secara manual file ini (menambahkan _entry_ ke dalam file ini).
 
-Untuk `# resolvd: vio0` menandakan bahwa baris _entry_ tersebut ditulis oleh [resolvd](https://man.openbsd.org/resolvd), hal ini bisa menyebabkan konflik karena `resolvd` lebih mengutamakan Unwind. Untuk itu _daemon_ ini harus di-_disable_ karena [dhclient](https://man.openbsd.org/OpenBSD-7.5/dhclient) sebagai pengelola file `/etc/resolv.conf` kemungkinan akan menulis ulang file ini ketika selesai di-_edit_ sehingga file `/etc/resolv.conf` akan balik ke default.
+Untuk `# resolvd: vio0` menandakan bahwa baris _entry_ tersebut ditulis oleh [resolvd](https://man.openbsd.org/resolvd), hal ini bisa menyebabkan konflik karena `resolvd` lebih mengutamakan Unwind. Untuk itu _daemon_ ini harus di-*disable* karena [dhclient](https://man.openbsd.org/OpenBSD-7.5/dhclient) sebagai pengelola file `/etc/resolv.conf` kemungkinan akan menulis ulang file ini ketika selesai di-_edit_ sehingga file `/etc/resolv.conf` akan balik ke default.
 
 ```shell-session
 $ doas rcctl check resolvd
@@ -184,7 +184,7 @@ Kemudian ane sambungkan MacOS (wireguard klien) ke server namun sebelum itu ane 
 
 ![Wireguard Client Config, change DNS Resolver IP](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Unbound/SCR-20251207-Unbound_bzEPcBfMq.png)
 
-di terminal (client/macos) dicoba untuk tes _resolver_
+di terminal (*client*/MacOs) dicoba untuk tes _resolver_
 
 ```shell-session
 ➜  ~ dig kusaeni.com
@@ -265,6 +265,6 @@ server:
     include: "/var/unbound/etc/include/adblock.conf"`
 ```
 
-simpan dan jalankan lagi `unbound-checkconf` untuk mengvalidasi konfigurasi. Jika tidak ada masalah, _reload_ Unbound dan test dengan mengunjungi situs seperti detik.com yang banyak iklannya itu dan cek apakah iklan - iklannya sudah hilang atau berkurang. Ya berkurang karena ada beberapa iklan yang di-_host_ di internal situs sehingga tidak terdeteksi oleh Unbound. Tapi ini wajar, karena jika terdeteksi di dalam adblock maka bisa saja malah situs tersebut yang tidak akan bisa dibuka karena akan diblok oleh Unbound. Ga masalah karena 99% iklan pasti akan terfilter oleh Adsblok dan Unbound.
+simpan dan jalankan lagi `unbound-checkconf` untuk mengvalidasi konfigurasi. Jika tidak ada masalah, _reload_ Unbound dan test dengan mengunjungi situs seperti detik.com yang banyak iklannya itu dan cek apakah iklan - iklannya sudah hilang atau berkurang. Ya berkurang karena ada beberapa iklan yang di-_host_ di internal situs sehingga tidak terdeteksi oleh Unbound. Tapi ini wajar, karena jika terdeteksi di dalam *adblock* maka bisa saja malah situs tersebut yang tidak akan bisa dibuka karena akan diblok oleh Unbound. Ga masalah karena 99% iklan pasti akan terfilter oleh *Adblock* dan Unbound.
 
-Contoh lain adalah ada situs yang pakai banner iklan dan banner tersebut disimpan di blogspot.com/blogger.com, sehingga pasti akan tetap muncul kecuali domain blogspot.com/blogger.com diblok. Resikonya maka domain tersebut tidak akan bisa dibuka lagi. Maka disini µBlock Origin bisa bermanfaat untuk memblok elemen tertentu tanpa memblok domain.
+Contoh lain adalah ada situs yang pakai banner iklan dan banner tersebut disimpan di blogspot.com atau blogger.com, sehingga pasti akan tetap muncul kecuali domain blogspot.com atau blogger.com diblok. Resikonya maka domain tersebut tidak akan bisa dibuka lagi. Maka disini µBlock Origin bisa bermanfaat untuk memblok elemen tertentu tanpa memblok domain.

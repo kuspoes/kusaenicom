@@ -11,7 +11,7 @@ layout: layout/content.vto
 
 <div id="index_postlist">
 
-{{ for post of search.pages("pin", "date=desc", 1) }}
+{{ for post of search.pages("pin", "date=asc") }}
 		<div class="postlist pinned">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
