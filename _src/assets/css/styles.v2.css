@@ -43,7 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    border-top: 6px solid #001524;
+    border-top: 3px solid #001524;
     /* background-color: rgba(255, 243, 176, 0.1); */
     background:
         linear-gradient(rgba(255, 243, 176, 0.1), rgba(255, 243, 176, 0.1)),
@@ -570,7 +570,8 @@ span.ter,
 
 .postnotes {
     margin-bottom: 1em;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
+    background-color: rgba(247, 237, 226, 0.4);
     padding: 0.5em;
     border-radius: 0.4em;
 }
@@ -976,6 +977,11 @@ a:visited {
     border-bottom: 1px dotted #94d2bd;
 }
 
+.baca a:link {
+    text-decoration: none;
+    border: none;
+}
+
 footer.comment-footer a:link,
 a:visited {
     border-bottom: none !important;
@@ -1133,7 +1139,8 @@ nav.toc a:hover {
 /* code */
 code {
     font:
-        normal 78%/1.6 Monaco,
+        normal 78%/1.6 SF Mono,
+        Monaco,
         Menlo,
         Monospace;
     border: 1px solid var(--col_border);

@@ -73,7 +73,7 @@ Dengan keterangan:
 `teks`: masukkan teks sebagai deskripsi, jika tidak ada maka akan pakai ringkasan
 `heading`: jika URL menunjuk ke heading
 
-component ini bisa diinsert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
+component ini bisa di-insert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
 
 ### Deno Deploy
 

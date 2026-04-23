@@ -23,7 +23,6 @@ const markdown = {
   keepDefaultPlugins: true,
   options: {
     typographer: true,
-    linkify: true,
     html: true,
   },
 };

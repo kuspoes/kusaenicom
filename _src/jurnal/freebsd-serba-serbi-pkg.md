@@ -380,17 +380,11 @@ Repotnya di Port's adalah saat mencari dimana letak dari folder aplikasi yang di
 ```shell-session
 $ cd /usr/ports/editors/vim
 $ doas make install clean
-==>  License VIM accepted by the user
+===>  License VIM accepted by the user
 ===>   vim-9.2.0204 depends on file: /usr/local/sbin/pkg - found
-=> vim-vim-v9.2.0204_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles.
+
 => Attempting to fetch https://codeload.github.com/vim/vim/tar.gz/v9.2.0204?dummy=/vim-vim-v9.2.0204_GH0.tar.gz
-vim-vim-v9.2.0204_GH0.tar.gz                            18 MB 7562 kBps    03s
-===> Fetching all distfiles required by vim-9.2.0204 for building
-===>  Extracting for vim-9.2.0204
-=> SHA256 Checksum OK for vim-vim-v9.2.0204_GH0.tar.gz.
-install  -m 0644 /usr/ports/editors/vim/files/vietnamese_viscii.vim /usr/ports/editors/vim/work-console/vim-9.2.0204/runtime/keymap
-===>  Patching for vim-9.2.0204
-===>  Applying FreeBSD patches for vim-9.2.0204 from /usr/ports/editors/vim/files
+vim-vim-v9.2.0204_GH0.tar.gz                18 MB 7562 kBps    03s
 
 ===>   vim-9.2.0204 depends on package: libiconv>=1.14_11 - found
 ===>   vim-9.2.0204 depends on package: pkgconf>=1.3.0_1 - found
