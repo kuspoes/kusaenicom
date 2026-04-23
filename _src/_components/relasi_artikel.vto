@@ -8,9 +8,10 @@ Cara pakai:
     heading: "" })
 }}
 
-judul:  judul artikel (harus sesuai besar kecil huruf),
+judul:  judul artikel (case sensitive)
 format: defaultnya kiri tapi ada 2 pilihan lainnya yaitu kanan untuk float kanan atau full untuk mode penuh
 teks: masukkan teks sebagai deskripsi, jika tidak ada maka akan pakai ringkasan
+heading: jika URL menunjuk ke heading
 #}}
 
 {{ set artikel = search.page(`title="${judul}"`) }}

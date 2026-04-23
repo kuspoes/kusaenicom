@@ -53,10 +53,32 @@ Folder `assets` di dalamnya ada file `CSS`, `JS`, dan `fonts`. Khusus font diamb
 
 Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk meng-generate page `/tags` yang berasoisasi dengan file `tags.vto` di folder `_src/_theme/layout/tags.vto`.
 
+#### Component's
+
+Berisi script untuk reuseable terutama untuk membuat relasi artikel dan buku.
+Dokumentasi tersedia di dalam masing - masing component, sebagai contoh untuk menampilkan related article:
+
+```html
+{{ comp.relasi_artikel({
+    judul: "Judul Artikel",
+    teks: "",
+    format: "kanan | full",
+    heading: "" })
+}}
+```
+
+Dengan keterangan:
+`judul`:  judul artikel (case sensitive)
+`format`: defaultnya kiri tapi ada 2 pilihan lainnya yaitu kanan untuk float kanan atau full untuk mode penuh
+`teks`: masukkan teks sebagai deskripsi, jika tidak ada maka akan pakai ringkasan
+`heading`: jika URL menunjuk ke heading
+
+component ini bisa diinsert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
+
 ### Deno Deploy
 
 > Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
 
-Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable fungsi Github Action.
+Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable fungsi Github Action. Untuk informasi lebih lanjut silakan baca [Lume migrasi ke Deno Deploy v2](https://kusaeni.com/jurnal/lume-migrasi-ke-deno-deploy-2/).
 
 Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).

@@ -1,6 +1,13 @@
 {{#
 Cara pakai:
-{{ comp.relasi_cari_buku({ judul: "Judul Buku Anda" }) }}
+
+{{ comp.relasi_cari_buku({
+        judul: "Judul Buku"
+    })
+}}
+
+judul case sensitive
+
 #}}
 
 {{ set buku = search.page(`title="${judul}"`) }}
