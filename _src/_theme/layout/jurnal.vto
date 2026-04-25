@@ -57,8 +57,8 @@
             {{ for note of footnotes }}
             <div class="notes">
                 <div class="note-id">
-                    <a href="#{{ note.refId }}" id="{{ note.id }}"
-                        >{{ note.label }}</a
+                    <a href="#{{ note.refId }}" id="{{ note.id }}" class="anotes"
+                        ><span class="footnomer">{{ note.label }}</span></a
                     >
                 </div>
                 {{ note.content}}

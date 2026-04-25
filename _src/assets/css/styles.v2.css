@@ -32,7 +32,7 @@ body {
 }
 
 html {
-    background-color: #001524;
+    background-color: rgba(119, 73, 54, 1);
 }
 
 body {
@@ -43,7 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    border-top: 3px solid #001524;
+    border-top: 3px solid rgba(119, 73, 54, 1);
     /* background-color: rgba(255, 243, 176, 0.1); */
     background:
         linear-gradient(rgba(255, 243, 176, 0.1), rgba(255, 243, 176, 0.1)),
@@ -1051,13 +1051,24 @@ a.tags {
 }
 
 a.footnote-ref {
-    font-weight: bold;
+    font-weight: normal;
+}
+
+span.footnomer {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.notes p {
+    width: 36em;
 }
 
 .notes a,
-.notes:visited,
-.notes:hover {
+.notes a:visited,
+.notes a:hover {
     color: var(--col-link);
+    text-decoration: none;
+    border: none;
 }
 
 .logo a:hover,
