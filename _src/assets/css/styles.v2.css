@@ -1633,6 +1633,13 @@ a.related_post_link {
         width: 95%;
     }
 
+    #search input[type="text"],
+    select {
+        background-color: rgba(255, 243, 176, 0.1);
+        border: 1px solid rgba(119, 73, 54, 1);
+        border-radius: 4px;
+    }
+
     .postlist,
     input {
         width: 95%;

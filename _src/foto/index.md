@@ -56,9 +56,9 @@ Saya adalah seorang _lone traveller_, sangat jarang sekali saya bepergian berkel
 
   <div class="galsX">
         <img class="img_lone" src="https://ik.imagekit.io/hjse9uhdjqd/Pantai_Pulau_Merah_Banyuwangi_4n9WLrg_Bz.jpg" alt="Pantai Merah Banyuwangi">
-        <aside class="image">
-            <p>Salah satu sudut Pantai Merah Banyuwangi.</p>
-        </aside>
+      
+        <p class="ncaption">Salah satu sudut Pantai Merah Banyuwangi.</p>
+      
         <div class="flex-1">
             <p class="img-sidenote">Saya sudah lama ingin membuat jurnal perjalanan dan fotografi, tapi sampai saat ini belum terlaksana. Punya banyak waktu tapi tidak punya banyak motivasi dan <i>resources</i>.</p>
             <p class="img-sidenote">Area <i>hunting landscape photografi</i> saya paling banyak diseputaran Jawa Timur, yang paling banyak dikunjungi adalah daerah sekitaran Mataraman (eks. Karesidenan Madiun), dengan kota Pacitan adalah yang paling sering dikunjungi.
