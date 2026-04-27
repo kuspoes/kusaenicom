@@ -32,7 +32,7 @@ body {
 }
 
 html {
-    background-color: rgba(119, 73, 54, 1);
+    background-color: rgba(255, 243, 176, 0.1);
 }
 
 body {
@@ -43,12 +43,17 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    border-top: 3px solid rgba(119, 73, 54, 1);
     /* background-color: rgba(255, 243, 176, 0.1); */
-    background:
-        linear-gradient(rgba(255, 243, 176, 0.1), rgba(255, 243, 176, 0.1)),
-        linear-gradient(#ffffff, #ffffff);
     margin-top: 0;
+    background:
+        radial-gradient(rgba(62, 39, 35, 0.16) 1px, transparent 1px),
+        linear-gradient(rgba(255, 243, 176, 0.15), rgba(255, 243, 176, 0.15)),
+        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    background-size:
+        30px 30px,
+        auto,
+        auto;
+    background-attachment: fixed;
 }
 
 /* layout */
@@ -1634,7 +1639,8 @@ a.related_post_link {
     }
 
     #search input[type="text"],
-    select {
+    select,
+    .pagefind-ui__search-input.svelte-e9gkc3 {
         background-color: rgba(255, 243, 176, 0.1);
         border: 1px solid rgba(119, 73, 54, 1);
         border-radius: 4px;
