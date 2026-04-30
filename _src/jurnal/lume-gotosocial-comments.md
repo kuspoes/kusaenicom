@@ -18,6 +18,10 @@ tocx: false
 
 Di lume tidak perlu memasang _plugin_ untuk bisa memasang mastodon comment’s, cukup dengan web component[^1] saja.
 
+<div class="sidebar_notes sebelah_kanan">
+    <p><sup>1</sup> Tentang web component bisa dibaca di artikel <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">MDN: Web Components</a></p>
+</div>
+
 Dokumentasi Lume tidak menyertakan tentang info cara memasangnya, jadi saya akan coba menulis tentang pengalaman memakai mastodon comment’s ini.
 Karena memakai web component maka _script_ dibuat dengan Javascript yang bisa di*embed* di dalam HTML.
 
@@ -48,6 +52,10 @@ Karena _file_ `main.js` ini mengimport fungsi `Comments` dari _file_ `comments.j
 
 1. Mempergunakan fungsi/fitur `site.remote()` [Remote files](https://lume.land/docs/core/remote-files/) untuk mengunduh _file_ saat build atau
 2. Mengunduh dan menyimpannya secara manual[^2]
+
+<div class="sidebar_notes sebelah_kanan">
+    <p><sup>2</sup> Sehingga saya memiliki file <code>comments.js</code>, <code>main.js</code>, dan <code>comment.css</code></p>
+</div>
 
 Saya pilih cara yang kedua, jadi saya unduh _file_ `comments.js` dari repositorinya di <https://github.com/oom-components/mastodon-comments> lalu disimpan ke dalam _folder_ `js` yang sudah dibuat sebelumnya.
 
@@ -85,7 +93,11 @@ Selesai gampang dan mudah kalo pakai akun Mastodon tapi untuk [Gotosocial](https
 
 ### Gotosocial
 
-Gotosocial memiliki struktur URL yang berbeda dibandingkan dengan Mastodon[^2]. Strukturnya seperti ini
+Gotosocial memiliki struktur URL yang berbeda dibandingkan dengan Mastodon[^3]. Strukturnya seperti ini
+
+<div class="sidebar_notes sebelah_kiri">
+    <p><sup>3</sup> Sebenarnya hampir semua aplikasi <i>fediverse</i> memiliki struktur yang berbeda namun biasanya APInya masih mengikuti API standar dari Mastodon.</p>
+</div>
 
 ```txt
 https://kauaku.us/@poes/statuses/01J1S8G6667MYN5R2XYVN5D2WG
@@ -160,7 +172,12 @@ Setelah melakukan itu semua akhirnya saya bisa menampilkan gotosocial _threads_ 
 
 Mempergunakan proxy seperti ini tidak aman karena Token tersedia di semua URL yang dibuka sehingga potensi serangan XSS. Saya menyingkirkan proxy ini dan membuat _end point_ API baru untuk mengakomodir ini[^4]
 
+<div class="sidebar_notes sebelah_kanan">
+    <p><sup>4</sup> Saya pakai <a href="https://hono.dev/">Hono</a> sebagai <i>framework</i> dan mengatur CORS agar API hanya bisa dibuka dari blog ini, meskipun sebenarnya tidak masalah tanpa CORS karena <i>end point</i> API-nya hanya bisa proses <i>fetch data</i> saja tanpa merubahnya.</p>
+</div>
+
 Di Deno *script*nya kira - kira seperti ini:
+
 
 ```js
 import { Hono } from "jsr:@hono/hono";

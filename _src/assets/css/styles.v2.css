@@ -74,6 +74,38 @@ body {
     margin: 1em auto;
 }
 
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sidebar_notes {
+    width: 200px;
+    margin-top: -50px;
+    font-size: 0.75em;
+    font-family: var(--sans);
+    line-height: 1.1;
+    padding-left: 10px;
+    margin-bottom: 1em;
+}
+
+.sebelah_kanan {
+    float: right;
+    clear: right;
+    margin-right: -250px;
+    border-left: 1px solid #ddd;
+}
+
+.sebelah_kiri {
+    float: left;
+    clear: left;
+    margin-left: -230px;
+    border-right: 2px solid #eee;
+    padding-right: 10px;
+    text-align: right;
+}
+
 /* layout postlist/index */
 .postlist {
     width: 34em;
@@ -1573,6 +1605,10 @@ a.related_post_link {
         padding: 0em;
     }
 
+    .sidebar_notes {
+        display: none;
+    }
+
     .page,
     .nav,
     .pre,
@@ -1754,6 +1790,10 @@ a.related_post_link {
     .nav {
         width: 100%;
         margin: 0em auto;
+    }
+
+    .sidebar_notes {
+        display: none;
     }
 
     p {
