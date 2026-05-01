@@ -48,3 +48,9 @@ Setelah terhubung, _default_-nya akan terbuka `/var/tmp` _directory_. Tujulah _d
 Cara yang lainnya adalah dengan mempergunakan _authorized_keys_ yaitu dengan cara mengirim SSH Key ke Kindle dan kemudian bisa login lewat SSH tanpa _password_. Metode ini membuat koneksi menjadi sangat aman, namun ane cukup dengan model SSH (pakai SFTP) seperti sebelumnya.
 
 Setelah selesai jangan lupa untuk mematikan _SSH Server_ dan _disconnect_ dari WiFi (untuk mengindari Kindle mendownload _firmware_ yang bisa membuat _jailbreak_ gagal berfungsi.)
+
+---
+
+Namun ane sarankan tetap pakai kabel karena lebih mudah dan cepat juga untuk memastikan tidak ada file yang korup/rusak saat proses transfer. Untuk cara pakai kabel, Kindle wajib untuk kembali ke mode Kindle bawaan (keluar dari KOReader) kemudian pakai kabel data/*charger* dan colok ke PC/Mac secara otomatis akan dikenali sebagai Kindle dan *mount point* akan menuju ke `/mnt/us` saat dibuka.
+
+Gunakan Finder/Nimble Manager atau File Explorer di Windows untuk melakukan *copy - paste ebook*, semua selesai dalam waktu singkat dan lebih *worth it* daripada keribetan dalam mengatur layanan SSH. Percayalah.
