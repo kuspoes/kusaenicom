@@ -21,6 +21,10 @@
     "refresh": {
       "description": "lumex untuk reload cache",
       "command": "deno run -A --reload lume/cli.ts"
+    },
+    "egois": {
+      "description": "Deploy ke Egois",
+      "command": "deno task build && rsync -r _site/ poes@egois:/home/poes/www1/kusaicom"
     }
   },
   "compilerOptions": {
