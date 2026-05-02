@@ -81,4 +81,6 @@ component ini bisa di-insert ke dalam file markdown pada artikel yang ingin mena
 
 Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable fungsi Github Action. Untuk informasi lebih lanjut silakan baca [Lume migrasi ke Deno Deploy v2](https://kusaeni.com/jurnal/lume-migrasi-ke-deno-deploy-2/).
 
+Per 2 Mei 2026, Ane pindahkan hosting ke Netlify karena di Deno Deploy gratisan dapatnya region EU dan US yang tentu saja akan membuat latency semakin tinggi yang berimbas akses ke situs (agak) tersendat. Netlify punya fitur edge di SEA harapannya bisa membuat akses lebih cepat. Jika pun tidak kemungkinan besar akan pakai self host atau CloudFlare.
+
 Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
