@@ -1128,6 +1128,12 @@ a:hover {
     border-bottom: 1px solid #001219;
     /* background-color: #f2ebfb; */
 }
+
+.no_border {
+    border: none !important;
+    text-decoration: none !important;
+}
+
 /** pagefind a **/
 
 .pagefind-ui__result-title.svelte-j9e30 .pagefind-ui__result-link.svelte-j9e30:hover {
@@ -1887,6 +1893,11 @@ a.related_post_link {
     a {
         text-decoration: none;
         color: black;
+    }
+
+    .nborder {
+        border: none !important;
+        text-decoration: none !important;
     }
 
     /* Menampilkan URL di samping link (karena kertas tidak bisa diklik) */

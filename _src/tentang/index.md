@@ -8,11 +8,13 @@ style: "tentang.css"
 ---
 
 <div class="kus_pp">
-<img class="kus_avatar" src="https://ik.imagekit.io/hjse9uhdjqd/kus/lowpoly-kuseini-8425%201_5WPBLhSsV.jpg?updatedAt=1744788147439" alt="kusaeni" />
+<img class="kus_avatar" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" />
 <p>Saya adalah seorang <span class="underline">blogger musiman</span> yang menulis di situs ini dengan penuh ke-tidak-konsistensian.</p>
 
 <p>Saya menulis jika ada keinginan untuk menulis, jika tidak maka kegiatan utama saya adalah makan, tidur, &amp; kadang kala bepergian atau <a href="#fotografi">travelling</a>.</p>
 </div>
+
+
 <h3>Di sosial media</h3>
 
 <p>Saya terdaftar di beberapa akun sosial media berikut ini :</p>

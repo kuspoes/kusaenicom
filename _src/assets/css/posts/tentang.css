@@ -1,10 +1,14 @@
 .kus_pp .kus_avatar {
     float: left;
     width: 150px;
-    border-radius: 100%;
-    border: 1px solid #ccc;
+    border: none !important;
     margin-right: 12px;
 }
+
+.meta {
+    border-bottom: none !important;
+}
+
 .meta h1 {
     margin-bottom: 1em;
 }
