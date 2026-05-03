@@ -162,6 +162,40 @@ site.helper(
   },
 );
 
+site.helper("gtoot", async (id: string) => {
+  try {
+    const response = await fetch(
+      `https://sepoi.kuspoes.deno.net/get/${id}`,
+      {
+        method: "GET",
+        headers: { "Accept": "application/json" },
+      },
+    );
+
+    if (!response.ok) return `<!-- Error: ${response.status} -->`;
+
+    const data = await response.json();
+    return `
+    <div class="gtoot">
+      <div class="gtoot_header">
+        <img class="poes_avatar fuck" src="${data.account.avatar_static}" alt="poes@egois.org">
+        <div class="meta_profile">
+          <h5 class="display_name">${data.account.display_name}</h5>
+          <p class="username">@${data.account.acct}@sok.egois.org</p>
+        </div>
+      </div>
+      <div class="gtoot_content">
+        ${data.content}
+        <p><a href="${data.url}" target="_blank">baca thread's selengkapnya ↗...</a></p>
+      </div>
+    </div>
+    `;
+  } catch (e) {
+    console.error("Gagal fetch:", e);
+    return `<!-- Gagal render toot ${id} -->`;
+  }
+}, { type: "tag", async: true });
+
 site.process([".html"], (pages) => {
   for (const page of pages) {
     for (const img of page.document!.querySelectorAll("div.content img")) {

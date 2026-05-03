@@ -16,7 +16,7 @@ format: "epub"
 bahasa: "Bahasa Inggris"
 isbn: "9781805335375"
 tahun: 2025
-resensi: "Seorang penulis lepas di majalah dimintai bantuan seorang kawannya untuk memberikan pendapat soal rencananya membeli rumah bekas. Tapi layout rumah itu terasa janggal, ternyata ini bukan satu-satunya rumah dengan layout yang aneh. Ada rumah lain yang memiliki layout yang mencurigakan juga dan pemilik sebelumnya kebetulan orang yang sama. "
+resensi: "Seorang penulis lepas di majalah dimintai bantuan seorang kawannya untuk memberikan pendapat soal rencananya membeli rumah bekas. Tapi layout rumah itu terasa janggal, ada rumah lain yang memiliki layout yang mencurigakan juga dan pemilik sebelumnya kebetulan orang yang sama. Lalu ditemukan mayat seorang laki - laki di wilayah itu dengan tangan kiri hilang."
 rating: 4
 beli: https://pushkinpress.com/book/strange-houses/
 dimana: Pushkinpress

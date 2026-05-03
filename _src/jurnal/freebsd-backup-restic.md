@@ -14,6 +14,7 @@ code: true
 favorit: false
 comment: true
 keywords: restic, rclone, backup, selfhost, koofr, cloud storage
+templateEngine: vto, md
 draft: false
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
@@ -23,6 +24,9 @@ comments:
 Kelemahan self host aplikasi adalah repot dalam pemeliharaan sistem dan ini ane rasakan ketika Ente Photos bermasalah di database-nya. Entah karena upgrade NextJS atau karena hal lainnya. Masalah semakin pelik ketika entah bagaimana postgresql menghapus semua entry database media milik Ente, bisa jadi karena ane salah memasukkan perintah SQL. Untungnya ane sempat membuat backup beberapa minggu sebelumnya, sehingga bisa meng*restore* database kembali.
 
 Oleh karena itu penting bagi ane untuk rutin melakukan backup database (dan data penting lainnya) untuk berjaga - jaga jika suatu hari ada masalah. Backup database yang ane restore tersebut ane backup di host (postgresql di jail), syukur Alhamdulillah tapi model backup seperti ini tak aman. Karena jika ane membuat kesalahan lagi dan [host error/rusak](https://sok.egois.org/users/poes/statuses/01KCH9ENQC46V5J8QQA8HFNYJ3) maka otomatis backup tidak akan bisa ane akses. Maka memiliki backup di tempat berbeda (cloud storage) menjadi sebuah kewajiban yang tidak bisa ane hindari.
+
+{{ echo |> gtoot() }}01KCH9ENQC46V5J8QQA8HFNYJ3{{ /echo }}
+
 
 Namun ane ga mau keluarkan uang untuk sewa cloud storage, jadi ane pilih beberapa layanan backup dan cloud storage gratisan yang bisa dipakai. Salah duanya adalah [Borgbase](https://borgbase.com/) dan [Koofr](https://koofr.net/). Keduanya memberikan storage gratis sebesar 10GB per user dan itu sudah cukup untuk membackup database yang ane miliki, apalagi nantinya ane akan pakai tool backup yang mendukung [deduplikasi](https://id.wikipedia.org/wiki/Deduplikasi_data). Dalam hal ini ane akan memakai [Restic](https://restic.net/) karena tool ini yang mendukung proses backup ke Borgbase maupun Koofr.
 
