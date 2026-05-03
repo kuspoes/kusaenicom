@@ -7,13 +7,12 @@ layout: layout/content.vto
 <p>{{ title }}</p>
 </div>
 
-
-  {{ for post of search.pages(search_query, "date=desc") }}
-  <div class="postlist">
+{{ for post of search.pages(search_query, "date=desc") }}
+		<div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">
-    			  		{{ post.date |> date('id_tgl') }}
+  			  		{{ post.date |> date('id_tgl') }}
 					</div>
 					<div class="bln">
 						{{ post.date |> date('id_bln') }}
@@ -21,15 +20,29 @@ layout: layout/content.vto
 					<div class="thn">
 						{{ post.date |> date('id_thn') }}
 					</div>
-  				</time>
+				</time>
 			</div>
 			<div class="postitle">
 				<h2>
 					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
-          				{{ post.title || post.url }}
-        			</a>
+        				{{ post.title || post.url }}
+      			</a>
 				</h2>
+				<div class="post_ringkasan">
 				{{ post.ringkasan |> md }}
+				</div>
+				<p>{{ if post.tags }} {{ for tag of post.tags }} {{ set page =
+          search.page(`type=tag tag="${tag}"`) }} {{ if page }}
+          <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
+              >#{{ tag }}</a
+          >
+          {{ /if }} {{ /for }} {{ /if }}
+				</p>
 			</div>
+			{{ if post.coverImg }}
+			<div class="postcover">
+			<img class="postCoverImg" src={{ post.coverImg }} />
+			</div>
+			{{ /if }}
 		</div>
-    {{ /for }}
+		{{ /for }}

@@ -165,7 +165,6 @@ site.helper(
 site.helper("gtoot", async (id: string) => {
   try {
     const endpoint = Deno.env.get("gtoot_endpoint");
-    console.log(endpoint);
     const response = await fetch(
       `${endpoint}/get/${id}`,
       {
@@ -180,7 +179,7 @@ site.helper("gtoot", async (id: string) => {
     return `
     <div class="gtoot">
       <div class="gtoot_header">
-        <img class="poes_avatar fuck" src="${data.account.avatar_static}" alt="poes@egois.org">
+        <img class="poes_avatar fuck" src="${data.account.avatar_static}" alt="poes@sok.egois.org">
         <div class="meta_profile">
           <h5 class="display_name">${data.account.display_name}</h5>
           <p class="username">@${data.account.acct}@sok.egois.org</p>
