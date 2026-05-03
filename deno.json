@@ -8,7 +8,7 @@
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run -A lume/cli.ts"
+      "command": "deno run -A --env-file lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",

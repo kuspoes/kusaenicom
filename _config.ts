@@ -164,8 +164,10 @@ site.helper(
 
 site.helper("gtoot", async (id: string) => {
   try {
+    const endpoint = Deno.env.get("gtoot_endpoint");
+    console.log(endpoint);
     const response = await fetch(
-      `https://sepoi.kuspoes.deno.net/get/${id}`,
+      `${endpoint}/get/${id}`,
       {
         method: "GET",
         headers: { "Accept": "application/json" },
