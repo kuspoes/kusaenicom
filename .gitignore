@@ -2,3 +2,9 @@ _site
 .DS_Store
 .env
 _sandbox
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

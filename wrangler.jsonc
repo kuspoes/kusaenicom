@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kusaenicom",
+  "compatibility_date": "2026-05-03",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "_site"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
