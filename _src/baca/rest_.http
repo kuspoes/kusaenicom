@@ -1,2 +1,0 @@
-### Get GitHub user
-GET https://api.github.com/users/octocat

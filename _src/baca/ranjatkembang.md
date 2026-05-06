@@ -7,6 +7,7 @@ update: true
 ringkasan: "Rogot Nyowo sudah dimulai!. Semua anggota Trah Pitu mulai menyiapkan tumbal untuk menyelamatkan diri dari Kudro"
 keywords: "Ranjat Kembang, Sewu Dino, Janur Ireng, Simpleman, Trah Pitu, Padusan Pituh, Lemah Layat, Mira, Dela Atmojo"
 coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/ranjat-kembang_EQYxzyfUuZx.jpg"
+og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/ranjat-kembang_EQYxzyfUuZx.jpg"
 penulis: "Simpleman"
 genre:
   - Thriller

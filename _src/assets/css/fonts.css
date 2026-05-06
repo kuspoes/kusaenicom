@@ -50,7 +50,7 @@
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
-    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Regular.ttf") format("truetype");
+    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -58,7 +58,7 @@
     font-style: italic;
     font-weight: normal;
     font-stretch: normal;
-    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Italic.ttf") format("truetype");
+    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Italic.woff2") format("woff2");
 }
 
 @font-face {

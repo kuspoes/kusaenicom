@@ -453,9 +453,8 @@ th {
 
 img.kus-svg {
     border: none !important;
-    width: 16%;
-    height: auto;
-    opacity: 0.8;
+    width: 152px;
+    opacity: 1;
 }
 
 img.no-border,
