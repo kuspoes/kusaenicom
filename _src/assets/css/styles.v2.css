@@ -1203,6 +1203,13 @@ a:hover {
 .pagefind-ui__result-title.svelte-j9e30 .pagefind-ui__result-link.svelte-j9e30:hover {
     text-decoration: none;
 }
+#search input[type="text"],
+select,
+.pagefind-ui__search-input.svelte-e9gkc3 {
+    background-color: rgba(255, 243, 176, 0.1);
+    border: 1px solid rgba(119, 73, 54, 1);
+    border-radius: 4px;
+}
 
 /* TOC */
 

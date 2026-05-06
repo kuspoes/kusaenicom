@@ -12,7 +12,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-import pagefind from "lume/plugins/pagefind.ts";
+//import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
@@ -82,11 +82,6 @@ site
   .ignore("README.md");
 
 if (!isDev) {
-  site.use(
-    pagefind({
-      ui: { showEmptyFilters: true },
-    }),
-  );
   site.use(inline()).use(
     minifyHTML({
       extensions: [".html", ".css"],
