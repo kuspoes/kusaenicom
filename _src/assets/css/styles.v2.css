@@ -1686,7 +1686,8 @@ a.related_post_link {
         padding: 0em;
     }
 
-    .sidebar_notes {
+    .sidebar_notes,
+    .pin-badge {
         display: none;
     }
 
@@ -1799,7 +1800,8 @@ a.related_post_link {
 
     .nav .menu {
         justify-content: center;
-        margin-top: 0em;
+        margin-top: 1.5em;
+        margin-bottom: 3em;
     }
 
     .nav .menu,
