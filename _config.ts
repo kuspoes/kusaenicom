@@ -73,7 +73,9 @@ site
       anchor: linkInsideHeader(),
     }),
   )
-  .use(readInfo())
+  .use(readInfo({
+    wordsPerMinute: 200,
+  }))
   .use(
     sitemap({
       sort: "date=desc",
