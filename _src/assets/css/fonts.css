@@ -98,7 +98,7 @@
     font-family: "Literata";
     font-style: normal;
     font-weight: 400;
-    src: url("/assets/fontsliterata-v40-latin-regular.woff2") format("woff2");
+    src: url("/assets/fonts/literata-v40-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -106,7 +106,7 @@
     font-family: "Literata";
     font-style: italic;
     font-weight: 400;
-    src: url("/assets/fontsliterata-v40-latin-italic.woff2") format("woff2");
+    src: url("/assets/fonts/literata-v40-latin-italic.woff2") format("woff2");
 }
 
 @font-face {
@@ -114,7 +114,7 @@
     font-family: "Literata";
     font-style: italic;
     font-weight: 500;
-    src: url("/assets/fontsliterata-v40-latin-500italic.woff2") format("woff2");
+    src: url("/assets/fonts/literata-v40-latin-500italic.woff2") format("woff2");
 }
 
 @font-face {
@@ -122,5 +122,5 @@
     font-family: "Literata";
     font-style: italic;
     font-weight: 800;
-    src: url("/assets/fontsliterata-v40-latin-800italic.woff2") format("woff2");
+    src: url("/assets/fonts/literata-v40-latin-800italic.woff2") format("woff2");
 }
