@@ -32,8 +32,8 @@ templateEngine: vto, md
 comment: true
 draft: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KP2MW2VGCYD6Z6Q4WT58TGEC
-  real: https://sok.egois.org/@poes/statuses/01KP2MW2VGCYD6Z6Q4WT58TGEC
+  src: https://sepoi.deno.dev/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B
+  real: https://sok.egois.org/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B
 ---
 
 Setelah buku pertama (Strange House) yang membuat hati menjadi kosong dan pikiran bingung, maka ane lanjutkan untuk membaca buku kedua dari Uketsu yang berjudul Strange Pictures.
