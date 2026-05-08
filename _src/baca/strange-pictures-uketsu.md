@@ -92,9 +92,9 @@ Seorang reporter bernama Isamu Kumai meliput peristiwa ini, namun harus berhenti
 
 3 tahun kemudian, datang pegawai baru bernama Shunsuke Iwata seorang anak muda baru lulus sekolah menengah dan memiliki pasion yang kuat sebagai reporter. Suatu hari dia menemui Kumai dan mulai bertanya tentang kasus kematian Miura. Kumai kemudian menceritakan semua hasil penyelidikannya dan memandu si reporter muda untuk mulai menyelidiki lagi kasus Miura dengan mengunjungi tempat terakhir Miura mengajar, apalagi kemudian muncul fakta bahwa Iwata sebenarnya adalah salah satu murid kesayangan Miura semasa hidup. Iwata ingin mencari kebenaran atas tewasnya Miura.
 
-Iwata bertemu perempuan muda bernama bernama Kameido yang ternyata adalah murid dari Miura yang juga dekat dengan keluarga Miura, mengatakan bahwa guru tidak sejahat itu sehingga Iwata seolah memiliki teman. Dari Kameido Iwata mendapatkan fakta bahwa Kameido mencurigai Toyokawa yang merupakan teman dari guru Miura yang juga ikut berangkat pergi mendaki gunung satu hari sebelum kematian Guru Miura sebagai pembunuh sebenarnya. Dari Kameido, Iwata mendapatkan alamat rumah Miura dan alamat Toyokawa. 
+Iwata bertemu perempuan muda bernama Kameido yang ternyata adalah murid dari Miura yang juga dekat dengan keluarga Miura, mengatakan bahwa guru tidak sejahat itu (sehingga Iwata seolah memiliki teman). Dari Kameido, Iwata mendapatkan fakta bahwa Kameido mencurigai Toyokawa (merupakan teman dari guru Miura yang juga ikut berangkat pergi mendaki gunung satu hari sebelum kematian Guru Miura) sebagai pembunuh sebenarnya. Dari Kameido, Iwata mendapatkan alamat rumah Miura dan alamat Toyokawa. 
 
-Untuk lebih memahami situasi dan kronologi saat hari H kejadian, maka Iwata berniat untuk mengrekonstruksi kejadian dengan cara mereka ulang kegiatan dari guru Miura mulai pagi sampai dengan mayatnya ditemukan, namun yang terjadi beberapa hari kemudian di gunung yang sama ditemukan mayat dari Iwata dengan luka mirip dengan mayat Miura dan pesan kematian yang sama yaitu gambar sketsa pemandangan.
+Untuk lebih memahami situasi dan kronologi saat hari H kejadian, maka Iwata berniat untuk mengrekonstruksi kejadian dengan cara mereka ulang kegiatan dari guru Miura mulai pagi sampai dengan mayatnya ditemukan. Namun yang terjadi beberapa hari kemudian di gunung yang sama ditemukan mayat dari Iwata dengan luka mirip dengan mayat Miura dan pesan kematian yang sama yaitu gambar sketsa pemandangan.
 
 Setelah itu Polisi juga menemukan Toyokawa mati bunuh diri dan meninggalkan pesan bahwa dialah yang membunuh Miura dan Iwata.
 
@@ -104,7 +104,7 @@ Ini adalah babak akhir dari cerita Strange Pictures, di babak ini akhirnya sang 
 
 Lalu siapakah burung itu dan apa kaitan dengan 3 babak sebelumnya?
 
-Uketsu sepertinya lihai dalam memainkan emosi dan psikologis pembacanya membuat cerita ini berakhir dengan sedikit aroma *good ending* meski menyisakan banyak tanya. Namun setidaknya berbeda dengan Strange Pictures yang sangat hampa.
+Uketsu sepertinya lihai dalam memainkan emosi dan psikologis pembacanya membuat cerita ini berakhir dengan sedikit aroma *good ending* meski menyisakan banyak tanya. Namun setidaknya berbeda dengan Strange Houses yang sangat hampa (di hati pembaca).
 
 {{ comp.relasi_cari_buku({
         judul: "Strange Houses"
