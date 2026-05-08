@@ -142,7 +142,7 @@ site.helper(
   function (desc, coverImg, title, penulis, url) {
     const coverUrl = "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/";
     return `<div class="relasi m-auto">
-            <img class="relaimg" src="${coverUrl}${coverImg}" width="auto" height="auto" alt="${title}">
+            <img class="relaimg" loading="lazy" src="${coverUrl}${coverImg}" width="auto" height="auto" alt="${title}">
             <div class="relasi_meta">
             <div class="juduldkk">
             <h4><a class="hRelasi" href="${url}">${title}</a></h4>
@@ -208,7 +208,7 @@ site.process([".html"], (pages) => {
       ) {
         continue;
       }
-      img.classList.add("class", "content-image");
+      img.classList.add("content-image");
     }
   }
 });
