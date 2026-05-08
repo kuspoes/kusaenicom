@@ -142,7 +142,7 @@ site.helper(
   function (desc, coverImg, title, penulis, url) {
     const coverUrl = "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/";
     return `<div class="relasi m-auto">
-            <img class="relaimg" src="${coverUrl}${coverImg}">
+            <img class="relaimg" src="${coverUrl}${coverImg}" width="auto" height="auto" alt="${title}">
             <div class="relasi_meta">
             <div class="juduldkk">
             <h4><a class="hRelasi" href="${url}">${title}</a></h4>

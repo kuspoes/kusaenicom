@@ -7,7 +7,7 @@ update: false
 ringkasan: "*A picture is worth a thousand words*, tapi bagaimana jika gambar - gambar itu adalah pesan kematian terakhir yang merujuk ke seorang psikopat yang takut akan kesepian?"
 keywords: "Uketsu, Strange Pictures, Jepang, Misteri, Novel"
 coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-250/buku/strange-pictures_006SejAd4.jpeg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/strange-pictures_006SejAd4.jpeg"
+og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/strange-pictures_006SejAd4.jpeg"
 penulis: "Uketsu"
 genre:
   - Thriller
