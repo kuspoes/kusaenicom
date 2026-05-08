@@ -122,7 +122,7 @@ $ doas sysrc cloned_interfaces+="wg0"
 $ doas sysrc ifconfig_wg0="inet 10.0.0.1/24 mtu 1420 up"
 ```
 
-Jika pakai cara ini, maka konfigurasi `Address` dan `MTU` harus dihapus dari file `wg0.conf`.
+Jika pakai cara ini, maka konfigurasi `Address` dan `MTU` harus dihapus dari file `wg0.conf`. Namun jika sejak awal sudah memasang paket `wireguard-tools` atau `wireguard-tools-lite` maka sebaiknya pakai cara pengaturan di *file* `wg0.conf` saja karena ini lebih mudah dan cepat untuk *troubleshooting*.
 
 ---
 
@@ -157,6 +157,8 @@ Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur
   <li><b>No. 2</b> diisi dengan isian dari <code>public.key</code> wireguard di VPS yang sebelumnya sudah dibuat.</li>
   <li><b>No. 3</b> adalah IP dari VPS dan <i>port</i> dari wireguard.</li>
   </ul>
+  <p><b>Update penting</b></p>
+  <p>Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interface</code> agar Wireguard bisa mengenali IP yang sedang tersambung dan mengarahkan akses internetnya. Jika tidak ditambahkan, Wireguard tetap bisa tersambung namun biasanya akan bermasalah dengan akses internet yang tidak tersedia</p>
 </aside>
 
 <div class="postnotes">
