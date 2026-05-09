@@ -197,7 +197,7 @@ site.helper("gtoot", async (id: string) => {
 site.process([".html"], (pages) => {
   for (const page of pages) {
     for (const img of page.document!.querySelectorAll("div.content img")) {
-      if (!img.hasAttribute("loading")) {
+      if (!img.hasAttribute("loading") && !img.hasAttribute("fetchpriority")) {
         img.setAttribute("loading", "lazy");
       }
       if (
