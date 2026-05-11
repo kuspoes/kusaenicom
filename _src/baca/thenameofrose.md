@@ -72,3 +72,7 @@ Salah satu yang menarik menjadi catatan adalah tentang jadual ibadah 4 para biar
 Di akhir, saya sepakat dengan Ustadz Salimafillah bahwa novel ini adalah salah satu masterpiece dan sangat bagus untuk dikoleksi.
 
 ---
+
+#### Adaptasi Layar Kaca
+
+Novel ini sudah diadaptasi dalam setidaknya 2 kali kesempatan, film pertama dibintangi oleh Sean Connery dan C Slater tayang pada 1986. Menurut para kritikus, film ini mendapatkan sambutan yang cukup menggembirakan terutama di Eropa meski tidak begitu baik di *box office* Holywood. Saat ini film The Name of Rose bisa ditonton di [Youtube](https://www.youtube.com/watch?v=H-lkhh52hMw&t=7186s).

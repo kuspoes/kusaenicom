@@ -81,3 +81,13 @@ Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, mener
 {{ /echo }}
 
 ---
+
+#### Adaptasi layar lebar
+
+Setelah Sewu Dino, muncul 1 film lagi yang diambil dari karya SimpleMan yaitu Janur Ireng. Digarap oleh rumah produksi MD Entertaiment, film ini rilis pada akhir bulan Desember 2025. 
+
+<iframe class="peta" width="560" height="315" src="https://www.youtube.com/embed/A5vSO5gPATI?si=0OP3Y8HhL3TYGJfj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Kelewatan? ga sempat nonton di Bioskop? 
+
+Film Janur Ireng bisa juga ditonton melalui [Netflix](https://www.netflix.com/id-en/title/82621208)

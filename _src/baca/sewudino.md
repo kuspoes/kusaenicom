@@ -61,3 +61,13 @@ Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, mener
 {{ /echo }}
 
 ---
+
+#### Adaptasi layar lebar
+
+Novel Sewu Dino sudah diadaptasi di layar lebar dan digarap oleh MD Entertainment. *Trailer* bisa ditonton berikut ini:
+
+<iframe class="peta" width="560" height="315" src="https://www.youtube.com/embed/12sXNFbQa6I?si=BXe-yik9IP6IbYZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Kelewatan? ga sempat nonton di Bioskop? 
+
+Film Sewu Dino bisa juga ditonton melalui [Prime Video](https://www.primevideo.com/-/id/detail/0NY48ACBQHW0A6EWD2SDB47F1A)
