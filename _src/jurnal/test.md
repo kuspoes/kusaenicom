@@ -2,6 +2,7 @@
 comment: false
 templateEngine: vto, md
 title: "Test untuk masonry"
+draft: true
 ---
 
 {{ comp.img_masonry({
