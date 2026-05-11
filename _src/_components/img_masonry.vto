@@ -1,0 +1,127 @@
+<div class="masonry-grid {{ it.layout || "random" }}">
+  {{ for image of images }}
+    <a data-fslightbox="gallery" href="{{ image.src }}" class="mson">
+      <img src="{{ image.src }}" alt="{{ image.alt }}" class="fuck">
+    </a>
+  {{ /for }}
+</div>
+
+<style inline>
+    .masonry-grid a:hover {
+        text-decoration: none;
+    }
+
+    .masonry-grid a {
+      display: block;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 0;
+    }
+
+  /* Base Setup */
+  .masonry-grid {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    line-height: 0;
+        font-size: 0;
+  }
+
+  .masonry-grid a {
+      /* WAJIB: Biar gak ada sisa ruang teks di bawah */
+      display: block;
+          margin: 0;
+          padding: 0;
+          line-height: 0;
+          text-decoration: none !important;
+          box-shadow: none !important;
+          border: none !important;
+  }
+
+  .masonry-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 !important;
+      padding: 0 !important;
+      vertical-align: top;
+  }
+
+  /* --- Layout "tiga" (1 Hero Full Atas, 2 Kecil Bawah) --- */
+  .masonry-grid.tiga {
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    /* Baris 1 buat hero, Baris 2 buat sisanya */
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  /* Gambar 1: Pakai 2 kolom di baris pertama */
+  .masonry-grid.tiga a:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  /* Gambar 2 & 3: Otomatis ngisi kolom 1 dan 2 di baris kedua */
+  .masonry-grid.tiga a:nth-child(2),
+  .masonry-grid.tiga a:nth-child(3) {
+    grid-row: 2 / 3;
+  }
+
+  /* --- Layout "empat" (2x2 Grid) --- */
+  .masonry-grid.empat {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 250px;
+  }
+
+  .masonry-grid.random {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .masonry-grid.random a {
+    display: block;
+    aspect-ratio: 1 / 1; /* Atau 4/3, 16/9, dll */
+  }
+
+  .masonry-grid.random img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+
+  /* Responsive buat Random */
+  @media (min-width: 900px) {
+      .masonry-grid.random { column-count: 3; }
+  }
+
+
+  .masonry-grid a[data-fslightbox] {
+      box-shadow: none !important;
+          text-shadow: none !important;
+          outline: none !important;
+          border: none !important;
+          text-decoration: none !important;
+          background: none !important; /* Kadang ada bg-color tipis */
+  }
+
+  /* Pastikan saat dihover tidak muncul garis bawah */
+  .masonry-grid a[data-fslightbox]:hover,
+  .masonry-grid a[data-fslightbox]:focus,
+  .masonry-grid a[data-fslightbox]:active {
+      text-decoration: none;
+      border: none;
+      outline: none;
+  }
+
+  /* Hilangkan border pada gambar di dalam link (khusus browser jadul) */
+  .masonry-grid a[data-fslightbox] img {
+      border: none;
+      box-shadow: none !important;
+      text-decoration: none;
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js" defer></script>
