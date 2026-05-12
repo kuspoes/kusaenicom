@@ -123,7 +123,15 @@ vim-tiny-9.2.0272       Improved version of the vi editor (tiny flavor)
 vim-x11-9.2.0272        Improved version of the vi editor (x11 flavor)
 ...
 ```
-Ditemukan banyak versi *package* dari `VIM`, untuk mengetahui uraian atau deskripsi dari sebuah *package* maka gunakan perintah `pkg info`.
+Ditemukan banyak versi *package* dari `VIM`, untuk mengetahui uraian atau deskripsi dari sebuah *package* maka gunakan perintah `pkg rquery` (*Remote Query*).
+
+```shell-session
+$ pkg rquery "%e" vim
+```
+
+lebih lengkap lompat ke [#Query PKG](/jurnal/freebsd-serba-serbi-pkg/#query-pkg).
+
+Sedangkan untuk melihat deskripsi dari *package* yang sudah terpasang gunakan perintah `pkg info`
 
 ```shell-session
 $ pkg info vim
@@ -284,6 +292,26 @@ libgd-2.3.3_13,1
 <aside>
     Hasilnya <code>vnstat</code> membutuhkan <code>sqlite</code> dan <code>libgd</code> sebagai <i>dependencies</i>-nya.
 </aside>
+
+Melihat deskripsi *package* yang belum terpasang (membaca deskripsi dari *remote*)
+
+```shell-session
+$ pkg rquery '%e' vim
+Vim is a highly configurable text editor built to enable efficient text editing.
+It is an improved version of the vi editor distributed with most UNIX systems.
+
+Vim is often called a "programmer's editor," and so useful for programming that
+many consider it an entire IDE. It's not just for programmers, though. Vim is
+perfect for all kinds of text editing, from composing email to editing
+configuration files.
+
+FreeBSD has the following Vim packages:
+* vim: Console-only Vim (vim binary) with all runtime files
+* vim-gtk3, -gtk2, -motif: Console Vim plus a GUI (gvim binary)
+* vim-x11:  Console Vim only, with xclipboard support
+* vim-tiny: Vim binary only, with no runtime files. Not useful for most people;
+  intended for minimal (ex. jail) installations
+```
 
 ### Audit
 
