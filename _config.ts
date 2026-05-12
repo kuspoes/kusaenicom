@@ -78,6 +78,7 @@ site
   }))
   .use(
     sitemap({
+      query: "draft!=true",
       sort: "date=desc",
     }),
   )

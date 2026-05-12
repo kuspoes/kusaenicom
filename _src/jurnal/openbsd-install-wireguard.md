@@ -22,7 +22,7 @@ comments:
 
 <div class="postnotes pink flex">
 
-  <img class="fuck logo" src="/assets/img/fbsd.png" />
+  <img class="fuck logo" src="/assets/img/fbsd.png" alt="freebsd logo" width="51" height="50" />
 
   <div class="flex-kanan">
   <p>Tutorial ini juga bisa diterapkan di FreeBSD, perbedaannya hanya penggunaan <i>package manager</i> untuk memasang paket - paket yang dibutuhkan saja.</p>
