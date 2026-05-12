@@ -844,6 +844,10 @@ sup {
     top: -0.6em;
 }
 
+span.mrah {
+    color: #c1121f;
+}
+
 .notes p {
     display: block;
 }
@@ -1683,7 +1687,29 @@ a.related_post_link {
         padding: 0em;
     }
 
-    .sidebar_notes,
+    .sidebar_notes.sebelah_kanan,
+    .sidebar_notes.sebelah_kiri {
+        float: none;
+        clear: both;
+        width: auto;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #d5bdaf;
+        border-bottom: 1px solid #d5bdaf;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0.5em;
+        text-align: left;
+    }
+
+    .sidebar_notes {
+        display: block;
+    }
     .pin-badge {
         display: none;
     }
@@ -1873,7 +1899,7 @@ a.related_post_link {
     }
 
     .sidebar_notes {
-        display: none;
+        display: block;
     }
 
     p {

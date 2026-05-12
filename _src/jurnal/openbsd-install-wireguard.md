@@ -73,7 +73,12 @@ Catat hasil dari `private.key` dan `public.key` karena ini nanti penting untuk k
 
 #### Cara pertama
 
-Masih di direktori `/etc/wireguard`, ane akan buat berkas konfigurasi wireguard yang akan digunakan untuk mengatur koneksi antara *server* dan *client* yaitu `wg0.conf`
+Masih di direktori `/etc/wireguard`, ane akan buat berkas konfigurasi wireguard yang akan digunakan untuk mengatur koneksi antara *server* dan *client* yaitu `wg0.conf`<span class="mrah">*</span>.
+
+<div class="sidebar_notes sebelah_kanan">
+    <p><sup>*</sup>Di FreeBSD, konfigurasi <i>default</i>nya ada di <i>path</i> <code>/usr/local/etc/wireguard/wg0.conf</code></p>
+    <p>Berbeda dengan OpenBSD yang bisa saja ditaruh dimana - mana, di FreeBSD sebaiknya ikut <i>path</i> yang sudah ditentukan untuk mengikuti hierarki konfigurasi <code>user</code> atau pihak ketiga yang harus ditaruh di <i>path</i> <code>/usr/local</code>. Sedangkan pengaturan <i>base system</i> akan ditaruh di <code>/etc</code>.</p>
+</div>
 
 ```shell-session
 $ doas vim wg0.conf
@@ -157,8 +162,9 @@ Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur
   <li><b>No. 2</b> diisi dengan isian dari <code>public.key</code> wireguard di VPS yang sebelumnya sudah dibuat.</li>
   <li><b>No. 3</b> adalah IP dari VPS dan <i>port</i> dari wireguard.</li>
   </ul>
-  <p><b>Update penting</b></p>
-  <p>Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interface</code> agar Wireguard bisa mengenali IP yang sedang tersambung dan mengarahkan akses internetnya. Jika tidak ditambahkan, Wireguard tetap bisa tersambung namun biasanya akan bermasalah dengan akses internet yang tidak tersedia</p>
+  <p></p>
+<b>Update penting</b>:
+Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interface</code> agar Wireguard bisa mengenali IP yang sedang tersambung dan mengarahkan akses internetnya. Jika tidak ditambahkan, Wireguard tetap bisa tersambung namun biasanya akan bermasalah dengan akses internet yang tidak tersedia
 </aside>
 
 <div class="postnotes">
@@ -166,13 +172,12 @@ Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur
   <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>10.0.0.1/32</code>)</p>
   <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik.</p>
   <p>Selain itu mengaktifkan <b>Exclude Private IP's</b> akan membuat sistem tetap bisa mengakses jaringan lokal (seperti NAS, LAN, dsb) <em>split tunnel</em> saat terhubung ke Wireguard. Mengaktifkan ini sangat direkomendasikan.</p>
-</div>
 
-<div class="postnotes pink">
+<br/>
   <h4>Wireguard sudah terhubung tapi <mark>tidak bisa akses situs tertentu</mark>?</h4>
   <p>Tersangkanya jelas MTU atau <i>Maximum Transmission Unit</i>.</p>
   <p>Biasanya sistem akan mengatur MTU secara otomatis, namun untuk beberapa OS tidak mengaturnya di nilai yang sama. Jadi jika di VPS (<i>host</i>) sudah diatur secara manual (misalnya ke nilai 1392) maka di klien harus memakai MTU yang sama. Caranya adalah menambahkan <code>MTU=1392</code> ke dalam blok <code>[Interface]</code>.</p>
-
+  <br />
   <h4>Tapi bagaimana cara menentukan MTU yang pas untuk wireguard?</h4>
   <p>Ada aplikasi yang bagus untuk membantu menentukan MTU yang sesuai dan optimal, nama aplikasinya <a href="https://github.com/yeya/wire-seek">wire-seek</a>.</p>
   <p>Unduh saja aplikasi ini, sesuaikan dengan OS yang dipakai (ane sesuaikan dengan OS di klien yaitu MacOS). Kemudian jalankan di Terminal/CLI dengan perintah:</p>
