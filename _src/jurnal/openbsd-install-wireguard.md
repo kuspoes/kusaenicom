@@ -42,6 +42,10 @@ Karena `wg` (binary dari wireguard) ternyata belum ada di dalam OpenBSD, maka pe
 $ doas pkg_add wireguard-tools
 ```
 
+<div class="sidebar_notes sebelah_kiri">
+    <p>di FreeBSD gunakan perintah <code>doas pkg install wireguard-tools</code>, jika tidak pakai <code>doas</code> maka <i>default</i>nya FreeBSD pakai <code>sudo</code></p>
+</div>
+
 perintah ini akan memasang `wireguard-tools` yang akan menyediakan binari `wg` dan `wg-quick` tapi ane akan pakai `wg` saja. `wg-quick` emang mantap untuk membuat akses wireguard secara cepat, namun ane ingin belajar jadi akan membangunnya dari nol.
 
 ### Buat key

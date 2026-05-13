@@ -92,9 +92,15 @@ Seorang reporter bernama Isamu Kumai meliput peristiwa ini, namun harus berhenti
 
 3 tahun kemudian, datang pegawai baru bernama Shunsuke Iwata seorang anak muda baru lulus sekolah menengah dan memiliki pasion yang kuat sebagai reporter. Suatu hari dia menemui Kumai dan mulai bertanya tentang kasus kematian Miura. Kumai kemudian menceritakan semua hasil penyelidikannya dan memandu si reporter muda untuk mulai menyelidiki lagi kasus Miura dengan mengunjungi tempat terakhir Miura mengajar, apalagi kemudian muncul fakta bahwa Iwata sebenarnya adalah salah satu murid kesayangan Miura semasa hidup. Iwata ingin mencari kebenaran atas tewasnya Miura.
 
-Iwata bertemu perempuan muda bernama Kameido yang ternyata adalah murid dari Miura yang juga dekat dengan keluarga Miura, mengatakan bahwa guru tidak sejahat itu (sehingga Iwata seolah memiliki teman). Dari Kameido, Iwata mendapatkan fakta bahwa Kameido mencurigai Toyokawa (merupakan teman dari guru Miura yang juga ikut berangkat pergi mendaki gunung satu hari sebelum kematian Guru Miura) sebagai pembunuh sebenarnya. Dari Kameido, Iwata mendapatkan alamat rumah Miura dan alamat Toyokawa. 
+Iwata bertemu perempuan muda bernama Kameido yang ternyata adalah murid dari Miura yang juga dekat dengan keluarga Miura, mengatakan bahwa guru tidak sejahat itu (sehingga Iwata seolah memiliki teman). Dari Kameido, Iwata mendapatkan fakta bahwa Kameido mencurigai Toyokawa (merupakan teman dari guru Miura yang juga ikut berangkat pergi mendaki gunung satu hari sebelum kematian Guru Miura) sebagai pembunuh sebenarnya. 
 
-Untuk lebih memahami situasi dan kronologi saat hari H kejadian, maka Iwata berniat untuk mengrekonstruksi kejadian dengan cara mereka ulang kegiatan dari guru Miura mulai pagi sampai dengan mayatnya ditemukan. Namun yang terjadi beberapa hari kemudian di gunung yang sama ditemukan mayat dari Iwata dengan luka mirip dengan mayat Miura dan pesan kematian yang sama yaitu gambar sketsa pemandangan.
+<div class="sidebar_notes sebelah_kiri">
+    <p>Sekilas tentang Toyokawa, dia adalah senior sekaligus teman dari Miura. Memiliki bakat menggambar lebih daripada Miura sendiri, namun mengalami kebangkrutan/kegagalan dalam usahanya sehingga dibantu oleh Miura dengan diberi pekerjaan sebagai guru menggambar paruh waktu di sekolah.</p><p> Meskipun berhutang budi, dia sebenarnya iri benci dengan Miura karena hidupnya stabil dan memiliki istri yang cantik.</p>
+</div>
+
+Dari Kameido, Iwata mendapatkan alamat rumah Miura dan alamat Toyokawa. Lalu untuk lebih memahami situasi dan kronologi saat hari H kejadian, maka Iwata berniat untuk mengrekonstruksi kejadian dengan cara mereka ulang kegiatan dari guru Miura mulai pagi sampai dengan mayatnya ditemukan. Namun yang terjadi beberapa hari kemudian di gunung yang sama ditemukan mayat dari Iwata dengan luka mirip dengan mayat Miura dan pesan kematian yang sama yaitu gambar sketsa pemandangan.
+
+Apa arti dari pesan kematian ini? Kenapa menggambar sketsa pemandangan, kenapa tidak menulis saja nama dari pelaku pembunuhan? Apakah benar gambar pemandangan ini digambar oleh si korban?
 
 Setelah itu Polisi juga menemukan Toyokawa mati bunuh diri dan meninggalkan pesan bahwa dialah yang membunuh Miura dan Iwata.
 

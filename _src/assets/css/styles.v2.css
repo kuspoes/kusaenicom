@@ -79,7 +79,7 @@ body {
 
 .sidebar_notes {
     width: 200px;
-    margin-top: -50px;
+    margin-top: -70px;
     font-size: 0.75em;
     font-family: var(--sans);
     line-height: 1.1;
@@ -100,6 +100,9 @@ body {
     margin-left: -230px;
     border-right: 2px solid #eee;
     padding-right: 10px;
+}
+
+.sebelah_kiri p {
     text-align: right;
 }
 
@@ -1427,6 +1430,7 @@ blockquote span.tokoh {
 blockquote .tengah {
     text-align: center;
     display: block;
+    font-style: italic;
 }
 
 blockquote:before,
@@ -1889,6 +1893,10 @@ a.related_post_link {
     .index_h1 {
         width: 100%;
     }
+
+    .header-anchor {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1984,7 +1992,6 @@ a.related_post_link {
         margin-bottom: 1em;
     }
 
-    /* 4. Penanganan Gambar & Link */
     img {
         max-width: 100%;
         page-break-inside: avoid;
@@ -2000,16 +2007,14 @@ a.related_post_link {
         text-decoration: none !important;
     }
 
-    /* Menampilkan URL di samping link (karena kertas tidak bisa diklik) */
     a[href^="http"]:after {
         content: " (" attr(href) ")";
         font-size: 9pt;
         font-style: italic;
     }
 
-    /* 5. Kontrol Halaman */
     .chapter-break {
-        page-break-before: always; /* Memaksa bab baru mulai di halaman baru */
+        page-break-before: always;
     }
 
     blockquote {
