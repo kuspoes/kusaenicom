@@ -307,6 +307,8 @@ $ doas wg show
 
 {{ comp.relasi_artikel({ judul: "Unbound di OpenBSD", teks: "Unbound adalah DNS resolver caching recursive yang open-source, ringan, dan secure. Tapi dia punya kemampuan lain yaitu memblokir iklan yang menjengkelkan. Sempurna untuk digabung dengan Wireguard.", format: "full" }) }}
 
+{{ comp.subs() }}
+
 #### Killswitch
 
 Killswitch adalah fitur keamanan yang sekarang sepertinya sudah menjadi standar untuk layanan VPN. Fungsinya adalah memutus akses internet saat VPN terputus sehingga tidak ada kebocoroan (_data leak_) berupa IP, DNS, atau data lainnya yang terkait. Hampir semua aplikasi VPN sudah menyediakan fitur ini.

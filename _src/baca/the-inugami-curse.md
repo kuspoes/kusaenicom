@@ -58,6 +58,9 @@ Masalah semakin rumit saat datang pihak lain, seorang tentara misterius yang bar
 
 Kindaichi harus bekerja keras untuk menemukan siapa yang menjadi tersangka pembunuhan dan rahasia kelam dibalik keluarga Inugami.
 
+{{ comp.subs() }}
+
+
 ## Catatan
 
 Saya merasa bahwa karya Seishi yang ini adalah karya terbaik dari beliau yang pernah saya baca[^1] , jauh lebih baik daripada novel pertamanya The Honjin Murder.

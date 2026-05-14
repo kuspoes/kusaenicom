@@ -81,6 +81,8 @@ Ketika diklik, muncul pesan bahwa _drive_ tidak bisa dipakai karena tidak diform
 
 Jika punya _flashdisk_ yang original dan dari merk populer dan mengalami masalah seperti ini, jangan dulu pakai aplikasi dari pihak ketiga untuk recover meski kadang bisa namun biasanya produses sudah menyediakan tools sendiri untuk hal ini dan dengan metode lebih mudah dan murah (gratis).
 
+{{ comp.subs() }}
+
 ---
 
 [^1]: Proses ini dilakukan di Windows karena aplikasi hanya tersedia untuk OS ini.

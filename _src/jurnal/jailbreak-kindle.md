@@ -12,7 +12,6 @@ code: false
 favorit: false
 comment: true
 keywords: jailbreak,e-reader, kindle, winterbreak
-templateEngine: md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01JYRV54QBF4KMG8T0P05Z6X2Z
   real: https://sok.egois.org/@poes/statuses/01JYRV54QBF4KMG8T0P05Z6X2Z
@@ -53,6 +52,8 @@ Setelah mencari - cari, akhirnya ane menemukan kamus bahasa Inggris ke bahasa In
 Namun, kamus bahasa Inggris ke bahasa Indonesia ini tidak lengkap sehingga banyak kata yang tidak tersedia. Oleh karena itu ane juga memasang kamus bahasa Inggris (dari GNU Collaborative International) yang lebih lengkap. Supaya kamus bahasa Inggris ke bahasa Indonesia menjadi pilihan utama maka ane perlu atur di Manage directories.
 
 Pilihan lain saat kamus - kamus itu mentok, bisa pakai pencarian di Wikipedia, tapi tentu saja ini butuh akses internet. Pastikan _jailbreak_ Winterbreak telah selesai sempurna sebelum mengaktifkan akses internet.
+
+{{ comp.subs() }}
 
 [^1]: Saat proses _jailbreak_ memang butuh kesabaran karena banyak proses yang harus diselesaikan, termasuk colok lepas dan _reboot_ pada perangkat, tapi secara umum prosesnya sangat mudah.
 

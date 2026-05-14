@@ -160,6 +160,9 @@ Kemudian reboot dan bisa langsung kebuka menu login OpenBSD. Login dengan _usern
 
 Bingung? silakan sampaikan pertanyaan ke [poes@egois.org](https://sok.egois.org) di fediverse.
 
+
+{{ comp.subs() }}
+
 ### Penutup
 
 Cara diatas adalah beberapa cara untuk menginstall OpenBSD di VPS berbasis Linux, sebenarnya sangat mudah asal _provider_ memakai NoVNC untuk konsolnya, yang menjadi masalah sebenarnya adalah pemakaian xtermjs.

@@ -459,6 +459,8 @@ $ doas portmaster -a
 
 Selain untuk melakukan *upgrade* sebenarnya `portmaster` bisa juga dipakai untuk meng-*install* Ports. Caranya adalah dengan perintah `$ doas portmaster editors/vim` dan ini jauh lebih mudah daripada cara manual.
 
+{{ comp.subs() }}
+
 ## Kesimpulan
 
 FreeBSD memberikan alat untuk melakukan pencarian, pemasangan, *upgrade*, maupun menghapus sebuah atau lebih aplikasi yang bernama `pkg`. *Package Manager* ini sangat *powerfull* untuk melakukan tugasnya secara umum dan jauh lebih mudah daripada memakai *ports* karena akan meng*install* aplikasi dari *pre-built binaries* yang sudah tersedia.

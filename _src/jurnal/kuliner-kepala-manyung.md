@@ -11,7 +11,6 @@ code: false
 favorit: false
 comment: true
 keywords: kusaeni, kuliner, kepala manyung, manyung, kotokan, warung sembilang, warung bu yah 99, warung mak muah, kepala manyung bu Fat
-templateEngine: md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01JZZ3PR7GHYCJC1GMA3NEK4D6
   real: https://sok.egois.org/@poes/statuses/01JZZ3PR7GHYCJC1GMA3NEK4D6
@@ -107,6 +106,9 @@ Mungkin lain kali ane perlu balik lagi untuk menemukan apa yang selama ini ane r
 Ane pernah menuliskan tetang [pengalaman makan masakan kepala ikan manyung yang ada di kota Tuban](https://poes.bearblog.dev/kepala-ikan-manyung-di-tuban/) di blog yang lain.
 
 Rata - rata *rating*nya adalah 4/5.
+
+
+{{ comp.subs() }}
 
 ## Catatan
 

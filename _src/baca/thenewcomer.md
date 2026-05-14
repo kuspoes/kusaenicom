@@ -73,6 +73,7 @@ dan bekerja dikawasan Nihonbashi memiliki motif sebagai pelaku.
 
 Lalu siapakah pembunuh sebenarnya? dan apa motifnya?.
 
+
 ---
 
 ### Catatan
@@ -106,4 +107,5 @@ Umumnya kebanyakan adaptasi novel ke film, ada banyak kekurangan atau ketidakses
 yang menonjol adalah tentang sikap Kaga yang difilm digambarkan dingin dan serius, padahal di novel
 Kaga dikesankan sebagai polisi yang ramah dan disukai banyak orang.
 
----
+
+{{ comp.subs() }}

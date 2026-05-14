@@ -41,3 +41,5 @@ Beberapa orang menganggap _ending_ yang menggantung ini adalah awal dari buku ke
 Saya tidak akan mengulas buku ini disini, kamu bisa membaca [ulasan yang bagus](https://kukuhgiaji.com/resensi-novel-karung-nyawa/) di blog Kukuh Giaji.
 
 ---
+
+{{ comp.subs() }}

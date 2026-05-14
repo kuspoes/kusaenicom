@@ -60,6 +60,9 @@ Ingatan hitam yang menyeruak dan membuka tabir gelap sebuah peristiwa masa lampa
 Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
 {{ /echo }}
 
+
+{{ comp.subs() }}
+
 ---
 
 #### Adaptasi layar lebar

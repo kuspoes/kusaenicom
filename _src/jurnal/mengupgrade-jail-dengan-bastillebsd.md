@@ -100,3 +100,5 @@ Namun jika dirasa tidak perlu dan ingin menghemat _storage_, ada baiknya _file r
 ```
 
 dengan ini BastilleBSD akan menghapus rilis dan bisa menghemat sekitar 1 Gb _storage space_.
+
+{{ comp.subs() }}

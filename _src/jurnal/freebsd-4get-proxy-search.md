@@ -111,3 +111,6 @@ Ane sudah rubah _banner_-nya karena ga suka dengan _banner_ aslinya. Ane inginny
 Apakah ini sudah selesai? oh tidak dong karena bakalan banyak _error_ PHP yang nongol, tinggal catat nama _variable_, _files_, dan baris yang _error_. Kebanyakan adalah _error_ berulang dan cara penyelesaiannya bisa dicari lewat mesin pencarian atau lewat instance 4Get juga.
 
 Selain itu ada beberapa _engine_ yang tidak bisa dipakai, mungkin karena token tidak ditemukan dan ane belum sempat periksa. Namun dengan Duckduckgo dan Brave tersedia, ane tidak terlalu ambil pusing dengan _engine_ lain yang gagal.
+
+
+{{ comp.subs() }}

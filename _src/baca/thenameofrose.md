@@ -71,6 +71,9 @@ Salah satu yang menarik menjadi catatan adalah tentang jadual ibadah 4 para biar
 
 Di akhir, saya sepakat dengan Ustadz Salimafillah bahwa novel ini adalah salah satu masterpiece dan sangat bagus untuk dikoleksi.
 
+{{ comp.subs() }}
+
+
 ---
 
 #### Adaptasi Layar Kaca

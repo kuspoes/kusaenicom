@@ -54,3 +54,6 @@ Setelah selesai jangan lupa untuk mematikan _SSH Server_ dan _disconnect_ dari W
 Namun ane sarankan tetap pakai kabel karena lebih mudah dan cepat juga untuk memastikan tidak ada file yang korup/rusak saat proses transfer. Untuk cara pakai kabel, Kindle wajib untuk kembali ke mode Kindle bawaan (keluar dari KOReader) kemudian pakai kabel data/*charger* dan colok ke PC/Mac secara otomatis akan dikenali sebagai Kindle dan *mount point* akan menuju ke `/mnt/us` saat dibuka.
 
 Gunakan Finder/Nimble Manager atau File Explorer di Windows untuk melakukan *copy - paste ebook*, semua selesai dalam waktu singkat dan lebih *worth it* daripada keribetan dalam mengatur layanan SSH. Percayalah.
+
+
+{{ comp.subs() }}

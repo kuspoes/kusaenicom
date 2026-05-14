@@ -14,7 +14,6 @@ code: true
 favorit: false
 comment: true
 keywords: restic, rclone, backup, selfhost, koofr, cloud storage
-templateEngine: vto, md
 draft: false
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
@@ -202,6 +201,7 @@ Untuk automatisasi bisa memanfaatkan cronjob, rencananya ane akan backup setiap 
 $ doas crontab -e
 0 2 * * * /usr/local/bin/restic_warden.sh > /var/log/restic_warden.log 2>&1
 ```
+{{ comp.subs() }}
 
 ---
 

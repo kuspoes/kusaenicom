@@ -33,3 +33,5 @@ manusia guna menyelamatkan bumi_". Tema yang sama yang pernah ditulis Brown di b
 Dari sekian buku Brown, ini adalah buku terburuk yang pernah saya baca dan agak malas nulis resensinya.
 
 ---
+
+{{ comp.subs() }}

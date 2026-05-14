@@ -109,4 +109,4 @@ Whatsapp menerbitkan artikel di blognya berjudul <a href="https://blog.whatsapp.
 1. Bahwa rumor yang beredar tentang perubahan <em>privacy policy</em> tersebut salah dan Whatsapp serta Facebook tetap memegang teguh untuk menghormati <em>privacy</em> para penggunanya,
 2. Bahwa Whatsapp tidak akan meng<em>susspend</em> akun penggunanya yang tidak setuju dengan <em>privacy policy</em> yang baru per tanggal 8 Pebruari 2021 dan diperpanjang sampai dengan tanggal 15 Mei 2021.
 
----
+{{ comp.subs() }}

@@ -94,3 +94,5 @@ Hanya saja dibandingkan dengan Tokyo Zodiac Murder's, kasus Pembunuhan di Rumah 
 Dan ini menjadi satu - satunya kekurangan di buku ini.
 
 ---
+
+{{ comp.subs() }}

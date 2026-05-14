@@ -95,3 +95,5 @@ Novel ini memenangkan banyak penghargaan dari dalam negeri Jepang maupun dari lu
 Pendapat saya pribadi, novel ini tidak lebih bagus daripada The Newcomer. Namun ada kelebihan dari novel ini terutama bagaimana Keigo membuat tokoh Osamu Nonoguchi yang dijadikan _narator_ sepanjang babak dan plot twist yang lebih memukau daripada The Newcomer.
 
 ---
+
+{{ comp.subs() }}

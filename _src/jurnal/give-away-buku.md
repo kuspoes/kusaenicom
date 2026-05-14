@@ -76,3 +76,6 @@ Kamu bisa _follow_ kami di <a href="https://twitter.com/kuspoes">Twitter</a> ata
 - 30 April 2023 : Buku Karung Nyawa sudah diklaim oleh Rifqi.
 
 &nbsp;
+
+
+{{ comp.subs() }}

@@ -59,6 +59,8 @@ Dosen yang juga seorang psikiater itu melihat gambar tersebut dan memberikan kes
 
 Benarkah?
 
+{{ comp.subs() }}
+
 #### Blog yang aneh
 
 Beberapa puluh tahun kemudian. Uketsu mendapatkan info dari Kurihara tentang sebuah blog yang aneh. Blog tersebut dimiliki oleh pria bernama Sasaki yang menulis tentang kesehariannya yang sudah menikah dan akan segera memiliki anak.

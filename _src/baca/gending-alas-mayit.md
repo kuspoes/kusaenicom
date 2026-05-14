@@ -96,3 +96,6 @@ Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, mener
 {{ echo |> relasi("book15_LKlbAIFWW.png", "Kudro", "simpleman", "https://www.wattpad.com/1098009727-kudro-laweh") }}
 Bayu Saseno menyelam dalam ingatan masalalunya, mencari dimana keberadaannya dalam tatanan bunga Wijayakusuma.
 {{ /echo }}
+
+
+{{ comp.subs() }}

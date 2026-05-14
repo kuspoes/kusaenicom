@@ -10,7 +10,6 @@ relasi: 11ty
 code: true
 favorit: false
 comment: false
-templateEngine: vto, md
 ---
 
 Saya baru saja berpindah dari Hugo ke Eleventy, dan salah satu hal yang terasa hilang dari Hugo (dan Jekyll) adalah fitur `draft` artikel.
@@ -43,4 +42,4 @@ Memasukkan teks di atas ke dalam <code>.eleventyignore</code>, kemudian buat art
 
 Untuk memposting artikel, cukup menghapus nama <code>draft</code> kemudian mem<strong>build</strong>ulang Eleventy.
 
----
+{{ comp.subs() }}

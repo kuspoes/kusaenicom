@@ -339,6 +339,8 @@ Skipping sending email to poes@taa.ee: Verification code: 946197
 
 Masukkan kode verifikasi `946197` dan _voila_ bisa langsung masuk ke dalam Ente Photos.
 
+{{ comp.subs() }}
+
 #### Konfigurasi lanjutan
 
 Semua perubahan di `museum.yaml` harus diikuti dengan _restart_ `main` agar Ente mempergunakan konfigurasi yang baru dirubah.

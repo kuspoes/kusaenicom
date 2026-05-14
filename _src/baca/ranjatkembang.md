@@ -100,3 +100,5 @@ Poster ke-2 ini yang menurut saya tidak pas atau tidak sesuai. Novel Ranjat Kemb
 Menurut saya Bukune perlu memperhatikan hal ini.
 
 ---
+
+{{ comp.subs() }}

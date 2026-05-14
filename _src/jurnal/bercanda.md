@@ -11,7 +11,6 @@ code: false
 favorit: false
 comment: true
 keywords: kusaeni, kehidupan, qurban, Allah, Bercanda, sedekah, sodaqoh, bakso, bihun
-templateEngine: md
 comments:
   src: https://sepoi.deno.dev/@poes/statuses/01JZFVN7JNADD736BN12PMSR60
   real: https://sok.egois.org/@poes/statuses/01JZFVN7JNADD736BN12PMSR60
@@ -48,3 +47,5 @@ Ya Allah...., ane bilang bahwa ane baru selesai makan sembari langsung masuk ke 
 Ketika keluar ane lihat si bocah masih berdiri disana, masih menenteng dagangannya yang sepertinya masih belum laku. Ane samperin dan tanya lagi berapa harganya, dia bilang 10 ribu saja. Tak pikir panjang ane rogoh saku sebelah kiri dan keluarkan untuk membeli.
 
 Ya Allah, semoga engkau melunakkan hatiku, aamiin.
+
+{{ comp.subs() }}

@@ -12,7 +12,6 @@ relasi: lume
 code: true
 favorit: false
 comment: true
-templateEngine: md
 tocx: false
 ---
 
@@ -167,6 +166,8 @@ https://poestodon.deno.dev/@poes/statuses/01J1S8G6667MYN5R2XYVN5D2WG
 abaikan media yang tidak bisa ditampilkan, itu tak penting yang penting bisa dipakai untuk _fetching data_ dan `token` aman.
 
 Setelah melakukan itu semua akhirnya saya bisa menampilkan gotosocial _threads_ (jika ada) di Lume.
+
+{{ comp.subs() }}
 
 #### 26 Juli 2024 : Update terkait proxy
 

@@ -27,7 +27,7 @@ Di halaman [bacaan](/baca) saya ingin menampilkan relasi buku terkait dengan _re
 
 Hal pertama yang dilakukan adalah membuat basis data dan menyimpannya dalam format JSON. Caranya adalah dengan membuat _file_ baru & memasuk-kan data `collection` dengan format menyesuaikan bentuk format _valid_ dari JSON.
 
-{% raw %}
+{{ echo }}
 
 ```html
 ---
@@ -40,7 +40,7 @@ post.data.penulis }}", "coverImg": "{{ post.data.coverImg }}", "resensi": "{{ po
 }{{ '' if loop.last else ',' }} {% endfor %}]
 ```
 
-{% endraw %}
+{{ /echo }}
 
 `title`, `date`, `url`, `ringkasan` dan seterusnya adalah _field_ yang sudah saya tulis di YAML/_frontmatter_ pada setiap artikel baca. Tampilan _frontmatter_ seperti ini :
 
@@ -242,6 +242,8 @@ eleventyConfig.addLiquidShortcode("related", async function (judul) {
 ```
 
  <aside>Jika ingin mempergunakan kode kedua, silakan disesuaikan. Saya menambahkan fungsi <code>rese</code> untuk memotong karakter di <code>resensi</code> agar tidak lebih dari 200 karakter</aside>
+
+{{ comp.subs() }}
 
 #### Update #2 { .marah }
 

@@ -272,3 +272,5 @@ server:
 simpan dan jalankan lagi `unbound-checkconf` untuk mengvalidasi konfigurasi. Jika tidak ada masalah, _reload_ Unbound dan test dengan mengunjungi situs seperti detik.com yang banyak iklannya itu dan cek apakah iklan - iklannya sudah hilang atau berkurang. Ya berkurang karena ada beberapa iklan yang di-_host_ di internal situs sehingga tidak terdeteksi oleh Unbound. Tapi ini wajar, karena jika terdeteksi di dalam *adblock* maka bisa saja malah situs tersebut yang tidak akan bisa dibuka karena akan diblok oleh Unbound. Ga masalah karena 99% iklan pasti akan terfilter oleh *Adblock* dan Unbound.
 
 Contoh lain adalah ada situs yang pakai banner iklan dan banner tersebut disimpan di blogspot.com atau blogger.com, sehingga pasti akan tetap muncul kecuali domain blogspot.com atau blogger.com diblok. Resikonya maka domain tersebut tidak akan bisa dibuka lagi. Maka disini µBlock Origin bisa bermanfaat untuk memblok elemen tertentu tanpa memblok domain.
+
+{{ comp.subs() }}

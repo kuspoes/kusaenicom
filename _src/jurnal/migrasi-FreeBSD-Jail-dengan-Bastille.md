@@ -120,6 +120,8 @@ $ doas bastille console kauaku
 
 Jika VPS tidak menyediakan DNS lookup atau nameserver sendiri, saya merekomendasikan untuk pakai nameserver dari [Quad9](https://quad9.net) maupun [Cloudflare](https://cloudflare.com). Terakhir lakukan update dan upgrade package jika diperlukan.
 
+{{ comp.subs() }}
+
 ### Penutup
 
 BastilleBSD menyediakan cara yang mudah untuk migrasi dengan `export`-`import` ini. Sebelumnya saya memakai cara manual untuk migrasi yang tentu membutuhkan waktu yang lebih lama dan kemungkinan _error_ lebih besar, dengan BastilleBSD semua hanya butuh waktu kurang dari 10 menit sampai container/jail terpasang dan bisa berjalan dengan baik.

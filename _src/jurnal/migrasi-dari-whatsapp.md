@@ -12,7 +12,6 @@ kategori: jurnal
 relasi: kusaeni
 code: false
 favorit: false
-templateEngine: vto, md
 comment: true
 tocx: true
 ---
@@ -77,6 +76,7 @@ BIP sebagai pendatang baru ternyata sudah menggarap fungsi impor data ini, targe
 Proses ekspor data dari Whatsapp sama mudahnya dengan Telegram. Tinggal ekspor dan pilih aplikasi BIP dan tuju akun kontaknya. Data akan ditampilkan secara `read only` di dalam layar pesan BIP.
 
 ---
+{{ comp.subs() }}
 
 ### Kesimpulan
 

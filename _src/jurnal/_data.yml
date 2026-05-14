@@ -1,3 +1,4 @@
 type: post
 
 layout: layout/jurnal.vto
+templateEngine: vto, md

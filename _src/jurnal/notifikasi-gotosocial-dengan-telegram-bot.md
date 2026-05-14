@@ -10,7 +10,6 @@ kategori: jurnal
 relasi: gotosocial
 code: true
 favorit: false
-templateEngine: vto, md
 tocx: true
 comment: true
 ---
@@ -259,6 +258,8 @@ Berikut ini adalah contoh _screenshot_ hasil dari _script_ ini:
 
 ![Notifikasi Telegram di iOS](https://ik.imagekit.io/hjse9uhdjqd/jurnal/gts_telebot/IMG_6465_XktHQpVfV.png?updatedAt=1721656402210)
 ![Notifikasi di chat dengan Telegram Bot](https://ik.imagekit.io/hjse9uhdjqd/jurnal/gts_telebot/IMG_6466_heNhNSLDk.png?updatedAt=1721656383904)
+
+{{ comp.subs() }}
 
 ---
 

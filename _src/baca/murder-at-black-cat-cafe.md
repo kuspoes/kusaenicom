@@ -64,6 +64,9 @@ Setelah melakukan penyelidikan, polisi menemukan beberapa fakta sebagai berikut
 
 Pertanyaanya adalah jasad siapakah itu? siapa yang membunuhnya? lalu apa hubungan Daigo dan Oshige dengan Yakuza?
 
+{{ comp.subs() }}
+
+
 ### Catatan
 
 Meski judulnya Murder at Black Cat Café, buku ini ternyata terdiri dari 2 cerita yang tidak saling berkaitan sehingga bisa dibilang ini adalah novel pendek.

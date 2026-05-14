@@ -10,7 +10,6 @@ kategori: jurnal
 relasi: freebsd
 code: true
 favorit: false
-templateEngine: vto, md
 comment: true
 ---
 
@@ -120,6 +119,8 @@ Seluruh perintah diatas dijalankan dari Host.
 </aside>
 
 Mantap, sekarang setiap _file_ yang ditaruh di dalam folder `hanggar` di dalam Jail akan tersimpan di dalam _block storage_ saya.
+
+{{ comp.subs() }}
 
 ---
 

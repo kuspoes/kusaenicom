@@ -69,4 +69,4 @@ Namun untuk saat ini, jurnal dan semua artikel maupun yang lainnya ditulis secar
 
 Saat ini mempergunakan [Lume](https://lumeland.github.io), alasannya? hanya pengen berbeda saja. :D
 
----
+{{ comp.subs() }}

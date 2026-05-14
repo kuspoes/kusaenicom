@@ -59,3 +59,6 @@ Bank tidak akan peduli atas masalahmu kecuali ada surat penyelidikan dari polisi
 ### Update
 
 Alhamdulillah akhirnya ane mendapatkan Kindle pengganti, masih beli di Facebook Marketplace namun kali ini melalui grup diskusi dan pihak penjual yang meminta transaksi melalui Shopee. Untuk kali ini ane beli dengan spesifikasi lebih rendah karena harga lebih murah.
+
+
+{{ comp.subs() }}

@@ -60,6 +60,9 @@ Seorang detektif partikelir dan seorang pecinta astrologi **Kiyoshi Mitarai** me
 
 Apa isi pengakuan, siapakah pembunuhnya, dan bagaimana cara serta motifnya?
 
+{{ comp.subs() }}
+
+
 ---
 
 ### Kesimpulan

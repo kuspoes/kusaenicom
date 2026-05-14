@@ -12,7 +12,6 @@ relasi: 11ty
 code: true
 favorit: false
 comment: false
-templateEngine: md, vto
 tocx: false
 ---
 
@@ -104,4 +103,4 @@ Saya memindahkan _file_ `tgz` tersebut ke direktori `_tmp` di dalam direktori ju
 
 _Folder_ `_tmp` ini harus diikutkan saat `push` ke repository (Github/Gitlab) karena saat di*build* dengan [Netlify](https://netlify.com) akan mencari _eleventy-plugin-reader-bar_ di _path_ lokal tersebut.
 
----
+{{ comp.subs() }}

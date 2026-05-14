@@ -47,3 +47,6 @@ devfs on /dev (devfs)
 Mudah bukan? _but wait_ ini artinya orang lain bisa dong dengan mudah masuk ke PC dengan _password_ `root`. Jawabannya adalah iya, sehebat apapun *software*nya kalo penyerang mendapatkan akses fisik ke PC maka hasilnya akan sama saja.
 
 Oleh karena itu jangan jadi pelupa, sehingga bisa mengnonaktifkan _boot menu_ muncul. Gunakan aplikasi untuk memanajemen _password_ seperti [keepassxc](https://keepassxc.org) untuk membantu.
+
+
+{{ comp.subs() }}

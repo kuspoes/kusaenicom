@@ -11,7 +11,6 @@ relasi: lume
 code: true
 favorit: false
 comment: true
-templateEngine: vto, md
 tocx: true
 og_images: https://ik.imagekit.io/hjse9uhdjqd/jurnal/meta_image/cat_ClOaUHOAC.png?updatedAt=1718847889072
 ---
@@ -209,6 +208,8 @@ Setelah itu _reload_ halaman dan seharusnya akan muncul pesan **403 Forbidden**.
 Melakukan pemblokiran terhadap _bot crawler_ AI kembali kepada pilihan masing - masing pemilik situs. Jika mementingkan SEO dan ingin berbagi untuk kemajuan teknologi AI maka mengijinkan _bot crawler_ AI untuk _scrapping data_ adalah pilihan yang bijaksana.
 
 Saya sendiri sebenarnya tidak terlalu membutuhkan untuk blok _bot crawler_ AI ini, karena menurut pengamatan dari DarkVisitor situs saya ini tidak terlalu menarik bagi _bot crawler_ AI untuk diambil datanya. Mungkin karena situs ditulis dalam bahasa Indonesia, entahlah.
+
+{{ comp.subs() }}
 
 ### Link menarik untuk dibaca
 

@@ -11,7 +11,6 @@ relasi: lume
 code: false
 favorit: false
 comment: true
-templateEngine: md
 tocx: false
 draft: false
 keywords: lume, deno, deploy, ssg, blog
@@ -86,3 +85,5 @@ Sebelumnya di Deploy Classic, ane pakai `server.ts` sebagai *endpoint* untuk dij
 - Kemudian simpan
 
 Dengan ini maka Deploy akan memakai `server.ts` sebagai *entrypoint* sehingga fitur kustom `404` dan No AI crawler kembali tersedia.
+
+{{ comp.subs() }}

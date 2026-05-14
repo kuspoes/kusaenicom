@@ -361,6 +361,8 @@ simpan, cek konfigurasi apakah ada yang keliru dan `restart nginx`.
 Jika semua berjalan lancar, maka miniflux bisa diakses melalui _browser_ di alamat IP `192.168.1.46:80` alias IP dari Raspberry Pi4.
 
  <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/miniflux_L1-UQF0dk0.png?updatedAt=1716043784554" />
+ 
+ {{ comp.subs() }}
 
 ### Penutup
 

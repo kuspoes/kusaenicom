@@ -91,3 +91,5 @@ fi
 tentu saja _file script_ ini harus dirubah menjadi _executable_ dan ditaruh di `~/bin`.
 
 Cara yang lain adalah dengan mempergunakan aplikasi Wifi Loc Control yang sebenarnya versi lebih _advanced_ dari _script_ di atas, aplikasi ini bisa diunduh di [Wifi Loc Control di Github](https://github.com/vborodulin/wifi-loc-control).
+
+{{ comp.subs() }}

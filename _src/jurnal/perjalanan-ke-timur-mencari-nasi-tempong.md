@@ -139,6 +139,8 @@ Semakin siang dan suhu sudah menghangat, ane putuskan untuk pergi ke SPBU terdek
 
 Jam 10.45 WIB _announcer_ sudah menginformasikan bahwa penumpang bisa mulai _boarding_. Kereta datang jam 11.15 WIB pas tidak terlambat, kali ini naik kereta Wijaya Kusuma. 20 menit kemudian ane sudah tertidur pulas dengan senyum di wajah karena sudah berhasil membawa Nasi Tempong khas Banyuwangi kembali ke Barat.
 
+{{ comp.subs() }}
+
 ---
 
 <div class="postnotes">

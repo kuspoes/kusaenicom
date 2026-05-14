@@ -338,6 +338,93 @@ nav.toc {
     box-shadow: rgba(0, 0, 0, 045) 0px 25px 20px -20px;
 }
 
+.subscribe {
+    border: 1px solid #ccd5ae;
+    background-color: rgba(216, 226, 220, 0.1);
+    border-top-left-radius: 0.375em;
+    border-top-right-radius: 0.375em;
+    padding: 0em 1em;
+}
+
+.subscribe p.mau {
+    font-size: 0.8em;
+    font-family: var(--sans);
+}
+
+.subscribe h4 {
+    margin: 1em 1.3em;
+    font-family: Literata, Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.subscribe .form_ {
+    margin: 1em 2em;
+    font-size: 0.85em;
+}
+
+.buttondown {
+    display: none;
+}
+
+form input.blok {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(250, 237, 205, 1);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: var(--col_body);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+form input.blok:focus {
+    outline: none;
+    border-color: rgba(255, 186, 8, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(255, 186, 8, 1);
+}
+
+input.inline {
+    width: 100%;
+    background: rgba(201, 24, 74, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    margin-top: 0.5em;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input.inline:hover {
+    background: rgba(201, 24, 74, 1);
+}
+
+input.inline:active {
+    transform: scale(0.98);
+}
+
+.subs_info {
+    margin: 0em 0;
+    border: 1px solid #ccd5ae;
+    border-top-width: 0;
+    border-bottom-left-radius: 0.375em;
+    border-bottom-right-radius: 0.375em;
+    background-color: rgba(204, 213, 174, 0.6);
+    margin-top: -0.85em;
+}
+
+.subs_info p {
+    font-family: var(--sans);
+    color: #4a5759;
+    font-size: 0.85em;
+    line-height: 1;
+    padding: 1em;
+}
+
 /* rating page */
 table {
     border-spacing: 1;
@@ -1790,8 +1877,7 @@ a.related_post_link {
         border-radius: 4px;
     }
 
-    .postlist,
-    input {
+    .postlist {
         width: 95%;
         margin: 2em auto;
     }
@@ -1896,6 +1982,9 @@ a.related_post_link {
 
     .header-anchor {
         display: none;
+    }
+    input.inline {
+        margin-top: 5px;
     }
 }
 

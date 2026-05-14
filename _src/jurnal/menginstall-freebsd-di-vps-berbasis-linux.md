@@ -15,7 +15,6 @@ code: true
 favorit: true
 comment: true
 tocx: true
-templateEngine: vto,md
 ---
 
 <div class="postnotes">
@@ -240,3 +239,5 @@ Selain itu perlu juga mengatur agar FreeBSD booting dengan mode serial console a
 ```
 
 Kemudian reboot dan nikmati sistem FreeBSD yang sudah terinstall.
+
+{{ comp.subs() }}

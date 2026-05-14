@@ -42,6 +42,9 @@ Bagi saya rasanya enak tapi tidak cukup untuk membuat saya percaya kalo ini soto
 
 Nilai: 😄😄😄/5
 
+
+{{ comp.subs() }}
+
 ---
 
 ### Soto Seger

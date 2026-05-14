@@ -90,6 +90,9 @@ Akhirnya ritual ini menjadi sebuah tradisi turun temurun dari Klan Katabuchi sam
 
 Lalu siapakah Rankyo? Siapakah Keita dan bagaimanakah akhir dari ritual keluarga Katabuchi ini?
 
+{{ comp.subs() }}
+
+
 ### Catatan
 
 Novel ini pendek, hanya terdiri dari 4 bab yang sebagian besar berisi percakapan - percakapan saja. Ditulis seperti naskah skenario film, meski begitu ketegangan tetap terbangun dengan manis. Pelan - pelan tak terasa namun pada saatnya membuat kengerian yang nyata.
