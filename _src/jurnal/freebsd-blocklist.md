@@ -312,14 +312,13 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 
       Kemudian _restart_ SSH dengan `$ doas service sshd restart` dan coba login ke SSH lagi. Seharusnya *prompt* yang muncul adalah _password_ dari file `id_ed25519.pub` yang sebelumnya ane buat.
 
-      ```shell-session
-      ➜  ~ ssh poes@oyenBSD
-      Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
-      ```
+ ```shell-session
+$ ssh poes@oyenBSD
+Enter passphrase for key '/Users/poes/.ssh/id_ed25519':
+```
 
 
 masukkan _password_ yang dibuat sebelumnya.
-
 
 3.  **Pakai _rate limit_ untuk membatasi jumlah akses**.
     Mengatur _rate limiting_ akan membuat _firewall_ mencegah serangan _brute force attack_ dengan membatasi jumlah koneksi pada *port* SSH dalam kurun waktu tertentu. Untuk ini PF bisa meng*handle*nya dengan baik.

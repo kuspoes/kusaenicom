@@ -14,6 +14,7 @@ import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 //import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
+import imageSize from "lume/plugins/image_size.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
@@ -49,6 +50,7 @@ site
   .use(purgecss())
   .use(base_path())
   .use(nunjucks())
+  .use(imageSize())
   .use(
     date({
       formats: {
