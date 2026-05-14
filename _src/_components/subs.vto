@@ -1,0 +1,27 @@
+{{#
+Component ini untuk menyisipkan blok berlangganan by email ke dalam artikel.
+Cara pakai:
+
+{{ comp.subs() }}
+
+#}}
+
+
+
+		<div class="subscribe">
+			<h4>Berlangganan Artikel lewat email</h4>
+			<div class="form_">
+			    <p>Masukkan alamat email anda untuk memulai berlangganan artikel.</p>
+					<form action="https://buttondown.email/api/emails/embed-subscribe/kuspoes" method="post" target="popupwindow" 	onsubmit="window.open('https://buttondown.email/kuspoes', 'popupwindow')">
+        	  	      <input class="blok" type="email" name="email" id="bd-email" placeholder="you@youremail.com">
+        	  	      <input type="hidden" value="1" name="embed">
+        	        <input class="inline" type="submit" value="Subscribe">
+        	    </form>
+             <div class="buttondown">
+                	<p>Layanan ini didukung oleh <a class="ba" href="https://buttondown.email" target="_blank">Buttondown</a>.</p>
+             </div>
+			</div>
+		</div>
+            <div class="subs_info">
+                <p>Saya tidak akan mengirimkan spam dan tidak pula menjual alamat email anda. Jika sudah tidak ingin berlangganan, anda bisa berhenti berlangganan kapan saja dengan mudah.</p>
+            </div>
