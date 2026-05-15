@@ -158,7 +158,9 @@ Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yait
 
 Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur *tunnel* kosong baru (lihat gambar).
 
-![wireguard add tunnel](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20251129-qxxr__wylSLRT7.png?updatedAt=1764419428366)
+DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
+
+<img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-80/jurnal/OpenBSD_Wireguard/wireguard_settings_4WDIGUIoj" alt="wireguard add tunnel]" image-size>
 
 <aside class="image">
   <ul>
@@ -450,7 +452,7 @@ Tentu saja [AnyBar](https://github.com/tonsky/AnyBar) ini opsional, boleh tidak 
 
 #### Dengan aplikasi
 
-![Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png)
+<img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-30/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" image-size>
 
 <aside class="image">
   Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba

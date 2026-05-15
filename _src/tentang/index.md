@@ -8,7 +8,7 @@ style: "tentang.css"
 ---
 
 <div class="kus_pp">
-<img class="kus_avatar" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" />
+<img class="kus_avatar" src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-150,q-100/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" image-size>
 <p>Saya adalah seorang <span class="underline">blogger musiman</span> yang menulis di situs ini dengan penuh ke-tidak-konsistensian.</p>
 
 <p>Saya menulis jika ada keinginan untuk menulis, jika tidak maka kegiatan utama saya adalah makan, tidur, &amp; kadang kala bepergian atau <a href="#fotografi">travelling</a>.</p>
@@ -96,7 +96,7 @@ style: "tentang.css"
 
 <p>Ketika psikolog perusahaan (medio 2014) menganjurkan saya untuk mencoba bepergian atau <em>travelling</em> untuk melihat luasnya dunia dan bertemu dengan hal - hal baru, maka pada saat itu saya memutuskan untuk menekuni hobi fotografi.</p>
 
-<img class="galsX sephia" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni-kawahputih_XYHZGhi-8.jpg" alt="kusaeni saat melancong ke kawah putih di Kabupaten Bandung" />
+<img class="galsX sephia" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni-kawahputih_XYHZGhi-8.jpg" alt="kusaeni saat melancong ke kawah putih di Kabupaten Bandung" image-size>
 <aside class="image">Kusaeni saat melancong ke Kawah Putih, Ciwidey, Kabupaten Bandung. Foto ini diambil dengan mempergunakan kamera polaroid dan di reproduksi ke digital/JPEG. (Andri Kawah Putih untuk kusaeni.com) </aside>
 
 <p>Hobi ini sangat cocok berdampingan saat <em>travelling</em>, untuk mengabadikan momen dan pemandangan. Gawai yang saya pergunakan sebagai berikut :</p>

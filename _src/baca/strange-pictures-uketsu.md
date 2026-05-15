@@ -6,7 +6,7 @@ date: 2026-05-02
 update: false
 ringkasan: "*A picture is worth a thousand words*, tapi bagaimana jika gambar - gambar itu adalah pesan kematian terakhir yang merujuk ke seorang psikopat yang takut akan kesepian?"
 keywords: "Uketsu, Strange Pictures, Jepang, Misteri, Novel"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-250/buku/strange-pictures_006SejAd4.jpeg"
+coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/strange-pictures_006SejAd4.jpeg"
 og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/strange-pictures_006SejAd4.jpeg"
 penulis: "Uketsu"
 genre:
@@ -39,11 +39,6 @@ comments:
 Setelah buku pertama (Strange House) yang membuat hati menjadi kosong dan pikiran bingung, maka ane lanjutkan untuk membaca buku kedua dari Uketsu yang berjudul Strange Pictures.
 
 Uketsu memakai judul yang unik untuk buku karyanya, yaitu judul buku yang diawali dengan kata "Strange" yang berarti "aneh". Dalam bahasa Jepang, Strange ditulis dengan Kanji "Hen na" (変な) yang berarti sesuatu yang aneh, ganjil, atau tidak umum dan mencurigakan. Judulnya sendiri aneh sama anehnya dengan penampilan Uketsu saat muncul di muka umum.
-
-{{ comp.relasi_cari_buku({
-        judul: "Strange Houses"
-    })
-}}
 
 ---
 

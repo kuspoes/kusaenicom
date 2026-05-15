@@ -16,7 +16,7 @@ Cara pakai:
         {{ for buku of bukuku.slice(1,6) }}
         <a class="bukuku" href="{{ buku.url }}">
             <div class="relasi_bukuku_cover">
-                <img src="{{ buku.coverImg }}" alt="{{ buku.title }}" width="140" height="215" loading="lazy">
+                <img src="{{ buku.coverImg }}" alt="{{ buku.title }}"  loading="lazy" image-size>
             </div>
         </a>
         {{ /for }}
