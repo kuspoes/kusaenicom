@@ -328,6 +328,7 @@ nav.toc {
 
 .item_cover {
     width: 180px;
+    height: 263px;
     border: 1px solid #ccc;
     border-radius: 0.1em;
     /*
@@ -1262,12 +1263,20 @@ span.footnomer {
 }
 
 .logo a:hover,
-.menu a:hover,
 .baca a:hover,
 .backtop a:hover {
     background-color: transparent;
     text-decoration: none;
     border: none;
+}
+
+.menu a {
+    padding: 4px 8px;
+}
+.menu a:hover {
+    background-color: rgba(187, 148, 87, 0.2);
+    padding: 4px 8px;
+    border-radius: 0.375em;
 }
 
 a.header-anchor,
@@ -1944,7 +1953,6 @@ a.related_post_link {
     }
 
     img.item_cover {
-        width: 150px;
         display: block;
         height: auto;
     }

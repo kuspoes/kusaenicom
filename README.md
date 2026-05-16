@@ -49,6 +49,9 @@ Untuk merubah tema, silakan edit di `_src/_theme`, folder ini berisi `bagian` un
 
 Folder `assets` di dalamnya ada file `CSS`, `JS`, dan `fonts`. Khusus font diambil sebagian dari Google Fonts namun untuk font berbayar tidak disertakan disini karena masalah lisensi.
 
+Update:
+Font's dari Google Font's bisa dipakai dengan host di local, karena sudah dilisensikan gratis namun untuk menghargai sila sebut bahwa font's berasal dari Google Font's. Gunakan layanan dari [Google Webfonts Helper](https://gwfh.mranftl.com/fonts) untuk mempermudah self host font's-nya.
+
 #### Tags
 
 Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk meng-generate page `/tags` yang berasoisasi dengan file `tags.vto` di folder `_src/_theme/layout/tags.vto`.
@@ -84,3 +87,5 @@ Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke 
 Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
 
 Per 2 Mei 2026, Ane pindahkan hosting ke Netlify karena di Deno Deploy gratisan dapatnya region EU dan US yang tentu saja akan membuat latency semakin tinggi yang berimbas akses ke situs (agak) tersendat. Netlify punya fitur edge di SEA harapannya bisa membuat akses lebih cepat. Jika pun tidak kemungkinan besar akan pakai self host atau CloudFlare.
+
+Namun pada 7 Mei 2026 ane malah pindahkan lagi ke Cloudflare karena masalah kecepatan, namun ternyata ane salah sangkat bahwa yang membuat blog ini lambat dibuka bukan karena letak server Deno maupun Netlify melainkan optimalisasi yang keliru. Jadi mau dihost dimana saja sama saja karena sekarang kodenya sudah dioptimalisasi dengan baik.
