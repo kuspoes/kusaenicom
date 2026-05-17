@@ -9,12 +9,34 @@ layout: layout/content.vto
 <div id="search"></div>
 </div>
 
-		{{ for post of search.pages("type=post", "date=desc") }}
-		<div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
+{{> allPosts = search.pages("type=post", "date=desc") }}
+{{> postsByYear = {} }}
+
+{{ for post of allPosts }}
+  {{> year = post.date.getFullYear() }}
+
+  {{ if !postsByYear[year] }}
+    {{> postsByYear[year] = [] }}
+  {{ /if }}
+
+  {{> postsByYear[year].push(post) }}
+{{ /for }}
+
+{{> years = Object.keys(postsByYear).sort().reverse() }}
+
+{{ for year of years }}
+    <div class="index_h1">
+        <h2 class="arsip_tahun">
+            {{ year }}
+            <span class="post-count">×{{ postsByYear[year].length }} artikel</span>
+        </h2>
+    </div>
+            {{ for post of postsByYear[year] }}
+            <div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">
-    			  		{{ post.date |> date('id_tgl') }}
+  			  		{{ post.date |> date('id_tgl') }}
 					</div>
 					<div class="bln">
 						{{ post.date |> date('id_bln') }}
@@ -22,23 +44,23 @@ layout: layout/content.vto
 					<div class="thn">
 						{{ post.date |> date('id_thn') }}
 					</div>
-  				</time>
+				</time>
 			</div>
 			<div class="postitle">
 				<h2>
 					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
-          				{{ post.title || post.url }}
-        			</a>
+        				{{ post.title || post.url }}
+      			</a>
 				</h2>
 				<div class="post_ringkasan">
 				{{ post.ringkasan |> md }}
 				</div>
 				<p>{{ if post.tags }} {{ for tag of post.tags }} {{ set page =
-            search.page(`type=tag tag="${tag}"`) }} {{ if page }}
-            <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
-                >#{{ tag }}</a
-            >
-            {{ /if }} {{ /for }} {{ /if }}
+          search.page(`type=tag tag="${tag}"`) }} {{ if page }}
+          <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
+              >#{{ tag }}</a
+          >
+          {{ /if }} {{ /for }} {{ /if }}
 				</p>
 			</div>
 			{{ if post.coverImg }}
@@ -48,4 +70,4 @@ layout: layout/content.vto
 			{{ /if }}
 		</div>
 		{{ /for }}
-				<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
+{{ /for }}

@@ -1,0 +1,50 @@
+---
+title: Arsip Jurnal Kusaeni
+layout: layout/content.vto
+---
+
+<div class="index_h1">
+<h1>Arsip Jurnal</h1>
+<p>Berlangganan lewat <a href="/subs">email</a> atau <a href="/feed.xml">RSS</a></p>
+<div id="search"></div>
+</div>
+
+		{{ for post of search.pages("type=post", "date=desc") }}
+		<div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
+			<div class="postmeta">
+				<time datetime="{{ post.date |> date('DATETIME') }}">
+					<div class="tgl">
+    			  		{{ post.date |> date('id_tgl') }}
+					</div>
+					<div class="bln">
+						{{ post.date |> date('id_bln') }}
+					</div>
+					<div class="thn">
+						{{ post.date |> date('id_thn') }}
+					</div>
+  				</time>
+			</div>
+			<div class="postitle">
+				<h2>
+					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
+          				{{ post.title || post.url }}
+        			</a>
+				</h2>
+				<div class="post_ringkasan">
+				{{ post.ringkasan |> md }}
+				</div>
+				<p>{{ if post.tags }} {{ for tag of post.tags }} {{ set page =
+            search.page(`type=tag tag="${tag}"`) }} {{ if page }}
+            <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
+                >#{{ tag }}</a
+            >
+            {{ /if }} {{ /for }} {{ /if }}
+				</p>
+			</div>
+			{{ if post.coverImg }}
+			<div class="postcover">
+			<img class="postCoverImg" src={{ post.coverImg }} />
+			</div>
+			{{ /if }}
+		</div>
+		{{ /for }}

@@ -27,6 +27,7 @@ tags:
   - horor
   - Haditha Mohammad
 comment: true
+templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(253, 255, 182, 0.3) 98%) !important;}"
 ---
 

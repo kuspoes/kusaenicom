@@ -23,6 +23,7 @@ beli: https://www.bukalapak.com/products/s/the-name-the-rose
 dimana: Bukalapak
 kategori: buku
 comment: true
+templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(208, 0, 0, 0.1) 98%) !important;}"
 tags:
   - buku

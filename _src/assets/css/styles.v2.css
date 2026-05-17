@@ -300,6 +300,24 @@ aside.toc_stat {
     margin: 0px;
 }
 
+h2.arsip_tahun {
+    display: flex;
+    align-items: baseline;
+    font-family: var(--sans);
+    font-size: 3rem;
+    font-weight: 800;
+    color: #4a4a4a;
+    margin-bottom: 1rem;
+}
+
+.post-count {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    margin-left: 15px;
+    align-self: center;
+}
+
 nav.toc {
     margin: 3em 0 0;
     font: normal 80% var(--sans);
@@ -1986,6 +2004,13 @@ a.related_post_link {
 
     .index_h1 {
         width: 100%;
+    }
+
+    span.jumlah {
+        color: var(--col_gray);
+        font-size: 0.7em;
+        font-weight: 500;
+        font-family: var(--sans);
     }
 
     .header-anchor {
