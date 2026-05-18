@@ -43,6 +43,7 @@
     "npm:markdown-it-deflist@3.0.0": "3.0.0",
     "npm:markdown-it@14.1.1": "14.1.1",
     "npm:nunjucks@3.2.4": "3.2.4",
+    "npm:pagefind@1.5.2": "1.5.2",
     "npm:prismjs@1.30.0": "1.30.0",
     "npm:prismjs@^1.30.0": "1.30.0",
     "npm:purgecss-from-html@8.0.0": "8.0.0",
@@ -316,6 +317,41 @@
         "fastq"
       ]
     },
+    "@pagefind/darwin-arm64@1.5.2": {
+      "integrity": "sha512-MXpI+7HsAdPkvJ0gk9xj9g541BCqBZOBbdwj9g6lB5LCj6kSV6nqDSjzcAJwvOsfu0fjwvC8hQU+ecfhp+MpiQ==",
+      "os": ["darwin"],
+      "cpu": ["arm64"]
+    },
+    "@pagefind/darwin-x64@1.5.2": {
+      "integrity": "sha512-IojxFWMEJe0RQ7PQ3KXQsPIImNsbpPYpoZ+QUDrL8fAl/O27IX+LVLs74/UzEZy5uA2LD8Nz1AiwKr72vrkZQw==",
+      "os": ["darwin"],
+      "cpu": ["x64"]
+    },
+    "@pagefind/freebsd-x64@1.5.2": {
+      "integrity": "sha512-7EVzo9+0w+2cbe671BtMj10UlNo83I+HrLVLfRxO731svHRJKUfJ/mo05gU14pe9PCfpKNQT8FS3Xc/oDN6pOA==",
+      "os": ["freebsd"],
+      "cpu": ["x64"]
+    },
+    "@pagefind/linux-arm64@1.5.2": {
+      "integrity": "sha512-Ovt9+K35sqzn8H3ZMXGwls4TD/wMJuvRtShHIsmUQREmaxjrDEX7gHckRCrwYJ4XE1H1p6HkLz3wukrAnsfXQw==",
+      "os": ["linux"],
+      "cpu": ["arm64"]
+    },
+    "@pagefind/linux-x64@1.5.2": {
+      "integrity": "sha512-V+tFqHKXhQKq/WqPBD67AFy7scn1/aZID00ws4fSDd+1daSi5UHR9VVlRrOUYKxn3VuFQYRD7lYXdZK1WED1YA==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@pagefind/windows-arm64@1.5.2": {
+      "integrity": "sha512-hN9Nh90fNW61nNRCW9ZyQrAj/mD0eRvmJ8NlTUzkbuW8kIzGJUi3cxjFkEcMZ5h/8FsKWD/VcouZl4yo1F7B6g==",
+      "os": ["win32"],
+      "cpu": ["arm64"]
+    },
+    "@pagefind/windows-x64@1.5.2": {
+      "integrity": "sha512-Fa2Iyw7kaDRzGMfNYNUXNW2zbL5FQVDgSOcbDHdzBrDEdpqOqg8TcZ68F22ol6NJ9IGzvUdmeyZypLW5dyhqsg==",
+      "os": ["win32"],
+      "cpu": ["x64"]
+    },
     "@types/nunjucks@3.2.6": {
       "integrity": "sha512-pHiGtf83na1nCzliuAdq8GowYiXvH5l931xZ0YEHaLMNFgynpEqx+IPStlu7UaDkehfvl01e4x/9Tpwhy7Ue3w=="
     },
@@ -492,6 +528,19 @@
         "a-sync-waterfall",
         "asap",
         "commander@5.1.0"
+      ],
+      "bin": true
+    },
+    "pagefind@1.5.2": {
+      "integrity": "sha512-XTUaK0hXMCu2jszWE584JGQT7y284TmMV9l/HX3rnG5uo3rHI/uHU56XTyyyPFjeWEBxECbAi0CaFDJOONtG0Q==",
+      "optionalDependencies": [
+        "@pagefind/darwin-arm64",
+        "@pagefind/darwin-x64",
+        "@pagefind/freebsd-x64",
+        "@pagefind/linux-arm64",
+        "@pagefind/linux-x64",
+        "@pagefind/windows-arm64",
+        "@pagefind/windows-x64"
       ],
       "bin": true
     },
@@ -704,6 +753,7 @@
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/media_types.ts": "ede0e4fc3e86e563b38e66d765ef5508d35bef4fecfa552724d9ef1a31486747",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/minify_html.ts": "1bd91f0ad315edafb77b2e67eef2be028fca2d9d0d284afdad0b8d3ee3a547d7",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/nunjucks.ts": "55e88a22192b3d87ac4cde3dcb3fe23db610bc4f7e373c1ca6df9610aa2ac632",
+    "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/pagefind.ts": "4506450b552994e449a5f4482c63d89f0174bc470b54b2d0617324e884531b34",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/path.ts": "173ff2317c7a2efefb79aa51e09a6b2a6618a705c802c7fe24c912a50afb0818",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/prism-autoload/autoload.ts": "024fccae1d9c0f9bc12697efd44933e15b2ec0db0683d63381f9ad4609ac10a6",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/deps/prism.ts": "ea44048e89dbf7b9b74d8ec67c4bddef5663a360976aec9bee4cfa257346e279",
@@ -736,6 +786,7 @@
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/modify_urls.ts": "ddead1740f1c38a692586065e4e770085c9697cd103ab8865c260841f16010d8",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/modules.ts": "4e177c0ffe972b9deef10db2bf0ae52b405418af4dbac03db9e7ffbd6a3ec6ae",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/nunjucks.ts": "9ee0f49cba6ff6d1033587ea6052e28bc61f596adea6ce482fc120f689e3a92b",
+    "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/pagefind.ts": "f2d62095c34fae4653a3afda09ed6f6a61f7ff1f8d30f47c4e864af4400c4cd4",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/paginate.ts": "5ed0524fc0a69eb75142abd2ade37d9ff8f1e31516fdafb7a3676532b5f2db63",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/prism.ts": "06f1f120b32e33842a75ad9a4027679fa2166847dab3562b4ecd7d2ea3a7c5fa",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/plugins/purgecss.ts": "c90d540903b589b3a700196bbc05c9a428c91abaea7238e41f6fcd8f38dcd2d4",

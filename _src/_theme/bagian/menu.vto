@@ -3,8 +3,8 @@
 		<a href="/" class="kusaeni"><img class="kuslogo" src="/assets/img/kusaeni.png" alt="kusaeni" image-size></a>
 	</div>
 	<div class="menu">
-	    {{ if ["jurnal", "baca", "foto", "tentang"].some(kata => url.includes(kata)) }}
-		<a href="/arsip">arsip</a>
+	    {{ if ["baca", "foto", "tentang"].some(kata => url.includes(kata)) }}
+		<a href="/arsip">arsip</a>  
 		{{ /if }}
 		<a href="/baca">baca</a>
 		<a href="/foto">foto</a>

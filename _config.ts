@@ -12,7 +12,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import inline from "lume/plugins/inline.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-//import pagefind from "lume/plugins/pagefind.ts";
+import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import imageSize from "lume/plugins/image_size.ts";
 
@@ -87,6 +87,14 @@ site
   .ignore("README.md");
 
 if (!isDev) {
+  site.use(pagefind({
+    ui: {
+      containerId: "search",
+      showImages: false,
+      showEmptyFilters: true,
+      resetStyles: true,
+    },
+  }));
   site.use(inline()).use(
     minifyHTML({
       extensions: [".html", ".css"],
