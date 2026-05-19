@@ -1,0 +1,88 @@
+@font-face {
+    font-display: swap;
+    font-family: DMSerif;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: DMSerif;
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url("/assets/fonts/DMSerif/DMSerifDisplay-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-RegularItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-BoldItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-MediumItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-RegularItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-SemiBold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Anko";
+    src: url("/assets/fonts/Anko/Anko-SemiBoldItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

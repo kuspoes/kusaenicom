@@ -9,7 +9,7 @@ ringkasan: 'Buku yang sudah dan sedang dibaca'
 {{ for buku of search.pages("buku", "date=desc") }}
     <div class="item_buku">
         <a href="{{ buku.url }}">
-            <img class="item_cover" src="{{ buku.coverImg }}" width="150" height="240" alt="{{ buku.title }}" loading="lazy" fetchpriority="high">
+            <img class="item_cover fuck" src="{{ buku.coverImg }}" alt="{{ buku.title }}" loading="lazy" fetchpriority="high" image-size>
         </a>
     </div>
 {{ /for }}
