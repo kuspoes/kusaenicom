@@ -83,6 +83,7 @@ body {
     margin-top: -70px;
     font-size: 0.75em;
     font-family: var(--sans);
+    font-weight: 350;
     line-height: 1.1;
     padding-left: 10px;
     margin-bottom: 1em;
@@ -697,6 +698,7 @@ span.ter,
 .relasi_meta p {
     width: auto;
     font-family: var(--sans);
+    font-weight: 350;
     line-height: 1.2;
     font-size: 0.8em;
 }
@@ -985,6 +987,7 @@ i,
 em {
     font-style: italic;
     font-family: var(--serif);
+    font-weight: 300;
 }
 
 b,

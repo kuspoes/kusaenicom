@@ -83,6 +83,6 @@
     font-family: "Anko";
     src: url("/assets/fonts/Anko/Anko-SemiBoldItalic.woff") format("woff");
     font-style: italic;
-    font-weight: normal;
+    font-weight: bold;
     text-rendering: optimizeLegibility;
 }
