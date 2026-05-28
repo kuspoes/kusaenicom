@@ -1562,12 +1562,14 @@ blockquote:after {
 
 blockquote:before {
     content: "“";
+    font-family: Georgia, Palatino, "Palatino Linotype", serif;
     left: -5rem;
     top: -2rem;
 }
 
 blockquote:after {
     content: "”";
+    font-family: Georgia, Palatino, "Palatino Linotype", serif;
     right: -5rem;
     bottom: 2rem;
 }
@@ -1801,6 +1803,46 @@ a.related_post_link {
 .postlist:hover {
     background-color: rgba(224, 159, 62, 0.1);
     border-radius: 10px;
+}
+
+/* Galeri dan masonry */
+.masonry-grid.delapan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    width: 100%;
+}
+
+.masonry-grid.delapan a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0;
+}
+
+.masonry-grid.delapan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.masonry-grid.delapan a.pfed:hover {
+    text-decoration: none;
+}
+
+.margin2 {
+    margin-top: 4em;
+}
+
+@media (max-width: 600px) {
+    .masonry-grid.delapan {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+    }
 }
 
 @media only screen and (max-width: 899px) {

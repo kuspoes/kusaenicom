@@ -3,6 +3,8 @@ title: kusaeni
 layout: layout/content.vto
 ---
 
+
+<br />
 <div class="index_h1">
 <h1>Jurnal</h1>
 <p>Berlangganan lewat <a href="/subs">email</a> atau <a href="/feed.xml">RSS</a></p>
@@ -80,4 +82,18 @@ layout: layout/content.vto
 		</div>
 		{{ /for }}
 		<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
+</div>
+
+<div class="index_h1 margin2">
+<h1>Pixelfed</h1>
+<p><i>follow me</i> <a href="https://pixelfed.social/poes" target="_blanks">@poes@pixelfed.social</a></p>
+</div>
+<div class="content">
+<div class="masonry-grid delapan">
+    {{ for photo of pixelfed.slice(0,8) }}
+    <a href="{{ photo.link }}" class="pfed">
+      <img src="{{ photo.thumb }}" alt="{{ photo.title }}" class="fuck" image-size>
+    </a>
+  {{ /for }}
+</div>
 </div>

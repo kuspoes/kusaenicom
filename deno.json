@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@mikaelporttila/rss": "jsr:@mikaelporttila/rss@^1.1.3",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts",
     "prismjs": "npm:prismjs@^1.30.0",

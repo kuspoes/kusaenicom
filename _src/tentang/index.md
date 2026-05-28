@@ -29,6 +29,8 @@ style: "tentang.css"
             foto - foto hasil <em>hunting landscape</em>
             . Anda wajib <a class="italic" href="https://instagram.com/kusaeni">follow</a>! ya.
         </li>
+        <li><b>Pixelfed</b>, ini mirip Instagram tapi ter-desentralisasi. FOMO saja punya akun disini, tapi karena ane juga malas update Instagram jadi beberapa foto akan di<i>upload</i> kesini. Ikuti saya dengan mengunjungi <a href="https://pixelfed.social/poes" target="_blanks">@poes@pixelfed.social</a>.
+        </li>
         <li><b>Facebook</b>, karena akun Instagram harus tertaut ke
             akun Facebook membuat saya masih memiliki
             akun ini. Tapi saat ini <a href="https://facebook.com/kusaeni">sangat tidak aktif</a>. Sudah saya non-aktifkan.
