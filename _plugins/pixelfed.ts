@@ -1,4 +1,9 @@
-// scripts/fetch-pixelfed.ts
+// jalankan dengan deno run -A _plugins/pixelfed.ts
+// script ini tidak jalan otomatis, jadi jalankan manual sebelum build
+// ini akan fetch atom dan simpan URL media ke dalam file pixelfed.json
+// bisa dipanggil dengan lume sebagai shared data.
+// tapi karena json, maka manggilnya lebih aman pakai java/typescript
+// contoh {{ for photos of pixelfed }} {{ photos.url }} {{ /for }}
 
 interface PixelfedPhoto {
   url: string;
@@ -13,7 +18,7 @@ async function fetchAndSave() {
   const outputPath = "./_src/_data/pixelfed.json";
   const limit = 9;
 
-  console.log("📡 Fetching from Pixelfed Atom feed...");
+  console.log("📡 Ambil data RSS/Atom dari Pixelfed...");
 
   try {
     await Deno.mkdir("./_src/_data", { recursive: true });
@@ -27,7 +32,6 @@ async function fetchAndSave() {
     for (let i = 1; i < entries.length && photos.length < limit; i++) {
       const entry = entries[i];
 
-      // Ambil URL full dari media:content
       const mediaMatch = entry.match(/<media:content\s+url="([^"]+)"/);
       const linkMatch = entry.match(/<link[^>]+href="([^"]+)"/);
       const titleMatch = entry.match(/<title>([^<]+)<\/title>/);
@@ -36,21 +40,21 @@ async function fetchAndSave() {
       if (mediaMatch) {
         const fullUrl = mediaMatch[1];
 
-        // 🔧 Generate thumbnail URL (tambah _thumb.jpg)
         let thumbUrl = fullUrl;
 
-        // Cek ekstensi file
         if (fullUrl.match(/\.(jpg|jpeg|png|webp)/i)) {
-          // Hapus ekstensi yang ada, tambah _thumb.jpg
+          // pixelfed kasih gambar full reslusi ini bini LCP bakal teriak - teriak karena
+          // akses situs makin lambat, tapi ada rahasia kalo pixelfed kasih gambar versi thumbnail
+          // jadi perlu nambah _thumb di akhir nama file.
+          // soal LCP bodo amat lah, nanti bakalan dicache sama cloudflare
           thumbUrl = fullUrl.replace(/\.(jpg|jpeg|png|webp)$/i, "_thumb.jpg");
         } else {
-          // Kalau ga ada ekstensi, langsung tambah _thumb.jpg
           thumbUrl = fullUrl + "_thumb.jpg";
         }
 
         photos.push({
-          url: fullUrl, // Full size untuk lightbox
-          thumb: thumbUrl, // Thumbnail untuk grid
+          url: fullUrl,
+          thumb: thumbUrl,
           link: linkMatch?.[1] ?? "#",
           title: titleMatch?.[1]?.trim() ?? "Pixelfed photo",
           published: updatedMatch?.[1] ?? new Date().toISOString(),
@@ -59,10 +63,10 @@ async function fetchAndSave() {
     }
 
     await Deno.writeTextFile(outputPath, JSON.stringify(photos, null, 2));
-    console.log(`✅ Saved ${photos.length} photos to ${outputPath}`);
+    console.log(`✅ Simpan ${photos.length} photos ke ${outputPath}`);
 
     if (photos.length > 0) {
-      console.log("\n📸 Preview:");
+      console.log("\n📸 Hasilnya:");
       photos.forEach((p, i) => {
         console.log(`  ${i + 1}. ${p.title.substring(0, 40)}`);
         console.log(`     Full: ${p.url.substring(0, 80)}...`);
@@ -70,7 +74,7 @@ async function fetchAndSave() {
       });
     }
   } catch (error) {
-    console.error("❌ Failed:", error);
+    console.error("❌ Gawat! : ", error);
     Deno.exit(1);
   }
 }
