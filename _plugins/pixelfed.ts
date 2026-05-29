@@ -1,6 +1,7 @@
 // jalankan dengan deno run -A _plugins/pixelfed.ts
 // script ini tidak jalan otomatis, jadi jalankan manual sebelum build
 // ini akan fetch atom dan simpan URL media ke dalam file pixelfed.json
+// plugin ini hanya akan mengambil data gambar saja, secara pixelfed ga mau tampilkan video di atom feed mereka
 // bisa dipanggil dengan lume sebagai shared data.
 // tapi karena json, maka manggilnya lebih aman pakai java/typescript
 // contoh {{ for photos of pixelfed }} {{ photos.url }} {{ /for }}
@@ -11,6 +12,16 @@ interface PixelfedPhoto {
   link: string;
   title: string;
   published: string;
+}
+
+function cleanTitle(rawTitle: string): string {
+  if (!rawTitle) return "Pixelfed photo";
+
+  return rawTitle
+    .replace(/[\r\n]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/&amp;/g, "&")
+    .trim();
 }
 
 async function fetchAndSave() {
@@ -43,7 +54,7 @@ async function fetchAndSave() {
         let thumbUrl = fullUrl;
 
         if (fullUrl.match(/\.(jpg|jpeg|png|webp)/i)) {
-          // pixelfed kasih gambar full reslusi ini bini LCP bakal teriak - teriak karena
+          // pixelfed kasih gambar full reslusi ini bikin LCP bakal teriak - teriak karena
           // akses situs makin lambat, tapi ada rahasia kalo pixelfed kasih gambar versi thumbnail
           // jadi perlu nambah _thumb di akhir nama file.
           // soal LCP bodo amat lah, nanti bakalan dicache sama cloudflare
@@ -52,11 +63,14 @@ async function fetchAndSave() {
           thumbUrl = fullUrl + "_thumb.jpg";
         }
 
+        const rawTitle = titleMatch?.[1]?.trim() ?? "Pixelfed photo";
+        const cleanTitleText = cleanTitle(rawTitle);
+
         photos.push({
           url: fullUrl,
           thumb: thumbUrl,
           link: linkMatch?.[1] ?? "#",
-          title: titleMatch?.[1]?.trim() ?? "Pixelfed photo",
+          title: cleanTitleText,
           published: updatedMatch?.[1] ?? new Date().toISOString(),
         });
       }

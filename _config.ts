@@ -15,6 +15,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import imageSize from "lume/plugins/image_size.ts";
+import gzip from "lume/plugins/gzip.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
@@ -84,7 +85,8 @@ site
       sort: "date=desc",
     }),
   )
-  .ignore("README.md");
+  .ignore("README.md")
+  .use(gzip());
 
 if (!isDev) {
   site.use(pagefind({
@@ -126,27 +128,6 @@ site.use(
     },
   }),
 );
-
-// don't us this helper
-site.helper(
-  "gambar",
-  function (imgSrc: string, imgAlt: string) {
-    const tr: string = "?tr=bl-30,q-50";
-    return `
-        <img
-        src="${imgSrc}${tr}"
-        data-src="${imgSrc}"
-        alt="${imgAlt}"
-        class="lazy-image"
-        />
-      `;
-  },
-  {
-    type: "tag",
-  },
-);
-
-// experimental
 
 site.helper(
   "relasi",
