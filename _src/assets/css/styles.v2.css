@@ -375,12 +375,11 @@ nav.toc {
 .subscribe h4 {
     margin: 1em 1.3em;
     font-family: Georgia, serif;
-    font-style: italic;
     font-weight: 500;
 }
 
 .subscribe .form_ {
-    margin: 1em 2em;
+    margin: -1.5em 2em 1em 2em;
     font-size: 0.85em;
 }
 
@@ -440,7 +439,6 @@ input.inline:active {
 
 .subs_info p {
     font-family: var(--sans);
-    color: #4a5759;
     font-size: 0.85em;
     line-height: 1;
     padding: 1em;
