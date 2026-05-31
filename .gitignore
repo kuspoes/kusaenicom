@@ -2,6 +2,7 @@ _site
 .DS_Store
 .env
 _sandbox
+test.md
 
 # wrangler files
 .wrangler

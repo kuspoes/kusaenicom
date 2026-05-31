@@ -6,7 +6,9 @@ date: 2020-08-17
 favorit: false
 kategori: buku
 ---
-
+<div class="content">
+<h4>Tentang Rating</h4>
+</div>
 <p>
     Saya sudah suka membaca sejak kecil, apa saja dibaca mulai dari koran pembungkus makanan, buku - buku pelajaran
     (kecuali pelajaran berhitung), novel, komik, dan lain - lain.

@@ -1,8 +1,8 @@
 {
   "imports": {
     "@mikaelporttila/rss": "jsr:@mikaelporttila/rss@^1.1.3",
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/",
-    "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/",
+    "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts",
     "prismjs": "npm:prismjs@^1.30.0",
     "markdown-plugins/": "https://cdn.jsdelivr.net/gh/lumeland/markdown-plugins@0.10.0/"
   },
@@ -41,7 +41,7 @@
   ],
   "lint": {
     "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@0302e25e651b1c816f905d74ee2caefc58cfebec/lint.ts"
+      "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/lint.ts"
     ],
     "rules": {
       "exclude": [
@@ -78,7 +78,8 @@
   "lock": true,
   "allowScripts": {
     "deny": [
-      "npm:sharp"
+      "npm:sharp",
+      "npm:@parcel/watcher"
     ]
   }
 }

@@ -37,8 +37,8 @@
                <dd>{{ format }}</dd>
                <dt>ISBN</dt>
                <dd>{{ isbn }}∷ {{ tahun }}</dd>
-               <dt>Rating</dt>
-               <dd><a href="/baca/rating">{{ rating }} dari 5</a></dd>
+               <dt><a href="/baca/rating">Rating</a></dt>
+               <dd>{{ comp.bintang({ bintang: rating }) }} </dd>
                <dt>Beli dimana?</dt>
                <dd><a href="{{ beli }}" target="_blank">{{ dimana }}</a></dd>
             </dl>
