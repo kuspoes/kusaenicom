@@ -25,11 +25,11 @@ tags:
   - Dan Brown
 comment: true
 templateEngine: vto,md
-draft: true
+draft: false
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(118, 27, 13, 0.1) 98%) !important;}"
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KT6G3ZM23ED73F7FDZX8W21G
+  real: https://sok.egois.org/@poes/statuses/01KT6G3ZM23ED73F7FDZX8W21G
 ---
 
 <span class="caps">R</span>obert Langdon Profesor Religious Iconology and Symbology dari Universitas Havard sedang berada di Praga Cekoslowakia menemani kekasihnya Prof. Katherine Solomon yang diundang untuk mengisi seminar oleh ilmuwan terkemuka Brigita Gessner. Katherine memaparkan tentang penelitiannya terkait ilmu *noetic* (ilmu yang membahas tentang supranatural atau klenik perdukunan tanpa melibatkan entitas pihak ketiga seperti iblis dan sejenisnya), khususnya pembahasan tentang *human consciousness* atau kesadaran sebuah jiwa diluar kungkungan tubuh fisiknya. Setelah selesai seminar, Gessner mengajak Katherine ngobrol di pub Hotel tempatnya menginap. 

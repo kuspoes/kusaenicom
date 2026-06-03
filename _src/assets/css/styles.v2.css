@@ -29,10 +29,6 @@ body {
     position: relative;
 }
 
-html {
-    //background-color: rgba(255, 243, 176, 0.1);
-}
-
 body {
     font-family: var(--serif);
     font-size: clamp(16px, 2.5vw + 0.5rem, 18px);
