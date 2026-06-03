@@ -48,13 +48,13 @@ Di Amerika, *editor* dari naskah buku Katherine bernama Jonas Faukmann diculik o
 
 Setelah bersembunyi di apartemen Sasha, Langdon kemudian pamit untuk pergi mencari Katherine apalagi sebelumnya Langdon mendapatkan surat kaleng yang menyatakan bahwa Katherine telah ditangkap dan ditahan di Petřín Tower. Langdon meminta Sasha menunggu Harris di apartemen, sementara dia keluar mencari Katherine.
 
-Pavel terus mengejar Langdon dari Petřín Tower sampai kemudian ke Klementium, dalam pelariannya Langdon bisa memecahkan sandi rahasia yang sempat dikirim Katherine ke email Langdon sebelum dia menghilang sehingga Langdon yakin bisa menemukan Katherine di Klementium. Setelah bertemu dengan Katherine namun mereka berdua tetap harus menghindari kejaran Pavel yang bersenjata api dan bernafsu membunuh Langdon. Namun untungnya Langdon dan Katherine berhasil diselamatkan oleh tentara Marinir US yang dikirim oleh Duta Besar US Heide Nagel.
+Pavel terus mengejar Langdon dari Petřín Tower sampai kemudian ke Klementium, dalam pelariannya Langdon bisa memecahkan sandi rahasia yang sempat dikirim Katherine ke email Langdon sebelum dia menghilang sehingga Langdon yakin bisa menemukan Katherine di Klementium. Setelah bertemu dengan Katherine mereka berdua tetap harus menghindari kejaran Pavel yang bersenjata api dan bernafsu membunuh Langdon. Namun untungnya Langdon dan Katherine berhasil diselamatkan oleh tentara Marinir US yang dikirim oleh Duta Besar US Heide Nagel.
 
 Threshold sendiri saat ini sedang diincar oleh seorang misterius bernama Golem yang sebelumnya telah membunuh Gessner, Janáček, dan Harris. Siapakah si Golem ini? kenapa dia membunuhi mereka dan apa hubungan naskah Katherine dengan program Threshold?
 
 #### Membosankan
 
-Ane sudah membaca semua serie novel Dan Brown dengan tokoh Robert Langdon ini, dari Da Vinci Code ke Angel's and Demon's kemudian The Lost Symbol dilanjutkan Inferno dan Origin. Hampir semua memiliki plot yang sama persis, hanya karakter musuh dan lokasi kejadian saja yang membedakan. Secara garis besar plotnya seperti ini:
+Ane sudah membaca semua seri novel Dan Brown dengan tokoh Robert Langdon ini, dari Da Vinci Code ke Angel's and Demon's kemudian The Lost Symbol dilanjutkan Inferno dan Origin. Hampir semua memiliki plot yang sama persis, hanya karakter musuh dan lokasi kejadian saja yang membedakan. Secara garis besar plotnya seperti ini:
 
 1. Langdon diundang untuk menghadiri seminar sebagai pembicara tentang simbol - simbol religius, dia akan menjelaskan soal simbol - simbol pagan terutama dalam ke-Kristenan,
 2. Pengundang adalah tokoh prominen memiliki pengaruh kuat dalam pemerintahan, organisasi, atau terkemuka karena keilmuannya. Si tokoh ini kemudian mati dibunuh orang dan atau mendapatkan ancaman pembunuhan atau ancaman akan dibuka aib/fakta yang berpotensi membuat geger khalayak banyak (kita sebut Langdon Level Threats),
