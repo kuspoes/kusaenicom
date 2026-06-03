@@ -2,7 +2,7 @@
     --sans:
         -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
         helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    --serif: Charter, Georgia, Anko, "Palatino Linotype", "Palatino", Times, serif;
+    --serif: Georgia, Charter, "Palatino Linotype", "Palatino", Times, serif;
     --salis: Georgia, "Palatino Linotype", Palatino, serif;
     --dm: "DMSerif", Georgia, serif;
     --col_body: #000000;
@@ -30,27 +30,21 @@ body {
 }
 
 html {
-    background-color: rgba(255, 243, 176, 0.1);
+    //background-color: rgba(255, 243, 176, 0.1);
 }
 
 body {
     font-family: var(--serif);
-    font-size: clamp(16px, 2.5vw + 0.5rem, 20px);
-    font-weight: 300;
+    font-size: clamp(16px, 2.5vw + 0.5rem, 18px);
+    font-weight: 400;
     color: var(--col_body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     /* background-color: rgba(255, 243, 176, 0.1); */
     margin-top: 0;
-    background:
-        radial-gradient(rgba(62, 39, 35, 0.16) 1px, transparent 1px),
-        linear-gradient(rgba(255, 243, 176, 0.15), rgba(255, 243, 176, 0.15)),
-        linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-    background-size:
-        30px 30px,
-        auto,
-        auto;
+    background: radial-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 1px), #ffffff;
+    background-size: 30px 30px;
     background-attachment: fixed;
 }
 
@@ -62,7 +56,7 @@ body {
 
 .page {
     margin: 4em auto;
-    line-height: clamp(26px, 1.6rem + 0.3vw, 30px);
+    line-height: clamp(26px, 1.6rem + 0.3vw, 27px);
 }
 
 .page p,
@@ -183,8 +177,8 @@ body {
 }
 
 .post_ringkasan {
-    /*pakai ini jika font Literata */
-    letter-spacing: -1px;
+    /*pakai ini jika font Literata
+    letter-spacing: -1px;*/
     font-size: 0.98em;
 }
 
@@ -224,6 +218,14 @@ body {
 
 .postcover img.postCoverImg {
     width: 80px;
+}
+
+.caps {
+    float: left;
+    font-size: 4rem;
+    line-height: 0.8;
+    padding-right: 8px;
+    font-family: var(--dm);
 }
 
 aside {
@@ -985,7 +987,6 @@ i,
 em {
     font-style: italic;
     font-family: var(--serif);
-    font-weight: 300;
 }
 
 b,
