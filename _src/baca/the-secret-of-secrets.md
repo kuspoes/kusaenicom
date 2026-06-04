@@ -3,7 +3,7 @@ type: post
 layout: layout/baca.vto
 title: "The Secret of Secret's"
 date: 2026-06-02
-ringkasan: "Novel fiksi sains yang jalan ceritanya biasa saja tapi bisa bikin otakmu ngebul"
+ringkasan: "Novel fiksi sains yang jalan ceritanya biasa saja cenderung membosankan, tapi bisa bikin otakmu ngebul karena pusing atau kecewa."
 keywords: "Origin, Dan Brown, Novel"
 coverImg: https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/The_Secret_of_Secrets_(Brown_novel)_ljPVlBvYL.jpg
 og_images: https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/The_Secret_of_Secrets_(Brown_novel)_ljPVlBvYL.jpg
@@ -63,7 +63,7 @@ Ane sudah membaca semua seri novel Dan Brown dengan tokoh Robert Langdon ini, da
 5. Biar makin seru dan menegangkan maka si musuh akan mengancam meledakkan bom yang bisa membunuh banyak orang atau akan mempublish video yang berpotensi bikin *chaos*. Langdon Level Threat's yang sangat *text book*,
 6. Ternyata musuhnya masih punya hubungan pribadi dengan si korban.
 
-Plot - plot ini terus dipakai sebagai bumbu utama dalam novel seri Robert Langdon, tidak menjadi masalah buat ane yang penting jalan cerita menarik. Namun itu berlaku sebelum novel [Origin](/baca/origin), meskipun tema dari novel seri Robert Langdon ini rata - rata tentang benturan antara sains/ilmu pengetahuan dan agama (gereja), namun di Origin konflik makin dijelaskan bahwa seolah - olah sains (baca: akal) lebih utama dibandingkan dogma agama.
+Plot - plot ini terus dipakai sebagai bumbu utama dalam novel seri Robert Langdon, sebenarnya tidak menjadi masalah buat ane yang penting jalan cerita menarik. Namun itu berlaku sebelum novel [Origin](/baca/origin), meskipun tema dari novel seri Robert Langdon ini rata - rata tentang benturan antara sains/ilmu pengetahuan dan agama (gereja), namun di Origin konflik makin dijelaskan bahwa seolah - olah sains (baca: akal) lebih utama dibandingkan dogma agama.
 
 Khusus di novel The Secret of Secret's ini makin jelas penekanannya bahwa akal-lah yang mengatur semesta ini bukan lagi kepercayaan atas adanya Tuhan. Ilmu *noetic* adalah cabang ilmu yang mempelajari hubungan kesadaran manusia dengan tubuh fisiknya. Beberapa hal yang dipelajari seperti *psychic abilites* kemampuan jiwa untuk melakukan penyembuhan sendiri, pengaruh pikiran terhadap materi sekitar, seperti sugesti atau do'a - do'a, intuisi <abbr title="Extrasensory Perception">ESP</abbr> atau kemampuan jiwa untuk bisa merasakan perubahan atau melihat masa depan atau berkomunikasi dengan telepati, dan masih banyak lagi. Hampir mirip dengan klenik atau kemampuan pada dukun pengobatan alternatif atau terapi komplementer.
 
