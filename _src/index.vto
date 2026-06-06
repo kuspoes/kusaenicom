@@ -42,7 +42,7 @@ layout: layout/content.vto
 		</div>
 		{{ /for }}
 
-		{{ for post of search.pages("type=post", "date=desc", 10) }}
+		{{ for post of search.pages("type=post", "date=desc", 6 ) }}
 		<div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
 			<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
