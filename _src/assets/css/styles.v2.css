@@ -4,6 +4,7 @@
         helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     --serif: Georgia, Charter, "Palatino Linotype", "Palatino", Times, serif;
     --salis: Georgia, "Palatino Linotype", Palatino, serif;
+    --sofia: SofiaKus, Georgia, serif;
     --dm: "DMSerif", Georgia, serif;
     --col_body: #000000;
     --col_aside: #495057;
@@ -1287,6 +1288,11 @@ span.footnomer {
     border: none;
 }
 
+.logo .kusaeni {
+    font-family: var(--sofia);
+    font-size: 1.4em;
+}
+
 .menu a {
     padding: 4px 8px;
 }
@@ -1971,6 +1977,10 @@ a.related_post_link {
 
     .kuslogo {
         width: 110px !important;
+    }
+
+    .logo .kusaeni {
+        font-family: var(--sofia);
     }
 
     .kus_avatar {

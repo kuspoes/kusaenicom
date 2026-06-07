@@ -14,3 +14,11 @@
     font-stretch: normal;
     src: url("/assets/fonts/DMSerif/DMSerifDisplay-Italic.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: SofiaKus;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url("/assets/fonts/Sofia/Sofia-Kus_Regular.woff2") format("woff2");
+}
