@@ -24,9 +24,10 @@ comments:
 
 Untuk keperluan menampilkan logo "kusaeni" yang ada di atas halaman ini, sebelumnya ane pakai gambar dengan format `webp` yang ringan, namun seringan apapun ukuran gambar akan jatuh lebih dari 10Kib dan harus memperhatikan [aspek rasio](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_sizing/Aspect_ratios) yang kadang kala membingungkan dan jika salah penanganan akan membuat halaman tidak lolos uji *Core Web Vitals Assessment* terutama di bagian *Best Practise - User Experience*. Oleh karena itu ane putuskan untuk mengatasi masalah ini dengan mengganti *file* gambar dengan *font*.
     
-Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, cukup kecil namun ane ga butuh semua karakter yang tersedia. Setidaknya ada lebih dari 200 karakter yang tersedia dan ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>". Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
+Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, dengan setidaknya ada lebih dari 200 karakter. Ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>". Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
 
 <img class="display:inline; float:left" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.png" image-size>
+<p class="ncaption">Table karakter pada font Sofia (Latin), yang diberi warna biru adalah karakter yang akan dipertahankan.</p>
 
 Untuk melakukan *subsetting* bisa memakai layanan online seperti dari [Font Squirel Web Font Generator](https://www.fontsquirrel.com/tools/webfont-generator) yang memiliki fitur *expert* yang lengkap namun ane akan pakai aplikasi kecil dari Python bernama [FontTools](https://pypi.org/project/fonttools/) yang memiliki fungsi untuk memanipulasi font sekaligus mengkonversinya ke *web font* atau `woff`.
 
@@ -46,6 +47,9 @@ Setelah selesai dan terpasang dengan baik, maka ane mengunduh font Sofia dari Go
 ```shell-session
 $ pyftsubset Sofia-Reguler.ttf --text="kusaeni" --output-file="Sofia-Kus-Regular.ttf"
 ```
+<aside>
+    <code>--text</code> dipakai untuk menentukan karakter apa saja yang dipilih.
+</aside>
 
 Belum sempat meneguk kopi, proses *subsetting* sudah selesai dengan sangat cepat. Ane mendapatkan file baru dengan nama **Sofia-Kus-Regular.ttf** dengan ukuran sekitar 1,9Kib saja. Namun file masih dalam format `ttf` dan ane perlu rubah/konversi ke `woff2` agar maksimal performanya saat dipakai sebagai *webfont*.
 
@@ -62,7 +66,7 @@ Kedua perintah di atas akan menghasilkan file baru bernama **Sofia-Kus-Regular.w
 
 #### Pengaturan Webfont
 
-Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font Sofia-Kus-Regular.woff2 di `/assets/fonts/Sofia/Sofia-Kus-Regular.woff2` dan kemudian panggil dengan CSS.
+Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font `Sofia-Kus-Regular.woff2` di `/assets/fonts/Sofia/Sofia-Kus-Regular.woff2` dan kemudian panggil dengan CSS.
 
 ```CSS
 @font-face {
@@ -74,7 +78,7 @@ Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font
 }
 ```
 
-kemudian di teks yang ingin ane pakaikan font ini tinggal mendaftarkan jenis fontnya.
+Setelah bisa di-*load* oleh `@font-face`, font SofiaKus akan tersedia dan bisa dipergunakan seperti ini
 
 ```css
 div.logo .kusaeni {
