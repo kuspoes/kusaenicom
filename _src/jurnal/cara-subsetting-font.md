@@ -13,8 +13,8 @@ comment: true
 draft: false
 keywords: kusaeni, tutorial, web desain, font
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KTGDTTAVFAJZ1R2SGYYT7HG4
+  real: https://sok.egois.org/@poes/statuses/01KTGDTTAVFAJZ1R2SGYYT7HG4
 ---
 
 *Subsetting font* adalah memilih karakter tertentu di dalam *font table* yang ingin dipertahankan dengan cara menghilangkan atau menghapus karakter - karakter lainnya yang tidak diperlukan. Dalam dunia desain web dan bagi yang mementingkan tentang *page speed* maka *Subsetting font* ini akan membuat ukuran *font* menjadi lebih ramping dan cocok untuk dipakai sebagai *webfont*.
