@@ -3,12 +3,12 @@
   "name": "kusaenicom",
   "compatibility_date": "2026-05-03",
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "assets": {
-    "directory": "_site"
+    "directory": "_site",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
   },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "compatibility_flags": ["nodejs_compat"],
 }
