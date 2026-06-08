@@ -16,6 +16,8 @@ import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import imageSize from "lume/plugins/image_size.ts";
 import gzip from "lume/plugins/gzip.ts";
+import picture from "lume/plugins/picture.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
@@ -47,11 +49,15 @@ site
   .copy("assets", "/assets")
   .copy("well-known", "/.well-known")
   .copy("favicon.ico", "/favicon.ico")
+  .copy("assets/pixelfed", "/pixelfed")
   .use(attributes())
   .use(purgecss())
   .use(base_path())
   .use(nunjucks())
   .use(imageSize())
+  .use(picture())
+  .use(transformImages())
+  .add("/assets/pixelfed")
   .use(
     date({
       formats: {

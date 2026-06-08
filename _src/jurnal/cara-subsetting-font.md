@@ -64,6 +64,9 @@ $ pyftsubset Sofia-Reguler.ttf --text="kusaeni" --flavor="woff2" --output-file="
 ```
 Kedua perintah di atas akan menghasilkan file baru bernama **Sofia-Kus-Regular.woff2**.
 
+<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260608-oktm_1O8Vd_s1M.png" alt="SofiaKus" image-size>
+<p class="ncaption">hasil dari <i>subsetting</i> hanya ada 7 karakter (<i>glyphs</i>) + 1 blank</p>
+    
 #### Pengaturan Webfont
 
 Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font `Sofia-Kus-Regular.woff2` di `/assets/fonts/Sofia/Sofia-Kus-Regular.woff2` dan kemudian panggil dengan CSS.
