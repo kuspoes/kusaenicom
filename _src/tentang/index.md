@@ -7,8 +7,9 @@ templateEngine: vto,md
 style: "tentang.css"
 ---
 
-<div class="kus_pp">
-<img class="kus_avatar" src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-150,q-100/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" image-size>
+<div class="kus_pp h-card">
+        <a class="u-url hilang" rel="me" href="/">kusaeni</a>
+        <img class="kus_avatar u-photo" src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-150,q-100/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" image-size>
 <p>Saya adalah seorang <span class="underline">blogger musiman</span> yang menulis di situs ini dengan penuh ke-tidak-konsistensian.</p>
 
 <p>Saya menulis jika ada keinginan untuk menulis, jika tidak maka kegiatan utama saya adalah makan, tidur, &amp; kadang kala bepergian atau <a href="#fotografi">travelling</a>.</p>
