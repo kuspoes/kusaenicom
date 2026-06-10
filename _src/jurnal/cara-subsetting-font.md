@@ -29,7 +29,12 @@ Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?previ
 <img class="display:inline; float:left" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.png" image-size>
 <p class="ncaption">Table karakter pada font Sofia (Latin), yang diberi warna biru adalah karakter yang akan dipertahankan.</p>
 
-Untuk melakukan *subsetting* bisa memakai layanan online seperti dari [Font Squirel Web Font Generator](https://www.fontsquirrel.com/tools/webfont-generator) yang memiliki fitur *expert* yang lengkap namun ane akan pakai aplikasi kecil dari Python bernama [FontTools](https://pypi.org/project/fonttools/) yang memiliki fungsi untuk memanipulasi font sekaligus mengkonversinya ke *web font* atau `woff`.
+Untuk melakukan *subsetting* bisa memakai layanan online seperti dari [Font Squirel Web Font Generator](https://www.fontsquirrel.com/tools/webfont-generator) yang memiliki fitur *expert* atau (wild and free tools)[https://wildandfreetools.com/font-tools/font-subsetter/] yang lengkap namun ane akan pakai aplikasi kecil dari Python bernama [FontTools](https://pypi.org/project/fonttools/) yang memiliki fungsi untuk memanipulasi font sekaligus mengkonversinya ke *web font* atau `woff`.
+
+<div class="sidebar_notes sebelah_kanan">
+    <p>Ane lebih suka pakai tools dari wild and free tools, lebih mudah daripada font sqiurel. Tapi font squirel lebih lengkap.</p>
+</div>
+
 
 #### Memakai FontTools
 
