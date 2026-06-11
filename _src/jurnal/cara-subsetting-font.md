@@ -71,7 +71,37 @@ Kedua perintah di atas akan menghasilkan file baru bernama **Sofia-Kus-Regular.w
 
 <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260608-oktm_1O8Vd_s1M.png" alt="SofiaKus" image-size>
 <p class="ncaption">hasil dari <i>subsetting</i> hanya ada 7 karakter (<i>glyphs</i>) + 1 blank</p>
-    
+
+Lalu bagaimana dengan opsi *subsetting* yang lain seperti misalnya ingin ambil *Basic Latin* atau tambahan karakter tertentu?
+
+Bisa dengan CLI atau bikin *script* Python seperti ini
+
+<div class="sidebar_notes sebelah_kiri" style="margin-top: 5em">
+    <p>di script python daftar karakter yang di-subset diatur dengan kode Unicode. Lebih lengkap bisa melihat daftarnya di <a href="https://symbl.cc/en/unicode-table/#basic-latin">Unicode Table</a>.</p>
+</div>
+
+```python
+from fontTools import subset
+
+# opsi dan daftar unicode dari font yang ingin disubset
+options = subset.Options()
+options.flavor = "woff2"
+unicode_list = "U+0020-007F"
+
+# load font asli dan persiapkan subsetter
+font = subset.load_font("Sofia-Regular.ttf", options)
+subsetter = subset.Subsetter(options=options) 
+
+# mulai subset
+subsetter.populate(unicodes=subset.parse_unicodes(unicodes_list))
+subsetter.subset(font)
+
+font.save("SofiaKus-Regular.woff2")
+font.close()
+```
+
+Untuk opsi lebih lengkap sila kunjungi halaman [dokumentasi python fonttools](https://fonttools.readthedocs.io/en/latest/subset/index.html).
+
 #### Pengaturan Webfont
 
 Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font `Sofia-Kus-Regular.woff2` di `/assets/fonts/Sofia/Sofia-Kus-Regular.woff2` dan kemudian panggil dengan CSS.
