@@ -2,10 +2,10 @@
     --sans:
         -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
         helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    --serif: Georgia, Charter, "Palatino Linotype", "Palatino", Times, serif;
+    --serif: Charter, Georgia, "Palatino Linotype", "Palatino", Times, serif;
     --salis: Georgia, "Palatino Linotype", Palatino, serif;
     --sofia: SofiaKus, Georgia, serif;
-    --dm: "DMSerif", Georgia, serif;
+    --dm: DMSerif, Georgia, serif;
     --col_body: #000000;
     --col_aside: #495057;
     --col_asidebg_lawas: #eaf4f4;
@@ -32,7 +32,7 @@ body {
 
 body {
     font-family: var(--serif);
-    font-size: clamp(16px, 2.5vw + 0.5rem, 18px);
+    font-size: clamp(18px, 2.5vw + 0.5rem, 18px);
     font-weight: 400;
     color: var(--col_body);
     -webkit-font-smoothing: antialiased;
