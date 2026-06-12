@@ -1590,8 +1590,10 @@
     "https://deno.land/x/xml@7.0.4/stringify.ts": "f604d3d88b8bdaff11dbc9d57a6e98fd9b353e3bfbafcaa3f421e6b470ea0e02",
     "https://deno.land/x/xml@7.0.4/wasm_xml_parser/wasm_xml_parser.js": "7a75f1be12625a3e7f8368b880aad3803d04dfc547c89236f3f4dde3813c5b36",
     "https://esm.sh/prismjs@1.29.0/components/prism-bash.js": "3b9e13a7c4d6c4f003ed7cc5035c567aef39720dc31c2ae147d05764ecbd399d",
+    "https://esm.sh/prismjs@1.29.0/components/prism-python.js": "92ec8e9563798481f4d376b47d0faf18c33ae7d4c779ea7abc150ccab585490f",
     "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js": "25191f8c4f71806515f46cb0eb40605704d7ef3a676b2bb5c0c7eb5118d188fc",
     "https://esm.sh/prismjs@1.29.0/denonext/components/prism-bash.mjs": "53de140b7f10e7b06387d3e8734487311c839ace770b0a25a1d3d68ee420738b",
+    "https://esm.sh/prismjs@1.29.0/denonext/components/prism-python.mjs": "bdbb464cdb2ce1992265d3383dbce068bbb70c4743b20e5c1548a35a58dc594a",
     "https://esm.sh/prismjs@1.29.0/denonext/components/prism-shell-session.mjs": "2f7f98eaee2184f717206f8cd58f64d414ef7251350a34d1376cae3b3a7ca556"
   },
   "workspace": {

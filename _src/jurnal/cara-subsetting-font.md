@@ -24,7 +24,7 @@ comments:
 
 Untuk keperluan menampilkan logo "kusaeni" yang ada di atas halaman ini, sebelumnya ane pakai gambar dengan format `webp` yang ringan, namun seringan apapun ukuran gambar akan jatuh lebih dari 10Kib dan harus memperhatikan [aspek rasio](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_sizing/Aspect_ratios) yang kadang kala membingungkan dan jika salah penanganan akan membuat halaman tidak lolos uji *Core Web Vitals Assessment* terutama di bagian *Best Practise - User Experience*. Oleh karena itu ane putuskan untuk mengatasi masalah ini dengan mengganti *file* gambar dengan *font*.
     
-Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, dengan setidaknya ada lebih dari 200 karakter. Ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>". Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
+Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, dengan setidaknya ada lebih dari 200 karakter. Ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>" saja. Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
 
 <img class="display:inline; float:left" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.png" image-size>
 <p class="ncaption">Table karakter pada font Sofia (Latin), yang diberi warna biru adalah karakter yang akan dipertahankan.</p>
@@ -109,12 +109,19 @@ Setelah mendapatkan file `woff2` sekarang tinggal pasang di blog. Ane taruh font
 ```CSS
 @font-face {
     font-family: SofiaKus;
+    font-display: swap;
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
     src: url("/assets/fonts/Sofia/Sofia-Kus-Regular.woff2") format("woff2");
 }
 ```
+
+<div class="sidebar_notes sebelah_kanan" style="margin-top: 1em;">
+    <p><code>font-display: swap</code> adalah aturan CSS untuk mengatur bagaimana font ditampilkan, defaultnya akan pakai <i>font fallback</i> yang tersedia di dalam sistem. Begitu font sudah terunduh maka akan di-swap ke font terunduh.</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display">MDN: Font Display</a>
+</div>
+
 
 Setelah bisa di-*load* oleh `@font-face`, font SofiaKus akan tersedia dan bisa dipergunakan seperti ini
 

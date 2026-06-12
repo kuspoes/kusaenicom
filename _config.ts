@@ -21,6 +21,7 @@ import transformImages from "lume/plugins/transform_images.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
+import "https://esm.sh/prismjs@1.29.0/components/prism-python.js";
 
 const markdown = {
   plugins: [footnotes],
