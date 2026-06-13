@@ -1,6 +1,7 @@
 ---
 title: kusaeni
 layout: layout/content.vto
+pxlfed: true
 ---
 
 
@@ -84,6 +85,7 @@ layout: layout/content.vto
 		<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
 </div>
 
+{{ if pxlfed }}
 <div class="index_h1 margin2">
 <h1>Pixelfed</h1>
 <p><i>follow me</i> <a href="https://pixelfed.social/poes" target="_blanks">@poes@pixelfed.social</a></p>
@@ -97,3 +99,4 @@ layout: layout/content.vto
       {{ /for }}
 </div>
 </div>
+{{ /if }}

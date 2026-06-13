@@ -78,7 +78,12 @@ Dengan keterangan:
 
 component ini bisa di-insert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
 
-### Deno Deploy
+### Pixelfed
+Di dalam `index.vto` ada bagian yang berfungsi menampilkan feed gambar dari Pixelfed, untuk kostumisasi edit file `_plugins/pixelfed.ts`. Pada baris ke 28 `atomURL` rubah ke alamat RSS/Atom dari halaman Pixelfed-mu. Kamu juga bisa merubah limit di baris ke 30.  `pixelfed.ts` akan mengunduh data dan membuat file baru bernama `pixelfed.json` di bawah folder `_src/_data`. Isinya adalah url gambar dari pixelfed kamu. 
+
+Jika tidak ingin menampilkan sila rubah frontmatter di bagian atas `index.vto`, pilihan `pxlfed: true` akan menampilkan Pixelfed, sedangkan `false` akan menghilangkannya.
+
+### Deploy
 
 > Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
 
