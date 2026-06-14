@@ -47,7 +47,7 @@ style: "tentang.css"
 
 <p>Setelah memakai beberapa CMS/<em>blog engine</em> sebelumnya seperti Wordpress, Textpattern, Jekyll, Hugo &amp; 11ty. Saya sekarang beralih ke <a href="https://lumeland.github.io">Lume</a> dan <i>vanila</i> CSS <mark class="fuck_eipstein_trump"><del class="abu">css <em>framework</em> <a href="https://tailwindcss.com">Tailwindcss</a></del></mark>.</p>
 
-<p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest. Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font Kaylani.</p>
+<p>Logo kaligrafi inisial Kusaeni terdiri dari huruf خ (kh) - س (s) - ن (n) dibuat dengan model kaligrafi oleh <a href="http://logonine.com" alt="LOGONINE : Logo Design Expert" target="_blank">Logonine</a>. Sedangkan logo telur untuk favicon dibuat sendiri dengan mepergunakan Inkscape, terinspirasi dengan model logo geometri di Pinterest. Sekarang logo kaligrafi diistirahatkan dulu dan memakai logo biasa yang dibuat dengan font <del>Kaylani</del> Sofia yang sudah dikompres dan <a href="/jurnal/cara-subsetting-font/">dipilih beberapa huruf tertentu</a>.</p>
 
 <p><mark class="fuck_eipstein_trump"><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></mark></p>
 

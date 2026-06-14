@@ -2050,6 +2050,11 @@ a.related_post_link {
         width: 100%;
     }
 
+    img.lebar {
+        width: 100%;
+        margin: 0 0;
+    }
+
     .page p,
     #search,
     .content,

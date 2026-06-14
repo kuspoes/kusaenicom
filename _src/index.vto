@@ -59,6 +59,9 @@ pxlfed: true
   				</time>
 			</div>
 			<div class="postitle">
+			    {{ if post.film }}
+						<img src="{{ post.filmImg}}" image-size>
+				{{ else }}
 				<h2>
 					 <a class="ptitle" href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
           				{{ post.title || post.url }}
@@ -72,7 +75,7 @@ pxlfed: true
             <a data-pagefind-filter="filter" class="tags" href="{{ page.url }}"
                 >#{{ tag }}</a
             >
-            {{ /if }} {{ /for }} {{ /if }}
+            {{ /if }} {{ /for }} {{ /if }} {{ /if }}
 				</p>
 			</div>
 			{{ if post.coverImg }}
