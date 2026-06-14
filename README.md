@@ -13,7 +13,7 @@ curl -fsSL https://deno.land/install.sh | sh
 ```
 
 atau bisa dengan package manager seperti `brew`, `apt`, dan sebagainya.
-jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.7.12 (stable).
+jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.8.3 (stable).
 
 2. Clone repo ini
 
@@ -32,7 +32,7 @@ $ deno task lume -s
 ```
 
 perintah ini akan menginstall `lume` di sistem dan menjalankan lume untuk build dan serve di `localhost:3000`.
-jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.4
+jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.6
 
 kalo ingin membuild saja gunakan
 
@@ -78,7 +78,7 @@ Dengan keterangan:
 
 component ini bisa di-insert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
 
-### Pixelfed
+#### Pixelfed
 Di dalam `index.vto` ada bagian yang berfungsi menampilkan feed gambar dari Pixelfed, untuk kostumisasi edit file `_plugins/pixelfed.ts`. Pada baris ke 28 `atomURL` rubah ke alamat RSS/Atom dari halaman Pixelfed-mu. Kamu juga bisa merubah limit di baris ke 30.  `pixelfed.ts` akan mengunduh data dan membuat file baru bernama `pixelfed.json` di bawah folder `_src/_data`. Isinya adalah url gambar dari pixelfed kamu. 
 
 Jika tidak ingin menampilkan sila rubah frontmatter di bagian atas `index.vto`, pilihan `pxlfed: true` akan menampilkan Pixelfed, sedangkan `false` akan menghilangkannya.
