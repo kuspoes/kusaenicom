@@ -37,7 +37,7 @@ inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 
 ---
 
  <div class="info">
-    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
  </div>
 
 Ini adalah buku pertama Keigo Higashino yang saya baca, saya terpengaruh setelah membaca

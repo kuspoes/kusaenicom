@@ -149,6 +149,6 @@ style: "tentang.css"
 
 <p>Setelah membaca buku <a href="https://kusaeni.com/baca/tokyozodiacmurders/">Tokyo Zodiac Murder's</a> saya mengdeklarasikan diri sebagai penggemar novel - novel <i>crime mistery</i> yang ditulis oleh penulis dari Jepang seperti Soji Shimada, Seishi Yokomizo, dan Keigo Higashino.</p>
 
-<p>Setelah tahun 2024 saya sudah jarang membeli buku <i>hard cover</i> dan lebih memilih untuk membaca dalam versi e-book di Kindle maupun di iOS Books app. Sebagian besar buku - buku saya sudah saya berikan saat <a href="https://kusaeni.com/jurnal/give-away-buku/"><i>giveaway</i> buku tahun lalu</a>.<p>
+<p>Setelah tahun 2024 saya sudah jarang membeli buku <i>hard cover</i> dan lebih memilih untuk membaca dalam versi e-book di Kindle maupun di iOS Books app. Sebagian besar buku - buku (<i>hardcover</i>) sudah saya berikan saat <a href="https://kusaeni.com/jurnal/give-away-buku/"><i>giveaway</i> buku tahun lalu</a>.<p>
 
 <p>Kemudian saya tambahkan juga <a href="/baca/rating">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>

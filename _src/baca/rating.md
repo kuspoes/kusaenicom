@@ -27,7 +27,7 @@ kategori: buku
     menilai buku ini
 </p>
 
-<div class="ragu">
+<div class="">
 
 | Bintang | Angka | Uraian                                                                                               |
 | :-----: | :---: | :--------------------------------------------------------------------------------------------------- |

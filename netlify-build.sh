@@ -11,4 +11,4 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 deno --version
 
 # run Lume build (pin the same version you use locally; adjust URL/version as needed)
-deno run -A https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/cli.ts build
+deno run -A https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/cli.ts build

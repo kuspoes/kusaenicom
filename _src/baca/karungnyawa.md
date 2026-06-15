@@ -32,7 +32,7 @@ inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 
 ---
 
  <div class="info">
-    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
  </div>
 
 _Well_, saya malas sekali mengulas buku ini karena tidak suka dengan akhir cerita yang "mengenaskan" dan dengan akhir yang menggantung tidak terselesaikan.

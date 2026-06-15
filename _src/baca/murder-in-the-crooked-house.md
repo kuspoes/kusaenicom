@@ -32,7 +32,7 @@ comment: true
 ---
 
  <div class="info">
-    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="https://kusaeni.com/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
+    <p><b>Hai!</b> : ingin mendapatkan buku ini? Silakan ikut <a href="/jurnal/give-away-buku/">giveaway</a> buku ini. Terbatas.</p>
  </div>
 
 Ini adalah buku ke dua dari Soji Shimada dan kisah seorang dukun yang mengaku sebagai detektif bernama Kiyoshi Mitarai. Seperti halnya [Tokyo Zodiac Murders](https://kusaeni.com/baca/tokyozodiacmurders) _setting_ waktunya melampau pada medio tahun 1984.
