@@ -12,7 +12,7 @@ relasi: freebsd
 code: true
 favorit: false
 comment: true
-keywords: bsd, freebsd, ente, security, tutorial
+keywords: "bsd, freebsd, ente, security, tutorial, cara memblokir serangan lewat ssh, belajar freebsd"
 draft: false
 tocx: true
 comments:
