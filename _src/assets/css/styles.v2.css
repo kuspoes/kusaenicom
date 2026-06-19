@@ -361,8 +361,10 @@ nav.toc {
 .subscribe {
     border: 1px solid #ccd5ae;
     background-color: rgba(216, 226, 220, 0.1);
-    border-top-left-radius: 0.375em;
-    border-top-right-radius: 0.375em;
+    /* border-top-left-radius: 0.375em;
+    border-top-right-radius: 0.375em; */
+    border-radius: 0.375em;
+    border-bottom: 4px solid #fec89a;
     padding: 0em 1em;
 }
 
@@ -988,7 +990,8 @@ em {
 
 b,
 bold,
-strong {
+strong,
+.strong {
     font-weight: 800;
 }
 
