@@ -337,7 +337,7 @@ nav.toc {
 /* baca page */
 
 .baca {
-    width: 780px;
+    width: 900px;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -349,13 +349,13 @@ nav.toc {
     width: 180px;
     height: 263px;
     border: 1px solid #ccc;
-    border-radius: 0.1em;
-    /*
+    border-radius: 0.2em;
+}
+
+.bayang {
     box-shadow:
-        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    */
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 5px -5px;
+        rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .subscribe {
@@ -734,10 +734,19 @@ span.ter,
     font-size: 90%;
 }
 
-.postnotes pre code {
-    line-height: 1;
-    padding: 0;
+.postnotes pre {
     margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.postnotes pre code {
+    display: block;
+    padding: 0 0 1.2em 1em;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    white-space: pre-wrap;
 }
 
 .flex {

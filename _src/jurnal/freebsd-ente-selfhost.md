@@ -258,6 +258,21 @@ $ go124 run tools/gen-random-keys/main.go
 
 Kemudian simpan hasilnya di _file_ `museum.yaml` di bawah pengaturan sebelumnya. Karena ane hanya _single user_ maka ane tak perlu pengaturan ini, resikonya adalah OTP tidak akan dikirim ke email, melainkan harus melihat di console. (Lihat contoh [dibawah](#:~:text=maka%20verifikasi%20akun%20tidak%20bisa%20dilakukan%20melalui%20email.%20Jadi%20kembali%20ke%20console%20dan%20lihat%20log%20dari%20main%20dan%20cari%20baris%20seperti%20ini))
 
+<div class="postnotes biru">
+    <p>Sedangkan jika ingin memakai OTP termasuk untuk pemanfaatan fitur 2FA sebaiknya mengatur SMTP untuk mengirimkan kode verifikasi melalui email.</p>
+    <p>Di <code>museum.yaml</code> masukkan pengaturan seperti berikut:</p>
+    <pre><code>
+smtp:
+    host: mail.ta.ee
+    port: 465
+    username: ponari@ta.ee
+    password: resuerectionGem
+    email: ponari@ta.ee
+    sender-name: ponari bocah sakti
+    encryption: SSL</code></pre>
+    <p>Kredensial di atas cuma sebagai contoh, silakan menyesuaikan dengan pengaturan akun email masing - masing, jika pakai Gmail bisa ikuti panduan <a href="https://smtpmaster.com/blog/smtp-server-for-gmail-settings-ports-and-configuration-guide/" target="_blank">pengaturan SMTP Gmail</a> untuk mendapatkan kredensial yang sesuai.</p>
+</div>
+
 Setelah _backend_ sudah selesai di*build* selanjutnya adalah _build_ `ente-cli` yang nantinya sangat penting untuk melakukan _tweaks_ akun Ente.
 
 ```shell-session
