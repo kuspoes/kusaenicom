@@ -1,7 +1,7 @@
 ---
 title: Backup database dengan Litestream
 ringkasan: "Ane pakai untuk backup database sqlite3 dan sejauh ini, ini yang paling bagus meski sedikit ruwet."
-date: 2026-06-20
+date: 2026-06-26
 tags:
   - tutorial
   - litestream
