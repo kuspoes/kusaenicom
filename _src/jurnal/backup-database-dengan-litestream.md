@@ -13,12 +13,12 @@ code: true
 favorit: false
 comment: true
 keywords: "backup database, backup sqlite, sqlite, backup, database, gotosocial, backup postgres, backup database dengan litestream"
-draft: true
+draft: false
 tocx: true
 lightbox: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
+  real: https://sok.egois.org/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
 ---
 
 Ketika ngomongin backup database SQLite ane ada 2 pilihan yaitu backup *full compress* atau memanfaatkan WAL. Untuk yang *full* maksudnya adalah membuat salinan database yang kemudian dikompresi dengan `tar.xz` dan dikirim ke *clouds*, seperti yang sudah ane lakukan dengan [Restic atau Rclone](/jurnal/freebsd-backup-restic/). Meski sangat handal, memakai cara ini memiliki sedikit kekurangan yaitu database harus dalam *idle state* (tidak ada proses baca tulis) dan data yang disimpan mengikuti *update* waktu saat dilakukan penyimpanan atau *backup*.
