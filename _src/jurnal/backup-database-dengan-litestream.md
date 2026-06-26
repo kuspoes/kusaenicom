@@ -7,6 +7,7 @@ tags:
   - litestream
   - selfhost
   - gotosocial
+  - freebsd
 kategori: jurnal
 relasi: gotosocial
 code: true
@@ -167,7 +168,19 @@ $ doas service litestream start
 $ tail -f /var/log/messages | grep litestream
 ```
 
+<div class="sidebar_table table_kiri" style="">
+    <div class="just_info">
+            <div class="just_header">Penting</div>
+            <div class="just_teks">
+                <p>Jika tidak ada perbaikan penting di Litestream atau database, membiarkan <i>instance</i> tetap berjalan itu lebih baik karena biasanya Litestream akan membuat <i>generations</i> baru setiap Litestream dinyalakan ulang.</p>   
+                <p>Sehingga membuat pemakaian kuota S3 bucket akan semakin membengkak</p>
+            </div>
+    </div>
+</div>
+
 Litestream membutuhkan waktu untuk menyusun *snapshot* dan persiapan *backup* setelah selesai dan berjalan normal, akan muncul file backup di *bucket S3*. Hasil file backupnya biasanya ada  di folder **generations** yang berisi folder **snapshot** dan **WAL**, snapshot berisi salinan dari database sedangkan WAL berisi file kecil yang merupakan catatan transaksi.
+
+Untuk periode tertentu, Litestream akan mengkonversi WAL dan snapshot menjadi 1 *file snapshot* baru, *default*-nya setiap 24 jam.
 
 #### Restore
 
