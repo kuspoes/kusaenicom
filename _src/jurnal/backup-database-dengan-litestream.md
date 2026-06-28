@@ -241,6 +241,9 @@ Litestream adalah *tool* yang sangat bagus untuk membantu proses *backup* & *res
 
 Alikasi ini mengsyaratkan S3 sebagai tempat penyimpanan, namun jika tidak memiliki maka mempergunakan alat lain seperti Restic dan Rclone bisa dipertimbangkan.
 
+
+{{ comp.subs() }}
+
 ---
 
 [^1]: Membuat replika database dengan mudah dan murah.
