@@ -239,7 +239,7 @@ Jika ada *check point* di jam tersebut maka database akan di-*restore* ke `/home
 
 Litestream adalah *tool* yang sangat bagus untuk membantu proses *backup* & *restore* untuk database yang tidak memiliki *tool backup* internal seperti SQLite. Ane lebih memilih memakai versi 0.3.13 yang menurut ane lebih stabil (di [#FreeBSD](/tags/freebsd)) dibandingkan versi terbaru 0.5 yang masih ada beberapa *bug's* mengganggu.
 
-Alikasi ini mengsyaratkan S3 sebagai tempat penyimpanan, namun jika tidak memiliki maka mempergunakan alat lain seperti Restic dan Rclone bisa dipertimbangkan.
+Alikasi ini mengsyaratkan S3 sebagai tempat penyimpana. Meski memiliki layanan *self host* S3 sendiri, namun ane tetap berlangganan layanan S3 dari *provider* eksternal seperti ID Cloudhost untuk urusan penyimpanan *backup* berjaga - jaga jika layanan *self host* S3 ane bermsalah apalagi lokasinya 1 server yang sama dengan *instance* Gotosocial. Sedangkan jika tidak memiliki maka mempergunakan alat lain seperti Restic dan Rclone bisa dipertimbangkan.
 
 
 {{ comp.subs() }}
