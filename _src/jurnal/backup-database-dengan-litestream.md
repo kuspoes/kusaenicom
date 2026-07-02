@@ -33,12 +33,15 @@ Misal database di-*backup* setiap jam 24 maka jika di jam 03 terjadi masalah mak
 
  Ane akan pakai Litestream untuk backup database SQLite yang ane pakai di [Gotosocial](https://gotosocial.org) yang juga sudah mendukung pemanfaatan Litestream dengan baik. Beberapa keterangan yang tersedia sebagai berikut:
 
+
 | Uraian | Deskripsi |
-|:------:|:---------:|
+|:------|:---------|
 | Path   | <code>/var/www/gotosocial/data/egois.db</code> <br /> lokasi database tersimpan|
 | Nama DB | <code>egois.db</code> <br /> dengan WAL Mode|
 | Type DB | SQLite3 database |
 | Versi Litestream | 0.3.13 |
+| Tujuan Backup | Bucket S3 <br /> perlu tau <code>access key id</code> dan <code>secret access key</code> untuk dimasukkan ke dalam konfigurasi Litestream |
+
 
 ### Mempersiapkan database Gotosocial
 
@@ -60,22 +63,22 @@ Secara <i>default</i> Gotosocial sudah mengaktifkan pengaturan ini.
 
 Ane pakai [#FreeBSD](/tags/freebsd), btw.  versi Litestream yang ane pakai adalah versi stabil 0.33 sedangkan versi terakhir adalah 0.5, alasannya adalah karena 0.33 lebih stabil menurut ane dan masih pakai mode WAL klasik[^2]. 
 
-Masalah lainnya adalah alih - alih menjanjikan ukuran backup yang lebih hemat penyimpanan, pengalaman ane memakai versi 0.5 malah sebaliknya. Backup database bengkak menjadi 4-5 kali lipat padahal proses baru berjalan kurang dari 24 jam. Sedangkan versi 0.3 malah lebih hemat karena hasil backup untuk database yang sama hasilnya mirip dengan ukuran database aslinya, selisih pun tidak signifikan. 
+Masalah lainnya adalah alih - alih menjanjikan ukuran *backup* yang lebih hemat penyimpanan, pengalaman ane memakai versi 0.5 malah sebaliknya. Backup database bengkak menjadi 4-5 kali lipat padahal proses baru berjalan kurang dari 24 jam. 
 
-Berikut adalah perbandingan antar versi Litestream yang pernah ane pakai:
+Sedangkan versi 0.3 malah lebih hemat karena hasil backup untuk database yang sama hasilnya mirip dengan ukuran database aslinya, selisih pun tidak signifikan. Berikut adalah perbandingan antar versi Litestream yang pernah ane pakai:
 
 <div class="lebar">
-    <div class="div_flex">
-    <div class="flex_kolom">
+    <div class="div_flex border">
+    <div class="flex_kolom border_tanparadius ijolumut">
         <h4>Litestream v0.3.13</h4>
         <ul>
             <li>Masih mempergunakan cara "tradisional" untuk transaksi backup database yaitu dengan WAL.</i>
             <li><i>Package Binary</i> sudah tidak tersedia di repo FreeBSD, resikonya harus build manual. Potensi untuk gagal tetap ada.</li>
-            <li>Pengalaman ane, ukuran file backup <mark>lebih bisa dikendalikan</mark> sehingga lebih hemat penyimpanan (dan biaya) sewa S3 storage</li>
-            <li>Ringan, di awal memakai 100 - 200 MB RAM saat membuat snapshot, namun setelah selesai sekitar 40-60 Mb konsumsi RAM.</li>
+            <li>Pengalaman ane, ukuran file backup <mark>lebih bisa dikendalikan</mark> sehingga lebih hemat penyimpanan (dan biaya) sewa S3 <i>storage</i></li>
+            <li>Ringan, di awal memakai 100 - 200 MB RAM saat membuat <i>snapshot</i>, namun setelah selesai sekitar 40-60 Mb konsumsi RAM.</li>
         </ul>
     </div>
-    <div class="flex_kolom">
+    <div class="flex_kolom ijotua">
         <h4>Litestream v0.5</h4>
         <ul>
             <li>Disebut lebih modern dengan dengan memanfaatkan teknologi dari LiteFS/LTX yaitu LTX sehingga memungkinkan untuk <mark><i>restore database</i> lebih cepat</mark>.</i>
@@ -178,9 +181,9 @@ $ tail -f /var/log/messages | grep litestream
     </div>
 </div>
 
-Litestream membutuhkan waktu untuk menyusun *snapshot* dan persiapan *backup* setelah selesai dan berjalan normal, akan muncul file backup di *bucket S3*. Hasil file backupnya biasanya ada  di folder **generations** yang berisi folder **snapshot** dan **WAL**, snapshot berisi salinan dari database sedangkan WAL berisi file kecil yang merupakan catatan transaksi.
+Litestream membutuhkan waktu untuk menyusun *snapshot* dan persiapan *backup* setelah selesai dan berjalan normal, akan muncul *file backup* di *bucket S3*. Hasil *file backup*nya biasanya ada  di folder **generations** yang berisi folder **snapshot** dan **WAL**, snapshot berisi salinan dari database sedangkan WAL berisi file kecil yang merupakan catatan transaksi.
 
-Untuk periode tertentu, Litestream akan mengkonversi WAL dan snapshot menjadi 1 *file snapshot* baru, *default*-nya setiap 24 jam.
+Untuk periode tertentu, Litestream akan mengkonversi WAL dan *snapshot* menjadi 1 *file *snapshot** baru, *default*-nya setiap 24 jam.
 
 #### Restore
 

@@ -405,6 +405,7 @@ nav.toc {
     border-radius: 0.375em;
     border-bottom: 4px solid #fec89a;
     padding: 0em 1em;
+    margin: 4em 0;
 }
 
 .subscribe p.mau {
@@ -489,7 +490,7 @@ table {
     border-spacing: 1;
     border-collapse: collapse;
     border-radius: 0.375em;
-    width: 40rem;
+    /* width: 40rem; */
     overflow: hidden;
     font: 1em/1 var(--serif);
     margin: 2em auto;
@@ -625,12 +626,37 @@ img.galeri {
 
 .div_flex {
     display: flex;
-    gap: 20px;
+    gap: 0px;
 }
 
 .flex_kolom {
     flex: 1;
     padding: 10px;
+}
+
+.border {
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+}
+
+.border_tanparadius {
+    border-style: none solid none none;
+    border-width: 0px 1px 0px 0px;
+    border-color: #ccc;
+}
+
+.border_tanparadius_kiri {
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0px;
+    border-color: #ccc;
+}
+
+.ijolumut {
+    background-color: rgba(221, 229, 182, 0.2);
+}
+
+.ijotua {
+    background-color: rgba(173, 193, 120, 0.4);
 }
 
 .selayang {
@@ -886,6 +912,18 @@ img.lebar {
 .lebar {
     width: 850px;
     margin-left: -100px;
+    max-width: none !important;
+}
+
+.lebar750 {
+    width: 700px;
+    margin-left: -50px;
+    max-width: none !important;
+}
+
+.lebar960 {
+    width: 960px;
+    margin-left: 200px;
     max-width: none !important;
 }
 
@@ -1248,15 +1286,6 @@ a:link {
     padding: 2px;
     text-decoration: none;
     border-bottom: 1px dotted #94d2bd;
-    position: relative;
-    padding-right: 5px;
-}
-
-a::after {
-    content: " ✓";
-    position: absolute;
-    right: 0;
-    color: transparent;
 }
 
 a:visited {
@@ -1984,7 +2013,9 @@ a.related_post_link {
         height: 300px;
     }
 
-    .lebar {
+    .lebar,
+    .lebar750,
+    .lebar960 {
         width: 98%;
         margin-left: 0;
     }
