@@ -22,16 +22,16 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
 ---
 
-Ketika ngomongin backup database SQLite ane ada 2 pilihan yaitu backup *full compress* atau memanfaatkan WAL. Untuk yang *full* maksudnya adalah membuat salinan database yang kemudian dikompresi dengan `tar.xz` dan dikirim ke *clouds*, seperti yang sudah ane lakukan dengan [Restic atau Rclone](/jurnal/freebsd-backup-restic/). Meski sangat handal, memakai cara ini memiliki sedikit kekurangan yaitu database harus dalam *idle state* (tidak ada proses baca tulis) dan data yang disimpan mengikuti *update* waktu saat dilakukan penyimpanan atau *backup*.
+Ketika ngomongin backup database SQLite ane ada 2 pilihan yaitu backup *full compress* atau memanfaatkan WAL. Untuk yang *full* adalah membuat salinan database yang kemudian dikompresi dengan `tar.xz` dan dikirim ke *clouds*, seperti yang sudah ane lakukan dengan [Restic atau Rclone](/jurnal/freebsd-backup-restic/). Meski sangat handal, memakai cara ini memiliki sedikit kekurangan yaitu database harus dalam *idle state* (tidak ada proses baca tulis) dan data yang disimpan mengikuti *update* waktu saat dilakukan penyimpanan atau *backup*.
 
-Misal database di-*backup* setiap jam 24 maka jika di jam 03 terjadi masalah misalnya maka data yang tersedia untuk di-*restore* hanya data saat jam 24 tersebut. Sehingga data antara jam 24-03 tidak tersedia. Pengorbanan yang memang harus diterima, sampai kemudian datang aplikasi bernama [Litestream](https://litestream.io) dengan misi untuk *fully-replicated database with no pain and little cost*[^1].
+Misal database di-*backup* setiap jam 24 maka jika di jam 03 terjadi masalah maka data yang tersedia untuk di-*restore* hanya data saat jam 24 tersebut. Sehingga data antara jam 24-03 tidak tersedia, pengorbanan yang memang harus diterima sampai kemudian datang aplikasi bernama [Litestream](https://litestream.io) dengan misi untuk *fully-replicated database with no pain and little cost*[^1].
 
 
 <div class="sidebar_notes sebelah_kanan">
     <p><sup>1</sup>: Membuat replika database dengan mudah dan murah.</p>
 </div>
 
-Sehingga ane akan pakai Litestream untuk backup database SQLite yang ane pakai di [Gotosocial](https://gotosocial.org) yang juga sudah mendukung pemanfaatan Litestream dengan baik. Beberapa detil yang tersedia sebagai berikut:
+ Ane akan pakai Litestream untuk backup database SQLite yang ane pakai di [Gotosocial](https://gotosocial.org) yang juga sudah mendukung pemanfaatan Litestream dengan baik. Beberapa keterangan yang tersedia sebagai berikut:
 
 | Uraian | Deskripsi |
 |:------:|:---------:|
@@ -211,6 +211,7 @@ $ litestream restore -config /etc/litestream.yml \
 
 Litestream akan melakukan *restore* dan menyimpan hasilnya di `/home/poes/egois-restore.db`. Setelah selesai, sebaiknya lakukan pemeriksaan integritas data dengan perintah <mark>`sqlite3 "PRAGMA integrity_check;"`</mark>. Hasil yang diharapkan adalah OK namun jika ada *error's* maka ada masalah saat *restore* atau *backup*.
 
+{{ comp.subs() }}
 
 ##### Restore ke backup di jam tertentu
 
@@ -239,10 +240,17 @@ Jika ada *check point* di jam tersebut maka database akan di-*restore* ke `/home
 
 Litestream adalah *tool* yang sangat bagus untuk membantu proses *backup* & *restore* untuk database yang tidak memiliki *tool backup* internal seperti SQLite. Ane lebih memilih memakai versi 0.3.13 yang menurut ane lebih stabil (di [#FreeBSD](/tags/freebsd)) dibandingkan versi terbaru 0.5 yang masih ada beberapa *bug's* mengganggu.
 
-Alikasi ini mengsyaratkan S3 sebagai tempat penyimpana. Meski memiliki layanan *self host* S3 sendiri, namun ane tetap berlangganan layanan S3 dari *provider* eksternal seperti ID Cloudhost untuk urusan penyimpanan *backup* berjaga - jaga jika layanan *self host* S3 ane bermsalah apalagi lokasinya 1 server yang sama dengan *instance* Gotosocial. Sedangkan jika tidak memiliki maka mempergunakan alat lain seperti Restic dan Rclone bisa dipertimbangkan.
+{{ comp.relasi_artikel({
+    judul: "Backup data dengan Restic dan Rclone",
+    teks: "Cara backup data(base) dengan memanfaatkan Restic dan Rclone. 2 <i>tools</i> gratis yang mudah.",
+    format: "kanan",
+    heading: "" })
+}}
 
+Aplikasi ini mengsyaratkan S3 sebagai tempat penyimpanan. Meski memiliki layanan *self host* S3 sendiri, namun ane tetap berlangganan layanan S3 dari *provider* eksternal seperti ID Cloudhost untuk urusan penyimpanan *backup* berjaga - jaga jika layanan *self host* S3 ane bermsalah apalagi lokasinya 1 server yang sama dengan *instance* [#Gotosocial](/tags/gotosocial). Mengikuti kata pepatah "<i>Jangan menaruh semua telur di keranjang yang sama</i>".
 
-{{ comp.subs() }}
+Sedangkan jika tidak memiliki layanan S3, maka mempergunakan alat lain seperti Restic dan Rclone bisa dipertimbangkan.
+
 
 ---
 

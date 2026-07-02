@@ -15,7 +15,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import imageSize from "lume/plugins/image_size.ts";
-import gzip from "lume/plugins/gzip.ts";
+//import gzip from "lume/plugins/gzip.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
@@ -92,8 +92,7 @@ site
       sort: "date=desc",
     }),
   )
-  .ignore("README.md")
-  .use(gzip());
+  .ignore("README.md");
 
 if (!isDev) {
   site.use(pagefind({
