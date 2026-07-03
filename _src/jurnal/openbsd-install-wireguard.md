@@ -84,28 +84,38 @@ Masih di direktori `/etc/wireguard`, ane akan buat berkas konfigurasi wireguard 
     <p>Berbeda dengan OpenBSD yang bisa saja ditaruh dimana - mana, di FreeBSD sebaiknya ikut <i>path</i> yang sudah ditentukan untuk mengikuti hierarki konfigurasi <code>user</code> atau pihak ketiga yang harus ditaruh di <i>path</i> <code>/usr/local</code>. Sedangkan pengaturan <i>base system</i> akan ditaruh di <code>/etc</code>.</p>
 </div>
 
+Sebelumnya ane tetapkan dulu daftar IP yang nanti akan dipergunakan
+
+| IP | Keterangan|
+|----|-----------|
+|192.168.88.1| IP Wireguard server, ini local IP untuk server Wireguard bukan IP dari VPS (endpoint) |
+|192.168.88.1| IP klien/peer, ini local IP yang akan dipergunakan oleh klien/peer Wireguard saat koneksi terhubung|
+
+Sehingga pengaturan di `wg0.conf` akan seperti ini
+
 ```shell-session
 $ doas vim wg0.conf
 [Interface]
 PrivateKey = QJqx4o8lsM1eZb2u+t4yRctEkjALq2GFJgimdkTphHc=
+Address = 192.168.88.1/24
 ListenPort = 51820
 
 [Peer]
 PublicKey = <kosongin dulu nanti diisi publickey dari klien>
-AllowedIPs = 10.0.0.2/32
+AllowedIPs = 192.168.88.2/32
 ```
 
 <div class="postnotes pink">
   <p>Perhatikan <code>AllowedIPs</code> memakai <code>/32</code> yang artinya hanya punya range 1 IP saja. Ini penting agar bisa terhubung dengan baik, karena jika memakai <i>class</i> lainnya seperti <code>/24</code> tidak akan bisa terhubung. Wireguard bingung menentukan <em>point to point tunnel</em>.</p>
 </div>
 
-Untuk `PrivateKey`, diisi dengan isi dari berkas `PrivateKey` yang sudah dibuat sebelumnya (yang tadi sudah dicatat. Sudah dicatat kan?). Sedangkan `PublicKey` nanti diisi dengan *publickey* yang akan dibuat diklien.
+Untuk `PrivateKey`, diisi dengan isi dari berkas `PrivateKey` yang sudah dibuat sebelumnya (yang tadi sudah dicatat. Sudah dicatat kan?). Sedangkan `PublicKey` nanti diisi dengan *publickey* yang akan dibuat di klien.
 
 untuk *interface*, buat *file* baru dengan nama `hostname.wg0` di direktori `/etc`.
 
 ```shell-session
 $ doas vim /etc/hostname.wg0
-inet 10.0.0.1 255.255.255.0
+inet 192.168.88.1 255.255.255.0
 !/usr/local/bin/wg setconf wg0 /etc/wireguard/wg0.conf
 up
 ```
@@ -120,7 +130,7 @@ Dengan `wg0.conf` adalah menambahkan keterangan tentang IP (dan MTU) langsung ke
 
 ```txt
 [Interface]
-Address = 10.0.0.1/24
+Address = 192.168.88.1/24
 MTU = 1420
 ```
 
@@ -128,7 +138,7 @@ Penulisan _netmask_ (`/24`) ini sangat penting karena FreeBSD sejak versi 14.2 t
 
 ```shell-session
 $ doas sysrc cloned_interfaces+="wg0"
-$ doas sysrc ifconfig_wg0="inet 10.0.0.1/24 mtu 1420 up"
+$ doas sysrc ifconfig_wg0="inet 192.168.88.1/24 mtu 1420 up"
 ```
 
 Jika pakai cara ini, maka konfigurasi `Address` dan `MTU` harus dihapus dari file `wg0.conf`. Namun jika sejak awal sudah memasang paket `wireguard-tools` atau `wireguard-tools-lite` maka sebaiknya pakai cara pengaturan di *file* `wg0.conf` saja karena ini lebih mudah dan cepat untuk *troubleshooting*.
@@ -143,8 +153,8 @@ Untuk cara yang kedua adalah membuat konfigurasi dengan metode tradisional OpenB
 $ doas vim /etc/hostname.wg0
 wgkey QJqx4o8lsM1eZb2u+t4yRctEkjALq2GFJgimdkTphHc=
 wgport 51820
-wgpeer <kosongin dulu nanti diisi publickey dari klien> wgaip 10.0.0.2/32
-inet 10.0.0.1 255.255.255.0
+wgpeer <kosongin dulu nanti diisi publickey dari klien> wgaip 192.168.88.2/32
+inet 192.168.88.1 255.255.255.0
 up
 ```
 
@@ -158,15 +168,13 @@ Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yait
 
 Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur *tunnel* kosong baru (lihat gambar).
 
-DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
-
 <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-80/jurnal/OpenBSD_Wireguard/wireguard_settings_4WDIGUIoj" alt="wireguard add tunnel]" image-size>
 
 <aside class="image">
   <ul>
-  <li><b>No. 1</b> adalah <i>public key</i> dari klien yang nantinya akan di masukkan ke dalam <code>wg0.conf</code> <i>peer publickey</i> yang sebelumnya sudah ane buat.</li>
-  <li><b>No. 2</b> diisi dengan isian dari <code>public.key</code> wireguard di VPS yang sebelumnya sudah dibuat.</li>
-  <li><b>No. 3</b> adalah IP dari VPS dan <i>port</i> dari wireguard.</li>
+  <li><b>No. 1</b> adalah <i>Public key</i> dari klien yang nantinya akan di masukkan ke dalam <code>wg0.conf</code> <i>peer publickey</i> yang sebelumnya sudah ane buat.</li>
+  <li><b>No. 2</b> <i>Private Key</i> yang dibuat oleh klien (otomatis)</li>
+  <li><b>No. 3</b> adalah <i>Public Key</i> dari server, IP dari VPS untuk <i>endpoint</i> dan <i>port</i> dari wireguard.</li>
   </ul>
   <p></p>
 <b>Update penting</b>:
@@ -175,7 +183,7 @@ Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interf
 
 <div class="postnotes">
   <h4>Opsional tapi kadang penting</h4>
-  <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>10.0.0.1/32</code>)</p>
+  <p>Untuk blok <code>[Interface]</code> kadang perlu memasukkan <code>Address</code> dari <code>wgaip</code> di konfigurasi (dalam hal ini <code>192.168.88.1/32</code>)</p>
   <p>Untuk block <code>[Peer]</code> sangat disarankan untuk menambahkan <code>PersistentKeepalive = 25</code> untuk menjaga koneksi tetap terjaga/terhubung dengan baik.</p>
   <p>Selain itu mengaktifkan <b>Exclude Private IP's</b> akan membuat sistem tetap bisa mengakses jaringan lokal (seperti NAS, LAN, dsb) <em>split tunnel</em> saat terhubung ke Wireguard. Mengaktifkan ini sangat direkomendasikan.</p>
 
@@ -188,9 +196,9 @@ Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interf
   <p>Ada aplikasi yang bagus untuk membantu menentukan MTU yang sesuai dan optimal, nama aplikasinya <a href="https://github.com/yeya/wire-seek">wire-seek</a>.</p>
   <p>Unduh saja aplikasi ini, sesuaikan dengan OS yang dipakai (ane sesuaikan dengan OS di klien yaitu MacOS). Kemudian jalankan di Terminal/CLI dengan perintah:</p>
   <pre class="language-bash" tabindex="0">  <code class="language-bash">
-       <span class="token shell-symbol important">➜</span> ./wire-seek-darwin-arm64 --tunnel <span class="token number">10.0.0.1</span>
+       <span class="token shell-symbol important">➜</span> ./wire-seek-darwin-arm64 --tunnel <span class="token number">192.168.88.1</span>
        Wire-Seek: WireGuard MTU Optimizer
-       Target: <span class="token number">10.0.0.1</span><span class="token punctuation">(</span><span class="token number">10.0.0.1</span><span class="token punctuation">)</span>
+       Target: <span class="token number">192.168.88.1</span><span class="token punctuation">(</span><span class="token number">192.168.88.1</span><span class="token punctuation">)</span>
        Protocol: IPv4
        Discovering path MTU <span class="token punctuation">(</span>range: <span class="token number">576-1500</span><span class="token punctuation">)</span><span class="token punctuation">..</span>.
        Results:
@@ -200,7 +208,7 @@ Tambahkan opsi <code>Address = 192.168.88.2/24</code> di dalam grup <code>Interf
          MTU <span class="token operator">=</span> <span class="token number">1500</span>
     </code>
     </pre>
-  <p>Dengan catatan, perintah ini dijalankan saat klien sudah terhubung dengan server Wireguard. IP <code>10.0.0.1</code> adalah IP server Wireguard (bisa diganti dengan IP endpoint namun hapus flag <code>--tunnel</code>). Hasilnya adalah MTU dengan nilai <code>1500</code>, nilai ini kemudian ane masukkan di file konfigurasi <code>wg0.conf</code> di server maupun di klien.</p>
+  <p>Dengan catatan, perintah ini dijalankan saat klien sudah terhubung dengan server Wireguard. IP <code>192.168.88.1</code> adalah IP server Wireguard (bisa diganti dengan IP endpoint namun hapus flag <code>--tunnel</code>). Hasilnya adalah MTU dengan nilai <code>1500</code>, nilai ini kemudian ane masukkan di file konfigurasi <code>wg0.conf</code> di server maupun di klien.</p>
   <p>Namun banyak rekomendasi untuk mengurangi nilai MTU sebanyak 8 <i>bytes</i> untuk <i>header</i>, sehingga nilai MTU  menjadi <code>1492</code>. Namun ane memilih nilai MTU di <code>1420</code> karena di nilai ini saya tidak mengalami banyak masalah dalam membuka situs.</p>
 </div>
 
@@ -220,7 +228,7 @@ ListenPort = 51820
 
 [Peer]
 PublicKey = DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
-AllowedIPs = 10.0.0.2/32
+AllowedIPs = 192.168.88.2/32
 ```
 
 atau `/etc/hostname.wg0`:
@@ -228,8 +236,8 @@ atau `/etc/hostname.wg0`:
 ```txt
 wgkey QJqx4o8lsM1eZb2u+t4yRctEkjALq2GFJgimdkTphHc=
 wgport 51820
-wgpeer DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w= wgaip 10.0.0.2/32
-inet 10.0.0.1 255.255.255.0
+wgpeer DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w= wgaip 192.168.88.2/32
+inet 192.168.88.1 255.255.255.0
 up
 ```
 
@@ -251,8 +259,8 @@ match on wg0 scrub (max-mss 1352)
 pass in on egress proto udp from any to any port 51820
 pass in on wg0
 pass out on egress
-pass from 10.0.0.0/24 to any
-match out on egress from 10.0.0.0/24 to any nat-to (egress)
+pass from 192.168.88.0/24 to any
+match out on egress from 192.168.88.0/24 to any nat-to (egress)
 
 # SSH
 pass in quick on egress proto tcp from any to (egress) port 22
@@ -277,7 +285,7 @@ public key: dbXB+Cue2VpYBIjaTYneGgNglJHdgylriDkb014v6nI=
 
 peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
   endpoint: 103.102.101.100:5976
-  allowed ips: 10.0.0.2/32
+  allowed ips: 192.168.88.2/32
 ```
 
 di bagian peer tidak ada keterangan _handshake_ menandakan bahwa klien belum terhubung. Hubungkan klien di aplikasi wireguard dan seharusnya di bagian peer menjadi seperti ini:
@@ -285,7 +293,7 @@ di bagian peer tidak ada keterangan _handshake_ menandakan bahwa klien belum ter
 ```txt
 peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
   endpoint: 103.102.101.100:5976
-  allowed ips: 10.0.0.2/32
+  allowed ips: 192.168.88.2/32
   latest handshake: 10 seconds ago
   transfer: 1 MiB received, 2 Mib sent
 ```
@@ -383,7 +391,7 @@ Sedangkan perintah killswitch sendiri akan menghasilkan informasi terkait interf
 $ sudo killswitch
 Interface  MAC address         IP
 en0        76:61:a8:f1:ex:1O   172.20.10.2/16
-utun4                          10.0.0.2
+utun4                          192.168.88.2
 
 Public IP address: 103.102.101.100
 PEER IP address:   <nil>
@@ -401,7 +409,7 @@ $ sudo killswitch -e -ip 103.102.101.100
 $ sudo killswitch
 Interface  MAC address         IP
 en0        76:61:a8:f1:ex:1O   172.20.10.2/16
-utun4                          10.0.0.2
+utun4                          192.168.88.2
 
 Public IP address: 103.102.101.100
 PEER IP address:   103.102.101.100
@@ -458,6 +466,6 @@ Tentu saja [AnyBar](https://github.com/tonsky/AnyBar) ini opsional, boleh tidak 
   Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba
 </aside>
 
-Ada beberapa aplikasi yang bisa digunakan sebagai alternatif killswitch seperti [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) atau [Lulu](https://objective-see.org/products/lulu.html). Dari kedua ini Little Snitch lebih bagus dan mudah namun memang aplikasi berbayar, sedangkan Lulu gratis namun kurang fleksibel dan masih memerlukan campur tangan user (manual aktifkan rules.)
+Ada beberapa aplikasi yang bisa digunakan sebagai alternatif killswitch seperti [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) atau [Lulu](https://objective-see.org/products/lulu.html). Dari kedua ini Little Snitch lebih bagus dan mudah namun aplikasi berbayar, sedangkan Lulu gratis namun kurang fleksibel dan masih memerlukan campur tangan user (manual aktifkan *rules*.)
 
 Aplikasi gratis lain yang bisa dipakai adalah Mirham KillSwitch, yang bisa diunduh dari [sini](https://github.com/mirham/KillSwitch). Aplikasi ini akan menaruh ikon di menubar dan tinggal klik untuk memakainya.
