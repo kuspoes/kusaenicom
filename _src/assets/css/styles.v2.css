@@ -1277,6 +1277,7 @@ h4 {
 #glightbox a:hover {
     border: none !important;
     background-color: transparent !important;
+    border-radius: none;
 }
 
 a:link {
@@ -1921,13 +1922,14 @@ a.related_post_link {
 }
 
 .masonry-grid.delapan a {
+    aspect-ratio: 1;
+    line-height: 0;
+    text-decoration: none !important;
     display: block;
-    aspect-ratio: 1 / 1;
     overflow: hidden;
-    text-decoration: none;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 0;
+    border: none !important;
 }
 
 .masonry-grid.delapan img {
@@ -1937,8 +1939,11 @@ a.related_post_link {
     display: block;
 }
 
-.masonry-grid.delapan a.pfed:hover {
+.masonry-grid a.pfed:hover {
     text-decoration: none;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .margin2 {
