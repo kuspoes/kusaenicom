@@ -627,6 +627,13 @@ img.galeri {
 .div_flex {
     display: flex;
     gap: 0px;
+    font-family: var(--sans);
+    font-size: 0.92em;
+}
+
+.div_flex h4 {
+    text-align: center;
+    margin: 0em 0em 1em 0em;
 }
 
 .flex_kolom {
@@ -635,7 +642,7 @@ img.galeri {
 }
 
 .border {
-    border: 1px solid #ccc;
+    border: 1px solid #52796f;
     border-radius: 0.4em;
 }
 

@@ -85,8 +85,12 @@ pxlfed: true
 			{{ /if }}
 		</div>
 		{{ /for }}
-		<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk artikel lebih banyak</p>
+		{{> allPosts = search.pages("type=post") }}
+		{{> totalPost = allPosts.length }}
+		<p>Jelajahi <a href="/arsip">Arsip Jurnal</a> untuk <b>{{ totalPost }} artikel</b> menarik lainnya...</p>
 </div>
+
+<hr />
 
 {{ if pxlfed }}
 <div class="index_h1 margin2">
