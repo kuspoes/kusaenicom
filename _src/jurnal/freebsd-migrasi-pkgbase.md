@@ -72,6 +72,17 @@ $ doas pkg upgrade
 
 Proses *update repository* dan *upgrade* selanjutnya akan melakukan *update base system*  seperti *update* dan *upgrade* paket seperti biasa.
 
+Lalu bagaimana cara update version atau *security patch*?
+
+Tentu saja dengan melakukan *update* pada paket *base* dengan cara melakukan *fetch* dan *install* paket yang khusus diambil dari repositori **FreeBSD-base** dan melakukan *reboot*.
+
+```shell-session
+$ doas pkg update -r FreeBSD-base
+$ doas shutdown -r +10min "Reboot setelah update paket base"
+```
+
+<hr />
+
 ### Lagi sial?
 
 Ane sudah mencoba melakukan migrasi 2 VPS dari metode tradisional ke pkgbase dan keduanya berjalan dengan lancar kecuali saat proses *upgrade* (di VPS kedua) setelah *reboot*.
