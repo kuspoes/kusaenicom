@@ -16,7 +16,7 @@ format: "epub"
 bahasa: "Bahasa Inggris"
 isbn: "9781805335573"
 tahun: 2026
-resensi: "Kengerian terjadi di mansion Furugami. Yachiyo Furugami si tuang putri yang cantik jelita menderita penyakit berjalan saat tidur. Akan tetap di beberapa kali perjalanan terakhir meninggalkan jejak pembunuhan beberapa orang di sekitarnya."
+resensi: "Ketika 2 orang bungkuk berpunuk bertemu, kengerian terjadi di mansion Furugami. Yachiyo Furugami si tuang putri yang cantik jelita menderita penyakit berjalan saat tidur. Akan tetap di beberapa kali perjalanan terakhir meninggalkan jejak pembunuhan beberapa orang di sekitarnya."
 rating: 5
 beli: https://pushkinpress.com/book/she-walks-at-night/
 dimana: Pushkinpress
@@ -32,8 +32,8 @@ templateEngine: vto, md
 comment: true
 draft: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KXF4G158Z2X2770YE91DG9JM
+  real: https://sok.egois.org/@poes/statuses/01KXF4G158Z2X2770YE91DG9JM
 ---
 
 <p><span class="caps">T</span>orata Yashiro adalah seorang penulis novel misteri (veteran perang dunia ke 2) yang karirnya biasa saja, lebih ke stagnan karena selama ini tidak mampu membuat karya yang benar - benar <i>bestseller</i>. Untungnya di sekolah dulu dia berkenalan dengan Naoki Sengoku, keturunan bangsawan dari klan Furugami. Naoki lah yang selama ini membantu kehidupan dan kebutuhan Torata. Karena itu Torata merasa berhutang budi dan harus rela kadang kala dianggap seperti pembantu daripada seorang teman dan mau tidak mau harus menuruti perintah dan keinginan Naoki.</p>
