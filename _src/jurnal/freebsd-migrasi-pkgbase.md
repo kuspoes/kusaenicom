@@ -70,7 +70,7 @@ $ doas pkg upgrade
 ```
 <aside>opsi <code>-f</code> akan membuat pkg mengunduh dan membuat ulang database repo</aside>
 
-Proses *update repository* dan *upgrade* selanjutnya akan melakukan *update base system*  seperti *update* dan *upgrade* paket seperti biasa.
+Proses *update repository* dan *upgrade* selanjutnya akan melakukan *update base system*  seperti *update* dan *upgrade* paket seperti biasa. Jika ingin menghapus paket yang sudah terunduh guna mengembalikan kapasitas diska tersedia gunakan `pkg clean -a` dan atau pakai `pkg autoremove` untuk menghapus paket terpasang yang sudah tidak dipakai lagi.
 
 Lalu bagaimana cara update version atau *security patch*?
 
