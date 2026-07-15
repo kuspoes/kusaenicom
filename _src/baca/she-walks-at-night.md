@@ -64,6 +64,8 @@ Keesokan paginya, pembantu keluarga Furugami menemukan mayat seorang laki - laki
 
 Misteri dimulai, siapakah mayat laki - laki tanpa kepala itu? Apakah itu Morie atau itu Hachiya? Siapakah pembunuh dan motifnya?
 
+{{ comp.subs() }}
+
 ### Sudah tertebak?
 
 Menurut ane novel ini adalah salah satu *masterpiece* dari Seishi Yokomizo selain The Honjin Murders dan Inugami Curse! meski alur penceritaannya bukanlah hal yang baru karena ada penulis dari Inggris yang pernah berjaya dengan plot dan penulisan yang sama.  Tetap saja versi Seishi ini terasa lebih gelap dan lebih menarik.
