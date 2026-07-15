@@ -18,7 +18,7 @@
   },
   "comments": {
     "title": "dari Fediverse",
-    "description": "Kamu juga bisa meninggalkan komentar dari akun fediversemu dengan meng-<i>reply</i> <a href=':src:'>di toot ini</a>",
-    "empty": "Belum ada komentar dari fediverse"
+    "description": "Kamu juga bisa meninggalkan komentar dari akun fediversemu dengan menyalin tautan dibawah ini dan mencarinya di instance Mastodon atau ActivityPub pilihanmu <br /><code class='fdvs'>:src:</code>",
+    "empty": "Belum ada komentar dari fediverse/ActivityPub"
   }
 }

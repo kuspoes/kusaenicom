@@ -16,7 +16,7 @@ format: "epub"
 bahasa: "Bahasa Inggris"
 isbn: "9781805335573"
 tahun: 2026
-resensi: "Ketika 2 orang bungkuk berpunuk bertemu, kengerian terjadi di mansion Furugami. Yachiyo Furugami si tuang putri yang cantik jelita menderita penyakit berjalan saat tidur. Akan tetap di beberapa kali perjalanan terakhir meninggalkan jejak pembunuhan beberapa orang di sekitarnya."
+resensi: "Ketika 2 orang bungkuk berpunuk bertemu, kengerian terjadi di mansion Furugami. Yachiyo Furugami si tuan putri yang cantik jelita menderita penyakit berjalan saat tidur. Akan tetap di beberapa kali perjalanan terakhir meninggalkan jejak pembunuhan beberapa orang di sekitarnya."
 rating: 5
 beli: https://pushkinpress.com/book/she-walks-at-night/
 dimana: Pushkinpress
@@ -66,7 +66,7 @@ Misteri dimulai, siapakah mayat laki - laki tanpa kepala itu? Apakah itu Morie a
 
 ### Sudah tertebak?
 
-Menurut ane novel ini adalah salah satu *masterpiece* dari Seishi Yokomizo selain The Honjin Murders dan Inugami Curse! meski alur penceritaannya bukanlah hal yang baru karena ada penulis dari Inggris yang pernah berjaya dengan plot dan penulisan yang sama. Namun tetap saja versi Seishi ini terasa lebih gelap dan lebih menarik.
+Menurut ane novel ini adalah salah satu *masterpiece* dari Seishi Yokomizo selain The Honjin Murders dan Inugami Curse! meski alur penceritaannya bukanlah hal yang baru karena ada penulis dari Inggris yang pernah berjaya dengan plot dan penulisan yang sama.  Tetap saja versi Seishi ini terasa lebih gelap dan lebih menarik.
 
 Namun tidak seperti di novel - novel sebelumnya, porsi kemunculan Kindaichi di dalam novel lebih sedikit mirip di novel Murder in the Black Cat Cafe.
 

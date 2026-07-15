@@ -13,7 +13,7 @@ curl -fsSL https://deno.land/install.sh | sh
 ```
 
 atau bisa dengan package manager seperti `brew`, `apt`, dan sebagainya.
-jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.8.3 (stable).
+jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.2 (stable).
 
 2. Clone repo ini
 
@@ -32,9 +32,9 @@ $ deno task lume -s
 ```
 
 perintah ini akan menginstall `lume` di sistem dan menjalankan lume untuk build dan serve di `localhost:3000`.
-jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.6
+jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.6 (latest).
 
-kalo ingin membuild saja gunakan
+kalo ingin mem-build saja gunakan
 
 ```bash
 $ cd blog
@@ -92,5 +92,3 @@ Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke 
 Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
 
 Per 2 Mei 2026, Ane pindahkan hosting ke Netlify karena di Deno Deploy gratisan dapatnya region EU dan US yang tentu saja akan membuat latency semakin tinggi yang berimbas akses ke situs (agak) tersendat. Netlify punya fitur edge di SEA harapannya bisa membuat akses lebih cepat. Jika pun tidak kemungkinan besar akan pakai self host atau CloudFlare.
-
-Namun pada 7 Mei 2026 ane malah pindahkan lagi ke Cloudflare karena masalah kecepatan, namun ternyata ane salah sangkat bahwa yang membuat blog ini lambat dibuka bukan karena letak server Deno maupun Netlify melainkan optimalisasi yang keliru. Jadi mau dihost dimana saja sama saja karena sekarang kodenya sudah dioptimalisasi dengan baik.
