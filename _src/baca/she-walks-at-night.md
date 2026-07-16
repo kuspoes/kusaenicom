@@ -40,11 +40,11 @@ comments:
 
 Suatu hari Naoki menceritakan bahwa saudara sepupunya si putri nan cantik jelita bernama Yachiyo Furugami kemungkinan besar pada suatu malam pernah melakukan tindakan kejahatan menembak seorang seniman di sebuah klub malam. 
 
-Yachiyo ini adalah putri dari Oribe Furugami kepala klan Furugami dengan istri kedua bernama Lady Oryu, namun Naoki berpikiran bahwa Yachiyo adalah adik tirinya karena Lady Oryu berselingkuh dengan Tetsunoshin Sengoku ayah dari Naoki.
+Yachiyo ini adalah putri dari Oribe Furugami kepala klan Furugami dengan istri kedua bernama Lady Oryu, namun Naoki berpikiran bahwa Yachiyo adalah adik tirinya karena Lady Oryu berselingkuh dengan Tetsunoshin Sengoku ayah dari Naoki karena Yachiyo mewarisi kelainan berjalan dalam tidur yang merupakan kelainan yang dimiliki oleh Tetsunoshin dan anak keturunannya termasuk Naoki.
 
-Karena cantik dan menariknya, Yachiyo disukai oleh banyak pria termasuk Naoki dan Morie Furugami (putra dari Oribe dengan istri pertama) yang merupakan kakak beda ibu. Di dalam keluarga Furugami turun temurun melakukan praktek *incest* atau pernikahan sedarah sehingga menjadikan keturunan keluarga Furugami mengalami kelainan fisik. 
+Karena cantik dan menarik Yachiyo disukai oleh banyak pria termasuk Naoki dan Morie Furugami (putra dari Oribe dengan istri pertama) yang merupakan kakak beda ibu. Di dalam keluarga Furugami turun temurun melakukan praktik *incest* atau pernikahan sedarah sehingga menjadikan keturunan keluarga Furugami mengalami kelainan fisik. Namun karena menganggap Yachiyo adalah saudari tirinya, maka Naoki berusaha memendam perasaannya meski sering terbakar api cemburu melihat kedepakat Yachiyo dan Morie.
 
-Morie Furugami meskipun tampan tapi memiliki cacat fisik yaitu bungkuk dan memiliki daging punuk sejak lahir.
+Morie Furugami meskipun tampan tapi memiliki cacat fisik yaitu bungkuk dan memiliki daging punuk sejak lahir. Ini membuat dia terasing dari pergaulan luar dan seumur hidup berdiam di dalam mansion Furugami.
 
 Dari potongan berita di surat kabar, Naoki mengatakan bahwa yang ditembak oleh Yachiyo adalah Koichi Hachiya seorang seniman pahat dan lukis yang sedang naik daun kepopulerannya. Dia ditembak oleh perempuan yang diduga oleh Naoki sebagai Yachiyo tepat di paha sebelah kanan. Meskipun tidak fatal, namun kejadian ini menjadi sensasi berita tersendiri di luar berita lainnya tetang Hachiya yang sering bermain dan bergonta ganti pasangan.
 
@@ -54,7 +54,7 @@ Beberapa bulan setelah kejadian itu, tidak disangka tiba - tiba Yachiyo mengunda
 
 Hubungan ini membuat Naoki dan Morie sangat cemburu sehingga membuat pertengkaran dan kekacauan di dalam mansion Furugami. Sedangkan Hachiya sendiri memiliki sifat usil telah membuat Tetsunoshin marah besar saat mabuk dan mengejar Hachiya dengan samurai yang terhunus. Untungnya Hachiya masih selamat dari peristiwa itu, ternyata saat mabuk Tetsunoshin menjadi sangat pemarah dan selalu menghunus samurai untuk menebas orang.
 
-Takut akan terjadi apa - apa saat mabuk lagi, Tetsunoshin meminta Naoki untuk menyembunyikan samurai di tempat yang Tetsunoshin tidak ketahui. 
+Takut akan terjadi apa - apa saat mabuk lagi, Tetsunoshin meminta Naoki untuk menyembunyikan samurai di tempat yang Tetsunoshin tidak ketahui. Namun Naoki merasa heran, darimana ayahnya mendapatkan samurai itu padahal dia sudah sembunyikan dengan baik.
 
 Sorenya sebelum makan malam, Morie marah karena cemburu kepada Hachiya dan melemparkan vas bunga ke arahnya. Sehingga membuat Hachiya tidak mau hadir saat makan malam, Yachiyo kemudian pergi ke kamar Hachiya untuk mengantarkan makan malam. Naoki dan Torata yang curiga Yachiyo tidak segera kembali kemudian menghampiri kamar Hachiya dan menemukan Yachiyo berlari keluar dari kamar Hachiya dengan wajah habis menangis dan baju berantakan.
 
