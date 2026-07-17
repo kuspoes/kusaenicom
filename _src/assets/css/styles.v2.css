@@ -1447,6 +1447,16 @@ select,
     border-radius: 4px;
 }
 
+.pagefind-ui__filter-panel,
+.pagefind-ui__result-filters,
+[data-pagefind-filter] {
+    display: none !important;
+}
+
+.pagefind-ui__result-excerpt.svelte-j9e30.svelte-j9e30 {
+    width: 100%;
+}
+
 /* TOC */
 
 nav.toc a {
