@@ -249,7 +249,8 @@ body {
 }
 
 .postcover {
-    width: 10em;
+    width: 5em;
+    height: 6em;
 }
 
 .postcover img.postCoverImg {
