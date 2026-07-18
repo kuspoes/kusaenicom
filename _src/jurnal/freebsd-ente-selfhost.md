@@ -363,64 +363,64 @@ Semua perubahan di `museum.yaml` harus diikuti dengan _restart_ `main` agar Ente
 1. **Closed, tidak menerima pendaftaran**.
    Instance Ente ini ane pergunakan pribadi sehingga ane tidak perlu menerima pendaftaran, oleh karena itu ane masukkan `key` berikut di `museum.yaml`
 
-```yaml
-internal:
-	disable-registration: true
-```
+    ```yaml
+    internal:
+	    disable-registration: true
+    ```
 
 <p></p>
 
 2. **Jadi Admin**.
    Ini penting karena menjadi admin bisa melakukan pengaturan secara maksimal. Untuk menjadi admin ada beberapa langkah yang harus dilakukan yaitu mencari `user_id` di dalam database postgres dan masukkan ke dalam `museum.yaml`.
 
-```shell-session
-$ psql -U ente-user -d ente-db
-ente-db=# SELECT * FROM users;
-```
-
-Catat `user_id`, misalnya `1580567352375231` kemudian edit file `museum.yaml`
-
-```yaml
-internal:
-	disable-registration: true
-	admins:
-		- 1580567352375231
-```
+    ```shell-session
+    $ psql -U ente-user -d ente-db
+    ente-db=# SELECT * FROM users;
+    ```
+    
+    Catat `user_id`, misalnya `1580567352375231` kemudian edit file `museum.yaml`
+    
+    ```yaml
+    internal:
+	    disable-registration: true
+	    admins:
+		    - 1580567352375231
+    ```
 
 <p></p>
 
 3. **Upgrade storage**.
    Meski _selfhost_, *default*nya Ente akan memberikan _storage_ maksimal 10GB pada setiap user, agar bisa memaksimalkan _storage_ ada 2 cara yaitu _edit_ database atau pakai `ente-cli`.
 
-Agar bisa mempergunakan `ente-cli` maka akun ane harus sudah menjadi admin. Kemudian jalankan `ente-cli`.
-
-```shell-session
-$ cd ente/cli/bin
-$ ./ente-cli admin update-subscription -u poes@taa.ee --no-limit True
-```
-
-perintah ini akan membuat user poes@taa.ee akan memiliki _storage_ sebesar 100TB yang akan _expired_ di 100 tahun kemudian.
-
-Namun jika lebih nyaman dengan SQL, bisa dicoba [cara berikut:](https://pegelinux.top/users/kimiamania/statuses/115458916631493259)
-
-```shell-session
-$ psql -U ente-user -d ente-db
-$ UPDATE subscriptions SET storage = 107374182400 WHERE user_id = 1580567352375231;
-```
-
-Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai `ente-cli`.
-
-<div class="image-2column">
-<div class="img1">
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-limit_vVmbYvovP.png" alt="ente user limit storage">
-<p class="ncaption">Sebelum</p>
-</div>
-<div class="img2">
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-no-limit_301ZKOOdo.png" alt="ente user no limit storage">
-<p class="ncaption">Sesudah</p>
-</div>
-</div>
-
+    Agar bisa mempergunakan `ente-cli` maka akun ane harus sudah menjadi admin. Kemudian jalankan `ente-cli`.
+    
+    ```shell-session
+    $ cd ente/cli/bin
+    $ ./ente-cli admin update-subscription -u poes@taa.ee --no-limit True
+    ```
+    
+    perintah ini akan membuat user poes@taa.ee akan memiliki _storage_ sebesar 100TB yang akan _expired_ di 100 tahun kemudian.
+    
+    Namun jika lebih nyaman dengan SQL, bisa dicoba [cara berikut:](https://pegelinux.top/users/kimiamania/statuses/115458916631493259)
+    
+    ```shell-session
+    $ psql -U ente-user -d ente-db
+    $ UPDATE subscriptions SET storage = 107374182400 WHERE user_id = 1580567352375231;
+    ```
+    
+    Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai `ente-cli`.
+    
+      <div class="image-2column">
+    <div class="img1">
+      <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-limit_vVmbYvovP.png" alt="ente user limit storage">
+      <p class="ncaption">Sebelum</p>
+    </div>
+    <div class="img2">
+      <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-no-limit_301ZKOOdo.png" alt="ente user no limit storage">
+      <p class="ncaption">Sesudah</p>
+    </div>
+        </div>
+        
 4. **Update CORS**.
    Ane pakai Garage S3 (AWS Compatible), entah mengapa selalu gagal saat upload media melalui Ente. Dari web console errornya adalah masalah CORS Origin. Jadi ane perlu benerin bucket dengan mengupdate CORS. Buat file dengan nama misalnya `cors.json`
 
@@ -438,34 +438,52 @@ Mempergunakan cara ini lebih beresiko database rusak sehingga ane pilih memakai 
    }
    ```
 
-Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) _update bucket policy_.
+  Kemudian dengan [aws-cli](https://github.com/aws/aws-cli) _update bucket policy_.
 
-<div class="postnotes kuning-gading">
-<h4>Update</h4>
-<p>Oke begini cara pakai <code>aws-cli</code>. Paket ini bisa di<i>install</i> dan dikonfigurasi dengan perintah</p>
-
-<pre class="language-shell-session"><code class="language-shell-session">
- $ doas pkg install -y py-awscli
- $ aws configure
- AWS Access Key ID [None]: W3wNV6XRh1YJ8arQKBoongNqGhQ
- AWS Secret access key [None]: FakeLIpA3l0VjttIiHaZgdMXF4ujQOYTyBtztpSy7w0yD2qzphOQwRtvj
- Default Region name [None]: us-east-1
- Default output format [None]: JSON
-</code></pre>
-
-<p>AWS Access Key ID dan Secret harus sama dengan yang dimasukkan di file <code>museum.yaml</code>.</p></div>
-
-```shell-session
+  <div class="postnotes kuning-gading">
+      <h4>Update</h4>
+      <p>Oke begini cara pakai <code>aws-cli</code>. Paket ini bisa di<i>install</i> dan dikonfigurasi dengan perintah</p>
+  
+  <pre class="language-shell-session"><code class="language-shell-session">
+      $ doas pkg install -y py-awscli
+      $ aws configure
+      AWS Access Key ID [None]: W3wNV6XRh1YJ8arQKBoongNqGhQ
+      AWS Secret access key [None]: FakeLIpA3l0VjttIiHaZgdMXF4ujQOYTyBtztpSy7w0yD2qzphOQwRtvj
+      Default Region name [None]: us-east-1
+      Default output format [None]: JSON
+  </code></pre>
+  
+  <p>AWS Access Key ID dan Secret harus sama dengan yang dimasukkan di file <code>museum.yaml</code>.</p></div>
+  
+  ```shell-session
 $ aws s3api put-bucket-cors \
 --endpoint s3.taa.ee \
 --bucket ente-bucket \
 --cors-configuration file://home/poes/cors.json
 ```
+<p></p>
 
-5. Ente Desktop
+5. **Ente Desktop**
    Meski ada web GUI, memasang Ente Desktop app adalah pilihan yang lebih baik karena pengalaman ane saat pakai web gui sebagian besar media (terutama video) yang ane unggah tidak bisa di*generate thumbnail*nya atau _frame_ pertama muncul warna gelap/hitam. Namun masalah ini tidak terjadi saat ane pakai Ente Desktop app.
 
-Untuk memasang tinggal unduh saja aplikasinya di [halaman Ente Desktop](https://ente.io/download/) atau untuk versi termutakhir bisa lewat [Repo Github Ente Desktop](https://github.com/ente-io/ente/tree/main/desktop). Satu - satunya kelemahan yang ane ga suka adalah Ente Desktop app dibangun dengan electron 👎🏾.
+    Untuk memasang tinggal unduh saja aplikasinya di [halaman Ente Desktop](https://ente.io/download/) atau untuk versi termutakhir bisa lewat [Repo Github Ente Desktop](https://github.com/ente-io/ente/tree/main/desktop). Satu - satunya kelemahan yang ane ga suka adalah Ente Desktop app dibangun dengan electron.
+
+6. **Menambahkan akun email**
+    Jika berencana untuk mengaktifkan OTP sebagai lapisan pengaman saat *login* dan atau ingin membuat *multiple account* maka menambahkan pengaturan email untuk notifikasi sangat disarankan. 
+
+    Email ini akan mengirimkan OTP dan informasi akun melalui email, bisa pakai email apa saja bahkan gmail. Ane sendiri memakai layanan email sendiri yang ane sewa di [Namecrane](https://namecrane.com/cranemail-email-hosting). Tambahkan pengaturan berikut di file `museum.yaml`.
+
+    ```yml
+    smtp:
+      host: mail.taa.ee
+      port: 465
+      username: osht@taa.ee
+      password: toilet357
+      email: osht@taa.ee
+      sender-name: Oh Shit
+      encryption: SSL
+    ```
+  
 
 ---
 

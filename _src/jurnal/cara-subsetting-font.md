@@ -131,6 +131,16 @@ div.logo .kusaeni {
 }
 ```
 
+Kode CSS di atas mempergunakan `font-display: swap` sebagai pilihan bagaimana browser akan menampilkan kustom font. Browser akan menampilkan *fallback font* atau font kedua, ketiga, atau selanjutnya yang dimiliki oleh user, sehingga akan ada sedikit *delay* karena browser harus mengunduh terlebih dulu kustom font.
+
+Masalahnya hal ini akan terjadi berulang saat halaman di-*render*, untuk menghindari ini ane manfaatkan `preload` untuk memprioritaskan pengunduhan kustom font sehingga untuk *render* kedua dan selanjutnya peralihan font menjadi lebih mulus.
+
+Di HTML `header` ane sisipkan kode HTML seperti ingin
+
+```html
+<link rel="preload" href="/assets/fonts/Sofia/Sofia-Kus_Regular.woff2" as="font" type="font/woff2" crossorigin>
+```
+
 Hore! sekarang logo ane sudah jadi tanpa gambar.
 
 {{ comp.subs() }}
