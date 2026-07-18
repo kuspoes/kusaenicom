@@ -91,7 +91,7 @@ style: "tentang.css"
 
 <p>Usia situs/blog ini sendiri sudah memasuki 16 tahun, sudah banyak sekali artikel maupun catatan yang pernah saya tulis disini. Sayangnya karena satu dua tiga hal arsip - arsip tulisan maupun catatan tersebut lenyap. Jika anda ada keperluan terkait artikel maupun catatan lama saya, maka <a href="https://web.archive.org/web/2019*/kusaeni.com">halaman web archive</a> ini adalah tempat yang tepat untuk mencari.</p>
 
-<p>Apabila ada tulisan maupun catatan saya yang tidak berkenan bagi anda, silakan menghubungi saya di akun twitter <a class="font-semibold text-blue-600" href="https://twitter.com/kuspoes">@kuspoes</a> dan atau email <a class="font-semibold text-red-600" href="mailto:kusaeni@gmail.com">poes&#64;egois.org</a>. Namun jika anda merasa bahwa tulisan saya menarik dan ingin mendapatkan <i>update</i> terbaru setiap terbit, silakan berlangganan <a href="https://kusaeni.com/feed.xml">RSS</a> atau melalui <a href="{{ '/subs' | url }}">email</a>.</p>
+<p>Apabila ada tulisan maupun catatan saya yang tidak berkenan bagi anda, silakan menghubungi saya di akun twitter <a class="font-semibold text-blue-600" href="https://twitter.com/kuspoes">@kuspoes</a> dan atau email <a class="font-semibold text-red-600" href="mailto:kusaeni@gmail.com">poes&#64;egois.org</a>. Namun jika anda merasa bahwa tulisan saya menarik dan ingin mendapatkan <i>update</i> terbaru setiap terbit, silakan berlangganan <a href="https://kusaeni.com/feed.xml">RSS</a> atau melalui email.</p>
 
 {{ comp.subs() }}
 
