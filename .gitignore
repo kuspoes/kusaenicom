@@ -3,6 +3,8 @@ _site
 .env
 _sandbox
 test.md
+.github
+_cache
 
 # wrangler files
 .wrangler
