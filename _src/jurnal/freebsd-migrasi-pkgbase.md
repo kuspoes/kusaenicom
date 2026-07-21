@@ -119,6 +119,6 @@ $ doas pkg upgrade
 
 Ane juga melakukan pembersihan/*cleaning cache* paket dan mengunduh ulang paket untuk memastikan tidak ada *cache* paket yang korup karena masalah saat *upgrade*.
 
-Jika masalah terjadi pada saat proses migrasi, maka baca baik - baik *error* yang muncul dan selesaikan terlebih dahulu masalah yang ada. Kemudian lanjutkan proses migrasi dengan menambahkan *flag* `--force` untuk memaksa dan melanjutkan proses migrasi.
+Jika masalah terjadi pada saat proses migrasi, maka baca baik - baik *error* yang muncul dan selesaikan terlebih dahulu masalah yang ada. Kemudian lanjutkan dengan menambahkan *flag* `--force` untuk memaksa dan melanjutkan proses migrasi.
 
 {{ comp.subs() }}

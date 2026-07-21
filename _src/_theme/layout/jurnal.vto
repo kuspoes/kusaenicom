@@ -14,7 +14,7 @@
         {{ if ringkasan }}
         <p class="subtitle">{{ ringkasan |> md }}</p>
         {{ /if }}
-        <div class="postag">
+        <div class="postag1">
             {{ if tags }} {{ for tag of it.tags }} {{ set page =
             search.page(`type=tag tag="${tag}"`) }} {{ if page }}
             <a data-pagefind-filter="filter" class="badge" href="{{ page.url }}"

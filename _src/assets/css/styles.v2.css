@@ -1450,7 +1450,7 @@ select,
 
 .pagefind-ui__filter-panel,
 .pagefind-ui__result-filters,
-[data-pagefind-filter] {
+#search [data-pagefind-filter] {
     display: none !important;
 }
 
