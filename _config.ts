@@ -86,12 +86,6 @@ site
   .use(readInfo({
     wordsPerMinute: 200,
   }))
-  .use(
-    sitemap({
-      query: "draft!=true",
-      sort: "date=desc",
-    }),
-  )
   .ignore("README.md");
 
 if (!isDev) {
@@ -110,29 +104,34 @@ if (!isDev) {
       },
     }),
   );
+  site.use(
+    sitemap({
+      query: "draft!=true",
+      sort: "date=desc",
+    }),
+  );
+  site.use(
+    feed({
+      output: "feed.xml",
+      query: "type=post",
+      limit: 10,
+      info: {
+        title: "=site.title",
+        description: "=site.description",
+        authorName: "=site.author.name",
+        authorUrl: "=site.author.url",
+        lang: "id",
+      },
+      items: {
+        title: "=title",
+        description: "=excerpt",
+        published: "=date",
+        content: "$.content",
+        lang: "id",
+      },
+    }),
+  );
 }
-
-site.use(
-  feed({
-    output: "feed.xml",
-    query: "type=post",
-    limit: 10,
-    info: {
-      title: "=site.title",
-      description: "=site.description",
-      authorName: "=site.author.name",
-      authorUrl: "=site.author.url",
-      lang: "id",
-    },
-    items: {
-      title: "=title",
-      description: "=excerpt",
-      published: "=date",
-      content: "$.content",
-      lang: "id",
-    },
-  }),
-);
 
 site.helper(
   "relasi",

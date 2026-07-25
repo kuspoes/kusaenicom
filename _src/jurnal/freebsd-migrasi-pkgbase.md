@@ -1,5 +1,5 @@
 ---
-title: "FreeBSD: migrasi ke pkgbase"
+title: "FreeBSD migrasi ke pkgbase"
 ringkasan: "masa depan proses <i>update - upgrade</i> FreeBSD yang akan menggantikan <code>freebsd-update</code>"
 date: 2026-07-05
 tags:
