@@ -14,11 +14,11 @@ code: true
 favorit: false
 comment: true
 keywords: "bsd, freebsd, security, tutorial, cara migrasi pkgbase, belajar freebsd, jail, bastillebsd, bastille"
-draft: true
+draft: false
 tocx: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.deno.dev/@poes/statuses/01KYCBBTWA642B71Y3FK0S4A6G
+  real: https://sok.egois.org/@poes/statuses/01KYCBBTWA642B71Y3FK0S4A6G
 ---
 
 Setelah sukses melakukan migrasi *host* [#FreeBSD](/tags/freebsd) ke metode pkgbase dengan [pkgbasify](https://github.com/FreeBSDFoundation/pkgbasify), maka sekarang saatnya untuk melakukan migrasi jail.
