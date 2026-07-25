@@ -9,7 +9,7 @@
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run -A --env-file lume/cli.ts"
+      "command": "deno run -A _plugins/pixelfed.ts && sleep 2 && deno run -A --env-file lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",
@@ -33,37 +33,22 @@
     }
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ],
+    "types": ["lume/types.ts"],
     "jsx": "react-jsx",
     "jsxImportSource": "lume"
   },
-  "unstable": [
-    "temporal",
-    "fmt-component"
-  ],
+  "unstable": ["temporal", "fmt-component"],
   "lint": {
-    "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/lint.ts"
-    ],
+    "plugins": ["https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/lint.ts"],
     "rules": {
-      "exclude": [
-        "no-import-prefix"
-      ]
+      "exclude": ["no-import-prefix"]
     }
   },
   "permissions": {
     "lume": {
       "read": true,
-      "write": [
-        "./"
-      ],
-      "import": [
-        "cdn.jsdelivr.net:443",
-        "jsr.io:443",
-        "deno.land:443"
-      ],
+      "write": ["./"],
+      "import": ["cdn.jsdelivr.net:443", "jsr.io:443", "deno.land:443"],
       "net": [
         "0.0.0.0",
         "jsr.io:443",
@@ -81,9 +66,6 @@
   },
   "lock": true,
   "allowScripts": {
-    "deny": [
-      "npm:sharp",
-      "npm:@parcel/watcher"
-    ]
+    "deny": ["npm:sharp", "npm:@parcel/watcher"]
   }
 }

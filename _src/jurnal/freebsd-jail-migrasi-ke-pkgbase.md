@@ -61,7 +61,7 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
         }
     ```
 
-    tambahkan atau rubah konfigurasi jail `postgres` seperti kode di atas. Ane rubah `securelevel= -1;` untuk membuka [proteksi](https://docs.freebsd.org/en/books/handbook/security/#security-secure-levels) untuk sementara.
+    tambahkan atau rubah konfigurasi jail `postgres` seperti kode di atas. Ane rubah `securelevel= -1;` untuk membuka [proteksi](https://docs.freebsd.org/en/books/handbook/security/#security-secure-levels) untuk sementara.  
 
 3. **Lakukan *update* `pkg` di jail**. Perintah ini bisa dilakukan di dalam jail atau dari *host*, namun pengalaman ane saat dijalankan dari *host* kemungkinan sukses untuk migrasi lebih besar.
 
@@ -97,7 +97,7 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
         Restarting sshd
         Performing sanity check on sshd configuration.
         Stopping sshd.
-        Waiting for PIDS: 507212.
+        Waiting for PIDS: 62777.
         Performing sanity check on sshd configuration.
         Starting sshd.
         Conversion finished.

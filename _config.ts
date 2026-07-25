@@ -50,7 +50,7 @@ site
   .copy("assets", "/assets")
   .copy("well-known", "/.well-known")
   .copy("favicon.ico", "/favicon.ico")
-  .copy("assets/pixelfed", "/pixelfed")
+  //.copy("assets/pixelfed", "/pixelfed")
   .use(attributes())
   .use(purgecss())
   .use(base_path())
@@ -58,7 +58,7 @@ site
   .use(imageSize())
   .use(picture())
   .use(transformImages())
-  .add("/assets/pixelfed")
+  //.add("/assets/pixelfed")
   .use(
     date({
       formats: {
