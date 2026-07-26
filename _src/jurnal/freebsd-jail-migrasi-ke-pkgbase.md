@@ -80,7 +80,7 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
       $ fetch https://github.com/FreeBSDFoundation/pkgbasify/raw/refs/heads/main/pkgbasify.lua
       pkgbasify.lua                           21 kB 11MBps    00s
       $ chmod +x pkgbasify.lua
-      $ ./pkgbasify.lua --jail postgres
+      $ mdo ./pkgbasify.lua --jail postgres
       Running this tool will irreversibly modify your system to use pkgbase.
       This tool and pkgbase are experimental and may result in a broken system.
       It is highly recommended to backup your system before proceeding.
