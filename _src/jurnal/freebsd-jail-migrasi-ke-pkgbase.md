@@ -91,23 +91,23 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
 5. **Tunggu sampai selesai dan kemudian *restart* jail**. Namun pastikan apakah isi dari *file* konfigurasi *password, groups*, dan SSH sudah benar. Ane ga pakai konfigurasi ini jadi ane anggap benar saja.
       
       ```shell-session
-        --
-        After upgrading local-unbound, the configuration file should be regenerated
-        by running "service local_unbound setup" before restarting the service.
-        Restarting sshd
-        Performing sanity check on sshd configuration.
-        Stopping sshd.
-        Waiting for PIDS: 62777.
-        Performing sanity check on sshd configuration.
-        Starting sshd.
-        Conversion finished.
-        
-        Please verify that the contents of the following critical files are as expected:
-        /etc/master.passwd
-        /etc/group
-        /etc/ssh/sshd_config
-        
-        After verifying those files, restart the system.
+          --
+          After upgrading local-unbound, the configuration file should be regenerated
+          by running "service local_unbound setup" before restarting the service.
+          Restarting sshd
+          Performing sanity check on sshd configuration.
+          Stopping sshd.
+          Waiting for PIDS: 62777.
+          Performing sanity check on sshd configuration.
+          Starting sshd.
+          Conversion finished.
+          
+          Please verify that the contents of the following critical files are as expected:
+          /etc/master.passwd
+          /etc/group
+          /etc/ssh/sshd_config
+          
+          After verifying those files, restart the system.
 
         $ mdo bastille restart postgres
         $ mdo pkg -j postgres which /bin/ls

@@ -6,7 +6,6 @@ tags:
   - tutorial
   - openbsd
   - bsd
-  - pin
 kategori: jurnal
 relasi: openbsd
 code: true
