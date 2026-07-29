@@ -1408,6 +1408,10 @@ span.footnomer {
     font-size: 1.4em;
 }
 
+.logo a.kusaeni:visited {
+    color: rgb(204, 51, 51);
+}
+
 .menu a {
     padding: 4px 8px;
 }

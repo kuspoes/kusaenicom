@@ -8,6 +8,7 @@ tags:
   - rclone
   - bsd
   - freebsd
+  - database
 kategori: jurnal
 relasi: freebsd
 code: true
@@ -208,6 +209,15 @@ $ doas crontab -e
 Demikian cara untuk melakukan backup data dengan mempergunakan tools restic dan rclone di FreeBSD, caranya mudah dan efektif. Restic sudah memiliki fitur untuk melakukan enkripsi data sehingga terjamin keamanannya dan tidak perlu memakai aplikasi pihak ketiga seperti [age](https://github.com/FiloSottile/age).
 
 Meski akan sangat kuat jika disandingkan dengan age, namun hal ini akan menghilangkan kemampuan restic untuk deduplikasi data. Sedangkan rclone ini adalah tool yang sangat powerfull untuk akses data dan bahkan bisa menjadi server webdav sendiri secara built-in. Dia semacam swiss army knife untuk akses data kemana saja. Menggabungkan restic dan rclone menjadi salah satu solusi prima untuk operasi backup data di FreeBSD.
+
+{{ comp.relasi_artikel({
+    judul: "Backup database dengan Litestream",
+    teks: "Ane pakai untuk backup database sqlite3 dan sejauh ini, ini yang paling bagus meski sedikit ruwet.",
+    format: "",
+    heading: "" })
+}}
+
+Alternatif jika ingin memakai metode *backup* secara *live* bisa mempergunakan Litestream, namun karena ane jarang tulis atau menyimpan *password* baru maka memakai Litestream terasa *overkill*. Litestream akan aktif dan memonitor proses database SQLite dan akan melakukan *backup* secara kontinyu dalam kurun waktu tertentu (60 detik misalnya).
 
 ---
 

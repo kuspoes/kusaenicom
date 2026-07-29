@@ -132,7 +132,7 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
 ---
 
 ##### Daftar Pustaka.
-1. Dan Langille, *[Running pkgbasify on a FreeBSD 15.0 jail](https://dan.langille.org/2026/06/30/running-pkgbasify-on-a-freebsd-15-0-jail/)*, Dan Langille's Other Diary, 2026
-2. BastilleBSD, *[Converting to Pkgbase](https://docs.bastillebsd.org/en/latest/chapters/pkgbase.html#converting-to-pkgbase)*, BastilleBSD Docs, 2025
-3. The FreeBSD Foundation, *[pkgbasify convert a FreeBSD system to use pkgbase](https://github.com/FreeBSDFoundation/pkgbasify)*, Github, 2026
-4. The FreeBSD Foundation, *[FreeBSD Handbook chapter 16. Security: Secure Level](https://docs.freebsd.org/en/books/handbook/security/#security-secure-levels)*, FreeBSD Handbook, 2026
+1. Dan Langille, *[Running pkgbasify on a FreeBSD 15.0 jail](https://dan.langille.org/2026/06/30/running-pkgbasify-on-a-freebsd-15-0-jail/){target="_blank"}*, Dan Langille's Other Diary, 2026
+2. BastilleBSD, *[Converting to Pkgbase](https://docs.bastillebsd.org/en/latest/chapters/pkgbase.html#converting-to-pkgbase){target="_blank"}*, BastilleBSD Docs, 2025
+3. The FreeBSD Foundation, *[pkgbasify convert a FreeBSD system to use pkgbase](https://github.com/FreeBSDFoundation/pkgbasify){target="_blank"}*, Github, 2026
+4. The FreeBSD Foundation, *[FreeBSD Handbook chapter 16. Security: Secure Level](https://docs.freebsd.org/en/books/handbook/security/#security-secure-levels){target="_blank"}*, FreeBSD Handbook, 2026

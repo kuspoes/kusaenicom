@@ -16,7 +16,7 @@
         {{ /if }}
         <link rel="preload" href="/assets/fonts/charter_regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/assets/fonts/Sofia/Sofia-Kus_Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/assets/fonts/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/DMSerif/DMSerifDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="/assets/css/styles.v2.css" inline>
         {{ if it.inlineStyle }}
         <style>{{ it.inlineStyle }}  </style>
@@ -75,7 +75,9 @@
         <meta property="og:description" content="{{ it.title || title }} : {{ it.ringkasan || metadata.description }}" />
         <meta property="og:url" content="{{ it.url |> url(true) }}" />
         <meta property="og:image" content="{{ it. coverImg || metadata.foto_profil }}" />
+        <!--
         <script src="https://darkvisitors.com/tracker.js?project_key=fcca7782-9f39-48ec-b960-812c0922a91f" async></script>
+        -->
     </head>
     <body>
         <main>

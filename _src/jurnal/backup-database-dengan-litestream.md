@@ -8,6 +8,7 @@ tags:
   - selfhost
   - gotosocial
   - freebsd
+  - database
 kategori: jurnal
 relasi: gotosocial
 code: true
