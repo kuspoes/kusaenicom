@@ -9,7 +9,7 @@
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run -A _plugins/pixelfed.ts && sleep 2 && deno run -A --env-file lume/cli.ts"
+      "command": "deno run -A --env-file lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",
@@ -18,6 +18,10 @@
     "serve": {
       "description": "Run and serve the site for development",
       "command": "deno task lume -s"
+    },
+    "lokal": {
+      "description": "untuk build di local",
+      "command": "deno run -A _plugins/pixelfed.ts && sleep 2 && deno task lume -s"
     },
     "refresh": {
       "description": "lumex untuk reload cache",

@@ -236,7 +236,7 @@ body {
 
 .tgl {
     text-align: center;
-    font: normal 1.8em var(--sans);
+    font: normal 1.8em var(--serif);
     font-weight: 200;
     display: block;
 }
@@ -245,7 +245,7 @@ body {
 .thn {
     text-align: center;
     margin-top: -0.1em;
-    font: normal 0.9em var(--sans);
+    font: normal 0.9em var(--serif);
 }
 
 .postcover {
