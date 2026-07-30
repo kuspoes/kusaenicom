@@ -77,9 +77,18 @@ Lalu bagaimana cara update version atau *security patch*?
 Tentu saja dengan melakukan *update* pada paket *base* dengan cara melakukan *fetch* dan *install* paket yang khusus diambil dari repositori **FreeBSD-base** dan melakukan *reboot*.
 
 ```shell-session
-$ doas pkg update -r FreeBSD-base
+$ mdo pkg update -f -r FreeBSD-base
+$ pkg rquery -r FreeBSD-base "%n-%v" FreeBSD-runtime
+FreeBSD-runtime-15.1p2
+$ doas pkg upgrade -r FreeBSD-base
 $ doas shutdown -r +10min "Reboot setelah update paket base"
 ```
+
+<div class="postnotes pink">
+    <p>Namun jika pakai kustom repo (seperti yang ditentukan lewat Fastfetch) seperti misalnya langsung pakai <a href="/jurnal/freebsd-serba-serbi-pkg/#pengaturan-pkg">repo terdekat</a> tanpa melalui pemilihan GeoIP dari server FreeBSD, bisa jadi repo tersebut belum <i>update</i> dengan rilis terbaru.</p>
+
+    <p>Sesuai dengan pengalaman, ane pakai server repo di Kuala Lumpur, Malaysia (<code>pkg0.kul.freebsd.org</code>), saat mencoba untuk <i>upgrade</i> seringnya repo masih belum mem-<i>mirror</i> paket terbaru sehingga tidak bisa diunduh. Jadi mengembalikan pengaturan <code>/usr/local/etc/pkg/repos/FreeBSD.conf</code> ke <i>default</i> bisa menyelesaikan masalah ini.
+</div>
 
 <hr />
 
