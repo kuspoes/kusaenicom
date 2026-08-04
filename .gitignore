@@ -5,6 +5,7 @@ _sandbox
 test.md
 .github
 _cache
+_tmp
 
 # wrangler files
 .wrangler

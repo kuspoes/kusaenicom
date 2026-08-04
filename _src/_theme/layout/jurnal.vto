@@ -95,6 +95,7 @@
           <header class="comments-header">
             <h4>{{ metadata.comments.title }}</h4>
             <p>{{ metadata.comments.description.replace(":src:", it.comments.real) }}</p>
+            <p><code class='fdvs' id='cp_fdvs'>{{ it.comments.real }}</code></p>
           </header>
           <mastodon-comments
             src="{{ it.comments.src }}"

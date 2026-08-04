@@ -1608,8 +1608,12 @@ td code {
 }
 
 code.fdvs {
+    display: block;
     padding: 4px 6px;
     background-color: rgba(203, 238, 243, 0.4);
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 /* media */
