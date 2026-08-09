@@ -23,7 +23,7 @@ comments:
 <p class="ncaption">dev insight error pada identifikasi ukuran gambar</p>
 
 Untuk keperluan menampilkan logo "kusaeni" yang ada di atas halaman ini, sebelumnya ane pakai gambar dengan format `webp` yang ringan, namun seringan apapun ukuran gambar akan jatuh lebih dari 10Kib dan harus memperhatikan [aspek rasio](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_sizing/Aspect_ratios) yang kadang kala membingungkan dan jika salah penanganan akan membuat halaman tidak lolos uji *Core Web Vitals Assessment* terutama di bagian *Best Practise - User Experience*. Oleh karena itu ane putuskan untuk mengatasi masalah ini dengan mengganti *file* gambar dengan *font*.
-    
+
 Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, dengan setidaknya ada lebih dari 200 karakter. Ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>" saja. Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
 
 <img class="display:inline; float:left" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.png" image-size>
