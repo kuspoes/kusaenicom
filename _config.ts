@@ -57,7 +57,7 @@ site
   .use(nunjucks())
   .use(imageSize())
   .use(picture())
-  .use(transformImages())
+  //.use(transformImages())
   //.add("/assets/pixelfed")
   .use(
     date({

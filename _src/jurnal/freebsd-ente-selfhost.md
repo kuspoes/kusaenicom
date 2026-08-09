@@ -21,7 +21,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
 ---
 
-![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png)
+![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png){.lebar .fuck}
 
 Artikel ini berisi catatan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
 
@@ -65,10 +65,10 @@ Ente sudah menyediakan _binary_ yang bisa langsung dipasang, sayangnya tidak unt
    /usr/local/bin/postgres "-D" "/data/postgres/data18"
 
    $ doas sockstat -4 | grep 5432
-   postgres postgres   88698  9 tcp4  10.0.0.3:5432         10.0.0.4:13701
-   postgres postgres   88682  9 tcp4  10.0.0.3:5432         10.0.0.4:62644
-   postgres postgres   88662  9 tcp4  10.0.0.3:5432         10.0.0.4:58171
-   postgres postgres   66771  6 tcp4  10.0.0.3:5432         *:*
+   postgres postgres   88698  9 tcp4  10.0.0.3:5432   10.0.0.4:13701
+   postgres postgres   88682  9 tcp4  10.0.0.3:5432   10.0.0.4:62644
+   postgres postgres   88662  9 tcp4  10.0.0.3:5432   10.0.0.4:58171
+   postgres postgres   66771  6 tcp4  10.0.0.3:5432   *:*
    ```
 
    Setelah postgres benar - benar berjalan, ganti password untuk user default postgresql yaitu `postgres`
