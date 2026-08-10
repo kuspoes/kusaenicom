@@ -12,7 +12,7 @@
         </p>
         <h1>{{ title }}</h1>
         {{ if ringkasan }}
-        <p class="subtitle">{{ ringkasan |> md }}</p>
+        <p class="subtitle">{{ ringkasan |> md(true) }}</p>
         {{ /if }}
         <div class="postag1">
             {{ if tags }} {{ for tag of it.tags }} {{ set page =
