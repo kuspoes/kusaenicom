@@ -312,7 +312,7 @@ aside.toc_stat {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 2em auto 2em auto;
+    margin: 2em auto 0em auto;
     width: 36em;
     font-family: var(--sans);
 }
@@ -330,6 +330,17 @@ aside.toc_stat {
     text-transform: uppercase;
     font-size: 0.85em;
     font-weight: 900;
+}
+
+.now {
+	width: 36em;
+	margin: 0em auto 0 auto;
+}
+
+.now p{
+	font-style: italic;
+	padding-left: 0px;
+	font-size: 90%;
 }
 
 .index_h1 {
@@ -1419,6 +1430,12 @@ span.footnomer {
     background-color: rgba(187, 148, 87, 0.2);
     padding: 4px 8px;
     border-radius: 0.375em;
+}
+
+span.palestine {
+	color: rgb(212, 64, 63);
+	font-style: normal;
+	font-size: 80%;
 }
 
 a.header-anchor,
