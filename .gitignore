@@ -6,6 +6,7 @@ test.md
 .github
 _cache
 _tmp
+.swp
 
 # wrangler files
 .wrangler
