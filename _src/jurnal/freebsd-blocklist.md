@@ -20,15 +20,33 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
 ---
 
-<img class="fuck lebar" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png" alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga dengan 2 tameng" />
+<img class="fuck lebar"
+src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png"
+alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan
+SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga
+dengan 2 tameng" />
 
-Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling kuat tapi _assume everything will be attacked_ atau _no system is safe_. Teknik awal dalam perentasan adalah melakukan _scanning ports_ dan kemudian mengeksploitasinya, yang paling sering diincar adalah port SSH dan FTP. Meskipun banyak sekali teknik dalam perentasan, namun paling tidak mengamankan _ports_ ini adalah langkah awal yang baik.
+Semua yang online pasti beresiko atas perentasan, meski bilangnya sistem paling
+kuat tapi _assume everything will be attacked_ atau _no system is safe_. Teknik
+awal dalam perentasan adalah melakukan _scanning ports_ dan kemudian
+mengeksploitasinya, yang paling sering diincar adalah port SSH dan FTP. Meskipun
+banyak sekali teknik dalam perentasan, namun paling tidak mengamankan _ports_
+ini adalah langkah awal yang baik.
+
 
 <#toc#>
 
 ### Blocklistd
 
-Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur di FreeBSD yang berguna untuk membuka atau menutup sebuah port dengan kriteria tertentu. Apalagi jika masih mempergunakan port standar untuk SSH yaitu di *port* `22`. Saat selesai *install* FreeBSD (di VPS), tak lama kemudian akan bermunculan para hiu mencoba _bruteforce_ akses SSH, dengan pelbagai macam cara dimana IP yang sering sekali mencoba berasal dari Asia. Maka Blocklistd ini sangat berguna untuk menghalau dan memblokir alamat IP tersebut untuk mengakses SSH. Secara fungsi mirip dengan [fail2ban](https://www.fail2ban.org/) yaitu memblokir alamat IP yang gagal *login* SSH dengan rentang waktu tertentu.
+Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur
+di FreeBSD yang berguna untuk membuka atau menutup sebuah port dengan kriteria
+tertentu. Apalagi jika masih mempergunakan port standar untuk SSH yaitu di
+*port* `22`. Saat selesai *install* FreeBSD (di VPS), tak lama kemudian akan
+bermunculan para hiu mencoba _bruteforce_ akses SSH, dengan pelbagai macam cara
+dimana IP yang sering sekali mencoba berasal dari Asia. Maka Blocklistd ini
+sangat berguna untuk menghalau dan memblokir alamat IP tersebut untuk mengakses
+SSH. Secara fungsi mirip dengan [fail2ban](https://www.fail2ban.org/) yaitu
+memblokir alamat IP yang gagal *login* SSH dengan rentang waktu tertentu.
 
 <div class="postnotes">
   <p>Perubahan nama dari Blacklistd ke Blocklistd ini mengikuti dari perubahan yang dilakukan oleh NetBSD. FreeBSD mengimpor fungsi ini dari NetBSD, sehingga saat nama berubah maka FreeBSD mengikuti untuk menjaga kompatibilitas. Meski begitu ada kabar menyebutkan bahwa perubahan ini untuk menghindari kesan rasis kepada sekelompok komunitas.</p>
@@ -40,7 +58,8 @@ Blacklistd (sekarang sudah dirubah menjadi Blocklistd) adalah salah satu fitur d
   <p>Meskipun begitu sampai dengan rilis 15.0, FreeBSD masih mempertahankan perintah <code>blacklistctl</code> di sistemnya dan bisa dipakai dengan baik</p>
 </div>
 
-Blocklistd sudah ada di dalam FreeBSD, tidak perlu memasangnya lagi, dan tinggal mengaktifkan saja.
+Blocklistd sudah ada di dalam FreeBSD, tidak perlu memasangnya lagi, dan tinggal
+mengaktifkan saja.
 
 ```shell-session
 $ doas sysrc blocklistd_enable="YES"
@@ -51,7 +70,8 @@ $ doas sysrc blocklistd_flags="-r"
 <i>flags</i> <code>-r</code> untuk membuat <i>rules</i> blocklist tetap tersedia setelah reboot.
 </aside>
 
-ini akan mengaktifkan Blocklistd dan akan tersedia setiap sistem dimulai ulang, untuk sistem yang sudah berjalan tinggal perintahkan untuk `start`
+ini akan mengaktifkan Blocklistd dan akan tersedia setiap sistem dimulai ulang,
+untuk sistem yang sudah berjalan tinggal perintahkan untuk `start`
 
 ```shell-session
 $ doas service blocklistd start

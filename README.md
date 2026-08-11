@@ -1,6 +1,6 @@
 # Jurnal Kusaeni
 
-- visit : [kusaicom](https://kusaeni.com)
+- visit : [kusaeni.com](https://kusaeni.com)
 - build with [deno](https://deno.land) and [lume3](https://lume.land)
 - serving by [deno deploy](https://deno.com)
 
@@ -12,8 +12,10 @@
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
-atau bisa dengan package manager seperti `brew`, `apt`, dan sebagainya.
-jangan lupa untuk _upgrade_ deno ke rilis terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.2 (stable).
+atau bisa dengan package manager seperti `brew`, `apt`, dan
+sebagainya.  jangan lupa untuk _upgrade_ deno ke rilis
+terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.5
+(stable).
 
 2. Clone repo ini
 
@@ -31,8 +33,11 @@ $ deno run -A https://lume.land/init.ts
 $ deno task lume -s
 ```
 
-perintah ini akan menginstall `lume` di sistem dan menjalankan lume untuk build dan serve di `localhost:3000`.
-jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi terkini dengan `deno task lume upgrade`. Repo ini mempergunakan lume versi 3.2.6 (latest).
+perintah ini akan menginstall `lume` di sistem dan
+menjalankan lume untuk build dan serve di `localhost:3000`.
+jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi
+terkini dengan `deno task lume upgrade`. Repo ini
+mempergunakan lume versi 3.2.6 (latest).
 
 kalo ingin mem-build saja gunakan
 
@@ -43,52 +48,99 @@ $ deno task lume
 
 ### Kostumisasi
 
-Untuk mengkostumisasi data, silakan edit file `_config.ts`, `_data.yml`, dan atau  di `_src/_data/_metadata.json`. Terutama di bagian nama domain, nama author, dan keterangan lainnya.
+Untuk mengkostumisasi data, silakan edit file `_config.ts`,
+`_data.yml`, dan atau  di `_src/_data/_metadata.json`.
+Terutama di bagian nama domain, nama author, dan keterangan
+lainnya.
 
-Untuk merubah tema, silakan edit di `_src/_theme`, folder ini berisi `bagian` untuk template `header`, `menu`, dan `footer`. Folder `images` untuk logo, favicon, dan sebagainya, sedangkan `layout` adalah template layout untuk pelbagai jenis tipe artikel seperti jurnal, baca, dan foto. Template dalam `.vto`.
+Untuk merubah tema, silakan edit di `_src/_theme`, folder
+ini berisi `bagian` untuk template `header`, `menu`, dan
+`footer`. Folder `images` untuk logo, favicon, dan
+sebagainya, sedangkan `layout` adalah template layout untuk
+pelbagai jenis tipe artikel seperti jurnal, baca, dan foto.
+Template dalam `.vto`.
 
-Folder `assets` di dalamnya ada file `CSS`, `JS`, dan `fonts`. Khusus font diambil sebagian dari Google Fonts namun untuk font berbayar tidak disertakan disini karena masalah lisensi.
+Folder `assets` di dalamnya ada file `CSS`, `JS`, dan
+`fonts`. Khusus font diambil sebagian dari Google Fonts
+namun untuk font berbayar tidak disertakan disini karena
+masalah lisensi.
 
-Update:
-Font's dari Google Font's bisa dipakai dengan host di local, karena sudah dilisensikan gratis namun untuk menghargai sila sebut bahwa font's berasal dari Google Font's. Gunakan layanan dari [Google Webfonts Helper](https://gwfh.mranftl.com/fonts) untuk mempermudah self host font's-nya.
+Update: Font's dari Google Font's bisa dipakai dengan host
+di local, karena sudah dilisensikan gratis namun untuk
+menghargai sila sebut bahwa font's berasal dari Google
+Font's. Gunakan layanan dari [Google Webfonts
+Helper](https://gwfh.mranftl.com/fonts) untuk mempermudah
+self host font's-nya.
 
 #### Tags
 
-Di folder `_src` ada juga file `tags.page.js` file ini khusus untuk meng-generate page `/tags` yang berasoisasi dengan file `tags.vto` di folder `_src/_theme/layout/tags.vto`.
+Di folder `_src` ada juga file `tags.page.js` file ini
+khusus untuk meng-generate page `/tags` yang berasoisasi
+dengan file `tags.vto` di folder
+`_src/_theme/layout/tags.vto`.
 
 #### Component's
 
-Berisi script untuk reuseable terutama untuk membuat relasi artikel dan buku.
-Dokumentasi tersedia di dalam masing - masing component, sebagai contoh untuk menampilkan related article:
+Berisi script untuk reuseable terutama untuk membuat relasi
+artikel dan buku.  Dokumentasi tersedia di dalam masing -
+masing component, sebagai contoh untuk menampilkan related
+article:
 
-```html
-{{ comp.relasi_artikel({
-    judul: "Judul Artikel",
-    teks: "",
-    format: "kanan | full",
-    heading: "" })
-}}
-```
+```html {{ comp.relasi_artikel({ judul: "Judul Artikel",
+teks: "", format: "kanan | full", heading: "" }) }} ```
 
-Dengan keterangan:
-`judul`:  judul artikel (case sensitive)
-`format`: defaultnya kiri tapi ada 2 pilihan lainnya yaitu kanan untuk float kanan atau full untuk mode penuh
-`teks`: masukkan teks sebagai deskripsi, jika tidak ada maka akan pakai ringkasan
-`heading`: jika URL menunjuk ke heading
+Dengan keterangan: `judul`:  judul artikel (case sensitive)
+`format`: defaultnya kiri tapi ada 2 pilihan lainnya yaitu
+kanan untuk float kanan atau full untuk mode penuh `teks`:
+masukkan teks sebagai deskripsi, jika tidak ada maka akan
+pakai ringkasan `heading`: jika URL menunjuk ke heading
 
-component ini bisa di-insert ke dalam file markdown pada artikel yang ingin menampilkan relasi ke artikel yang lain. Bedanya dengan related article di layout `jurnal.vto` adalah penempatan component sangat fleksibel bisa ditempatkan di mana saja di dalam artikel.
+component ini bisa di-insert ke dalam file markdown pada
+artikel yang ingin menampilkan relasi ke artikel yang lain.
+Bedanya dengan related article di layout `jurnal.vto` adalah
+penempatan component sangat fleksibel bisa ditempatkan di
+mana saja di dalam artikel.
 
-#### Pixelfed
-Di dalam `index.vto` ada bagian yang berfungsi menampilkan feed gambar dari Pixelfed, untuk kostumisasi edit file `_plugins/pixelfed.ts`. Pada baris ke 28 `atomURL` rubah ke alamat RSS/Atom dari halaman Pixelfed-mu. Kamu juga bisa merubah limit di baris ke 30.  `pixelfed.ts` akan mengunduh data dan membuat file baru bernama `pixelfed.json` di bawah folder `_src/_data`. Isinya adalah url gambar dari pixelfed kamu. 
+#### Pixelfed 
 
-Jika tidak ingin menampilkan sila rubah frontmatter di bagian atas `index.vto`, pilihan `pxlfed: true` akan menampilkan Pixelfed, sedangkan `false` akan menghilangkannya.
+Di dalam `index.vto` ada bagian yang berfungsi
+menampilkan feed gambar dari Pixelfed, untuk kostumisasi
+edit file `_plugins/pixelfed.ts`. Pada baris ke 28 `atomURL`
+rubah ke alamat RSS/Atom dari halaman Pixelfed-mu. Kamu juga
+bisa merubah limit di baris ke 30.  `pixelfed.ts` akan
+mengunduh data dan membuat file baru bernama `pixelfed.json`
+di bawah folder `_src/_data`. Isinya adalah url gambar dari
+pixelfed kamu. 
+
+Jika tidak ingin menampilkan sila rubah frontmatter di
+bagian atas `index.vto`, pilihan `pxlfed: true` akan
+menampilkan Pixelfed, sedangkan `false` akan
+menghilangkannya.
 
 ### Deploy
 
-> Repository ini kemudian di deploy ke Deno Deploy dengan script CI di `.github/workflows` . Silakan edit sesuai dengan preferensi. Untuk serve HTML saat di Deno Deploy mempergunakan file `server.ts`.
+> Repository ini kemudian di deploy ke Deno Deploy dengan
+> script CI di `.github/workflows` . Silakan edit sesuai
+> dengan preferensi. Untuk serve HTML saat di Deno Deploy
+> mempergunakan file `server.ts`.
 
-Di Deno Deploy terbaru sudah tidak diperlukan lagi Github Actions untuk push ke Deno Deploy namun Deno Deploy yang akan handle semua proses. Cukup tautkan saja repository Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja dihapus atau meng-disable fungsi Github Action. Untuk informasi lebih lanjut silakan baca [Lume migrasi ke Deno Deploy v2](https://kusaeni.com/jurnal/lume-migrasi-ke-deno-deploy-2/).
+Di Deno Deploy terbaru sudah tidak diperlukan lagi Github
+Actions untuk push ke Deno Deploy namun Deno Deploy yang
+akan handle semua proses. Cukup tautkan saja repository
+Github ke Deno Deploy. Sehingga file `main.yaml` bisa saja
+dihapus atau meng-disable fungsi Github Action. Untuk
+informasi lebih lanjut silakan baca [Lume migrasi ke Deno
+Deploy
+v2](https://kusaeni.com/jurnal/lume-migrasi-ke-deno-deploy-2/).
 
-Jika ingin mempergunakan layanan lainnya seperti Netlify, Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume Docs: Deployment](https://lume.land/docs/advanced/deployment/).
+Jika ingin mempergunakan layanan lainnya seperti Netlify,
+Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume
+Docs:
+Deployment](https://lume.land/docs/advanced/deployment/).
 
-Per 2 Mei 2026, Ane pindahkan hosting ke Netlify karena di Deno Deploy gratisan dapatnya region EU dan US yang tentu saja akan membuat latency semakin tinggi yang berimbas akses ke situs (agak) tersendat. Netlify punya fitur edge di SEA harapannya bisa membuat akses lebih cepat. Jika pun tidak kemungkinan besar akan pakai self host atau CloudFlare.
+Per 2 Mei 2026, Ane pindahkan hosting ke Netlify karena di
+Deno Deploy gratisan dapatnya region EU dan US yang tentu
+saja akan membuat latency semakin tinggi yang berimbas akses
+ke situs (agak) tersendat. Netlify punya fitur edge di SEA
+harapannya bisa membuat akses lebih cepat. Jika pun tidak
+pkemungkinan besar akan pakai self host atau CloudFlare.

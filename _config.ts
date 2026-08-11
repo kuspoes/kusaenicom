@@ -18,6 +18,7 @@ import imageSize from "lume/plugins/image_size.ts";
 //import gzip from "lume/plugins/gzip.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
+import gitInfo from "lume/plugins/git_info.ts";
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
@@ -70,6 +71,7 @@ site
       locales: { id },
     }),
   )
+  .use(gitInfo())
   .use(
     prism({
       theme: {

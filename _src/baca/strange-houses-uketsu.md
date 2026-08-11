@@ -41,6 +41,7 @@ Ane udah lama punya ebook ini namun belum tertarik untuk membacanya, sungguh kar
 Rencana awalnya adalah membaca buku ini untuk menemani perjalanan naik kereta, namun saat sudah di atas kereta malah malas untuk buka [Kindle](/tags/kindle/), *al hasil* dia bersemayam dengan tenang untuk beberapa lama sampai ane ada kesempatan untuk membacanya.
 
 ## Strange Houses
+
 Rumah-rumah yang aneh. Pada suatu hari seorang penulis lepas (cerita dari sudut pandang orang pertama, mari kita sebut **Uketsu**) mendapatkan permintaan saran oleh seorang kawannya, **Yanaoka** yang mengiriminya *layout* atau denah dari rumah. Diketahui si Yanaoka ini berniat membeli rumah dengan 2 lantai karena sebentar lagi akan memiliki anak. Yanaoka dan istri sudah sangat cocok dengan rumah yang hendak dibelinya ini karena lokasinya strategis sekaligus desain rumahnya sangat nyaman untuk ditempati. Hanya saja dia merasa ada yang aneh dengan gambar denah ruangan yang diberikan oleh agensi penjualan rumah.
 
 Menurut denah ada ruangan aneh yang tidak wajar dan tidak jelas fungsinya.

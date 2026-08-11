@@ -265,6 +265,10 @@ body {
     font-family: var(--dm);
 }
 
+.small {
+	font-size: 90%;
+}
+
 aside {
     border-bottom: 1px solid var(--col_border);
     border-left: 1px solid var(--col_border);
