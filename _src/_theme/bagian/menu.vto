@@ -26,8 +26,7 @@
       el.innerHTML = "<p>Belum nulis status.</p>";
     } else {
       el.innerHTML = `
-        <p>${json.text}</p>
-        <a href="${json.url}" target="_blank" rel="noopener">Lihat toot →</a>
+        <p>..${json.text} <a href="${json.url}" target="_blank" rel="noopener"> →/p>
       `;
     }
   } catch {
