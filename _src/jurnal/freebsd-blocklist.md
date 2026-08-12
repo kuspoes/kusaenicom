@@ -16,7 +16,7 @@ keywords: "bsd, freebsd, ente, security, tutorial, cara memblokir serangan lewat
 draft: false
 tocx: true
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
   real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
 ---
 

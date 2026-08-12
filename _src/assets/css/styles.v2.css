@@ -52,7 +52,7 @@ body {
 }
 
 .page {
-    margin: 8em auto 4em auto;
+    margin: 3em auto 4em auto;
     line-height: clamp(26px, 1.6rem + 0.3vw, 27px);
 }
 
@@ -140,7 +140,7 @@ body {
 
 /* layout postlist/index */
 .postlist {
-    width: 34em;
+    width: 36em;
     margin: 4em auto;
     display: flex;
     flex-direction: row;
@@ -348,7 +348,7 @@ aside.toc_stat {
 }
 
 .index_h1 {
-    width: 34em;
+    width: 36em;
     margin: 0em auto;
 }
 
@@ -2051,7 +2051,7 @@ a.related_post_link {
     .baca,
     iframe.video,
     iframe.peta {
-        width: 95%;
+        width: 92%;
         margin: 10px;
     }
 
@@ -2083,7 +2083,7 @@ a.related_post_link {
 
     aside,
     .terkait {
-        width: 100%;
+        width: 92%;
     }
 
     aside,
@@ -2111,12 +2111,12 @@ a.related_post_link {
     .meta,
     #search,
     .pagefind-ui__form {
-        width: 100%;
+        width: 92%;
         margin: 0em auto;
     }
 
     #search input {
-        width: 95%;
+        width: 92%;
     }
 
     #search input[type="text"],
@@ -2231,11 +2231,11 @@ a.related_post_link {
     #search,
     .content,
     .comments-section {
-        width: 100% !important;
+        width: 92% !important;
     }
 
     .index_h1 {
-        width: 100%;
+        width: 92%;
     }
 
     span.jumlah {
@@ -2260,6 +2260,10 @@ a.related_post_link {
         margin: 0em auto;
     }
 
+	.now p {
+		text-align: center
+	}
+
     .sidebar_notes,
     .sidebar_table {
         display: block;
@@ -2270,7 +2274,7 @@ a.related_post_link {
     }
 
     .index_h1 {
-        width: 100%;
+        width: 90%;
     }
 }
 

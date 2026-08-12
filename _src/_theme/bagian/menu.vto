@@ -11,7 +11,26 @@
 		<a href="/tentang">tentang</a>
 	</div>
 </div>
-<div class="now">
-<p class="pnow">{{ status.text }}</p>
+<div class="now" id="poesnow">
+<p>... gak lagi ngapa - ngapain</p>
 </div>
 
+<script type="module">
+  const el = document.getElementById("poesnow");
+
+  try {
+    const res = await fetch("https://sepoi.kuspoes.deno.net/now/PoesNow");
+    const json = await res.json();
+
+    if (!json.text) {
+      el.innerHTML = "<p>Belum nulis status.</p>";
+    } else {
+      el.innerHTML = `
+        <p>${json.text}</p>
+        <a href="${json.url}" target="_blank" rel="noopener">Lihat toot →</a>
+      `;
+    }
+  } catch {
+    el.innerHTML = "<p>..kejebak CORS</p>";
+  }
+</script>

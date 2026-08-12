@@ -1,0 +1,49 @@
+<div id="listenbrainz-widget" style="font-family: sans-serif; border: 1px solid #ccc; padding: 12px; border-radius: 8px; max-width: 320px; display: flex; align-items: center; gap: 12px;">
+  <img id="lb-cover" src="" alt="Album Cover" style="width: 64px; height: 64px; border-radius: 6px; object-fit: cover; background: #eee;" />
+  <div style="overflow: hidden;">
+    <div id="lb-track" style="font-weight: bold; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Loading...</div>
+    <div id="lb-artist" style="font-size: 12px; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+    <div id="lb-album" style="font-size: 11px; color: #888; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+  </div>
+</div>
+
+<script>
+  (async function fetchLastListen() {
+    const username = "poes"; 
+    const fallbackCover = "https://listenbrainz.org/static/images/listenbrainz-logo.svg";
+
+    try {
+      const res = await fetch(`https://api.listenbrainz.org/1/user/${username}/listens?count=1`);
+      const data = await res.json();
+      
+      const listen = data.payload.listens[0];
+      if (!listen) {
+        document.getElementById("lb-track").innerText = "Belum ada riwayat lagu";
+        return;
+      }
+
+      const trackName = listen.track_metadata.track_name;
+      const artistName = listen.track_metadata.artist_name;
+      const releaseName = listen.track_metadata.release_name || "";
+      
+      const mapping = listen.track_metadata.additional_info;
+      const releaseMbid = mapping?.release_mbid || mapping?.release_group_mbid;
+
+      document.getElementById("lb-track").innerText = trackName;
+      document.getElementById("lb-artist").innerText = artistName;
+      document.getElementById("lb-album").innerText = releaseName;
+
+      const imgEl = document.getElementById("lb-cover");
+      if (releaseMbid) {
+        imgEl.src = `https://coverartarchive.org/release/${releaseMbid}/front-250`;
+        imgEl.onerror = () => { imgEl.src = fallbackCover; };
+      } else {
+        imgEl.src = fallbackCover;
+      }
+
+    } catch (err) {
+      console.error("Gagal mengambil data ListenBrainz:", err);
+      document.getElementById("lb-track").innerText = "Gagal memuat lagu";
+    }
+  })();
+</script>
