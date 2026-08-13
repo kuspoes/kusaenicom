@@ -12,7 +12,7 @@ favorit: true
 comment: true
 keywords: macos, tutorial
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
   real: https://sok.egois.org/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
 ---
 

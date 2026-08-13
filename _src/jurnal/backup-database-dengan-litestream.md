@@ -19,7 +19,7 @@ draft: false
 tocx: true
 lightbox: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
   real: https://sok.egois.org/@poes/statuses/01KW0GHKJ2T8H4JS2D20XXJZCZ
 ---
 

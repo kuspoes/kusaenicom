@@ -221,7 +221,7 @@ Deno.serve(app.fetch);
 Kemudian di _file_ `comments.js` saya rubah fungsi `fetch` menjadi sebagai berikut:
 
 ```js
-const data = await Mastodon.fetch(new URL(`https://sepoi.deno.dev/gts/${id}`), this);
+const data = await Mastodon.fetch(new URL(`https://sepoi.kuspoes.deno.net/gts/${id}`), this);
 ```
 
 Semoga dengan perubahan ini bisa menghilangkan masalah XSS/Inject script.

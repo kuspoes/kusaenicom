@@ -14,7 +14,7 @@ comment: true
 keywords: "bsd, openbsd, wireguard,unbound, adsblock, self host, vpn"
 templateEngine: vto, md
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
   real: https://sok.egois.org/@poes/statuses/01KBVV3FPM7M0Y53ASN498SM5A
 ---
 

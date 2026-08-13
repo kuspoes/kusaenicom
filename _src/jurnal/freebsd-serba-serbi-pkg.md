@@ -15,7 +15,7 @@ tocx: true
 draft: false
 keywords: freebsd, bsd
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
   real: https://sok.egois.org/@poes/statuses/01KNCEENCJD01EE7BP2MHJRNNA
 ---
 

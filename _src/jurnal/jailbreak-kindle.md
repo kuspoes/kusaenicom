@@ -13,7 +13,7 @@ favorit: false
 comment: true
 keywords: jailbreak,e-reader, kindle, winterbreak
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01JYRV54QBF4KMG8T0P05Z6X2Z
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01JYRV54QBF4KMG8T0P05Z6X2Z
   real: https://sok.egois.org/@poes/statuses/01JYRV54QBF4KMG8T0P05Z6X2Z
 ---
 

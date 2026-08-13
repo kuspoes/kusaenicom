@@ -15,7 +15,7 @@ lightbox: true
 style: "galeri.css"
 keywords: kusaeni, kuliner, nasi, tongkol, mbak ju, wonokromo, surabaya
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KHDZVX3N00XJ2EFG663DQQKN
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KHDZVX3N00XJ2EFG663DQQKN
   real: https://sok.egois.org/@poes/statuses/01KHDZVX3N00XJ2EFG663DQQKN
 ---
 

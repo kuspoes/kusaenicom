@@ -19,7 +19,7 @@
   const el = document.getElementById("poesnow");
 
   try {
-    const res = await fetch("https://sepoi.kuspoes.deno.net/now/PoesNow");
+    const res = await fetch("https://sepoi.kuspoes.deno.net/now");
     const json = await res.json();
 
     if (!json.text) {
@@ -30,6 +30,6 @@
       `;
     }
   } catch {
-    el.innerHTML = "<p>..kejebak CORS</p>";
+    el.innerHTML = "<p>..kejebak CORS atau kamu lagi build di local</p>";
   }
 </script>

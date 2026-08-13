@@ -106,7 +106,7 @@ Novel ini juga tersedia versi manga dengan judul [The Strange House/Hen na le](h
 
 Sekilas tentang Uketsu, dia seorang [youtuber](https://www.youtube.com/@uketsu) yang sering membuat film pendek. Bahkan versi _audiovisual_ dari novel ini tersedia di kanal youtube-nya. Dia sudah menulis beberapa novel yang langsung menjadi _best seller_ diantaranya Strange Houses dan Strange Pictures. Meski sudah populer, sosok Uketsu sendiri masih misteri sampai sekarang karena setiap tampil dia selalu memakai celana dan jaket hitam dan menutupi wajahnya dengan topeng dari bubur kertas yang dikeringkan.
 
-Ane beri _rating_ bintang 4 dari 5 karena memang novel yang ini enak untuk dibaca dan terasa _fresh_ dibandingkan _Japanese crime mistery_ novel yang sebelumnya ane baca. <abbr title="For Your Information">FYI</abbr> arti dari bintang 4 dari ane adalah <mark>"*Buku yang bagus dan saya rekomendasikan untuk dibaca*"</mark>. 
+Ane beri _rating_ bintang 4 dari 5 karena memang novel yang ini enak untuk dibaca dan terasa _fresh_ dibandingkan _Japanese crime mistery_ novel yang sebelumnya ane baca. <abbr title="For Your Information">FYI</abbr> arti dari bintang 4 dari ane adalah <mark>"_Buku yang bagus dan saya rekomendasikan untuk dibaca_"</mark>. 
 
 Ane sedang membaca buku Uketsu lainnya yaitu Strange Pictures harapan ane memiliki kualitas yang serupa atau mungkin lebih baik?, semoga.
 

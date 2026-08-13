@@ -17,7 +17,7 @@ comment: true
 keywords: restic, rclone, backup, selfhost, koofr, cloud storage
 draft: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
   real: https://sok.egois.org/@poes/statuses/01KD0P1KEZNSM2H09G1S5HJBV8
 ---
 

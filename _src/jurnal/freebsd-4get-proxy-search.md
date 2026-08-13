@@ -16,7 +16,7 @@ keywords: bsd, freebsd, ente, security, tutorial, privasi, 4get, search, google,
 draft: true
 tocx: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/
   real: https://sok.egois.org/@poes/statuses/
 ---
 

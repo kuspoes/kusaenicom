@@ -17,7 +17,7 @@ keywords: "bsd, freebsd, security, tutorial, cara migrasi pkgbase, belajar freeb
 draft: false
 tocx: false
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KYCBBTWA642B71Y3FK0S4A6G
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KYCBBTWA642B71Y3FK0S4A6G
   real: https://sok.egois.org/@poes/statuses/01KYCBBTWA642B71Y3FK0S4A6G
 ---
 

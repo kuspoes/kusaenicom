@@ -13,7 +13,7 @@ favorit: false
 comment: false
 keywords: penipu, tipu, facebook, marketplace, kiriminaja, bri, virtual account, e-reader, kindle
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
   real: https://sok.egois.org/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
 ---
 

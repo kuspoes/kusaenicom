@@ -13,7 +13,7 @@ comment: true
 draft: false
 keywords: kusaeni, tutorial, web desain, font
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KTGDTTAVFAJZ1R2SGYYT7HG4
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KTGDTTAVFAJZ1R2SGYYT7HG4
   real: https://sok.egois.org/@poes/statuses/01KTGDTTAVFAJZ1R2SGYYT7HG4
 ---
 

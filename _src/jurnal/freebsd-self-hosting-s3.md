@@ -13,7 +13,7 @@ favorit: false
 comment: true
 keywords: freebsd, bsd, garage, s3, self-hosting, garage webui, vps
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
   real: https://sok.egois.org/@poes/statuses/01K9ZPY9R52AWCZ87X1Z3K3RDD
 ---
 

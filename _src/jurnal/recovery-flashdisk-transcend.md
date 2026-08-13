@@ -12,7 +12,7 @@ favorit: false
 comment: true
 keywords: flashdisk, matot, rusak, recovery, transcend, tutorial
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01K7TGQXZW49VWJWTM1QX48SDW
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01K7TGQXZW49VWJWTM1QX48SDW
   real: https://sok.egois.org/@poes/statuses/01K7TGQXZW49VWJWTM1QX48SDW
 ---
 

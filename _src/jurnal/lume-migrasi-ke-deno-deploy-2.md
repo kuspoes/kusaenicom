@@ -17,7 +17,7 @@ keywords: lume, deno, deploy, ssg, blog
 lightbox: true
 style: "galeri.css"
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
   real: https://sok.egois.org/@poes/statuses/01KPMHM2F3NDVTZ7NRA0NP9XGM
 ---
 

@@ -13,7 +13,7 @@ favorit: false
 comment: true
 keywords: ko reader, ssh, kindle, jailbreak
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
   real: https://sok.egois.org/@poes/statuses/01KA6FYHCK2BQCK04WH1T6XD0N
 ---
 

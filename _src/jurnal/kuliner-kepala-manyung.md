@@ -12,7 +12,7 @@ favorit: false
 comment: true
 keywords: kusaeni, kuliner, kepala manyung, manyung, kotokan, warung sembilang, warung bu yah 99, warung mak muah, kepala manyung bu Fat
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01JZZ3PR7GHYCJC1GMA3NEK4D6
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01JZZ3PR7GHYCJC1GMA3NEK4D6
   real: https://sok.egois.org/@poes/statuses/01JZZ3PR7GHYCJC1GMA3NEK4D6
 ---
 

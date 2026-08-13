@@ -15,7 +15,7 @@ tocx: true
 keywords: "bsd, openbsd, wireguard, self host, vpn"
 templateEngine: vto, md
 comments:
-  src: https://sepoi.deno.dev/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
   real: https://sok.egois.org/@poes/statuses/01KB7AAT2X97B5D49DADYPP5KS
 ---
 
