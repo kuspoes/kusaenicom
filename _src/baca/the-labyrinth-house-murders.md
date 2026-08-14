@@ -33,8 +33,8 @@ comment: true
 draft: false
 lightbox: true
 comments:
-  src: https://sepoi.kuspoes.deno.net/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01KZZ0AVNJ9PB60F004C8BB9EX
+  real: https://sok.egois.org/@poes/statuses/01KZZ0AVNJ9PB60F004C8BB9EX
 ---
 
 <span class="caps">**H</span>ideyuki Utayama** dan **Keiko** istrinya sedang dalam perjalanan ke sebuah daerah terpencil untuk menghadiri undangan acara ulang tahun seorang penulis terkenal bernama **Miyagaki Yotaro**, di tengah perjalanan mereka bertemu dengan **Shimada Kiyoshi** yang meminta tumpangan karena mobilnya mogok. Seperti Utayama dan istrinya, Shimada pun diundang oleh Miyagaki.
