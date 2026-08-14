@@ -647,6 +647,11 @@ img.galeri {
     font-size: 0.92em;
 }
 
+.serf p {
+		font-family: var(--serif) !important;
+		font-size: 18px;
+	}
+
 .div_flex h4 {
     text-align: center;
     margin: 0em 0em 1em 0em;
@@ -2037,6 +2042,9 @@ a.related_post_link {
         padding-bottom: 0.5em;
         text-align: left;
     }
+	.postcover {
+    width: 10em;
+	}
 
     .sidebar_notes {
         display: block;
@@ -2081,9 +2089,11 @@ a.related_post_link {
         flex-direction: column;
     }
 
+	
+
     aside,
     .terkait {
-        width: 92%;
+        width: 100%;
     }
 
     aside,
@@ -2106,7 +2116,6 @@ a.related_post_link {
     #container,
     img,
     .vid,
-    .selayang,
     table,
     .meta,
     #search,
@@ -2114,6 +2123,10 @@ a.related_post_link {
         width: 92%;
         margin: 0em auto;
     }
+
+	.selayang {
+		max-width: 100%
+	}
 
     #search input {
         width: 92%;

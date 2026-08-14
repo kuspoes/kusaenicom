@@ -23,7 +23,7 @@
     const json = await res.json();
 
     if (!json.text) {
-      el.innerHTML = "<p>Belum nulis status.</p>";
+      el.innerHTML = "<p>tidak ada status atau belum sempat nulis.</p>";
     } else {
       el.innerHTML = `
         <p>..${json.text} <a href="${json.url}" target="_blank" rel="noopener"> →</p>

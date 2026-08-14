@@ -7,6 +7,9 @@ test.md
 _cache
 _tmp
 .swp
+*.swp
+*.swo
+*~
 
 # wrangler files
 .wrangler
