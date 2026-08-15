@@ -3,6 +3,7 @@ _site
 .env
 _sandbox
 test.md
+test.vto
 .github
 _cache
 _tmp
