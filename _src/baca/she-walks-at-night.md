@@ -24,7 +24,7 @@ tags:
   - buku
   - misteri
   - novel
-  - Seishi Yokomizo
+  - SeishiYokomizo
   - Jepang
 kategori: buku
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(244, 213, 141, 0.2) 98%) !important;}"

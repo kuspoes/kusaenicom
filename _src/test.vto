@@ -1,17 +1,4 @@
-{{#
-Cara pakai:
-
-{{ comp.relasi_buku({
-        keyword: "keywords dari tags"
-    })
-}}
-
-#}}
-
-<div class="bukukuku">
-    <h5>buku lain yang mungkin kamu suka</h5>
-    <div class="relasi_bukuku">
-        {{ set bukuku = search.pages(`${ keyword }`, `date=desc`, 6)}}
+{{ set bukuku = search.pages(`SeishiYokomizo`, `date=desc`, 6)}}
         {{ if bukuku.length>0 }}
         {{ for buku of bukuku }}
         <a class="bukuku" href="{{ buku.url }}">
@@ -21,5 +8,4 @@ Cara pakai:
         </a>
         {{ /for }}
         {{ /if }}
-    </div>
-</div>
+

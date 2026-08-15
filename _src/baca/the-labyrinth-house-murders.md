@@ -46,7 +46,7 @@ Di dalam rumah ada 5 tamu undangan dan 2 orang pembantu Miyagaki yaitu Ino sebag
 Para tamu gelisah karena sudah lama namun pihak tuan rumah belum juga menemui mereka sampai kemudian Ino sang sekretaris menyampaikan kabar duka bahwa Miyagaki sudah meninggal bunuh diri karena lelah dengan penyakit kanker yang dideritanya, hal ini dikonfirmasi oleh dokter pribadi Miyagaki.  Mendiang meninggalkan surat dan kaset berisi rekaman suaranya yang menyampaikan bahwa dia akan membagi 2 harta warisannya yang sangat banyak yaitu
 
 1. Untuk mendanai acara - acara penghargaan karya sastra dan menjadikan namanya sebagai nama penghargaan, 
-2. Memberikan sisanya kepada salah satu dari 4 orang anak didiknya yang bisa membuat cerita misteri yang hanya boleh dikerjakan di dalam rumah labirin  dalam tempo 5 hari ke depan. Untuk tema penyusunan cerita misteri ini berkaitan dengan rumah labirin dan menempatkan si penulis cerita sebagai korban kejahatand dalam novelnya,
+2. Memberikan sisanya kepada salah satu dari 4 orang anak didiknya yang bisa membuat cerita misteri yang hanya boleh dikerjakan di dalam rumah labirin  dalam tempo 5 hari ke depan. Untuk tema penyusunan cerita misteri ini berkaitan dengan rumah labirin dan menempatkan si penulis cerita sebagai korban kejahatan di dalam novelnya,
 3. Jika salah satu muridnya mengundurkan diri atau tidak ikut dalam kontes, maka surat wasiat ini batal.
 
 Miyagaki menunjuk Utayama, Saejima, dan Shimada sebagai juri untuk menentukan siapakah diantara 4 peserta tersebut yang menang. Syarat lainnya adalah semua orang yang sudah hadir tidak boleh keluar dari rumah labirin selama kontes berlangsung, Ino akan mengunci pintu depan dan hanya akan membuka setelah kontes selesai dan juara ditentukan.
@@ -78,8 +78,20 @@ Ini adalah novel ketiga dari Yukito Ayatsuji yang sudah ane baca setelah [The Mi
 
 Saat membaca ane merasa novel ini cukup ringan, konflik tidak banyak dan (*mungkin karena ane sudah terbiasa baca honkaku*) bagaimana cara pembunuh berkeliaran sudah ketebak di 1/3 awal novel. Juga ane sudah bisa menebak siapa pelaku sebenarnya meski ga seratur persen tepat karena di belakang ada *plot twist* yang jadi ciri khas Ayatsuji dan ane ga kaget dengan ini. Bahkan meski sudah bisa menebak pelaku (yang disamarkan) sejak awal ane yakin kalo *ending*nya bakalan kayak novel - novel sebelumnya. 
 
+<div class="sidebar_notes sebelah_kanan">
+<p><i>Plot twist</i>nya bukan saja soal alur cerita namun siapa di balik Shimada Kiyoshi ini sebenarnya.</p>
+</div>
+
 Salah satu ciri novel Ayatsuji lainnya adalah "pelaku sesungguhnya" tidak pernah tertangkap polisi secara lagsung, yang penting bagi Shimada misteri sudah terungkap dan biarkan si pelaku menyerahkan diri atau hidup dengan penuh penyesalan (jika benar menyesal). 
 
+Membaca novel ini harus memahami alur di prolog dan epilog, karena disitulah salah satu letak poin yang penting.
 Novel ini bagus tapi tidak cukup berkesan buat ane, jadi ane kasih nilai 3 yaitu **Buku yang bagus, tapi sepertinya tidak terlalu ingin untuk membacanya lagi**. 
 
-Selanjutnya ane ingin menamatkan buku keempat dari Ayatsuji yaitu [The Clock House Murder's](https://pushkinpress.com/book/the-clock-house-murders/), tapi sebelum itu mungkin ane mau mencari buku [Seishi Yokomizo](/tags/Seishi%20Yokomizo/) terlebih dahulu untuk me*refresh* arti novel misteri yang lebih misteri.
+Selanjutnya ane ingin menamatkan buku keempat dari Ayatsuji yaitu [The Clock House Murder's](https://pushkinpress.com/book/the-clock-house-murders/), tapi sebelum itu mungkin ane mau mencari buku [Seishi Yokomizo](/tags/SeishiYokomizo/) terlebih dahulu untuk me*refresh* arti novel misteri yang lebih misteri.
+
+{{ comp.relasi_buku({
+        keyword: "SeishiYokomizo"
+    })
+}}
+
+
