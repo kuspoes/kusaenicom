@@ -114,3 +114,4 @@ Ane sedang membaca buku Uketsu lainnya yaitu Strange Pictures harapan ane memili
         judul: "Strange Pictures"
     })
 }}
+

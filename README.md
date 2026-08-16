@@ -86,8 +86,10 @@ artikel dan buku.  Dokumentasi tersedia di dalam masing -
 masing component, sebagai contoh untuk menampilkan related
 article:
 
-```html {{ comp.relasi_artikel({ judul: "Judul Artikel",
-teks: "", format: "kanan | full", heading: "" }) }} ```
+```html 
+{{ comp.relasi_artikel({ judul: "Judul Artikel",
+teks: "", format: "kanan | full", heading: "" }) }} 
+```
 
 Dengan keterangan: `judul`:  judul artikel (case sensitive)
 `format`: defaultnya kiri tapi ada 2 pilihan lainnya yaitu
