@@ -87,8 +87,7 @@ Saat membaca ane merasa novel ini cukup ringan, konflik tidak banyak dan (*mungk
 
 Salah satu ciri novel Ayatsuji lainnya adalah "pelaku sesungguhnya" tidak pernah tertangkap polisi secara lagsung, yang penting bagi Shimada misteri sudah terungkap dan biarkan si pelaku menyerahkan diri atau hidup dengan penuh penyesalan (jika benar menyesal). 
 
-Membaca novel ini harus memahami alur di prolog dan epilog, karena disitulah salah satu letak poin yang penting.
-Novel ini bagus tapi tidak cukup berkesan buat ane, jadi ane kasih nilai 3 yaitu **Buku yang bagus, tapi sepertinya tidak terlalu ingin untuk membacanya lagi**. 
+Membaca novel ini harus memahami alur di prolog dan epilog, karena disitulah salah satu letak poin yang penting. Novel ini bagus tapi (seperti karya Ayatsuji sebelumnya) tidak cukup berkesan buat ane, jadi ane kasih nilai 3 yaitu **Buku yang bagus, tapi sepertinya tidak terlalu ingin untuk membacanya lagi**. 
 
 Selanjutnya ane ingin menamatkan buku keempat dari Ayatsuji yaitu [The Clock House Murder's](https://pushkinpress.com/book/the-clock-house-murders/), tapi sebelum itu mungkin ane mau mencari buku [Seishi Yokomizo](/tags/SeishiYokomizo/) terlebih dahulu untuk me*refresh* arti novel misteri yang lebih misteri.
 
