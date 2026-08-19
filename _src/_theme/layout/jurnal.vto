@@ -18,8 +18,7 @@
             {{ if tags }} {{ for tag of it.tags }} {{ set page =
             search.page(`type=tag tag="${tag}"`) }} {{ if page }}
             <a data-pagefind-filter="filter" class="badge" href="{{ page.url }}"
-                >#{{ tag }}</a
-            >
+                >#{{ tag }}</a>
             {{ /if }} {{ /for }} {{ /if }}
         </div>
     </div>

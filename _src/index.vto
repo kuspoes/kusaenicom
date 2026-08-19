@@ -44,8 +44,11 @@ pxlfed: true
 		{{ /for }}
 
 		{{ for post of search.pages("type=post", "date=desc", 6 ) }}
-		<div class="postlist {{ if post.coverImg }}adaFoto{{ /if }} {{ if post.favorit }} fave {{ /if }} {{ if post.draft }} draft {{ /if }}">
-			<div class="postmeta">
+		<div class="postlist 
+				{{ if post.coverImg }}adaFoto{{ /if }} 
+				{{ if post.favorit }} fave {{ /if }} 
+				{{ if post.draft }} draft {{ /if }}">
+				<div class="postmeta">
 				<time datetime="{{ post.date |> date('DATETIME') }}">
 					<div class="tgl">
     			  		{{ post.date |> date('id_tgl') }}

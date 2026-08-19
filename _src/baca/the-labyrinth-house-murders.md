@@ -24,7 +24,7 @@ tags:
   - buku
   - misteri
   - novel
-  - Yukito Ayatsuji
+  - YukitoAyatsuji
   - Jepang
 kategori: buku
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(244, 213, 141, 0.2) 98%) !important;}"
@@ -46,7 +46,10 @@ Di dalam rumah ada 5 tamu undangan dan 2 orang pembantu Miyagaki yaitu Ino sebag
 Para tamu gelisah karena sudah lama namun pihak tuan rumah belum juga menemui mereka sampai kemudian Ino sang sekretaris menyampaikan kabar duka bahwa Miyagaki sudah meninggal bunuh diri karena lelah dengan penyakit kanker yang dideritanya, hal ini dikonfirmasi oleh dokter pribadi Miyagaki.  Mendiang meninggalkan surat dan kaset berisi rekaman suaranya yang menyampaikan bahwa dia akan membagi 2 harta warisannya yang sangat banyak yaitu
 
 1. Untuk mendanai acara - acara penghargaan karya sastra dan menjadikan namanya sebagai nama penghargaan, 
-2. Memberikan sisanya kepada salah satu dari 4 orang anak didiknya yang bisa membuat cerita misteri yang hanya boleh dikerjakan di dalam rumah labirin  dalam tempo 5 hari ke depan. Untuk tema penyusunan cerita misteri ini berkaitan dengan rumah labirin dan menempatkan si penulis cerita sebagai korban kejahatan di dalam novelnya,
+2. Memberikan sisanya kepada salah satu dari 4 orang anak didiknya yang bisa
+membuat cerita misteri yang hanya boleh dikerjakan di dalam rumah labirin  dalam
+tempo 5 hari ke depan. Tema penyusunan cerita misteri ini berkaitan dengan rumah
+labirin dan harus menempatkan si penulis cerita sebagai korban kejahatan di dalam novelnya,
 3. Jika salah satu muridnya mengundurkan diri atau tidak ikut dalam kontes, maka surat wasiat ini batal.
 
 Miyagaki menunjuk Utayama, Saejima, dan Shimada sebagai juri untuk menentukan siapakah diantara 4 peserta tersebut yang menang. Syarat lainnya adalah semua orang yang sudah hadir tidak boleh keluar dari rumah labirin selama kontes berlangsung, Ino akan mengunci pintu depan dan hanya akan membuka setelah kontes selesai dan juara ditentukan.
