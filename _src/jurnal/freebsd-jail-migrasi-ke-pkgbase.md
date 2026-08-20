@@ -129,6 +129,18 @@ Ane akan migrasi jail dengan nama `postgres` yaitu jail yang didedikasikan sebag
       $ mdo bastille cmd postgress service postgresql start
       ```
 
+#### Update PKGBase
+
+Jika sebelum PKGBase proses *update* dengan mempergunakan `freebsd-update`
+maka sekarang berubah. Semua proses bisa dilakukan dengan bantuan `pkg`.
+
+```shell-session
+$ mdo pkg -j [nama jail] update
+$ mdo pkg -j [nama jail] upgrade -r FreeBSD-base
+```
+
+Namun untuk ini pengaturan `securelevel` harus tetap diatur di nilai `-1`.
+
 ---
 
 ##### Daftar Pustaka.

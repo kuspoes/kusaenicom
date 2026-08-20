@@ -131,3 +131,9 @@ Ane juga melakukan pembersihan/*cleaning cache* paket dan mengunduh ulang paket 
 Jika masalah terjadi pada saat proses migrasi, maka baca baik - baik *error* yang muncul dan selesaikan terlebih dahulu masalah yang ada. Kemudian lanjutkan dengan menambahkan *flag* `--force` untuk memaksa dan melanjutkan proses migrasi.
 
 {{ comp.subs() }}
+
+### Update FreeBSD-base
+
+Untuk update versi dan *security path* sekarang caranya juga berubah setelah
+konversi ke pkgbase. Jika sebelumnya pakai `freebsd-update` maka sekarang
+cukup dengan 
