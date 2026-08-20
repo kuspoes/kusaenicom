@@ -1,29 +1,44 @@
---- type: post layout: layout/baca.vto title: "Strange Pictures" date:
-2026-05-02 update: false ringkasan: "*A picture is worth a thousand words*, tapi
+--- 
+type: post 
+layout: layout/baca.vto 
+title: "Strange Pictures" 
+date: 2026-05-02 
+update: false 
+ringkasan: "*A picture is worth a thousand words*, tapi
 bagaimana jika gambar - gambar itu adalah pesan kematian terakhir yang merujuk
-ke seorang psikopat yang takut akan kesepian?" keywords: "Uketsu, Strange
-Pictures, Jepang, Misteri, Novel" coverImg:
-"https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/strange-pictures_006SejAd4.jpeg"
-og_images:
-"https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/strange-pictures_006SejAd4.jpeg"
-penulis: "Uketsu" genre:
+ke seorang psikopat yang takut akan kesepian?" 
+keywords: "Uketsu, Strange Pictures, Jepang, Misteri, Novel" 
+coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/strange-pictures_006SejAd4.jpeg"
+og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/strange-pictures_006SejAd4.jpeg"
+penulis: "Uketsu" 
+genre:
   - Thriller
-  - Mistery format: "epub" bahasa: "Bahasa Inggris" isbn: "9780063433083" tahun:
-    2025 resensi: '*A picture is worth a thousand words*, tapi bagaimana jika
+  - Mistery 
+format: "epub" 
+bahasa: "Bahasa Inggris" 
+isbn: "9780063433083" 
+tahun: 2025 
+resensi: '*A picture is worth a thousand words*, tapi bagaimana jika
     gambar - gambar itu adalah pesan kematian terakhir yang merujuk ke seorang
-    psikopat yang takut akan kesepian?' rating: 4 beli:
-    https://www.periplus.com/p/9780063433083/strange-pictures dimana: Periplus
-    tags:
+    psikopat yang takut akan kesepian?' 
+rating: 4 
+beli: https://www.periplus.com/p/9780063433083/strange-pictures 
+dimana: Periplus
+tags:
   - buku
   - misteri
   - novel
   - Uketsu
-  - Jepang kategori: buku inlineStyle: ".selayang {background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 54%, rgba(108, 223, 18, 0.2)
-    94%) !important;}" templateEngine: vto, md comment: true draft: false
-    comments: src:
-    https://sepoi.deno.dev/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B real:
-    https://sok.egois.org/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B ---
+  - Jepang 
+kategori: buku 
+inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 54%, rgba(108, 223, 18, 0.2) 94%) !important;}" 
+templateEngine: vto, md 
+comment: true 
+draft: false
+comments: 
+    - src: https://sepoi.deno.dev/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B 
+    - real:https://sok.egois.org/@poes/statuses/01KR1D95CXVY57NW46RGBG7Q5B 
+---
 
 Setelah buku pertama (Strange House) yang membuat hati menjadi kosong dan
 pikiran bingung, maka ane lanjutkan untuk membaca buku kedua dari Uketsu yang
