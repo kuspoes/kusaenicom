@@ -5,7 +5,8 @@ title : 'Malice : Catatan Pembunuhan sang Novelis'
 date: 2021-11-07
 update: false
 ringkasan: 'Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di dalam ruangan tertutup oleh istri dan sahabat baiknya.'
-keywords: 'Keigo Higashino, Kaga, detektif, Malice, Pembunuhan di Nihonbashi, The Newcomer, Jepang, Misteri, Novel'
+keywords: 'Keigo Higashino, Kaga, detektif, Malice, Pembunuhan di Nihonbashi,
+The Newcomer, Honkaku, Misteri, Novel'
 coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/malice_1GM7H7NhPlD.jpg'
 og_images: 'https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/malice_1GM7H7NhPlD.jpg' 
 penulis: 'Keigo Higashino'
@@ -28,7 +29,7 @@ tags:
   - buku
   - misteri
   - Keigo Higashino
-  - Jepang
+  - Honkaku
 kategori: buku
 templateEngine: vto,md
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(232, 93, 4, 0.2) 98%) !important;}"

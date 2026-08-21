@@ -25,7 +25,7 @@ tags:
   - misteri
   - novel
   - Uketsu
-  - Jepang
+  - Honkaku
 kategori: buku
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 1) 54%, rgba(230, 57, 70, 0.1) 98%) !important;}"
 templateEngine: vto, md
@@ -98,7 +98,7 @@ Lalu siapakah Rankyo? Siapakah Keita dan bagaimanakah akhir dari ritual keluarga
 
 Novel ini pendek, hanya terdiri dari 4 bab yang sebagian besar berisi percakapan - percakapan saja. Ditulis seperti naskah skenario film, meski begitu ketegangan tetap terbangun dengan manis. Pelan - pelan tak terasa namun pada saatnya membuat kengerian yang nyata.
 
-{{ comp.relasi_buku({ keyword: "Jepang", abai: title  }) }}
+{{ comp.relasi_buku({ keyword: "Honkaku", abai: title  }) }}
 
 Ane tidak mengira novel ini *creepy*, apalagi pelaku pembunuhannya adalah anak - anak (yang di *brainwashed* oleh para orang tuanya) untuk membunuhi saudara mereka (meski tidak diceritakan secara _explisit_ tentang pembunuhannya). Akhir dari novel ini pun sedikit mengganggu, tidak sedih tidak pula *happy ending* melainkan menyisakan ruang kosong bagi pembaca untuk menebak apakah sebenarnya kasus ini benar - benar sudah tertutup atau belum?. Ruang kosong yang sama seperti di denah rumah yang aneh.
 

@@ -2293,11 +2293,10 @@ a.related_post_link {
 
 @media print {
     @page {
-        size: A5; /* Ukuran buku standar, bisa diganti ke A4 atau Letter */
+        size: A5; 
         margin: 1cm;
     }
 
-    /* Efek 'Gutter' untuk penjilidan (Opsional: membedakan halaman ganjil/genap) */
     @page :left {
         margin-left: 2.5cm;
         margin-right: 1.5cm;

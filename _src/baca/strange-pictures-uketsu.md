@@ -29,7 +29,7 @@ tags:
   - misteri
   - novel
   - Uketsu
-  - Jepang 
+  - Honkaku
 kategori: buku 
 inlineStyle: ".selayang {background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 54%, rgba(108, 223, 18, 0.2) 94%) !important;}" 
 templateEngine: vto, md 

@@ -24,7 +24,7 @@ tags:
   - buku
   - misteri
   - novel
-  - Jepang
+  - Honkaku
   - SeishiYokomizo
 kategori: buku
 templateEngine: vto,md
