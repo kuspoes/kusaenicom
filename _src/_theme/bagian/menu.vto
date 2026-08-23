@@ -3,9 +3,9 @@
 		<a href="/" rel="me" class="u-url kusaeni">kusaeni</a>
 	</div>
 	<div class="menu">
-	    {{ if ["baca", "foto", "tentang", "tags", "jurnal"].some(kata => url.includes(kata)) }}
+{{#     {{ if ["baca", "foto", "tentang", "tags", "jurnal"].some(kata => url.includes(kata)) }} #}}	
 		<a href="/arsip">arsip</a>
-		{{ /if }}
+		 {{# {{ /if }} #}}
 		<a href="/baca">baca</a>
 		<a href="/foto">foto</a>
 		<a href="/tentang">tentang</a>
