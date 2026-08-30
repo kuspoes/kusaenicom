@@ -2,7 +2,7 @@
 title: Menginstall NetBSD di VPS
 ringkasan: "pengalaman ane meng*install* NetBSD di VPS (NAT), agak ruwet tapi
 mengasyikkan"
-date: 2026-08-27
+date: 2026-08-30
 tags:
   - kusaeni
   - tutorial
@@ -19,8 +19,8 @@ lightbox: true
 style: "galeri.css"
 keywords: "netbsd, bsd, install, vps, belajar"
 comments:
-  src: https://sepoi.kuspoes.deno.net/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01M19EXTJZYGXJP6V1BWN91SDN
+  real: https://sok.egois.org/@poes/statuses/01M19EXTJZYGXJP6V1BWN91SDN
 ---
 
 
