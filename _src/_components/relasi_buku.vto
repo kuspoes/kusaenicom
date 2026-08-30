@@ -9,14 +9,12 @@ Cara pakai:
 
 Jika opsi 'abai: title' ditulis maka pencarian akan mengabaikan
 pencarian dengan judul artikel. Ini berguna jika tidak ingin
-menampilkan pencarian atas artikel yang saat ini tampil
+menampilkan hasil pencarian atas artikel yang saat ini tampil
 (dibuka).
 #}}
 
 <div class="bukukuku">
     <h5>buku lain yang mungkin kamu suka</h5>
-
-
     <div class="relasi_bukuku">
         {{ set bukuku = search.pages(`${ keyword }
 				title!='${abai}'`, `date=desc`, 6)}}

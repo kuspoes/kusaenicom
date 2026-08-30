@@ -22,6 +22,7 @@ heading: jika URL menunjuk ke heading
         <div class="kait">
             <h4><a class="hRelasi" href="{{artikel.url}}{{heading}}">{{artikel.title}}</a></h4>
             <p>{{teks || artikel.ringkasan}}</p>
+						<p><i>{{ artikel.readingInfo.words.toLocaleString("id-ID") }} kata — sekitar {{ artikel.readingInfo.minutes }} menit untuk membaca</i></p>
         </div>
 </div>
 {{ /if }}

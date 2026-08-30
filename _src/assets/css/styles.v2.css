@@ -97,7 +97,9 @@ body {
 .table_kiri {
     float: left;
     clear: left;
-    margin-left: -230px;
+    margin-left: -100px;
+		margin-bottom: 0em;
+		padding-right: 1em;
 }
 
 .sebelah_kiri {
@@ -2052,6 +2054,11 @@ a.related_post_link {
     .pin-badge {
         display: none;
     }
+
+.table_kiri  {
+				margin: 0px;
+				margin-bottom: 2em;
+}
 
     .page,
     .nav,
