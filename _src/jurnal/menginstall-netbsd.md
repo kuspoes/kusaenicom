@@ -43,7 +43,7 @@ media ketiga seperti CDROM bahkan FreeBSD bisa di*install* dengan [*recovery ima
 
 Jadi ketika menemukan layanan VPS yang sangat murah (NAT VPS) dan mendukung pengunggahan ISO *files* maka ane putuskan untuk mencoba memasang NetBSD disini. Nama *provider*nya adalah [TierHive](https://tierhive.com/r/2B38419718E0) memiliki beberapa layanan level NAT seperti VPS biasa, dan *storage* VPS dengan harga murah. Ane pilih NAT VPS Micro dengan spesifikasi 1vCPU, 512Mb RAM, dan 3GB SSD yang berbiaya sekitar 0.000581 token/jam dimana 1 token = 1 USD atau sekitar Rp. 10/jam atau sekitar Rp 9 ribu/bulan. Sangat murah dan tidak beresiko jika kena begal.
 
-<div class="table_kiri">
+<div class="table_kirik">
 
 | Uraian | IP | Keterangan |
 |:-------|:---:|:------|

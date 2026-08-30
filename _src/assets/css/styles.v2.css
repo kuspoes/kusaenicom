@@ -102,6 +102,13 @@ body {
 		padding-right: 1em;
 }
 
+.table_kirik {
+    float: left;
+    clear: left;
+		margin-bottom: 0em;
+		padding-right: 1em;
+}
+
 .sebelah_kiri {
     float: left;
     clear: left;
