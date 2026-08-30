@@ -215,3 +215,5 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	"
 	dns_nameservers="9.9.9.9 2620:fe::fe"
 	```
+
+![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png)
