@@ -112,7 +112,7 @@ vioif0: flags=0x8802<BROADCAST,SIMPLEX,MULTICAST> mtu 1500
 ```
 <aside>
 penting untuk menambahkan IP, <i>netmask</i>, <i>gateway</i> atau <i>router</i>, dan <i>DNS Resolver</i> agar jaringan bisa berjalan dengan baik.
-Perintah `./install.sh` dipergunakan untuk kembali ke menu <i>installer</i>
+Perintah <code>./install.sh</code> dipergunakan untuk kembali ke menu <i>installer</i>
 </aside>
 
 Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*install*an melainkan nanti saat NetBSD sudah jalan dengan baik (*post install*).
@@ -124,7 +124,7 @@ Kemudian lanjutkan proses install seperti biasa atau sesuai dengan panduan [resm
 
 #### Post Install
 
-1. Aktifkan vesa saat *boot*
+1. **Aktifkan vesa saat *boot***
 Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk memastikan agar vesa secara otomatis dipanggil, maka perlu merubah *file* `/boot.cfg` menjadi seperti ini
 
 	```txt
@@ -141,7 +141,7 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 
 	Dengan pengaturan ini maka setiap *boot* VNC akan menganggap *console* NetBSD memakai grafis `vesa`. Namun ini hanya berguna untuk akses lewat web VNC saja, lebih baik akses NetBSD memakai SSH.
 
-2. Tambahkan *user*,
+2. **Tambahkan *user***,
 Ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
 
 	```shell-session
@@ -151,7 +151,7 @@ Ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` 
 
 	Perintah di atas akan membuat akun baru dengan nama `poes` dan masukkan ke grup `wheel`, sekalian kasih *password* buat login.
 
-3. Aktifkan SSH 
+3. **Aktifkan SSH**,
 Ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka caranya mudah sekali. Jalankan saja perintah berikut di *shell*
 
 	```shell-session
@@ -165,7 +165,7 @@ Ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka cara
 	# service sshd start
 	```
 
-4. *Install package manager*
+4. ***Install package manager***,
 Meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan familiar untuk dipakai, tapi sebelumnya harus melakukan konfigurasi `pkg_add` agar bisa menemukan letak repositori dari paket aplikasin.
 
 	```shell-session
@@ -180,7 +180,7 @@ Meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan famil
 	# pkgin install vim git doas
 	```
 
-5. `doas` untuk elevasi ke `root`
+5. `doas` **untuk elevasi ke** `root`,
 Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke `root`, namun ini kurang fleksibel. Maka ane pasang `doas` biar bisa elevasi *ǎ la* [#openbsd](/tags/openbsd)
 	```shell-session
 	# pkgin install doas
@@ -189,7 +189,7 @@ Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke 
 
 	Ane aktifkan `doas` tanpa *password* untuk akun `poes` dengan `permit nopass poes` dan tulis ke *file* konfigurasi `doas`.
 
-6. Aktifkan IPv6
+6. **Aktifkan IPv6**,
 Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi mari kita pakai.
 
 	NetBSD punya cara unik (menurut ane) untuk pengaturan IPv6 ini meski sudah mendukungnya sejak 1999!. Namun jujur agak ruwet dan tidak semudah FreeBSD saat dicoba. Cara manualnya sama seperti saat [mengatur IPv4 sebelumnya](#ipv4) sebagai berikut
@@ -216,4 +216,4 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	dns_nameservers="9.9.9.9 2620:fe::fe"
 	```
 
-![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png)
+![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png){.fuck}
