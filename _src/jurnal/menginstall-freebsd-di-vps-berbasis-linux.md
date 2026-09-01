@@ -104,7 +104,7 @@ $ sudo systemctl stop systemd-journald
 <p>Perintah di atas akan menghentikan proteksi <code>systemd</code> pada <i>disk</i></p>
 </div>
 
-Proses booting mfsBSD akan berjalan, dalam beberapa kasus akan memakan waktu agak lama sekitar 1 - 3 menit karena system sedang mencari atau mendapatkan IP dari DHCP Client. Jangan panik biarkan saja. Setelah proses booting selesai, maka akan muncul prompt untuk login. Gunakan credentials `root/mfsroot` untuk login. Selamat!!!
+Proses booting mfsBSD akan berjalan, dalam beberapa kasus akan memakan waktu agak lama sekitar 1 - 3 menit karena system sedang mencari atau mendapatkan IP dari DHCP Client. Jangan panik biarkan saja. Setelah proses booting selesai, maka akan muncul **prompt untuk login**. Gunakan credentials `root/mfsroot` untuk login. Selamat!!!
 
 Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi yang rusak karena proses mfsBSD. 
 
@@ -118,7 +118,7 @@ Hal pertama yang harus dilakukan setelah login adalah melakukan recovery partisi
 
 #### Memeriksa konektivitas jaringan
 
-Sebenarnya setelah recover disk, bisa saja ketik `bsdinstall` untuk memulai TUI penginstallan FreeBSD, namun sebaiknya melakukan pengecekan jaringan terlebih dahulu. Cara yang paling mudah adalah dengan melakukan `ping` ke Google. 
+Sebenarnya setelah *recover disk*, bisa saja ketik `bsdinstall` untuk memulai <abbr title="Terminal User Interface">TUI</abbr> penginstallan FreeBSD, namun sebaiknya melakukan pengecekan jaringan terlebih dahulu (jika DHCP tidak bisa mendapatkan IP). Cara yang paling mudah adalah dengan melakukan `ping` ke Google. 
 
 ```shell-session
 # ping -c3 google.com
@@ -127,7 +127,7 @@ ping: No route to host
 
 Jika muncul reply dari Google maka tandanya bisa langsung jalankan `bsdinstall`. Tapi hidup kadang tak semudah itu ya, jadi disini saya tidak mendapatkan reply dari Google melainkan error `No route to host`.
 
-Hal ini karena mfsBSD tidak bisa menemukan konfigurasi yang benar, ingat dengan booting yang lama? ini karena system berusaha mendapatkan IP dari DHCP Client sampai timeout.
+Hal ini karena mfsBSD tidak bisa menemukan konfigurasi yang benar, ingat dengan booting yang lama? ini karena system berusaha mendapatkan IP dari DHCP Client sampai *timeout*.
 
 Ada beberapa hal yang penting untuk dilakukan, antara lain:
 
@@ -136,7 +136,7 @@ Ada beberapa hal yang penting untuk dilakukan, antara lain:
 
 #### mfsBSD setting jaringan
 
-Maka perlu untuk memeriksa interfaces apa saja yang sudah dideteksi oleh system, ini nanti akan membatu untuk melakukan pengaturan IP.
+Maka perlu untuk memeriksa *interfaces* apa saja yang sudah dideteksi oleh system, ini nanti akan membatu untuk melakukan pengaturan IP.
 
 ```shell-session
 # ifconfig
