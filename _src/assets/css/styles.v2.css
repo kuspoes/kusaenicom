@@ -1365,8 +1365,9 @@ a:visited {
 a.ptitle,
 a.ptitle:visited {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--col_body);
+	font-size: 1.1em;
 }
 
 a.hRelasi {

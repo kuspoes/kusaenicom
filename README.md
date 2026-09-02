@@ -145,4 +145,4 @@ Deno Deploy gratisan dapatnya region EU dan US yang tentu
 saja akan membuat latency semakin tinggi yang berimbas akses
 ke situs (agak) tersendat. Netlify punya fitur edge di SEA
 harapannya bisa membuat akses lebih cepat. Jika pun tidak
-pkemungkinan besar akan pakai self host atau CloudFlare.
+kemungkinan besar akan pakai self host atau CloudFlare.
