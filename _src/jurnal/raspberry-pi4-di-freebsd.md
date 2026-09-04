@@ -279,7 +279,9 @@ $ psql miniflux -c 'create extension hstore'
 ```
 
 <aside>
-Perintah - perintah diatas <i>copy paste</i> dari <a href="https://miniflux.app/docs/database.html">dokumentasi miniflux</a>.
+<ul><li>Perintah - perintah diatas <i>copy paste</i> dari <a href="https://miniflux.app/docs/database.html">dokumentasi miniflux</a>.</li>
+<li>Di versi terkini 2.3.2, Miniflux sudah tidak lagi butuh <code>hstore</code> jadi perintah ini bisa diabaikan</li>
+</ul>
 </aside>
 
 Database miniflux ini akan diakses dari Jail yang lain, maka saya perlu memberikan ijin akses. Rencananya saya akan membuat Jail dengan IP `10.1.1.2` sehingga saya _edit file_ `/var/db/postgres/data16/pg_hba.conf` dan tambahkan pengaturan sebagai berikut
@@ -306,7 +308,7 @@ _Package_ miniflux sudah tersedia di FreeBSD dan bisa di*install* dengan perinta
 Kemudian buat pengaturan database di miniflux, _edit file_ `/usr/local/etc/miniflux.env` dan tambahkan database _connection_ seperti berikut
 
 ```txt
-DATABASE_URL=`postgres://mnflx:miniflux@10.1.1.1/miniflux?sslmode=disable`
+DATABASE_URL=postgres://mnflx:miniflux@10.1.1.1/miniflux?sslmode=disable
 ```
 
 Karena postgresql dihost di Jail yang lain maka saya gunakan _connection string_ dengan format seperti diatas. Selanjutnya lakukan migrasi dan buat akun `admin` untuk miniflux.
