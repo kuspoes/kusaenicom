@@ -98,7 +98,7 @@ Sebelum lanjut memasang NetBSD, maka ane perlu mempersiapkan pengaturan jaringan
 <div id="ipv4"></div>
 
 
-Ane lebih suka memilih lewat **Configure Network**, namun jika lebih suka yan manual lewat *shell* berikut caranya:
+Ane lebih suka memilih lewat **Configure Network**, namun jika lebih suka yang manual lewat *shell* berikut caranya:
 
 ```shell-session
 # ifconfig 
@@ -115,7 +115,7 @@ penting untuk menambahkan IP, <i>netmask</i>, <i>gateway</i> atau <i>router</i>,
 Perintah <code>./install.sh</code> dipergunakan untuk kembali ke menu <i>installer</i>
 </aside>
 
-Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*install*an melainkan nanti saat NetBSD sudah jalan dengan baik (*post install*).
+Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*install*an melainkan nanti saat [NetBSD sudah jalan dengan baik (*post install*)](#postinstall_ipv6).
 
 ![NetBSD Installer](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/netbsd_installer_p_mfzyV82.jpeg)
 
@@ -189,10 +189,10 @@ Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke 
 
 	Ane aktifkan `doas` tanpa *password* untuk akun `poes` dengan `permit nopass poes` dan tulis ke *file* konfigurasi `doas`.
 
-6. **Aktifkan IPv6**,
+6. **Aktifkan IPv6**{#postinstall_ipv6},
 Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi mari kita pakai.
 
-	NetBSD punya cara unik (menurut ane) untuk pengaturan IPv6 ini meski sudah mendukungnya sejak 1999!. Namun jujur agak ruwet dan tidak semudah FreeBSD saat dicoba. Cara manualnya sama seperti saat [mengatur IPv4 sebelumnya](#ipv4) sebagai berikut
+	NetBSD sudah mendukung IPV6 sejak 1999! dan punya cara unik (menurut ane) untuk pengaturan. Namun jujur agak ruwet dan tidak semudah FreeBSD saat dicoba. Cara manualnya sama seperti saat [mengatur IPv4 sebelumnya](#ipv4) sebagai berikut
 
 	```shell-session
 	# ifconfig vioif0 inet6 2a11:6c7:3001:5d8b::2 prefixlen 64 alias
