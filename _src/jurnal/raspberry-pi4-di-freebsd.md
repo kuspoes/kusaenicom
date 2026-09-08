@@ -6,6 +6,7 @@ tags:
   - bsd
   - fave
   - freebsd
+  - jail
 date: 2024-05-18
 kategori: jurnal
 relasi: freebsd

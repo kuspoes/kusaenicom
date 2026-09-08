@@ -30,6 +30,7 @@ comments:
     format: "kiri",
     heading: "" })
 }}
+
 <span class="caps">D</span>ari trio BSD yang pernah ane coba, NetBSD adalah distribusi BSD
 yang paling susah ane *install*. Bukan karena sulit tapi metode
 *install*nya berbeda dengan yang lainnya. FreeBSD mudah bisa

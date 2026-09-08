@@ -381,6 +381,7 @@ h2.arsip_tahun {
     color: #666;
     margin-left: 15px;
     align-self: center;
+		letter-spacing:  0.1px;
 }
 
 nav.toc {

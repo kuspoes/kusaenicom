@@ -8,6 +8,7 @@ tags:
   - tutorial
   - fave
   - freebsd
+  - jail
 keywords: "freebsd, vps, tutorial, bsd, jail, bastillebsd, bastille"
 kategori: jurnal
 relasi: freebsd
