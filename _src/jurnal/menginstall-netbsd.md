@@ -162,7 +162,13 @@ Ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka cara
 	sshd=YES
 	```
 	
-	*Edit file* `/etc/rc.conf` dan tambahkan `sshd=YES` di baris paling bawah, kemudian simpan. Mulai jalankan layanan SSH dengan perintah berikut
+	*Edit file* `/etc/rc.conf` dan tambahkan `sshd=YES` di baris paling bawah, kemudian simpan atau 
+
+	```shell-session
+	# echo "sshd=YES" > /etc/rc.conf
+	```
+	
+	Mulai jalankan layanan SSH dengan perintah berikut
 
 	```shell-session
 	# service sshd start
@@ -182,6 +188,10 @@ Meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan famil
 	# pkgin update
 	# pkgin install vim git doas
 	```
+
+	Alternatif lain untuk mengelola paket aplikasi dengan mempergunakan [pkgsrc](https://www.netbsd.org/docs/pkgsrc/), bedanya `pkgsrc` dipergunakan untuk mengelola paket dengan cara mem*build*nya dari *source code*. Cara ini mirip dengan pengelolaan paket aplikasi dengan Ports di FreeBSD.
+
+	Untuk pengguna *expert* atau yang membutuhkan konfigurasi khusus, sangat disarankan memakai `pkgsrc` karena lebih fleksibel dalam pengaturan. 
 
 5. `doas` **untuk elevasi ke** `root`,
 Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke `root`, namun ini kurang fleksibel. Maka ane pasang `doas` biar bisa elevasi *ǎ la* [#openbsd](/tags/openbsd)
@@ -207,6 +217,21 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 
 	Sedangkan baris ketiga untuk mendaftarkan *DNS Resolver* memakai [Quad9](https://quad9.net/service/service-addresses-and-features/)
 
+	Kemudian tes dengan mempergunakan `ping6`
+
+	```shell-session
+	# ping6 -c 4 kusaeni.com
+	PING6(56=40+8+8 bytes) 2a11:6c7:3001:5d8b::2 --> 2606:4700:3031::6815:2f4b
+	16 bytes from 2606:4700:3031::6815:2f4b, icmp_seq=0 hlim=57 time=65.968 ms
+	16 bytes from 2606:4700:3031::6815:2f4b, icmp_seq=1 hlim=57 time=62.311 ms
+	16 bytes from 2606:4700:3031::6815:2f4b, icmp_seq=2 hlim=57 time=64.404 ms
+	16 bytes from 2606:4700:3031::6815:2f4b, icmp_seq=3 hlim=57 time=70.789 ms
+	
+	--- kusaeni.com ping6 statistics ---
+	4 packets transmitted, 4 packets received, 0.0% packet loss
+	round-trip min/avg/max/std-dev = 62.311/65.868/70.789/3.607 ms
+	```
+
 	Untuk membuat pengaturan ini permanen, maka ane sisipkan pengaturan berikut di *file* `/etc/rc.conf`
 
 	```txt
@@ -218,5 +243,4 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	"
 	dns_nameservers="9.9.9.9 2620:fe::fe"
 	```
-
 
