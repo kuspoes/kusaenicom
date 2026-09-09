@@ -23,6 +23,8 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01M19EXTJZYGXJP6V1BWN91SDN
 ---
 
+![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png){.fuck .lebar}
+
 
 {{ comp.relasi_artikel({
     judul: "Menginstall FreeBSD di VPS berbasis Linux",
@@ -67,10 +69,10 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 
 <div class="gallery gal-1-baris" id="glightbox">  
  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.png" class="fuck radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
+ <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.png" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.png" class="fuck radius-kanan-bawah" alt="Mount ISO ke CDROM">
+ <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.png" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
   </a>
 </div>
 <p class="ncaption">Mount ISO ke CDROM di TierHive tinggal <i>copy-paste</i> URL ISOnya saja</p>
@@ -82,10 +84,10 @@ Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan to
 
 <div class="gallery gal-1-baris" id="glightbox">  
  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.png" class="fuck radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.png" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.png" class="fuck radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.png" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>
@@ -217,4 +219,4 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	dns_nameservers="9.9.9.9 2620:fe::fe"
 	```
 
-![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png){.fuck}
+
