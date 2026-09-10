@@ -217,9 +217,10 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 
 	Sedangkan baris ketiga untuk mendaftarkan *DNS Resolver* memakai [Quad9](https://quad9.net/service/service-addresses-and-features/)
 
-	Kemudian tes dengan mempergunakan `ping6`
+	Kemudian *restart interfaces* dan tes dengan mempergunakan `ping6`
 
 	```shell-session
+	# /etc/rc.d/network restart
 	# ping6 -c 4 kusaeni.com
 	PING6(56=40+8+8 bytes) 2a11:6c7:3001:5d8b::2 --> 2606:4700:3031::6815:2f4b
 	16 bytes from 2606:4700:3031::6815:2f4b, icmp_seq=0 hlim=57 time=65.968 ms
@@ -243,4 +244,8 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	"
 	dns_nameservers="9.9.9.9 2620:fe::fe"
 	```
+
+	kemudian *restart interface* yang digunakan.
+
+	
 
