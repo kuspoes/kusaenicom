@@ -281,6 +281,7 @@ Meskipun sudah memasang Blocklist atau SSH Guard, akan lebih baik lagi jika akse
 <pre class="language-shell-session" tabindex="0"><code class="language-shell-session"><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash">ssh-copy-id -i ~/.ssh/id_ed25519.pub poes@oyenBSD</span></span>
 </code></pre>
 <p>ikuti <i>prompt</i> dan proses yang muncul seperti minta <i>password login</i> ke SSH.</p>
+<p>Sebagai catatan tambahan, jika port SSH dirubah tidak pakai port standar <code>22</code> misalnya pakai port <code>2222</code> maka masukkan flag <code>-p 2222</code> di depan <code>username@host</code></p>
 </ol>
 
 
