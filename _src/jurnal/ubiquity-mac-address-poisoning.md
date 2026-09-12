@@ -12,8 +12,8 @@ favorit: false
 comment: true
 keywords: ubiquity, tutorial, jaringan, multiple, mac address, double
 comments:
-  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
-  real: https://sok.egois.org/@poes/statuses/01K5HB8BQJJPVT4HV1A2SH3M6X
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01M2AJ5PYZSHAJ57PS6AXGC2VA
+  real: https://sok.egois.org/@poes/statuses/01M2AJ5PYZSHAJ57PS6AXGC2VA
 ---
 
 
