@@ -103,10 +103,11 @@ Bedanya dengan related article di layout `jurnal.vto` adalah
 penempatan component sangat fleksibel bisa ditempatkan di
 mana saja di dalam artikel.
 
-Metode perpindahan posisi ToC ini diatur di _file_ `config.ts`
 
 #### TOC
 Untuk menampilkan Table of Content (TOC) atau Daftar Isi, maka di _frontmatter_ masukkan `tocx: true` sehingga Lume akan menampilkan Daftar Isi di bagian paling atas. Namun jika tidak suka posisi atau ingin menampilkan Daftar Isi di mana saja (fleksibel) maka gunakan _template tags_ `{#tocx#}` di sembarang tempat yang kamu inginkan. Ingat hanya boleh ada 1 _tag_ ini yang boleh dipakai di 1 artikel.
+
+Metode perpindahan posisi ToC ini diatur di _file_ `config.ts`
 
 #### Pixelfed 
 

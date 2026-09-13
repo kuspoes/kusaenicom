@@ -23,15 +23,15 @@ comments:
 
 `arp -a` menunjukkan hasil yang tidak sesuai, jumlah perangkat yang *online* ada sekitar 30 namun arp hanya menunjukkan 18 perangkat hidup. Saat diperiksa dengan aplikasi seperti [ Angry IP Scanner ](https://angryip.org/) maupun [Advanced IP Scanner](https://www.advanced-ip-scanner.com/) hasilnya sama saja, hanya ada sekitar 18 perangkat yang hidup.
 
-Setelah di*sort by mac address* ketemua segerombolan perangkat yang *offline* namun dengan *mac address* yang sama persis yaitu `E0:63:DA:D8:EC:FE`. Setelah di*lookup* ternyata *mac address* ini milik perangkat Ubiquity NanoStation loco M2! yang ane pasang di gedung sebelah, ada sekitar 15 perangkat berada di balik Ubiquity ini dan semua terdeteksi *down* meski realisasinya sedang *online*. 
+Setelah di*sort by mac address* ketemu segerombolan perangkat yang *offline* namun dengan *mac address* yang sama persis yaitu `E0:63:DA:D8:EC:FE`. Setelah di*lookup* ternyata *mac address* ini milik perangkat Ubiquity NanoStation loco M2! yang ane pasang di gedung sebelah, ada sekitar 15 perangkat berada di balik Ubiquity ini dan semua terdeteksi *down* meski realisasinya sedang *online*. 
 
-Ane coba `ping` tapi muncul *error Request Timeout* namun dari PC tujuan mereka bisa ping ke *router* dan bisa akses NAS. Ada ava kenava?
+Ane coba `ping` tapi muncul *error Request Timeout* namun dari PC tujuan mereka bisa ping ke *router* dan bisa akses NAS. Adava kenava?
 
 Setelah membaca - baca dokumentasi, ternyata Ubiquity memiliki fitur WDS atau Wireless Transparent Bridging yang harus aktif agar perangkat di balik Ubiquity tersebut bisa di*discovery* oleh `arp` atau aplikasi *scanner* seperti [ nmap ](https://nmap.org/) maupun Advanced IP Scanner. Jika WDS ini tidak aktif, maka Ubiquity akan menyamarkan perangkat - perangkat tersebut dan semua *reply* dianggap berasal dari Ubiquity sebagai garda depan. Fitur yang memiliki niat yang mulia, namun ane tidak membutuhkannya untuk saat ini.
 
 Apa pasal?
 
-Hal ini akan merepotkan saat pembacaan log firewall seperti di FortiGate karena membuat data di kolom *Source* alih - alih terbaca *Hostname* namun yang muncul adalah *mac address*, lebih buruknya semua kolom berisi *mac address* yang sama karena Ubiquity mengirimkan data ini, bukan *mac address* asli dari perangkat. Sehingga menyulitkan untuk mengidentifikasi dari perangkat mana data log tersebut berasal.
+Hal ini akan merepotkan saat pembacaan *log firewall* seperti di FortiGate karena membuat data di kolom *Source* alih - alih terbaca *Hostname* namun yang muncul adalah *mac address*, lebih buruknya semua kolom berisi *mac address* yang sama karena Ubiquity mengirimkan data ini, bukan *mac address* asli dari perangkat. Sehingga menyulitkan untuk mengidentifikasi dari perangkat mana data log tersebut berasal.
 
 Bisa dibilang kalo Ubiquity telah meracuni perangkat di belakangnya sehingga `arp` tidak bisa mendeteksi secara akurat karena yang muncul di awal saja yang terdeteksi sedangkan perangkat di belakang Ubiquity dianggap menjadi satu dengan Ubiquity akibat dari *mac address* yang sama.
 
@@ -52,4 +52,5 @@ Sementara itu di sisi lokal, hapus *cache* dari `arp` dengan perintah
 ```shell-session
 $ sudo arp -d -a 
 ```
-Perintah ini akan menghapus *cache* dari semua *interface* yang ada, untuk perintah lainnya bisa dilihat di `man arp`
+Perintah ini akan menghapus *cache* dari semua *interface* yang ada, untuk perintah lainnya bisa dilihat di `man arp` dan kemudian lakukan `ping` atau pemeriksaan dengan nmap/zenmap.
+
