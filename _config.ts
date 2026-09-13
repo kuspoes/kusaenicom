@@ -168,7 +168,7 @@ site.helper("gtoot", async (id: string) => {
       },
     );
 
-    if (!response.ok) return `<!-- Error: ${response.status} -->`;
+    if (!response.ok) return `<!-- Err: ${response.status} -->`;
 
     const data = await response.json();
     return `
@@ -188,7 +188,7 @@ site.helper("gtoot", async (id: string) => {
     `;
   } catch (e) {
     console.error("Gagal fetch:", e);
-    return `<!-- Gagal render toot ${id} -->`;
+    return `<!-- Gagal tampilkan toot ${id} -->`;
   }
 }, { type: "tag", async: true });
 
