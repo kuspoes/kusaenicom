@@ -29,7 +29,7 @@ comments:
 {{ comp.relasi_artikel({
     judul: "Menginstall FreeBSD di VPS berbasis Linux",
     teks: "Provider tidak menyediakan OS FreeBSD dan atau ingin menginstall sendiri?",
-    format: "kiri",
+    format: "kanan",
     heading: "" })
 }}
 

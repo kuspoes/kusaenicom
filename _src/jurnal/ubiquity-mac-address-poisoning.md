@@ -23,7 +23,7 @@ comments:
 
 `arp -a` menunjukkan hasil yang tidak sesuai, jumlah perangkat yang *online* ada sekitar 30 namun arp hanya menunjukkan 18 perangkat hidup. Saat diperiksa dengan aplikasi seperti [ Angry IP Scanner ](https://angryip.org/) maupun [Advanced IP Scanner](https://www.advanced-ip-scanner.com/) hasilnya sama saja, hanya ada sekitar 18 perangkat yang hidup.
 
-Setelah di*sort by mac address* ketemu segerombolan perangkat yang *offline* namun dengan *mac address* yang sama persis yaitu `E0:63:DA:D8:EC:FE`. Setelah di*lookup* ternyata *mac address* ini milik perangkat Ubiquity NanoStation loco M2! yang ane pasang di gedung sebelah, ada sekitar 15 perangkat berada di balik Ubiquity ini dan semua terdeteksi *down* meski realisasinya sedang *online*. 
+<span class="caps">S</span>etelah di*sort by mac address* ketemu segerombolan perangkat yang *offline* namun dengan *mac address* yang sama persis yaitu `E0:63:DA:D8:EC:FE`. Setelah di*lookup* ternyata *mac address* ini milik perangkat Ubiquity NanoStation loco M2! yang ane pasang di gedung sebelah, ada sekitar 15 perangkat berada di balik Ubiquity ini dan semua terdeteksi *down* meski realisasinya sedang *online*. 
 
 Ane coba `ping` tapi muncul *error Request Timeout* namun dari PC tujuan mereka bisa ping ke *router* dan bisa akses NAS. Adava kenava?
 
