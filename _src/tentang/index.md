@@ -154,3 +154,7 @@ style: "tentang.css"
 <p>Setelah tahun 2024 saya sudah jarang membeli buku <i>hard cover</i> dan lebih memilih untuk membaca dalam versi e-book di Kindle maupun di iOS Books app. Sebagian besar buku - buku (<i>hardcover</i>) sudah saya berikan saat <a href="https://kusaeni.com/jurnal/give-away-buku/"><i>giveaway</i> buku tahun lalu</a>.<p>
 
 <p>Kemudian saya tambahkan juga <a href="/baca/rating">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>
+
+<h3>RunBSD</h3>
+
+![Kusaeni RunBSD](https://ik.imagekit.io/hjse9uhdjqd/Tentang/SCR-20260915-pnzp__NvO6Z8NX.png){.lebar .fuck}
