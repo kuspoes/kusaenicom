@@ -202,6 +202,21 @@ Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke 
 
 	Ane aktifkan `doas` tanpa *password* untuk akun `poes` dengan `permit nopass poes` dan tulis ke *file* konfigurasi `doas`.
 
+    Alternatif lain bisa pakai [priv](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/security/priv/index.html) yang lebih sederhana dan merupakan aplikasi asli dari NetBSD yang tidak hanya bisa melakukan elevasi atas perintah - perintah tertentu (yang ditentukan) tapi bisa menjalankan semua perintah seperti `doas`
+
+    ```shell-session
+    # pkgin install priv
+    # echo "0:root:000000" > /usr/pkg/etc/priv/poes
+    # priv pkgin list
+    ```
+    <aside>Format konfigurasi <code>priv</code> sebagai berikut:
+    <ul><li>urutan pertama adalah waktu <code>priv</code> dipakai, gunakan angka 0 jika diijinkan dipakai selamanya (tanpa waktu <i>expired</i>)</li>
+    <li>urutan kedua adalah nama <i>user</i> yang akan dituju elevasi-nya, dalam hal ini <code>root</code></li>
+    <li>urutan ketiga adalah jenis label perintah yang diijinkan, contoh di atas pakai <code>000000</code> sehingga bebas melakukan perintah apapun sebagai <code>root</code>. Label lainnya bisa dilihat dengan membaca <i>man page</i> dari <code>priv</code></li></ul>
+    Semua konfigurasi ditaruh di <code>/usr/pkg/etc/priv/username</code>.
+    </aside>
+
+
 6. **Aktifkan IPv6**{#postinstall_ipv6},
 Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi mari kita pakai.
 
