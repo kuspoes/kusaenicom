@@ -70,9 +70,9 @@ style: "tentang.css"
     <p>Statistik yang dikoleksi terbatas pada lokasi negara, bahasa, <i>referrer</i>, ukuran layar, dan alamat URL yang dikunjungi. Data ini dipakai kepentingan internal saja untuk mencari data tentang artikel mana yang paling banyak dikunjungi dan jenis <i>devices</i> yang dipakai untuk keperluan desain situs (responsif). Data ini tidak akan dijual ke pihak manapun.</p></div>
 
 
-<p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim.org/" title="VIM">VIM</a> <mark class="fuck_eipstein_trump">(yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a></mark>.</p>
+<p>Sedangkan <i>text editor</i> saya lebih sering mempergunakan <a href="https://vim-classic.org/" title="VIM">VIM</a> <mark class="fuck_eipstein_trump">(yang berjalan diatas WSL) untuk menulis artikel dan lain - lain. Jika bosan (atau melakukan operasi teks yang agak ribet) saya pergunakan <a href="https://sublimetext.com/" title="Sublimetext">Sublimetext</a> atau <a href="https://lite-xl.com">Lite-XL</a></mark>.</p>
 
-<p><mark class="fuck_eipstein_trump"><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.</mark> Per 2026 saya sekarang memakai <mark class="fuck_eipstein_trump"><a href="https://zed.dev">Zed</a></mark> <a href="https://gram.liten.app/" target="_blank">Gram</a>, sedangkan <i>terminal emulator</i> masih memakai <mark class="fuck_eipstein_trump">Alacritty<a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a></mark>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a><mark class="fuck_eipstein_trump">, dan  iTerm2</mark>. </p>
+<p><mark class="fuck_eipstein_trump"><i>Terminal emulator</i> untuk menjalankan WSL adalah <a href="https://github.com/alacritty/alacritty" title="Alacritty Terminal Emulator">Alacritty</a> dengan distro Ubuntu 20.04. Namun sekarang lebih suka pakai Windows Terminal karena terasa lebih ringan dan mudah dikostumisasi dibandingkan Alacritty. <del class="abu">Kadang kala pakai <a href="https://hyper.is" title="Electron Terminal Emulator">Hyper Terminal</a> yang berjalan diatas Electron</del>.</mark> Per 2026 saya sekarang memakai <mark class="fuck_eipstein_trump"><a href="https://zed.dev">Zed</a> <a href="https://gram.liten.appk" target="_blank">Gram</a>,</mark> <i>terminal emulator</i> Alacritty <mark class="fuck_eipstein_trump"><a href="https://sw.kovidgoyal.net/kitty/" title="Kitty terminal emulator">Kitty</a>, <a href="https://ghostty.org/" title="Ghostty">Ghostty</a>, dan  iTerm2</mark>. </p>
 
 <p>Font yang dipakai di blog ini :</p>
     <ul>
@@ -83,7 +83,7 @@ style: "tentang.css"
         <li>Chunk dari <a href="https://www.theleagueofmoveabletype.com/chunk" target="_blank">Meredith Mandel</a> (the League of Movabletype), dipergunakan khusus untuk <code>H1</code>.</li>
         <li><a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif</a> juga dipergunakan untuk <i>header</i>.</li>
     </ul>
-    
+
 <p>Sedangkan untuk <code>code</code> mempergunakan <span class="roboto">Roboto Mono</span> dan font standar bawaan masing - masing OS, diantaranya <span class="monaco">Monaco</span>, <span class="consolas">Consolas</span>, <span class="monospace">Monospace</span></p>
 
 <h3>Mengenai tulisan</h3>
