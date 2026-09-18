@@ -15,7 +15,6 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import imageSize from "lume/plugins/image_size.ts";
-//import gzip from "lume/plugins/gzip.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import gitInfo from "lume/plugins/git_info.ts";
@@ -51,15 +50,12 @@ site
   .copy("assets", "/assets")
   .copy("well-known", "/.well-known")
   .copy("favicon.ico", "/favicon.ico")
-  //.copy("assets/pixelfed", "/pixelfed")
   .use(attributes())
   .use(purgecss())
   .use(base_path())
   .use(nunjucks())
   .use(imageSize())
   .use(picture())
-  //.use(transformImages())
-  //.add("/assets/pixelfed")
   .use(
     date({
       formats: {
