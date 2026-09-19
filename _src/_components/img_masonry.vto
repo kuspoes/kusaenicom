@@ -18,7 +18,6 @@
       line-height: 0;
     }
 
-  /* Base Setup */
   .masonry-grid {
     display: grid;
     gap: 5px;
@@ -87,7 +86,6 @@
   }
 
 
-  /* Responsive buat Random */
   @media (min-width: 900px) {
       .masonry-grid.random { column-count: 3; }
   }
@@ -102,7 +100,6 @@
           background: none !important; /* Kadang ada bg-color tipis */
   }
 
-  /* Pastikan saat dihover tidak muncul garis bawah */
   .masonry-grid a[data-fslightbox]:hover,
   .masonry-grid a[data-fslightbox]:focus,
   .masonry-grid a[data-fslightbox]:active {
@@ -111,7 +108,6 @@
       outline: none;
   }
 
-  /* Hilangkan border pada gambar di dalam link (khusus browser jadul) */
   .masonry-grid a[data-fslightbox] img {
       border: none;
       box-shadow: none !important;

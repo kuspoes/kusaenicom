@@ -14,10 +14,11 @@ curl -fsSL https://deno.land/install.sh | sh
 
 atau bisa dengan package manager seperti `brew`, `apt`, dan
 sebagainya.  jangan lupa untuk _upgrade_ deno ke rilis
-terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.5
-(stable).
+terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.6
+(*stable*).
 
 2. Clone repo ini
+baca dokumentasi untuk clone pada masing - masing *git hosting*. 
 
 ```bash
 $ git clone https://github.com/kuspoes/kusaenicom.git blog
@@ -125,6 +126,10 @@ bagian atas `index.vto`, pilihan `pxlfed: true` akan
 menampilkan Pixelfed, sedangkan `false` akan
 menghilangkannya.
 
+#### Fediverse
+
+Ini agak sulit dijelaskan, tapi untuk bisa menampilkan komentar dari fediverse maka perlu membuat *endpoint* sebagai jembatan untuk tampilkan komentar, namun ini hanya berlaku untuk instan gotosocial jika pakai mastodon atau pleroma bisa langsung pakai. Ini semua karena *scope* API gotosocial yang belum bisa membedakan scope, akan tetapi sepertinya saat ini sudah bisa menerima *scope* `read` saja sehingga bisa langsung tanpa memakai *endpoint* sebagai pengaman. Namun ane belum coba.
+
 ### Deploy
 
 > Repository ini kemudian di deploy ke Deno Deploy dengan
@@ -152,3 +157,11 @@ saja akan membuat latency semakin tinggi yang berimbas akses
 ke situs (agak) tersendat. Netlify punya fitur edge di SEA
 harapannya bisa membuat akses lebih cepat. Jika pun tidak
 kemungkinan besar akan pakai self host atau CloudFlare.
+
+### Repositori
+
+*Source code* ini disimpan di:
+1. Github (karena Netlify, Cloudflare, Deno Console hanya bisa dihubungkan dengan Github),
+2. Codeberg (tidak update karena akun ane disilent sama mereka),
+3. [Brew BSD Cafe](https://brew.bsd.cafe/poes) (best)
+4. Le Git (*self host* sendiri CGIT)

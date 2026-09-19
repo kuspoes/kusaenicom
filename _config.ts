@@ -155,36 +155,37 @@ site.helper(
 
 site.helper("gtoot", async (id: string) => {
   try {
-    const endpoint = Deno.env.get("gtoot_endpoint");
-    const response = await fetch(
-      `${endpoint}/get/${id}`,
+    const e = Deno.env.get("gtoot_endpoint");
+    const r = await fetch(
+      `${e}/get/${id}`,
       {
         method: "GET",
         headers: { "Accept": "application/json" },
       },
     );
 
-    if (!response.ok) return `<!-- Err: ${response.status} -->`;
+    if (!r.ok) return `<!-- err: ${r.status} -->`;
 
-    const data = await response.json();
+    const d = await r.json();
+
     return `
     <div class="gtoot">
       <div class="gtoot_header">
-        <img class="poes_avatar fuck" src="${data.account.avatar_static}" alt="poes@sok.egois.org">
+        <img class="poes_avatar fuck" src="${d.account.avatar_static}" alt="poes@sok.egois.org">
         <div class="meta_profile">
-          <h5 class="display_name">${data.account.display_name}</h5>
-          <p class="username">@${data.account.acct}@sok.egois.org</p>
+          <h5 class="display_name">${d.account.display_name}</h5>
+          <p class="username">@${d.account.acct}@sok.egois.org</p>
         </div>
       </div>
       <div class="gtoot_content">
-        ${data.content}
-        <p><a href="${data.url}" target="_blank">baca thread's selengkapnya ↗...</a></p>
+        ${d.content}
+        <p><a href="${d.url}" target="_blank">baca thread's selengkapnya ↗...</a></p>
       </div>
     </div>
     `;
   } catch (e) {
     console.error("Gagal fetch:", e);
-    return `<!-- Gagal tampilkan toot ${id} -->`;
+    return `<!-- toot..toot ${id} -->`;
   }
 }, { type: "tag", async: true });
 
