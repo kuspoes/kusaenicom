@@ -18,6 +18,7 @@ import imageSize from "lume/plugins/image_size.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import gitInfo from "lume/plugins/git_info.ts";
+import wellKnown from "lume/plugins/well_known.ts"
 
 import "https://esm.sh/prismjs@1.29.0/components/prism-shell-session.js";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash.js";
@@ -84,6 +85,17 @@ site
   .use(readInfo({
     wordsPerMinute: 200,
   }))
+	.use(wellKnown({
+		gpc: {
+			gpc: true,
+		},
+		atProto: "did:plc:ulz27cstlpjtsbmawrbi4av3",
+		trust: {
+			contact: "mailto:sahabat@duck.com",
+			social: "https://sok.egois.org/@poes",
+			dataTrainingAllowed: false,
+		}
+	}))
   .ignore("README.md");
 
 if (!isDev) {

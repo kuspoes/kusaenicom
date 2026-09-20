@@ -17,7 +17,7 @@ comments:
 ---
 
 
-![kucingnya banyak sekali](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ubnt_/SCR-20260912-owah_7W4EV8dcp.png){.fuck}
+![satu kucing terhubung dengan kucing yang lain, tapi kenapa wajahnya sama?](https://ik.imagekit.io/hjse9uhdjqd/tr:w-600/jurnal/ubnt_/SCR-20260912-owah_7W4EV8dcp.png){.fuck image-size}
 <p class="ncaption">satu kucing terhubung dengan kucing yang lain, tapi kenapa wajahnya sama? </p>
 
 
