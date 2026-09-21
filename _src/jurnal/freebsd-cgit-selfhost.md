@@ -198,38 +198,6 @@ logo=/cgit.png
 ## root for all cgit links
 virtual-root=/
 
-summary-branches=10
-summary-log=10
-summary-tags=10
-
-enable-git-config=1
-enable-index-owner=1
-max-message-length=10000
-
-enable-blame=1
-enable-index-links=1
-enable-commit-graph=1
-enable-follow-links=1
-enable-log-filecount=1
-enable-log-linecount=1
-max-stats=quarter
-
-readme=:README
-readme=:README.md
-
-about-filter=/usr/local/lib/cgit/filters/about-formatting-md4c.sh
-source-filter=/usr/local/lib/cgit/filters/syntax-highlighting.sh
-
-noplainemail=1
-
-mimetype.png=image/png
-mimetype.jpg=image/jpeg
-mimetype.jpeg=image/jpeg
-mimetype.gif=image/gif
-mimetype.svg=image/svg+xml
-mimetype.bmp=image/bmp
-mimetype.ico=image/x-icon
-
 clone-prefix=https://legit.kusaeni.com/git
 enable-http-clone=1
 
@@ -238,4 +206,88 @@ root-title=Lapis LeGit
 root-desc=sungguh legit menggigit, auwwww!
 ```
 
-Khusus filter, saat diaktifkan mungkin perlu memasang *dependency* lainnya seperti `highlight` atau `py312-markdown` tergantung mau mengaktifkan yang mana. `cgit` sudah menyediakan beberapa filter yang bisa dipakai dan diletakkan di `/usr/local/lib/cgit/filters`.
+Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ingin diaktifkan diantaranya berikut ini
+
+1. **Memperluas info di tab *Summary***, seperti info tentang *branches*, *logs*, maupun *tags*
+	```txt
+	summary-branches=10
+	summary-log=10
+	summary-tags=10
+	```
+2. **Memperluas tampilan *commit message**, ini berguna biar tampilan pesan *commit* tidak terpotong
+	```txt
+	max-message-length=10000
+	```
+3. **Fleksibel dalam membaca pengaturan spesifik pada masing - masing repo**, perintah ini akan membuat `cgit` memprioritaskan pembacaan informasi repo langsung dari *file* `.git/config` alih - alih membaca dari `cgitrc`. Sangat bermanfaat jika punya *multiple* repo.
+	```txt
+	enable-git-config=1
+	enable-index-owner=1
+	```
+	Jika pakai ini maka untuk menulis deskripsi repo harus mengubah *file* `.git/description`, sedangkan nama *owner* bisa dengan merubah *file* `.git/config` yang berada di bawah masing - masing folder repo.
+4.  **Menampilkan statistik di halaman *Commit, Summary, dan Logs***, gunakan pengaturan ini untuk menampilkan banyak pesan yang mungkin bermanfaat. 
+	```txt
+	enable-blame=1
+	enable-index-links=1
+	enable-commit-graph=1
+	enable-follow-links=1
+	enable-log-filecount=1
+	enable-log-linecount=1
+	max-stats=quarter
+	```
+5. **Pakai filter**, `cgit` punya beberapa filter bawaan untuk melakukan *post-process* tampilan web-nya. Salah satu filter yang menarik adalah untuk menampilkan isi *file* `README.md` dan filter untuk *syntax highlighting* 
+	`cgit` menaruh filter bawaan di folder `/usr/local/lib/cgit/filters` dan bisa diaktifkan dengan menambahkan konfigurasi berikut
+	```txt
+	about-filter=/usr/local/lib/cgit/filters/about-formatting.sh
+	source-filter=/usr/local/lib/cgit/filters/syntax-highlighting.sh
+	```
+	Pada dasarnya filter ini adalah kumpulan *shell script* yang mengformat hasil `stdout` dari `cgit`, sebagai contoh `about-formatting.sh` adalah *shell script* yang berguna untuk me*render file* `README.md` dan menampilkan di tab khusus bernama `about`. Namun agar bisa me*render file raw* hasil dari `cgit` perlu *library* terpasang yaitu `python` dan `python markdown`. Di FreeBSD ane pakai `python312` maka ane perlu memasang paket ini. Tapi ane males! 
+
+	Jadi ane pasang *parser* dan *render* lain yang lebih ringan yaitu `md4c` yang juga punya fungsi yang sama namun lebih ringan dan mendukung `markdown` a la Github.
+
+	```shell-session
+	# pkg install md4c
+	```
+
+	Kemudian buat *file* filter baru dengan nama misalnya `about-formatting-md4c.sh` dan isinya menjiplak isi dari *file* asli `about-formatting.sh`. Kira - kira seperti ini
+
+	```sh
+	#!/bin/sh
+
+	case "$(printf '%s' "$1" | tr '[:upper:]' '[:lower:]')" in
+	    *.markdown|*.mdown|*.md|*.mkd)
+		    exec /usr/local/bin/md2html --github
+	        ;;
+	    *.htm|*.html)
+	        exec cat
+	        ;;
+	    *)
+	        exec /usr/local/lib/cgit/filters/lowdown.sh "$@"
+	esac
+	```
+
+	baris ke-11 berisi aturan jika misal terjadi gagal *render* maka pakai filter `lowdown.sh` yang juga merupakan *rederer* markdown yang ringan. Tapi jika tidak ingin pakai bisa dihapus saja.
+
+	Begitupula dengan filter `highlight` untuk *syntax highlighting* memerlukan paket lain yaitu `highlight` yang bisa dipasang dengan perintah
+	```shell-session
+	# pkg install highlight
+	```
+
+	Kemudian *edit* file `/usr/local/lig/cgit/filters/syntax-highlighting.sh`.
+
+	*File* ini memberikan pilihan cara menjalankan `highlight` yaitu pada versi 2 atau 3, karena ane pasang versi terbaru maka ane pakai versi 3. Cukup *uncomment* baris untuk versi 3. Kemudian simpan.
+
+	Untuk mendapatkan tampilah *syntax highlight* yang sesuai, salin CSS yang dicontohkan di dalam *file* `syntax-highlighting.sh` dan simpan di *file* `cgit.css`. Namun `highlight` juga memberikan pilihan tema yang banyak, memakai tema bawaan ini lebih mudah daripada menyalin dan mengubah CSS sendiri. 
+
+	*Edit* kembali file `syntax-highlighting.sh` dan rubah menjadi seperti ini
+
+	```sh
+	exec /usr/local/bin/highlight --force --inline-css -f -I -O xhtml -S "$EXTENSION" -s github 2>/dev/null
+	```
+	<aside>
+	pakai <code>--inline-css</code> untuk menginjek css kedalam halaman yang dibuka dan <code>-s github</code> mempergunakan tema dari githubi <br />
+	untuk tema yang lain bisa dilihat dengan perintah <code>highlight --list-scripts=themes</code>
+	</aside>
+6. **Menyembunyikan email**, sudah jelas fungsinya untuk menghindari spam kan?, tambahkan pengaturan ini untuk menghilangkan email (*owner* maupun *commiter*) dari halaman `cgit`
+	```txt
+	noplainemail=1
+	```

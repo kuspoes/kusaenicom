@@ -85,7 +85,7 @@ $ doas shutdown -r +10min "Reboot setelah update paket base"
 ```
 
 <div class="postnotes pink">
-    <p>Namun jika pakai kustom repo (seperti yang ditentukan lewat Fastfetch) seperti misalnya langsung pakai <a href="/jurnal/freebsd-serba-serbi-pkg/#pengaturan-pkg">repo terdekat</a> tanpa melalui pemilihan GeoIP dari server FreeBSD, bisa jadi repo tersebut belum <i>update</i> dengan rilis terbaru.</p>
+    <p>Namun jika pakai kustom repo (seperti yang ditentukan lewat `fastest_pkg`) seperti misalnya langsung pakai <a href="/jurnal/freebsd-serba-serbi-pkg/#pengaturan-pkg">repo terdekat</a> tanpa melalui pemilihan GeoIP dari server FreeBSD, bisa jadi repo tersebut belum <i>update</i> dengan rilis terbaru.</p>
 
     <p>Sesuai dengan pengalaman, ane pakai server repo di Kuala Lumpur, Malaysia (<code>pkg0.kul.freebsd.org</code>), saat mencoba untuk <i>upgrade</i> seringnya repo masih belum mem-<i>mirror</i> paket terbaru sehingga tidak bisa diunduh. Jadi mengembalikan pengaturan <code>/usr/local/etc/pkg/repos/FreeBSD.conf</code> ke <i>default</i> bisa menyelesaikan masalah ini.
 </div>
