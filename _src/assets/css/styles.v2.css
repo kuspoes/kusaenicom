@@ -1052,7 +1052,7 @@ ol li::marker {
 }
 
 li {
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 nav.toc ol li {

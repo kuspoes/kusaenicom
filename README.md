@@ -14,7 +14,7 @@ curl -fsSL https://deno.land/install.sh | sh
 
 atau bisa dengan package manager seperti `brew`, `apt`, dan
 sebagainya.  jangan lupa untuk _upgrade_ deno ke rilis
-terbaru `deno upgrade`. Repo ini memakai deno versi 2.9.6
+terbaru `deno upgrade`. Repo ini memakai deno versi 3.3.1
 (*stable*).
 
 2. Clone repo ini
@@ -106,7 +106,7 @@ mana saja di dalam artikel.
 
 
 #### TOC
-Untuk menampilkan Table of Content (TOC) atau Daftar Isi, maka di _frontmatter_ masukkan `tocx: true` sehingga Lume akan menampilkan Daftar Isi di bagian paling atas. Namun jika tidak suka posisi atau ingin menampilkan Daftar Isi di mana saja (fleksibel) maka gunakan _template tags_ `{#tocx#}` di sembarang tempat yang kamu inginkan. Ingat hanya boleh ada 1 _tag_ ini yang boleh dipakai di 1 artikel.
+Untuk menampilkan Table of Content (TOC) atau Daftar Isi, maka di _frontmatter_ masukkan `tocx: true` sehingga Lume akan menampilkan Daftar Isi di bagian paling atas. Namun jika tidak suka posisi atau ingin menampilkan Daftar Isi di mana saja (fleksibel) maka gunakan _template tags_ `<#tocx#>` di sembarang tempat yang kamu inginkan. Ingat hanya boleh ada 1 _tag_ ini yang boleh dipakai di 1 artikel.
 
 Metode perpindahan posisi ToC ini diatur di _file_ `config.ts`
 
@@ -161,6 +161,7 @@ kemungkinan besar akan pakai self host atau CloudFlare.
 ### Repositori
 
 *Source code* ini disimpan di:
+
 1. Github (karena Netlify, Cloudflare, Deno Console hanya bisa dihubungkan dengan Github),
 2. Codeberg (tidak update karena akun ane disilent sama mereka),
 3. [Brew BSD Cafe](https://brew.bsd.cafe/poes) (best)
