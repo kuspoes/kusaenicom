@@ -170,7 +170,7 @@ Validasi konfigurasi dan *restart* Caddy.
 
 ### Buat lokasi Repositori
 
-Karena `cgit` dan `fcgiwrap` jalan dengan *user* dan *group*`www` maka ane tidak bisa naruh folder repo di bawah `/root` (default user di FreeBSD jail). Jadi ane bikin di tempat lain, misal di `/home/legit`
+Karena `cgit` dan `fcgiwrap` jalan dengan *user* dan *group* `www` maka ane tidak bisa naruh folder repo di bawah `/root` (default user di FreeBSD jail). Jadi ane bikin di tempat lain, misal di `/home/legit`
 
 ```shell-session
 # mkdir -p /home/legit
@@ -229,7 +229,7 @@ Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ing
 	summary-log=10
 	summary-tags=10
 	```
-2. **Memperluas tampilan *commit message**, ini berguna biar tampilan pesan *commit* tidak terpotong
+2. **Memperluas tampilan *commit message***, ini berguna biar tampilan pesan *commit* tidak terpotong
 	```txt
 	max-message-length=10000
 	```
@@ -307,14 +307,20 @@ Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ing
 	exec /usr/local/bin/highlight --force --inline-css -f -I -O xhtml -S "$EXTENSION" -s github 2>/dev/null
 	```
 	<aside>
-	pakai <code>--inline-css</code> untuk menginjek css kedalam halaman yang dibuka dan <code>-s github</code> mempergunakan tema dari githubi <br />
+	pakai <code>--inline-css</code> untuk menginjek css kedalam halaman yang dibuka dan <code>-s github</code> mempergunakan tema dari github <br />
 	untuk tema yang lain bisa dilihat dengan perintah <code>highlight --list-scripts=themes</code>
 	</aside>
-6. **Menyembunyikan email**, sudah jelas fungsinya untuk menghindari spam kan?, tambahkan pengaturan ini untuk menghilangkan email (*owner* maupun *commiter*) dari halaman `cgit`
+6. **Menyembunyikan email**, sudah jelas fungsinya untuk menghindari *spam*kan?, tambahkan pengaturan ini untuk menghilangkan email (*owner* maupun *commiter*) dari halaman `cgit`
 	```txt
 	noplainemail=1
 	```
-7. **Menambahkan tautan ke situs lain**, tambahkan 
+7. **Menyembunyikan repo** atau membuat repositori menjadi *private*? tidak muncul di `cgit`, tidak bisa di*clone*, tapi masih bisa diakses dengan `git`?
+	```txt
+	[cgit]
+		ignore = 1
+	```
+	tambahkan pengaturan di atas di dalam *file* `.git/config` masing - masing repo yang ingin disembunyikan.
+8. **Menambahkan tautan ke situs lain**, tambahkan 
 	```txt
 	[gitweb]
 		homepage = https://kusaeni.com
@@ -324,7 +330,7 @@ Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ing
 
 ## Troubleshoting
 
-1. Tidak bisa push ke repo yang sudah ada.  Masalah ini biasanya dikarenakan folder repo tersebut dimiliki (*ownership*) bukan oleh *user* `fcgiwrap`. Biasanya mudah diselesaikan dengan cara memasukkan *user* atau *group* `www`
+1. Tidak bisa `push` ke repo yang sudah ada.  Masalah ini biasanya dikarenakan folder repo tersebut dimiliki (*ownership*) bukan oleh *user* `fcgiwrap`. Biasanya mudah diselesaikan dengan cara memasukkan *user* atau *group* `www`
 	```shell-session
 	# chown -R www:www /home/legit/repopo
 	```
