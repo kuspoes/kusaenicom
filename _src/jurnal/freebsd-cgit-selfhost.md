@@ -1,5 +1,5 @@
 ---
-title: "cgit di FreeBSD"
+title: "Selfhost cgit di FreeBSD"
 ringkasan: "Self host cgit, aplikasi antar muka web untuk git yang sederhan dan ringan"
 date: 2026-09-24
 tags:
@@ -34,7 +34,8 @@ Untuk saat ini pemenangnya cgit.
 
 <#toc#>
 
-### Install cgit & kebutuhannya
+## Install
+### cgit & kebutuhannya
 
 <div class="postnotes pink">
 <h4>Catatan</h4>
@@ -176,6 +177,20 @@ Karena `cgit` dan `fcgiwrap` jalan dengan *user* dan *group*`www` maka ane tidak
 # cd /home/legit
 # mkdir repopo
 # git init --bare
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/legit/repopo/
 # chown -R www:www /home/legit/repopo
 ```
 
@@ -267,6 +282,14 @@ Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ing
 
 	baris ke-11 berisi aturan jika misal terjadi gagal *render* maka pakai filter `lowdown.sh` yang juga merupakan *rederer* markdown yang ringan. Tapi jika tidak ingin pakai bisa dihapus saja.
 
+	Selanjutnya aktifkan pembacaan *file* README.md di konfigurasi `cgit`
+
+	```txt
+	readme=:README
+	readme=:README.md
+	```
+	jika ada *file* README atau README.md maka `cgit` akan me*render*nya di tab *about*
+
 	Begitupula dengan filter `highlight` untuk *syntax highlighting* memerlukan paket lain yaitu `highlight` yang bisa dipasang dengan perintah
 	```shell-session
 	# pkg install highlight
@@ -291,3 +314,42 @@ Ini merupakan konfigurasi minimal dari `cgit`, ada beberapa hal yang mungkin ing
 	```txt
 	noplainemail=1
 	```
+7. **Menambahkan tautan ke situs lain**, tambahkan 
+	```txt
+	[gitweb]
+		homepage = https://kusaeni.com
+	```
+	membuat `cgit` akan menampilkan tab baru *Homepage* yang merupakan tautan ke situs yang disebutkan.
+
+
+## Troubleshoting
+
+1. Tidak bisa push ke repo yang sudah ada.  Masalah ini biasanya dikarenakan folder repo tersebut dimiliki (*ownership*) bukan oleh *user* `fcgiwrap`. Biasanya mudah diselesaikan dengan cara memasukkan *user* atau *group* `www`
+	```shell-session
+	# chown -R www:www /home/legit/repopo
+	```
+	Jika *ownership* sudah diatur dengan benar namun masih muncul error *permission*, maka coba untuk mengabaikan *error* tersebut dengan memasukkan `repopo` ke dalam *safe directory*
+	```shell-session
+	# git config --global add safe.directory /home/legit/repopo
+	```
+	<div class="postnotes pink">
+	<p>perintah ini dijalankan dari <i>client</i> bukan di <i>server</i></p>
+	</div>
+
+2. Filter tidak jalan, yang ini pastikan *path* ke *file* filter sudah benar dan pastikan atribut filter adalah *file* yang bisa dieksekusi.
+	```shell-session
+	# chmod +x /usr/local/lib/cgit/filters/about-formatting.sh
+	```
+3. Muncul error `error: failed to push some refs to`, masalah ini muncul saat berusaha `push` ke repo dikarenakan saat bikin repo pertama kali tidak menyertakan opsi `--bare`. Solusinya hapus saja folder reponya dan buat ulang dengan menambahkan opsi yang diminta dan jangan lupa rubah kepemilikan ke `www`
+	```shell-session
+	# git init --bare /home/legit/repopo/
+	# chown -R www:www /home/legit/repopo/
+	```
+
+	
+	
+### Inspirasi Modifikasi
+
+Ane membuat repo khusus untuk menampung modifikasi yang sudah ane buat termasuk logo, css, dan beberapa *filters*.
+
+Bisa dilihat di repo ini [cgit_kus](https://legit.kusaeni.com/cgit_kus/)
