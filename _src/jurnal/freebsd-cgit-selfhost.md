@@ -15,8 +15,8 @@ keywords: "bsd, freebsd, git, cgit, self host"
 draft: true
 tocx: true
 comments:
-  src: https://sepoi.kuspoes.deno.net/@poes/statuses/
-  real: https://sok.egois.org/@poes/statuses/
+  src: https://sepoi.kuspoes.deno.net/@poes/statuses/01M33SJXR194MWDGBPQF90KM8K
+  real: https://sok.egois.org/@poes/statuses/01M33SJXR194MWDGBPQF90KM8K
 ---
 
 Ketika tiba - tiba repositori publik milik ane di Codeberg tidak bisa diakses tanpa login, ane memutuskan untuk mencari alternatif.
