@@ -1,7 +1,7 @@
 ---
 title: "Selfhost cgit di FreeBSD"
 ringkasan: "Self host cgit, aplikasi antar muka web untuk git yang sederhan dan ringan"
-date: 2026-09-24
+date: 2026-09-22
 tags:
   - tutorial
   - freebsd
