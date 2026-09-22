@@ -12,7 +12,7 @@ code: true
 favorit: false
 comment: true
 keywords: "bsd, freebsd, git, cgit, self host"
-draft: true
+draft: false
 tocx: true
 comments:
   src: https://sepoi.kuspoes.deno.net/@poes/statuses/01M33SJXR194MWDGBPQF90KM8K
