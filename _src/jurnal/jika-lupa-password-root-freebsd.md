@@ -19,24 +19,22 @@ style: "jika-lupa-password-root-freebsd.css"
 
 Mengaktifkan [doas(1)](https://man.freebsd.org/cgi/man.cgi?query=doas&sektion=1&format=html) untuk _user_ dengan _privilleges_ `root` tanpa _password_ itu memang memudahkan namun memiliki efek yang kadang menyebalkan yaitu lupa _password_ `root` setelah sekian lama.
 
-Hal ini beberapa kali terjadi kepada saya, selain karena pada dasarnya saya seorang pelupa.
-
-Bilamana hal itu terjadi yang dilakukan adalah merubah _password_ `root` tersebut karena me-_recover_-nya adalah pekerjaan yang lebih sulit lagi. Caranya sebenarnya mudah asal punya akses fisik ke PC/Box VPS, langkah - langkahnya adalah sebagai berikut:
+Hal ini beberapa kali terjadi kepada saya, selain karena pada dasarnya saya seorang pelupa.  Bilamana hal itu terjadi yang dilakukan adalah merubah _password_ `root` tersebut karena me-_recover_-nya adalah pekerjaan yang lebih sulit lagi. Caranya sebenarnya mudah asal punya akses fisik ke PC/Box VPS, langkah - langkahnya adalah sebagai berikut:
 
 1. _Reboot system_ dan tunggu sampai muncul _boot loader options_. Kemudian masukkan pilihan (ketik nomernya) untuk _booting_ ke _single user mode_. Untuk Desktop biasanya di nomer 4 sedangkan kalo VPS biasanya di nomer 2.
 2. Setelah pesan _boot_ selesai, tekan tombol Enter sehingga otomatis akan masuk ke _shell_.
 3. Ketik `passwd` untuk mengganti _password_, ikuti perintah _on screen_ .
    Jika muncul error `passwd: pam_chauthtok(): error in service module` maka pastikan terlebih dahulu apakah _file system_ saat ini berjalan dalam mode Read Write. Jika masih dalam mode Read Only, harus dirubah terlebih dahulu.
 
-```shell-session
-# mount
-/dev/vtbd0s1a on / (ufs, local, read-only)
-devfs on /dev (devfs)
-# mount -o rw /
-# mount
-/dev/vtbd0s1a on / (ufs, local, soft-updates, journaled soft-updates)
-devfs on /dev (devfs)
-```
+	```shell-session
+	# mount
+	/dev/vtbd0s1a on / (ufs, local, read-only)
+	devfs on /dev (devfs)
+	# mount -o rw /
+	# mount
+	/dev/vtbd0s1a on / (ufs, local, soft-updates, journaled soft-updates)
+	devfs on /dev (devfs)
+	```
 
 4. Setelah selesai mengganti password ketik `reboot` untuk me*reboot* PC/VPS. Saat muncul _boot loader options_ ketik 1 untuk _booting_ secara normal dan coba login dengan _password_ `root` yang baru saja diganti.
 

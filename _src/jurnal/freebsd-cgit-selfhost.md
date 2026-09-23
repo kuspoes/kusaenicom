@@ -6,6 +6,7 @@ tags:
   - tutorial
   - freebsd
   - bsd
+  - selfhost
 kategori: jurnal
 relasi: freebsd
 code: true

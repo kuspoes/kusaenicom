@@ -144,8 +144,7 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 
 	Dengan pengaturan ini maka setiap *boot* VNC akan menganggap *console* NetBSD memakai grafis `vesa`. Namun ini hanya berguna untuk akses lewat web VNC saja, lebih baik akses NetBSD memakai SSH.
 
-2. **Tambahkan *user***,
-Ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
+2. **Tambahkan *user***, ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
 
 	```shell-session
 	# useradd -m -G whell poes
@@ -154,8 +153,7 @@ Ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` 
 
 	Perintah di atas akan membuat akun baru dengan nama `poes` dan masukkan ke grup `wheel`, sekalian kasih *password* buat login.
 
-3. **Aktifkan SSH**,
-Ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka caranya mudah sekali. Jalankan saja perintah berikut di *shell*
+3. **Aktifkan SSH**, ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka caranya mudah sekali. Jalankan saja perintah berikut di *shell*
 
 	```shell-session
 	# vi /etc/rc.conf
@@ -174,8 +172,7 @@ Ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka cara
 	# service sshd start
 	```
 
-4. ***Install package manager***,
-Meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan familiar untuk dipakai, tapi sebelumnya harus melakukan konfigurasi `pkg_add` agar bisa menemukan letak repositori dari paket aplikasin.
+4. ***Install package manager***, meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan familiar untuk dipakai, tapi sebelumnya harus melakukan konfigurasi `pkg_add` agar bisa menemukan letak repositori dari paket aplikasin.
 
 	```shell-session
 	# export PKG_PATH="https://cdn.NetBSD.org/pub/pkgsrc/packages/NetBSD/$(uname -p)/$(uname -r | cut -d_ -f1)/All"
@@ -193,8 +190,7 @@ Meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan famil
 
 	Untuk pengguna *expert* atau yang membutuhkan konfigurasi khusus, sangat disarankan memakai `pkgsrc` karena lebih fleksibel dalam pengaturan. 
 
-5. `doas` **untuk elevasi ke** `root`,
-Sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke `root`, namun ini kurang fleksibel. Maka ane pasang `doas` biar bisa elevasi *ǎ la* [#openbsd](/tags/openbsd)
+5. `doas` **untuk elevasi ke** `root`, sebenarnya sudah ada perintah `su` untuk melakukan elevasi dari *user* biasa ke `root`, namun ini kurang fleksibel. Maka ane pasang `doas` biar bisa elevasi *ǎ la* [#openbsd](/tags/openbsd)
 	```shell-session
 	# pkgin install doas
 	# echo "permit nopass poes" > /usr/pkg/etc/doas.conf
