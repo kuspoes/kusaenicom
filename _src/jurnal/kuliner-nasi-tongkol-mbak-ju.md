@@ -44,14 +44,14 @@ Setelah bertanya ternyata memang berada di lantai 1 dan ada di pojokan belakang.
 Namun setelah makan ternyata ada rute yang gampang dan mudah menuju warung ini, yaitu masuk ke DTC lewat pintu di Jalan Wonokromo (jangan di Jalan Stasiun Wonokromo maupun Jalan Jagir Wonokromo). <span class="sans">**GAMBAR 1**</span>.
 
 <div class="gallery gal-2-baris" id="glightbox">  
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9526%20Large_ztJZsMsOb.jpeg" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9526%20Large_ztJZsMsOb.jpeg" class="fuck radius-atas" alt="DTC Jl Wonokromo" >
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9526%20Large_ztJZsMsOb.webp" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}Bear/IMG_9526%20Large_ztJZsMsOb.webp" class="fuck radius-atas" alt="DTC Jl Wonokromo" >
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9525%20Large_tvPdIzunw.jpeg" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9525%20Large_tvPdIzunw.jpeg" class="fuck radius-kiri-bawah" alt="DTC Parkir Sepeda Motor">
+  <a href="{{ metadata.imgdia }}Bear/IMG_9525%20Large_tvPdIzunw.webp" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}Bear/IMG_9525%20Large_tvPdIzunw.webp" class="fuck radius-kiri-bawah" alt="DTC Parkir Sepeda Motor">
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9523%20Large_FYTpUuwQ7.jpeg" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9523%20Large_FYTpUuwQ7.jpeg" class="fuck radius-kanan-bawah" alt="DTC Tangga ke Lantai 1">
+  <a href="{{ metadata.imgdia }}Bear/IMG_9523%20Large_FYTpUuwQ7.webp" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}Bear/IMG_9523%20Large_FYTpUuwQ7.webp" class="fuck radius-kanan-bawah" alt="DTC Tangga ke Lantai 1">
   </a>
 </div>
 <p class="ncaption">Rute paling mudah untuk menuju Warung Mbak Ju</p>
@@ -64,18 +64,18 @@ Setelah 1 atau 2 gang, Warung Nasi Tongkol Mbak Ju berada di sebelah kananmu.
 Ane sampai di warung sekitar jam 11 lebih 20 menit, saat itu sudah ada beberapa pembeli yang datang belum ramai sekali. Kata orang nanti ramainya pas jam makan siang.
 
 <div class="gallery gal-2-baris" id="glightbox">  
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9518%20Large_2RO5WbD3G.jpeg" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9518%20Large_2RO5WbD3G.jpeg" class="fuck radius-atas" alt="Warung Nasi Tongkol Mbak Ju" >
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9518%20Large_2RO5WbD3G.webp" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}Bear/IMG_9518%20Large_2RO5WbD3G.webp" class="fuck radius-atas" alt="Warung Nasi Tongkol Mbak Ju" >
   </a>
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9514%20Large_-tymnNeS9.jpeg" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9514%20Large_-tymnNeS9.jpeg" class="fuck radius-bawah" alt="Anak alm Mbak Ju sedang melayani pelanggan" >
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9514%20Large_-tymnNeS9.webp" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}Bear/IMG_9514%20Large_-tymnNeS9.webp" class="fuck radius-bawah" alt="Anak alm Mbak Ju sedang melayani pelanggan" >
   </a>
 </div>
 <p class="ncaption">Area sekitaran warung, sempit, tempat duduk terbatas dan agak kotor. Maklum di dalam pasar. Anak alm. Mbak Ju sedang meracik sepiring nasi tongkol</p>
 
 Tak menunggu lama ane langsung pesan saja nasi tongkol dengan tambah lauk telor dadar. Si penjual adalah anak dari Mbak Ju (sudah meninggal) kerjanya cepat. Beliau kemudian menyiapkan sambal tomat - terasi dan menguleknya langsung di tempat, segera 1 porsi nasi tongkol langsung tersedia lengkap dengan telor dadar dan sambal lalapan. Selain itu dikasih juga teri goreng dan sambal yang terbuat dari tongkol yang dihaluskan.
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9517%20Large_enVS-PHtP.jpeg" class="fuck radius-atas" alt="Nasi" />
+<img src="{{ metadata.imgdia }}Bear/IMG_9517%20Large_enVS-PHtP.webp" class="fuck radius-atas" alt="Nasi" />
 <p class="ncaption">Sepiring nasi tongkol mbak Ju</p>
 
 **The moment of the truth**.
@@ -93,11 +93,11 @@ _Review_ rasa ini subyektif ane, bisa saja orang lain akan berpendapat berbeda. 
 Beberapa pekan yang lalu ane sempatkan datang lagi kesini saat ada kesempatan ke Surabaya. Seperti biasa datang saat akhir pekan dan pas tengah hari. Saat itu pengunjung penuh sekali dan ane harus mengantri. Tidak lama karena pelayanan memang cepat.
 
 <div class="gallery gal-1-baris" id="glightbox">  
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.jpeg" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.jpeg" class="fuck radius-kiri-atas radius-kiri-bawah" alt="antri di Warung Tongkol Mbak Ju">
+  <a href="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.webp" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="antri di Warung Tongkol Mbak Ju">
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/nasi_tongkol/IMG_3976_dwB08jekS.jpeg" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/nasi_tongkol/IMG_3976_dwB08jekS.jpeg" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Sepiring nasi tongkol Mbak Ju">
+  <a href="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3976_dwB08jekS.webp" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3976_dwB08jekS.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Sepiring nasi tongkol Mbak Ju">
   </a>
 </div>
 <p class="ncaption">Suasana ramai di Warung Mbak Ju. Sepiring nasi tongkol Mbak Ju.</p>

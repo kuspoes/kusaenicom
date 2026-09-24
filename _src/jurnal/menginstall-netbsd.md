@@ -69,7 +69,7 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 
 <div class="gallery gal-1-baris" id="glightbox">  
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" data-gallery="gallery">
  <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
@@ -84,10 +84,10 @@ Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan to
 
 <div class="gallery gal-1-baris" id="glightbox">  
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>

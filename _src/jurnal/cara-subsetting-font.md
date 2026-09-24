@@ -19,14 +19,14 @@ comments:
 
 *Subsetting font* adalah memilih karakter tertentu di dalam *font table* yang ingin dipertahankan dengan cara menghilangkan atau menghapus karakter - karakter lainnya yang tidak diperlukan. Dalam dunia desain web dan bagi yang mementingkan tentang *page speed* maka *Subsetting font* ini akan membuat ukuran *font* menjadi lebih ramping dan cocok untuk dipakai sebagai *webfont*.
 
-<img class="lebar fuck" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-lrlw_9ss8l-BQF.png" alt="dev insight error pada identifikasi ukuran gambar" image-size>
+<img class="lebar fuck" src="{{ metadata.imgdia }}jurnal/Subsetting/SCR-20260607-lrlw_9ss8l-BQF.webp" alt="dev insight error pada identifikasi ukuran gambar" image-size>
 <p class="ncaption">dev insight error pada identifikasi ukuran gambar</p>
 
 Untuk keperluan menampilkan logo "kusaeni" yang ada di atas halaman ini, sebelumnya ane pakai gambar dengan format `webp` yang ringan, namun seringan apapun ukuran gambar akan jatuh lebih dari 10Kib dan harus memperhatikan [aspek rasio](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_sizing/Aspect_ratios) yang kadang kala membingungkan dan jika salah penanganan akan membuat halaman tidak lolos uji *Core Web Vitals Assessment* terutama di bagian *Best Practise - User Experience*. Oleh karena itu ane putuskan untuk mengatasi masalah ini dengan mengganti *file* gambar dengan *font*.
 
 Font yang ane pakai adalah [Sofia](https://fonts.google.com/specimen/Sofia?preview.script=Latn) dari Google Fonts. Ukuran aslinya saat diunduh sekitar 28Kib, dengan setidaknya ada lebih dari 200 karakter. Ane hanya butuh 7 karakter saja yang terdiri dari huruf "<code>k</code> <code>u</code> <code>s</code> <code>a</code> <code>e</code> <code>n</code> <code>i</code>" saja. Untuk itu ane akan melakukan *subsetting* atau *cherry picking* pada karakter - karakter itu.
 
-<img class="display:inline; float:left" src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.png" image-size>
+<img class="display:inline; float:left" src="{{ metadata.imgdia }}jurnal/Subsetting/SCR-20260607-matg_MwT0D-k09.webp" image-size>
 <p class="ncaption">Table karakter pada font Sofia (Latin), yang diberi warna biru adalah karakter yang akan dipertahankan.</p>
 
 <div class="sidebar_notes sebelah_kanan">
@@ -70,7 +70,7 @@ $ pyftsubset Sofia-Reguler.ttf --text="kusaeni" --flavor="woff2" --output-file="
 ```
 Kedua perintah di atas akan menghasilkan file baru bernama **Sofia-Kus-Regular.woff2**.
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/Subsetting/SCR-20260608-oktm_1O8Vd_s1M.png" alt="SofiaKus" image-size>
+<img src="{{ metadata.imgdia }}jurnal/Subsetting/SCR-20260608-oktm_1O8Vd_s1M.webp" alt="SofiaKus" image-size>
 <p class="ncaption">hasil dari <i>subsetting</i> hanya ada 7 karakter (<i>glyphs</i>) + 1 blank</p>
 
 Lalu bagaimana dengan opsi *subsetting* yang lain seperti misalnya ingin ambil *Basic Latin* atau tambahan karakter tertentu?

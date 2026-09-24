@@ -344,7 +344,7 @@ $ doas service caddy restart
 
 Jika tidak ada masalah seharusnya Ente sudah bisa diakses dengan membuka `photos.taa.ee`. Di tampilan awal Ente, klik 7x di gambar brankas dan ketik alamat dari ente server yaitu `ente.taa.ee`. Kemudian klik pada tautan **Don't have an account** untuk mendaftar.
 
-![ente developer mode]({{ metadata.imgdia }}jurnal/ente/ente-1_6vBhiSSZ8.gif)
+![ente developer mode]({{ metadata.imgdia }}jurnal/ente/ente-1_-3Hc_RP8o.gif)
 
 Karena ane tidak setup email (SMTP dll termasuk JWT), maka verifikasi akun tidak bisa dilakukan melalui email. Jadi kembali ke console dan lihat log dari `main` dan cari baris seperti ini
 

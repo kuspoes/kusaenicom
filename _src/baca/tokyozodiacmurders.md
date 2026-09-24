@@ -81,3 +81,4 @@ Novel ini bagi pecinta kisah detektif, misteri, dan thriller adalah buku yang me
 Novel ini keren, perlu dibaca berulang kali agar paham (motif dan caranya). Saya sangat merekomendasikan Novel ini.
 
 ---
+
