@@ -61,11 +61,11 @@ Kedua, ane coba dengan _tools_ bawaan Microsoft Windows yaitu Disk Management da
 
 Ketiga, ane coba dengan _tools_ [Flashbot.ru](https://flashboot.ru/) yang punya aplikasi unik untuk meng*flash firmware* tapi tidak ada satupun yang cocok.
 
-![Testdisk](https://ik.imagekit.io/hjse9uhdjqd/jurnal/recoveryFd/SCR-20251018-ibdj_tLX00Tgpy.png?updatedAt=1760751869234)
+![Testdisk]({{ metadata.imgdia }}jurnal/recoveryFd/SCR-20251018-ibdj_tLX00Tgpy.webp)
 
 Cara selanjutnya dengan mempergunakan [TestDisk](https://www.cgsecurity.org/wiki/TestDisk) yang sangat _powerfull_ untuk _recovery data_ maupun partisi. TestDisk bisa mendeteksi _flashdisk_ dengan sangat baik tapi tidak bisa menemukan partisi yang seharusnya. Saat mencoba fungsi analisa, TestDisk menemukan _bad sector_ di setiap sektornya. Di titik ini ane sudah putus asa dan mulai bersiap ikhlas kalo _flashdisk_ ini sudah tidak bisa diselamatkan.
 
-![JetFlash Online Recovery](https://ik.imagekit.io/hjse9uhdjqd/jurnal/recoveryFd/JetFlash_OnlineRecovery_2_KBIoqwVJv.JPG?updatedAt=1760751825359)
+![JetFlash Online Recovery]({{ metadata.imgdia }}jurnal/recoveryFd/JetFlash_OnlineRecovery_2_KBIoqwVJv.webp)
 
 Tapi sebelum itu ane coba cari _tools_ dari produsen _flashdisk_ yaitu Transcend yang ternyata menyediakan aplikasi untuk _flashing firmware_ bernama [JetFlash Online Recovery](https://www.transcend-info.com/support/software/jetflash-online-recovery). Ada 2 pilihan aplikasi yaitu JetFlash Series dan JetFlash 620. Karena ane tidak tahu pasti serienya ane pilih versi _legacy_ yaitu JetFlash Series. Setelah selesai di*install* ane jalankan aplikasi dan kemudian tancapkan *flashdisk*nya. Begitu terdeteksi, aplikasi langsung mengunduh _firmware_ secara _online_ sehingga akses internet memang dibutuhkan saat memakai aplikasi ini.
 
@@ -75,7 +75,7 @@ Ane coba lagi, proses _stuck_ di 20% dan butuh waktu beberapa lama sampai kemudi
 
 Ketika diklik, muncul pesan bahwa _drive_ tidak bisa dipakai karena tidak diformat!!!. **YES!** akhirnya partisi dan _bootloader_ terdeteksi. Ane langsung coba format dan proses format berjalan dengan lancar. Sekarang **_flashdisk_ ane sudah hidup lagi!!!**. Untuk memastikan ane coba cabut pasang beberapa kali dan buat _folder_ dan taruh _files_ semua berjalan dengan baik. Kemudian ane coba akses dari MacOs dan ternyata juga bisa dibaca dan tulis dengan baik kecuali saat ane coba format ulang di MacOs selalu gagal. Tapi tak mengapa yang penting masih bisa dibaca dan tulis.
 
-![MacOs Disk Utility](https://ik.imagekit.io/hjse9uhdjqd/jurnal/recoveryFd/SCR-20251018-igmw_IMvIHUrmi.png?updatedAt=1760752298323)
+![MacOs Disk Utility]({{ metadata.imgdia }}jurnal/recoveryFd/SCR-20251018-igmw_IMvIHUrmi.webp)
 
 ## Kesimpulan
 

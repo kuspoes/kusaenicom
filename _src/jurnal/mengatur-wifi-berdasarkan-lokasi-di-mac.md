@@ -47,7 +47,7 @@ Caranya sebagai berikut:
 2. Setelah jendela **System Settings...** terbuka pilih menu **Network**. kemudian gulir ke bawah dan cari tombol ... (dengan panah ke bawah), pilih menu **Location** dan **Edit Location**. (Gambar 1),
 3. Klik pada tombol [+] untuk menambahkan data, disini saya memasukkan nama lokasi dari Wi-Fi yang biasa digunakan. Selesai
 
-![Menambahkan Lokasi di network Settings MacOs](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Wifi/Create_Location_5Tg4qPtAr.png?updatedAt=1758296766381)
+![Menambahkan Lokasi di network Settings MacOs]({{ metadata.imgdia }}jurnal/Wifi/Create_Location_5Tg4qPtAr.webp)
 
 <p class="ncaption"><b>Gambar 1</b>: Menambahkan Lokasi di network Settings MacOs</p>
 
@@ -60,11 +60,11 @@ Setelah lokasi ditambahkan, di Mac saya muncul menu baru di bawah logo Apple 
 4. Setelah muncul jendela pengaturan jaringan, tuju pada tab **TCP/IP**, kemudian buat pengaturan sesuai dengan _plan_ Wi-Fi di lokasi tersebut. Selanjutnya klik pada tab **DNS** untuk mengatur DNS. Setelah selesai simpan, (Gambar 3)
 5. Ulangi lagi jika ada lokasi lain yang perlu dirubah, karena Wi-Fi di rumah tidak perlu diatur maka saya biarkan apa adanya dan nanti akan pakai Location : **Automatic**.
 
-![Menu Location Network Settings di bawah menu apple](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Wifi/Location_menu_0U-5ZagL_.png?updatedAt=1758296746434)
+![Menu Location Network Settings di bawah menu apple]({{ metadata.imgdia }}jurnal/Wifi/Location_menu_0U-5ZagL_.webp)
 
 <p class="ncaption"><b>Gambar 2</b>: Menu Location sekarang muncul di bawah menu Apple</p>
 
-![Network Settings per Wi-Fi](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Wifi/Network_Settings_Wifi_J7K2hK6VS.png?updatedAt=1758296737012)
+![Network Settings per Wi-Fi]({{ metadata.imgdia }}jurnal/Wifi/Network_Settings_Wifi_J7K2hK6VS.webp)
 
 <p class="ncaption"><b>Gambar 3</b>: pengaturan jaringan.</p>
 

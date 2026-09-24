@@ -6,8 +6,8 @@ date: 2026-04-13
 update: false
 ringkasan: "Rumahnya indah tapi *layout*-nya aneh dan ini bukan satu - satunya. Dari soal arsitek sampai ke pembunuhan berantai"
 keywords: "Uketsu, Strange Houses, Jepang, Misteri, Novel"
-coverImg: "https://imgdia.kusaeni.com/buku/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
+coverImg: "https://imgdia.kusaeni.com/buku/cover/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
+og_images: "https://imgdia.kusaeni.com/buku/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
 penulis: "Uketsu"
 genre:
   - Thriller
@@ -46,7 +46,7 @@ Rumah-rumah yang aneh. Pada suatu hari seorang penulis lepas (cerita dari sudut 
 
 Menurut denah ada ruangan aneh yang tidak wajar dan tidak jelas fungsinya.
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-10/buku/strange_houses_uketsu_layout.png?updatedAt=1776003072408" alt="Layout rumah pertama" image-size>
+<img src="{{ metadata.imgdia }}buku/strange_houses_uketsu_layout.png?updatedAt=1776003072408" alt="Layout rumah pertama" image-size>
 
 Karena tidak paham dengan hal semacam ini, Uketsu kemudian menghubungi sahabatnya bernama **Kurihara** yang seorang arsitek. Menurut Kurihara memang ada kejanggalan di denah itu, terutama adanya ruangan kosong yang tidak bermanfaat di lantai bawah. Menurut (otak konspirasi) Kurihara jangan - jangan ruangan kosong itu sengaja dibikin untuk melakukan kejahatan (pembunuhan), apalagi saat denah lantai atas ditumpuk. Ditemukan kemungkinan ruangan kosong di lantai bawah adalah lorong yang dipakai untuk seseorang untuk menyelinap masuk ke Kamar Mandi dan melakukan pembunuhan disitu. Masalahnya adalah dimensi ruangan tersebut cukup sempit sehingga tidak bisa dilalui oleh orang dewasa, maka kemungkinan yang bisa melakukan pembunuhan adalah anak - anak.
 

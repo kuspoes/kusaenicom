@@ -167,7 +167,7 @@ Jika pakai [#FreeBSD](/tags/freebsd) maka sebaiknya pakai cara yang pertama yait
 
 Ane pakai aplikasi WireGuard resmi dari Wireguard. Kemudian membuat dan mengatur *tunnel* kosong baru (lihat gambar).
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-80/jurnal/OpenBSD_Wireguard/wireguard_settings_4WDIGUIoj" alt="wireguard add tunnel]" image-size>
+<img src="{{ metadata.imgdia }}jurnal/OpenBSD_Wireguard/wireguard_settings_4WDIGUIoj.webp" alt="wireguard add tunnel]" image-size>
 
 <aside class="image">
   <ul>
@@ -299,7 +299,7 @@ peer: DQ/kSnXwMGIRmF/40wQhCWCrNe7k4V6zb3Jo92Y3s3w=
 
 kemudian cek akses internet di klien dan cek IP dengan mengunjungi situs [ipleak](https://ipleak.net) seharusnya lokasi dan IPnya sudah sesuai dengan IP dan lokasi VPS.
 
-![ipleak](https://ik.imagekit.io/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/SCR-20260126-scih_2w-URN1ny.png)
+![ipleak]({{ metadata.imgdia }}jurnal/OpenBSD_Wireguard/SCR-20260126-scih_2w-URN1ny.webp)
 
 <div class="postnotes">
   <h5>Update</h5>
@@ -451,15 +451,14 @@ end)
 
 Setelah disimpan dan _reload config_, maka jika menekan tombol `⌥ + ⌘ + 9` akan mengaktifkan perintah pengaktifan `killswitch`, setelah perintah aktif maka Hammerspoon juga akan mengirimkan sinyal ke AnyBar sebagai indikator di _menubar_ dengan warna merah saat aktif dan hijau saat tidak aktif.
 
-<iframe class="video" src="https://imagekit.io/player/embed/hjse9uhdjqd/jurnal/OpenBSD_Wireguard/hammerspoon_killswitch_mW_N6PGNg.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fhjse9uhdjqd%2Fjurnal%2FOpenBSD_Wireguard%2Fhammerspoon_killswitch_mW_N6PGNg.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1770342444842" title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
+<iframe class="video" src="{{ metadata.imgdia }}jurnal/OpenBSD_Wireguard/hammerspoon_killswitch_mW_N6PGNg.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fhjse9uhdjqd%2Fjurnal%2FOpenBSD_Wireguard%2Fhammerspoon_killswitch_mW_N6PGNg.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1770342444842" title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
 
 Scripts Hammerspoon di atas, khusus untuk aktifkan `killswitch` hanya bisa dijalankan saat wireguard sudah tersambung. Jika belum maka tidak akan menghasilkan apa - apa karena ane set IP wireguard langsung _hard coded_ di dalam _scripts_. Peningkatan _scripts_ ke depannya mungkin saat `⌥ + ⌘ + 9` ditekan maka secara otomatis memeriksa apakah wireguard sudah aktif atau belum. Jika sudah maka langsung aktifkan `killswitch` namun jika belum maka harus hubungkan wireguard terlebih dahulu.
 
 Tentu saja [AnyBar](https://github.com/tonsky/AnyBar) ini opsional, boleh tidak dipakai namun ane pasang karena membantu memberikan visual apakah `killswitch` sedang aktif atau tidak.
 
 #### Dengan aplikasi
-
-<img src="https://ik.imagekit.io/hjse9uhdjqd/tr:q-30/jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.png" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" image-size>
+<img src="{{ metadata.imgdia }}jurnal/OpenBSD_Wireguard/SCR-20260111-mcap_Z9pGFTPUD.webp" alt="Lulu Block Mode, harus manual mengakses menu ini untuk mengaktifkan block mode" image-size>
 
 <aside class="image">
   Butuh waktu dan beberapa klik untuk bisa mengaktifkan block mode ini, meski bisa diatur dengan bantuan shortcut misalnya, tapi ane belum pernah coba

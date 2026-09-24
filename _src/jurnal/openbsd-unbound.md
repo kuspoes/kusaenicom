@@ -186,7 +186,7 @@ Alhamdulillah Unbound sudah berjalan, bisa dicek di baris `;; SERVER: 127.0.0.1#
 
 Kemudian ane sambungkan MacOS (wireguard klien) ke server namun sebelum itu ane rubah pengaturan DNS di Wireguard agar mengarah ke `10.0.0.1` yaitu DNS server Wireguard.
 
-![Wireguard Client Config, change DNS Resolver IP](https://ik.imagekit.io/hjse9uhdjqd/jurnal/Unbound/SCR-20251207-Unbound_bzEPcBfMq.png)
+![Wireguard Client Config, change DNS Resolver IP]({{ metadata.imgdia }}jurnal/Unbound/SCR-20251207-Unbound_bzEPcBfMq.webp)
 
 di terminal (*client*/MacOs) dicoba untuk tes _resolver_
 

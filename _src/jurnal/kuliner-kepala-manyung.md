@@ -22,7 +22,7 @@ Ane berkeliling mengunjungi tiap - tiap warung dalam kurun waktu 6 -8 bulan, ber
 
 ## Warung Sembilang, Gresik
 
-![Warung Sembilang](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/image_Z2Cn86UAJ.png?updatedAt=1752316270057)
+![Warung Sembilang]({{ metadata.imgdia }}jurnal/kuliner_manyung/image_Z2Cn86UAJ.webp)
 
 [Warung Sembilang](https://g.co/kgs/i6fWZq4) adalah warung pertama di Gresik yang ane kunjungi karena rekomendasi dari seorang teman. Menurut Google Review warung ini memiliki rating 4,4 dari 5 bintang.
 
@@ -38,7 +38,7 @@ Kepala ikannya besar, dagingnya banyak dan lembut. Agak aneh karena biasanya dag
 
 ## Warung Kepala Manyung Bu Yah 99, Gresik
 
-![Warung Kepala Manyung Bu Yah 99](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/manyung_bu_yah_99_tXNIbElKf?updatedAt=1752316379972)
+![Warung Kepala Manyung Bu Yah 99]({{ metadata.imgdia }}jurnal/kuliner_manyung/manyung_bu_yah_99_tXNIbElKf.webp)
 
 Makan di warung [Kepala Manyung Bu Yah 99](https://g.co/kgs/S4r9RPp) ini sangat sulit bagi ane karena 4 kali ke warung ini tidak pernah bisa mendapatkan makanannya karena selalu tutup. Menurut sang ibu yang pernah ane ajak ngobrol, dia buka warungnya suka - suka. Kalau pengen buku maka buka kalo tidak ya tutup saja. Ane penasaran sekali karena biasanya warung begini masakan enak dan pelanggannya setia. Syukur _Alhamdulillah_ akhirnya suatu hari ane mendapatkan rejeki karena bisa makan disini.
 
@@ -52,7 +52,7 @@ Sambalnya sepertinya campuran dari sambal terasi ditambah dengan petis, mungkin 
 
 ## Warung Keres Bu Ayu, Surabaya
 
-![Warung Keres Bu Ayu](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/manyung_warung_keres_bu_ayu_PpWNYs8ju?updatedAt=1752316536108)
+![Warung Keres Bu Ayu]({{ metadata.imgdia }}jurnal/kuliner_manyung/manyung_warung_keres_bu_ayu_PpWNYs8ju.webp)
 Warung ini cukup populer di daerah Surabaya Barat, dari Terminal Bungurasih bisa naik Gojek untuk menuju [Warung Keres Bu Ayu](https://g.co/kgs/WfYUCRr). Menurut Google Review warung ini memiliki rating 4,6 dari 5 bintang, tapi seperti Warung Sembilang menu di warung ini banyak banget dan salah satunya masakan kepala ikan Manyung. Meski ada di dalam daftar menu tapi masakan ini tidak setiap hari ada. Ane beruntung saat mampir ternyata tersedia.
 
 Karena bukan masakan _signature_ dari warung ini, maka menu ini tampil seadanya. Kuahnya sederhana malah mirip kuah opor (mungkin juga _kotokan_ tapi tidak ada tahu ataupun tempe) tapi tidak pedas meski _toping_-nya banyak bertabur irisan cabe. Ikannya dimasak _overcook_ sehingga sangat mudah lepas dari tulangnya dan aroma _smoky_-nya tidak ada.
@@ -63,7 +63,7 @@ Nasi jagung dan tempe adalah menu berbeda yang ane pesan.
 
 ## Warung Pelipur Luwe, Surabaya
 
-![Warung Pelipur Luwe](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/manyung_pelipur_luwe_0zmiVCb2e?updatedAt=1752316659740)
+![Warung Pelipur Luwe]({{ metadata.imgdia }}jurnal/kuliner_manyung/manyung_pelipur_luwe_0zmiVCb2e.webp)
 Namanya lucu Pelipur Luwe yang artinya adalah penghibur lapar. Saat pertama kali datang kesini lokasi warung ini dekat dengan Stasiun Surabaya Gubeng, berada di sebelah polsek Genteng tapi informasi terakhir sudah [pindah lokasi](https://g.co/kgs/PKkhgvj) dan ane belum pernah kesana lagi.
 
 Meskipun mengaku sebagai spesial menu Kotokan kepala Manyung, namun ternyata warung ini juga menjual menu lainnya seperti kikil kaki sapi, bakso, dan mangut lele. Sesuai dengan namanya kotokan, maka kuahnya adalah kuah kuning yang diberi irisan tahu atau tempe. Rasanya lumayan _medok_ dan pedas. Hanya saja kepala ikan Manyungnya berukuran kecil.
@@ -72,7 +72,7 @@ Meskipun mengaku sebagai spesial menu Kotokan kepala Manyung, namun ternyata war
 
 ## Warung Kepala Manyung Mak Muah, Surabaya
 
-![Warung Kepala Manyung Mak Muah](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/IMG_1087_58dt6f9dd.jpeg?updatedAt=1752316842532)
+![Warung Kepala Manyung Mak Muah]({{ metadata.imgdia }}jurnal/kuliner_manyung/IMG_1087_58dt6f9dd.webp)
 Kuahnya pedas tapi bumbunya masih terasa nikmat dan segar, ada pilihan pelbagai ukuran kepala manyungnya namun sayang saat saya datang baru ready ukuran sedang.
 
 Entah bagaimana cara memasaknya namun ikan kepala manyungnya enak tidak keras, cuma smoky flavournya kurang. Kemudian beberapa menu yang terdapat di buku menu belum tersedia. Tapi _nevermind_ alias tak masalah yang penting adalah rasanya mantap.
@@ -89,7 +89,7 @@ Ini adalah _review_ yan ane tulis di Google Map untuk Warung Kepala Manyung Mak 
 
 ## Warung Kepala Manyung Bu Fat, Semarang
 
-![Warung Kepala Manyung Bu Fat](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kuliner_manyung/IMG_1068%202_x4pFAn_si.jpeg?updatedAt=1752317652271)
+![Warung Kepala Manyung Bu Fat]({{ metadata.imgdia }}jurnal/kuliner_manyung/IMG_1068%202_x4pFAn_si.webp)
 
 Warung Bu Fat ini sering disebut dan di-_review_ di sosmed, membuat ane penasaran untuk mencoba. Setidaknya ada 2 kali ane sudah ke warung ini. Lokasinya mudah dicari dan setiap ke situ tidak pernah ramai sehingga ane nyaman makannya.
 

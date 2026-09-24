@@ -7,7 +7,7 @@ update: false
 ringkasan: "10 orang berkumpul di sebuah rumah unik untuk memperingati ulang tahun seorang novelis terkenal tanpa mereka sadari hendak dikorbankan mengikuti legenda Yunani kuno"
 keywords: "Yukito Ayatsuji, Kindaichi, Detektif, Jepang, Misteri, Novel"
 coverImg: "https://imgdia.kusaeni.com/buku/cover/the-labyrint-house-murders_0h19ukwcI.jpeg"
-og_images: "https://imgdia.kusaeni.com/buku/w-150/the-labyrint-house-murders_0h19ukwcI.jpeg"
+og_images: "https://imgdia.kusaeni.com/buku/cover/the-labyrint-house-murders_0h19ukwcI.jpeg"
 penulis: "Yukito Ayatsuji"
 genre:
   - Thriller

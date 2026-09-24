@@ -146,7 +146,7 @@ if (!isDev) {
 site.helper(
   "relasi",
   function (desc, coverImg, title, penulis, url) {
-    const coverUrl = "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/";
+    const coverUrl = "https://imgdia.kusaeni.com/buku/cover/";
     return `<div class="relasi m-auto">
             <img class="relaimg" loading="lazy" src="${coverUrl}${coverImg}" width="auto" height="auto" alt="${title}">
             <div class="relasi_meta">

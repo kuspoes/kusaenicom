@@ -23,13 +23,13 @@ _Long story short_.
 
 Ane akhirnya dapat Kindle Papperwhite gen 10 dengan storage 2Gb saja. Sebenarnya harapan ane punya storage 8 - 16 GB (untuk simpan manga) tapi apa daya karena sudah terperdaya sebelumnya sehingga cadangan biaya untuk beli Kindle menyusut dan harus ikhlas dengan apa yang ada (termasuk kekurangannya).
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1466_pGzQh1S4Q.jpeg?updatedAt=1750915358043" />
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1467_QjjBL_Zsc.jpeg?updatedAt=1750915363990" />
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1469_5nedPTtXT.jpeg?updatedAt=1750915354633" />
+<img src="{{ metadata.imgdia }}jurnal/kindle/IMG_1466_pGzQh1S4Q.webp" />
+<img src="{{ metadata.imgdia }}jurnal/kindle/IMG_1467_QjjBL_Zsc.webp" />
+<img src="{{ metadata.imgdia }}jurnal/kindle/IMG_1469_5nedPTtXT.webp" />
 
 Kekurangan yang sangat terasa adalah adanya _shadow_ yang muncul saat memakai mode _night mode_.
 
-<img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1473_WylHV4WXQ.jpeg?updatedAt=1750915362926" />
+<img src="{{ metadata.imgdia }}jurnal/kindle/IMG_1473_WylHV4WXQ.webp" />
 
 <p class="sidenote">secara keseluruhan saat <i>night mode</i> aktif, maka muncul <i>shadow</i> yang lumayan jelas.</p>
 
@@ -47,7 +47,7 @@ Ternyata tidak mudah menemukan kamus bahasa Inggris ke bahasa Indonesia, meski K
 
 Setelah mencari - cari, akhirnya ane menemukan kamus bahasa Inggris ke bahasa Indonesia di [Freedict](https://freedict.org/downloads/). Ane pilih Bahasa Indonesia dan kemudian _download_ English to Indonesian versi 2024.10.10 (_latest_)[^2]. Ekstrak kamus tersebut dan pindahkan ke folder `koreader/data/dict` di perangkat Kindle. Untuk memastikan kamus sudah terpasang, buka Ko Reader dan tap pada ikon kaca pembesar kemudian ke Settings ↣ Dictionary settings ↣ Manage directories. Di sini akan muncul daftar kamus yang sudah terpasang.
 
-![Kindle dengan kamus bahasa Indonesia](https://ik.imagekit.io/hjse9uhdjqd/jurnal/kindle/IMG_1537_3n2bVhpeN.jpeg?updatedAt=1751456181114)
+![Kindle dengan kamus bahasa Indonesia]({{ metadata.imgdia }}jurnal/kindle/IMG_1537_3n2bVhpeN.webp)
 
 Namun, kamus bahasa Inggris ke bahasa Indonesia ini tidak lengkap sehingga banyak kata yang tidak tersedia. Oleh karena itu ane juga memasang kamus bahasa Inggris (dari GNU Collaborative International) yang lebih lengkap. Supaya kamus bahasa Inggris ke bahasa Indonesia menjadi pilihan utama maka ane perlu atur di Manage directories.
 

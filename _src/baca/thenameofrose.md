@@ -6,7 +6,7 @@ date: 2019-10-17
 favorit: true
 ringkasan: "7 Deaths in 7 Days and Nights of Apocalyptic Terror"
 keywords: "The Name of Rose, Il nome dela Rosa, Umberto Eco, Misteri"
-coverImg: "https://imgdia.kusaeni.com/buku/theNameofRose_1ED96afur.jpg"
+coverImg: "https://imgdia.kusaeni.com/buku/cover/theNameofRose_1ED96afur.jpg"
 og_images: "https://imgdia.kusaeni.com/buku/theNameofRose_1ED96afur.jpg"
 penulis: "Umberto Eco"
 genre:
@@ -67,7 +67,7 @@ Membaca buku ini sangat butuh kesabaran ekstra. Penulis memasukkan banyak sekali
 Salah satu yang menarik menjadi catatan adalah tentang jadual ibadah 4 para biarawan, bahwa faktanya jadual/jam ibadah mereka (jika dicermati) mirip dengan jadual ibadah umat Islam.
 
  <p class="sidenote">
-    Saya tidak ingin berdebat tentang hal ini. Hanya membandingkan secara pribadi jadual ibadah para biarawan pada masa itu dengan (umat Nasrani) saat ini agak berbeda. Jadual ibadah menurut novel ini bisa dilihat di bagian <a href="https://ik.imagekit.io/hjse9uhdjqd/buku/ilnomedellarosa-pray-schedule-min_NzUrWLwNfR.jpg">Note - halaman xx - xxi</a>.
+    Saya tidak ingin berdebat tentang hal ini. Hanya membandingkan secara pribadi jadual ibadah para biarawan pada masa itu dengan (umat Nasrani) saat ini agak berbeda. Jadual ibadah menurut novel ini bisa dilihat di bagian <a href="{{ metadata.imgdia }}buku/ilnomedellarosa-pray-schedule-min_NzUrWLwNfR.jpg">Note - halaman xx - xxi</a>.
  </p>
 
 Di akhir, saya sepakat dengan Ustadz Salimafillah bahwa novel ini adalah salah satu masterpiece dan sangat bagus untuk dikoleksi.

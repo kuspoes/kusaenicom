@@ -22,8 +22,8 @@ comments:
 ---
 
 <div class="gal" id="glightbox">  
-    <a style="grid-column:1/-1; border-bottom: none;" href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg" data-gallery="gallery">
-        <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.jpg" class="lebar fuck">
+    <a style="grid-column:1/-1; border-bottom: none;" href="{{ metadata.imgdia }}jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.webp" data-gallery="gallery">
+        <img src="{{ metadata.imgdia }}jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.webp" class="lebar fuck">
     </a>
 </div>
     <p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>
@@ -58,7 +58,7 @@ Deploy akan menampilkan halaman Dashboard dari App ini dan mulai melakukan `buil
 
 *Domain management* ane hanya mengijinkan `A/AAAA` *records* maka ane pilih tab itu. Buat *record* baru yaitu `CNAME` (wajib) dan `A` *records* jika pakai IPv4 saja atau pakai `AAAA` untuk IPv6. Kemudian tinggal verifikasi dan _request Let's Encrypt Certificate_ langsung dari Deno Deploy. Jika tidak ada masalah, maka domain akan segera terverifikasi dan menunggu propagansi (prosesnya cepat biasanya 10 menit sudah selesai).
 
-![contoh dns records](https://ik.imagekit.io/hjse9uhdjqd/jurnal/migrasi_lume/SCR-20260419-trcv_6MQAQKKpR.png)
+![contoh dns records]({{ metadata.imgdia }}jurnal/migrasi_lume/SCR-20260419-trcv_6MQAQKKpR.webp)
 <aside class="image">
     Contoh isian DNS <i>Records</i>. Sesuaikan dengan kode yang diberikan oleh Deno Deploy
 </aside>
