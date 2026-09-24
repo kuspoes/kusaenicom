@@ -5,8 +5,8 @@ title: "Gending Pencabut Nyawa"
 date: 2022-07-04
 ringkasan: "Gamelan tersebut terdengar ketika mendaki gunung di Pulau Jawa. Ia mengartikan, di sekitarmu sedang ada hajatan dari desa gaib. Tapi bukan cuma hajatan, gending yang satu ini dipercaya membawa kutukan sampai merenggut nyawa."
 keywords: "gending, alas, mayit, nyawa, diosetta, windualit, merapi, sinden, jawa, horror, horor"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/Gending_Pencabut_Nyawa_1kcaLNm3cS.jpg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/Gending_Pencabut_Nyawa_1kcaLNm3cS.jpg"
+coverImg: "https://imgdia.kusaeni.com/buku/thumb/Gending_Pencabut_Nyawa_1kcaLNm3cS.jpg"
+og_images: "https://imgdia.kusaeni.com/buku/Gending_Pencabut_Nyawa_1kcaLNm3cS.jpg"
 penulis: "Diosetta"
 genre:
   - Horror

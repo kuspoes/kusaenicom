@@ -6,7 +6,7 @@ date: 2026-07-14
 update: false
 ringkasan: "Ketika dia mulai berjalan dalam tidurnya, pembunuhan demi pembunuhan terjadi."
 keywords: "Seishi Yokomizo, Kindaichi, Detektif, Jepang, Misteri, Novel"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/she-walks-at-night_Vw_GL_hB9.jpeg?updatedAt=1783920533909"
+coverImg: "https://imgdia.kusaeni.com/buku/she-walks-at-night_Vw_GL_hB9.jpeg?updatedAt=1783920533909"
 og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/she-walks-at-night_Vw_GL_hB9.jpeg?updatedAt=1783920533909"
 penulis: "Seishi Yokomizo"
 genre:

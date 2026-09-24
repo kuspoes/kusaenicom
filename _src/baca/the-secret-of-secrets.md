@@ -5,7 +5,7 @@ title: "The Secret of Secret's"
 date: 2026-06-02
 ringkasan: "Novel fiksi sains yang jalan ceritanya biasa saja cenderung membosankan, tapi bisa bikin otakmu ngebul karena pusing atau kecewa."
 keywords: "The Secret of Secrets Dan Brown, Novel, review Indonesia, review buku, review novel dan brown, review novel The Secret of Secrets bahasa Indonesia"
-coverImg: https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/The_Secret_of_Secrets_(Brown_novel)_ljPVlBvYL.jpg
+coverImg: https://imgdia.kusaeni.com/buku/The_Secret_of_Secrets_(Brown_novel)_ljPVlBvYL.jpg
 og_images: https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/The_Secret_of_Secrets_(Brown_novel)_ljPVlBvYL.jpg
 penulis: "Dan Brown"
 genre:

@@ -17,7 +17,7 @@ comments:
 ---
 
 
-![satu kucing terhubung dengan kucing yang lain, tapi kenapa wajahnya sama?](https://ik.imagekit.io/hjse9uhdjqd/tr:w-600/jurnal/ubnt_/SCR-20260912-owah_7W4EV8dcp.png){.fuck image-size}
+![satu kucing terhubung dengan kucing yang lain, tapi kenapa wajahnya sama?]({{ metadata.imgdia }}jurnal/ubnt_/SCR-20260912-owah_7W4EV8dcp.webp){.fuck image-size}
 <p class="ncaption">satu kucing terhubung dengan kucing yang lain, tapi kenapa wajahnya sama? </p>
 
 
@@ -44,7 +44,7 @@ Jika mengalami hal serupa, maka cara perbaikannya seperti berikut:
 3. Klik **Change untuk menyimpan**, dan kemudian klik **Apply** untuk mengkonfirmasi dan menerapkan pengaturan,
 4. **Reboot** perangkat!
 
-![aktifkan WDS!](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ubnt_/SCR-20260912-ojik-min_YMeJBjYH6.png)
+![aktifkan WDS!]({{ metadata.imgdia }}jurnal/ubnt_/SCR-20260912-ojik-min_YMeJBjYH6.png)
 <aside class="image">Tampilan menu pengaturan Wireless, di <i>firmware</i> terbaru Wireless Mode diberi nama <b>Bridge</b> sedangkan yang lama namanya <b>Station</b>. </aside>
 
 Sementara itu di sisi lokal, hapus *cache* dari `arp` dengan perintah 

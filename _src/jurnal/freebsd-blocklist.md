@@ -21,7 +21,7 @@ comments:
 ---
 
 <img class="fuck lebar"
-src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/blocklist/gemini_sshguard_8jt-eEZ11.png"
+src="{{ metadata.imgdoa }}jurnal/blocklist/gemini_sshguard_8jt-eEZ11.webp"
 alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan
 SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga
 dengan 2 tameng" />

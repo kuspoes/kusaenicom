@@ -7,8 +7,8 @@ update: true
 ringkasan: 'Seorang wanita terbunuh di Nihonbashi, detektif datang menyelidikinya dan
 ditemukan banyak orang bisa menjadi tersangka'
 keywords: 'Keigo Higashino, Kaga, detektif, Pembunuhan di Nihonbashi, The Newcomer, Jepang, Misteri, Novel'
-coverImg : 'https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/thenewcomer_jNnlkJXcfB.jpg'
-og_images : 'https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/thenewcomer_jNnlkJXcfB.jpg'
+coverImg : 'https://imgdia.kusaeni.com/buku/thenewcomer_jNnlkJXcfB.jpg'
+og_images : 'https://imgdia.kusaeni.com/buku/thenewcomer_jNnlkJXcfB.jpg'
 penulis: 'Keigo Higashino'
 genre:
     - Thriller

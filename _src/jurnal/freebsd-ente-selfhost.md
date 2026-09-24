@@ -21,7 +21,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
 ---
 
-![Ente Photos app](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.png){.lebar .fuck}
+![Ente Photos app]({{ metadata.imgdia }}jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.webp){.lebar .fuck}
 
 Artikel ini berisi catatan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
 
@@ -344,7 +344,7 @@ $ doas service caddy restart
 
 Jika tidak ada masalah seharusnya Ente sudah bisa diakses dengan membuka `photos.taa.ee`. Di tampilan awal Ente, klik 7x di gambar brankas dan ketik alamat dari ente server yaitu `ente.taa.ee`. Kemudian klik pada tautan **Don't have an account** untuk mendaftar.
 
-![ente developer mode](https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-1_6vBhiSSZ8.gif)
+![ente developer mode]({{ metadata.imgdia }}jurnal/ente/ente-1_6vBhiSSZ8.gif)
 
 Karena ane tidak setup email (SMTP dll termasuk JWT), maka verifikasi akun tidak bisa dilakukan melalui email. Jadi kembali ke console dan lihat log dari `main` dan cari baris seperti ini
 
@@ -412,11 +412,11 @@ Semua perubahan di `museum.yaml` harus diikuti dengan _restart_ `main` agar Ente
     
       <div class="image-2column">
     <div class="img1">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-limit_vVmbYvovP.png" alt="ente user limit storage">
+      <img src="{{ metadata.imgdia  }}jurnal/ente/ente-limit_vVmbYvovP.webp" alt="ente user limit storage">
       <p class="ncaption">Sebelum</p>
     </div>
     <div class="img2">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/ente/ente-no-limit_301ZKOOdo.png" alt="ente user no limit storage">
+      <img src="{{ metadata.imgdia }}jurnal/ente/ente-no-limit_301ZKOOdo.webp" alt="ente user no limit storage">
       <p class="ncaption">Sesudah</p>
     </div>
         </div>

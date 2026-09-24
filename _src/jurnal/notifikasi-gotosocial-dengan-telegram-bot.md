@@ -34,7 +34,7 @@ Alternatif lainnya adalah memakai _messaging services_ seperti Whatsapp, Signal,
 
 ## Rencana skema kerja
 
-![skema gts to telegram bot](https://ik.imagekit.io/hjse9uhdjqd/jurnal/gts_telebot/image_WZ8xsRBlY.png?updatedAt=1721656379578)
+![skema gts to telegram bot]({{ metadata.imgdia }}jurnal/gts_telebot/image_WZ8xsRBlY.webp)
 
 Jika Joel Carnat mempergunakan _shell script_ maka disini saya akan pakai [Deno](https://deno.com) dengan Typescript, data akan disimpan di database postgresql kemudian dikirim ke Telegram bot.
 
@@ -257,8 +257,8 @@ Setelah repositori Github dihubungkan, secara otomatis Deno Deploy akan mem*buil
 
 Berikut ini adalah contoh _screenshot_ hasil dari _script_ ini:
 
-![Notifikasi Telegram di iOS](https://ik.imagekit.io/hjse9uhdjqd/jurnal/gts_telebot/IMG_6465_XktHQpVfV.png?updatedAt=1721656402210)
-![Notifikasi di chat dengan Telegram Bot](https://ik.imagekit.io/hjse9uhdjqd/jurnal/gts_telebot/IMG_6466_heNhNSLDk.png?updatedAt=1721656383904)
+![Notifikasi Telegram di iOS]({{ metadata.imgdia }}jurnal/gts_telebot/IMG_6465_XktHQpVfV.webp)
+![Notifikasi di chat dengan Telegram Bot]({{ metadata.imgdia }}jurnal/gts_telebot/IMG_6466_heNhNSLDk.webp)
 
 {{ comp.subs() }}
 

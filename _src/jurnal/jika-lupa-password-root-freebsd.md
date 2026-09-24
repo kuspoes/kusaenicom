@@ -38,7 +38,7 @@ Hal ini beberapa kali terjadi kepada saya, selain karena pada dasarnya saya seor
 
 4. Setelah selesai mengganti password ketik `reboot` untuk me*reboot* PC/VPS. Saat muncul _boot loader options_ ketik 1 untuk _booting_ secara normal dan coba login dengan _password_ `root` yang baru saja diganti.
 
-![freebsd boot loader options](https://ik.imagekit.io/hjse9uhdjqd/jurnal/freebsd_lupa_password/bsdinstall-newboot-loader-menu_dy1DYb2c2.png?updatedAt=1735196565380)
+![freebsd boot loader options]({{ metadata.imgdia }}jurnal/freebsd_lupa_password/bsdinstall-newboot-loader-menu_dy1DYb2c2.webp)
 
 <p class="ncaption">Gambar diambil dari FreeBSD Handbook</p>
 

@@ -6,8 +6,8 @@ date: 2026-08-14
 update: false
 ringkasan: "10 orang berkumpul di sebuah rumah unik untuk memperingati ulang tahun seorang novelis terkenal tanpa mereka sadari hendak dikorbankan mengikuti legenda Yunani kuno"
 keywords: "Yukito Ayatsuji, Kindaichi, Detektif, Jepang, Misteri, Novel"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/the-labyrint-house-murders_0h19ukwcI.jpeg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-80/buku/the-labyrint-house-murders_0h19ukwcI.jpeg"
+coverImg: "https://imgdia.kusaeni.com/buku/cover/the-labyrint-house-murders_0h19ukwcI.jpeg"
+og_images: "https://imgdia.kusaeni.com/buku/w-150/the-labyrint-house-murders_0h19ukwcI.jpeg"
 penulis: "Yukito Ayatsuji"
 genre:
   - Thriller
@@ -56,8 +56,8 @@ Miyagaki menunjuk Utayama, Saejima, dan Shimada sebagai juri untuk menentukan si
 
 <div class="sidebar_table table_kiri">
 <div class="gal" id="glightbox">
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/the-labyrint-house-murders/peta-rumah-labirin-nakamura-seiji_dl6G39q1x.png?updatedAt=1786628964912" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/the-labyrint-house-murders/peta-rumah-labirin-nakamura-seiji__VfbMydo59.jpg"  loading="lazy" style="padding: 10px; margin-bottom: 0px !important">
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}jurnal/peta-rumah-labirin-nakamura-seiji_dl6G39q1x.webp" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}jurnal/the-labyrint-house-murders/peta-rumah-labirin-nakamura-seiji__VfbMydo59.webp"  loading="lazy" style="padding: 10px; margin-bottom: 0px !important">
   </a>
 </div>
 <span>klik untuk memperbesar</span>

@@ -12,7 +12,7 @@ code: true
 favorit: false
 comment: true
 tocx: true
-og_images: https://ik.imagekit.io/hjse9uhdjqd/jurnal/meta_image/cat_ClOaUHOAC.png?updatedAt=1718847889072
+og_images: https://imgdia.kusaeni.com/jurnal/meta_image/cat_ClOaUHOAC.webp
 ---
 
 ### Apa itu web crawler?

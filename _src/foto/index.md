@@ -9,8 +9,8 @@ templateEngine: md, vto
 ---
 
 <div class="gal" id="glightbox">  
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/DSC_1096_plzp8PY5F.jpg" class="fuck lebar" image-size>
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/DSC_1096_plzp8PY5F.jpg" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}/galeri/thumb/output.jpg" class="fuck lebar" image-size>
   </a>
 </div>
 
@@ -27,23 +27,23 @@ Untuk beberapa tahun fotografi menempati urutan pertama dalam daftar hal menarik
 Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambil foto saat senja. Karena pada waktu itu (selain di pagi hari) warna - warna langit berwarna warni.
 
 <div class="gallery" id="glightbox">  
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" class="fuck radius-atas" image-size>
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}galeri/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" class="fuck radius-atas" image-size>
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/grojogan_dhuwur_QWB14EIf1gdt.jpg" class="fuck" image-size>
+  <a href="{{metadata.imgdia}}galeri/grojogan_dhuwur_QWB14EIf1gdt.jpg" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}galeri/grojogan_dhuwur_QWB14EIf1gdt.jpg" class="fuck" image-size>
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="fuck" image-size>
+  <a href="{{ metadata.imgdia }}galeri/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}galeri/thumb/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="fuck" image-size>
   </a>
-  <a style="grid-column:1/-1" href="https://ik.imagekit.io/hjse9uhdjqd/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" class="fuck" image-size>
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}galeri/papuma_USMES_4Oj.jpg" class="fuck" image-size>
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" data-gallery="gallery">
-    <img src="https://ik.imagekit.io/hjse9uhdjqd/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="fuck radius-kiri-bawah" image-size>
+  <a href="{{ metadata.imgdia }}galeri/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg" data-gallery="gallery">
+    <img src="{{ metadata.imgdia }}galeri/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="fuck radius-kiri-bawah" image-size>
   </a>
-  <a href="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567" data-gallery="gallery">
-      <img src="https://ik.imagekit.io/hjse9uhdjqd/D71_0358_GCefsTMTp.jpg?updatedAt=1611642190567" class="fuck radius-kanan-bawah" image-size>
+  <a href="{{ metadata.imgdia }}galeri/D71_0358_GCefsTMTp.jpg" data-gallery="gallery">
+      <img src="{{ metadata.imgdia }}galeri/thumb/D71_0358_GCefsTMTp.jpg" class="fuck radius-kanan-bawah" image-size>
     </a>
 </div>
 
@@ -56,7 +56,7 @@ Positifnya adalah saya selalu merasa lebih sehat dan gembira setiap pulang _hunt
 Saya adalah seorang _lone traveller_, sangat jarang sekali saya bepergian berkelompok. Mungkin karena _introvet_ atau karena mungkin sudah nyaman berpergian sendirian. Namun saat _hunting landscape photografi_ ke daerah yang belum pernah singgah, ada kawan perjalanan tentu lebih me-nyenangkan (dan aman). Apalagi jika pergi ke daerah Timur Pulau Jawa.
 
   <div class="galsX">
-        <img class="img_lone" src="https://ik.imagekit.io/hjse9uhdjqd/Pantai_Pulau_Merah_Banyuwangi_4n9WLrg_Bz.jpg" alt="Pantai Merah Banyuwangi" image-size>
+        <img class="img_lone" src="{{ metadata.imgdia }}galeri/Pantai_Pulau_Merah_Banyuwangi_4n9WLrg_Bz.jpg" alt="Pantai Merah Banyuwangi" image-size>
       
         <p class="ncaption">Salah satu sudut Pantai Merah Banyuwangi.</p>
       

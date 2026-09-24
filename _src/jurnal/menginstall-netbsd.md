@@ -23,7 +23,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01M19EXTJZYGXJP6V1BWN91SDN
 ---
 
-![netbsd](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.png){.fuck .lebar}
+![netbsd]({{ metadata.imgdia }}jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.webp){.fuck .lebar}
 
 
 {{ comp.relasi_artikel({
@@ -68,11 +68,11 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 </div>
 
 <div class="gallery gal-1-baris" id="glightbox">  
- <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.png" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
+ <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" data-gallery="gallery">
+ <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
- <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.png" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
+ <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" data-gallery="gallery">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
   </a>
 </div>
 <p class="ncaption">Mount ISO ke CDROM di TierHive tinggal <i>copy-paste</i> URL ISOnya saja</p>
@@ -83,11 +83,11 @@ Kemudian *boot* VPS dan buka *console* VNC yang disediakan, secara *default* aka
 Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan tombol SPASI atau langsung tekan angka 3 untuk masuk ke **Drop to boot prompt**. Akan muncul *prompt* opsi untuk memasukkan konfigurasi *boot*. Karena disini pakai VNC maka perlu mengaktifkan tipe grafis VESA dengan mengetik `vesa on` dan dilanjut dengan perintah `boot`.
 
 <div class="gallery gal-1-baris" id="glightbox">  
- <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.png" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
+ <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
- <a href="https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.png" data-gallery="gallery">
- <img src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.png" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
+ <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>
@@ -120,7 +120,7 @@ Perintah <code>./install.sh</code> dipergunakan untuk kembali ke menu <i>install
 
 Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*install*an melainkan nanti saat [NetBSD sudah jalan dengan baik (*post install*)](#postinstall_ipv6).
 
-![NetBSD Installer](https://ik.imagekit.io/hjse9uhdjqd/jurnal/netbsd/netbsd_installer_p_mfzyV82.jpeg)
+![NetBSD Installer]({{ metadata.imgdia }}jurnal/netbsd/netbsd_installer_p_mfzyV82.webp)
 
 Kemudian lanjutkan proses install seperti biasa atau sesuai dengan panduan [resmi dari NetBSD](https://www.netbsd.org/docs/guide/en/chap-exinst.html). Ane ga mau ribet karena sumber daya VPS ini minimalis maka ane pakai rekomendasi NetBSD saat bikin partisi dan kemudian pilih **Minimal Installation**, ane juga mengaktifkan SSH agar nanti bisa akses ke *shell* tanpa VNC. Setelah proses instalasi selesai  kemudian *reboot system*.
 

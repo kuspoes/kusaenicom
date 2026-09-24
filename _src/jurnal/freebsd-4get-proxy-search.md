@@ -104,7 +104,7 @@ $ doas service caddy start
 
 Buka _browser_ dan cek (sebagai contoh) https://forget.taa.ee, seharusnya _instance_ 4Get sudah nongol dengan baik.
 
-![FourGet](https://ik.imagekit.io/hjse9uhdjqd/jurnal/fourget/SCR-20260117-ocee__nFp_iON-.png)
+![FourGet]({{ metadata.imgdia }}jurnal/fourget/SCR-20260117-ocee__nFp_iON-.webp)
 
 Ane sudah rubah _banner_-nya karena ga suka dengan _banner_ aslinya. Ane inginnya pakai foto kucing hitam tapi burung hantu juga bagus ha ha ha.
 

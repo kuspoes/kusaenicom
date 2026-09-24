@@ -9,7 +9,7 @@ style: "tentang.css"
 
 <div class="kus_pp h-card">
         <a class="u-url hilang" rel="me" href="/">kusaeni</a>
-        <img class="kus_avatar u-photo" src="https://ik.imagekit.io/hjse9uhdjqd/tr:w-150,q-100/kus/kusaeni_poly_5BR06cVrf.webp" alt="kusaeni" image-size>
+        <img class="kus_avatar u-photo" src="{{ metadata.imgdia }}kus/kusaeni_poly_5BR06cVrf_152.webp" alt="kusaeni" image-size>
 <p>Saya adalah seorang <span class="underline">blogger musiman</span> yang menulis di situs ini dengan penuh ke-tidak-konsistensian.</p>
 
 <p>Saya menulis jika ada keinginan untuk menulis, jika tidak maka kegiatan utama saya adalah makan, tidur, &amp; kadang kala bepergian atau <a href="#fotografi">travelling</a>.</p>
@@ -101,7 +101,7 @@ style: "tentang.css"
 
 <p>Ketika psikolog perusahaan (medio 2014) menganjurkan saya untuk mencoba bepergian atau <em>travelling</em> untuk melihat luasnya dunia dan bertemu dengan hal - hal baru, maka pada saat itu saya memutuskan untuk menekuni hobi fotografi.</p>
 
-<img class="galsX sephia" src="https://ik.imagekit.io/hjse9uhdjqd/kus/kusaeni-kawahputih_XYHZGhi-8.jpg" alt="kusaeni saat melancong ke kawah putih di Kabupaten Bandung" image-size>
+<img class="galsX sephia" src="{{ metadata.imgdia }}/kus/kusaeni-kawahputih_XYHZGhi-8.jpg" alt="kusaeni saat melancong ke kawah putih di Kabupaten Bandung" image-size>
 <aside class="image">Kusaeni saat melancong ke Kawah Putih, Ciwidey, Kabupaten Bandung. Foto ini diambil dengan mempergunakan kamera polaroid dan di reproduksi ke digital/JPEG. (Andri Kawah Putih untuk kusaeni.com) </aside>
 
 <p>Hobi ini sangat cocok berdampingan saat <em>travelling</em>, untuk mengabadikan momen dan pemandangan. Gawai yang saya pergunakan sebagai berikut :</p>
@@ -117,7 +117,7 @@ style: "tentang.css"
         </ul>
 
         <video class="vid mauto" controls muted>
-            <source src="https://ik.imagekit.io/hjse9uhdjqd/vid/NikonD7100-Tamron1750_cydf6JVkQl.mp4" type="video/mp4">
+            <source src="{{ metadata.imgdia }}vid/NikonD7100-Tamron1750_cydf6JVkQl.mp4" type="video/mp4">
             Your browser does not support HTML video - Peramban Anda tidak mendukung pemutaran video dalam format HTML5
         </video>
 
@@ -157,4 +157,4 @@ style: "tentang.css"
 
 <h3>RunBSD</h3>
 
-![Kusaeni RunBSD](https://ik.imagekit.io/hjse9uhdjqd/Tentang/SCR-20260915-pnzp__NvO6Z8NX.png){.lebar .fuck}
+![Kusaeni RunBSD]({{ metadata.imgdia }}Tentang/SCR-20260915-pnzp__NvO6Z8NX.png){.lebar .fuck}

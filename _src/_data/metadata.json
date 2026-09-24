@@ -10,6 +10,7 @@
     "id": "https://kusaeni.com/"
   },
   "favicon": "/assets/img/favicon.png",
+  "imgdia": "https://imgdia.kusaeni.com/",
   "foto_profil": "https://ik.imagekit.io/hjse9uhdjqd/tr:w-200,h-210,fo-auto,ar-1_1/kus/kus_low.jpeg",
   "author": {
     "name": "Kusaeni",
@@ -18,6 +19,7 @@
   },
   "github": "https://github.com/kuspoes/kusaenicom",
   "git": "https://legit.kusaeni.com/jurnal",
+  "brew": "https://brew.bsd.cafe/poes/kusaicom",
   "comments": {
     "title": "dari Fediverse",
     "description": "Kamu juga bisa meninggalkan komentar dari akun fediversemu dengan menyalin tautan dibawah ini dan mencarinya di instance Mastodon atau ActivityPub pilihanmu <br />",

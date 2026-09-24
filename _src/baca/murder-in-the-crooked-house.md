@@ -6,8 +6,8 @@ date: 2021-03-04
 update: true
 ringkasan: "Pembunuhan di Rumah Miring. Kasus ruang tertutup yang nyaris sempurna"
 keywords: "Mitarai, Detektif, Soji Shimada, Pembunuhan di Rumah Miring, Jepang, Misteri, Novel"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/murder_crocked_house_-KeZxKoOZ.jpg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/murder_crocked_house_-KeZxKoOZ.jpg"
+coverImg: "https://imgdia.kusaeni.com/buku/murder_crocked_house_-KeZxKoOZ.jpg"
+og_images: "https://imgdia.kusaeni.com/buku/murder_crocked_house_-KeZxKoOZ.jpg"
 penulis: "Soji Shimada"
 genre:
   - Thriller

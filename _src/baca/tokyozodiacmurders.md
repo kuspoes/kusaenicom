@@ -6,8 +6,8 @@ date: 2018-09-11
 favorit: true
 ringkasan: "Plot Pembunuhan yang sempurna, tiada yang berhasil mengungkapnya"
 keywords: "Soji Shimada, Tokyo Zodiac Murder, Misteri, Novel, Mitarai"
-coverImg: "https://ik.imagekit.io/hjse9uhdjqd/tr:n-cover/buku/tokyozodiacmurder_41AsxiBkF.jpg"
-og_images: "https://ik.imagekit.io/hjse9uhdjqd/tr:w-150/buku/tokyozodiacmurder_41AsxiBkF.jpg"
+coverImg: "https://imgdia.kusaeni.com/buku/tokyozodiacmurder_41AsxiBkF.jpg"
+og_images: "https://imgdia.kusaeni.com/buku/tokyozodiacmurder_41AsxiBkF.jpg"
 penulis: "Soji Shimada"
 genre:
   - Thriller
