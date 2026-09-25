@@ -54,6 +54,10 @@ Untuk mengkostumisasi data, silakan edit file `_config.ts`,
 Terutama di bagian nama domain, nama author, dan keterangan
 lainnya.
 
+Di file `metadata.json`, ubah bagian `imgdia` ke URL penyedia layanan gambar yang dipunyai.
+Tidak dirubah juga tidak masalah, hanya saja harus mengetik URL dari gambar secara lengkap
+saat menyisipkan di Lume.
+
 Untuk merubah tema, silakan edit di `_src/_theme`, folder
 ini berisi `bagian` untuk template `header`, `menu`, dan
 `footer`. Folder `images` untuk logo, favicon, dan
