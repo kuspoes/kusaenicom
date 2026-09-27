@@ -56,7 +56,7 @@ Miyagaki menunjuk Utayama, Saejima, dan Shimada sebagai juri untuk menentukan si
 
 <div class="sidebar_table table_kiri">
 <div class="gal" id="glightbox">
-  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}jurnal/peta-rumah-labirin-nakamura-seiji_dl6G39q1x.webp" data-gallery="gallery">
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}jurnal/the-labyrint-house-murders/peta-rumah-labirin-nakamura-seiji_dl6G39q1x.webp" data-gallery="gallery">
       <img src="{{ metadata.imgdia }}jurnal/the-labyrint-house-murders/peta-rumah-labirin-nakamura-seiji__VfbMydo59.webp"  loading="lazy" style="padding: 10px; margin-bottom: 0px !important">
   </a>
 </div>
