@@ -54,10 +54,6 @@ Untuk mengkostumisasi data, silakan edit file `_config.ts`,
 Terutama di bagian nama domain, nama author, dan keterangan
 lainnya.
 
-Di file `metadata.json`, ubah bagian `imgdia` ke URL penyedia layanan gambar yang dipunyai.
-Tidak dirubah juga tidak masalah, hanya saja harus mengetik URL dari gambar secara lengkap
-saat menyisipkan di Lume.
-
 Untuk merubah tema, silakan edit di `_src/_theme`, folder
 ini berisi `bagian` untuk template `header`, `menu`, dan
 `footer`. Folder `images` untuk logo, favicon, dan
@@ -170,3 +166,5 @@ kemungkinan besar akan pakai self host atau CloudFlare.
 2. Codeberg (tidak update karena akun ane disilent sama mereka),
 3. [Brew BSD Cafe](https://brew.bsd.cafe/poes) (best)
 4. Le Git (*self host* sendiri CGIT)
+
+Ada 2 branch `draft` dan `main`, perbedaannya `draft` untuk menyimpan perubahan sementara tanpa harus *push* ke Netlify dkk, sedangkan `main` sebaliknya.
