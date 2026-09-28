@@ -166,3 +166,5 @@ kemungkinan besar akan pakai self host atau CloudFlare.
 2. Codeberg (tidak update karena akun ane disilent sama mereka),
 3. [Brew BSD Cafe](https://brew.bsd.cafe/poes) (best)
 4. Le Git (*self host* sendiri CGIT)
+
+Ada 2 branch `draft` dan `main`, perbedaannya `draft` untuk menyimpan perubahan sementara tanpa harus *push* ke Netlify dkk, sedangkan `main` sebaliknya.
