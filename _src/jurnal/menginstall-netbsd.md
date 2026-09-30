@@ -67,7 +67,7 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 <p>Ane sengaja pakai boot.iso karena cuma butuh boot saja ke installer dan nanti unduh set's melalui http</p>
 </div>
 
-<div class="gallery gal-1-baris" id="glightbox">  
+<div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" data-gallery="gallery">
  <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
@@ -82,7 +82,7 @@ Kemudian *boot* VPS dan buka *console* VNC yang disediakan, secara *default* aka
 
 Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan tombol SPASI atau langsung tekan angka 3 untuk masuk ke **Drop to boot prompt**. Akan muncul *prompt* opsi untuk memasukkan konfigurasi *boot*. Karena disini pakai VNC maka perlu mengaktifkan tipe grafis VESA dengan mengetik `vesa on` dan dilanjut dengan perintah `boot`.
 
-<div class="gallery gal-1-baris" id="glightbox">  
+<div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
  <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
@@ -147,7 +147,7 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 2. **Tambahkan *user***, ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
 
 	```shell-session
-	# useradd -m -G whell poes
+	# useradd -m -G wheel poes
 	# passwd poes
 	```
 
