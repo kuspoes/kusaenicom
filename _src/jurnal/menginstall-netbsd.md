@@ -84,10 +84,10 @@ Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan to
 
 <div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>
@@ -147,7 +147,7 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 2. **Tambahkan *user***, ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
 
 	```shell-session
-	# useradd -m -G wheel poes
+	# useradd -m -G whell poes
 	# passwd poes
 	```
 
