@@ -67,9 +67,9 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 <p>Ane sengaja pakai boot.iso karena cuma butuh boot saja ke installer dan nanti unduh set's melalui http</p>
 </div>
 
-<div class="gallery gal-1-baris" id="glightbox">  
+<div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" data-gallery="gallery">
  <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
@@ -82,12 +82,12 @@ Kemudian *boot* VPS dan buka *console* VNC yang disediakan, secara *default* aka
 
 Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan tombol SPASI atau langsung tekan angka 3 untuk masuk ke **Drop to boot prompt**. Akan muncul *prompt* opsi untuk memasukkan konfigurasi *boot*. Karena disini pakai VNC maka perlu mengaktifkan tipe grafis VESA dengan mengetik `vesa on` dan dilanjut dengan perintah `boot`.
 
-<div class="gallery gal-1-baris" id="glightbox">  
+<div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}tr:w-iw_div_2,h-ih,cm-extract,fo-left/jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>
