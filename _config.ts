@@ -91,7 +91,7 @@ site
 		},
 		atProto: "did:plc:ulz27cstlpjtsbmawrbi4av3",
 		trust: {
-			contact: "mailto:sahabat@duck.com",
+			contact: `mailto:${Deno.env.get("email")}`,
 			social: "https://sok.egois.org/@poes",
 			dataTrainingAllowed: false,
 		}
