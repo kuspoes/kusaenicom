@@ -38,7 +38,7 @@ perintah ini akan menginstall `lume` di sistem dan
 menjalankan lume untuk build dan serve di `localhost:3000`.
 jika sudah punya lume sebelumnya, boleh _upgrade_ ke versi
 terkini dengan `deno task lume upgrade`. Repo ini
-mempergunakan lume versi 3.3.1 (latest).
+mempergunakan lume versi 3.3.2 (latest).
 
 kalo ingin mem-build saja gunakan
 
@@ -170,3 +170,7 @@ kemungkinan besar akan pakai self host atau CloudFlare.
 4. Le Git (*self host* sendiri CGIT)
 
 Ada 2 branch `draft` dan `main`, perbedaannya `draft` untuk menyimpan perubahan sementara tanpa harus *push* ke Netlify dkk, sedangkan `main` sebaliknya.
+
+
+### TODO
+-[ ] pastikan nama file gambar konsisten dan mudah diingat, tidak lagi ada nama acak di dalamnya.
