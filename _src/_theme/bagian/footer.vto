@@ -28,6 +28,26 @@
             src="https://dropcomments.net/embed.js"
             data-site-id="c0002ab4-a8ec-41cf-815c-11ada4eb7138"></script>
         {{ /if }}
+		<button onclick="topFunction()" id="tombol" title="ke atas">↑</button>
+		<script>
+			let mybutton = document.getElementById("tombol");
+			
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+			
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
         </main>
 </body>
 </html>
