@@ -605,7 +605,7 @@ th {
 }
 
 #tombol {
-  display: inline-block;
+  display: none;
   position: fixed;
   bottom: 100px;
   right: 50px;
@@ -614,7 +614,7 @@ th {
   font-weight: 600;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #ffa5ab;
   color: white;
   cursor: pointer;
   width: 50px;
@@ -625,7 +625,11 @@ th {
 }
 
 #tombol:hover {
-  background-color: #555;
+  background-color: #da627d;
+}
+
+#tombol svg.tombolup {
+	color: #fff;
 }
 
 .footer {

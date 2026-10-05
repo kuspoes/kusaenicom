@@ -28,17 +28,19 @@
             src="https://dropcomments.net/embed.js"
             data-site-id="c0002ab4-a8ec-41cf-815c-11ada4eb7138"></script>
         {{ /if }}
-		<button onclick="topFunction()" id="tombol" title="ke atas">↑</button>
+		<button onclick="topFunction()" id="tombol" title="ke atas">
+			<svg width="30" height="30" class="tombolup" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8 316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496z"/></svg>
+		</button>
 		<script>
-			let mybutton = document.getElementById("tombol");
+			let tombolku = document.getElementById("tombol");
 			
 			window.onscroll = function() {scrollFunction()};
 			
 			function scrollFunction() {
 			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			    mybutton.style.display = "block";
+			    tombolku.style.display = "block";
 			  } else {
-			    mybutton.style.display = "none";
+			  	tombolku.style.display = "none";
 			  }
 			}
 			
