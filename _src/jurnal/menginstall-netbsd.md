@@ -84,10 +84,10 @@ Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan to
 
 <div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>

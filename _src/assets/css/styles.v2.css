@@ -63,6 +63,16 @@ body {
     margin: 1em auto;
 }
 
+::-moz-selection {
+	color: #fff;
+	background-color: #000814;
+}
+
+::selection {
+	color: #fff;
+	background-color: #000814;
+}
+
 .content::after {
     content: "";
     display: table;
