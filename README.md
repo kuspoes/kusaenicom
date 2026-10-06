@@ -160,6 +160,17 @@ ke situs (agak) tersendat. Netlify punya fitur edge di SEA
 harapannya bisa membuat akses lebih cepat. Jika pun tidak
 kemungkinan besar akan pakai self host atau CloudFlare.
 
+Tierhive memberikan layanan host static pages namun hanya bisa diakses dengan (s)ftp.
+Maka *file* `tierhive.sh` dibuat khusus untuk melakukan deploy. File ini mengakses
+*environment variables* khusus di *file* `hv.env` yang berisi konfigurasi untuk akses.
+File ini harus diabaikan git sehingga tidak terunggah.
+
+Untuk *deploy* gunakan cara berikut ini:
+```shell-session
+$ deno task build
+$ /bin/sh tierhive.sh
+```
+
 ### Repositori
 
 *Source code* ini disimpan di:
@@ -173,4 +184,4 @@ Ada 2 branch `draft` dan `main`, perbedaannya `draft` untuk menyimpan perubahan 
 
 
 ### TODO
--[ ] pastikan nama file gambar konsisten dan mudah diingat, tidak lagi ada nama acak di dalamnya.
+- [x] pastikan nama file gambar konsisten dan mudah diingat, tidak lagi ada nama acak di dalamnya.

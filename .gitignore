@@ -1,6 +1,7 @@
 _site
 .DS_Store
 .env
+hv.env
 _sandbox
 test.md
 test.vto
@@ -12,7 +13,6 @@ _tmp
 *.swp
 *.swo
 *~
-tierhive.sh
 
 # wrangler files
 .wrangler
