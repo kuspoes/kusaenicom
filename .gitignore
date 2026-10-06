@@ -12,6 +12,7 @@ _tmp
 *.swp
 *.swo
 *~
+tierhive.sh
 
 # wrangler files
 .wrangler
