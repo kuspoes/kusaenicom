@@ -19,7 +19,7 @@ comments:
 
 *Subsetting font* adalah memilih karakter tertentu di dalam *font table* yang ingin dipertahankan dengan cara menghilangkan atau menghapus karakter - karakter lainnya yang tidak diperlukan. Dalam dunia desain web dan bagi yang mementingkan tentang *page speed* maka *Subsetting font* ini akan membuat ukuran *font* menjadi lebih ramping dan cocok untuk dipakai sebagai *webfont*.
 
-<img class="lebar fuck" src="{{ metadata.imgdia }}jurnal/Subsetting/SCR-20260607-lrlw_9ss8l-BQF.webp" alt="dev insight error pada identifikasi ukuran gambar" image-size>
+<img class="lebar lepas" src="{{ metadata.imgdia }}jurnal/Subsetting/SCR-20260607-lrlw_9ss8l-BQF.webp" alt="dev insight error pada identifikasi ukuran gambar" image-size>
 <p class="ncaption">dev insight error pada identifikasi ukuran gambar</p>
 
 Untuk keperluan menampilkan logo "kusaeni" yang ada di atas halaman ini, sebelumnya ane pakai gambar dengan format `webp` yang ringan, namun seringan apapun ukuran gambar akan jatuh lebih dari 10Kib dan harus memperhatikan [aspek rasio](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_sizing/Aspect_ratios) yang kadang kala membingungkan dan jika salah penanganan akan membuat halaman tidak lolos uji *Core Web Vitals Assessment* terutama di bagian *Best Practise - User Experience*. Oleh karena itu ane putuskan untuk mengatasi masalah ini dengan mengganti *file* gambar dengan *font*.

@@ -23,7 +23,7 @@ comments:
 
 <div class="gal" id="glightbox">  
     <a style="grid-column:1/-1; border-bottom: none;" href="{{ metadata.imgdia }}jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.webp" data-gallery="gallery">
-        <img src="{{ metadata.imgdia }}jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.webp" class="lebar fuck">
+        <img src="{{ metadata.imgdia }}jurnal/migrasi_lume/ddploy_dashboard_oRC1lTEvx.webp" class="lebar lepas">
     </a>
 </div>
     <p class="ncaption">Tampilan Dashboard Deno Deploy versi 2</p>

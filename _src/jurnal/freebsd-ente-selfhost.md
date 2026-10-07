@@ -21,7 +21,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KE3PT1SQ9KEB9077C1X2MMD8
 ---
 
-![Ente Photos app]({{ metadata.imgdia }}jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.webp){.lebar .fuck}
+![Ente Photos app]({{ metadata.imgdia }}jurnal/ente/SCR-20260104-lauq_qWUOHgCosI.webp){.lebar .lepas}
 
 Artikel ini berisi catatan ane saat memasang Ente di FreeBSD. Sejujurnya memasang Ente adalah proses _self host_ app yang sangat rumit dan menjengkelkan yang pernah ane rasakan, hingga saat ini. Jadi tujuan catatan ini dibuat menjadi sangat jelas agar ane (atau ente atau elu) tidak menjadi pusing dan jengkel seperti ane sebelum ini.
 

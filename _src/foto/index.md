@@ -10,7 +10,7 @@ templateEngine: md, vto
 
 <div class="gal" id="glightbox">  
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/DSC_1096_plzp8PY5F.jpg" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}/galeri/thumb/output.jpg" class="fuck lebar" image-size>
+      <img src="{{ metadata.imgdia }}galeri/thumb/output.jpg" class="lepas lebar" image-size>
   </a>
 </div>
 
@@ -28,22 +28,22 @@ Dari sekian banyak scene di dalam genre **landscape**, saya paling suka mengambi
 
 <div class="gallery" id="glightbox">  
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}galeri/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" class="fuck radius-atas" image-size>
+      <img src="{{ metadata.imgdia }}galeri/Laguna_Pantai_Soge_4ZCjfCvuBom.jpg" class="lepas radius-atas" image-size>
   </a>
   <a href="{{metadata.imgdia}}galeri/grojogan_dhuwur_QWB14EIf1gdt.jpg" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}galeri/grojogan_dhuwur_QWB14EIf1gdt.jpg" class="fuck" image-size>
+    <img src="{{ metadata.imgdia }}galeri/grojogan_dhuwur_QWB14EIf1gdt.jpg" class="lepas" image-size>
   </a>
   <a href="{{ metadata.imgdia }}galeri/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}galeri/thumb/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="fuck" image-size>
+    <img src="{{ metadata.imgdia }}galeri/thumb/Simpang_Lima_Gumul_Kediri_2FUwOs7PdfS.jpg?updatedAt=1611642200764" class="lepas" image-size>
   </a>
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/papuma_USMES_4Oj.jpg?updatedAt=1612108110621" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}galeri/papuma_USMES_4Oj.jpg" class="fuck" image-size>
+    <img src="{{ metadata.imgdia }}galeri/papuma_USMES_4Oj.jpg" class="lepas" image-size>
   </a>
   <a href="{{ metadata.imgdia }}galeri/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}galeri/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="fuck radius-kiri-bawah" image-size>
+    <img src="{{ metadata.imgdia }}galeri/Senja_di_pantai_Pulau_Merah_Banyuwangi_xtPX8DzlBi4.jpg?updatedAt=1611642250881" class="lepas radius-kiri-bawah" image-size>
   </a>
   <a href="{{ metadata.imgdia }}galeri/D71_0358_GCefsTMTp.jpg" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}galeri/thumb/D71_0358_GCefsTMTp.jpg" class="fuck radius-kanan-bawah" image-size>
+      <img src="{{ metadata.imgdia }}galeri/thumb/D71_0358_GCefsTMTp.jpg" class="lepas radius-kanan-bawah" image-size>
     </a>
 </div>
 
@@ -85,7 +85,7 @@ Kunjungi akun Instagram saya di Instagram <a class="font-sans font-semibold text
 <div class="masonry-grid delapan">
     {{ for photo of pixelfed.slice(0,8) }}
     <a href="{{ photo.link }}" class="pfed">
-      <img src="{{ photo.thumb }}" alt="{{ photo.title }}" class="fuck" image-size>
+      <img src="{{ photo.thumb }}" alt="{{ photo.title }}" class="lepas" image-size>
     </a>
   {{ /for }}
 </div>

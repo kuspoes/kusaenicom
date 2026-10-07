@@ -183,7 +183,7 @@ site.helper("gtoot", async (id: string) => {
     return `
     <div class="gtoot">
       <div class="gtoot_header">
-        <img class="poes_avatar fuck" src="${d.account.avatar_static}" alt="poes@sok.egois.org">
+        <img class="poes_avatar lepas" src="${d.account.avatar_static}" alt="poes@sok.egois.org">
         <div class="meta_profile">
           <h5 class="display_name">${d.account.display_name}</h5>
           <p class="username">@${d.account.acct}@sok.egois.org</p>
@@ -211,7 +211,7 @@ site.process([".html"], (pages) => {
         img.classList.contains("kus_avatar") ||
         img.classList.contains("layang") ||
         img.classList.contains("gallery-img") ||
-        img.classList.contains("fuck")
+        img.classList.contains("lepas")
       ) {
         continue;
       }

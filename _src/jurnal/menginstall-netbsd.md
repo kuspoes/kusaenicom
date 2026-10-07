@@ -23,7 +23,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01M19EXTJZYGXJP6V1BWN91SDN
 ---
 
-![netbsd]({{ metadata.imgdia }}jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.webp){.fuck .lebar}
+![netbsd]({{ metadata.imgdia }}jurnal/netbsd/SCR-20260826-qjjf_gciD16MKi.webp){.lepas .lebar}
 
 
 {{ comp.relasi_artikel({
@@ -69,10 +69,10 @@ Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM denga
 
 <div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgkv_He6N0khNc.webp" class="lepas radius-kiri-atas radius-kiri-bawah" alt="masukkan tautan ISO ke Virtual Media">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qgmz_9BZXfd7zIj.webp" class="lepas radius-kanan-atas radius-kanan-bawah" alt="Mount ISO ke CDROM">
   </a>
 </div>
 <p class="ncaption">Mount ISO ke CDROM di TierHive tinggal <i>copy-paste</i> URL ISOnya saja</p>
@@ -84,10 +84,10 @@ Jangan buru - buru untuk tekan Enter atau angka 1 (*boot normaly*) tapi tekan to
 
 <div class="gallery gal-1-baris" id="glightbox">
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qilx_HMmWtqSHX.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_Boot_pilihan.webp" class="lepas radius-kiri-atas radius-kiri-bawah" alt="SeaBios boot menu">
  </a>
  <a href="{{ metadata.imgdia }}jurnal/netbsd/SCR-20260829-qhxi_RRqUADOll.webp" data-gallery="gallery">
- <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
+ <img src="{{ metadata.imgdia }}jurnal/netbsd/NetBSD_SeaBIOS.webp" class="lepas radius-kanan-atas radius-kanan-bawah" alt="NetBSD Boot Menu">
   </a>
 </div>
 <p class="ncaption">Pengaturan <i>boot menu</i> SeaBIOS dan NetBSD</p>

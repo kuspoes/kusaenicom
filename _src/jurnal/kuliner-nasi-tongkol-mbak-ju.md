@@ -45,13 +45,13 @@ Namun setelah makan ternyata ada rute yang gampang dan mudah menuju warung ini, 
 
 <div class="gallery gal-2-baris" id="glightbox">  
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9526%20Large_ztJZsMsOb.webp" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}Bear/IMG_9526%20Large_ztJZsMsOb.webp" class="fuck radius-atas" alt="DTC Jl Wonokromo" >
+      <img src="{{ metadata.imgdia }}Bear/IMG_9526%20Large_ztJZsMsOb.webp" class="lepas radius-atas" alt="DTC Jl Wonokromo" >
   </a>
   <a href="{{ metadata.imgdia }}Bear/IMG_9525%20Large_tvPdIzunw.webp" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}Bear/IMG_9525%20Large_tvPdIzunw.webp" class="fuck radius-kiri-bawah" alt="DTC Parkir Sepeda Motor">
+    <img src="{{ metadata.imgdia }}Bear/IMG_9525%20Large_tvPdIzunw.webp" class="lepas radius-kiri-bawah" alt="DTC Parkir Sepeda Motor">
   </a>
   <a href="{{ metadata.imgdia }}Bear/IMG_9523%20Large_FYTpUuwQ7.webp" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}Bear/IMG_9523%20Large_FYTpUuwQ7.webp" class="fuck radius-kanan-bawah" alt="DTC Tangga ke Lantai 1">
+    <img src="{{ metadata.imgdia }}Bear/IMG_9523%20Large_FYTpUuwQ7.webp" class="lepas radius-kanan-bawah" alt="DTC Tangga ke Lantai 1">
   </a>
 </div>
 <p class="ncaption">Rute paling mudah untuk menuju Warung Mbak Ju</p>
@@ -65,17 +65,17 @@ Ane sampai di warung sekitar jam 11 lebih 20 menit, saat itu sudah ada beberapa 
 
 <div class="gallery gal-2-baris" id="glightbox">  
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9518%20Large_2RO5WbD3G.webp" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}Bear/IMG_9518%20Large_2RO5WbD3G.webp" class="fuck radius-atas" alt="Warung Nasi Tongkol Mbak Ju" >
+      <img src="{{ metadata.imgdia }}Bear/IMG_9518%20Large_2RO5WbD3G.webp" class="lepas radius-atas" alt="Warung Nasi Tongkol Mbak Ju" >
   </a>
   <a style="grid-column:1/-1" href="{{ metadata.imgdia }}Bear/IMG_9514%20Large_-tymnNeS9.webp" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}Bear/IMG_9514%20Large_-tymnNeS9.webp" class="fuck radius-bawah" alt="Anak alm Mbak Ju sedang melayani pelanggan" >
+      <img src="{{ metadata.imgdia }}Bear/IMG_9514%20Large_-tymnNeS9.webp" class="lepas radius-bawah" alt="Anak alm Mbak Ju sedang melayani pelanggan" >
   </a>
 </div>
 <p class="ncaption">Area sekitaran warung, sempit, tempat duduk terbatas dan agak kotor. Maklum di dalam pasar. Anak alm. Mbak Ju sedang meracik sepiring nasi tongkol</p>
 
 Tak menunggu lama ane langsung pesan saja nasi tongkol dengan tambah lauk telor dadar. Si penjual adalah anak dari Mbak Ju (sudah meninggal) kerjanya cepat. Beliau kemudian menyiapkan sambal tomat - terasi dan menguleknya langsung di tempat, segera 1 porsi nasi tongkol langsung tersedia lengkap dengan telor dadar dan sambal lalapan. Selain itu dikasih juga teri goreng dan sambal yang terbuat dari tongkol yang dihaluskan.
 
-<img src="{{ metadata.imgdia }}Bear/IMG_9517%20Large_enVS-PHtP.webp" class="fuck radius-atas" alt="Nasi" />
+<img src="{{ metadata.imgdia }}Bear/IMG_9517%20Large_enVS-PHtP.webp" class="lepas radius-atas" alt="Nasi" />
 <p class="ncaption">Sepiring nasi tongkol mbak Ju</p>
 
 **The moment of the truth**.
@@ -94,10 +94,10 @@ Beberapa pekan yang lalu ane sempatkan datang lagi kesini saat ada kesempatan ke
 
 <div class="gallery gal-1-baris" id="glightbox">  
   <a href="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.webp" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.webp" class="fuck radius-kiri-atas radius-kiri-bawah" alt="antri di Warung Tongkol Mbak Ju">
+    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3973_aBh7Y2kTl.webp" class="lepas radius-kiri-atas radius-kiri-bawah" alt="antri di Warung Tongkol Mbak Ju">
   </a>
   <a href="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3976_dwB08jekS.webp" data-gallery="gallery">
-    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3976_dwB08jekS.webp" class="fuck radius-kanan-atas radius-kanan-bawah" alt="Sepiring nasi tongkol Mbak Ju">
+    <img src="{{ metadata.imgdia }}jurnal/nasi_tongkol/IMG_3976_dwB08jekS.webp" class="lepas radius-kanan-atas radius-kanan-bawah" alt="Sepiring nasi tongkol Mbak Ju">
   </a>
 </div>
 <p class="ncaption">Suasana ramai di Warung Mbak Ju. Sepiring nasi tongkol Mbak Ju.</p>

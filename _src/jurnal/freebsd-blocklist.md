@@ -20,7 +20,7 @@ comments:
   real: https://sok.egois.org/@poes/statuses/01KEYD0GSTPZ8YBBVAK3K8RCX6
 ---
 
-<img class="fuck lebar"
+<img class="lepas lebar"
 src="{{ metadata.imgdia }}jurnal/blocklist/gemini_sshguard_8jt-eEZ11.webp"
 alt="sekelompok zombie berusaha menyerang rumah dengan pintu kayu bertuliskan
 SSH di atasnya, seorang penjaga berpenampilan seperti asterix sedang menjaga
