@@ -6,8 +6,8 @@ date: 2019-10-17
 favorit: true
 ringkasan: "7 Deaths in 7 Days and Nights of Apocalyptic Terror"
 keywords: "The Name of Rose, Il nome dela Rosa, Umberto Eco, Misteri"
-coverImg: "https://imgdia.kusaeni.com/buku/cover/theNameofRose_1ED96afur.jpg"
-og_images: "https://imgdia.kusaeni.com/buku/theNameofRose_1ED96afur.jpg"
+coverImg: "https://media.kusaeni.com/buku/cover/theNameofRose_1ED96afur.jpg"
+og_images: "https://media.kusaeni.com/buku/theNameofRose_1ED96afur.jpg"
 penulis: "Umberto Eco"
 genre:
   - Thriller
