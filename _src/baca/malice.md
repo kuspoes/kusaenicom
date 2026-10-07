@@ -7,8 +7,8 @@ update: false
 ringkasan: 'Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di dalam ruangan tertutup oleh istri dan sahabat baiknya.'
 keywords: 'Keigo Higashino, Kaga, detektif, Malice, Pembunuhan di Nihonbashi,
 The Newcomer, Honkaku, Misteri, Novel'
-coverImg : 'https://media.kusaeni.com/buku/cover/malice_1GM7H7NhPlD.jpg'
-og_images: 'https://media.kusaeni.com/buku/malice_1GM7H7NhPlD.jpg' 
+coverImg : 'buku/cover/malice_1GM7H7NhPlD.jpg'
+og_images: 'buku/malice_1GM7H7NhPlD.jpg' 
 penulis: 'Keigo Higashino'
 genre:
     - Thriller

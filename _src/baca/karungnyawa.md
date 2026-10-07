@@ -5,8 +5,8 @@ title: "Karung Nyawa"
 date: 2020-08-17
 ringkasan: "Semua bermula saat ditemukan mayat perempuan tanpa kepala"
 keywords: "Karung Nyawa, Bojonegoro, horor, Haditha Mohamand, Bukune"
-coverImg: "https://media.kusaeni.com/buku/cover/karungNyawa_5-MZyq9Lp.jpg"
-og_images: "https://media.kusaeni.com/buku/karungNyawa_5-MZyq9Lp.jpg"
+coverImg: "buku/cover/karungNyawa_5-MZyq9Lp.jpg"
+og_images: "buku/karungNyawa_5-MZyq9Lp.jpg"
 penulis: "Haditha Mohammad"
 genre:
   - Thriller

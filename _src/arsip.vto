@@ -153,7 +153,7 @@ layout: layout/content.vto
 			</div>
 			{{ if post.coverImg }}
 			<div class="postcover">
-			<img class="postCoverImg" src={{ post.coverImg }} />
+			<img class="postCoverImg" src="{{ metadata.imgdia }}{{ post.coverImg }}" />
 			</div>
 			{{ /if }}
 		</div>

@@ -22,7 +22,7 @@ menampilkan hasil pencarian atas artikel yang saat ini tampil
         {{ for buku of bukuku }}
         <a class="bukuku" href="{{ buku.url }}">
             <div class="relasi_bukuku_cover">
-                <img src="{{ buku.coverImg }}" alt="{{ buku.title }}"  loading="lazy" image-size>
+                <img src="{{ metadata.imgdia }}{{ buku.coverImg }}" alt="{{ buku.title }}"  loading="lazy" image-size>
             </div>
         </a>
         {{ /for }}

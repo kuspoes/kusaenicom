@@ -5,8 +5,8 @@ title: "Origin"
 date: 2021-02-20
 ringkasan: "Darimana dan mau kemana tujuan manusia diciptakan?"
 keywords: "Origin, Dan Brown, Novel"
-coverImg: https://media.kusaeni.com/buku/cover/Origin_a5ULSkpvOtjK.jpg
-og_images: https://media.kusaeni.com/buku/Origin_a5ULSkpvOtjK.jpg
+coverImg: buku/cover/Origin_a5ULSkpvOtjK.jpg
+og_images: buku/Origin_a5ULSkpvOtjK.jpg
 penulis: "Dan Brown"
 genre:
   - Fiksi

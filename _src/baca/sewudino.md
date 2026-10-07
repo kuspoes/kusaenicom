@@ -5,8 +5,8 @@ title: "Sewu Dino"
 date: 2020-08-17
 ringkasan: "Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban"
 keywords: "Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet"
-coverImg: "https://media.kusaeni.com/buku/cover/sewuDino_lV8ZEwbP7.jpg"
-og_images: "https://media.kusaeni.com/buku/sewuDino_lV8ZEwbP7.jpg"
+coverImg: "buku/cover/sewuDino_lV8ZEwbP7.jpg"
+og_images: "buku/sewuDino_lV8ZEwbP7.jpg"
 penulis: "Simpleman"
 genre:
   - Thriller
