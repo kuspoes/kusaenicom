@@ -274,6 +274,11 @@ body {
 
 .postcover img.postCoverImg {
     width: 80px;
+	transition-duration: 0.3s;
+}
+
+.postcover img.postCoverImg:hover {
+	transform: scale(1.3);
 }
 
 .caps {
@@ -428,9 +433,7 @@ nav.toc {
 }
 
 .bayang {
-    box-shadow:
-        rgba(0, 0, 0, 0.25) 0px 14px 28px,
-        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .subscribe {
@@ -2068,6 +2071,11 @@ a.related_post_link {
         grid-template-columns: repeat(2, 1fr);
         gap: 4px;
     }
+
+	.baca {
+		max-width: ;
+	}
+
 }
 
 @media only screen and (max-width: 899px) {
@@ -2150,7 +2158,9 @@ a.related_post_link {
         flex-direction: column;
     }
 
-	
+	.ib_meta {
+		padding-left: 4em;
+	}
 
     aside,
     .terkait {
@@ -2269,6 +2279,8 @@ a.related_post_link {
 
     .baca {
         grid-template-columns: 1fr 1fr;
+		gap: 1em;
+		justify-items: center;
     }
 
     img.item_cover {

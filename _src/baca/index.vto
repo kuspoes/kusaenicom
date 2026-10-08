@@ -8,9 +8,21 @@ ringkasan: 'Buku yang sudah dan sedang dibaca'
 <div class="baca">
 {{ for buku of search.pages("buku", "date=desc") }}
     <div class="item_buku">
-        <a href="{{ buku.url }}">
-            <img class="item_cover lepas bayang" src="{{ metadata.imgdia }}{{ buku.coverImg }}" alt="{{ buku.title }}" loading="lazy" fetchpriority="high" image-size>
-        </a>
+	<div class="item_buku_cover">
+		<a href="{{ buku.url }}">
+			<img class="item_cover lepas bayang" src="{{ metadata.imgdia }}{{ buku.coverImg }}" alt="{{ buku.title }}" loading="lazy" fetchpriority="high" image-size>
+		</a>
+	</div>
+	<div class="item_buku_desc">
+	<div class="ib_meta" style="margin: 1em 0; font-size: 0.9em; padding: 10px;">
+	<span class="ib_judul" style="display:block; padding-lfet: 1em;line-height:1; font-family: --var(sans); font-weight: 600">
+		{{ buku.title }}
+	</span>
+	<span class="ib_penulis" style="font-style: italic">
+		{{ buku.penulis }}
+	</span>
+	</div>
+	</div>
     </div>
 {{ /for }}
 </div>
