@@ -2190,10 +2190,14 @@ a.related_post_link {
     table,
     .meta,
     #search,
-    .pagefind-ui__form {
+     {
         width: 92%;
         margin: 0em auto;
     }
+
+	.pagefind-ui__form {
+		margin: 2em auto 0 auto;
+	}
 
 	.selayang {
 		max-width: 100%

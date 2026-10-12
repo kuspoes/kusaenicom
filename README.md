@@ -50,11 +50,7 @@ $ deno task lume
 ### Kostumisasi
 
 Untuk mengkostumisasi data, silakan edit file `_config.ts`,
-`_data.yml`, dan atau  di `_src/_data/_metadata.json`.
-Terutama di bagian nama domain, nama author, dan keterangan
-lainnya.
-
-Di file `metadata.json`, ubah bagian `imgdia` ke URL penyedia layanan gambar yang dipunyai.  Tidak dirubah juga tidak masalah, hanya saja harus mengetik URL dari gambar secara lengkap saat menyisipkan di Lume.
+`_data.yml`, dan atau  di `_src/_data/_metadata.json`.  Terutama di bagian nama domain, nama author, dan keterangan lainnya.  Di file `metadata.json`, ubah bagian `imgdia` ke URL penyedia layanan gambar yang dipunyai.  Tidak dirubah juga tidak masalah, hanya saja harus mengetik URL dari gambar secara lengkap saat menyisipkan di Lume.
 
 Untuk merubah tema, silakan edit di `_src/_theme`, folder
 ini berisi `bagian` untuk template `header`, `menu`, dan
@@ -90,8 +86,13 @@ masing component, sebagai contoh untuk menampilkan related
 article:
 
 ```html 
-{{ comp.relasi_artikel({ judul: "Judul Artikel",
-teks: "", format: "kanan | full", heading: "" }) }} 
+{{ comp.relasi_artikel({ 
+	judul: "Judul Artikel",
+	teks: "", 
+	format: "kanan | full", 
+	heading: "" 
+	}) 
+}} 
 ```
 
 Dengan keterangan: `judul`:  judul artikel (case sensitive)
@@ -108,9 +109,7 @@ mana saja di dalam artikel.
 
 
 #### TOC
-Untuk menampilkan Table of Content (TOC) atau Daftar Isi, maka di _frontmatter_ masukkan `tocx: true` sehingga Lume akan menampilkan Daftar Isi di bagian paling atas. Namun jika tidak suka posisi atau ingin menampilkan Daftar Isi di mana saja (fleksibel) maka gunakan _template tags_ `<#tocx#>` di sembarang tempat yang kamu inginkan. Ingat hanya boleh ada 1 _tag_ ini yang boleh dipakai di 1 artikel.
-
-Metode perpindahan posisi ToC ini diatur di _file_ `config.ts`
+Untuk menampilkan Table of Content (TOC) atau Daftar Isi, maka di _frontmatter_ masukkan `tocx: true` sehingga Lume akan menampilkan Daftar Isi di bagian paling atas. Namun jika tidak suka posisi atau ingin menampilkan Daftar Isi di mana saja (fleksibel) maka gunakan _template tags_ `<#tocx#>` di sembarang tempat yang kamu inginkan. Ingat hanya boleh ada 1 _tag_ ini yang boleh dipakai di 1 artikel.  Metode perpindahan posisi ToC ini diatur di _file_ `config.ts`
 
 #### Pixelfed 
 
@@ -148,6 +147,8 @@ informasi lebih lanjut silakan baca [Lume migrasi ke Deno
 Deploy
 v2](https://kusaeni.com/jurnal/lume-migrasi-ke-deno-deploy-2/).
 
+Deno Deploy akan ditutup sekitar bulan Maret 2027, karena perusahaan utamanya dijual ke Cloudflare dan membunuh Deno. F*ck! jadi ane juga akan hentikan push ke Deno Deploy.
+
 Jika ingin mempergunakan layanan lainnya seperti Netlify,
 Vercel, atau Cloudflare Pages. Silakan merujuk pada [Lume
 Docs:
@@ -159,6 +160,17 @@ saja akan membuat latency semakin tinggi yang berimbas akses
 ke situs (agak) tersendat. Netlify punya fitur edge di SEA
 harapannya bisa membuat akses lebih cepat. Jika pun tidak
 kemungkinan besar akan pakai self host atau CloudFlare.
+
+Ane pindahkan lagi ke VPS sendiri pada 12 Oktober 2026, tidak ada alasan khusus hanya ingin mencoba saja. Netlify bagus dan ane rekomendasikan. Untuk unggah ke VPS ini ane pakai `rsync` yang langsung dijalankan setelah build di lokal. Perintahnya sudah nempel di `deno.json` seperti ini
+
+```json
+    "vps": {
+      "description": "Deploy ke VPS",
+      "command": "deno task build && rsync -r _site/ poes@IPVPS:/home/poes/www1/kusaicom"
+    },
+```
+
+Untuk *path* bebas, sebagai contoh ane taruh saja di `/home/poes/www1/kusaicom`, tapi untuk lebih amannya sebaiknya ditaruh di bawah `/var/www` 
 
 Tierhive memberikan layanan host static pages namun hanya bisa diakses dengan (s)ftp.
 Maka *file* `tierhive.sh` dibuat khusus untuk melakukan deploy. File ini mengakses
