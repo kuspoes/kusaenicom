@@ -30,10 +30,14 @@
       "description": "Deploy ke Egois",
       "command": "deno task build && rsync -r -av --progress  _site/ poes@egois:/home/poes/www1/kusaicom"
     },
+	"hive": {
+	 "description": "Deploy ke Tierhive NetBSD",
+	 "command": "deno task build && sleep 1 && rsync -r -av --progress _site/ poes@hive:/var/www/kusaicom"
+	},
 	"hv": {
 		"description": "Deploy ke Tierhive static pages",
 		"command": "deno task build && sleep 3 && /bin/sh tierhive.sh"
-	}
+	},
     "new": {
       "description": "Create new content or code using artifacts",
       "command": "deno task lume new"
