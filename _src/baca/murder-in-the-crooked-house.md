@@ -6,8 +6,8 @@ date: 2021-03-04
 update: true
 ringkasan: "Pembunuhan di Rumah Miring. Kasus ruang tertutup yang nyaris sempurna"
 keywords: "Mitarai, Detektif, Soji Shimada, Pembunuhan di Rumah Miring, Jepang, Misteri, Novel"
-coverImg: "buku/cover/murder_crocked_house_-KeZxKoOZ.jpg"
-og_images: "buku/murder_crocked_house_-KeZxKoOZ.jpg"
+coverImg: "buku/cover/murder_crocked_house_-KeZxKoOZ.webp"
+og_images: "buku/murder_crocked_house_-KeZxKoOZ.webp"
 penulis: "Soji Shimada"
 genre:
   - Thriller
@@ -37,7 +37,7 @@ comment: true
 
 Ini adalah buku ke dua dari Soji Shimada dan kisah seorang dukun yang mengaku sebagai detektif bernama Kiyoshi Mitarai. Seperti halnya [Tokyo Zodiac Murders](https://kusaeni.com/baca/tokyozodiacmurders) _setting_ waktunya melampau pada medio tahun 1984.
 
-{{ echo |> relasi("tokyozodiacmurder_41AsxiBkF.jpg", "Tokyo Zodiac Murder", "Shoji Shimada", "/baca/tokyozodiacmurders") }}
+{{ echo |> relasi("tokyozodiacmurder_41AsxiBkF.webp", "Tokyo Zodiac Murder", "Shoji Shimada", "/baca/tokyozodiacmurders") }}
 Novel tentang kasus pembunuhan yang telah menggemparkan seluruh Jepang. pembunuhan yang melibatkan keluarga Umezawa dan orang-orang di sekitar keluarga tersebut. Selama lebih dari empat puluh tahun, kasus ini menjadi misteri. Banyak orang berusaha untuk memecahkannya, tak ada yang berhasil.
 {{ /echo }}
 

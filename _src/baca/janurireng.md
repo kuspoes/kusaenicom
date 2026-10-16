@@ -5,8 +5,8 @@ title: "Janur Ireng"
 date: 2021-02-14
 ringkasan: "Awal mula petaka yang dinanti"
 keywords: "Janur Ireng, Sewu Dino, Ranjat Kembang, Simpleman, SimpleM81378523, Horor, Santet, Trah Pitu, KKN Desa Penari, Kuncoro, Sabdo"
-coverImg: "buku/cover/janurIreng_aSww35pkIg4.jpg"
-og_images: "buku/janurIreng_aSww35pkIg4.jpg"
+coverImg: "buku/cover/janurIreng_aSww35pkIg4.webp"
+og_images: "buku/janurIreng_aSww35pkIg4.webp"
 penulis: "Simpleman"
 genre:
   - Horror
@@ -38,7 +38,7 @@ Ini adalah buku ketiga dari [Simpleman](https://twitter.com/SimpleM81378523) set
 
 _Setting_ waktu dalam Janur Ireng terjadi sebelum Sewu Dino. Janur Ireng menjelaskan latar belakang kenapa santet Sewu Dino dikirimkan kepada keluarga Karsa.
 
-{{ echo |> relasi("sewuDino_lV8ZEwbP7.jpg", "Sewu Dino", "simpleman", "/baca/sewudino") }}
+{{ echo |> relasi("sewuDino_lV8ZEwbP7.webp", "Sewu Dino", "simpleman", "/baca/sewudino") }}
 Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo.
 {{ /echo }}
 
@@ -76,7 +76,7 @@ Kendala terbesar adalah banyaknya tokoh dan kejadian yang membuat harus membongk
 
 Saya tidak terlalu suka dengan kisah yang ini, nilai 3 dari 5 sudah cukup bagus. Saya membaca buku ini dan tidak terlalu ingin mengulang membaca lagi.
 
-{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.jpg", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
+{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.webp", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
 Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
 {{ /echo }}
 

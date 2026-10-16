@@ -6,8 +6,8 @@ date: 2026-01-25
 update: false
 ringkasan: "Sesosok jasad perempuan dengan wajah hancur di temukan di belakang Cafe Kucing Hitam, novel pendek yang kurang"
 keywords: "Seishi Yokomizo, Kindaichi, Detektif, Inugami, Jepang, Misteri, Novel"
-coverImg: "buku/cover/murder-at-the-black-cat-cafe-new_cRLBeJEuV.jpeg" 
-og_images: "buku/murder-at-the-black-cat-cafe-new_cRLBeJEuV.jpeg"
+coverImg: "buku/cover/murder-at-the-black-cat-cafe-new_cRLBeJEuV.webp" 
+og_images: "buku/murder-at-the-black-cat-cafe-new_cRLBeJEuV.webp"
 penulis: "Seishi Yokomizo"
 genre:
   - Thriller

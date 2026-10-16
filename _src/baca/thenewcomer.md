@@ -7,8 +7,8 @@ update: true
 ringkasan: 'Seorang wanita terbunuh di Nihonbashi, detektif datang menyelidikinya dan
 ditemukan banyak orang bisa menjadi tersangka'
 keywords: 'Keigo Higashino, Kaga, detektif, Pembunuhan di Nihonbashi, The Newcomer, Jepang, Misteri, Novel'
-coverImg : 'buku/cover/thenewcomer_jNnlkJXcfB.jpg'
-og_images : 'buku/thenewcomer_jNnlkJXcfB.jpg'
+coverImg : 'buku/cover/thenewcomer_jNnlkJXcfB.webp'
+og_images : 'buku/thenewcomer_jNnlkJXcfB.webp'
 penulis: 'Keigo Higashino'
 genre:
     - Thriller
@@ -95,7 +95,7 @@ Novel misteri yang sangat bagus, saya memberikan [nilai 5 dari 5](/baca/rating) 
 
 Saya sudah membeli buku kedua dari Higashino berjudul Malice.
 
-{{ echo |> relasi("malice_1GM7H7NhPlD.jpg", "Malice", "Keigo Higashino", "/baca/malice") }}
+{{ echo |> relasi("malice_1GM7H7NhPlD.webp", "Malice", "Keigo Higashino", "/baca/malice") }}
 Seorang novelis terkenal ditemukan tewas mengenaskan di rumahnya,di dalam ruangan tertutup oleh istri dan sahabat baiknya.
 {{ /echo }}
 

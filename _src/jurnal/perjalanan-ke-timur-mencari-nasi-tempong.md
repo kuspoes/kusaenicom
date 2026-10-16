@@ -11,7 +11,7 @@ date: 2025-01-29
 kategori: jurnal
 relasi: kuliner
 templateEngine: vto, md
-og_images: https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367
+og_images: https://media.kusaeni.com/Bear/IMG_9437%20Large_vdBNUR0FP.webp
 comment: true
 comments:
   src: https://sepoi.kuspoes.deno.net/@poes/statuses/1JJWZ7Z6H6QT74E4DA36VXHP8
@@ -47,7 +47,7 @@ Akhirnya beli tiket mendadak dan untung Alhamdulillah masih dapat tiket ekonomi.
 
 Untuk pulangnya ane langsung beli tiket Wijaya Kusuma berangkat dari Stasiun Banyuwangi Kota jam 11.15 WIB dan sampai Madiun jam 19.37 WIB dengan harga tiket 300 ribuan (Ekonomi).
 
-![Stasiun Porong](https://i.ibb.co.com/M2YT9s7/IMG-9410-Large.jpg)
+![Stasiun Porong](https://i.ibb.co.com/M2YT9s7/IMG-9410-Large.webp)
 
 Jam 20-an ane sudah sampai stasiun Porong untuk naik Commuter Line ke Bangil. Stasiun Porong ini stasiun kelas III (stasiun kecil) yang saat ini hanya melayani Commuter Line saja. Ada 3 jalur rel dengan 1 jalur sepur lurus. Lokasinya sangat dekat dengan Lumpur Lapindo.
 
@@ -55,9 +55,9 @@ Commuter Line yang ane tunggu adalah Kereta Penataran Tumapel[^3] yang jadwalnya
 
 _Kereta tiba pukul berapa?_
 
-![Tampilan Stasiun Bangil saat malam hari](https://i.ibb.co.com/0tnth68/IMG-9415-Large.jpg)
-![Commuter Line bersimpangan dengan kereta Ambarawa Express arah Sidoarjo](https://i.ibb.co.com/xgm5gJj/IMG-9419-Large.jpg)
-![Sepi yang naik dari Bangil, jam 23.30 WIB](https://i.ibb.co.com/VVX5937/IMG-9413-Large.jpg)
+![Tampilan Stasiun Bangil saat malam hari](https://i.ibb.co.com/0tnth68/IMG-9415-Large.webp)
+![Commuter Line bersimpangan dengan kereta Ambarawa Express arah Sidoarjo](https://i.ibb.co.com/xgm5gJj/IMG-9419-Large.webp)
+![Sepi yang naik dari Bangil, jam 23.30 WIB](https://i.ibb.co.com/VVX5937/IMG-9413-Large.webp)
 
 Akhirnya kereta datang jam 20.55 WIB dan sampai di Bangil jam 21.07 WIB. Sesampai di Bangil ane harus menunggu sekitar 2,5 jam untuk naik Blambangan Express di jam 23.30 an. Pergi keluar sebentar untuk makan bakso sambil jalan - jalan di sekitaran Stasiun. Sayang tiba - tiba turun hujan gerimis jadi segera balik lagi.
 
@@ -71,7 +71,7 @@ Oh iya Blambangan Express NG tiket Ekonominya udah tersedia kursi Ekonomi Premiu
 
 Ane tidak bisa ambil banyak foto kursi ini karena mau ambil foto kursi di sebelah nanti dikira pelecehan seksual (yang duduk cewek atau tante pakai celana ketat dan tidurnya agak miring, nungging??? ke arah ane) dan yang di belakang sudah pada tidur jadi posenya bakal jelek sekali.
 
-![Kursi Kereta Blambangan Express NG](https://i.ibb.co.com/P11Bsvz/IMG-9421.jpg)
+![Kursi Kereta Blambangan Express NG](https://i.ibb.co.com/P11Bsvz/IMG-9421.webp)
 
 Setelah habisin teh anget (Teh Potji) ane putuskan untuk tidur, meski ga bisa nyenyak karena ibu - ibu di sebelah ribet dan berisik banget.
 
@@ -95,11 +95,11 @@ Tiba - tiba ada suara keras membangunkan ane, lagi!. Si ibu itu teriak manggil t
 
 Sambil _scrolling_ sosmed dan jawab beberapa _mentions_ di [Gotosocial](https://gotosocial.org) tak terasa waktu sudah di angka 04.42 WIB tapi kereta belum juga sampai stasiun tujuan. Kereta terlambat karena persimpangan dengan kereta Probowangi sebelumnya. Tapi beberapa menit kemudian akhirnya kereta sampai di Stasiun Banyuwangi Kota. Ane langsung bangun dan keluar kereta tanpa pamit ke penumpang sebelah. Ang ang ang ang.
 
-![Emplasemen Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9425%20Large_Sxrdt84jj.jpeg)
+![Emplasemen Stasiun Banyuwangi Kota]({{ metadata.imgdia }}Bear/IMG_9425%20Large_Sxrdt84jj.webp)
 
 Penumpang yang turun di stasiun ini lumayan banyak, ane bergegas mencari Mushola untuk sholat Subuh. Alhamdulillah bisa jama'ah dengan beberapa penumpang lainnya. Langit sudah cerah saat kaki membawa ane keluar dari stasiun padahal jam masih menunjukkan pukul 5 kurang beberapa menit.
 
-![Fasad Stasiun Banyuwangi Kota](https://ik.imagekit.io/hjse9uhdjqd/Bear/stasiunBK_QDtNWQiyy.jpg)
+![Fasad Stasiun Banyuwangi Kota]({{ metadata.imgdia }}Bear/stasiunBK_QDtNWQiyy.webp)
 
 Rencana besar ane adalah ingin makan Nasi Tempong khas Banyuwangi asli, menurut pencarian di Google memberikan hasil Warung Nasi Tempong Mbok Nah berada pada urutan nomer 1. Jadi ane putuskan untuk sarapan disana. Akan tetapi ternyata warung ini baru buka jam 08.00 WIB, ane perlu menunggu 3 jam lagi.
 
@@ -107,7 +107,7 @@ Rencana besar ane adalah ingin makan Nasi Tempong khas Banyuwangi asli, menurut 
 
 Ane sudah menentukan tujuan perjalanan yang rutenya bisa dilihat di gambar di bawah ini.
 
-![rute di Banyuwangi](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9485_BRufQQqlA.jpg?updatedAt=1736915374348)
+![rute di Banyuwangi]({{ metadata.imgdia }}Bear/IMG_9485_BRufQQqlA.webp?updatedAt=1736915374348)
 
 1. Menunjukkan lokasi awal ane yaitu di Stasiun Banyuwangi Kota,
 2. Masjid Agung Baiturahman,
@@ -125,11 +125,11 @@ Sampai di Warung Mbok Nah sekitar jam 08.05 WIB namun si mboknya belum datang. _
 
 Tak berselang lama ada bapak - bapak yang sepertinya mau beli juga, datang - parkir motor - langsung masuk ke dalam (dari pintu _rolling door_ yang separo tertutup itu. Lho aneh, ane kira dia yang bantu - bantu Mbok Nah. Beberapa menit kemudian datang lagi orang dan langsung masuk, ane mulai curiga. Setelah _rolling door_ dibuka ternyata di dalam sudah ada beberapa orang yang antri, kurang ajar.
 
-![warung nasi tempong mbok nah](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9434%20Large_XERSJzTm2.jpeg?updatedAt=1736917214668)
+![warung nasi tempong mbok nah]({{ metadata.imgdia }}Bear/IMG_9434%20Large_XERSJzTm2.webp?updatedAt=1736917214668)
 
 Ya sudah ane ikutan antri dan pesan nasi tempong dengan lauk ikan laut dan telor dadar. Sedangkan tempe, tahu, dadar jagung, dan ikan asin sudah menjadi menu standar yang disediakan selain sayur dan sambal trasinya yang khas. Khusus untuk sambal ane lupa minta yang pedes sehingga dikasih sambal standar saja. Jadinya ga cukup terasa tempongannya (tamparannya).
 
-![nasi tempong mbok nah](https://ik.imagekit.io/hjse9uhdjqd/Bear/IMG_9437%20Large_vdBNUR0FP.jpeg?updatedAt=1736917078367)
+![nasi tempong mbok nah]({{ metadata.imgdia }}Bear/IMG_9437%20Large_vdBNUR0FP.webp?updatedAt=1736917078367)
 
 Tapi tetap enak, jauh lebih enak daripada nasi tempong yang pernah ane makan di Madiun dan Surabaya. Saat makan ane perhatikan bahwa banyak pembeli yang datang, setelah parkir langsung setengah berlari masuk ke warung seperti takut kehabisan saja. Memang warung lejen, ga heran.
 

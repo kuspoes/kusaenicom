@@ -8,7 +8,7 @@ tags:
   - travelling
 date: 2024-06-15T16:00:13.000Z
 relasi: kuliner
-og_images: https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_sgr?updatedAt=1718442166614
+og_images: https://media.kusaeni.com/jurnal/soto/soto_sgr?updatedAt=1718442166614
 comment: true
 ---
 
@@ -18,7 +18,7 @@ Untuk beberapa waktu saya tinggal di sekitaran Madiun dan tiba - tiba ingin seka
 
 Naik kereta Sancaka (97) pukul 18.56 WIB dan sampai di jam 20.00 WIB. Terlambat sekian detik. Setelah sholat Isya kemudian saya naik GoCar ke tempat jualan soto seger, waktu menunjukkan 20.15 WIB saat GoCar bergerak perlahan menerobos hujan yang turun.
 
-![stasiun solo balapan](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/solo_blp?updatedAt=1718442150788)
+![stasiun solo balapan]({{ metadata.imgdia }}jurnal/soto/solo_blp.webp)
 
 Tujuan saya adalah Soto Seger Hj Fathimah Colomadu yang terletak di depan Hotel Alana Kartosuro. Dulu saya pernah menginap di Hotel ini beberapa hari, karena bosan makan di hotel saya pilih makan di warung soto seger ini (kebetulan saat itu baru saja _opening_).
 
@@ -28,7 +28,7 @@ Tapi di tengah jalan saya putuskan untuk berubah tujuan untuk makan dulu Soto Ba
 
 ### Soto Banjar
 
-![soto banjar](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_bjr?updatedAt=1718442315210)
+![soto banjar]({{ metadata.imgdia }}jurnal/soto/soto_bjr.webp)
 
 Saya sampai jam 20.30an dan hujan sudah mulai mereda, tinggal menyisakan sedikit yang harus dituntaska. Saat itu depot sepi sekali hanya ada saya dan seorang pengemudi Gojek yang sepertinya membeli untuk pelanggannya. Saya memesan 1 soto Banjar ukuran besar dan 1 porsi sate Banjar berisi 5 tusuk sate ayam serta segelas es jeruk nipis tawar.
 
@@ -49,7 +49,7 @@ Nilai: 😄😄😄/5
 
 ### Soto Seger
 
-![Soto Seger Hj Fathimah](https://ik.imagekit.io/hjse9uhdjqd/jurnal/soto/soto_sgr?updatedAt=1718442166614)
+![Soto Seger Hj Fathimah]({{ metadata.imgdia }}jurnal/soto/soto_sgr.webp)
 
 Setelah istirahat sebentar di Rumah Banjar Garden Resto, saya melanjutkan destinasi selanjutnya ke Soto Seger Hj Fathimah di Colomadu. Pesan GoCar lagi dan perjalan dimulai jam 21.20 WIB.
 

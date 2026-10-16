@@ -6,8 +6,8 @@ date: 2021-04-11
 update: true
 ringkasan: "Rogot Nyowo sudah dimulai!. Semua anggota Trah Pitu mulai menyiapkan tumbal untuk menyelamatkan diri dari Kudro"
 keywords: "Ranjat Kembang, Sewu Dino, Janur Ireng, Simpleman, Trah Pitu, Padusan Pituh, Lemah Layat, Mira, Dela Atmojo"
-coverImg: "buku/ranjat-kembang_EQYxzyfUuZx.jpg"
-og_images: "buku/ranjat-kembang_EQYxzyfUuZx.jpg"
+coverImg: "buku/ranjat-kembang_EQYxzyfUuZx.webp"
+og_images: "buku/ranjat-kembang_EQYxzyfUuZx.webp"
 penulis: "Simpleman"
 genre:
   - Thriller
@@ -40,7 +40,7 @@ Menceritakan tentang Dela Atmojo, keturunan terakhir dari Keluarga Atmojo yang s
 
 Kisah dimulai dengan _flashback_ masa kecil Dela Atmojo yang menyaksikan bagaimana ibu kandungnya mati bunuh diri dengan menembakkan pistol ke dalam mulutnya, sampai ke cerita bagaimana Dela bisa terkena santet Sewu Dino yang dilepaskan oleh [Sabdo Kuncoro](https://kusaeni.com/baca/janurireng/).
 
-{{ echo |> relasi("sewuDino_lV8ZEwbP7.jpg", "Sewu Dino", "simpleman", "/baca/sewudino") }}
+{{ echo |> relasi("sewuDino_lV8ZEwbP7.webp", "Sewu Dino", "simpleman", "/baca/sewudino") }}
 Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo.
 {{ /echo }}
 
@@ -80,7 +80,7 @@ Ranjat Kembang semakin membuka fakta Trah Pitu yang konon info dari Simpleman ce
 
 Sebelum Ranjat Kembang muncul, Simpleman pernah membuat _threads_ di Wattpad dengan judul **Kudro**.
 
-{{ echo |> relasi("book15_LKlbAIFWW.png", "Kudro", "simpleman", "https://www.wattpad.com/1098009727-kudro-laweh") }}
+{{ echo |> relasi("book15_LKlbAIFWW.webp", "Kudro", "simpleman", "https://www.wattpad.com/1098009727-kudro-laweh") }}
 Bayu Saseno menyelam dalam ingatan masalalunya, mencari dimana keberadaannya dalam tatanan bunga Wijayakusuma.
 {{ /echo }}
 

@@ -15,11 +15,11 @@ style: "give-away-buku.css"
 ---
 
  <div id="allbox">
-        <div id="boxsatu"><img class="coverX" src="{{ metadata.imgdia }}buku/sewuDino_lV8ZEwbP7.jpg" /></div>
-        <div id="boxdua"><img class="coverX" src="{{ metadata.imgdia }}buku/janurIreng_aSww35pkIg4.jpg" /></div>
-        <div id="boxtiga"><img class="coverX" src="{{ metadata.imgdia }}buku/ranjat-kembang_EQYxzyfUuZx.jpg" /></div>
-        <div id="boxempat"><img class="coverX" src="{{ metadata.imgdia }}buku/karungNyawa_5-MZyq9Lp.jpg" /></div>
-        <div id="boxlima"><img class="coverX" src="{{ metadata.imgdia }}buku/Gending_Pencabut_Nyawa_1kcaLNm3cS.jpg" /></div>
+        <div id="boxsatu"><img class="coverX" src="{{ metadata.imgdia }}buku/sewuDino_lV8ZEwbP7.webp" /></div>
+        <div id="boxdua"><img class="coverX" src="{{ metadata.imgdia }}buku/janurIreng_aSww35pkIg4.webp" /></div>
+        <div id="boxtiga"><img class="coverX" src="{{ metadata.imgdia }}buku/ranjat-kembang_EQYxzyfUuZx.webp" /></div>
+        <div id="boxempat"><img class="coverX" src="{{ metadata.imgdia }}buku/karungNyawa_5-MZyq9Lp.webp" /></div>
+        <div id="boxlima"><img class="coverX" src="{{ metadata.imgdia }}buku/Gending_Pencabut_Nyawa_1kcaLNm3cS.webp" /></div>
  </div>
 
 Saya adalah orang yang tidak pandai dalam mengelola buku. Biasanya setelah selesai terbaca, buku itu akan terlempar entah kemana.

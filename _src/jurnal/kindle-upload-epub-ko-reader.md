@@ -33,7 +33,7 @@ Sebelum itu tentu harus mengatur agar Kindle (mode Ko Reader) terhubung ke WiFi 
 
 Kemudian di menu yang sama pilih _SSH Server_ akan muncul menu baru dan tekan beri centang pada `Login without password (DANGEROUS)`. Sementara tidak pakai _password_ dulu karena ane pelupa. Setelah itu baru kasih centang pada _SSH Server_ dan catat _port_-nya (dalam hal ini punya ane di _port_ `2222`.
 
-![Ko Reader: pengaturan SSH Server]({{ metadata.imgdia }}jurnal/kindle/Reader_The%20Name%20of%20the%20Rose_1.webp)
+![Ko Reader: pengaturan SSH Server]({{ metadata.imgdia }}jurnal/kindle/Reader_The-Name-of-the-Rose-1.webp)
 
 Maka _server SSH_ sudah tersedia dan bisa diakses melalui IP dan _port_ yang sudah ditentukan, bisa pakai CLI/Terminal atau dengan _File Manager_. Ane pilih yang kedua dan pakai Nimble Commander karena punya 2 panel terpisah dalam 1 jendela aplikasi. Di Nimble SSH bisa diakses dengan SFTP atau _Secure File Transfer Protocol_. Konfigurasi melibatkan alamat IP tujuan, _username_, _password_ dan _port_.
 

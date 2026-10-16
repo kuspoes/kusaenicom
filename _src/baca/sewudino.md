@@ -5,8 +5,8 @@ title: "Sewu Dino"
 date: 2020-08-17
 ringkasan: "Pertempuran antar keluarga dari Trah Pitu yang memakan banyak korban"
 keywords: "Sewu Dino, Janur Ireng, Ranjat Kembang, Trah Pitu, Simpleman, Horor, Santet"
-coverImg: "buku/cover/sewuDino_lV8ZEwbP7.jpg"
-og_images: "buku/sewuDino_lV8ZEwbP7.jpg"
+coverImg: "buku/cover/sewuDino_lV8ZEwbP7.webp"
+og_images: "buku/sewuDino_lV8ZEwbP7.webp"
 penulis: "Simpleman"
 genre:
   - Thriller
@@ -52,11 +52,11 @@ Ini adalah buku pertama dari _Universe_ Trah Pitu. Isi buku ini sebenarnya sudah
 
 Buku kedua adalah [Janur Ireng](https://kusaeni.com/baca/janurireng/) dan dilanjut [Ranjat Kembang](https://kusaeni.com/baca/ranjatkembang/) sebagai buku ketiga.
 
-{{ echo |> relasi("janurIreng_aSww35pkIg4.jpg", "Janur Ireng", "simpleman", "/baca/janurireng") }}
+{{ echo |> relasi("janurIreng_aSww35pkIg4.webp", "Janur Ireng", "simpleman", "/baca/janurireng") }}
 Ingatan hitam yang menyeruak dan membuka tabir gelap sebuah peristiwa masa lampau yang perlahan merangkak naik dan menunjukkan kilasan kepedihan dari sebuah perjanjian sedarah yang kental. Kisah dalam buku ini jauh lebih kelam dan gelap dibandingkan dengan Sewu Dino.
 {{ /echo }}
 
-{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.jpg", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
+{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.webp", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
 Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
 {{ /echo }}
 

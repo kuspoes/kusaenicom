@@ -6,8 +6,8 @@ date: 2026-04-13
 update: false
 ringkasan: "Rumahnya indah tapi *layout*-nya aneh dan ini bukan satu - satunya. Dari soal arsitek sampai ke pembunuhan berantai"
 keywords: "Uketsu, Strange Houses, Jepang, Misteri, Novel"
-coverImg: "buku/cover/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
-og_images: "buku/strange_houses_uketsu%20Medium_pprwwt90e.jpeg"
+coverImg: "buku/cover/strange_houses_uketsu%20Medium_pprwwt90e.webp"
+og_images: "buku/strange_houses_uketsu%20Medium_pprwwt90e.webp"
 penulis: "Uketsu"
 genre:
   - Thriller

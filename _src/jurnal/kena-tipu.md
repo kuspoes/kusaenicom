@@ -25,12 +25,12 @@ Pencariannya ke _marketplace_ seperti Shopee dan Tokopedia, tapi ane belum menem
 
 Untuk pembayaran ane minta pakai rekber dari Shopee dan Tokopedia, tapi penjual menolak dan meminta transaksi melalui aplikasi [KiriminAja](https://https://kiriminaja.com/) yang katanya adalah aplikasi rekber. Ane agak ragu karena tidak pernah pakai jasa ini, ane coba kontak KiriminAja pakai whatsapp ternyata dibalas pakai bot. Sehingga ane kesulitan untuk memeriksa kebenarannya.
 
-![Fitur layanan KiriminAja](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/SCR-20250615-jyju_oad6cok0c.png?updatedAt=1749959681574)
+![Fitur layanan KiriminAja]({{ metadata.imgdia }}jurnal/tipu/SCR-20250615-jyju_oad6cok0c.webp)
 
 Si penjual mengatakan bahwa aplikasi KiriminAja ini bisa dipakai untuk rekber karena dia bisa COD tanpa _marketplace_ seperti yang ditulis di situs kiriminaja.com. Prosesnya adalah pembeli mengtransfer sejumlah uang ke _Virtual Account_ dari KiriminAja yang nantinya berupa nomer _virtual account_ dengan nama pembeli.
 
-![Whatsapp Penipu](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/IMG_1229_-hGmtKnGo.PNG?updatedAt=1749959613656)
-![Whatsapp Penipu](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/IMG_1235_awwZBdz1m.PNG?updatedAt=1749959610739)
+![Whatsapp Penipu]({{ metadata.imgdia }}jurnal/tipu/IMG_1229_-hGmtKnGo.webp)
+![Whatsapp Penipu]({{ metadata.imgdia }}jurnal/tipu/IMG_1235_awwZBdz1m.webp)
 
 Melihat ini ane jadi beranikan diri untuk mencoba karena _virtual account_ pasti aman. Ternyata disinilah letak permasalahannya. Setelah ane bayar penjual mulai _slow respond_ dan tidak menjawab pesan dari ane.
 
@@ -40,7 +40,7 @@ Ane mulai curiga kalau kena tipu. Jadi hal pertama yang ane cek adalah _virtual 
 
 Dari percakapan dengan CS manusia disebutkan bahwa KiriminAja bukan rekber dan nomer _virtual account_ yang diberikan bukan dari KiriminAja. Setelah mendapatkan konfirmasi dari KiriminAja, ane hubungi nomer si penipu, tak lama tiba - tiba ada pesan Whatsapp masuk yang mengaku dari kirimin aja mengatakan meminta konfirmasi apakah siap menerima barang atau minta _refund_. Ane ambil _screenshot_ dan kirim ke CS KiriminAja untuk dicek dan mereka kembali menyatakan bahwa nomer dari pesan tersebut bukan nomer resmi dan terdaftar di KiriminAja. Sudah jelas penipu!.
 
-![Penipu mengaku dari KiriminAja](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/SCR-20250615-jfev_Ilri7PxHI.png?updatedAt=1749960678231)
+![Penipu mengaku dari KiriminAja](https://ik.imagekit.io/hjse9uhdjqd/jurnal/tipu/SCR-20250615-jfev_Ilri7PxHI.webp?updatedAt=1749960678231)
 
 ## Menginformasikan ke CS BRI
 

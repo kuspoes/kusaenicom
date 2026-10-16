@@ -751,6 +751,7 @@ img.galeri {
 
 img.layang {
     width: 300px;
+	height: auto;
     transform: rotate(-4deg);
     transition: transform 0.2s;
     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 3px 3px;
@@ -758,10 +759,9 @@ img.layang {
 
 .selayang__cover:hover img.layang {
     transform: rotate(0deg) scale(1.08);
-    /* box-shadow:
+    box-shadow:
         rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    box-shadow: rgba(0, 0, 0, 045) 0px 25px 20px -20px;
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
 }
 
 .selayang__meta dt {
