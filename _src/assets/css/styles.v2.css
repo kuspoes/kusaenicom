@@ -1389,6 +1389,10 @@ a:visited {
     border-bottom: none !important;
 }
 
+a.no-border:link, a.no-border:hover {
+    border: none;
+}
+
 .nav a:link {
     text-decoration: none !important;
     border: none !important;

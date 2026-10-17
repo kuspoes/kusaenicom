@@ -5,11 +5,12 @@ kategori: tentang
 date: 2024-06-03
 templateEngine: vto, md
 style: "tentang.css"
+lightbox: true
 ---
 
 <div class="kus_pp h-card">
         <a class="u-url hilang" rel="me" href="/">kusaeni</a>
-        <img class="kus_avatar u-photo" src="{{ metadata.imgdia }}kus/kusaeni_poly_5BR06cVrf_152.webp" alt="kusaeni" image-size>
+        <img class="kus_avatar u-photo" src="{{ metadata.imgdia }}kus/kusaeni_potrait.webp" alt="kusaeni" image-size>
 <p>Saya adalah seorang <span class="underline">blogger musiman</span> yang menulis di situs ini dengan penuh ke-tidak-konsistensian.</p>
 
 <p>Saya menulis jika ada keinginan untuk menulis, jika tidak maka kegiatan utama saya adalah makan, tidur, &amp; kadang kala bepergian atau <a href="#fotografi">travelling</a>.</p>
@@ -51,7 +52,7 @@ style: "tentang.css"
 
 <p><mark class="fuck_eipstein_trump"><del class="abu"><em>Source code</em> blog ini di<em>hosting</em> di <a href="https://upcloud.com/">Upcloud</a>, hanya <i>file</i> HTML saja hasil dari <code>build</code> di local. Kamu bisa melihat <i>repository</i> kode blog ini di <a href="https://notabug.org/kuspoes/kusaicom" target="_blank">Notabug</a>.</del></mark></p>
 
-<p>Karena ada masalah dengan Upcloud, maka <em>hosting</em> blog ini dipindahkan ke <del><a href="https://deno.com" target="_blank">Deno Deploy</a></del> <a href="https://netlify.com" target="_blank">Netlify</a>, dan Cloudflare, sedangkan <em>source code</em> ditaruh di <a href="https://brew.bsd.cafe/poes/kusaicom" target="_blank">brew.bsd.cafe</a> dan <a href="https://github.com/kuspoes/kusaenicom" target="_blank">Github</a>. Jika berminat memakai blog ini sebagai dasar pembuatan blog Anda bisa meng-<i>clone</i> dari repositori Codeberg atau Github. Cara pemakaiannya sudah saya sebutkan di <i>file</i> <code>README.md</code>.</p>
+<p>Karena ada masalah dengan Upcloud, maka <em>hosting</em> blog ini dipindahkan ke <del><a href="https://deno.com" target="_blank">Deno Deploy</a></del> <a href="https://netlify.com" target="_blank">Netlify</a>, dan Cloudflare. Namun kemudian diputuskan untuk meng<i>hosting</i> sendiri di Tierhive dengan NetBSD dan Lighttpd.  Sedangkan <em>source code</em> ditaruh di <a href="https://brew.bsd.cafe/poes/kusaicom" target="_blank">brew.bsd.cafe</a> dan <a href="https://github.com/kuspoes/kusaenicom" target="_blank">Github</a>. Jika berminat memakai blog ini sebagai dasar pembuatan blog Anda bisa meng-<i>clone</i> dari repositori Codeberg atau Github. Cara pemakaiannya sudah saya sebutkan di <i>file</i> <code>README.md</code>.</p>
 
 <p class="sidenote">Domain dan hosting situs ini sebelumnya dilayani oleh <a href="https://www.dracoola.com" title="Dracoola Multimedia">Dracoola</a> (sekarang sudah diakuisi Apik.co.id). Kemudian agar mudah dan cepat saya pindah hosting ke <mark class="fuck_eipstein_trump"><del>Upcloud</del></mark> Deno Deploy.</p>
 
@@ -149,12 +150,19 @@ style: "tentang.css"
 
 <p>Saya menulis resensi buku pertama kali sekitar tahun 2009 (sayang arsipnya hilang). Memang agak jarang karena tidak semua buku pada saat itu ditulis resensinya. Namun saat mengalami <i>hiatus</i>, situs ini dulu memakai <a href="https://affectionate-boyd-df8c4e.netlify.app/">halaman depan</a> hanya  tentang daftar buku saja dengan sedikit resensi sebagai penyerta.</p>
 
-<p>Setelah membaca buku <a href="https://kusaeni.com/baca/tokyozodiacmurders/">Tokyo Zodiac Murder's</a> saya mengdeklarasikan diri sebagai penggemar novel - novel <i>crime mistery</i> yang ditulis oleh penulis dari Jepang seperti Soji Shimada, Seishi Yokomizo, dan Keigo Higashino.</p>
+<p>Setelah membaca buku <a href="https://kusaeni.com/baca/tokyozodiacmurders/">Tokyo Zodiac Murder's</a> saya mengdeklarasikan diri sebagai penggemar novel - novel <i>crime mistery</i> atau 新本格派 <em>shin honkaku</em> yang ditulis oleh penulis dari Jepang seperti Soji Shimada, Seishi Yokomizo, dan Keigo Higashino.</p>
 
-<p>Setelah tahun 2024 saya sudah jarang membeli buku <i>hard cover</i> dan lebih memilih untuk membaca dalam versi e-book di Kindle maupun di iOS Books app. Sebagian besar buku - buku (<i>hardcover</i>) sudah saya berikan saat <a href="https://kusaeni.com/jurnal/give-away-buku/"><i>giveaway</i> buku tahun lalu</a>.<p>
+<p>Setelah tahun 2024 saya sudah jarang membeli buku <i>hard cover</i> dan lebih memilih untuk membaca dalam versi e-book di Kindle maupun di iOS Books app. Sebagian besar buku - buku (<i>hardcover</i>) sudah saya berikan saat <a href="https://kusaeni.com/jurnal/give-away-buku/"><i>giveaway</i> buku tahun yang lalu</a>.<p>
 
-<p>Kemudian saya tambahkan juga <a href="/baca/rating">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>
+<p>Saya tambahkan juga <a href="/baca/rating">rating</a> sebagai hasil penilaian saya terhadap isi dan kualitas buku tersebut. Penilaian ini subyektif berdasarkan asumsi saya dan bisa jadi tidak sesuai dengan pendapat orang lain.</p>
 
 <h3>RunBSD</h3>
 
-![Kusaeni RunBSD]({{ metadata.imgdia }}Tentang/SCR-20260915-pnzp__NvO6Z8NX.png){.lebar .lepas}
+<div class="gal" id="glightbox"> 
+	<a class="no-border" style="grid-column:1/-1" href="{{ metadata.imgdia }}Tentang/nbsd_poes.png" data-gallery="gallery">
+		<img src="{{ metadata.imgdia }}Tentang/nbsd_poes.webp" class="lepas lebar" image-size>
+	</a> 
+</div>
+
+<p>Blog atau jurnal ini di-<i>host</i> di TierHive VPS dengan 1vCPU, 768MB RAM, dan 3GB SSD. Berjalan di atas <a href="https://www.netbsd.org/" target="_blank">NetBSD</a> 11 dan diladeni melalui <a href="https://www.lighttpd.net/" target="_blank">Lighttpd</a>.</p>
+
