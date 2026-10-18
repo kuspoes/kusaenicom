@@ -30,9 +30,13 @@
       "description": "Deploy ke Egois",
       "command": "deno task build && rsync -r -av --progress  _site/ poes@egois:/home/poes/www1/kusaicom"
     },
+	"px": {
+		"description": "fetch pixelfed photos URL",
+		"command": "deno run -A _plugins/pixelfed.ts"
+	},
 	"hive": {
 	 "description": "Deploy ke Tierhive NetBSD",
-	 "command": "deno task build && sleep 1 && rsync -r -av --progress _site/ poes@hive:/var/www/kusaicom"
+	 "command": "deno task px && sleep 1 && deno task build && sleep 1 && rsync -r -av --progress _site/ poes@hive:/var/www/kusaicom"
 	},
     "new": {
       "description": "Create new content or code using artifacts",
