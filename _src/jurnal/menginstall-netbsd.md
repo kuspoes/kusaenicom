@@ -13,7 +13,7 @@ relasi: bsd
 code: true
 favorit: false
 comment: true
-tocx: true
+tocx: false
 draft: false
 lightbox: true
 style: "galeri.css"
@@ -58,9 +58,7 @@ Jadi ketika menemukan layanan VPS yang sangat murah (NAT VPS) dan mendukung peng
 
 Setelah mendaftar dan mengisi saldo sekitar 62 ribu rupiah, ane kemudian membuat *VPS Instance* dengan nama `nbsd` dengan lokasi *server* di Singapore. Setelah selesai ane mendapatkan informasi tentang IP lokal (NAT) yang dipakai dimana IP ini bisa ane pilih sendiri, jadi informasi IP ane menjadi seperti ini. Salah satu hal penting kenapa perlu tau detail IP karena di TierHive tidak memberikan fitur DHCP secara gratis, berbayar dengan harga yang murah namun ane tidak mau bayar ha ha ha.
 
-<#toc#>
-
-## Manual Install
+#### Manual Install
 
 Karena hendak memakai NetBSD maka ane pilih **Manual Install** di pilihan OS, sehingga ane perlu menambahkan **Virtual Media**.
 Caranya mudah di **VPS Instances** > **Manage: nbsd** klik pada ikon CDROM dengant tulisan **Virtual Media**, kemudian masukkan URL dari tautan ke *file* ISO yang dipilih. Ane mau pakai NetBSD jadi ane masukkan <code>https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.0/amd64/installation/cdrom/boot.iso</code>. 
@@ -127,7 +125,7 @@ Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*insta
 Kemudian lanjutkan proses install seperti biasa atau sesuai dengan panduan [resmi dari NetBSD](https://www.netbsd.org/docs/guide/en/chap-exinst.html). Ane ga mau ribet karena sumber daya VPS ini minimalis maka ane pakai rekomendasi NetBSD saat bikin partisi dan kemudian pilih **Minimal Installation**, ane juga mengaktifkan SSH agar nanti bisa akses ke *shell* tanpa VNC. Setelah proses instalasi selesai  kemudian *reboot system*.
 
 
-## Post Install
+#### Post Install
 
 1. **Aktifkan vesa saat *boot***
 Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk memastikan agar vesa secara otomatis dipanggil, maka perlu merubah *file* `/boot.cfg` menjadi seperti ini
@@ -146,7 +144,16 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 
 	Dengan pengaturan ini maka setiap *boot* VNC akan menganggap *console* NetBSD memakai grafis `vesa`. Namun ini hanya berguna untuk akses lewat web VNC saja, lebih baik akses NetBSD memakai SSH.
 
-2. **Aktifkan SSH**, ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka caranya mudah sekali. Jalankan saja perintah berikut di *shell*
+2. **Tambahkan *user***, ini penting biar ga selalu login pakai akun `root`, sekalian nanti pakai `doas` supaya bisa jalankan perintah dengan elevasi selevel `root`
+
+	```shell-session
+	# useradd -m -G whell poes
+	# passwd poes
+	```
+
+	Perintah di atas akan membuat akun baru dengan nama `poes` dan masukkan ke grup `wheel`, sekalian kasih *password* buat login.
+
+3. **Aktifkan SSH**, ane sudah aktifkan SSH saat proses *install* berjalan namun jika belum maka caranya mudah sekali. Jalankan saja perintah berikut di *shell*
 
 	```shell-session
 	# vi /etc/rc.conf
@@ -165,29 +172,14 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
 	# service sshd start
 	```
 
-	<div class="postnotes">
-	<h5>SSH dengan <i>passwordless login</i></h5>
-	<p>Metode ini sangat disarankan karena sebagian besar serangan melalui <i>port</i> SSH akan mencoba melakukan <i>login</i> dengan <i>username</i> dan <i>password</i> acak. Oleh karena itu mematikan fungsi <i>input password </i>menjadi sebuah tindakan pencegahan yang sangat manjur.</p>	
-
-	<p>Ane pernah menulis tentang pengamanan seperti ini di artikel lain berjudul <a href="https://kusaeni.com/jurnal/freebsd-blocklist/#pengamanan-ssh-lanjutan">Blocklistd: cara ampuh menghalau penyusup di FreeBSD</a> yang mana secara prinsip sama.</p>
-	</div>
-3. **Tambahkan *user***, ini penting biar ga selalu login pakai akun `root` apalagi kalo mengaktifkan pengaturan untuk menolak akses SSH denngan *useer* `root`, 
-	```shell-session
-	# useradd -m -G whell poes
-	# passwd poes
-	```
-
-	Perintah di atas akan membuat akun baru dengan nama `poes` dan masukkan ke grup `wheel`, sekalian kasih *password* buat login.
-
-
-4. ***Install package manager***, meski sudah ada `pkg_add` namun di NetBSD ada [`pkgin`](https://pkgin.net/) yang lebih mudah dan familiar untuk dipakai, tapi sebelumnya harus melakukan konfigurasi `pkg_add` agar bisa menemukan letak repositori dari paket aplikasin.
+4. ***Install package manager***, meski sudah ada `pkg_add` namun di NetBSD ada `pkgin` yang lebih mudah dan familiar untuk dipakai, tapi sebelumnya harus melakukan konfigurasi `pkg_add` agar bisa menemukan letak repositori dari paket aplikasin.
 
 	```shell-session
 	# export PKG_PATH="https://cdn.NetBSD.org/pub/pkgsrc/packages/NetBSD/$(uname -p)/$(uname -r | cut -d_ -f1)/All"
 	# pkg_add -v pkgin
 	```
 	
-	Setelah `pkgin` terpasang, bisa pakai untuk menggantikan `pkg_add` untuk mengeola paket - paket yang lainnya misalnya `vim`, `git`, maupun `doas`.
+	Setelah `pkgin` terpasang, ane bisa pakai untuk memasang paket - paket yang lainnya misalnya `vim`, `git`, maupun `doas`.
 
 	```shell-session
 	# pkgin update
@@ -220,7 +212,6 @@ Saat *booting* ulangi proses seperti sebelumnya untuk memakai grafis vesa. Untuk
     Semua konfigurasi ditaruh di <code>/usr/pkg/etc/priv/username</code>.
     </aside>
 
-	Jika mempergunakan *user* selain `root` saat SSH *session* maka memasang `doas` maupun `priv` sangat mempermudah saat memerlukan operasi perintah setara level `root`.
 
 6. **Aktifkan IPv6**{#postinstall_ipv6},
 Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi mari kita pakai.
@@ -267,14 +258,5 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 
 	kemudian *restart interface* yang digunakan.
 
-7. Atur kustom *prompt* karena yang *default* tidak cukup bagus (jelek dan tak informatif). *Prompt* yang ane pakai sederhana hanya menampilkan nama, *hostname*, *path* saat ini, dan tanda jenis *user*. Rubah atau tambahkan isi *file* `~/.shrc` seperti ini
-	```sh
-		export PS1='$(whoami)@nbsd:[$PWD] '
-		case `id -u` in
-		  0) PS1="${PS1}# ";;
-		  *) PS1="${PS1}$ ";;
-		esac
-	```
-	Untuk *hostname* sebenarnya bisa pakai `hsname='echo hostname | cut -d"." -f1'`, namun karena ini hanya untuk ane maka hostname ane *hard code* dengan mengetik `@nbsd`
 	
-	Simpan, keluar, dan *reload file* konfigurasi `. ~/.shrc`
+
