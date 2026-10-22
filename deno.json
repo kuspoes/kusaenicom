@@ -32,7 +32,7 @@
     },
 	"hive": {
 	 "description": "Deploy ke Tierhive NetBSD",
-	 "command": "deno task build && sleep 1 && rsync -r -av --progress _site/ poes@hive:/var/www/kusaicom"
+	 "command": "deno run -A _plugins/pixelfed.ts && sleep 1 && deno task build && sleep 1 && rsync -r -av --progress _site/ poes@hive:/var/www/kusaicom"
 	},
     "new": {
       "description": "Create new content or code using artifacts",

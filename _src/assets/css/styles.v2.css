@@ -669,6 +669,7 @@ img.kus-svg {
     border: none !important;
     width: 152px;
     opacity: 1;
+	margin-bottom: -1em;
 }
 
 img.no-border,
