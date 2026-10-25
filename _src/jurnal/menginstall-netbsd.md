@@ -258,5 +258,17 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 
 	kemudian *restart interface* yang digunakan.
 
-	
-
+7. Prompt sederhana, saat kerja di server atau *remote* maka merubah tampilan prompt atau PS1 sangat bermanfaat karena tampilan bawaan dari NetBSD tak intuitif alias ga jelas dan jelek. Tapi memang pengaturan prompt di `sh` tidak sefleksible dan semudah `bash`, namun untuk urusan kerja di SSH (server) seperti ini sudah cukup
+	Oleh karena itu rubah isi *file* `~/.profile` atau `~/.shrc`
+	```shell-session
+ 	hsname='echo nbsd.hive | cut -d"." -f1'
+	export PS1='$(whoami)@nbsd:[$PWD] '
+	case `id -u` in
+	  0) PS1="${PS1}# ";;
+	  *) PS1="${PS1}$ ";;
+	esac
+	```
+	Reload `sh` atau panggil konfigurasi dengan `. ~/.shrc` atau `. ~/.profile`. Tampilan prompt akan berubah seperti ini
+	```shell-session
+	poes@nbsd:[/home/poes] $
+	```
