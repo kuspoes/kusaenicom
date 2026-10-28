@@ -33,7 +33,7 @@ Tentu saja apa yang bisa diharapkan dari Google Map kalo lokasinya di dalam pasa
 
 Si abang Gojek nurunin ane di kampung sebelah pasar karena Google Map menyebut disitu tempat terdekatnya. Lokasinya dekat dengan Warung Mak Yeye yang terkenal itu (tutup kalo siang).
 
-<iframe class="peta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.6525280494121!2d112.73799932435037!3d-7.3014294044492365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb7ee97ae2a9%3A0xe53e5b4dd8de3445!2sSambel%20Tongkol%20Mbak%20Ju!5e0!3m2!1sen!2sid!4v1737195876940!5m2!1sen!2sid" width="750" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="peta" width="750" height="500" style="border:0;" loading="lazy" src="https://www.openstreetmap.org/export/embed?bbox=112.73674517869951%2C-7.30302838892491%2C112.73895263671875%2C-7.30082287027104&amp;layer=hot" style="border: 1px solid black"></iframe>
 
 Alhasil ane harus muter - muter dulu untuk masuk ke DTCnya. Setelah capek muter - muter, ane akhirnya bisa masuk DTC lewat jalur jalan parkir mobil dan langsung mengarah ke Lantai 1. Di dalam pasar Google Map ini cupu, tidak bisa menunjukkan arah yang tepat. Ane seperti sedang di dalam lorong - lorong labirin dengan tumpukan daster dan celana jeans KW yang bertebaran di kanan kiri. Semakin ke dalam semakin sepi penjualnya, hanya ada deretan stand kosong dan tertutup.
 
