@@ -20,7 +20,7 @@ resensi: “Di akhir tahun 1937, ketika Jepang mulai masuk ke perang dunia kedua
 rating: 4 
 beli: https://pushkinpress.com/book/the-honjin-murders-2/ 
 dimana: Pushkinpress 
-draft: true 
+draft: false 
 tags: 
 - buku 
 - misteri 
