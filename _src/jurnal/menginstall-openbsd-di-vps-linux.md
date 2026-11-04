@@ -76,7 +76,7 @@ $ doas mount /dev/vnd0a /mnt
 3. _Edit file_ `boot.conf` agar bisa membaca _serial console_, (jika _file_ `boot.conf` tidak ada bisa dibuat dengan manual)
 
 ```shell-session
-$ doas mkdir /mnt/etc
+$ doas mkdir -p /mnt/etc
 $ doas echo "set tty com0" > /mnt/etc/boot.conf
 ```
 

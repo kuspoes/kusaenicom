@@ -75,13 +75,13 @@ Ane tak pernah meragukan kualitas cerita misteri karya Seishi Yokomizo, beliau a
 
 Pertama membaca bukunya yang berjudul [The Inugami Curse](/baca/the-inugami-curse/) ane sudah kagum dengan penulisannya, bukunya adalah literatur klasik. Dibuat antara tahun 1946 - 1975 membuat ane harus menurunkan ekspektasi dan berusaha menyelam di era itu yang metode dan alat penyelidikan belum secanggih sekarang. Tapi ternyata ekspektasi rendah ane tidak berbuah manis karena isi bukanya adalah kumpulan _masterpieces_, sejak saat itu Yokomizo adalah penulis favorit ane.
 
-{{ echo |> relasi("TheInugamiCurses_aLfIHO09R.jpeg", "The Inugami Curses", "Seishi Yokomizo", "/baca/the-inugami-curse") }}
+{{ echo |> relasi("TheInugamiCurses_aLfIHO09R.webp", "The Inugami Curses", "Seishi Yokomizo", "/baca/the-inugami-curse") }}
 Kutukan yang menimpa keluarga Inugami, saat waris dibacakan, satu persatu akan mati
 {{ /echo }}
 
 Namun untuk buku ini ada sehelai sembilu di hati, bukan tentang kualitas Seishi melainkan betapa pendeknya cerita Murder at The Black Café, hanya ada 9 bab saja (11 dengan prolog dan epilog) bandingkan dengan The Inugami Curses yang terdiri dari 35 bab!. Begitu juga dengan porsi kemunculan Detektif Kindaichi yang kesannya cuma sebentar saja. Ini mengingatkan kekecewaan ane juga pada buku [Murder in The Crooked House](baca/murderinthecrookedhouse/) karya Soji Shimada yang memiliki pola serupa.
 
-{{ echo |> relasi("murder_crocked_house_-KeZxKoOZ.jpg", "Murder in The Croocked House", "Soji Shimada", "/baca/murder-in-the-crooked-house") }}
+{{ echo |> relasi("murder_crocked_house_-KeZxKoOZ.webp", "Murder in The Croocked House", "Soji Shimada", "/baca/murder-in-the-crooked-house") }}
 Pembunuhan di Rumah Miring. Kasus ruang tertutup yang nyaris sempurna
 {{ /echo }}
 

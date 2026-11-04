@@ -9,8 +9,8 @@ templateEngine: md, vto
 ---
 
 <div class="gal" id="glightbox">  
-  <a style="grid-column:1/-1" href="{{ metadata.imgdia }}galeri/DSC_1096_plzp8PY5F.webp" data-gallery="gallery">
-      <img src="{{ metadata.imgdia }}galeri/thumb/DSC_1096_plzp8PY5F.webp" class="lepas lebar" image-size>
+  <a style="grid-column:1/-1" href="{{ metadata.imgdia || metadata.imgdiah2h }}galeri/DSC_1096_plzp8PY5F.webp" data-gallery="gallery">
+      <img src="{{ metadata.imgdia || imgdiah2h }}galeri/thumb/DSC_1096_plzp8PY5F.webp" class="lepas lebar" image-size>
   </a>
 </div>
 

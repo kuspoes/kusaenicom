@@ -7,7 +7,7 @@ update: false
 ringkasan: "Kutukan yang menimpa keluarga Inugami, saat waris dibacakan, satu persatu akan mati"
 keywords: "Seishi Yokomizo, Kindaichi, Detektif, Inugami, Jepang, Misteri, Novel"
 coverImg: "buku/cover/TheInugamiCurses_aLfIHO09R.webp"
-og_images: "buku/TheInugamiCurses_aLfIHO09R.webp"
+og_images: "buku/cover/TheInugamiCurses_aLfIHO09R.webp"
 penulis: "Seishi Yokomizo"
 genre:
   - Thriller
