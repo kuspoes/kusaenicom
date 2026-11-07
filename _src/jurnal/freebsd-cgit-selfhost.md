@@ -89,6 +89,7 @@ Validasi dengan perintah ini
 ```
 Terpantau `fcgiwrap` sudah berjalan di mode `tcp` *port* `9000`.
 
+
 ### Konfigurasi Caddy *reverse proxy*
 
 Setelah pengaturan di atas seharusnya `cgit` bisa diakses melalui IP `10.0.0.7:9000` , agar bisa ditempelkan ke domain maka ane buat pengaturan di Caddyfile (di *host*), seperti ini
@@ -201,6 +202,8 @@ Ini akan membuat folder `/home/legit` dan folder `repopo` serta merubah kepemili
 Bunuh `spawn-fcgi` dan `fcgiwrap` yang sedang berjalan kemudian ulangi perintah untuk menjalankannya. Untuk lebih mudah silakan membuat *script* `rc.d` saja.
 
 Kemudian kunjungi URL dari repo dan pastikan bahwa `cgit` sudah berjalan dengan baik.
+
+{{ comp.subs() }}
 
 ### Konfigurasi `cgit`
 

@@ -96,4 +96,4 @@ Selanjutnya ane ingin menamatkan buku keempat dari Ayatsuji yaitu [The Clock Hou
     })
 }}
 
-
+{{ comp.subs() }}

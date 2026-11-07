@@ -1,7 +1,11 @@
             <div class="footer">
                 <span class="h-card">
                 <a class="u-url hilang" rel="me" href="/">kusaeni</a>
+				{{ if kusus }}
+                <a class="no-border" href="/tentang"><img class="item_cover lepas bayang cover_kusaeni" style="margin-bottom: 2em" src="{{ metadata.imgdia }}kus/cover_kusaeni.png" alt="kusaeni" image-size></a>
+				{{ else }}
                 <img class="kus-svg" src="{{ metadata.imgdia }}kus/kusaeni_potrait.webp" alt="kusaeni" image-size>
+				{{ /if }}
                 </span>
                 <p>kusaeni&#169;<script>document.write(new Date().getFullYear())</script> dibuat dengan <a href="https://lume.land">lume</a> dan <a href="https://deno.com">deno</a></p>
                 <p>temukan saya di <a href="https://twitter.com/kuspoes">twitter</a> atau <a href="https://sok.egois.org/@poes">fediverse</a></p>

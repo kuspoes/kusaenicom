@@ -28,7 +28,7 @@
     },
     "egois": {
       "description": "Deploy ke Egois",
-      "command": "deno task build && rsync -r -av --progress  _site/ poes@egois:/home/poes/www1/kusaicom"
+      "command": "deno run -A _plugins/pixelfed.ts && sleep 1 && deno task build && rsync -r -av --progress  _site/ poes@egois:/home/poes/www1/kusaicom"
     },
 	"hive": {
 	 "description": "Deploy ke Tierhive NetBSD",

@@ -148,3 +148,5 @@ Namun untuk ini pengaturan `securelevel` harus tetap diatur di nilai `-1`.
 2. BastilleBSD, *[Converting to Pkgbase](https://docs.bastillebsd.org/en/latest/chapters/pkgbase.html#converting-to-pkgbase){target="_blank"}*, BastilleBSD Docs, 2025
 3. The FreeBSD Foundation, *[pkgbasify convert a FreeBSD system to use pkgbase](https://github.com/FreeBSDFoundation/pkgbasify){target="_blank"}*, Github, 2026
 4. The FreeBSD Foundation, *[FreeBSD Handbook chapter 16. Security: Secure Level](https://docs.freebsd.org/en/books/handbook/security/#security-secure-levels){target="_blank"}*, FreeBSD Handbook, 2026
+
+{{ comp.subs() }}

@@ -437,14 +437,11 @@ nav.toc {
 }
 
 .subscribe {
-    border: 1px solid #ccd5ae;
-    background-color: rgba(216, 226, 220, 0.1);
-    /* border-top-left-radius: 0.375em;
-    border-top-right-radius: 0.375em; */
+    border: 1px solid rgba(64, 61, 57, 0.4);
+	background-color: rgba(241, 240, 236, 0.9);
     border-radius: 0.375em;
-    border-bottom: 4px solid #fec89a;
     padding: 0em 1em;
-    margin: 4em 0;
+    margin: 2em 0;
 }
 
 .subscribe p.mau {
@@ -2083,6 +2080,8 @@ a.related_post_link {
 
 }
 
+/* MOBILE */
+
 @media only screen and (max-width: 899px) {
     * {
         margin: 0em;
@@ -2142,6 +2141,12 @@ a.related_post_link {
         width: 95%;
         margin-left: 1em;
     }
+
+	p.ncaption {
+		width: 90%;
+		margin: auto;
+
+	}
 
     #related_post {
         width: 98%;
@@ -2367,6 +2372,11 @@ a.related_post_link {
     p {
         width: 100% !important;
     }
+
+	p.ncaption {
+		width: 90%;
+		margin: auto;
+	}
 
     .index_h1 {
         width: 90%;

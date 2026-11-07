@@ -54,3 +54,4 @@ $ sudo arp -d -a
 ```
 Perintah ini akan menghapus *cache* dari semua *interface* yang ada, untuk perintah lainnya bisa dilihat di `man arp` dan kemudian lakukan `ping` atau pemeriksaan dengan nmap/zenmap.
 
+{{ comp.subs() }}

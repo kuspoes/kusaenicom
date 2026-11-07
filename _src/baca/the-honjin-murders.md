@@ -47,7 +47,7 @@ Pesta pernikahan berjalan dengan sangat lancar, pihak keluarga kedua mempelai ma
 ![The Honjin Murders live action]({{ metadata.imgdia }}jurnal/the-honjin-murders/The_Honjin_Murders_live_action.webp){ .lebar }
 
 <p class="ncaption">
-Scene dari file <a href="https://www.imdb.com/title/tt0170011/">Death on Old Mansion</a>, film live action dari novel The Honjin Murders. Akira Nakao berperan sebagai Kosuke Kindaichi.
+Scene dari film <a href="https://www.imdb.com/title/tt0170011/">Death on Old Mansion</a>, film live action dari novel The Honjin Murders. Akira Nakao berperan sebagai Kosuke Kindaichi.
 </p>
 
 Malamnya saat semua terlelap, terdengar dentingan suara Kotto (alat musik petik seperti Kecapi) dan teriakan suara perempuan. Para penghuni rumah dan tamu berlarian ke sumber suara yaitu rumah pengantin yang terkunci. Ditemukan sebilah samurai berlumuran darah tertancap di tengah halaman bersalju. Pintu dan jendela rumah terkunci rapat sehingga perlu kapak untuk bisa menjebolnya, di dalamnya? ditemukan mayat kedua pengantin tersayat - tewas secara mengerikan.
@@ -66,3 +66,6 @@ Ane perlu membaca beberapa kali untuk sampai pada kesimpulan bahwa Kindaichi ben
 
 {{ comp.relasi_buku({ keyword: "SeishiYokomizo", abai: title  }) }}
 
+Seperti beberapa novel lainnya, The Honjin Murder's ini juga sudah dibuat film [*live action*nya](https://en.wikipedia.org/wiki/The_Honjin_Murders#Adaptations), sebagian bisa ditonton di Youtube atau di layanan *streaming* lainnya.
+
+{{ comp.subs() }}

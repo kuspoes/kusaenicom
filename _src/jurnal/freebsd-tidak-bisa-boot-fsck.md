@@ -83,3 +83,6 @@ Setelah selesai semua, ane atur supaya sistem melakukan pemeriksaan mandiri saat
 ```
 
 Kemudian *shutdown* sistem, kembali ke Dashboard GreenCloud dan rubah *boot order* agar sistem utamakan *boot* dari HDD/SSD. Selesai.
+
+{{ comp.subs() }}
+

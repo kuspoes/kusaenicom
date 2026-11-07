@@ -124,6 +124,7 @@ Ane ada juga IPv6 yang tersedia namun ane tidak akan atur saat proses peng*insta
 
 Kemudian lanjutkan proses install seperti biasa atau sesuai dengan panduan [resmi dari NetBSD](https://www.netbsd.org/docs/guide/en/chap-exinst.html). Ane ga mau ribet karena sumber daya VPS ini minimalis maka ane pakai rekomendasi NetBSD saat bikin partisi dan kemudian pilih **Minimal Installation**, ane juga mengaktifkan SSH agar nanti bisa akses ke *shell* tanpa VNC. Setelah proses instalasi selesai  kemudian *reboot system*.
 
+{{ comp.subs() }}
 
 #### Post Install
 
@@ -272,3 +273,18 @@ Karena TierHive ngasih IPv6 gratis dengan subnet `/64` kenapa tak dipakai?. Jadi
 	```shell-session
 	poes@nbsd:[/home/poes] $
 	```
+
+8. **sysupgrade**, *tool* untuk membantu *upgrade release*. Ini sangat membantu dan lebih disarankan untuk memproses *minor upgrade* sedangkan untuk *major upgrade* tetap disarankan pakai `sysinst`
+	<div class="sidebar_notes sebelah_kanan">
+	<p><i>Minor Upgrade</i> itu seperti <i>upgrade</i> dari versi 11.0 ke 11.1, sedangkan <i>Major Upgrade </i>dari 10.0 ke 11.0</p>
+	</div>
+
+	```shell-session
+	# pkgin install sysupgrade
+	# sysupgrade auto https://cdn.NetBSD.org/pub/NetBSD/NetBSD-11.1/amd64
+	```
+	Dalam beberapa kesempatan `sysupgrade` akan gagal dalam mengunduh *update* karena tidak bisa memahami versi kernel yang dipakai saat ini, maka *edit file* `/usr/pkg/etc/sysupgrade.conf` kemudian rubah versi `KERNEL=AUTO` menjadi `KERNEL=GENERIC`. Untuk memastikan bisa juga dengan memeriksa melalui perintah `uname -a`. Kemudian ulangi lagi perintah `sysupgrade`.
+
+	`sysupgrade` akan mengunduh *files* yang dibutuhkan dan melakukan *upgrade*. Jangan lupa untuk membaca `diff` di beberapa konfigurasi (seperti daftar *user*) karena jika langsung terapkan bisa bikin konfigurasi berubah.
+
+	Terakhir sesuaikan repo dengan versi NetBSD terbaru dengan merubah *file* `/usr/pkg/etc/pkgin/repositories.conf`.
