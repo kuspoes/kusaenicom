@@ -81,19 +81,19 @@ Saya membutuhkan waktu kurang dari 45 menit untuk menyelesaikan buku ini. Mungki
 
 Namun bagi yang suka mikir dalam kebingungan dan kengerian, silakan baca buku - buku dari Simpleman.
 
-{{ echo |> relasi("sewuDino_lV8ZEwbP7.jpg", "Sewu Dino", "simpleman", "/baca/sewudino") }}
+{{ echo |> relasi("sewuDino_lV8ZEwbP7.webp", "Sewu Dino", "simpleman", "/baca/sewudino") }}
 Dia adalah Dela Atmojo, anak yang harus kamu rawat sampai waktunya tiba. Ia dikirimi kutukan santet sewu dino. Santet yang sudah merenggut nyawa hampir seluruh anggota keluarga Atmojo.
 {{ /echo }}
 
-{{ echo |> relasi("janurIreng_aSww35pkIg4.jpg", "Janur Ireng", "simpleman", "/baca/janurireng") }}
+{{ echo |> relasi("janurIreng_aSww35pkIg4.webp", "Janur Ireng", "simpleman", "/baca/janurireng") }}
 Ingatan hitam yang menyeruak dan membuka tabir gelap sebuah peristiwa masa lampau yang perlahan merangkak naik dan menunjukkan kilasan kepedihan dari sebuah perjanjian sedarah yang kental. Kisah dalam buku ini jauh lebih kelam dan gelap dibandingkan dengan Sewu Dino.
 {{ /echo }}
 
-{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.jpg", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
+{{ echo |> relasi("ranjat-kembang_EQYxzyfUuZx.webp", "Ranjat Kembang", "simpleman", "/baca/ranjatkembang") }}
 Setelah memakan ratusan nyawa, perseteruan Trah Pitu menjalar begitu jauh, meneror keturunan termuda dan orang - orang di luar lingkaran keluarga. Buku ini membawa 3 pintu cerita yaitu Padusan Pituh (Mira), Lemah Layat (Agus), dan Kembang Wijayakusuma (Dela Atmojo)
 {{ /echo }}
 
-{{ echo |> relasi("book15_LKlbAIFWW.png", "Kudro", "simpleman", "https://www.wattpad.com/1098009727-kudro-laweh") }}
+{{ echo |> relasi("book15_LKlbAIFWW.webp", "Kudro", "simpleman", "https://www.wattpad.com/1098009727-kudro-laweh") }}
 Bayu Saseno menyelam dalam ingatan masalalunya, mencari dimana keberadaannya dalam tatanan bunga Wijayakusuma.
 {{ /echo }}
 
